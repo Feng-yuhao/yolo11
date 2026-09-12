@@ -16,3 +16,5 @@ comparison_reports/**/area_predictions.json
 *.tar.gz
 comparison_reports/**/predictions*.json
 comparison_reports/**/area_predictions.json
+
+**/.git_saved/

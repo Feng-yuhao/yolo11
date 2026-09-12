@@ -1,0 +1,1411 @@
+D10 E10a DSSG zero-training causal path diagnosis
+status: completed
+weights: /root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt
+weights_sha256: 8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512
+All AP/P/R values are fractions 0-1; multiply by 100 for percentages.
+Positive full-minus-ablated values mean that path helped this frozen checkpoint.
+Interventions diagnose a trained checkpoint; they are not substitutes for retrained ablations.
+Automatic shutdown: disabled.
+
+[full] none; frozen full E10a
+  overall: Precision=0.613368095, Recall=0.516885411, mAP50=0.545837221, mAP75=0.355621909, mAP50_95=0.341128945
+  area: AP_all=0.314999421, AP_small=0.228917086, AP_medium=0.424848532, AP_large=0.566349762
+
+[bypass_both] DeepSemanticGuide bypassed; SemanticDetailGate bypassed
+  overall: Precision=0.593214442, Recall=0.499238422, mAP50=0.521086771, mAP75=0.339190465, mAP50_95=0.325472515
+  area: AP_all=0.296294422, AP_small=0.207232498, AP_medium=0.411714825, AP_large=0.565176066
+  delta_vs_full_area: AP_all=-0.018704999, AP_small=-0.021684588, AP_medium=-0.013133707, AP_large=-0.001173696
+
+[deep_only] SemanticDetailGate bypassed
+  overall: Precision=0.591612681, Recall=0.501219196, mAP50=0.525519928, mAP75=0.341861132, mAP50_95=0.328552193
+  area: AP_all=0.302702890, AP_small=0.212729106, AP_medium=0.420003556, AP_large=0.566693956
+  delta_vs_full_area: AP_all=-0.012296531, AP_small=-0.016187980, AP_medium=-0.004844975, AP_large=+0.000344194
+
+[detail_only] DeepSemanticGuide bypassed; detail gate receives original P3
+  overall: Precision=0.613950882, Recall=0.506924833, mAP50=0.540424717, mAP75=0.351118452, mAP50_95=0.337187343
+  area: AP_all=0.308493806, AP_small=0.222411242, AP_medium=0.418066503, AP_large=0.564669702
+  delta_vs_full_area: AP_all=-0.006505615, AP_small=-0.006505844, AP_medium=-0.006782028, AP_large=-0.001680060
+
+[no_p5_context] P5 descriptor removed; P4 projection/injection unchanged
+  overall: Precision=0.614938563, Recall=0.516563123, mAP50=0.545818900, mAP75=0.355618364, mAP50_95=0.341134016
+  area: AP_all=0.315013102, AP_small=0.228917220, AP_medium=0.424865186, AP_large=0.566349974
+  delta_vs_full_area: AP_all=+0.000013680, AP_small=+0.000000134, AP_medium=+0.000016654, AP_large=+0.000000212
+
+[no_p4_context] P4 descriptor removed; P4 projection/injection unchanged
+  overall: Precision=0.614943611, Recall=0.516548526, mAP50=0.545827065, mAP75=0.355556280, mAP50_95=0.341103391
+  area: AP_all=0.315016252, AP_small=0.228959871, AP_medium=0.424838286, AP_large=0.566349835
+  delta_vs_full_area: AP_all=+0.000016831, AP_small=+0.000042785, AP_medium=-0.000010245, AP_large=+0.000000073
+
+[fixed_channel_gate] learned channel gate replaced by neutral constant 0.5
+  overall: Precision=0.614973111, Recall=0.516563123, mAP50=0.545823286, mAP75=0.355625345, mAP50_95=0.341135108
+  area: AP_all=0.315010803, AP_small=0.228918157, AP_medium=0.424862947, AP_large=0.566349974
+  delta_vs_full_area: AP_all=+0.000011382, AP_small=+0.000001071, AP_medium=+0.000014416, AP_large=+0.000000212
+
+[fixed_p3_spatial_gate] learned P3 spatial gate replaced by neutral constant 0.5
+  overall: Precision=0.619443058, Recall=0.511737945, mAP50=0.544652288, mAP75=0.356120615, mAP50_95=0.340548408
+  area: AP_all=0.313142209, AP_small=0.227383330, AP_medium=0.423068271, AP_large=0.567216995
+  delta_vs_full_area: AP_all=-0.001857212, AP_small=-0.001533756, AP_medium=-0.001780260, AP_large=+0.000867232
+
+[fixed_p2_spatial_gate] learned P2 spatial gate replaced by neutral constant 0.5
+  overall: Precision=0.621348647, Recall=0.509140801, mAP50=0.542909741, mAP75=0.353651670, mAP50_95=0.339505388
+  area: AP_all=0.312953029, AP_small=0.227498592, AP_medium=0.423688734, AP_large=0.566272379
+  delta_vs_full_area: AP_all=-0.002046392, AP_small=-0.001418494, AP_medium=-0.001159797, AP_large=-0.000077383
+
+Component effects (full - ablated):
+  remove_both: AP_all=+0.018704999, AP_small=+0.021684588
+  remove_detail_keep_deep: AP_all=+0.012296531, AP_small=+0.016187980
+  remove_deep_keep_detail: AP_all=+0.006505615, AP_small=+0.006505844
+  remove_P5_descriptor: AP_all=-0.000013680, AP_small=-0.000000134
+  remove_P4_descriptor: AP_all=-0.000016831, AP_small=-0.000042785
+  neutralize_channel_gate: AP_all=-0.000011382, AP_small=-0.000001071
+  neutralize_P3_spatial_gate: AP_all=+0.001857212, AP_small=+0.001533756
+  neutralize_P2_spatial_gate: AP_all=+0.002046392, AP_small=+0.001418494
+
+Gate region summary:
+  P3_spatial_gate: small-background=+0.037764152
+  P2_spatial_gate: small-background=+0.137258441
+
+Full metadata:
+{
+  "status": "completed",
+  "purpose": "D10 zero-training causal diagnosis of trained E10a DSSG paths",
+  "started_at": "2026-09-11T13:03:37",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D10_E10A_DSSG_CAUSAL_20260911_130337_360629",
+  "automatic_shutdown": false,
+  "protocol": {
+    "imgsz": 1024,
+    "validation_batch": 8,
+    "area_batch": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 500,
+    "modes": [
+      "full",
+      "bypass_both",
+      "deep_only",
+      "detail_only",
+      "no_p5_context",
+      "no_p4_context",
+      "fixed_channel_gate",
+      "fixed_p3_spatial_gate",
+      "fixed_p2_spatial_gate"
+    ],
+    "limit_images": 0,
+    "gate_images": 50
+  },
+  "weights": {
+    "path": "/root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt",
+    "sha256": "8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512"
+  },
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.5.1+cu121",
+    "ultralytics": "8.3.0",
+    "ultralytics_source": "/root/autodl-tmp/yolo11_src/ultralytics/__init__.py",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA vGPU-32GB"
+  },
+  "structural_check": {
+    "full": {
+      "mode": "full",
+      "intervention": [
+        "none; frozen full E10a"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_delta_vs_full": 0.0,
+      "max_abs_delta_vs_full": 0.0
+    },
+    "bypass_both": {
+      "mode": "bypass_both",
+      "intervention": [
+        "DeepSemanticGuide bypassed",
+        "SemanticDetailGate bypassed"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_delta_vs_full": 0.07035398483276367,
+      "max_abs_delta_vs_full": 4.03411865234375
+    },
+    "deep_only": {
+      "mode": "deep_only",
+      "intervention": [
+        "SemanticDetailGate bypassed"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_delta_vs_full": 0.05557668209075928,
+      "max_abs_delta_vs_full": 1.866668701171875
+    },
+    "detail_only": {
+      "mode": "detail_only",
+      "intervention": [
+        "DeepSemanticGuide bypassed; detail gate receives original P3"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_delta_vs_full": 0.028044244274497032,
+      "max_abs_delta_vs_full": 4.03411865234375
+    },
+    "no_p5_context": {
+      "mode": "no_p5_context",
+      "intervention": [
+        "P5 descriptor removed; P4 projection/injection unchanged"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_delta_vs_full": 1.6029984180931933e-05,
+      "max_abs_delta_vs_full": 0.0020017623901367188
+    },
+    "no_p4_context": {
+      "mode": "no_p4_context",
+      "intervention": [
+        "P4 descriptor removed; P4 projection/injection unchanged"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_delta_vs_full": 7.282764727278845e-06,
+      "max_abs_delta_vs_full": 0.0009765625
+    },
+    "fixed_channel_gate": {
+      "mode": "fixed_channel_gate",
+      "intervention": [
+        "learned channel gate replaced by neutral constant 0.5"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_delta_vs_full": 2.1364630811149254e-05,
+      "max_abs_delta_vs_full": 0.0025529861450195312
+    },
+    "fixed_p3_spatial_gate": {
+      "mode": "fixed_p3_spatial_gate",
+      "intervention": [
+        "learned P3 spatial gate replaced by neutral constant 0.5"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_delta_vs_full": 0.003790508024394512,
+      "max_abs_delta_vs_full": 0.6750335693359375
+    },
+    "fixed_p2_spatial_gate": {
+      "mode": "fixed_p2_spatial_gate",
+      "intervention": [
+        "learned P2 spatial gate replaced by neutral constant 0.5"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_delta_vs_full": 0.019522154703736305,
+      "max_abs_delta_vs_full": 0.6207504272460938
+    }
+  },
+  "updated_at": "2026-09-11T13:25:17",
+  "dataset": {
+    "train_images": 6471,
+    "val_images": 548,
+    "validation_instances": 38759,
+    "validation_label_sha256": "9fcd8057313d2916d73303246707859dac41897e480aa0dd910ff419fde5dd6c",
+    "duplicate_validation_labels_removed": 0,
+    "class_names": {
+      "0": "pedestrian",
+      "1": "people",
+      "2": "bicycle",
+      "3": "car",
+      "4": "van",
+      "5": "truck",
+      "6": "tricycle",
+      "7": "awning-tricycle",
+      "8": "bus",
+      "9": "motor"
+    },
+    "class_counts": {
+      "0": 8844,
+      "1": 5125,
+      "2": 1287,
+      "3": 14064,
+      "4": 1975,
+      "5": 750,
+      "6": 1045,
+      "7": 532,
+      "8": 251,
+      "9": 4886
+    }
+  },
+  "evaluated_images": 548,
+  "modes": {
+    "full": {
+      "mode": "full",
+      "intervention": [
+        "none; frozen full E10a"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "started_at": "2026-09-11T13:03:41",
+      "overall": {
+        "Precision": 0.6133680947840817,
+        "Recall": 0.5168854107093871,
+        "mAP50": 0.54583722074581,
+        "mAP75": 0.3556219092783082,
+        "mAP50_95": 0.3411289446225219
+      },
+      "validation_seconds": 8.634989522397518,
+      "speed_ms_per_image": {
+        "preprocess": 0.1999152837878596,
+        "inference": 5.928057823738043,
+        "loss": 0.0014966421753820711,
+        "postprocess": 2.520172700394679
+      },
+      "prediction_seconds": 15.849624399095774,
+      "prediction_count": 243002,
+      "area_metrics": {
+        "AP_all": 0.31499942108659135,
+        "AR_all": 0.4501281156150888,
+        "AP_small": 0.22891708626301424,
+        "AR_small": 0.363907475808454,
+        "AP_medium": 0.4248485316225591,
+        "AR_medium": 0.5676186421387558,
+        "AP_large": 0.5663497620746415,
+        "AR_large": 0.7013756284909993,
+        "max_det": 500
+      },
+      "area_accumulation_seconds": 80.74028417468071,
+      "finished_at": "2026-09-11T13:06:06"
+    },
+    "bypass_both": {
+      "mode": "bypass_both",
+      "intervention": [
+        "DeepSemanticGuide bypassed",
+        "SemanticDetailGate bypassed"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "started_at": "2026-09-11T13:06:06",
+      "overall": {
+        "Precision": 0.5932144420406906,
+        "Recall": 0.4992384219940453,
+        "mAP50": 0.5210867713493263,
+        "mAP75": 0.3391904645837679,
+        "mAP50_95": 0.3254725148976917
+      },
+      "validation_seconds": 5.866146665066481,
+      "speed_ms_per_image": {
+        "preprocess": 0.19832945218051437,
+        "inference": 4.445796030281234,
+        "loss": 0.0016771963913075245,
+        "postprocess": 1.6075551074786778
+      },
+      "prediction_seconds": 14.219996187835932,
+      "prediction_count": 219859,
+      "area_metrics": {
+        "AP_all": 0.2962944219863866,
+        "AR_all": 0.4370282928154281,
+        "AP_small": 0.2072324977811547,
+        "AR_small": 0.3425288432270232,
+        "AP_medium": 0.4117148246317273,
+        "AR_medium": 0.5711393276379362,
+        "AP_large": 0.5651760659300555,
+        "AR_large": 0.6941949688208345,
+        "max_det": 500
+      },
+      "area_accumulation_seconds": 82.03873913735151,
+      "finished_at": "2026-09-11T13:08:29",
+      "delta_vs_full": {
+        "area_metrics": {
+          "AP_all": -0.018704999100204733,
+          "AR_all": -0.01309982279966071,
+          "AP_small": -0.02168458848185953,
+          "AR_small": -0.0213786325814308,
+          "AP_medium": -0.013133706990831773,
+          "AR_medium": 0.003520685499180387,
+          "AP_large": -0.0011736961445859562,
+          "AR_large": -0.007180659670164791,
+          "max_det": 0.0
+        },
+        "overall": {
+          "Precision": -0.020153652743391093,
+          "Recall": -0.017646988715341816,
+          "mAP50": -0.02475044939648363,
+          "mAP75": -0.01643144469454033,
+          "mAP50_95": -0.015656429724830223
+        }
+      }
+    },
+    "deep_only": {
+      "mode": "deep_only",
+      "intervention": [
+        "SemanticDetailGate bypassed"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "started_at": "2026-09-11T13:08:29",
+      "overall": {
+        "Precision": 0.591612680924473,
+        "Recall": 0.5012191960646182,
+        "mAP50": 0.5255199279450706,
+        "mAP75": 0.34186113249128347,
+        "mAP50_95": 0.32855219264452246
+      },
+      "validation_seconds": 6.271490264683962,
+      "speed_ms_per_image": {
+        "preprocess": 0.19906124059301222,
+        "inference": 4.62847295468741,
+        "loss": 0.0017111318824935134,
+        "postprocess": 1.8536948809658524
+      },
+      "prediction_seconds": 14.389642558991909,
+      "prediction_count": 225361,
+      "area_metrics": {
+        "AP_all": 0.3027028898759275,
+        "AR_all": 0.4419785589948932,
+        "AP_small": 0.2127291061616555,
+        "AR_small": 0.3498432134934402,
+        "AP_medium": 0.420003556215914,
+        "AR_medium": 0.5716256964442298,
+        "AP_large": 0.5666939564738667,
+        "AR_large": 0.7035095615244827,
+        "max_det": 500
+      },
+      "area_accumulation_seconds": 83.09159083291888,
+      "finished_at": "2026-09-11T13:10:53",
+      "delta_vs_full": {
+        "area_metrics": {
+          "AP_all": -0.01229653121066382,
+          "AR_all": -0.00814955662019562,
+          "AP_small": -0.016187980101358745,
+          "AR_small": -0.014064262315013787,
+          "AP_medium": -0.00484497540664508,
+          "AR_medium": 0.004007054305473989,
+          "AP_large": 0.0003441943992251728,
+          "AR_large": 0.002133933033483415,
+          "max_det": 0.0
+        },
+        "overall": {
+          "Precision": -0.021755413859608774,
+          "Recall": -0.015666214644768917,
+          "mAP50": -0.02031729280073935,
+          "mAP75": -0.013760776787024753,
+          "mAP50_95": -0.012576751977999456
+        }
+      }
+    },
+    "detail_only": {
+      "mode": "detail_only",
+      "intervention": [
+        "DeepSemanticGuide bypassed; detail gate receives original P3"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "started_at": "2026-09-11T13:10:53",
+      "overall": {
+        "Precision": 0.6139508820135778,
+        "Recall": 0.5069248325963353,
+        "mAP50": 0.5404247167773077,
+        "mAP75": 0.35111845244583184,
+        "mAP50_95": 0.33718734268360256
+      },
+      "validation_seconds": 6.94473447650671,
+      "speed_ms_per_image": {
+        "preprocess": 0.19844474583646676,
+        "inference": 5.5302098719743045,
+        "loss": 0.001772041738468365,
+        "postprocess": 2.3638827957376076
+      },
+      "prediction_seconds": 15.182917356491089,
+      "prediction_count": 239564,
+      "area_metrics": {
+        "AP_all": 0.30849380571997137,
+        "AR_all": 0.4446258688451554,
+        "AP_small": 0.22241124188303077,
+        "AR_small": 0.35624364704242395,
+        "AP_medium": 0.4180665032935816,
+        "AR_medium": 0.5663110883144732,
+        "AP_large": 0.564669701608281,
+        "AR_large": 0.6917162082011444,
+        "max_det": 500
+      },
+      "area_accumulation_seconds": 88.93191129341722,
+      "finished_at": "2026-09-11T13:13:24",
+      "delta_vs_full": {
+        "area_metrics": {
+          "AP_all": -0.006505615366619977,
+          "AR_all": -0.005502246769933383,
+          "AP_small": -0.006505844379983472,
+          "AR_small": -0.007663828766030056,
+          "AP_medium": -0.006782028328977507,
+          "AR_medium": -0.0013075538242826035,
+          "AP_large": -0.001680060466360489,
+          "AR_large": -0.009659420289854892,
+          "max_det": 0.0
+        },
+        "overall": {
+          "Precision": 0.0005827872294961178,
+          "Recall": -0.009960578113051843,
+          "mAP50": -0.005412503968502236,
+          "mAP75": -0.004503456832476382,
+          "mAP50_95": -0.003941601938919348
+        }
+      }
+    },
+    "no_p5_context": {
+      "mode": "no_p5_context",
+      "intervention": [
+        "P5 descriptor removed; P4 projection/injection unchanged"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "started_at": "2026-09-11T13:13:25",
+      "overall": {
+        "Precision": 0.614938562689423,
+        "Recall": 0.5165631226998764,
+        "mAP50": 0.545818900187456,
+        "mAP75": 0.35561836427157434,
+        "mAP50_95": 0.341134016104374
+      },
+      "validation_seconds": 7.173062946647406,
+      "speed_ms_per_image": {
+        "preprocess": 0.19909952678819642,
+        "inference": 5.691959475078722,
+        "loss": 0.0016811120249059076,
+        "postprocess": 2.534694915270283
+      },
+      "prediction_seconds": 16.961169589310884,
+      "prediction_count": 242996,
+      "area_metrics": {
+        "AP_all": 0.31501310156885576,
+        "AR_all": 0.4500742340748792,
+        "AP_small": 0.2289172202629385,
+        "AR_small": 0.3637910373710783,
+        "AP_medium": 0.4248651860247721,
+        "AR_medium": 0.567670323082978,
+        "AP_large": 0.5663499740131452,
+        "AR_large": 0.7013756284909993,
+        "max_det": 500
+      },
+      "area_accumulation_seconds": 84.72600346431136,
+      "finished_at": "2026-09-11T13:15:54",
+      "delta_vs_full": {
+        "area_metrics": {
+          "AP_all": 1.3680482264410987e-05,
+          "AR_all": -5.388154020963265e-05,
+          "AP_small": 1.339999242677692e-07,
+          "AR_small": -0.00011643843737568771,
+          "AP_medium": 1.665440221298997e-05,
+          "AR_medium": 5.168094422225433e-05,
+          "AP_large": 2.1193850374690015e-07,
+          "AR_large": 0.0,
+          "max_det": 0.0
+        },
+        "overall": {
+          "Precision": 0.0015704679053413217,
+          "Recall": -0.00032228800951072945,
+          "mAP50": -1.8320558353934757e-05,
+          "mAP75": -3.5450067338849145e-06,
+          "mAP50_95": 5.071481852081394e-06
+        }
+      }
+    },
+    "no_p4_context": {
+      "mode": "no_p4_context",
+      "intervention": [
+        "P4 descriptor removed; P4 projection/injection unchanged"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "started_at": "2026-09-11T13:15:54",
+      "overall": {
+        "Precision": 0.6149436112552755,
+        "Recall": 0.5165485259570882,
+        "mAP50": 0.5458270654940465,
+        "mAP75": 0.3555562801213491,
+        "mAP50_95": 0.34110339141065993
+      },
+      "validation_seconds": 6.894360043108463,
+      "speed_ms_per_image": {
+        "preprocess": 0.1971573725233983,
+        "inference": 5.679958058099677,
+        "loss": 0.0014344271082077583,
+        "postprocess": 2.5386801601326376
+      },
+      "prediction_seconds": 15.224751930683851,
+      "prediction_count": 243003,
+      "area_metrics": {
+        "AP_all": 0.31501625174851533,
+        "AR_all": 0.45016554697225897,
+        "AP_small": 0.22895987147085012,
+        "AR_small": 0.3639499862084235,
+        "AP_medium": 0.4248382864655481,
+        "AR_medium": 0.5676514949001435,
+        "AP_large": 0.5663498346367691,
+        "AR_large": 0.7013756284909993,
+        "max_det": 500
+      },
+      "area_accumulation_seconds": 79.56076810881495,
+      "finished_at": "2026-09-11T13:18:16",
+      "delta_vs_full": {
+        "area_metrics": {
+          "AP_all": 1.6830661923983303e-05,
+          "AR_all": 3.7431357170158996e-05,
+          "AP_small": 4.2785207835877026e-05,
+          "AR_small": 4.251039996949757e-05,
+          "AP_medium": -1.024515701097961e-05,
+          "AR_medium": 3.285276138775828e-05,
+          "AP_large": 7.256212763984138e-08,
+          "AR_large": 0.0,
+          "max_det": 0.0
+        },
+        "overall": {
+          "Precision": 0.0015755164711938052,
+          "Recall": -0.0003368847522988716,
+          "mAP50": -1.015525176351062e-05,
+          "mAP75": -6.562915695912386e-05,
+          "mAP50_95": -2.5553211861983893e-05
+        }
+      }
+    },
+    "fixed_channel_gate": {
+      "mode": "fixed_channel_gate",
+      "intervention": [
+        "learned channel gate replaced by neutral constant 0.5"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "started_at": "2026-09-11T13:18:16",
+      "overall": {
+        "Precision": 0.6149731112930923,
+        "Recall": 0.5165631226998764,
+        "mAP50": 0.5458232862052949,
+        "mAP75": 0.3556253447772224,
+        "mAP50_95": 0.34113510754940213
+      },
+      "validation_seconds": 6.690261010080576,
+      "speed_ms_per_image": {
+        "preprocess": 0.19640687608370813,
+        "inference": 5.660898058953947,
+        "loss": 0.001697644700099082,
+        "postprocess": 2.320179103934852
+      },
+      "prediction_seconds": 14.964985996484756,
+      "prediction_count": 242990,
+      "area_metrics": {
+        "AP_all": 0.3150108032493528,
+        "AR_all": 0.45010735060208945,
+        "AP_small": 0.22891815716682415,
+        "AR_small": 0.3638306277352996,
+        "AP_medium": 0.424862947171795,
+        "AR_medium": 0.5676734603378801,
+        "AP_large": 0.5663499740131452,
+        "AR_large": 0.7013756284909993,
+        "max_det": 500
+      },
+      "area_accumulation_seconds": 83.87112344801426,
+      "finished_at": "2026-09-11T13:20:42",
+      "delta_vs_full": {
+        "area_metrics": {
+          "AP_all": 1.138216276147519e-05,
+          "AR_all": -2.0765012999357513e-05,
+          "AP_small": 1.0709038099077084e-06,
+          "AR_small": -7.684807315438968e-05,
+          "AP_medium": 1.4415549235924363e-05,
+          "AR_medium": 5.481819912434016e-05,
+          "AP_large": 2.1193850374690015e-07,
+          "AR_large": 0.0,
+          "max_det": 0.0
+        },
+        "overall": {
+          "Precision": 0.0016050165090105706,
+          "Recall": -0.00032228800951072945,
+          "mAP50": -1.3934540515125882e-05,
+          "mAP75": 3.435498914183821e-06,
+          "mAP50_95": 6.162926880215469e-06
+        }
+      }
+    },
+    "fixed_p3_spatial_gate": {
+      "mode": "fixed_p3_spatial_gate",
+      "intervention": [
+        "learned P3 spatial gate replaced by neutral constant 0.5"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "started_at": "2026-09-11T13:20:42",
+      "overall": {
+        "Precision": 0.6194430577798399,
+        "Recall": 0.5117379452951849,
+        "mAP50": 0.54465228760593,
+        "mAP75": 0.3561206152334038,
+        "mAP50_95": 0.3405484084631778
+      },
+      "validation_seconds": 6.5590138509869576,
+      "speed_ms_per_image": {
+        "preprocess": 0.19553891063606652,
+        "inference": 5.693657554849221,
+        "loss": 0.0012434312026866161,
+        "postprocess": 2.2590556283936887
+      },
+      "prediction_seconds": 13.949361246079206,
+      "prediction_count": 243007,
+      "area_metrics": {
+        "AP_all": 0.3131422093342655,
+        "AR_all": 0.44916000456722605,
+        "AP_small": 0.22738333022169596,
+        "AR_small": 0.36244783986263807,
+        "AP_medium": 0.423068271431857,
+        "AR_medium": 0.5689596134827098,
+        "AP_large": 0.5672169945469013,
+        "AR_large": 0.6976058567658222,
+        "max_det": 500
+      },
+      "area_accumulation_seconds": 76.25686412677169,
+      "finished_at": "2026-09-11T13:22:59",
+      "delta_vs_full": {
+        "area_metrics": {
+          "AP_all": -0.001857211752325838,
+          "AR_all": -0.000968111047862763,
+          "AP_small": -0.0015337560413182794,
+          "AR_small": -0.0014596359458159403,
+          "AP_medium": -0.0017802601907020987,
+          "AR_medium": 0.001340971343954056,
+          "AP_large": 0.0008672324722598379,
+          "AR_large": -0.003769771725177118,
+          "max_det": 0.0
+        },
+        "overall": {
+          "Precision": 0.00607496299575816,
+          "Recall": -0.00514746541420219,
+          "mAP50": -0.0011849331398799956,
+          "mAP75": 0.0004987059550956019,
+          "mAP50_95": -0.0005805361593441138
+        }
+      }
+    },
+    "fixed_p2_spatial_gate": {
+      "mode": "fixed_p2_spatial_gate",
+      "intervention": [
+        "learned P2 spatial gate replaced by neutral constant 0.5"
+      ],
+      "note": "Forward-only intervention on a fresh model instance; checkpoint and source files are unchanged.",
+      "started_at": "2026-09-11T13:22:59",
+      "overall": {
+        "Precision": 0.6213486467785093,
+        "Recall": 0.5091408008195727,
+        "mAP50": 0.5429097406295335,
+        "mAP75": 0.3536516697541693,
+        "mAP50_95": 0.33950538814394066
+      },
+      "validation_seconds": 6.62077659368515,
+      "speed_ms_per_image": {
+        "preprocess": 0.19643907129329485,
+        "inference": 5.6843292104066725,
+        "loss": 0.0013717769706336252,
+        "postprocess": 2.133044448212116
+      },
+      "prediction_seconds": 13.701633512973785,
+      "prediction_count": 240689,
+      "area_metrics": {
+        "AP_all": 0.31295302939930353,
+        "AR_all": 0.4497791812444278,
+        "AP_small": 0.22749859190859625,
+        "AR_small": 0.3631742466721139,
+        "AP_medium": 0.42368873437306087,
+        "AR_medium": 0.567893402997973,
+        "AP_large": 0.5662723794910708,
+        "AR_large": 0.7013756284909993,
+        "max_det": 500
+      },
+      "area_accumulation_seconds": 75.62644015997648,
+      "finished_at": "2026-09-11T13:25:15",
+      "delta_vs_full": {
+        "area_metrics": {
+          "AP_all": -0.0020463916872878185,
+          "AR_all": -0.00034893437066102484,
+          "AP_small": -0.0014184943544179873,
+          "AR_small": -0.0007332291363401078,
+          "AP_medium": -0.0011597972494982178,
+          "AR_medium": 0.0002747608592171824,
+          "AP_large": -7.738258357070649e-05,
+          "AR_large": 0.0,
+          "max_det": 0.0
+        },
+        "overall": {
+          "Precision": 0.007980551994427598,
+          "Recall": -0.007744609889814402,
+          "mAP50": -0.0029274801162765263,
+          "mAP75": -0.001970239524138939,
+          "mAP50_95": -0.0016235564785812562
+        }
+      }
+    }
+  },
+  "component_effects": {
+    "remove_both": {
+      "overall_full_minus_ablated": {
+        "Precision": 0.020153652743391093,
+        "Recall": 0.017646988715341816,
+        "mAP50": 0.02475044939648363,
+        "mAP75": 0.01643144469454033,
+        "mAP50_95": 0.015656429724830223
+      },
+      "area_full_minus_ablated": {
+        "AP_all": 0.018704999100204733,
+        "AR_all": 0.01309982279966071,
+        "AP_small": 0.02168458848185953,
+        "AR_small": 0.0213786325814308,
+        "AP_medium": 0.013133706990831773,
+        "AR_medium": -0.003520685499180387,
+        "AP_large": 0.0011736961445859562,
+        "AR_large": 0.007180659670164791,
+        "max_det": 0.0
+      },
+      "interpretation": "Positive means the removed learned path helped the frozen E10a checkpoint."
+    },
+    "remove_detail_keep_deep": {
+      "overall_full_minus_ablated": {
+        "Precision": 0.021755413859608774,
+        "Recall": 0.015666214644768917,
+        "mAP50": 0.02031729280073935,
+        "mAP75": 0.013760776787024753,
+        "mAP50_95": 0.012576751977999456
+      },
+      "area_full_minus_ablated": {
+        "AP_all": 0.01229653121066382,
+        "AR_all": 0.00814955662019562,
+        "AP_small": 0.016187980101358745,
+        "AR_small": 0.014064262315013787,
+        "AP_medium": 0.00484497540664508,
+        "AR_medium": -0.004007054305473989,
+        "AP_large": -0.0003441943992251728,
+        "AR_large": -0.002133933033483415,
+        "max_det": 0.0
+      },
+      "interpretation": "Positive means the removed learned path helped the frozen E10a checkpoint."
+    },
+    "remove_deep_keep_detail": {
+      "overall_full_minus_ablated": {
+        "Precision": -0.0005827872294961178,
+        "Recall": 0.009960578113051843,
+        "mAP50": 0.005412503968502236,
+        "mAP75": 0.004503456832476382,
+        "mAP50_95": 0.003941601938919348
+      },
+      "area_full_minus_ablated": {
+        "AP_all": 0.006505615366619977,
+        "AR_all": 0.005502246769933383,
+        "AP_small": 0.006505844379983472,
+        "AR_small": 0.007663828766030056,
+        "AP_medium": 0.006782028328977507,
+        "AR_medium": 0.0013075538242826035,
+        "AP_large": 0.001680060466360489,
+        "AR_large": 0.009659420289854892,
+        "max_det": 0.0
+      },
+      "interpretation": "Positive means the removed learned path helped the frozen E10a checkpoint."
+    },
+    "remove_P5_descriptor": {
+      "overall_full_minus_ablated": {
+        "Precision": -0.0015704679053413217,
+        "Recall": 0.00032228800951072945,
+        "mAP50": 1.8320558353934757e-05,
+        "mAP75": 3.5450067338849145e-06,
+        "mAP50_95": -5.071481852081394e-06
+      },
+      "area_full_minus_ablated": {
+        "AP_all": -1.3680482264410987e-05,
+        "AR_all": 5.388154020963265e-05,
+        "AP_small": -1.339999242677692e-07,
+        "AR_small": 0.00011643843737568771,
+        "AP_medium": -1.665440221298997e-05,
+        "AR_medium": -5.168094422225433e-05,
+        "AP_large": -2.1193850374690015e-07,
+        "AR_large": 0.0,
+        "max_det": 0.0
+      },
+      "interpretation": "Positive means the removed learned path helped the frozen E10a checkpoint."
+    },
+    "remove_P4_descriptor": {
+      "overall_full_minus_ablated": {
+        "Precision": -0.0015755164711938052,
+        "Recall": 0.0003368847522988716,
+        "mAP50": 1.015525176351062e-05,
+        "mAP75": 6.562915695912386e-05,
+        "mAP50_95": 2.5553211861983893e-05
+      },
+      "area_full_minus_ablated": {
+        "AP_all": -1.6830661923983303e-05,
+        "AR_all": -3.7431357170158996e-05,
+        "AP_small": -4.2785207835877026e-05,
+        "AR_small": -4.251039996949757e-05,
+        "AP_medium": 1.024515701097961e-05,
+        "AR_medium": -3.285276138775828e-05,
+        "AP_large": -7.256212763984138e-08,
+        "AR_large": 0.0,
+        "max_det": 0.0
+      },
+      "interpretation": "Positive means the removed learned path helped the frozen E10a checkpoint."
+    },
+    "neutralize_channel_gate": {
+      "overall_full_minus_ablated": {
+        "Precision": -0.0016050165090105706,
+        "Recall": 0.00032228800951072945,
+        "mAP50": 1.3934540515125882e-05,
+        "mAP75": -3.435498914183821e-06,
+        "mAP50_95": -6.162926880215469e-06
+      },
+      "area_full_minus_ablated": {
+        "AP_all": -1.138216276147519e-05,
+        "AR_all": 2.0765012999357513e-05,
+        "AP_small": -1.0709038099077084e-06,
+        "AR_small": 7.684807315438968e-05,
+        "AP_medium": -1.4415549235924363e-05,
+        "AR_medium": -5.481819912434016e-05,
+        "AP_large": -2.1193850374690015e-07,
+        "AR_large": 0.0,
+        "max_det": 0.0
+      },
+      "interpretation": "Positive means the removed learned path helped the frozen E10a checkpoint."
+    },
+    "neutralize_P3_spatial_gate": {
+      "overall_full_minus_ablated": {
+        "Precision": -0.00607496299575816,
+        "Recall": 0.00514746541420219,
+        "mAP50": 0.0011849331398799956,
+        "mAP75": -0.0004987059550956019,
+        "mAP50_95": 0.0005805361593441138
+      },
+      "area_full_minus_ablated": {
+        "AP_all": 0.001857211752325838,
+        "AR_all": 0.000968111047862763,
+        "AP_small": 0.0015337560413182794,
+        "AR_small": 0.0014596359458159403,
+        "AP_medium": 0.0017802601907020987,
+        "AR_medium": -0.001340971343954056,
+        "AP_large": -0.0008672324722598379,
+        "AR_large": 0.003769771725177118,
+        "max_det": 0.0
+      },
+      "interpretation": "Positive means the removed learned path helped the frozen E10a checkpoint."
+    },
+    "neutralize_P2_spatial_gate": {
+      "overall_full_minus_ablated": {
+        "Precision": -0.007980551994427598,
+        "Recall": 0.007744609889814402,
+        "mAP50": 0.0029274801162765263,
+        "mAP75": 0.001970239524138939,
+        "mAP50_95": 0.0016235564785812562
+      },
+      "area_full_minus_ablated": {
+        "AP_all": 0.0020463916872878185,
+        "AR_all": 0.00034893437066102484,
+        "AP_small": 0.0014184943544179873,
+        "AR_small": 0.0007332291363401078,
+        "AP_medium": 0.0011597972494982178,
+        "AR_medium": -0.0002747608592171824,
+        "AP_large": 7.738258357070649e-05,
+        "AR_large": 0.0,
+        "max_det": 0.0
+      },
+      "interpretation": "Positive means the removed learned path helped the frozen E10a checkpoint."
+    },
+    "deep_detail_interaction": {
+      "overall": {
+        "Precision": 0.0010189738867215636,
+        "mAP75": 0.0018327889249608043,
+        "Recall": 0.007979804042478944,
+        "mAP50": 0.000979347372757955,
+        "mAP50_95": 0.0008619241920885812
+      },
+      "area_metrics": {
+        "AR_medium": 0.0008211850179890012,
+        "AR_small": 0.0003494584996130423,
+        "max_det": 0.0,
+        "AP_medium": -0.0015067032552091852,
+        "AP_small": 0.0010092359994826883,
+        "AP_large": 0.00016216992254936002,
+        "AR_all": 0.0005519805904682928,
+        "AP_all": 9.714747707906257e-05,
+        "AR_large": 0.0003448275862066863
+      },
+      "interpretation": "Factorial interaction: full - deep_only - detail_only + bypass_both. Positive suggests cooperation at this frozen checkpoint."
+    }
+  },
+  "gate_regions": {
+    "status": "completed",
+    "images": 50,
+    "selection": "evenly spaced deterministic sample over sorted validation paths",
+    "small_definition": "original-image bbox area < 32^2 pixels",
+    "background_definition": "gate cells outside every ground-truth bbox",
+    "mapping_note": "Ground-truth boxes mapped through reconstructed Ultralytics letterbox geometry.",
+    "P3_spatial_gate": {
+      "small_target": {
+        "pixels": 15826,
+        "mean": 0.5359625356561629,
+        "std": 0.09908997544264883
+      },
+      "all_target": {
+        "pixels": 63858,
+        "mean": 0.6030520563072743,
+        "std": 0.1484326411216003
+      },
+      "background": {
+        "pixels": 396942,
+        "mean": 0.49819838362523683,
+        "std": 0.08123458064346908
+      },
+      "small_minus_background": 0.03776415203092609
+    },
+    "P2_spatial_gate": {
+      "small_target": {
+        "pixels": 47257,
+        "mean": 0.7466063131861169,
+        "std": 0.11600358302519798
+      },
+      "all_target": {
+        "pixels": 220616,
+        "mean": 0.6727681271846677,
+        "std": 0.1182699809709979
+      },
+      "background": {
+        "pixels": 1622584,
+        "mean": 0.6093478719264304,
+        "std": 0.07740323517904653
+      },
+      "small_minus_background": 0.13725844125968656
+    },
+    "channel_gate": {
+      "count": 6400,
+      "mean": 0.4999750852584839,
+      "std": 0.00022372309467755258,
+      "min": 0.4986019730567932,
+      "max": 0.5014238357543945
+    },
+    "per_image": [
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000001_02999_d_0000005.jpg",
+        "small_instances": 76,
+        "all_instances": 127,
+        "P3_gate_mean": 0.5106227397918701,
+        "P2_gate_mean": 0.6187213063240051,
+        "channel_gate_mean": 0.49996960163116455
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000021_00800_d_0000003.jpg",
+        "small_instances": 7,
+        "all_instances": 7,
+        "P3_gate_mean": 0.48717838525772095,
+        "P2_gate_mean": 0.6212391257286072,
+        "channel_gate_mean": 0.49998214840888977
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000024_01000_d_0000014.jpg",
+        "small_instances": 12,
+        "all_instances": 12,
+        "P3_gate_mean": 0.4841901957988739,
+        "P2_gate_mean": 0.6167996525764465,
+        "channel_gate_mean": 0.49997836351394653
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000026_04500_d_0000033.jpg",
+        "small_instances": 24,
+        "all_instances": 47,
+        "P3_gate_mean": 0.5052476525306702,
+        "P2_gate_mean": 0.6082378029823303,
+        "channel_gate_mean": 0.4999777674674988
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000072_02834_d_0000003.jpg",
+        "small_instances": 21,
+        "all_instances": 73,
+        "P3_gate_mean": 0.5201332569122314,
+        "P2_gate_mean": 0.6146788597106934,
+        "channel_gate_mean": 0.49996981024742126
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000103_02544_d_0000029.jpg",
+        "small_instances": 0,
+        "all_instances": 14,
+        "P3_gate_mean": 0.49733850359916687,
+        "P2_gate_mean": 0.6178895831108093,
+        "channel_gate_mean": 0.4999886453151703
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000116_00819_d_0000084.jpg",
+        "small_instances": 24,
+        "all_instances": 36,
+        "P3_gate_mean": 0.5110987424850464,
+        "P2_gate_mean": 0.6077837347984314,
+        "channel_gate_mean": 0.49996626377105713
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000153_01201_d_0000001.jpg",
+        "small_instances": 57,
+        "all_instances": 59,
+        "P3_gate_mean": 0.5288545489311218,
+        "P2_gate_mean": 0.6183329224586487,
+        "channel_gate_mean": 0.4999748468399048
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000155_00801_d_0000001.jpg",
+        "small_instances": 86,
+        "all_instances": 106,
+        "P3_gate_mean": 0.5281251668930054,
+        "P2_gate_mean": 0.6250786185264587,
+        "channel_gate_mean": 0.4999783933162689
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000166_00558_d_0000118.jpg",
+        "small_instances": 19,
+        "all_instances": 71,
+        "P3_gate_mean": 0.522152841091156,
+        "P2_gate_mean": 0.6113420128822327,
+        "channel_gate_mean": 0.4999784827232361
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000194_00200_d_0000120.jpg",
+        "small_instances": 67,
+        "all_instances": 76,
+        "P3_gate_mean": 0.5089494585990906,
+        "P2_gate_mean": 0.6129229664802551,
+        "channel_gate_mean": 0.49997055530548096
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000213_03920_d_0000243.jpg",
+        "small_instances": 98,
+        "all_instances": 164,
+        "P3_gate_mean": 0.5417913198471069,
+        "P2_gate_mean": 0.6204661726951599,
+        "channel_gate_mean": 0.4999728202819824
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000215_02667_d_0000262.jpg",
+        "small_instances": 48,
+        "all_instances": 83,
+        "P3_gate_mean": 0.5198161005973816,
+        "P2_gate_mean": 0.6170995235443115,
+        "channel_gate_mean": 0.4999742805957794
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000242_01139_d_0000006.jpg",
+        "small_instances": 65,
+        "all_instances": 72,
+        "P3_gate_mean": 0.5127796530723572,
+        "P2_gate_mean": 0.6197947263717651,
+        "channel_gate_mean": 0.4999695420265198
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000242_06010_d_0000017.jpg",
+        "small_instances": 40,
+        "all_instances": 41,
+        "P3_gate_mean": 0.5085164308547974,
+        "P2_gate_mean": 0.6200940012931824,
+        "channel_gate_mean": 0.49997130036354065
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000244_04400_d_0000010.jpg",
+        "small_instances": 78,
+        "all_instances": 101,
+        "P3_gate_mean": 0.5202266573905945,
+        "P2_gate_mean": 0.6198461651802063,
+        "channel_gate_mean": 0.4999706745147705
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000249_02073_d_0000007.jpg",
+        "small_instances": 61,
+        "all_instances": 67,
+        "P3_gate_mean": 0.5070609450340271,
+        "P2_gate_mean": 0.6279481649398804,
+        "channel_gate_mean": 0.4999772012233734
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000269_00601_d_0000351.jpg",
+        "small_instances": 72,
+        "all_instances": 93,
+        "P3_gate_mean": 0.5049232840538025,
+        "P2_gate_mean": 0.6165120601654053,
+        "channel_gate_mean": 0.49997472763061523
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000271_03001_d_0000387.jpg",
+        "small_instances": 44,
+        "all_instances": 56,
+        "P3_gate_mean": 0.5010079145431519,
+        "P2_gate_mean": 0.6092252135276794,
+        "channel_gate_mean": 0.49996739625930786
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000271_06601_d_0000405.jpg",
+        "small_instances": 42,
+        "all_instances": 105,
+        "P3_gate_mean": 0.5240494608879089,
+        "P2_gate_mean": 0.6216663718223572,
+        "channel_gate_mean": 0.4999748170375824
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000276_01401_d_0000514.jpg",
+        "small_instances": 18,
+        "all_instances": 25,
+        "P3_gate_mean": 0.4962467551231384,
+        "P2_gate_mean": 0.611735463142395,
+        "channel_gate_mean": 0.4999818801879883
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000276_03801_d_0000526.jpg",
+        "small_instances": 42,
+        "all_instances": 64,
+        "P3_gate_mean": 0.5112079977989197,
+        "P2_gate_mean": 0.608545184135437,
+        "channel_gate_mean": 0.49996891617774963
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000277_00001_d_0000539.jpg",
+        "small_instances": 65,
+        "all_instances": 85,
+        "P3_gate_mean": 0.5123885273933411,
+        "P2_gate_mean": 0.6211261749267578,
+        "channel_gate_mean": 0.49996811151504517
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000277_03401_d_0000555.jpg",
+        "small_instances": 72,
+        "all_instances": 103,
+        "P3_gate_mean": 0.5141133069992065,
+        "P2_gate_mean": 0.622002363204956,
+        "channel_gate_mean": 0.4999818205833435
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000280_00801_d_0000616.jpg",
+        "small_instances": 46,
+        "all_instances": 70,
+        "P3_gate_mean": 0.5124981999397278,
+        "P2_gate_mean": 0.6239330768585205,
+        "channel_gate_mean": 0.49997663497924805
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000280_03201_d_0000628.jpg",
+        "small_instances": 52,
+        "all_instances": 82,
+        "P3_gate_mean": 0.5228773951530457,
+        "P2_gate_mean": 0.6197551488876343,
+        "channel_gate_mean": 0.4999702572822571
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000287_01001_d_0000764.jpg",
+        "small_instances": 49,
+        "all_instances": 71,
+        "P3_gate_mean": 0.504622757434845,
+        "P2_gate_mean": 0.6119571924209595,
+        "channel_gate_mean": 0.49998247623443604
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000287_03401_d_0000776.jpg",
+        "small_instances": 12,
+        "all_instances": 56,
+        "P3_gate_mean": 0.503983736038208,
+        "P2_gate_mean": 0.6113442778587341,
+        "channel_gate_mean": 0.49997177720069885
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000289_01401_d_0000818.jpg",
+        "small_instances": 9,
+        "all_instances": 39,
+        "P3_gate_mean": 0.5110489726066589,
+        "P2_gate_mean": 0.6030347943305969,
+        "channel_gate_mean": 0.499977171421051
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000289_04001_d_0000831.jpg",
+        "small_instances": 61,
+        "all_instances": 80,
+        "P3_gate_mean": 0.5249248743057251,
+        "P2_gate_mean": 0.606705904006958,
+        "channel_gate_mean": 0.4999750256538391
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000289_06201_d_0000842.jpg",
+        "small_instances": 39,
+        "all_instances": 79,
+        "P3_gate_mean": 0.5133927464485168,
+        "P2_gate_mean": 0.6085861325263977,
+        "channel_gate_mean": 0.49997568130493164
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000291_01201_d_0000874.jpg",
+        "small_instances": 135,
+        "all_instances": 212,
+        "P3_gate_mean": 0.535354495048523,
+        "P2_gate_mean": 0.6328217387199402,
+        "channel_gate_mean": 0.4999610185623169
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000291_04001_d_0000888.jpg",
+        "small_instances": 45,
+        "all_instances": 108,
+        "P3_gate_mean": 0.5233315825462341,
+        "P2_gate_mean": 0.6294645071029663,
+        "channel_gate_mean": 0.49996960163116455
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000295_01200_d_0000027.jpg",
+        "small_instances": 182,
+        "all_instances": 200,
+        "P3_gate_mean": 0.506549596786499,
+        "P2_gate_mean": 0.6264539361000061,
+        "channel_gate_mean": 0.49997150897979736
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000301_00001_d_0000156.jpg",
+        "small_instances": 65,
+        "all_instances": 96,
+        "P3_gate_mean": 0.5200347304344177,
+        "P2_gate_mean": 0.6193511486053467,
+        "channel_gate_mean": 0.4999735355377197
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000312_02201_d_0000425.jpg",
+        "small_instances": 41,
+        "all_instances": 78,
+        "P3_gate_mean": 0.5189945101737976,
+        "P2_gate_mean": 0.6178886890411377,
+        "channel_gate_mean": 0.4999812841415405
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000316_00801_d_0000523.jpg",
+        "small_instances": 22,
+        "all_instances": 27,
+        "P3_gate_mean": 0.493337482213974,
+        "P2_gate_mean": 0.6263197064399719,
+        "channel_gate_mean": 0.49998724460601807
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000327_00601_d_0000714.jpg",
+        "small_instances": 58,
+        "all_instances": 84,
+        "P3_gate_mean": 0.5000774264335632,
+        "P2_gate_mean": 0.6047464609146118,
+        "channel_gate_mean": 0.4999695122241974
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000327_03601_d_0000729.jpg",
+        "small_instances": 47,
+        "all_instances": 60,
+        "P3_gate_mean": 0.49927234649658203,
+        "P2_gate_mean": 0.6181811094284058,
+        "channel_gate_mean": 0.49998390674591064
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000330_01401_d_0000807.jpg",
+        "small_instances": 111,
+        "all_instances": 161,
+        "P3_gate_mean": 0.526524543762207,
+        "P2_gate_mean": 0.6279249787330627,
+        "channel_gate_mean": 0.4999774098396301
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000330_04601_d_0000823.jpg",
+        "small_instances": 48,
+        "all_instances": 62,
+        "P3_gate_mean": 0.49868762493133545,
+        "P2_gate_mean": 0.6154235601425171,
+        "channel_gate_mean": 0.4999726116657257
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000333_03529_d_0000019.jpg",
+        "small_instances": 55,
+        "all_instances": 95,
+        "P3_gate_mean": 0.49562180042266846,
+        "P2_gate_mean": 0.6098530888557434,
+        "channel_gate_mean": 0.49996843934059143
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000335_02549_d_0000056.jpg",
+        "small_instances": 74,
+        "all_instances": 87,
+        "P3_gate_mean": 0.5054814219474792,
+        "P2_gate_mean": 0.617319643497467,
+        "channel_gate_mean": 0.4999803304672241
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000335_06861_d_0000078.jpg",
+        "small_instances": 10,
+        "all_instances": 24,
+        "P3_gate_mean": 0.5126497745513916,
+        "P2_gate_mean": 0.6109859943389893,
+        "channel_gate_mean": 0.49998176097869873
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000356_01177_d_0000635.jpg",
+        "small_instances": 58,
+        "all_instances": 88,
+        "P3_gate_mean": 0.5200970768928528,
+        "P2_gate_mean": 0.6174994111061096,
+        "channel_gate_mean": 0.49997687339782715
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000356_03921_d_0000649.jpg",
+        "small_instances": 49,
+        "all_instances": 72,
+        "P3_gate_mean": 0.5199170708656311,
+        "P2_gate_mean": 0.6201927661895752,
+        "channel_gate_mean": 0.4999783933162689
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000359_01177_d_0000705.jpg",
+        "small_instances": 20,
+        "all_instances": 59,
+        "P3_gate_mean": 0.5254073739051819,
+        "P2_gate_mean": 0.618665337562561,
+        "channel_gate_mean": 0.49998360872268677
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000360_00785_d_0000717.jpg",
+        "small_instances": 26,
+        "all_instances": 59,
+        "P3_gate_mean": 0.5142724514007568,
+        "P2_gate_mean": 0.6115859746932983,
+        "channel_gate_mean": 0.4999742805957794
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000360_05293_d_0000740.jpg",
+        "small_instances": 46,
+        "all_instances": 70,
+        "P3_gate_mean": 0.5127495527267456,
+        "P2_gate_mean": 0.6088375449180603,
+        "channel_gate_mean": 0.49998149275779724
+      },
+      {
+        "image": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val/images/0000364_01765_d_0000782.jpg",
+        "small_instances": 60,
+        "all_instances": 81,
+        "P3_gate_mean": 0.5367245674133301,
+        "P2_gate_mean": 0.6190176010131836,
+        "channel_gate_mean": 0.4999646246433258
+      }
+    ]
+  },
+  "finished_at": "2026-09-11T13:25:17"
+}

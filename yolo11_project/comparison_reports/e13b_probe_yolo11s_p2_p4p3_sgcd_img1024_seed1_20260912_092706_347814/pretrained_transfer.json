@@ -1,0 +1,23 @@
+{
+  "source": "/root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt",
+  "source_sha256": "8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512",
+  "loaded_tensors": 623,
+  "verified_tensor_equality": true,
+  "new_tensors": [
+    "model.28.semantic_adapter.channel_selector.0.bias",
+    "model.28.semantic_adapter.channel_selector.0.weight",
+    "model.28.semantic_adapter.channel_selector.2.bias",
+    "model.28.semantic_adapter.channel_selector.2.weight",
+    "model.28.semantic_adapter.gain",
+    "model.28.semantic_adapter.source_project.0.weight",
+    "model.28.semantic_adapter.source_project.1.bias",
+    "model.28.semantic_adapter.source_project.1.weight",
+    "model.28.semantic_adapter.source_project.3.weight",
+    "model.28.semantic_adapter.spatial_selector.0.weight",
+    "model.28.semantic_adapter.spatial_selector.1.bias",
+    "model.28.semantic_adapter.spatial_selector.1.weight",
+    "model.28.semantic_adapter.spatial_selector.3.bias",
+    "model.28.semantic_adapter.spatial_selector.3.weight"
+  ],
+  "initialization": "E10a-exact; the P4->P3 SGCD residual gain is zero"
+}

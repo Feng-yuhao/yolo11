@@ -1,0 +1,18 @@
+{
+  "status": "installed_and_checked",
+  "time": "2026-09-09T12:06:30",
+  "experiment": "E8b_clean_P3SDE_on_frozen_E1_with_TAL2",
+  "source": "/root/autodl-tmp/yolo11_src",
+  "project": "/root/autodl-tmp/yolo11_project",
+  "module_sha256": "1523918c73932fc456ea841d7856d1a4c18e597ede73dc2a13ba4b0956672cbe",
+  "tasks_sha256": "85a5c39faa11d7d07da0ff483db98fa3d9bb553187b15467712e1f151bce0797",
+  "modules_init_sha256": "0650190ba6245103820a6cc7e3b0d6c5b97f3c72b79f8e8ecb7a27d4c876071d",
+  "tal2_sha256": "835cdd95821c181f8f7b942388c1e194cd6b0ca19dbdb61635cd8ce329c2ccec",
+  "project_files": [
+    "/root/autodl-tmp/yolo11_project/p2_tal_chunked_vgpu32.py",
+    "/root/autodl-tmp/yolo11_project/run_yolo11_p3sde_clean.sh",
+    "/root/autodl-tmp/yolo11_project/yolo11s-p2-p3sde.yaml",
+    "/root/autodl-tmp/yolo11_project/yolo11s_p2_p3sde_img1024_seed1.py"
+  ],
+  "check_stdout": "E8b-clean registered model build/forward/backward checks passed"
+}

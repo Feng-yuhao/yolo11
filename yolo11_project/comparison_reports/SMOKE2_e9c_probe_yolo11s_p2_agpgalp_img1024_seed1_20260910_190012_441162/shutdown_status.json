@@ -1,0 +1,11 @@
+{
+  "time": "2026-09-10T19:11:11",
+  "enabled": false,
+  "reason": "failed_or_interrupted",
+  "command": [
+    "/bin/bash",
+    "-c",
+    "/usr/bin/shutdown"
+  ],
+  "status": "disabled"
+}

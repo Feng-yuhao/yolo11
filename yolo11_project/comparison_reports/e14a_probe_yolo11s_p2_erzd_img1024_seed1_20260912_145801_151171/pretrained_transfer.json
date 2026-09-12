@@ -1,0 +1,8 @@
+{
+  "source": "/root/autodl-tmp/yolo11_project/runs/e1_yolo11s_p2add_img1024_seed1/weights/best.pt",
+  "source_sha256": "d1bbacf76cb838f8f441ad08fc56bf1d7fe377a57d28dcffc6e00c886af7c371",
+  "loaded_tensors": 563,
+  "verified_tensor_equality": true,
+  "new_model_parameters": 0,
+  "initialization": "exact frozen E1 best.pt; ER-ZD has no inference parameters"
+}

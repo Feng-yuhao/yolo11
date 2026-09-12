@@ -1,0 +1,443 @@
+{
+  "status": "completed",
+  "purpose": "D9b zero-training causal and routing audit of frozen E9b PGALP",
+  "revision": "d9b_pgalp_causal_routing_audit_v1",
+  "started_at": "2026-09-10T18:12:41",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D9B_E9B_PGALP_20260910_181241_009010",
+  "images": 548,
+  "automatic_shutdown": false,
+  "environment": {
+    "python": "3.10.21",
+    "ultralytics": "8.3.0",
+    "torch": "2.5.1+cu121",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA vGPU-32GB"
+  },
+  "weights": {
+    "path": "/root/autodl-tmp/yolo11_project/runs/e9b_yolo11s_p2_pgalp_img1024_seed1/weights/best.pt",
+    "sha256": "dbb13a2f9a2525d7452ebfe8984d463376e17794e0a6c293082ddc47e5498527"
+  },
+  "protocol": {
+    "data": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019.yaml",
+    "imgsz": 1024,
+    "prediction_batch": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 500,
+    "half": false,
+    "modes": [
+      "normal",
+      "identity",
+      "p3_zero",
+      "p3_shuffle",
+      "force3",
+      "force5",
+      "force7"
+    ],
+    "note": "COCO area evaluation on converted YOLO labels; not official VisDrone ignore-region evaluation."
+  },
+  "learned_state": {
+    "layer_scale_mean": 0.1555795669555664,
+    "layer_scale_std": 0.11896498501300812,
+    "layer_scale_min": 0.01068115234375,
+    "layer_scale_max": 0.6796875,
+    "router_output_weight_l2": 0.9221230745315552,
+    "router_output_bias": [
+      -0.0164031982421875,
+      -0.0105438232421875,
+      -0.032562255859375,
+      0.0430908203125
+    ]
+  },
+  "dataset": {
+    "train_images": 6471,
+    "val_images": 548,
+    "validation_instances": 38759,
+    "validation_label_sha256": "9fcd8057313d2916d73303246707859dac41897e480aa0dd910ff419fde5dd6c",
+    "duplicate_validation_labels_removed": 0,
+    "class_names": {
+      "0": "pedestrian",
+      "1": "people",
+      "2": "bicycle",
+      "3": "car",
+      "4": "van",
+      "5": "truck",
+      "6": "tricycle",
+      "7": "awning-tricycle",
+      "8": "bus",
+      "9": "motor"
+    },
+    "class_counts": {
+      "0": 8844,
+      "1": 5125,
+      "2": 1287,
+      "3": 14064,
+      "4": 1975,
+      "5": 750,
+      "6": 1045,
+      "7": 532,
+      "8": 251,
+      "9": 4886
+    }
+  },
+  "modes": {
+    "normal": {
+      "AP_all": 0.31274600585509366,
+      "AR_all": 0.45088634897997965,
+      "AP_small": 0.22849729254392792,
+      "AR_small": 0.366876356265314,
+      "AP_medium": 0.42209176304104845,
+      "AR_medium": 0.5684985998082357,
+      "AP_large": 0.5191761884786478,
+      "AR_large": 0.6453567979958764,
+      "AP50": 0.5053555921683978,
+      "AP75": 0.3211361163300774,
+      "prediction_count": 240732,
+      "max_det": 500,
+      "seconds": 31.647678889334202,
+      "peak_memory": {
+        "allocated_GiB": 1.3785738945007324,
+        "reserved_GiB": 2.232421875
+      }
+    },
+    "identity": {
+      "AP_all": 0.31127403773456247,
+      "AR_all": 0.4516758794375034,
+      "AP_small": 0.22783559243903143,
+      "AR_small": 0.3688811050003562,
+      "AP_medium": 0.42067317424554157,
+      "AR_medium": 0.5684123206390315,
+      "AP_large": 0.5190761768463138,
+      "AR_large": 0.645139159703341,
+      "AP50": 0.505936236062734,
+      "AP75": 0.32003945705574555,
+      "prediction_count": 246383,
+      "max_det": 500,
+      "seconds": 14.476344089955091,
+      "peak_memory": {
+        "allocated_GiB": 1.1242384910583496,
+        "reserved_GiB": 1.55078125
+      }
+    },
+    "p3_zero": {
+      "AP_all": 0.3111816828277133,
+      "AR_all": 0.44880589120667547,
+      "AP_small": 0.2257633295133239,
+      "AR_small": 0.36255577027933866,
+      "AP_medium": 0.422048152017678,
+      "AR_medium": 0.5688570471982264,
+      "AP_large": 0.5191758474075348,
+      "AR_large": 0.6453567979958764,
+      "AP50": 0.5022830293791003,
+      "AP75": 0.31957722145720746,
+      "prediction_count": 241879,
+      "max_det": 500,
+      "seconds": 15.164376128464937,
+      "peak_memory": {
+        "allocated_GiB": 1.4103121757507324,
+        "reserved_GiB": 2.232421875
+      }
+    },
+    "p3_shuffle": {
+      "AP_all": 0.3109167704926348,
+      "AR_all": 0.44880338994364743,
+      "AP_small": 0.22559833390703468,
+      "AR_small": 0.3621480149244644,
+      "AP_medium": 0.4218653014040922,
+      "AR_medium": 0.5693814080277955,
+      "AP_large": 0.5191760250001443,
+      "AR_large": 0.6453567979958764,
+      "AP50": 0.5023427961460214,
+      "AP75": 0.31970984999750224,
+      "prediction_count": 240790,
+      "max_det": 500,
+      "seconds": 15.780201621353626,
+      "peak_memory": {
+        "allocated_GiB": 1.4103121757507324,
+        "reserved_GiB": 2.23046875
+      }
+    },
+    "force3": {
+      "AP_all": 0.312727296490717,
+      "AR_all": 0.45098348813889827,
+      "AP_small": 0.2286385994072576,
+      "AR_small": 0.3675017233012363,
+      "AP_medium": 0.42211963908119415,
+      "AR_medium": 0.5683391324196466,
+      "AP_large": 0.5191028954350576,
+      "AR_large": 0.6452926131435015,
+      "AP50": 0.506072235182258,
+      "AP75": 0.3207346533787773,
+      "prediction_count": 243543,
+      "max_det": 500,
+      "seconds": 14.975243154913187,
+      "peak_memory": {
+        "allocated_GiB": 1.2540621757507324,
+        "reserved_GiB": 2.005859375
+      }
+    },
+    "force5": {
+      "AP_all": 0.3127048086877664,
+      "AR_all": 0.45108214716672584,
+      "AP_small": 0.22833795060726267,
+      "AR_small": 0.36718679922052083,
+      "AP_medium": 0.42218512725759233,
+      "AR_medium": 0.5688269039183492,
+      "AP_large": 0.5191028954350576,
+      "AR_large": 0.6452926131435015,
+      "AP50": 0.5053035159128336,
+      "AP75": 0.3211532207014046,
+      "prediction_count": 241860,
+      "max_det": 500,
+      "seconds": 15.131467580795288,
+      "peak_memory": {
+        "allocated_GiB": 1.2540621757507324,
+        "reserved_GiB": 2.005859375
+      }
+    },
+    "force7": {
+      "AP_all": 0.3119112840068174,
+      "AR_all": 0.45000877032605374,
+      "AP_small": 0.22674799133531365,
+      "AR_small": 0.36501568420329383,
+      "AP_medium": 0.42164232664866863,
+      "AR_medium": 0.5684656088653386,
+      "AP_large": 0.5191757012598904,
+      "AR_large": 0.6453567979958764,
+      "AP50": 0.5034787796217199,
+      "AP75": 0.320446167268123,
+      "prediction_count": 239928,
+      "max_det": 500,
+      "seconds": 15.251279465854168,
+      "peak_memory": {
+        "allocated_GiB": 1.2540621757507324,
+        "reserved_GiB": 2.00390625
+      }
+    }
+  },
+  "routing_audit": {
+    "images": 548,
+    "regions": {
+      "all": {
+        "pixels": 20201472,
+        "reliability_mean": 0.43329601650640365,
+        "reliability_std": 0.182491768945307,
+        "reliability_q05": 0.0875,
+        "reliability_q50": 0.4875,
+        "reliability_q95": 0.6575,
+        "scale_weight_mean_3_5_7": [
+          0.30099901561001,
+          0.2739203201443412,
+          0.4250806642544148
+        ],
+        "scale_winner_fraction_3_5_7": [
+          0.44283148646354675,
+          0.03195222467184067,
+          0.525216281414032
+        ],
+        "normalized_scale_entropy_mean": 0.9097876129403818,
+        "mean_absolute_feature_change": 0.015193579907507939,
+        "change_to_feature_l1_ratio": 0.04365136274897276
+      },
+      "foreground_all": {
+        "pixels": 2339535,
+        "reliability_mean": 0.3112209474601392,
+        "reliability_std": 0.2033801115404627,
+        "reliability_q05": 0.0575,
+        "reliability_q50": 0.2875,
+        "reliability_q95": 0.6275,
+        "scale_weight_mean_3_5_7": [
+          0.24408641804361297,
+          0.201385661228477,
+          0.5545279207446329
+        ],
+        "scale_winner_fraction_3_5_7": [
+          0.22391586005687714,
+          0.01503845863044262,
+          0.7610456943511963
+        ],
+        "normalized_scale_entropy_mean": 0.7887270455525092,
+        "mean_absolute_feature_change": 0.024047217593992507,
+        "change_to_feature_l1_ratio": 0.06632862806519843
+      },
+      "small": {
+        "pixels": 503999,
+        "reliability_mean": 0.2410108726458173,
+        "reliability_std": 0.24038870032850637,
+        "reliability_q05": 0.0525,
+        "reliability_q50": 0.1275,
+        "reliability_q95": 0.8075,
+        "scale_weight_mean_3_5_7": [
+          0.1973864061313563,
+          0.08991553742842326,
+          0.7126980564357221
+        ],
+        "scale_winner_fraction_3_5_7": [
+          0.14962132275104523,
+          0.00017063526320271194,
+          0.850208044052124
+        ],
+        "normalized_scale_entropy_mean": 0.5497687938658193,
+        "mean_absolute_feature_change": 0.03743904418296138,
+        "change_to_feature_l1_ratio": 0.08592855751107464
+      },
+      "medium": {
+        "pixels": 1228734,
+        "reliability_mean": 0.2704491509971328,
+        "reliability_std": 0.18272055183162647,
+        "reliability_q05": 0.0575,
+        "reliability_q50": 0.2325,
+        "reliability_q95": 0.5975,
+        "scale_weight_mean_3_5_7": [
+          0.22595469867759846,
+          0.19287535571857792,
+          0.5811699456027519
+        ],
+        "scale_winner_fraction_3_5_7": [
+          0.14328406751155853,
+          0.006299166474491358,
+          0.8504167795181274
+        ],
+        "normalized_scale_entropy_mean": 0.790407622594086,
+        "mean_absolute_feature_change": 0.024312894550371632,
+        "change_to_feature_l1_ratio": 0.06894578569897544
+      },
+      "large": {
+        "pixels": 682410,
+        "reliability_mean": 0.43049834432661965,
+        "reliability_std": 0.15451172564801857,
+        "reliability_q05": 0.1225,
+        "reliability_q50": 0.4725,
+        "reliability_q95": 0.6125,
+        "scale_weight_mean_3_5_7": [
+          0.30779267612968403,
+          0.29169633355476354,
+          0.40051099036927873
+        ],
+        "scale_winner_fraction_3_5_7": [
+          0.41671428084373474,
+          0.04029102623462677,
+          0.5429946780204773
+        ],
+        "normalized_scale_entropy_mean": 0.947667182339463,
+        "mean_absolute_feature_change": 0.014547635653840856,
+        "change_to_feature_l1_ratio": 0.04383369324657713
+      },
+      "near_object": {
+        "pixels": 2800659,
+        "reliability_mean": 0.3962974760081011,
+        "reliability_std": 0.19012074008588387,
+        "reliability_q05": 0.0775,
+        "reliability_q50": 0.4325,
+        "reliability_q95": 0.6225,
+        "scale_weight_mean_3_5_7": [
+          0.27618669393983303,
+          0.2600186351113816,
+          0.46379467094244603
+        ],
+        "scale_winner_fraction_3_5_7": [
+          0.37677133083343506,
+          0.031405821442604065,
+          0.5918228626251221
+        ],
+        "normalized_scale_entropy_mean": 0.8787914694956113,
+        "mean_absolute_feature_change": 0.012713303205181237,
+        "change_to_feature_l1_ratio": 0.04321186940066736
+      },
+      "background": {
+        "pixels": 15061596,
+        "reliability_mean": 0.4591355462079567,
+        "reliability_std": 0.1681833063014443,
+        "reliability_q05": 0.1175,
+        "reliability_q50": 0.5125,
+        "reliability_q95": 0.6625,
+        "scale_weight_mean_3_5_7": [
+          0.31445177617669307,
+          0.2877717455307281,
+          0.3977764783029531
+        ],
+        "scale_winner_fraction_3_5_7": [
+          0.48911210894584656,
+          0.034680455923080444,
+          0.476207435131073
+        ],
+        "normalized_scale_entropy_mean": 0.9343553601499155,
+        "mean_absolute_feature_change": 0.014279777529147001,
+        "change_to_feature_l1_ratio": 0.0401304752051535
+      }
+    },
+    "small_vs_background_reliability_auc_approx": 0.21095344142220596,
+    "all_foreground_vs_background_reliability_auc_approx": 0.28123461558311436,
+    "small_minus_background_reliability_mean": -0.2181246735621394,
+    "foreground_minus_background_reliability_mean": -0.14791459874781754
+  },
+  "deltas_from_normal": {
+    "identity": {
+      "AP_all": -0.0014719681205311863,
+      "AP50": 0.000580643894336208,
+      "AP75": -0.0010966592743318349,
+      "AP_small": -0.0006617001048964954,
+      "AP_medium": -0.001418588795506881,
+      "AP_large": -0.00010001163233397392,
+      "AR_all": 0.0007895304575237794
+    },
+    "p3_zero": {
+      "AP_all": -0.0015643230273803543,
+      "AP50": -0.0030725627892974616,
+      "AP75": -0.0015588948728699203,
+      "AP_small": -0.0027339630306040252,
+      "AP_medium": -4.361102337047118e-05,
+      "AP_large": -3.410711130191757e-07,
+      "AR_all": -0.0020804577733041785
+    },
+    "p3_shuffle": {
+      "AP_all": -0.0018292353624588809,
+      "AP50": -0.003012796022376363,
+      "AP75": -0.0014262663325751435,
+      "AP_small": -0.0028989586368932396,
+      "AP_medium": -0.00022646163695627664,
+      "AP_large": -1.6347850351206006e-07,
+      "AR_all": -0.0020829590363322104
+    },
+    "force3": {
+      "AP_all": -1.870936437664561e-05,
+      "AP50": 0.0007166430138602076,
+      "AP75": -0.0004014629513000578,
+      "AP_small": 0.00014130686332966547,
+      "AP_medium": 2.787604014570233e-05,
+      "AP_large": -7.329304359016131e-05,
+      "AR_all": 9.713915891862435e-05
+    },
+    "force5": {
+      "AP_all": -4.119716732725598e-05,
+      "AP50": -5.207625556413742e-05,
+      "AP75": 1.7104371327236745e-05,
+      "AP_small": -0.00015934193666525265,
+      "AP_medium": 9.336421654387861e-05,
+      "AP_large": -7.329304359016131e-05,
+      "AR_all": 0.00019579818674619887
+    },
+    "force7": {
+      "AP_all": -0.0008347218482762653,
+      "AP50": -0.0018768125466778196,
+      "AP75": -0.0006899490619544091,
+      "AP_small": -0.0017493012086142734,
+      "AP_medium": -0.0004494363923798206,
+      "AP_large": -4.872187573390363e-07,
+      "AR_all": -0.0008775786539259034
+    }
+  },
+  "normal_reproduction_vs_frozen_e9b": {
+    "AP_all": 0.0,
+    "AP_small": 0.0,
+    "AP_medium": 0.0,
+    "AP_large": 0.0
+  },
+  "decision_signals": [
+    "PGALP has a measurable direct inference-time contribution in its co-adapted E9b checkpoint.",
+    "P3 intervention measurably changes AP_all; P3 guidance is being used.",
+    "Small-object reliability exceeds background by <0.05; foreground protection is weak.",
+    "Small-object features receive nearly as much smoothing as background; target protection is insufficient."
+  ],
+  "finished_at": "2026-09-10T18:23:59"
+}

@@ -1,0 +1,8 @@
+{
+  "source": "/root/autodl-tmp/yolo11_project/runs/e9b_yolo11s_p2_pgalp_img1024_seed1/weights/best.pt",
+  "source_sha256": "dbb13a2f9a2525d7452ebfe8984d463376e17794e0a6c293082ddc47e5498527",
+  "loaded_tensors": 593,
+  "strict": true,
+  "verified_tensor_equality": true,
+  "note": "AGPGALP has the same persistent state and inference equation as E9b PGALP."
+}

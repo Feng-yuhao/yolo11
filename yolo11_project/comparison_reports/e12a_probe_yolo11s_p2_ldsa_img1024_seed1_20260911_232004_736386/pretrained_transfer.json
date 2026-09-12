@@ -1,0 +1,27 @@
+{
+  "source": "/root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt",
+  "source_sha256": "8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512",
+  "loaded_tensors": 617,
+  "verified_tensor_equality": true,
+  "removed_inactive_E10a_tensors": [
+    "model.26.channel_gate.1.bias",
+    "model.26.channel_gate.1.weight",
+    "model.26.p4_descriptor.bias",
+    "model.26.p4_descriptor.weight",
+    "model.26.p5_descriptor.bias",
+    "model.26.p5_descriptor.weight"
+  ],
+  "new_attention_tensors": [
+    "model.26.local_attention.gain",
+    "model.26.local_attention.key.weight",
+    "model.26.local_attention.output.weight",
+    "model.26.local_attention.query.weight",
+    "model.26.local_attention.query_norm.bias",
+    "model.26.local_attention.query_norm.weight",
+    "model.26.local_attention.relative_bias",
+    "model.26.local_attention.semantic_norm.bias",
+    "model.26.local_attention.semantic_norm.weight",
+    "model.26.local_attention.value.weight"
+  ],
+  "new_attention_initialization": "local-attention residual gain is exactly zero"
+}

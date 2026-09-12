@@ -1,0 +1,16 @@
+{
+  "source": "/root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt",
+  "source_sha256": "8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512",
+  "loaded_tensors": 623,
+  "verified_tensor_equality": true,
+  "new_parameters": [
+    "model.26.spatial_gate.contrast_logit",
+    "model.26.spatial_gate.log_temperature",
+    "model.27.spatial_gate.contrast_logit",
+    "model.27.spatial_gate.log_temperature"
+  ],
+  "new_parameter_initialization": {
+    "contrast_logit": -8.0,
+    "log_temperature": 0.0
+  }
+}

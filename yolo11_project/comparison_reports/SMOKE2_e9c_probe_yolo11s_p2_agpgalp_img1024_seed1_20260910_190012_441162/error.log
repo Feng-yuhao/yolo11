@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/yolo11_project/yolo11s_p2_img1024_seed1.py", line 877, in main
+    save_smoke_gate(report)
+  File "/root/autodl-tmp/yolo11_project/yolo11s_p2_img1024_seed1.py", line 522, in save_smoke_gate
+    status='smoke_passed', signature=smoke_signature(report),
+  File "/root/autodl-tmp/yolo11_project/yolo11s_p2_img1024_seed1.py", line 511, in smoke_signature
+    architecture=report['p2_architecture'],
+KeyError: 'p2_architecture'

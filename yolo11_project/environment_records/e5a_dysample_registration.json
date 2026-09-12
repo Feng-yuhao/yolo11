@@ -1,0 +1,17 @@
+{
+  "status": "installed_and_checked",
+  "time": "2026-09-07T15:04:23",
+  "experiment": "E5a_standard_DySample_control",
+  "novelty_claim": "none",
+  "source": "/root/autodl-tmp/yolo11_src",
+  "project": "/root/autodl-tmp/yolo11_project",
+  "module_sha256": "37736bc47906dc7b25b1148a96d6377ea4f30e9f0be11192b51c212931fb9dda",
+  "tasks_sha256": "3b336a374b84ceb0be249b3a8b2e0744e04ebd47badf70eecd649372e735120a",
+  "modules_init_sha256": "73e0b3c2f67dd410622ceca7ef6afa8e613f74face98a4d0e676ca8ccbe13629",
+  "project_files": [
+    "/root/autodl-tmp/yolo11_project/run_yolo11_dysample_neck.sh",
+    "/root/autodl-tmp/yolo11_project/yolo11s-p2-dysample-neck.yaml",
+    "/root/autodl-tmp/yolo11_project/yolo11s_p2_dysample_neck_img1024_seed1.py"
+  ],
+  "check_stdout": "E5a registered model build/forward/backward/geometry checks passed"
+}

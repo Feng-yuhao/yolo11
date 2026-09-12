@@ -1,0 +1,3107 @@
+{
+  "status": "completed",
+  "purpose": "D12 E1 versus E10a TIDE-like VisDrone error decomposition",
+  "started_at": "2026-09-11T21:50:37",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D12_E1_E10A_ERRORS_20260911_215037_149044",
+  "automatic_shutdown": false,
+  "protocol": {
+    "imgsz": 1024,
+    "predict_batch": 4,
+    "predict_conf": 0.001,
+    "nms_iou": 0.7,
+    "max_det": 500,
+    "thresholds": [
+      0.05,
+      0.1,
+      0.25
+    ],
+    "primary_threshold": 0.1,
+    "match_iou": 0.5,
+    "localization_iou": 0.1,
+    "limit_images": 0,
+    "evaluation_note": "Converted YOLO labels/COCO area, not official VisDrone ignore regions"
+  },
+  "weights": {
+    "E1": {
+      "path": "/root/autodl-tmp/yolo11_project/runs/e1_yolo11s_p2add_img1024_seed1/weights/best.pt",
+      "sha256": "d1bbacf76cb838f8f441ad08fc56bf1d7fe377a57d28dcffc6e00c886af7c371"
+    },
+    "E10a": {
+      "path": "/root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt",
+      "sha256": "8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512"
+    }
+  },
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.5.1+cu121",
+    "ultralytics": "8.3.0",
+    "ultralytics_source": "/root/autodl-tmp/yolo11_src/ultralytics/__init__.py",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA vGPU-32GB"
+  },
+  "structural_check": {
+    "E1": {
+      "layers": 27,
+      "strides": [
+        4.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "classes": 10,
+      "prediction_shape": [
+        1,
+        14,
+        5440
+      ]
+    },
+    "E10a": {
+      "layers": 29,
+      "strides": [
+        4.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "classes": 10,
+      "prediction_shape": [
+        1,
+        14,
+        5440
+      ]
+    }
+  },
+  "updated_at": "2026-09-11T21:54:31",
+  "dataset": {
+    "train_images": 6471,
+    "val_images": 548,
+    "validation_instances": 38759,
+    "validation_label_sha256": "9fcd8057313d2916d73303246707859dac41897e480aa0dd910ff419fde5dd6c",
+    "duplicate_validation_labels_removed": 0,
+    "class_names": {
+      "0": "pedestrian",
+      "1": "people",
+      "2": "bicycle",
+      "3": "car",
+      "4": "van",
+      "5": "truck",
+      "6": "tricycle",
+      "7": "awning-tricycle",
+      "8": "bus",
+      "9": "motor"
+    },
+    "class_counts": {
+      "0": 8844,
+      "1": 5125,
+      "2": 1287,
+      "3": 14064,
+      "4": 1975,
+      "5": 750,
+      "6": 1045,
+      "7": 532,
+      "8": 251,
+      "9": 4886
+    }
+  },
+  "evaluated_images": 548,
+  "models": {
+    "E1": {
+      "prediction": {
+        "seconds": 17.283854492008686,
+        "prediction_count": 244200
+      },
+      "area_metrics": {
+        "AP_all": 0.3112897138616605,
+        "AR_all": 0.448873753893199,
+        "AP_small": 0.2263379898701116,
+        "AR_small": 0.3656655402438562,
+        "AP_medium": 0.41899938246218577,
+        "AR_medium": 0.5654620032054231,
+        "AP_large": 0.5069767637643231,
+        "AR_large": 0.6212172576374567,
+        "max_det": 500
+      },
+      "thresholds": {
+        "0.05": {
+          "ground_truth": {
+            "small": 26586,
+            "medium": 11105,
+            "large": 1068,
+            "all": 38759
+          },
+          "matched_ground_truth": {
+            "small": 19473,
+            "medium": 9836,
+            "large": 975,
+            "all": 30284
+          },
+          "missed_ground_truth": {
+            "small": 7113,
+            "medium": 1269,
+            "large": 93,
+            "all": 8475
+          },
+          "miss_rate": {
+            "small": 0.26754682915820355,
+            "medium": 0.11427285006753715,
+            "large": 0.08707865168539326,
+            "all": 0.21865889212827988
+          },
+          "false_positive": {
+            "small": 46951,
+            "medium": 10023,
+            "large": 380,
+            "all": 57354
+          },
+          "precision_like": {
+            "small": 0.2931621100806937,
+            "medium": 0.4952918072410494,
+            "large": 0.7195571955719557,
+            "all": 0.34555786302745384
+          },
+          "recall_like": {
+            "small": 0.7324531708417964,
+            "medium": 0.8857271499324628,
+            "large": 0.9129213483146067,
+            "all": 0.7813411078717201
+          },
+          "errors": {
+            "true_positive": {
+              "small": {
+                "count": 19473,
+                "mean_score": 0.4747056170503344,
+                "mean_iou": 0.7497254735757827
+              },
+              "medium": {
+                "count": 9836,
+                "mean_score": 0.7037197739922113,
+                "mean_iou": 0.8570307767827856
+              },
+              "large": {
+                "count": 975,
+                "mean_score": 0.8390047312241334,
+                "mean_iou": 0.9246399985153915
+              },
+              "all": {
+                "count": 30284,
+                "mean_score": 0.5608162657096845,
+                "mean_iou": 0.790208785693073
+              },
+              "by_predicted_class": {
+                "car": 13036,
+                "pedestrian": 6672,
+                "motor": 3966,
+                "people": 3414,
+                "van": 1129,
+                "bicycle": 684,
+                "tricycle": 599,
+                "truck": 425,
+                "awning-tricycle": 186,
+                "bus": 173
+              },
+              "by_target_class": {
+                "car": 13036,
+                "pedestrian": 6672,
+                "motor": 3966,
+                "people": 3414,
+                "van": 1129,
+                "bicycle": 684,
+                "tricycle": 599,
+                "truck": 425,
+                "awning-tricycle": 186,
+                "bus": 173
+              }
+            },
+            "duplicate": {
+              "small": {
+                "count": 6893,
+                "mean_score": 0.14031264379222785,
+                "mean_iou": 0.6382685674336019
+              },
+              "medium": {
+                "count": 1654,
+                "mean_score": 0.15239811508928705,
+                "mean_iou": 0.6476788334479273
+              },
+              "large": {
+                "count": 38,
+                "mean_score": 0.223937854759003,
+                "mean_iou": 0.6672643900712746
+              },
+              "all": {
+                "count": 8585,
+                "mean_score": 0.14301120262065806,
+                "mean_iou": 0.6402099094543275
+              },
+              "by_predicted_class": {
+                "car": 2444,
+                "pedestrian": 2302,
+                "people": 1731,
+                "motor": 1467,
+                "bicycle": 276,
+                "van": 123,
+                "tricycle": 120,
+                "truck": 86,
+                "awning-tricycle": 20,
+                "bus": 16
+              },
+              "by_target_class": {
+                "car": 2444,
+                "pedestrian": 2302,
+                "people": 1731,
+                "motor": 1467,
+                "bicycle": 276,
+                "van": 123,
+                "tricycle": 120,
+                "truck": 86,
+                "awning-tricycle": 20,
+                "bus": 16
+              }
+            },
+            "classification": {
+              "small": {
+                "count": 8041,
+                "mean_score": 0.22952393547280514,
+                "mean_iou": 0.6836699992589129
+              },
+              "medium": {
+                "count": 2396,
+                "mean_score": 0.3485246593978424,
+                "mean_iou": 0.7639584625451037
+              },
+              "large": {
+                "count": 152,
+                "mean_score": 0.5305809037465798,
+                "mean_iou": 0.8609941621309718
+              },
+              "all": {
+                "count": 10589,
+                "mean_score": 0.26077206029120187,
+                "mean_iou": 0.7043824773767997
+              },
+              "by_predicted_class": {
+                "people": 2101,
+                "motor": 1994,
+                "car": 1935,
+                "pedestrian": 1427,
+                "bicycle": 1214,
+                "van": 875,
+                "tricycle": 493,
+                "awning-tricycle": 268,
+                "truck": 251,
+                "bus": 31
+              },
+              "by_target_class": {
+                "pedestrian": 2331,
+                "people": 1643,
+                "motor": 1584,
+                "van": 1520,
+                "car": 975,
+                "tricycle": 780,
+                "bicycle": 691,
+                "awning-tricycle": 507,
+                "truck": 466,
+                "bus": 92
+              }
+            },
+            "localization": {
+              "small": {
+                "count": 7663,
+                "mean_score": 0.14230325606542343,
+                "mean_iou": 0.34796219233624154
+              },
+              "medium": {
+                "count": 1726,
+                "mean_score": 0.15930140552651634,
+                "mean_iou": 0.3332065651965166
+              },
+              "large": {
+                "count": 64,
+                "mean_score": 0.24218948400812224,
+                "mean_iou": 0.29319172978445085
+              },
+              "all": {
+                "count": 9453,
+                "mean_score": 0.14608316980266867,
+                "mean_iou": 0.3448971841857636
+              },
+              "by_predicted_class": {
+                "car": 3120,
+                "pedestrian": 2671,
+                "motor": 1587,
+                "people": 1388,
+                "bicycle": 347,
+                "tricycle": 124,
+                "truck": 103,
+                "van": 79,
+                "awning-tricycle": 21,
+                "bus": 13
+              },
+              "by_target_class": {
+                "car": 3120,
+                "pedestrian": 2671,
+                "motor": 1587,
+                "people": 1388,
+                "bicycle": 347,
+                "tricycle": 124,
+                "truck": 103,
+                "van": 79,
+                "awning-tricycle": 21,
+                "bus": 13
+              }
+            },
+            "classification_localization": {
+              "small": {
+                "count": 4961,
+                "mean_score": 0.13865750913621436,
+                "mean_iou": 0.3181962786939521
+              },
+              "medium": {
+                "count": 1821,
+                "mean_score": 0.14794452825560142,
+                "mean_iou": 0.273761083205889
+              },
+              "large": {
+                "count": 63,
+                "mean_score": 0.17652958158462767,
+                "mean_iou": 0.22141270879685446
+              },
+              "all": {
+                "count": 6845,
+                "mean_score": 0.14147673519620763,
+                "mean_iou": 0.3054842471545395
+              },
+              "by_predicted_class": {
+                "motor": 2031,
+                "people": 1201,
+                "pedestrian": 1157,
+                "car": 859,
+                "bicycle": 801,
+                "tricycle": 361,
+                "van": 174,
+                "truck": 139,
+                "awning-tricycle": 89,
+                "bus": 33
+              },
+              "by_target_class": {
+                "pedestrian": 1518,
+                "people": 1130,
+                "motor": 974,
+                "tricycle": 865,
+                "car": 864,
+                "van": 486,
+                "awning-tricycle": 368,
+                "bicycle": 298,
+                "truck": 241,
+                "bus": 101
+              }
+            },
+            "background": {
+              "small": {
+                "count": 19393,
+                "mean_score": 0.1501211739668533,
+                "mean_iou": 0.008980066343262528
+              },
+              "medium": {
+                "count": 2426,
+                "mean_score": 0.19967771480005828,
+                "mean_iou": 0.013714453500128948
+              },
+              "large": {
+                "count": 63,
+                "mean_score": 0.23493092359294968,
+                "mean_iou": 0.008627620890312679
+              },
+              "all": {
+                "count": 21882,
+                "mean_score": 0.15585955173341026,
+                "mean_iou": 0.009503940723073428
+              },
+              "by_predicted_class": {
+                "pedestrian": 6604,
+                "car": 5753,
+                "motor": 4664,
+                "people": 2080,
+                "bicycle": 1227,
+                "tricycle": 668,
+                "truck": 327,
+                "van": 317,
+                "awning-tricycle": 185,
+                "bus": 57
+              },
+              "by_target_class": {}
+            }
+          },
+          "missed_by_class": {
+            "pedestrian": 2172,
+            "people": 1711,
+            "car": 1028,
+            "motor": 920,
+            "van": 846,
+            "bicycle": 603,
+            "tricycle": 446,
+            "awning-tricycle": 346,
+            "truck": 325,
+            "bus": 78
+          },
+          "top_class_confusions": [
+            {
+              "predicted": "people",
+              "target": "pedestrian",
+              "count": 1856
+            },
+            {
+              "predicted": "car",
+              "target": "van",
+              "count": 1763
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "people",
+              "count": 1430
+            },
+            {
+              "predicted": "motor",
+              "target": "pedestrian",
+              "count": 1081
+            },
+            {
+              "predicted": "motor",
+              "target": "people",
+              "count": 1020
+            },
+            {
+              "predicted": "bicycle",
+              "target": "motor",
+              "count": 937
+            },
+            {
+              "predicted": "people",
+              "target": "motor",
+              "count": 833
+            },
+            {
+              "predicted": "van",
+              "target": "car",
+              "count": 755
+            },
+            {
+              "predicted": "motor",
+              "target": "bicycle",
+              "count": 754
+            },
+            {
+              "predicted": "bicycle",
+              "target": "pedestrian",
+              "count": 689
+            },
+            {
+              "predicted": "motor",
+              "target": "tricycle",
+              "count": 670
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "motor",
+              "count": 482
+            },
+            {
+              "predicted": "car",
+              "target": "truck",
+              "count": 354
+            },
+            {
+              "predicted": "people",
+              "target": "tricycle",
+              "count": 346
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "car",
+              "count": 286
+            },
+            {
+              "predicted": "motor",
+              "target": "car",
+              "count": 235
+            },
+            {
+              "predicted": "tricycle",
+              "target": "awning-tricycle",
+              "count": 230
+            },
+            {
+              "predicted": "motor",
+              "target": "awning-tricycle",
+              "count": 227
+            },
+            {
+              "predicted": "tricycle",
+              "target": "motor",
+              "count": 213
+            },
+            {
+              "predicted": "bicycle",
+              "target": "people",
+              "count": 201
+            },
+            {
+              "predicted": "truck",
+              "target": "car",
+              "count": 199
+            },
+            {
+              "predicted": "car",
+              "target": "tricycle",
+              "count": 191
+            },
+            {
+              "predicted": "van",
+              "target": "truck",
+              "count": 184
+            },
+            {
+              "predicted": "car",
+              "target": "awning-tricycle",
+              "count": 155
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "tricycle",
+              "count": 147
+            },
+            {
+              "predicted": "tricycle",
+              "target": "car",
+              "count": 136
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "bicycle",
+              "count": 133
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "tricycle",
+              "count": 129
+            },
+            {
+              "predicted": "bicycle",
+              "target": "tricycle",
+              "count": 128
+            },
+            {
+              "predicted": "car",
+              "target": "bus",
+              "count": 115
+            }
+          ],
+          "confidence_threshold": 0.05,
+          "matching_rule": {
+            "order": "predictions sorted by descending confidence per image",
+            "true_positive": "highest-IoU unmatched same-class GT at IoU >= 0.50",
+            "duplicate": "same-class GT at IoU >= 0.50 already matched",
+            "classification": "different-class GT at IoU >= 0.50",
+            "localization": "same-class GT at 0.10 <= IoU < 0.50",
+            "classification_localization": "different-class GT at 0.10 <= IoU < 0.50",
+            "background": "maximum IoU against any GT < 0.10"
+          }
+        },
+        "0.10": {
+          "ground_truth": {
+            "small": 26586,
+            "medium": 11105,
+            "large": 1068,
+            "all": 38759
+          },
+          "matched_ground_truth": {
+            "small": 18233,
+            "medium": 9666,
+            "large": 970,
+            "all": 28869
+          },
+          "missed_ground_truth": {
+            "small": 8353,
+            "medium": 1439,
+            "large": 98,
+            "all": 9890
+          },
+          "miss_rate": {
+            "small": 0.3141879184533213,
+            "medium": 0.12958126969833408,
+            "large": 0.09176029962546817,
+            "all": 0.255166541964447
+          },
+          "false_positive": {
+            "small": 25735,
+            "medium": 6039,
+            "large": 297,
+            "all": 32071
+          },
+          "precision_like": {
+            "small": 0.41468795487627363,
+            "medium": 0.6154727793696275,
+            "large": 0.7655880031570639,
+            "all": 0.47372825730226453
+          },
+          "recall_like": {
+            "small": 0.6858120815466787,
+            "medium": 0.8704187303016659,
+            "large": 0.9082397003745318,
+            "all": 0.744833458035553
+          },
+          "errors": {
+            "true_positive": {
+              "small": {
+                "count": 18233,
+                "mean_score": 0.5019896034945491,
+                "mean_iou": 0.7560481623870469
+              },
+              "medium": {
+                "count": 9666,
+                "mean_score": 0.7148327306167337,
+                "mean_iou": 0.8599305747539199
+              },
+              "large": {
+                "count": 970,
+                "mean_score": 0.8429536896268117,
+                "mean_iou": 0.9256469333701056
+              },
+              "all": {
+                "count": 28869,
+                "mean_score": 0.5847107517958873,
+                "mean_iou": 0.7965288927826827
+              },
+              "by_predicted_class": {
+                "car": 12803,
+                "pedestrian": 6234,
+                "motor": 3690,
+                "people": 3166,
+                "van": 1113,
+                "bicycle": 592,
+                "tricycle": 550,
+                "truck": 396,
+                "bus": 166,
+                "awning-tricycle": 159
+              },
+              "by_target_class": {
+                "car": 12803,
+                "pedestrian": 6234,
+                "motor": 3690,
+                "people": 3166,
+                "van": 1113,
+                "bicycle": 592,
+                "tricycle": 550,
+                "truck": 396,
+                "bus": 166,
+                "awning-tricycle": 159
+              }
+            },
+            "duplicate": {
+              "small": {
+                "count": 3855,
+                "mean_score": 0.19445852323226273,
+                "mean_iou": 0.6468341107325728
+              },
+              "medium": {
+                "count": 964,
+                "mean_score": 0.21037688868359905,
+                "mean_iou": 0.6536234570403305
+              },
+              "large": {
+                "count": 33,
+                "mean_score": 0.2480754962924755,
+                "mean_iou": 0.6644314199119865
+              },
+              "all": {
+                "count": 4852,
+                "mean_score": 0.19798586544291302,
+                "mean_iou": 0.6483027094637367
+              },
+              "by_predicted_class": {
+                "car": 1478,
+                "pedestrian": 1282,
+                "people": 944,
+                "motor": 783,
+                "bicycle": 163,
+                "van": 72,
+                "tricycle": 66,
+                "truck": 47,
+                "bus": 9,
+                "awning-tricycle": 8
+              },
+              "by_target_class": {
+                "car": 1478,
+                "pedestrian": 1282,
+                "people": 944,
+                "motor": 783,
+                "bicycle": 163,
+                "van": 72,
+                "tricycle": 66,
+                "truck": 47,
+                "bus": 9,
+                "awning-tricycle": 8
+              }
+            },
+            "classification": {
+              "small": {
+                "count": 5670,
+                "mean_score": 0.2955100989938308,
+                "mean_iou": 0.6996105066718911
+              },
+              "medium": {
+                "count": 1901,
+                "mean_score": 0.42118723760665183,
+                "mean_iou": 0.7892391910215458
+              },
+              "large": {
+                "count": 136,
+                "mean_score": 0.5839878145934028,
+                "mean_iou": 0.8767689719436234
+              },
+              "all": {
+                "count": 7707,
+                "mean_score": 0.33160004447514835,
+                "mean_iou": 0.724844408349023
+              },
+              "by_predicted_class": {
+                "car": 1594,
+                "people": 1459,
+                "motor": 1308,
+                "pedestrian": 998,
+                "bicycle": 801,
+                "van": 749,
+                "tricycle": 365,
+                "awning-tricycle": 225,
+                "truck": 187,
+                "bus": 21
+              },
+              "by_target_class": {
+                "pedestrian": 1593,
+                "van": 1261,
+                "people": 1098,
+                "motor": 1063,
+                "car": 801,
+                "tricycle": 570,
+                "bicycle": 497,
+                "awning-tricycle": 382,
+                "truck": 369,
+                "bus": 73
+              }
+            },
+            "localization": {
+              "small": {
+                "count": 3899,
+                "mean_score": 0.21124402907535828,
+                "mean_iou": 0.35867004650534196
+              },
+              "medium": {
+                "count": 910,
+                "mean_score": 0.23906441248216473,
+                "mean_iou": 0.33381273128606964
+              },
+              "large": {
+                "count": 46,
+                "mean_score": 0.31082487705609074,
+                "mean_iou": 0.28655523117878
+              },
+              "all": {
+                "count": 4855,
+                "mean_score": 0.21740206571949988,
+                "mean_iou": 0.35332762871861434
+              },
+              "by_predicted_class": {
+                "car": 1619,
+                "pedestrian": 1414,
+                "motor": 754,
+                "people": 750,
+                "bicycle": 161,
+                "tricycle": 52,
+                "truck": 50,
+                "van": 39,
+                "awning-tricycle": 10,
+                "bus": 6
+              },
+              "by_target_class": {
+                "car": 1619,
+                "pedestrian": 1414,
+                "motor": 754,
+                "people": 750,
+                "bicycle": 161,
+                "tricycle": 52,
+                "truck": 50,
+                "van": 39,
+                "awning-tricycle": 10,
+                "bus": 6
+              }
+            },
+            "classification_localization": {
+              "small": {
+                "count": 2446,
+                "mean_score": 0.2090361709824519,
+                "mean_iou": 0.3265788839055391
+              },
+              "medium": {
+                "count": 887,
+                "mean_score": 0.23036091216958496,
+                "mean_iou": 0.27752796753973874
+              },
+              "large": {
+                "count": 39,
+                "mean_score": 0.23938098492530677,
+                "mean_iou": 0.23377380578444587
+              },
+              "all": {
+                "count": 3372,
+                "mean_score": 0.21499657821162102,
+                "mean_iou": 0.31260273892831886
+              },
+              "by_predicted_class": {
+                "motor": 1023,
+                "people": 575,
+                "pedestrian": 549,
+                "car": 451,
+                "bicycle": 364,
+                "tricycle": 185,
+                "van": 101,
+                "truck": 54,
+                "awning-tricycle": 47,
+                "bus": 23
+              },
+              "by_target_class": {
+                "pedestrian": 728,
+                "people": 631,
+                "motor": 464,
+                "tricycle": 415,
+                "car": 397,
+                "van": 233,
+                "awning-tricycle": 176,
+                "bicycle": 151,
+                "truck": 126,
+                "bus": 51
+              }
+            },
+            "background": {
+              "small": {
+                "count": 9865,
+                "mean_score": 0.22773868050511212,
+                "mean_iou": 0.00866820869547391
+              },
+              "medium": {
+                "count": 1377,
+                "mean_score": 0.29795166309016635,
+                "mean_iou": 0.013390768006254342
+              },
+              "large": {
+                "count": 43,
+                "mean_score": 0.3130193311114644,
+                "mean_iou": 0.009887026792350704
+              },
+              "all": {
+                "count": 11285,
+                "mean_score": 0.23663104603419433,
+                "mean_iou": 0.009249101327207212
+              },
+              "by_predicted_class": {
+                "pedestrian": 3368,
+                "car": 3137,
+                "motor": 2255,
+                "people": 1097,
+                "bicycle": 586,
+                "tricycle": 362,
+                "van": 176,
+                "truck": 169,
+                "awning-tricycle": 102,
+                "bus": 33
+              },
+              "by_target_class": {}
+            }
+          },
+          "missed_by_class": {
+            "pedestrian": 2610,
+            "people": 1959,
+            "car": 1261,
+            "motor": 1196,
+            "van": 862,
+            "bicycle": 695,
+            "tricycle": 495,
+            "awning-tricycle": 373,
+            "truck": 354,
+            "bus": 85
+          },
+          "top_class_confusions": [
+            {
+              "predicted": "car",
+              "target": "van",
+              "count": 1363
+            },
+            {
+              "predicted": "people",
+              "target": "pedestrian",
+              "count": 1252
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "people",
+              "count": 967
+            },
+            {
+              "predicted": "van",
+              "target": "car",
+              "count": 627
+            },
+            {
+              "predicted": "motor",
+              "target": "people",
+              "count": 593
+            },
+            {
+              "predicted": "bicycle",
+              "target": "motor",
+              "count": 592
+            },
+            {
+              "predicted": "motor",
+              "target": "pedestrian",
+              "count": 575
+            },
+            {
+              "predicted": "motor",
+              "target": "bicycle",
+              "count": 512
+            },
+            {
+              "predicted": "people",
+              "target": "motor",
+              "count": 478
+            },
+            {
+              "predicted": "motor",
+              "target": "tricycle",
+              "count": 404
+            },
+            {
+              "predicted": "bicycle",
+              "target": "pedestrian",
+              "count": 378
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "motor",
+              "count": 269
+            },
+            {
+              "predicted": "car",
+              "target": "truck",
+              "count": 247
+            },
+            {
+              "predicted": "tricycle",
+              "target": "awning-tricycle",
+              "count": 178
+            },
+            {
+              "predicted": "people",
+              "target": "tricycle",
+              "count": 171
+            },
+            {
+              "predicted": "van",
+              "target": "truck",
+              "count": 139
+            },
+            {
+              "predicted": "tricycle",
+              "target": "motor",
+              "count": 133
+            },
+            {
+              "predicted": "car",
+              "target": "tricycle",
+              "count": 133
+            },
+            {
+              "predicted": "motor",
+              "target": "awning-tricycle",
+              "count": 124
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "car",
+              "count": 121
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "tricycle",
+              "count": 121
+            },
+            {
+              "predicted": "car",
+              "target": "awning-tricycle",
+              "count": 115
+            },
+            {
+              "predicted": "truck",
+              "target": "car",
+              "count": 112
+            },
+            {
+              "predicted": "motor",
+              "target": "car",
+              "count": 111
+            },
+            {
+              "predicted": "bicycle",
+              "target": "people",
+              "count": 101
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "bicycle",
+              "count": 81
+            },
+            {
+              "predicted": "tricycle",
+              "target": "car",
+              "count": 78
+            },
+            {
+              "predicted": "truck",
+              "target": "van",
+              "count": 69
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "tricycle",
+              "count": 69
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "car",
+              "count": 64
+            }
+          ],
+          "confidence_threshold": 0.1,
+          "matching_rule": {
+            "order": "predictions sorted by descending confidence per image",
+            "true_positive": "highest-IoU unmatched same-class GT at IoU >= 0.50",
+            "duplicate": "same-class GT at IoU >= 0.50 already matched",
+            "classification": "different-class GT at IoU >= 0.50",
+            "localization": "same-class GT at 0.10 <= IoU < 0.50",
+            "classification_localization": "different-class GT at 0.10 <= IoU < 0.50",
+            "background": "maximum IoU against any GT < 0.10"
+          }
+        },
+        "0.25": {
+          "ground_truth": {
+            "small": 26586,
+            "medium": 11105,
+            "large": 1068,
+            "all": 38759
+          },
+          "matched_ground_truth": {
+            "small": 15428,
+            "medium": 9280,
+            "large": 957,
+            "all": 25665
+          },
+          "missed_ground_truth": {
+            "small": 11158,
+            "medium": 1825,
+            "large": 111,
+            "all": 13094
+          },
+          "miss_rate": {
+            "small": 0.41969457609268035,
+            "medium": 0.16434038721296712,
+            "large": 0.10393258426966293,
+            "all": 0.33783121339559846
+          },
+          "false_positive": {
+            "small": 8277,
+            "medium": 2750,
+            "large": 184,
+            "all": 11211
+          },
+          "precision_like": {
+            "small": 0.6508331575616958,
+            "medium": 0.771404821280133,
+            "large": 0.838737949167397,
+            "all": 0.6959811259355678
+          },
+          "recall_like": {
+            "small": 0.5803054239073197,
+            "medium": 0.8356596127870328,
+            "large": 0.8960674157303371,
+            "all": 0.6621687866044016
+          },
+          "errors": {
+            "true_positive": {
+              "small": {
+                "count": 15428,
+                "mean_score": 0.5619295066850835,
+                "mean_iou": 0.7693530555323719
+              },
+              "medium": {
+                "count": 9280,
+                "mean_score": 0.7372406081746108,
+                "mean_iou": 0.8659720302596778
+              },
+              "large": {
+                "count": 957,
+                "mean_score": 0.8520038832940527,
+                "mean_iou": 0.9284020951384914
+              },
+              "all": {
+                "count": 25665,
+                "mean_score": 0.6361351642045691,
+                "mean_iou": 0.8102193721648425
+              },
+              "by_predicted_class": {
+                "car": 12177,
+                "pedestrian": 5208,
+                "motor": 3105,
+                "people": 2619,
+                "van": 1045,
+                "bicycle": 450,
+                "tricycle": 439,
+                "truck": 344,
+                "bus": 156,
+                "awning-tricycle": 122
+              },
+              "by_target_class": {
+                "car": 12177,
+                "pedestrian": 5208,
+                "motor": 3105,
+                "people": 2619,
+                "van": 1045,
+                "bicycle": 450,
+                "tricycle": 439,
+                "truck": 344,
+                "bus": 156,
+                "awning-tricycle": 122
+              }
+            },
+            "duplicate": {
+              "small": {
+                "count": 839,
+                "mean_score": 0.3327650125887738,
+                "mean_iou": 0.6596001691986706
+              },
+              "medium": {
+                "count": 270,
+                "mean_score": 0.3562642903239639,
+                "mean_iou": 0.6664449634634432
+              },
+              "large": {
+                "count": 10,
+                "mean_score": 0.451485750079155,
+                "mean_iou": 0.7181925038727168
+              },
+              "all": {
+                "count": 1119,
+                "mean_score": 0.33949603346759877,
+                "mean_iou": 0.6617753414937807
+              },
+              "by_predicted_class": {
+                "car": 391,
+                "pedestrian": 320,
+                "people": 189,
+                "motor": 134,
+                "van": 26,
+                "bicycle": 23,
+                "tricycle": 20,
+                "truck": 11,
+                "bus": 4,
+                "awning-tricycle": 1
+              },
+              "by_target_class": {
+                "car": 391,
+                "pedestrian": 320,
+                "people": 189,
+                "motor": 134,
+                "van": 26,
+                "bicycle": 23,
+                "tricycle": 20,
+                "truck": 11,
+                "bus": 4,
+                "awning-tricycle": 1
+              }
+            },
+            "classification": {
+              "small": {
+                "count": 2796,
+                "mean_score": 0.43215910312273303,
+                "mean_iou": 0.7309869844303627
+              },
+              "medium": {
+                "count": 1297,
+                "mean_score": 0.5405895872674911,
+                "mean_iou": 0.8268209618983945
+              },
+              "large": {
+                "count": 118,
+                "mean_score": 0.6482110632173086,
+                "mean_iou": 0.8968327168499558
+              },
+              "all": {
+                "count": 4211,
+                "mean_score": 0.4716101763183899,
+                "mean_iou": 0.7651514264160068
+              },
+              "by_predicted_class": {
+                "car": 1128,
+                "people": 702,
+                "motor": 570,
+                "van": 568,
+                "pedestrian": 434,
+                "bicycle": 361,
+                "tricycle": 197,
+                "awning-tricycle": 133,
+                "truck": 106,
+                "bus": 12
+              },
+              "by_target_class": {
+                "van": 915,
+                "pedestrian": 732,
+                "car": 565,
+                "people": 471,
+                "motor": 455,
+                "tricycle": 297,
+                "bicycle": 259,
+                "truck": 246,
+                "awning-tricycle": 229,
+                "bus": 42
+              }
+            },
+            "localization": {
+              "small": {
+                "count": 1034,
+                "mean_score": 0.3699158724952251,
+                "mean_iou": 0.37296365192891456
+              },
+              "medium": {
+                "count": 290,
+                "mean_score": 0.4167772486292083,
+                "mean_iou": 0.3239937091084046
+              },
+              "large": {
+                "count": 23,
+                "mean_score": 0.46258443205252936,
+                "mean_iou": 0.272896002640317
+              },
+              "all": {
+                "count": 1347,
+                "mean_score": 0.3815871241274992,
+                "mean_iou": 0.36071210081415156
+              },
+              "by_predicted_class": {
+                "car": 464,
+                "pedestrian": 379,
+                "people": 217,
+                "motor": 214,
+                "bicycle": 33,
+                "van": 12,
+                "truck": 12,
+                "tricycle": 11,
+                "awning-tricycle": 3,
+                "bus": 2
+              },
+              "by_target_class": {
+                "car": 464,
+                "pedestrian": 379,
+                "people": 217,
+                "motor": 214,
+                "bicycle": 33,
+                "van": 12,
+                "truck": 12,
+                "tricycle": 11,
+                "awning-tricycle": 3,
+                "bus": 2
+              }
+            },
+            "classification_localization": {
+              "small": {
+                "count": 637,
+                "mean_score": 0.37227067061271546,
+                "mean_iou": 0.3337299719930287
+              },
+              "medium": {
+                "count": 274,
+                "mean_score": 0.3959653648364283,
+                "mean_iou": 0.28939749236378326
+              },
+              "large": {
+                "count": 14,
+                "mean_score": 0.39687011923108784,
+                "mean_iou": 0.21943032742593216
+              },
+              "all": {
+                "count": 925,
+                "mean_score": 0.3796617392591528,
+                "mean_iou": 0.3188680320553503
+              },
+              "by_predicted_class": {
+                "motor": 284,
+                "people": 155,
+                "car": 141,
+                "pedestrian": 130,
+                "bicycle": 94,
+                "tricycle": 57,
+                "van": 35,
+                "awning-tricycle": 15,
+                "truck": 11,
+                "bus": 3
+              },
+              "by_target_class": {
+                "people": 212,
+                "pedestrian": 189,
+                "motor": 132,
+                "tricycle": 93,
+                "car": 91,
+                "van": 71,
+                "awning-tricycle": 49,
+                "bicycle": 38,
+                "truck": 34,
+                "bus": 16
+              }
+            },
+            "background": {
+              "small": {
+                "count": 2971,
+                "mean_score": 0.3999499238749138,
+                "mean_iou": 0.007336740603756739
+              },
+              "medium": {
+                "count": 619,
+                "mean_score": 0.4703279856911384,
+                "mean_iou": 0.011290881191988848
+              },
+              "large": {
+                "count": 19,
+                "mean_score": 0.5070356758017289,
+                "mean_iou": 0.00445646746910411
+              },
+              "all": {
+                "count": 3609,
+                "mean_score": 0.4125846286548674,
+                "mean_iou": 0.007999774085207906
+              },
+              "by_predicted_class": {
+                "car": 1183,
+                "pedestrian": 1049,
+                "motor": 629,
+                "people": 311,
+                "bicycle": 135,
+                "tricycle": 123,
+                "truck": 67,
+                "van": 61,
+                "awning-tricycle": 35,
+                "bus": 16
+              },
+              "by_target_class": {}
+            }
+          },
+          "missed_by_class": {
+            "pedestrian": 3636,
+            "people": 2506,
+            "car": 1887,
+            "motor": 1781,
+            "van": 930,
+            "bicycle": 837,
+            "tricycle": 606,
+            "awning-tricycle": 410,
+            "truck": 406,
+            "bus": 95
+          },
+          "top_class_confusions": [
+            {
+              "predicted": "car",
+              "target": "van",
+              "count": 917
+            },
+            {
+              "predicted": "people",
+              "target": "pedestrian",
+              "count": 614
+            },
+            {
+              "predicted": "van",
+              "target": "car",
+              "count": 471
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "people",
+              "count": 406
+            },
+            {
+              "predicted": "bicycle",
+              "target": "motor",
+              "count": 282
+            },
+            {
+              "predicted": "motor",
+              "target": "bicycle",
+              "count": 251
+            },
+            {
+              "predicted": "motor",
+              "target": "people",
+              "count": 227
+            },
+            {
+              "predicted": "people",
+              "target": "motor",
+              "count": 166
+            },
+            {
+              "predicted": "motor",
+              "target": "pedestrian",
+              "count": 152
+            },
+            {
+              "predicted": "car",
+              "target": "truck",
+              "count": 146
+            },
+            {
+              "predicted": "motor",
+              "target": "tricycle",
+              "count": 144
+            },
+            {
+              "predicted": "tricycle",
+              "target": "awning-tricycle",
+              "count": 111
+            },
+            {
+              "predicted": "bicycle",
+              "target": "pedestrian",
+              "count": 106
+            },
+            {
+              "predicted": "van",
+              "target": "truck",
+              "count": 86
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "tricycle",
+              "count": 78
+            },
+            {
+              "predicted": "car",
+              "target": "tricycle",
+              "count": 69
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "motor",
+              "count": 67
+            },
+            {
+              "predicted": "car",
+              "target": "awning-tricycle",
+              "count": 65
+            },
+            {
+              "predicted": "tricycle",
+              "target": "motor",
+              "count": 57
+            },
+            {
+              "predicted": "motor",
+              "target": "awning-tricycle",
+              "count": 51
+            },
+            {
+              "predicted": "people",
+              "target": "tricycle",
+              "count": 44
+            },
+            {
+              "predicted": "truck",
+              "target": "car",
+              "count": 43
+            },
+            {
+              "predicted": "truck",
+              "target": "van",
+              "count": 41
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "car",
+              "count": 36
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "car",
+              "count": 33
+            },
+            {
+              "predicted": "bicycle",
+              "target": "people",
+              "count": 33
+            },
+            {
+              "predicted": "car",
+              "target": "pedestrian",
+              "count": 32
+            },
+            {
+              "predicted": "motor",
+              "target": "car",
+              "count": 26
+            },
+            {
+              "predicted": "tricycle",
+              "target": "truck",
+              "count": 26
+            },
+            {
+              "predicted": "van",
+              "target": "awning-tricycle",
+              "count": 25
+            }
+          ],
+          "confidence_threshold": 0.25,
+          "matching_rule": {
+            "order": "predictions sorted by descending confidence per image",
+            "true_positive": "highest-IoU unmatched same-class GT at IoU >= 0.50",
+            "duplicate": "same-class GT at IoU >= 0.50 already matched",
+            "classification": "different-class GT at IoU >= 0.50",
+            "localization": "same-class GT at 0.10 <= IoU < 0.50",
+            "classification_localization": "different-class GT at 0.10 <= IoU < 0.50",
+            "background": "maximum IoU against any GT < 0.10"
+          }
+        }
+      }
+    },
+    "E10a": {
+      "prediction": {
+        "seconds": 15.951416436582804,
+        "prediction_count": 243002
+      },
+      "area_metrics": {
+        "AP_all": 0.31499942108659135,
+        "AR_all": 0.4501281156150888,
+        "AP_small": 0.22891708626301424,
+        "AR_small": 0.363907475808454,
+        "AP_medium": 0.4248485316225591,
+        "AR_medium": 0.5676186421387558,
+        "AP_large": 0.5663497620746415,
+        "AR_large": 0.7013756284909993,
+        "max_det": 500
+      },
+      "thresholds": {
+        "0.05": {
+          "ground_truth": {
+            "small": 26586,
+            "medium": 11105,
+            "large": 1068,
+            "all": 38759
+          },
+          "matched_ground_truth": {
+            "small": 19453,
+            "medium": 9808,
+            "large": 977,
+            "all": 30238
+          },
+          "missed_ground_truth": {
+            "small": 7133,
+            "medium": 1297,
+            "large": 91,
+            "all": 8521
+          },
+          "miss_rate": {
+            "small": 0.2682991047919958,
+            "medium": 0.11679423683025664,
+            "large": 0.0852059925093633,
+            "all": 0.21984571325369592
+          },
+          "false_positive": {
+            "small": 46024,
+            "medium": 9127,
+            "large": 352,
+            "all": 55503
+          },
+          "precision_like": {
+            "small": 0.2970966904409182,
+            "medium": 0.517982571956694,
+            "large": 0.7351392024078255,
+            "all": 0.3526667521955657
+          },
+          "recall_like": {
+            "small": 0.7317008952080042,
+            "medium": 0.8832057631697433,
+            "large": 0.9147940074906367,
+            "all": 0.780154286746304
+          },
+          "errors": {
+            "true_positive": {
+              "small": {
+                "count": 19453,
+                "mean_score": 0.47893286629092635,
+                "mean_iou": 0.7499125514537922
+              },
+              "medium": {
+                "count": 9808,
+                "mean_score": 0.7053919144747338,
+                "mean_iou": 0.8582096224603756
+              },
+              "large": {
+                "count": 977,
+                "mean_score": 0.8359414034102688,
+                "mean_iou": 0.9260808957412341
+              },
+              "all": {
+                "count": 30238,
+                "mean_score": 0.563922207032787,
+                "mean_iou": 0.790731856460785
+              },
+              "by_predicted_class": {
+                "car": 12999,
+                "pedestrian": 6715,
+                "motor": 3946,
+                "people": 3440,
+                "van": 1106,
+                "bicycle": 661,
+                "tricycle": 591,
+                "truck": 413,
+                "awning-tricycle": 195,
+                "bus": 172
+              },
+              "by_target_class": {
+                "car": 12999,
+                "pedestrian": 6715,
+                "motor": 3946,
+                "people": 3440,
+                "van": 1106,
+                "bicycle": 661,
+                "tricycle": 591,
+                "truck": 413,
+                "awning-tricycle": 195,
+                "bus": 172
+              }
+            },
+            "duplicate": {
+              "small": {
+                "count": 6806,
+                "mean_score": 0.14168173114733856,
+                "mean_iou": 0.638115656695849
+              },
+              "medium": {
+                "count": 1411,
+                "mean_score": 0.1514552984542453,
+                "mean_iou": 0.6463516654168258
+              },
+              "large": {
+                "count": 38,
+                "mean_score": 0.17557519066490626,
+                "mean_iou": 0.6532925995953089
+              },
+              "all": {
+                "count": 8255,
+                "mean_score": 0.14350831563331226,
+                "mean_iou": 0.6395932741562315
+              },
+              "by_predicted_class": {
+                "pedestrian": 2429,
+                "car": 2172,
+                "people": 1651,
+                "motor": 1380,
+                "bicycle": 293,
+                "tricycle": 104,
+                "van": 103,
+                "truck": 94,
+                "awning-tricycle": 16,
+                "bus": 13
+              },
+              "by_target_class": {
+                "pedestrian": 2429,
+                "car": 2172,
+                "people": 1651,
+                "motor": 1380,
+                "bicycle": 293,
+                "tricycle": 104,
+                "van": 103,
+                "truck": 94,
+                "awning-tricycle": 16,
+                "bus": 13
+              }
+            },
+            "classification": {
+              "small": {
+                "count": 7667,
+                "mean_score": 0.233068508744819,
+                "mean_iou": 0.6841482958922843
+              },
+              "medium": {
+                "count": 2212,
+                "mean_score": 0.3591419491465549,
+                "mean_iou": 0.7596198337734277
+              },
+              "large": {
+                "count": 157,
+                "mean_score": 0.5140325104117773,
+                "mean_iou": 0.8573742982836314
+              },
+              "all": {
+                "count": 10036,
+                "mean_score": 0.265251230788497,
+                "mean_iou": 0.7034926087827301
+              },
+              "by_predicted_class": {
+                "people": 2057,
+                "motor": 1947,
+                "car": 1823,
+                "pedestrian": 1440,
+                "bicycle": 1049,
+                "van": 733,
+                "tricycle": 452,
+                "awning-tricycle": 293,
+                "truck": 211,
+                "bus": 31
+              },
+              "by_target_class": {
+                "pedestrian": 2286,
+                "people": 1584,
+                "motor": 1501,
+                "van": 1417,
+                "car": 884,
+                "tricycle": 743,
+                "bicycle": 644,
+                "awning-tricycle": 447,
+                "truck": 445,
+                "bus": 85
+              }
+            },
+            "localization": {
+              "small": {
+                "count": 7586,
+                "mean_score": 0.14399587276919346,
+                "mean_iou": 0.34678229180924547
+              },
+              "medium": {
+                "count": 1530,
+                "mean_score": 0.16288232106252823,
+                "mean_iou": 0.32957998073926065
+              },
+              "large": {
+                "count": 48,
+                "mean_score": 0.30337567914587754,
+                "mean_iou": 0.28888895926980745
+              },
+              "all": {
+                "count": 9164,
+                "mean_score": 0.14798392346702005,
+                "mean_iou": 0.3436069954431432
+              },
+              "by_predicted_class": {
+                "car": 3027,
+                "pedestrian": 2690,
+                "motor": 1465,
+                "people": 1293,
+                "bicycle": 357,
+                "tricycle": 116,
+                "truck": 100,
+                "van": 88,
+                "awning-tricycle": 26,
+                "bus": 2
+              },
+              "by_target_class": {
+                "car": 3027,
+                "pedestrian": 2690,
+                "motor": 1465,
+                "people": 1293,
+                "bicycle": 357,
+                "tricycle": 116,
+                "truck": 100,
+                "van": 88,
+                "awning-tricycle": 26,
+                "bus": 2
+              }
+            },
+            "classification_localization": {
+              "small": {
+                "count": 4894,
+                "mean_score": 0.14003475604508062,
+                "mean_iou": 0.3206286985934685
+              },
+              "medium": {
+                "count": 1737,
+                "mean_score": 0.14259633507041253,
+                "mean_iou": 0.2553608070929187
+              },
+              "large": {
+                "count": 50,
+                "mean_score": 0.1751793958246708,
+                "mean_iou": 0.2542471439110121
+              },
+              "all": {
+                "count": 6681,
+                "mean_score": 0.14096376289375312,
+                "mean_iou": 0.30316283940014765
+              },
+              "by_predicted_class": {
+                "motor": 2028,
+                "people": 1273,
+                "pedestrian": 1251,
+                "car": 762,
+                "bicycle": 673,
+                "tricycle": 311,
+                "van": 157,
+                "awning-tricycle": 106,
+                "truck": 94,
+                "bus": 26
+              },
+              "by_target_class": {
+                "pedestrian": 1548,
+                "people": 1104,
+                "motor": 921,
+                "car": 895,
+                "tricycle": 797,
+                "van": 468,
+                "awning-tricycle": 321,
+                "bicycle": 300,
+                "truck": 228,
+                "bus": 99
+              }
+            },
+            "background": {
+              "small": {
+                "count": 19071,
+                "mean_score": 0.15045927728023642,
+                "mean_iou": 0.00924807028508457
+              },
+              "medium": {
+                "count": 2237,
+                "mean_score": 0.21157833977128226,
+                "mean_iou": 0.013688149066813541
+              },
+              "large": {
+                "count": 59,
+                "mean_score": 0.28373096832784556,
+                "mean_iou": 0.014856936565311094
+              },
+              "all": {
+                "count": 21367,
+                "mean_score": 0.15722608462634388,
+                "mean_iou": 0.009728408158686893
+              },
+              "by_predicted_class": {
+                "pedestrian": 6418,
+                "car": 5520,
+                "motor": 4522,
+                "people": 2179,
+                "bicycle": 1258,
+                "tricycle": 575,
+                "van": 300,
+                "truck": 274,
+                "awning-tricycle": 262,
+                "bus": 59
+              },
+              "by_target_class": {}
+            }
+          },
+          "missed_by_class": {
+            "pedestrian": 2129,
+            "people": 1685,
+            "car": 1065,
+            "motor": 940,
+            "van": 869,
+            "bicycle": 626,
+            "tricycle": 454,
+            "awning-tricycle": 337,
+            "truck": 337,
+            "bus": 79
+          },
+          "top_class_confusions": [
+            {
+              "predicted": "people",
+              "target": "pedestrian",
+              "count": 1842
+            },
+            {
+              "predicted": "car",
+              "target": "van",
+              "count": 1615
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "people",
+              "count": 1444
+            },
+            {
+              "predicted": "motor",
+              "target": "pedestrian",
+              "count": 1140
+            },
+            {
+              "predicted": "motor",
+              "target": "people",
+              "count": 1006
+            },
+            {
+              "predicted": "people",
+              "target": "motor",
+              "count": 896
+            },
+            {
+              "predicted": "bicycle",
+              "target": "motor",
+              "count": 779
+            },
+            {
+              "predicted": "motor",
+              "target": "bicycle",
+              "count": 678
+            },
+            {
+              "predicted": "bicycle",
+              "target": "pedestrian",
+              "count": 650
+            },
+            {
+              "predicted": "van",
+              "target": "car",
+              "count": 642
+            },
+            {
+              "predicted": "motor",
+              "target": "tricycle",
+              "count": 629
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "motor",
+              "count": 467
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "car",
+              "count": 369
+            },
+            {
+              "predicted": "car",
+              "target": "truck",
+              "count": 357
+            },
+            {
+              "predicted": "people",
+              "target": "tricycle",
+              "count": 311
+            },
+            {
+              "predicted": "motor",
+              "target": "car",
+              "count": 271
+            },
+            {
+              "predicted": "motor",
+              "target": "awning-tricycle",
+              "count": 194
+            },
+            {
+              "predicted": "tricycle",
+              "target": "awning-tricycle",
+              "count": 188
+            },
+            {
+              "predicted": "tricycle",
+              "target": "motor",
+              "count": 179
+            },
+            {
+              "predicted": "car",
+              "target": "tricycle",
+              "count": 163
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "tricycle",
+              "count": 154
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "tricycle",
+              "count": 152
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "bicycle",
+              "count": 146
+            },
+            {
+              "predicted": "van",
+              "target": "truck",
+              "count": 145
+            },
+            {
+              "predicted": "bicycle",
+              "target": "people",
+              "count": 141
+            },
+            {
+              "predicted": "car",
+              "target": "awning-tricycle",
+              "count": 139
+            },
+            {
+              "predicted": "tricycle",
+              "target": "car",
+              "count": 131
+            },
+            {
+              "predicted": "truck",
+              "target": "car",
+              "count": 122
+            },
+            {
+              "predicted": "car",
+              "target": "bus",
+              "count": 111
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "car",
+              "count": 101
+            }
+          ],
+          "confidence_threshold": 0.05,
+          "matching_rule": {
+            "order": "predictions sorted by descending confidence per image",
+            "true_positive": "highest-IoU unmatched same-class GT at IoU >= 0.50",
+            "duplicate": "same-class GT at IoU >= 0.50 already matched",
+            "classification": "different-class GT at IoU >= 0.50",
+            "localization": "same-class GT at 0.10 <= IoU < 0.50",
+            "classification_localization": "different-class GT at 0.10 <= IoU < 0.50",
+            "background": "maximum IoU against any GT < 0.10"
+          }
+        },
+        "0.10": {
+          "ground_truth": {
+            "small": 26586,
+            "medium": 11105,
+            "large": 1068,
+            "all": 38759
+          },
+          "matched_ground_truth": {
+            "small": 18259,
+            "medium": 9645,
+            "large": 972,
+            "all": 28876
+          },
+          "missed_ground_truth": {
+            "small": 8327,
+            "medium": 1460,
+            "large": 96,
+            "all": 9883
+          },
+          "miss_rate": {
+            "small": 0.3132099601293914,
+            "medium": 0.13147230977037372,
+            "large": 0.0898876404494382,
+            "all": 0.25498593874970976
+          },
+          "false_positive": {
+            "small": 25171,
+            "medium": 5548,
+            "large": 276,
+            "all": 30995
+          },
+          "precision_like": {
+            "small": 0.4204236702740041,
+            "medium": 0.6348318304482328,
+            "large": 0.7788461538461539,
+            "all": 0.4823036194484809
+          },
+          "recall_like": {
+            "small": 0.6867900398706086,
+            "medium": 0.8685276902296263,
+            "large": 0.9101123595505618,
+            "all": 0.7450140612502902
+          },
+          "errors": {
+            "true_positive": {
+              "small": {
+                "count": 18259,
+                "mean_score": 0.5054274480899054,
+                "mean_iou": 0.7558694286693698
+              },
+              "medium": {
+                "count": 9645,
+                "mean_score": 0.7160665764307778,
+                "mean_iou": 0.861107091831372
+              },
+              "large": {
+                "count": 972,
+                "mean_score": 0.8398512290031822,
+                "mean_iou": 0.9269609974621592
+              },
+              "all": {
+                "count": 28876,
+                "mean_score": 0.5870410478923509,
+                "mean_iou": 0.796779466973294
+              },
+              "by_predicted_class": {
+                "car": 12752,
+                "pedestrian": 6299,
+                "motor": 3707,
+                "people": 3175,
+                "van": 1090,
+                "bicycle": 580,
+                "tricycle": 542,
+                "truck": 389,
+                "awning-tricycle": 175,
+                "bus": 167
+              },
+              "by_target_class": {
+                "car": 12752,
+                "pedestrian": 6299,
+                "motor": 3707,
+                "people": 3175,
+                "van": 1090,
+                "bicycle": 580,
+                "tricycle": 542,
+                "truck": 389,
+                "awning-tricycle": 175,
+                "bus": 167
+              }
+            },
+            "duplicate": {
+              "small": {
+                "count": 3837,
+                "mean_score": 0.1960163888134837,
+                "mean_iou": 0.6425389891631281
+              },
+              "medium": {
+                "count": 810,
+                "mean_score": 0.21153063306837905,
+                "mean_iou": 0.65459574326698
+              },
+              "large": {
+                "count": 26,
+                "mean_score": 0.22415400812259087,
+                "mean_iou": 0.6684738481073424
+              },
+              "all": {
+                "count": 4673,
+                "mean_score": 0.1988621230203106,
+                "mean_iou": 0.6447731593229113
+              },
+              "by_predicted_class": {
+                "pedestrian": 1341,
+                "car": 1326,
+                "people": 927,
+                "motor": 747,
+                "bicycle": 150,
+                "van": 65,
+                "truck": 54,
+                "tricycle": 52,
+                "bus": 7,
+                "awning-tricycle": 4
+              },
+              "by_target_class": {
+                "pedestrian": 1341,
+                "car": 1326,
+                "people": 927,
+                "motor": 747,
+                "bicycle": 150,
+                "van": 65,
+                "truck": 54,
+                "tricycle": 52,
+                "bus": 7,
+                "awning-tricycle": 4
+              }
+            },
+            "classification": {
+              "small": {
+                "count": 5405,
+                "mean_score": 0.30045532346268033,
+                "mean_iou": 0.6991890678842141
+              },
+              "medium": {
+                "count": 1768,
+                "mean_score": 0.43159221322591756,
+                "mean_iou": 0.7850178767871422
+              },
+              "large": {
+                "count": 143,
+                "mean_score": 0.5568647103292959,
+                "mean_iou": 0.8727929507616311
+              },
+              "all": {
+                "count": 7316,
+                "mean_score": 0.33715797018538807,
+                "mean_iou": 0.7233239352149721
+              },
+              "by_predicted_class": {
+                "car": 1525,
+                "people": 1421,
+                "motor": 1271,
+                "pedestrian": 1058,
+                "bicycle": 657,
+                "van": 625,
+                "tricycle": 335,
+                "awning-tricycle": 239,
+                "truck": 164,
+                "bus": 21
+              },
+              "by_target_class": {
+                "pedestrian": 1529,
+                "van": 1217,
+                "people": 1104,
+                "motor": 990,
+                "car": 708,
+                "tricycle": 516,
+                "bicycle": 494,
+                "awning-tricycle": 348,
+                "truck": 346,
+                "bus": 64
+              }
+            },
+            "localization": {
+              "small": {
+                "count": 3903,
+                "mean_score": 0.21338181792468008,
+                "mean_iou": 0.35840076423053935
+              },
+              "medium": {
+                "count": 790,
+                "mean_score": 0.2496109886637217,
+                "mean_iou": 0.325806489278332
+              },
+              "large": {
+                "count": 39,
+                "mean_score": 0.35756256450445223,
+                "mean_iou": 0.2875171701852893
+              },
+              "all": {
+                "count": 4732,
+                "mean_score": 0.2206185241800592,
+                "mean_iou": 0.35237499555344526
+              },
+              "by_predicted_class": {
+                "car": 1560,
+                "pedestrian": 1406,
+                "motor": 725,
+                "people": 714,
+                "bicycle": 163,
+                "tricycle": 58,
+                "van": 49,
+                "truck": 40,
+                "awning-tricycle": 15,
+                "bus": 2
+              },
+              "by_target_class": {
+                "car": 1560,
+                "pedestrian": 1406,
+                "motor": 725,
+                "people": 714,
+                "bicycle": 163,
+                "tricycle": 58,
+                "van": 49,
+                "truck": 40,
+                "awning-tricycle": 15,
+                "bus": 2
+              }
+            },
+            "classification_localization": {
+              "small": {
+                "count": 2378,
+                "mean_score": 0.2137814858557047,
+                "mean_iou": 0.3282649194246937
+              },
+              "medium": {
+                "count": 818,
+                "mean_score": 0.22414691558604136,
+                "mean_iou": 0.2617532190763032
+              },
+              "large": {
+                "count": 32,
+                "mean_score": 0.23427473357878625,
+                "mean_iou": 0.2714132641662237
+              },
+              "all": {
+                "count": 3228,
+                "mean_score": 0.21661132025674373,
+                "mean_iou": 0.3108467583796951
+              },
+              "by_predicted_class": {
+                "motor": 963,
+                "people": 630,
+                "pedestrian": 586,
+                "car": 411,
+                "bicycle": 281,
+                "tricycle": 148,
+                "van": 83,
+                "awning-tricycle": 55,
+                "truck": 55,
+                "bus": 16
+              },
+              "by_target_class": {
+                "pedestrian": 684,
+                "people": 606,
+                "motor": 470,
+                "tricycle": 379,
+                "car": 370,
+                "van": 230,
+                "bicycle": 159,
+                "awning-tricycle": 148,
+                "truck": 120,
+                "bus": 62
+              }
+            },
+            "background": {
+              "small": {
+                "count": 9648,
+                "mean_score": 0.2286044281033203,
+                "mean_iou": 0.008469691197956966
+              },
+              "medium": {
+                "count": 1362,
+                "mean_score": 0.30236977708037727,
+                "mean_iou": 0.012894498951663239
+              },
+              "large": {
+                "count": 36,
+                "mean_score": 0.41873537252346676,
+                "mean_iou": 0.012256754944834265
+              },
+              "all": {
+                "count": 11046,
+                "mean_score": 0.23831953939300676,
+                "mean_iou": 0.009027623703428215
+              },
+              "by_predicted_class": {
+                "pedestrian": 3281,
+                "car": 2985,
+                "motor": 2287,
+                "people": 1106,
+                "bicycle": 580,
+                "tricycle": 325,
+                "van": 165,
+                "truck": 148,
+                "awning-tricycle": 136,
+                "bus": 33
+              },
+              "by_target_class": {}
+            }
+          },
+          "missed_by_class": {
+            "pedestrian": 2545,
+            "people": 1950,
+            "car": 1312,
+            "motor": 1179,
+            "van": 885,
+            "bicycle": 707,
+            "tricycle": 503,
+            "truck": 361,
+            "awning-tricycle": 357,
+            "bus": 84
+          },
+          "top_class_confusions": [
+            {
+              "predicted": "car",
+              "target": "van",
+              "count": 1287
+            },
+            {
+              "predicted": "people",
+              "target": "pedestrian",
+              "count": 1212
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "people",
+              "count": 995
+            },
+            {
+              "predicted": "motor",
+              "target": "people",
+              "count": 579
+            },
+            {
+              "predicted": "motor",
+              "target": "pedestrian",
+              "count": 579
+            },
+            {
+              "predicted": "people",
+              "target": "motor",
+              "count": 533
+            },
+            {
+              "predicted": "van",
+              "target": "car",
+              "count": 525
+            },
+            {
+              "predicted": "motor",
+              "target": "bicycle",
+              "count": 486
+            },
+            {
+              "predicted": "bicycle",
+              "target": "motor",
+              "count": 482
+            },
+            {
+              "predicted": "motor",
+              "target": "tricycle",
+              "count": 352
+            },
+            {
+              "predicted": "bicycle",
+              "target": "pedestrian",
+              "count": 308
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "motor",
+              "count": 282
+            },
+            {
+              "predicted": "car",
+              "target": "truck",
+              "count": 238
+            },
+            {
+              "predicted": "people",
+              "target": "tricycle",
+              "count": 167
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "car",
+              "count": 150
+            },
+            {
+              "predicted": "tricycle",
+              "target": "awning-tricycle",
+              "count": 147
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "tricycle",
+              "count": 122
+            },
+            {
+              "predicted": "van",
+              "target": "truck",
+              "count": 112
+            },
+            {
+              "predicted": "motor",
+              "target": "awning-tricycle",
+              "count": 110
+            },
+            {
+              "predicted": "motor",
+              "target": "car",
+              "count": 110
+            },
+            {
+              "predicted": "car",
+              "target": "tricycle",
+              "count": 109
+            },
+            {
+              "predicted": "car",
+              "target": "awning-tricycle",
+              "count": 107
+            },
+            {
+              "predicted": "tricycle",
+              "target": "motor",
+              "count": 102
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "bicycle",
+              "count": 97
+            },
+            {
+              "predicted": "truck",
+              "target": "car",
+              "count": 82
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "tricycle",
+              "count": 77
+            },
+            {
+              "predicted": "bicycle",
+              "target": "people",
+              "count": 77
+            },
+            {
+              "predicted": "tricycle",
+              "target": "car",
+              "count": 73
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "car",
+              "count": 71
+            },
+            {
+              "predicted": "car",
+              "target": "bus",
+              "count": 71
+            }
+          ],
+          "confidence_threshold": 0.1,
+          "matching_rule": {
+            "order": "predictions sorted by descending confidence per image",
+            "true_positive": "highest-IoU unmatched same-class GT at IoU >= 0.50",
+            "duplicate": "same-class GT at IoU >= 0.50 already matched",
+            "classification": "different-class GT at IoU >= 0.50",
+            "localization": "same-class GT at 0.10 <= IoU < 0.50",
+            "classification_localization": "different-class GT at 0.10 <= IoU < 0.50",
+            "background": "maximum IoU against any GT < 0.10"
+          }
+        },
+        "0.25": {
+          "ground_truth": {
+            "small": 26586,
+            "medium": 11105,
+            "large": 1068,
+            "all": 38759
+          },
+          "matched_ground_truth": {
+            "small": 15415,
+            "medium": 9255,
+            "large": 956,
+            "all": 25626
+          },
+          "missed_ground_truth": {
+            "small": 11171,
+            "medium": 1850,
+            "large": 112,
+            "all": 13133
+          },
+          "miss_rate": {
+            "small": 0.4201835552546453,
+            "medium": 0.16659162539396669,
+            "large": 0.10486891385767791,
+            "all": 0.33883743130627725
+          },
+          "false_positive": {
+            "small": 8183,
+            "medium": 2572,
+            "large": 185,
+            "all": 10940
+          },
+          "precision_like": {
+            "small": 0.6532333248580389,
+            "medium": 0.782531495730109,
+            "large": 0.8378615249780894,
+            "all": 0.7008149647213259
+          },
+          "recall_like": {
+            "small": 0.5798164447453547,
+            "medium": 0.8334083746060333,
+            "large": 0.8951310861423221,
+            "all": 0.6611625686937227
+          },
+          "errors": {
+            "true_positive": {
+              "small": {
+                "count": 15415,
+                "mean_score": 0.5665778080345244,
+                "mean_iou": 0.7699299771618375
+              },
+              "medium": {
+                "count": 9255,
+                "mean_score": 0.73899609383733,
+                "mean_iou": 0.8671728376111941
+              },
+              "large": {
+                "count": 956,
+                "mean_score": 0.8508808175452583,
+                "mean_iou": 0.9289807624508237
+              },
+              "all": {
+                "count": 25626,
+                "mean_score": 0.6394539850499473,
+                "mean_iou": 0.8109834082160456
+              },
+              "by_predicted_class": {
+                "car": 12100,
+                "pedestrian": 5320,
+                "motor": 3082,
+                "people": 2615,
+                "van": 1028,
+                "tricycle": 436,
+                "bicycle": 420,
+                "truck": 334,
+                "bus": 160,
+                "awning-tricycle": 131
+              },
+              "by_target_class": {
+                "car": 12100,
+                "pedestrian": 5320,
+                "motor": 3082,
+                "people": 2615,
+                "van": 1028,
+                "tricycle": 436,
+                "bicycle": 420,
+                "truck": 334,
+                "bus": 160,
+                "awning-tricycle": 131
+              }
+            },
+            "duplicate": {
+              "small": {
+                "count": 853,
+                "mean_score": 0.33183719638783093,
+                "mean_iou": 0.6508642027511563
+              },
+              "medium": {
+                "count": 229,
+                "mean_score": 0.34675896167755127,
+                "mean_iou": 0.6823792809440061
+              },
+              "large": {
+                "count": 8,
+                "mean_score": 0.36701322719454765,
+                "mean_iou": 0.6441740607219375
+              },
+              "all": {
+                "count": 1090,
+                "mean_score": 0.3352303087711334,
+                "mean_iou": 0.6574361585033838
+              },
+              "by_predicted_class": {
+                "car": 372,
+                "pedestrian": 319,
+                "people": 219,
+                "motor": 122,
+                "van": 21,
+                "bicycle": 20,
+                "tricycle": 10,
+                "truck": 7
+              },
+              "by_target_class": {
+                "car": 372,
+                "pedestrian": 319,
+                "people": 219,
+                "motor": 122,
+                "van": 21,
+                "bicycle": 20,
+                "tricycle": 10,
+                "truck": 7
+              }
+            },
+            "classification": {
+              "small": {
+                "count": 2711,
+                "mean_score": 0.43732458193642504,
+                "mean_iou": 0.7326006931569947
+              },
+              "medium": {
+                "count": 1220,
+                "mean_score": 0.5507339595771227,
+                "mean_iou": 0.8214506630444499
+              },
+              "large": {
+                "count": 118,
+                "mean_score": 0.6396423037779533,
+                "mean_iou": 0.8970023530211704
+              },
+              "all": {
+                "count": 4049,
+                "mean_score": 0.47739198917252074,
+                "mean_iou": 0.7641631429289582
+              },
+              "by_predicted_class": {
+                "car": 1101,
+                "people": 669,
+                "motor": 605,
+                "pedestrian": 490,
+                "van": 452,
+                "bicycle": 271,
+                "tricycle": 189,
+                "awning-tricycle": 156,
+                "truck": 101,
+                "bus": 15
+              },
+              "by_target_class": {
+                "van": 909,
+                "pedestrian": 689,
+                "people": 498,
+                "car": 483,
+                "motor": 415,
+                "bicycle": 288,
+                "tricycle": 286,
+                "awning-tricycle": 226,
+                "truck": 219,
+                "bus": 36
+              }
+            },
+            "localization": {
+              "small": {
+                "count": 1033,
+                "mean_score": 0.37652689893617286,
+                "mean_iou": 0.3721300601963839
+              },
+              "medium": {
+                "count": 286,
+                "mean_score": 0.41770574763104634,
+                "mean_iou": 0.3126066695595594
+              },
+              "large": {
+                "count": 23,
+                "mean_score": 0.4930504962154057,
+                "mean_iou": 0.2832238018122605
+              },
+              "all": {
+                "count": 1342,
+                "mean_score": 0.3872997703699703,
+                "mean_iou": 0.35792101871727294
+              },
+              "by_predicted_class": {
+                "car": 470,
+                "pedestrian": 394,
+                "people": 217,
+                "motor": 194,
+                "bicycle": 33,
+                "van": 11,
+                "tricycle": 10,
+                "truck": 10,
+                "awning-tricycle": 3
+              },
+              "by_target_class": {
+                "car": 470,
+                "pedestrian": 394,
+                "people": 217,
+                "motor": 194,
+                "bicycle": 33,
+                "van": 11,
+                "tricycle": 10,
+                "truck": 10,
+                "awning-tricycle": 3
+              }
+            },
+            "classification_localization": {
+              "small": {
+                "count": 634,
+                "mean_score": 0.3798345640912793,
+                "mean_iou": 0.3348437262244783
+              },
+              "medium": {
+                "count": 229,
+                "mean_score": 0.4040954025812024,
+                "mean_iou": 0.2689772277818232
+              },
+              "large": {
+                "count": 10,
+                "mean_score": 0.38016062378883364,
+                "mean_iou": 0.2598943605539237
+              },
+              "all": {
+                "count": 873,
+                "mean_score": 0.38620225322205587,
+                "mean_iou": 0.3167075042312669
+              },
+              "by_predicted_class": {
+                "motor": 264,
+                "people": 163,
+                "pedestrian": 134,
+                "car": 128,
+                "bicycle": 72,
+                "tricycle": 50,
+                "van": 29,
+                "awning-tricycle": 15,
+                "truck": 11,
+                "bus": 7
+              },
+              "by_target_class": {
+                "pedestrian": 203,
+                "people": 179,
+                "motor": 118,
+                "tricycle": 90,
+                "car": 90,
+                "van": 70,
+                "bicycle": 49,
+                "awning-tricycle": 35,
+                "truck": 25,
+                "bus": 14
+              }
+            },
+            "background": {
+              "small": {
+                "count": 2952,
+                "mean_score": 0.39764012711319496,
+                "mean_iou": 0.007644197174633981
+              },
+              "medium": {
+                "count": 608,
+                "mean_score": 0.48113282230731685,
+                "mean_iou": 0.012793378490946642
+              },
+              "large": {
+                "count": 26,
+                "mean_score": 0.5186723986497292,
+                "mean_iou": 0.011471995331432486
+              },
+              "all": {
+                "count": 3586,
+                "mean_score": 0.412673701496345,
+                "mean_iou": 0.008544984958346984
+              },
+              "by_predicted_class": {
+                "car": 1110,
+                "pedestrian": 1030,
+                "motor": 673,
+                "people": 314,
+                "bicycle": 146,
+                "tricycle": 128,
+                "truck": 61,
+                "van": 61,
+                "awning-tricycle": 46,
+                "bus": 17
+              },
+              "by_target_class": {}
+            }
+          },
+          "missed_by_class": {
+            "pedestrian": 3524,
+            "people": 2510,
+            "car": 1964,
+            "motor": 1804,
+            "van": 947,
+            "bicycle": 867,
+            "tricycle": 609,
+            "truck": 416,
+            "awning-tricycle": 401,
+            "bus": 91
+          },
+          "top_class_confusions": [
+            {
+              "predicted": "car",
+              "target": "van",
+              "count": 901
+            },
+            {
+              "predicted": "people",
+              "target": "pedestrian",
+              "count": 576
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "people",
+              "count": 433
+            },
+            {
+              "predicted": "van",
+              "target": "car",
+              "count": 379
+            },
+            {
+              "predicted": "motor",
+              "target": "bicycle",
+              "count": 269
+            },
+            {
+              "predicted": "bicycle",
+              "target": "motor",
+              "count": 216
+            },
+            {
+              "predicted": "motor",
+              "target": "people",
+              "count": 202
+            },
+            {
+              "predicted": "motor",
+              "target": "pedestrian",
+              "count": 178
+            },
+            {
+              "predicted": "people",
+              "target": "motor",
+              "count": 172
+            },
+            {
+              "predicted": "motor",
+              "target": "tricycle",
+              "count": 145
+            },
+            {
+              "predicted": "car",
+              "target": "truck",
+              "count": 127
+            },
+            {
+              "predicted": "tricycle",
+              "target": "awning-tricycle",
+              "count": 105
+            },
+            {
+              "predicted": "bicycle",
+              "target": "pedestrian",
+              "count": 83
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "motor",
+              "count": 82
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "tricycle",
+              "count": 75
+            },
+            {
+              "predicted": "car",
+              "target": "awning-tricycle",
+              "count": 65
+            },
+            {
+              "predicted": "car",
+              "target": "tricycle",
+              "count": 63
+            },
+            {
+              "predicted": "van",
+              "target": "truck",
+              "count": 63
+            },
+            {
+              "predicted": "awning-tricycle",
+              "target": "car",
+              "count": 46
+            },
+            {
+              "predicted": "motor",
+              "target": "awning-tricycle",
+              "count": 43
+            },
+            {
+              "predicted": "tricycle",
+              "target": "motor",
+              "count": 42
+            },
+            {
+              "predicted": "people",
+              "target": "tricycle",
+              "count": 42
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "bicycle",
+              "count": 40
+            },
+            {
+              "predicted": "truck",
+              "target": "van",
+              "count": 39
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "car",
+              "count": 35
+            },
+            {
+              "predicted": "truck",
+              "target": "car",
+              "count": 34
+            },
+            {
+              "predicted": "car",
+              "target": "pedestrian",
+              "count": 32
+            },
+            {
+              "predicted": "motor",
+              "target": "car",
+              "count": 29
+            },
+            {
+              "predicted": "tricycle",
+              "target": "truck",
+              "count": 25
+            },
+            {
+              "predicted": "pedestrian",
+              "target": "tricycle",
+              "count": 24
+            }
+          ],
+          "confidence_threshold": 0.25,
+          "matching_rule": {
+            "order": "predictions sorted by descending confidence per image",
+            "true_positive": "highest-IoU unmatched same-class GT at IoU >= 0.50",
+            "duplicate": "same-class GT at IoU >= 0.50 already matched",
+            "classification": "different-class GT at IoU >= 0.50",
+            "localization": "same-class GT at 0.10 <= IoU < 0.50",
+            "classification_localization": "different-class GT at 0.10 <= IoU < 0.50",
+            "background": "maximum IoU against any GT < 0.10"
+          }
+        }
+      }
+    }
+  },
+  "comparison": {
+    "primary_threshold": 0.1,
+    "small_vectors": {
+      "E1": {
+        "true_positive": 18233,
+        "missed": 8353,
+        "classification": 5670,
+        "localization": 3899,
+        "classification_localization": 2446,
+        "duplicate": 3855,
+        "background_small_prediction": 9865
+      },
+      "E10a": {
+        "true_positive": 18259,
+        "missed": 8327,
+        "classification": 5405,
+        "localization": 3903,
+        "classification_localization": 2378,
+        "duplicate": 3837,
+        "background_small_prediction": 9648
+      }
+    },
+    "E10a_minus_E1_counts": {
+      "true_positive": 26,
+      "missed": -26,
+      "classification": -265,
+      "localization": 4,
+      "classification_localization": -68,
+      "duplicate": -18,
+      "background_small_prediction": -217
+    },
+    "E10a_small_false_positive_groups": {
+      "class_quality": 15053,
+      "local_alignment": 6281,
+      "duplicate_control": 3837
+    },
+    "ranked_false_positive_groups": [
+      {
+        "group": "class_quality",
+        "count": 15053
+      },
+      {
+        "group": "local_alignment",
+        "count": 6281
+      },
+      {
+        "group": "duplicate_control",
+        "count": 3837
+      }
+    ],
+    "leading_training_hypothesis": "class_quality",
+    "recommended_route_if_primary_threshold_is_representative": "class/quality-aware semantic routing; preserve P2 detail",
+    "E10a_small_miss_rate": 0.3132099601293914,
+    "warning": "Counts at one operating threshold guide mechanism selection but are not AP contributions."
+  },
+  "finished_at": "2026-09-11T21:54:31"
+}

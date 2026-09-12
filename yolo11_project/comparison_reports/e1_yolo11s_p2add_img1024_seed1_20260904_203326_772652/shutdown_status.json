@@ -1,0 +1,14 @@
+{
+  "time": "2026-09-05T06:34:50",
+  "enabled": true,
+  "reason": "completed",
+  "command": [
+    "/bin/bash",
+    "-c",
+    "/usr/bin/shutdown"
+  ],
+  "status": "command_returned_unverified",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

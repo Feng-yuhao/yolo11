@@ -1,0 +1,436 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "torch": "2.5.1+cu121",
+  "gpu": null,
+  "implementation": {
+    "revision": "tal_chunk2_vgpu32_830_v1",
+    "original_tal_sha256": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9",
+    "helper_sha256": "835cdd95821c181f8f7b942388c1e194cd6b0ca19dbdb61635cd8ce329c2ccec",
+    "forward_batch_unchanged": true,
+    "matching_images_per_chunk": 2,
+    "GT_padding_unchanged": true,
+    "batch_loss_normalization_unchanged": true,
+    "checkpoint_classes_unchanged": true,
+    "acceleration_target": "NVIDIA vGPU-32GB",
+    "note": "Only matching chunk size changes from 1 to 2."
+  },
+  "seconds": 9.756995491683483,
+  "assignment_cases": [
+    {
+      "case": "random",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 904,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "mixed_empty",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 205,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "dense",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 1295,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "ties_and_conflicts",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 50,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "all_empty",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 0,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "random",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 871,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "mixed_empty",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 228,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "dense",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 1405,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "ties_and_conflicts",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 50,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "all_empty",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 0,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    }
+  ],
+  "real_model_steps": [
+    {
+      "model": "P2",
+      "amp": false,
+      "step": 1,
+      "forward_batch": 8,
+      "image_size": 128,
+      "checks": [
+        {
+          "name": "full_batch_loss",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "box_cls_dfl_loss",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ],
+      "gradient_max_abs_difference": 0.0,
+      "updated_state_max_abs_difference": 0.0
+    },
+    {
+      "model": "P2",
+      "amp": false,
+      "step": 2,
+      "forward_batch": 8,
+      "image_size": 128,
+      "checks": [
+        {
+          "name": "full_batch_loss",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "box_cls_dfl_loss",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ],
+      "gradient_max_abs_difference": 0.0,
+      "updated_state_max_abs_difference": 0.0
+    }
+  ],
+  "original_yolo11s_model_steps": [
+    {
+      "model": "original YOLO11s",
+      "amp": false,
+      "step": 1,
+      "forward_batch": 8,
+      "image_size": 128,
+      "checks": [
+        {
+          "name": "full_batch_loss",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "box_cls_dfl_loss",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ],
+      "gradient_max_abs_difference": 0.0,
+      "updated_state_max_abs_difference": 0.0
+    },
+    {
+      "model": "original YOLO11s",
+      "amp": false,
+      "step": 2,
+      "forward_batch": 8,
+      "image_size": 128,
+      "checks": [
+        {
+          "name": "full_batch_loss",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "box_cls_dfl_loss",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ],
+      "gradient_max_abs_difference": 0.0,
+      "updated_state_max_abs_difference": 0.0
+    }
+  ],
+  "tolerances": {
+    "discrete_outputs": "exact; also shapes/dtypes",
+    "float_rtol": 1e-06,
+    "float_atol": 1e-07,
+    "gradient_rtol": 1e-05
+  },
+  "limits": "Synthetic FP32-GT cases and batch8 real-model 128px steps; not a 1024px memory test or a guarantee of identical final AP."
+}

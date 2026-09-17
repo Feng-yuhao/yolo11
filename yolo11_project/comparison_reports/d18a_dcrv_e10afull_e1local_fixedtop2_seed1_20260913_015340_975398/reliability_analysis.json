@@ -1,0 +1,32 @@
+{
+  "local_only_candidate_count": 109517,
+  "dcrv_processed_count": 13277,
+  "score_change_by_candidate_label": {
+    "positive": {
+      "count": 1577,
+      "mean_before": 0.2560051165960526,
+      "mean_after": 0.3020026241780537,
+      "mean_change": 0.04599750758200109
+    },
+    "negative": {
+      "count": 8470,
+      "mean_before": 0.1473375260777147,
+      "mean_after": 0.2681200633738124,
+      "mean_change": 0.1207825372960977
+    }
+  },
+  "local_only_fixed_conf_0p25_before": {
+    "threshold": 0.25,
+    "TP": 679,
+    "FP": 1460,
+    "ignored": 300
+  },
+  "local_only_fixed_conf_0p25_after": {
+    "threshold": 0.25,
+    "TP": 1249,
+    "FP": 6720,
+    "ignored": 2102
+  },
+  "local_only_candidate_TP_retention": 1.8394698085419734,
+  "local_only_candidate_FP_reduction": -3.6027397260273974
+}

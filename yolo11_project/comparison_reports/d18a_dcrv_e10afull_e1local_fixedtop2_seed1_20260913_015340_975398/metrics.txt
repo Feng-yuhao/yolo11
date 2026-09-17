@@ -1,0 +1,173 @@
+D18a DCRV formal evaluation
+status: completed
+converted-YOLO COCO metrics; not official VisDrone ignore-region metrics
+
+{
+  "B0_E10a_full": {
+    "mAP50_95": 0.31499942108659135,
+    "mAP50": 0.5077852801502406,
+    "mAP75": 0.3261903541739836,
+    "AP_small": 0.22891708626301424,
+    "AR_small": 0.363907475808454,
+    "AP_medium": 0.4248485316225591,
+    "AR_medium": 0.5676186421387558,
+    "AP_large": 0.5663497620746415,
+    "AR_large": 0.7013756284909993,
+    "Precision": 0.7008149647213259,
+    "Recall": 0.6611625686937227,
+    "TP": 25626,
+    "FP": 10940,
+    "FN": 13133,
+    "prediction_count": 243002,
+    "profile": {
+      "full_prediction_seconds": 14.851827681064606
+    }
+  },
+  "B1_historical_E1_route_no_DCRV": {
+    "mAP50_95": 0.3418765281287625,
+    "mAP50": 0.5571701262833605,
+    "mAP75": 0.34898448364565254,
+    "AP_small": 0.2650722810505339,
+    "AR_small": 0.4260985961098486,
+    "AP_medium": 0.43675974644204285,
+    "AR_medium": 0.582697681091973,
+    "AP_large": 0.5584262787685762,
+    "AR_large": 0.6981483987169261,
+    "Precision": 0.6503293385783552,
+    "Recall": 0.7336360587218452,
+    "TP": 28435,
+    "FP": 15289,
+    "FN": 10324,
+    "prediction_count": 251024,
+    "profile": {
+      "route_seconds": 2.5334435887634754,
+      "local_pipeline_seconds": 53.740262262523174,
+      "crops_per_image": 2.0,
+      "route_selection_sha256": "a171b76e5720ec71084a273f172ea41536150f1cdb42f72aefd288cb1def8778",
+      "merge_seconds": 1.1708847358822823
+    }
+  },
+  "B1_self_route_E10a_route_no_DCRV": {
+    "mAP50_95": 0.3413174658411099,
+    "mAP50": 0.5563746958570954,
+    "mAP75": 0.3484911442269167,
+    "AP_small": 0.26445515748029147,
+    "AR_small": 0.4260814389432986,
+    "AP_medium": 0.43546744129685994,
+    "AR_medium": 0.5822543463282915,
+    "AP_large": 0.5588855782108789,
+    "AR_large": 0.6980237139476293,
+    "Precision": 0.650272348606216,
+    "Recall": 0.7330684486183854,
+    "TP": 28413,
+    "FP": 15281,
+    "FN": 10346,
+    "prediction_count": 251102,
+    "profile": {
+      "route_seconds": 2.7132573276758194,
+      "local_pipeline_seconds": 58.9702057428658,
+      "crops_per_image": 2.0,
+      "route_selection_sha256": "469d4d5d653ed21ac8c87d63449dd7aff1b26f14f58d4cbd9688dd46cde1de86",
+      "merge_seconds": 0.8938467316329479
+    }
+  },
+  "D18a_E10a_route_DCRV": {
+    "mAP50_95": 0.34005394394577854,
+    "mAP50": 0.5536164667706448,
+    "mAP75": 0.34771181869459944,
+    "AP_small": 0.2616953408635639,
+    "AR_small": 0.4259711402615266,
+    "AP_medium": 0.4361376642847832,
+    "AR_medium": 0.5820855582756923,
+    "AP_large": 0.5588855782108789,
+    "AR_large": 0.6980237139476293,
+    "Precision": 0.5632501948558067,
+    "Recall": 0.7457880750277355,
+    "TP": 28906,
+    "FP": 22414,
+    "FN": 9853,
+    "prediction_count": 251102,
+    "profile": {
+      "route_seconds": 2.7132573276758194,
+      "local_pipeline_seconds": 58.9702057428658,
+      "crops_per_image": 2.0,
+      "route_selection_sha256": "469d4d5d653ed21ac8c87d63449dd7aff1b26f14f58d4cbd9688dd46cde1de86",
+      "dcrv_seconds": 6.912250481545925,
+      "local_only_candidate_count": 109517,
+      "dcrv_processed_count": 13277,
+      "mean_processed_score_change": 0.12064859727612907,
+      "merge_seconds": 1.0223064348101616,
+      "complete_system_seconds": 84.46984766796231,
+      "complete_system_timing_note": "Sum of actual E10a-full, E10a-route, selected E1-local, DCRV patch+forward, and final merge stages; historical E1-route reference time is excluded.",
+      "gpu_peak_memory": {
+        "allocated_GiB": 1.1944727897644043,
+        "reserved_GiB": 1.48828125
+      },
+      "dcrv_parameters": 71185
+    }
+  }
+}
+
+[success_gate]
+{
+  "requirements": {
+    "mAP50_95_min_delta": 0.002,
+    "AP_small_min_delta": 0.003,
+    "AP_medium_min_delta": -0.002,
+    "AP_large_min_delta": -0.005,
+    "Recall_min_delta": -0.003,
+    "local_only_candidate_TP_retention_min": 0.95,
+    "local_only_candidate_FP_reduction_min": 0.1
+  },
+  "delta_vs_same_route_no_DCRV": {
+    "mAP50_95": -0.0012635218953313543,
+    "mAP50": -0.0027582290864506254,
+    "mAP75": -0.0007793255323172432,
+    "AP_small": -0.002759816616727584,
+    "AR_small": -0.00011029868177198088,
+    "AP_medium": 0.0006702229879232413,
+    "AP_large": 0.0,
+    "Precision": -0.08702215375040923,
+    "Recall": 0.012719626409350093,
+    "TP": 493,
+    "FP": 7133,
+    "FN": -493
+  },
+  "local_only_candidate_TP_retention": 1.8394698085419734,
+  "local_only_candidate_FP_reduction": -3.6027397260273974,
+  "passed": false
+}
+
+[reliability]
+{
+  "local_only_candidate_count": 109517,
+  "dcrv_processed_count": 13277,
+  "score_change_by_candidate_label": {
+    "positive": {
+      "count": 1577,
+      "mean_before": 0.2560051165960526,
+      "mean_after": 0.3020026241780537,
+      "mean_change": 0.04599750758200109
+    },
+    "negative": {
+      "count": 8470,
+      "mean_before": 0.1473375260777147,
+      "mean_after": 0.2681200633738124,
+      "mean_change": 0.1207825372960977
+    }
+  },
+  "local_only_fixed_conf_0p25_before": {
+    "threshold": 0.25,
+    "TP": 679,
+    "FP": 1460,
+    "ignored": 300
+  },
+  "local_only_fixed_conf_0p25_after": {
+    "threshold": 0.25,
+    "TP": 1249,
+    "FP": 6720,
+    "ignored": 2102
+  },
+  "local_only_candidate_TP_retention": 1.8394698085419734,
+  "local_only_candidate_FP_reduction": -3.6027397260273974
+}

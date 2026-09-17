@@ -1,0 +1,52 @@
+# E16a: E10a DSSG plus tiny-supervised, task-decoupled P1 detail routing.
+# E10a layers 0..27 are unchanged. TSDRDetect replaces only the final Detect.
+
+nc: 10
+scales:
+  n: [0.50, 0.25, 1024]
+  s: [0.50, 0.50, 1024]
+  m: [0.50, 1.00, 512]
+  l: [1.00, 1.00, 512]
+  x: [1.00, 1.50, 512]
+
+tsdr:
+  enabled: true
+  gate_loss_gain: 0.05
+  tiny_equivalent_side: 32.0
+
+backbone:
+  - [-1, 1, Conv, [64, 3, 2]]
+  - [-1, 1, Conv, [128, 3, 2]]
+  - [-1, 2, C3k2, [256, False, 0.25]]
+  - [-1, 1, Conv, [256, 3, 2]]
+  - [-1, 2, C3k2, [512, False, 0.25]]
+  - [-1, 1, Conv, [512, 3, 2]]
+  - [-1, 2, C3k2, [512, True]]
+  - [-1, 1, Conv, [1024, 3, 2]]
+  - [-1, 2, C3k2, [1024, True]]
+  - [-1, 1, SPPF, [1024, 5]]
+  - [-1, 2, C2PSA, [1024]]
+
+head:
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
+  - [[-1, 6], 1, Concat, [1]]
+  - [-1, 2, C3k2, [512, False]]
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
+  - [[-1, 4], 1, Concat, [1]]
+  - [-1, 2, C3k2, [256, False]]
+  - [-1, 1, Conv, [256, 3, 2]]
+  - [[-1, 13], 1, Concat, [1]]
+  - [-1, 2, C3k2, [512, False]]
+  - [-1, 1, Conv, [512, 3, 2]]
+  - [[-1, 10], 1, Concat, [1]]
+  - [-1, 2, C3k2, [1024, True]]
+
+  - [16, 1, nn.Upsample, [None, 2, "nearest"]]
+  - [[-1, 2], 1, Concat, [1]]
+  - [-1, 2, C3k2, [256, False]]
+
+  - [[16, 19, 22], 1, DeepSemanticGuide, [0.25, 0.0625, 0.5, 0.05]]
+  - [[25, 26], 1, SemanticDetailGate, [0.05]]
+
+  # gate_hidden=16, max_gain=0.25; P1 detail enters P2 box/DFL only.
+  - [[0, 27, 26, 19, 22], 1, TSDRDetect, [nc, 16, 0.25]]

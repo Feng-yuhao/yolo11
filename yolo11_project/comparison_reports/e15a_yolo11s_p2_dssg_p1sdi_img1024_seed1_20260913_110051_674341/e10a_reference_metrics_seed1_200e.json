@@ -1,0 +1,155 @@
+{
+  "reference_type": "frozen_formal_metrics_extract",
+  "source_repository": "Feng-yuhao/yolo11",
+  "source_path": "yolo11_project/comparison_reports/e10a_yolo11s_p2_dssg_img1024_seed1_20260910_222554_227195/metrics.json",
+  "source_report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/e10a_yolo11s_p2_dssg_img1024_seed1_20260910_222554_227195",
+  "status": "completed",
+  "purpose": "e10a_yolo11s_p2_dssg_img1024_seed1",
+  "experiment": "e10a_yolo11s_p2_dssg_img1024_seed1",
+  "seed": 1,
+  "seed_count": 1,
+  "is_formal": true,
+  "evaluation_protocol": {
+    "split": "val",
+    "imgsz": 1024,
+    "batch": 8,
+    "area_batch": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 500,
+    "half": false,
+    "protocol_id": "visdrone_yolo_labels_ultra830_fp32_area_separate_predict_v1",
+    "area_definition": "COCO default original-image bbox area ranges, IoU 0.50:0.95",
+    "notes": [
+      "COCO area evaluation on converted VisDrone labels, not official VisDrone ignore regions.",
+      "Ultralytics AP and COCO AP_all are separate evaluators/prediction passes; do not mix them.",
+      "Batch val may use rectangular padding; area predict uses each 4-image chunk padding.",
+      "P/R are Ultralytics selected F1 operating point metrics, not P/R at conf=0.001.",
+      "Training built-in validation may use FP16 and double batch; final report is standalone FP32."
+    ]
+  },
+  "train_params": {
+    "epochs": 200,
+    "imgsz": 1024,
+    "batch": 8,
+    "seed": 1,
+    "workers": 8,
+    "deterministic": true,
+    "patience": 0,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "amp": true,
+    "cos_lr": true,
+    "close_mosaic": 10
+  },
+  "training": {
+    "completed_epochs": 200,
+    "best_checkpoint_epoch": 78,
+    "best_epoch_by_map50_95": 78,
+    "best_checkpoint_rule": "Ultralytics 8.3.0 validation fitness"
+  },
+  "evaluation_weights": {
+    "path": "/root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt",
+    "sha256": "8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512"
+  },
+  "overall": {
+    "Precision": 0.6133680947840817,
+    "Recall": 0.5168854107093871,
+    "mAP50": 0.54583722074581,
+    "mAP75": 0.3556219092783082,
+    "mAP50_95": 0.3411289446225219
+  },
+  "area_metrics": {
+    "AP_all": 0.31499942108659135,
+    "AR_all": 0.4501281156150888,
+    "AP_small": 0.22891708626301424,
+    "AR_small": 0.363907475808454,
+    "AP_medium": 0.4248485316225591,
+    "AR_medium": 0.5676186421387558,
+    "AP_large": 0.5663497620746415,
+    "AR_large": 0.7013756284909993,
+    "max_det": 500,
+    "prediction_count": 243002
+  },
+  "model_profile": {
+    "parameters": 9779258,
+    "imgsz": 1024,
+    "GFLOPs": 90.775617536
+  },
+  "per_class": {
+    "pedestrian": {
+      "instances": 8844,
+      "Precision": 0.6917121510096866,
+      "Recall": 0.6006331976481231,
+      "AP50": 0.6614785062272082,
+      "AP50_95": 0.3397938274580462
+    },
+    "people": {
+      "instances": 5125,
+      "Precision": 0.6430112042837633,
+      "Recall": 0.49697560975609756,
+      "AP50": 0.5341780048656095,
+      "AP50_95": 0.23631285294375223
+    },
+    "bicycle": {
+      "instances": 1287,
+      "Precision": 0.45041320010813984,
+      "Recall": 0.2913752913752914,
+      "AP50": 0.32162514082593546,
+      "AP50_95": 0.16070578611943415
+    },
+    "car": {
+      "instances": 14064,
+      "Precision": 0.8111008128268438,
+      "Recall": 0.8587172923777019,
+      "AP50": 0.885328792186634,
+      "AP50_95": 0.6564340686771439
+    },
+    "van": {
+      "instances": 1975,
+      "Precision": 0.6106307204991711,
+      "Recall": 0.5432911392405063,
+      "AP50": 0.5641828065385068,
+      "AP50_95": 0.4123920643961435
+    },
+    "truck": {
+      "instances": 750,
+      "Precision": 0.6250299563224044,
+      "Recall": 0.452,
+      "AP50": 0.49401609738457847,
+      "AP50_95": 0.3432838830791166
+    },
+    "tricycle": {
+      "instances": 1045,
+      "Precision": 0.5201647658756263,
+      "Recall": 0.43636363636363634,
+      "AP50": 0.4182736005156414,
+      "AP50_95": 0.24922513230064364
+    },
+    "awning-tricycle": {
+      "instances": 532,
+      "Precision": 0.3662647005524082,
+      "Recall": 0.22556390977443608,
+      "AP50": 0.2245036414044635,
+      "AP50_95": 0.1449622102336175
+    },
+    "bus": {
+      "instances": 251,
+      "Precision": 0.7751154571547044,
+      "Recall": 0.6374501992031872,
+      "AP50": 0.7127998616135233,
+      "AP50_95": 0.5425761807141142
+    },
+    "motor": {
+      "instances": 4886,
+      "Precision": 0.640237979208068,
+      "Recall": 0.6264838313548915,
+      "AP50": 0.6419857558960003,
+      "AP50_95": 0.3256034403032065
+    }
+  },
+  "freeze_note": "Pinned formal E10a seed1 reference used only for E15a result comparison. No glob or newest-result selection is permitted."
+}

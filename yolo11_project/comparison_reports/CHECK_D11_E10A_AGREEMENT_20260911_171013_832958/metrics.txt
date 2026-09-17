@@ -1,0 +1,145 @@
+D11 E10a semantic-detail agreement / P2 high-frequency diagnostic
+status: check_passed
+weights: /root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt
+No training, no checkpoint/source modification, no automatic shutdown.
+All frozen sweeps are directional off-manifold diagnostics, not final accuracy.
+
+
+Full metadata:
+{
+  "status": "check_passed",
+  "purpose": "D11 zero-training evidence and frozen sweep for an E10a P2 agreement filter",
+  "started_at": "2026-09-11T17:10:13",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/CHECK_D11_E10A_AGREEMENT_20260911_171013_832958",
+  "automatic_shutdown": false,
+  "protocol": {
+    "imgsz": 1024,
+    "area_batch": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 500,
+    "feature_images": 50,
+    "limit_images": 0,
+    "modes": [
+      "full",
+      "existing_gate_l010",
+      "existing_gate_l025",
+      "existing_gate_l050",
+      "agreement_l010",
+      "agreement_l025",
+      "agreement_l050"
+    ]
+  },
+  "weights": {
+    "path": "/root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt",
+    "sha256": "8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512"
+  },
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.5.1+cu121",
+    "ultralytics": "8.3.0",
+    "ultralytics_source": "/root/autodl-tmp/yolo11_src/ultralytics/__init__.py",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA vGPU-32GB"
+  },
+  "structural_check": {
+    "full": {
+      "mode": "full",
+      "intervention": "none; untouched frozen E10a",
+      "gate_kind": "none",
+      "suppression_strength": 0.0,
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_prediction_delta_vs_full": 0.0,
+      "max_abs_prediction_delta_vs_full": 0.0
+    },
+    "existing_gate_l010": {
+      "mode": "existing_gate_l010",
+      "intervention": "frozen P2 high-frequency residual suppression; original E10a semantic injection retained",
+      "gate_kind": "existing_gate",
+      "suppression_strength": 0.1,
+      "equation": "E10a_P2 - lambda * (1 - suppress_gate) * (P2 - Gaussian3x3(P2))",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_prediction_delta_vs_full": 0.0016493404982611537,
+      "max_abs_prediction_delta_vs_full": 0.06573486328125
+    },
+    "existing_gate_l025": {
+      "mode": "existing_gate_l025",
+      "intervention": "frozen P2 high-frequency residual suppression; original E10a semantic injection retained",
+      "gate_kind": "existing_gate",
+      "suppression_strength": 0.25,
+      "equation": "E10a_P2 - lambda * (1 - suppress_gate) * (P2 - Gaussian3x3(P2))",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_prediction_delta_vs_full": 0.0041510481387376785,
+      "max_abs_prediction_delta_vs_full": 0.1611480712890625
+    },
+    "existing_gate_l050": {
+      "mode": "existing_gate_l050",
+      "intervention": "frozen P2 high-frequency residual suppression; original E10a semantic injection retained",
+      "gate_kind": "existing_gate",
+      "suppression_strength": 0.5,
+      "equation": "E10a_P2 - lambda * (1 - suppress_gate) * (P2 - Gaussian3x3(P2))",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_prediction_delta_vs_full": 0.008395340293645859,
+      "max_abs_prediction_delta_vs_full": 0.318511962890625
+    },
+    "agreement_l010": {
+      "mode": "agreement_l010",
+      "intervention": "frozen P2 high-frequency residual suppression; original E10a semantic injection retained",
+      "gate_kind": "agreement",
+      "suppression_strength": 0.1,
+      "equation": "E10a_P2 - lambda * (1 - suppress_gate) * (P2 - Gaussian3x3(P2))",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_prediction_delta_vs_full": 0.004983081482350826,
+      "max_abs_prediction_delta_vs_full": 0.2301025390625
+    },
+    "agreement_l025": {
+      "mode": "agreement_l025",
+      "intervention": "frozen P2 high-frequency residual suppression; original E10a semantic injection retained",
+      "gate_kind": "agreement",
+      "suppression_strength": 0.25,
+      "equation": "E10a_P2 - lambda * (1 - suppress_gate) * (P2 - Gaussian3x3(P2))",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_prediction_delta_vs_full": 0.012711148709058762,
+      "max_abs_prediction_delta_vs_full": 0.57843017578125
+    },
+    "agreement_l050": {
+      "mode": "agreement_l050",
+      "intervention": "frozen P2 high-frequency residual suppression; original E10a semantic injection retained",
+      "gate_kind": "agreement",
+      "suppression_strength": 0.5,
+      "equation": "E10a_P2 - lambda * (1 - suppress_gate) * (P2 - Gaussian3x3(P2))",
+      "output_shape": [
+        1,
+        14,
+        5440
+      ],
+      "mean_abs_prediction_delta_vs_full": 0.02628222107887268,
+      "max_abs_prediction_delta_vs_full": 1.1317520141601562
+    }
+  },
+  "updated_at": "2026-09-11T17:10:15"
+}

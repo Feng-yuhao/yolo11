@@ -1,0 +1,268 @@
+{
+  "status": "completed",
+  "purpose": "DIAG_D23_SMALL_CANDIDATE_ORIGIN_TAL",
+  "revision": "D23_candidate_origin_tal_proxy_v1_1_smoke_report_fix",
+  "started_at": "2026-09-19T13:37:52",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D23_SMALL_CANDIDATE_ORIGIN_TAL_20260919_133752_497010",
+  "zero_training": true,
+  "protocol": {
+    "imgsz": 1024,
+    "batch": 4,
+    "conf": 0.001,
+    "nms_iou": 0.7,
+    "formal_max_det": 500,
+    "diagnostic_max_det": 1000,
+    "detail_ious": [
+      0.5,
+      0.75
+    ],
+    "oracle_ious": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "stage_order": [
+      "raw decoded geometry",
+      "GT-class confidence / best-class selection",
+      "class-aware NMS",
+      "top-500 budget"
+    ],
+    "assignment_proxy": "Ultralytics 8.3.0 TaskAlignedAssigner(topk=10, alpha=0.5, beta=6.0) applied to final-checkpoint eval-mode predictions and all val GT per image."
+  },
+  "d22_source": {
+    "path": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D22_E10A_SMALL_ERROR_20260919_123618_214596/metrics.json",
+    "sha256": "cd85c9053b3ff53795efec46501c026351a4a003eb742c7b398c0bb96b4dede8",
+    "revision": "D22_small_error_decomposition_v1"
+  },
+  "environment": {
+    "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+    "platform": "Linux-5.15.0-124-generic-x86_64-with-glibc2.35",
+    "ultralytics": "8.3.0",
+    "ultralytics_source": "/root/autodl-tmp/yolo11_src/ultralytics/__init__.py",
+    "torch": "2.5.1+cu121",
+    "cuda_available": true,
+    "gpu": "NVIDIA vGPU-32GB"
+  },
+  "dataset": {
+    "images": 548,
+    "instances": 38759,
+    "label_sha256": "9fcd8057313d2916d73303246707859dac41897e480aa0dd910ff419fde5dd6c",
+    "duplicates_removed": 0,
+    "density_q25_from_D22": 5.625903129577637,
+    "density_q75_from_D22": 19.738664627075195
+  },
+  "checkpoint_audit": {
+    "E10a": {
+      "path": "/root/autodl-tmp/yolo11_project/runs/e10a_yolo11s_p2_dssg_img1024_seed1/weights/best.pt",
+      "actual_sha256": "8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512",
+      "expected_from_D22": "8c92316c138ea01bdbe3eacf3d275c9be15d96231c13c65818811bcc3cd2d512",
+      "passed": true
+    },
+    "E16a": {
+      "path": "/root/autodl-tmp/yolo11_project/runs/e16a_yolo11s_p2_tsdr_img1024_seed1/weights/best.pt",
+      "actual_sha256": "36d30cd46eac7562ba1aa64040aea16d21b27d22bc79dd325cca4a38cb315ee8",
+      "expected_from_D22": "36d30cd46eac7562ba1aa64040aea16d21b27d22bc79dd325cca4a38cb315ee8",
+      "passed": true
+    },
+    "E21a": {
+      "path": "/root/autodl-tmp/yolo11_project/runs/e21a_yolo11s_p2_rsg_dssg_img1024_seed1/weights/best.pt",
+      "actual_sha256": "e03aced5d93eb7577059e21a3ace5076e66fcac969ac485c448f4c59e5a6e416",
+      "expected_from_D22": "e03aced5d93eb7577059e21a3ace5076e66fcac969ac485c448f4c59e5a6e416",
+      "passed": true
+    }
+  },
+  "progress": {
+    "model": "E21a",
+    "images": 548
+  },
+  "decode_parity": {
+    "E10a": {
+      "max_abs_box_difference_px": 0.00018310546875,
+      "max_abs_class_probability_difference": 0.0,
+      "batch_input_shapes": {
+        "(576, 1024)": 492,
+        "(1024, 1024)": 56
+      }
+    },
+    "E16a": {
+      "max_abs_box_difference_px": 0.00018310546875,
+      "max_abs_class_probability_difference": 0.0,
+      "batch_input_shapes": {
+        "(576, 1024)": 492,
+        "(1024, 1024)": 56
+      }
+    },
+    "E21a": {
+      "max_abs_box_difference_px": 0.000244140625,
+      "max_abs_class_probability_difference": 0.0,
+      "batch_input_shapes": {
+        "(576, 1024)": 492,
+        "(1024, 1024)": 56
+      }
+    }
+  },
+  "parity": [
+    {
+      "model": "E10a",
+      "current_prediction_count": 243002,
+      "D22_prediction_count": 243002,
+      "prediction_count_match": true,
+      "current_AP_all": 0.31499942108659135,
+      "current_AP_small": 0.22891708626301424,
+      "current_AP_medium": 0.4248485316225591,
+      "current_AP_large": 0.5663497620746415,
+      "current_AR_small": 0.363907475808454,
+      "D22_AP_all": 0.31499942108659135,
+      "D22_AP_small": 0.22891708626301424,
+      "D22_AP_medium": 0.4248485316225591,
+      "D22_AP_large": 0.5663497620746415,
+      "D22_AR_small": 0.363907475808454,
+      "delta_AP_all": 0.0,
+      "delta_AP_small": 0.0,
+      "delta_AP_medium": 0.0,
+      "delta_AP_large": 0.0,
+      "delta_AR_small": 0.0,
+      "metric_parity_passed": true
+    },
+    {
+      "model": "E16a",
+      "current_prediction_count": 242312,
+      "D22_prediction_count": 242312,
+      "prediction_count_match": true,
+      "current_AP_all": 0.3137579007022081,
+      "current_AP_small": 0.22575069388305966,
+      "current_AP_medium": 0.4255794546689282,
+      "current_AP_large": 0.5770781709544781,
+      "current_AR_small": 0.3625863346076178,
+      "D22_AP_all": 0.3137579007022081,
+      "D22_AP_small": 0.22575069388305966,
+      "D22_AP_medium": 0.4255794546689282,
+      "D22_AP_large": 0.5770781709544781,
+      "D22_AR_small": 0.3625863346076178,
+      "delta_AP_all": 0.0,
+      "delta_AP_small": 0.0,
+      "delta_AP_medium": 0.0,
+      "delta_AP_large": 0.0,
+      "delta_AR_small": 0.0,
+      "metric_parity_passed": true
+    },
+    {
+      "model": "E21a",
+      "current_prediction_count": 242315,
+      "D22_prediction_count": 242315,
+      "prediction_count_match": true,
+      "current_AP_all": 0.31656709679317774,
+      "current_AP_small": 0.23163662009054103,
+      "current_AP_medium": 0.4283865533279346,
+      "current_AP_large": 0.4885745507937861,
+      "current_AR_small": 0.368273284890493,
+      "D22_AP_all": 0.31656709679317774,
+      "D22_AP_small": 0.23163662009054103,
+      "D22_AP_medium": 0.4283865533279346,
+      "D22_AP_large": 0.4885745507937861,
+      "D22_AR_small": 0.368273284890493,
+      "delta_AP_all": 0.0,
+      "delta_AP_small": 0.0,
+      "delta_AP_medium": 0.0,
+      "delta_AP_large": 0.0,
+      "delta_AR_small": 0.0,
+      "metric_parity_passed": true
+    }
+  ],
+  "decision": {
+    "revision": "D23_candidate_origin_tal_proxy_v1_1_smoke_report_fix",
+    "decision_rules": {
+      "dominance_margin": 0.1,
+      "strong_assignment_gap": 0.1,
+      "note": "These are resource/causal-screening heuristics, not significance tests."
+    },
+    "E10a_stage": {
+      "0.5": {
+        "shares_of_top500_failures": {
+          "raw_geometry_missing": 0.24775353016688062,
+          "class_selection": 0.5134788189987163,
+          "nms_suppression": 0.10342930496974143,
+          "ranking_budget": 0.13533834586466165
+        },
+        "ranking": {
+          "top": "class_selection",
+          "top_share": 0.5134788189987163,
+          "second": "raw_geometry_missing",
+          "second_share": 0.24775353016688062,
+          "margin": 0.26572528883183566,
+          "dominant": true
+        }
+      },
+      "0.75": {
+        "shares_of_top500_failures": {
+          "raw_geometry_missing": 0.6026819140970663,
+          "class_selection": 0.162140085766796,
+          "nms_suppression": 0.20842692805118782,
+          "ranking_budget": 0.026751072084949968
+        },
+        "ranking": {
+          "top": "raw_geometry_missing",
+          "top_share": 0.6026819140970663,
+          "second": "nms_suppression",
+          "second_share": 0.20842692805118782,
+          "margin": 0.3942549860458785,
+          "dominant": true
+        }
+      }
+    },
+    "assignment_signal": {
+      "tiny_0_8_minus_24_32_zero_final_positive_rate": 0.1172100701609575,
+      "dense_minus_sparse_zero_final_positive_rate": 0.056186818271126066,
+      "dense_minus_sparse_conflict_loss_fraction_mean": 0.23642887114563851,
+      "tiny_to_24_32_final_positive_median_ratio": 0.2,
+      "raw075_missing_minus_present_zero_final_positive_rate": 0.04653340494986698,
+      "raw075_missing_to_present_final_positive_median_ratio": 0.5,
+      "strong_assignment_scarcity": true
+    },
+    "natural_interventions": {
+      "E16a_minus_E10a_raw_geometry_rate_iou075": 0.0001880689084480247,
+      "E16a_minus_E10a_raw_correct_argmax_rate_iou075": -0.0007522756337922099,
+      "E21a_minus_E10a_raw_geometry_rate_iou075": -0.001316482359136395,
+      "E21a_minus_E10a_raw_correct_argmax_rate_iou050": -0.0004889791619648864,
+      "guard": "These checkpoint differences are descriptive natural interventions, not randomized causal proof."
+    },
+    "next_step": {
+      "choice": "DESIGN_E23A_P2_SMALL_AWARE_ASSIGNMENT_CAUSAL_TEST",
+      "rationale": "Raw high-IoU candidate absence dominates E10a top500 failures at IoU=0.75, and the TAL proxy shows a strong tiny/dense assignment scarcity or conflict signal. The next formal intervention should be P2/small-isolated assignment supervision, not another generic feature or score module."
+    },
+    "hard_boundaries": [
+      "Do not reinterpret max_det=1000 as the formal evaluation protocol.",
+      "TAL proxy is final-checkpoint/eval-output behavior, not logged training history.",
+      "Raw-geometry absence does not by itself prove backbone representation failure.",
+      "NMS-stage existence analysis is per-GT candidate existence, not COCO one-to-one matching.",
+      "Do not train a classification-only E22a unless D23 explicitly selects the classification branch.",
+      "If assignment is selected, keep the intervention P2/small isolated and preserve E10a inference topology."
+    ]
+  },
+  "finished_at": "2026-09-19T13:46:01",
+  "total_seconds": 489.4860437363386,
+  "output_files": [
+    "small_candidate_origin.csv",
+    "small_stage_decomposition.csv",
+    "small_tal_assignment_proxy.csv",
+    "stage_summary.csv",
+    "stage_by_size.csv",
+    "stage_by_density.csv",
+    "stage_by_class.csv",
+    "tal_summary.csv",
+    "tal_by_size.csv",
+    "tal_by_density.csv",
+    "tal_by_class.csv",
+    "tal_by_raw075.csv",
+    "raw_candidate_oracle_curve.csv",
+    "d22_parity.csv",
+    "decision.json"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "revision": "D23_candidate_origin_tal_proxy_v1_1_smoke_report_fix",
+  "decision_rules": {
+    "dominance_margin": 0.1,
+    "strong_assignment_gap": 0.1,
+    "note": "These are resource/causal-screening heuristics, not significance tests."
+  },
+  "E10a_stage": {
+    "0.5": {
+      "shares_of_top500_failures": {
+        "raw_geometry_missing": 0.24775353016688062,
+        "class_selection": 0.5134788189987163,
+        "nms_suppression": 0.10342930496974143,
+        "ranking_budget": 0.13533834586466165
+      },
+      "ranking": {
+        "top": "class_selection",
+        "top_share": 0.5134788189987163,
+        "second": "raw_geometry_missing",
+        "second_share": 0.24775353016688062,
+        "margin": 0.26572528883183566,
+        "dominant": true
+      }
+    },
+    "0.75": {
+      "shares_of_top500_failures": {
+        "raw_geometry_missing": 0.6026819140970663,
+        "class_selection": 0.162140085766796,
+        "nms_suppression": 0.20842692805118782,
+        "ranking_budget": 0.026751072084949968
+      },
+      "ranking": {
+        "top": "raw_geometry_missing",
+        "top_share": 0.6026819140970663,
+        "second": "nms_suppression",
+        "second_share": 0.20842692805118782,
+        "margin": 0.3942549860458785,
+        "dominant": true
+      }
+    }
+  },
+  "assignment_signal": {
+    "tiny_0_8_minus_24_32_zero_final_positive_rate": 0.1172100701609575,
+    "dense_minus_sparse_zero_final_positive_rate": 0.056186818271126066,
+    "dense_minus_sparse_conflict_loss_fraction_mean": 0.23642887114563851,
+    "tiny_to_24_32_final_positive_median_ratio": 0.2,
+    "raw075_missing_minus_present_zero_final_positive_rate": 0.04653340494986698,
+    "raw075_missing_to_present_final_positive_median_ratio": 0.5,
+    "strong_assignment_scarcity": true
+  },
+  "natural_interventions": {
+    "E16a_minus_E10a_raw_geometry_rate_iou075": 0.0001880689084480247,
+    "E16a_minus_E10a_raw_correct_argmax_rate_iou075": -0.0007522756337922099,
+    "E21a_minus_E10a_raw_geometry_rate_iou075": -0.001316482359136395,
+    "E21a_minus_E10a_raw_correct_argmax_rate_iou050": -0.0004889791619648864,
+    "guard": "These checkpoint differences are descriptive natural interventions, not randomized causal proof."
+  },
+  "next_step": {
+    "choice": "DESIGN_E23A_P2_SMALL_AWARE_ASSIGNMENT_CAUSAL_TEST",
+    "rationale": "Raw high-IoU candidate absence dominates E10a top500 failures at IoU=0.75, and the TAL proxy shows a strong tiny/dense assignment scarcity or conflict signal. The next formal intervention should be P2/small-isolated assignment supervision, not another generic feature or score module."
+  },
+  "hard_boundaries": [
+    "Do not reinterpret max_det=1000 as the formal evaluation protocol.",
+    "TAL proxy is final-checkpoint/eval-output behavior, not logged training history.",
+    "Raw-geometry absence does not by itself prove backbone representation failure.",
+    "NMS-stage existence analysis is per-GT candidate existence, not COCO one-to-one matching.",
+    "Do not train a classification-only E22a unless D23 explicitly selects the classification branch.",
+    "If assignment is selected, keep the intervention P2/small isolated and preserve E10a inference topology."
+  ]
+}

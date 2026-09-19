@@ -1,0 +1,15 @@
+D23 Small Candidate Origin & TAL Assignment Diagnostic
+status: completed
+revision: D23_candidate_origin_tal_proxy_v1_1_smoke_report_fix
+ZERO TRAINING
+
+next_step: DESIGN_E23A_P2_SMALL_AWARE_ASSIGNMENT_CAUSAL_TEST
+rationale: Raw high-IoU candidate absence dominates E10a top500 failures at IoU=0.75, and the TAL proxy shows a strong tiny/dense assignment scarcity or conflict signal. The next formal intervention should be P2/small-isolated assignment supervision, not another generic feature or score module.
+
+E10a stage shares among top500 failures:
+  IoU=0.5: {'raw_geometry_missing': 0.24775353016688062, 'class_selection': 0.5134788189987163, 'nms_suppression': 0.10342930496974143, 'ranking_budget': 0.13533834586466165}
+    dominant=True margin=0.265725
+  IoU=0.75: {'raw_geometry_missing': 0.6026819140970663, 'class_selection': 0.162140085766796, 'nms_suppression': 0.20842692805118782, 'ranking_budget': 0.026751072084949968}
+    dominant=True margin=0.394255
+
+assignment_signal: {'tiny_0_8_minus_24_32_zero_final_positive_rate': 0.1172100701609575, 'dense_minus_sparse_zero_final_positive_rate': 0.056186818271126066, 'dense_minus_sparse_conflict_loss_fraction_mean': 0.23642887114563851, 'tiny_to_24_32_final_positive_median_ratio': 0.2, 'raw075_missing_minus_present_zero_final_positive_rate': 0.04653340494986698, 'raw075_missing_to_present_final_positive_median_ratio': 0.5, 'strong_assignment_scarcity': True}

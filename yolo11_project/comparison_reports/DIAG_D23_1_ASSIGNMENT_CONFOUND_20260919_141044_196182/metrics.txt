@@ -1,0 +1,17 @@
+D23.1 Conditional TAL Association Audit
+status: completed
+revision: D23_1_conditional_tal_association_audit_v1_1_eligibility_control_fix
+ZERO INFERENCE / ZERO TRAINING
+
+next_step: E23A_P2_LOCAL_REGRESSION_QUALITY_CAUSAL_TEST
+rationale: After controlling the major confounders and in-GT anchor eligibility, no sufficiently strong, robust TAL selection/conflict deficit remains to prioritize assignment. The next causal test should target P2-local box/DFL quality while preserving classification, DSSG, P3-P5 and inference topology.
+
+signals: {'primary_common_support_ok': True, 'downstream_assignment_association_strong': False, 'eligibility_association_strong': False}
+
+primary eligibility-controlled effects (missing - present):
+  tal_preconflict_total: diff=-0.03459833363099918 missing=8.552374614577147 present=8.586972948208146 coverage=(0.7517506211881635,0.9167606586961425)
+  tal_final_total: diff=-0.5456787031226753 missing=7.574779903627663 present=8.120458606750338 coverage=(0.7517506211881635,0.9167606586961425)
+  zero_final_positive: diff=0.009526478991203752 missing=0.01070193803178313 present=0.001175459040579376 coverage=(0.7517506211881635,0.9167606586961425)
+  conflict_loss_fraction: diff=0.062285602824332334 missing=0.12289564147838745 present=0.06061003865405512 coverage=(0.7517506211881635,0.9167606586961425)
+  target_weight_mean: diff=-0.17454065567925936 missing=0.3249297455409482 present=0.4994704012202076 coverage=(0.7517506211881635,0.9167606586961425)
+  tal_final_P2: diff=-0.30105536128813704 missing=6.012860206398535 present=6.313915567686672 coverage=(0.7517506211881635,0.9167606586961425)

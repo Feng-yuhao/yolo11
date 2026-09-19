@@ -1,0 +1,127 @@
+{
+  "revision": "D23_1_conditional_tal_association_audit_v1_1_eligibility_control_fix",
+  "interpretation_boundary": "All effects are conditional associations on final-checkpoint outputs. TAL uses prediction scores and CIoU, so prediction-coupled metrics cannot establish causal direction.",
+  "preregistered_rules": {
+    "primary_min_cell_per_group": 10,
+    "sensitivity_min_cells": [
+      5,
+      10,
+      20
+    ],
+    "min_primary_common_support_coverage": 0.65,
+    "strong_final_positive_deficit_missing_minus_present": -1.0,
+    "strong_preconflict_deficit_missing_minus_present": -0.75,
+    "strong_conflict_excess_missing_minus_present": 0.08,
+    "strong_p2_final_deficit_missing_minus_present": -0.6,
+    "strong_eligibility_cap_deficit_missing_minus_present": -1.0,
+    "robustness_fraction": 0.5,
+    "note": "Resource/causal-screening heuristics, not statistical-significance thresholds."
+  },
+  "primary_eligibility_controlled_effects": {
+    "tal_preconflict_total": {
+      "adjusted_difference_missing_minus_present": -0.03459833363099918,
+      "weighted_missing_mean": 8.552374614577147,
+      "weighted_present_mean": 8.586972948208146,
+      "missing_coverage": 0.7517506211881635,
+      "present_coverage": 0.9167606586961425,
+      "eligible_strata": 124
+    },
+    "tal_final_total": {
+      "adjusted_difference_missing_minus_present": -0.5456787031226753,
+      "weighted_missing_mean": 7.574779903627663,
+      "weighted_present_mean": 8.120458606750338,
+      "missing_coverage": 0.7517506211881635,
+      "present_coverage": 0.9167606586961425,
+      "eligible_strata": 124
+    },
+    "zero_final_positive": {
+      "adjusted_difference_missing_minus_present": 0.009526478991203752,
+      "weighted_missing_mean": 0.01070193803178313,
+      "weighted_present_mean": 0.001175459040579376,
+      "missing_coverage": 0.7517506211881635,
+      "present_coverage": 0.9167606586961425,
+      "eligible_strata": 124
+    },
+    "conflict_loss_fraction": {
+      "adjusted_difference_missing_minus_present": 0.062285602824332334,
+      "weighted_missing_mean": 0.12289564147838745,
+      "weighted_present_mean": 0.06061003865405512,
+      "missing_coverage": 0.7517506211881635,
+      "present_coverage": 0.9167606586961425,
+      "eligible_strata": 124
+    },
+    "target_weight_mean": {
+      "adjusted_difference_missing_minus_present": -0.17454065567925936,
+      "weighted_missing_mean": 0.3249297455409482,
+      "weighted_present_mean": 0.4994704012202076,
+      "missing_coverage": 0.7517506211881635,
+      "present_coverage": 0.9167606586961425,
+      "eligible_strata": 124
+    },
+    "tal_final_P2": {
+      "adjusted_difference_missing_minus_present": -0.30105536128813704,
+      "weighted_missing_mean": 6.012860206398535,
+      "weighted_present_mean": 6.313915567686672,
+      "missing_coverage": 0.7517506211881635,
+      "present_coverage": 0.9167606586961425,
+      "eligible_strata": 124
+    }
+  },
+  "sensitivity": {
+    "final_positive": [
+      -0.5390839473346904,
+      -0.5456787031226753,
+      -0.5632728801317466
+    ],
+    "preconflict_positive": [
+      -0.035012720740514425,
+      -0.03459833363099918,
+      -0.03539507552299881
+    ],
+    "conflict_fraction": [
+      0.061929364215648895,
+      0.062285602824332334,
+      0.06154442912601958
+    ],
+    "p2_final_positive": [
+      -0.2946497412067828,
+      -0.30105536128813704,
+      -0.31586946714869146
+    ],
+    "robust_final": true,
+    "robust_preconflict": false,
+    "robust_conflict": true,
+    "robust_p2": false
+  },
+  "eligibility_adjusted_checks": [
+    {
+      "scheme": "coarse_class_size_density",
+      "difference_in_gt_cap10_missing_minus_present": -0.7173735215780335,
+      "missing_coverage": 0.9332505082448611,
+      "present_coverage": 0.9603541619670652
+    },
+    {
+      "scheme": "fine_class_side2_nnlog2",
+      "difference_in_gt_cap10_missing_minus_present": -0.36073297445508423,
+      "missing_coverage": 0.7180935170544387,
+      "present_coverage": 0.596661403113016
+    }
+  ],
+  "signals": {
+    "primary_common_support_ok": true,
+    "downstream_assignment_association_strong": false,
+    "eligibility_association_strong": false
+  },
+  "next_step": {
+    "choice": "E23A_P2_LOCAL_REGRESSION_QUALITY_CAUSAL_TEST",
+    "rationale": "After controlling the major confounders and in-GT anchor eligibility, no sufficiently strong, robust TAL selection/conflict deficit remains to prioritize assignment. The next causal test should target P2-local box/DFL quality while preserving classification, DSSG, P3-P5 and inference topology."
+  },
+  "hard_boundaries": [
+    "Target-weight difference alone can never select an assignment experiment because target weight is mechanically prediction-coupled.",
+    "Do not call D23.1 causal proof.",
+    "Do not modify P3/P4/P5 if a P2-isolated causal test is selected.",
+    "Do not revive P1-detail routing: E16a did not materially improve raw IoU=.75 geometry.",
+    "Do not revive classification-only E22a to solve the IoU=.75 bottleneck.",
+    "Formal evaluation remains max_det=500."
+  ]
+}

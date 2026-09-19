@@ -1,0 +1,253 @@
+{
+  "status": "completed",
+  "revision": "D23_1_conditional_tal_association_audit_v1_1_eligibility_control_fix",
+  "purpose": "DIAG_D23_1_ASSIGNMENT_CONFOUND",
+  "started_at": "2026-09-19T14:10:44",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D23_1_ASSIGNMENT_CONFOUND_20260919_141044_196182",
+  "zero_inference": true,
+  "zero_training": true,
+  "source_d23_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D23_SMALL_CANDIDATE_ORIGIN_TAL_20260919_133752_497010",
+  "environment": {
+    "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+    "platform": "Linux-5.15.0-124-generic-x86_64-with-glibc2.35",
+    "pandas": "2.3.3",
+    "numpy": "1.26.4"
+  },
+  "source_audit": {
+    "metrics": {
+      "path": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D23_SMALL_CANDIDATE_ORIGIN_TAL_20260919_133752_497010/metrics.json",
+      "sha256": "9865e6794310d6607c0245bd1b1bcb06e71295ee1d2250f18f423b00aeed2b97",
+      "size": 9916
+    },
+    "parity": {
+      "path": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D23_SMALL_CANDIDATE_ORIGIN_TAL_20260919_133752_497010/d22_parity.csv",
+      "sha256": "f0b9b714ad882f7418fe56641a73e45aa4bdce3b737875dd459ece8c0a5a6fc1",
+      "size": 1048
+    },
+    "candidate": {
+      "path": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D23_SMALL_CANDIDATE_ORIGIN_TAL_20260919_133752_497010/small_candidate_origin.csv",
+      "sha256": "bb53bbf2a38fca565cd522f928b468121f96f165e83212fe1c71e3edc22e9d46",
+      "size": 32545238
+    },
+    "stage": {
+      "path": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D23_SMALL_CANDIDATE_ORIGIN_TAL_20260919_133752_497010/small_stage_decomposition.csv",
+      "sha256": "290e6cb54e42ed64d7d31f1ef10cf07661d30e26652cc62e80a0d7895240c2ce",
+      "size": 22061849
+    },
+    "tal": {
+      "path": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D23_SMALL_CANDIDATE_ORIGIN_TAL_20260919_133752_497010/small_tal_assignment_proxy.csv",
+      "sha256": "69e91aea5fd417b52d59f7e50cc1d6d78055c36a1d52a8ecda4ee24e5e61c8fe",
+      "size": 23984865
+    }
+  },
+  "source_d23_revision": "D23_candidate_origin_tal_proxy_v1_1_smoke_report_fix",
+  "source_d23_finished_at": "2026-09-19T13:46:01",
+  "validation": {
+    "candidate_rows": 79758,
+    "stage_rows": 159516,
+    "tal_rows": 79758,
+    "models": [
+      "E10a",
+      "E16a",
+      "E21a"
+    ],
+    "small_gt_per_model": 26586,
+    "candidate_stage_iou075_consistency": true
+  },
+  "finished_at": "2026-09-19T14:11:00",
+  "decision": {
+    "revision": "D23_1_conditional_tal_association_audit_v1_1_eligibility_control_fix",
+    "interpretation_boundary": "All effects are conditional associations on final-checkpoint outputs. TAL uses prediction scores and CIoU, so prediction-coupled metrics cannot establish causal direction.",
+    "preregistered_rules": {
+      "primary_min_cell_per_group": 10,
+      "sensitivity_min_cells": [
+        5,
+        10,
+        20
+      ],
+      "min_primary_common_support_coverage": 0.65,
+      "strong_final_positive_deficit_missing_minus_present": -1.0,
+      "strong_preconflict_deficit_missing_minus_present": -0.75,
+      "strong_conflict_excess_missing_minus_present": 0.08,
+      "strong_p2_final_deficit_missing_minus_present": -0.6,
+      "strong_eligibility_cap_deficit_missing_minus_present": -1.0,
+      "robustness_fraction": 0.5,
+      "note": "Resource/causal-screening heuristics, not statistical-significance thresholds."
+    },
+    "primary_eligibility_controlled_effects": {
+      "tal_preconflict_total": {
+        "adjusted_difference_missing_minus_present": -0.03459833363099918,
+        "weighted_missing_mean": 8.552374614577147,
+        "weighted_present_mean": 8.586972948208146,
+        "missing_coverage": 0.7517506211881635,
+        "present_coverage": 0.9167606586961425,
+        "eligible_strata": 124
+      },
+      "tal_final_total": {
+        "adjusted_difference_missing_minus_present": -0.5456787031226753,
+        "weighted_missing_mean": 7.574779903627663,
+        "weighted_present_mean": 8.120458606750338,
+        "missing_coverage": 0.7517506211881635,
+        "present_coverage": 0.9167606586961425,
+        "eligible_strata": 124
+      },
+      "zero_final_positive": {
+        "adjusted_difference_missing_minus_present": 0.009526478991203752,
+        "weighted_missing_mean": 0.01070193803178313,
+        "weighted_present_mean": 0.001175459040579376,
+        "missing_coverage": 0.7517506211881635,
+        "present_coverage": 0.9167606586961425,
+        "eligible_strata": 124
+      },
+      "conflict_loss_fraction": {
+        "adjusted_difference_missing_minus_present": 0.062285602824332334,
+        "weighted_missing_mean": 0.12289564147838745,
+        "weighted_present_mean": 0.06061003865405512,
+        "missing_coverage": 0.7517506211881635,
+        "present_coverage": 0.9167606586961425,
+        "eligible_strata": 124
+      },
+      "target_weight_mean": {
+        "adjusted_difference_missing_minus_present": -0.17454065567925936,
+        "weighted_missing_mean": 0.3249297455409482,
+        "weighted_present_mean": 0.4994704012202076,
+        "missing_coverage": 0.7517506211881635,
+        "present_coverage": 0.9167606586961425,
+        "eligible_strata": 124
+      },
+      "tal_final_P2": {
+        "adjusted_difference_missing_minus_present": -0.30105536128813704,
+        "weighted_missing_mean": 6.012860206398535,
+        "weighted_present_mean": 6.313915567686672,
+        "missing_coverage": 0.7517506211881635,
+        "present_coverage": 0.9167606586961425,
+        "eligible_strata": 124
+      }
+    },
+    "sensitivity": {
+      "final_positive": [
+        -0.5390839473346904,
+        -0.5456787031226753,
+        -0.5632728801317466
+      ],
+      "preconflict_positive": [
+        -0.035012720740514425,
+        -0.03459833363099918,
+        -0.03539507552299881
+      ],
+      "conflict_fraction": [
+        0.061929364215648895,
+        0.062285602824332334,
+        0.06154442912601958
+      ],
+      "p2_final_positive": [
+        -0.2946497412067828,
+        -0.30105536128813704,
+        -0.31586946714869146
+      ],
+      "robust_final": true,
+      "robust_preconflict": false,
+      "robust_conflict": true,
+      "robust_p2": false
+    },
+    "eligibility_adjusted_checks": [
+      {
+        "scheme": "coarse_class_size_density",
+        "difference_in_gt_cap10_missing_minus_present": -0.7173735215780335,
+        "missing_coverage": 0.9332505082448611,
+        "present_coverage": 0.9603541619670652
+      },
+      {
+        "scheme": "fine_class_side2_nnlog2",
+        "difference_in_gt_cap10_missing_minus_present": -0.36073297445508423,
+        "missing_coverage": 0.7180935170544387,
+        "present_coverage": 0.596661403113016
+      }
+    ],
+    "signals": {
+      "primary_common_support_ok": true,
+      "downstream_assignment_association_strong": false,
+      "eligibility_association_strong": false
+    },
+    "next_step": {
+      "choice": "E23A_P2_LOCAL_REGRESSION_QUALITY_CAUSAL_TEST",
+      "rationale": "After controlling the major confounders and in-GT anchor eligibility, no sufficiently strong, robust TAL selection/conflict deficit remains to prioritize assignment. The next causal test should target P2-local box/DFL quality while preserving classification, DSSG, P3-P5 and inference topology."
+    },
+    "hard_boundaries": [
+      "Target-weight difference alone can never select an assignment experiment because target weight is mechanically prediction-coupled.",
+      "Do not call D23.1 causal proof.",
+      "Do not modify P3/P4/P5 if a P2-isolated causal test is selected.",
+      "Do not revive P1-detail routing: E16a did not materially improve raw IoU=.75 geometry.",
+      "Do not revive classification-only E22a to solve the IoU=.75 bottleneck.",
+      "Formal evaluation remains max_det=500."
+    ]
+  },
+  "row_counts": {
+    "joined": 79758,
+    "E10a": 26586,
+    "E16a": 26586,
+    "E21a": 26586
+  },
+  "raw075_counts": [
+    {
+      "model": "E10a",
+      "raw075_group": "missing",
+      "n": 8854,
+      "rate": 0.33303242307981645
+    },
+    {
+      "model": "E10a",
+      "raw075_group": "present",
+      "n": 17732,
+      "rate": 0.6669675769201836
+    },
+    {
+      "model": "E16a",
+      "raw075_group": "missing",
+      "n": 8849,
+      "rate": 0.3328443541713684
+    },
+    {
+      "model": "E16a",
+      "raw075_group": "present",
+      "n": 17737,
+      "rate": 0.6671556458286316
+    },
+    {
+      "model": "E21a",
+      "raw075_group": "missing",
+      "n": 8889,
+      "rate": 0.33434890543895285
+    },
+    {
+      "model": "E21a",
+      "raw075_group": "present",
+      "n": 17697,
+      "rate": 0.6656510945610472
+    }
+  ],
+  "level_deficit_share": {
+    "total_final_positive_present_minus_missing": 3.269710134950559,
+    "P2_final_positive_present_minus_missing": 2.265323613771919,
+    "P2_share_of_total_deficit": 0.6928209291574321,
+    "P3_final_positive_present_minus_missing": 0.9971200222207603,
+    "P3_share_of_total_deficit": 0.3049567029084178,
+    "P4_final_positive_present_minus_missing": 0.02762870122437877,
+    "P4_share_of_total_deficit": 0.008449893135495493,
+    "P5_final_positive_present_minus_missing": -0.020362202266499208,
+    "P5_share_of_total_deficit": -0.006227525201345441
+  },
+  "outputs": [
+    "decision.json",
+    "metrics.json",
+    "metrics.txt",
+    "raw075_counts.csv",
+    "raw075_unadjusted.csv",
+    "raw075_by_class_size_density.csv",
+    "adjusted_effects.csv",
+    "primary_e10a_eligibility_controlled.csv",
+    "fixed_e10a_hardcase_cross_model.csv",
+    "raw075_cross_model_transitions.csv",
+    "level_deficit_share.json"
+  ]
+}

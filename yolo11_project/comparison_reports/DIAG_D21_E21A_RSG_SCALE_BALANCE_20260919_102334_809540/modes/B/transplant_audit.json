@@ -1,0 +1,24 @@
+{
+  "mode": "B",
+  "base": "E21a",
+  "donor": "E10a",
+  "prefix": "model.27.spatial_gate.",
+  "changed_key_count": 8,
+  "changed_parameter_count": 769,
+  "changed_buffer_count": 33,
+  "changed_keys": [
+    "model.27.spatial_gate.net.0.0.weight",
+    "model.27.spatial_gate.net.0.1.bias",
+    "model.27.spatial_gate.net.0.1.num_batches_tracked",
+    "model.27.spatial_gate.net.0.1.running_mean",
+    "model.27.spatial_gate.net.0.1.running_var",
+    "model.27.spatial_gate.net.0.1.weight",
+    "model.27.spatial_gate.net.1.bias",
+    "model.27.spatial_gate.net.1.weight"
+  ],
+  "max_abs_error_to_donor": 0.0,
+  "max_abs_error_to_base_for_untouched": 0.0,
+  "strict_load": true,
+  "transplanted_before_fusion": true,
+  "eval_before_inference": true
+}

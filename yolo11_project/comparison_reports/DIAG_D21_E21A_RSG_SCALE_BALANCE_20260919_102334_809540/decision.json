@@ -1,0 +1,70 @@
+{
+  "candidate_saturation": {
+    "classification": "limited_truncation_explanation",
+    "AP_large_gap_shrink": -0.0028580274923619697,
+    "AR_large_gap_shrink": -0.01904660189786478,
+    "thresholds_preregistered": {
+      "dominant_both_min": 0.5,
+      "mixed_both_min": 0.25
+    },
+    "note": "Ratios are not clipped to [0,1]. max_det=1000 is diagnostic, not a replacement formal protocol."
+  },
+  "localization_500": {
+    "basis": "area500",
+    "classification": "Shared-trajectory-like",
+    "B_recovery": {
+      "AP_large": -0.00048661119250802083,
+      "AR_large": 0.0
+    },
+    "C_recovery": {
+      "AP_large": 0.0010407404091551395,
+      "AR_large": 0.00513679691429118
+    },
+    "D_damage_reproduction": {
+      "AP_large": -0.0019302186412820342,
+      "AR_large": 0.0034245312761935686
+    },
+    "thresholds_preregistered": {
+      "Gate-dominant": "B AP-L and AR-L recovery >=50%, AND D AP-L and AR-L damage reproduction >=50%",
+      "Whole-SDG-dominant": "B AP-L and AR-L recovery <25%, AND C AP-L and AR-L recovery >=50%",
+      "Shared-trajectory-like": "C AP-L and AR-L recovery <25%, AND D AP-L and AR-L damage reproduction <25%",
+      "otherwise": "Mixed"
+    },
+    "note": "Off-manifold checkpoint intervention; not proof of the training-time causal path."
+  },
+  "localization_1000": {
+    "basis": "area1000",
+    "classification": "Shared-trajectory-like",
+    "B_recovery": {
+      "AP_large": 2.2008831675067883e-06,
+      "AR_large": 0.0018679168101785437
+    },
+    "C_recovery": {
+      "AP_large": -0.00015868766505877226,
+      "AR_large": 0.0018679168101785437
+    },
+    "D_damage_reproduction": {
+      "AP_large": -0.0003005686505014641,
+      "AR_large": 0.0
+    },
+    "thresholds_preregistered": {
+      "Gate-dominant": "B AP-L and AR-L recovery >=50%, AND D AP-L and AR-L damage reproduction >=50%",
+      "Whole-SDG-dominant": "B AP-L and AR-L recovery <25%, AND C AP-L and AR-L recovery >=50%",
+      "Shared-trajectory-like": "C AP-L and AR-L recovery <25%, AND D AP-L and AR-L damage reproduction <25%",
+      "otherwise": "Mixed"
+    },
+    "note": "Off-manifold checkpoint intervention; not proof of the training-time causal path."
+  },
+  "next_formal_experiment": {
+    "choice": "Gradient-Isolated RSG",
+    "rationale": "A gate-only frozen transplant is insufficient; the lowest-change retraining test is to cut the direct RSG auxiliary gradient to shared P2/P3/backbone representations.",
+    "localization_500": "Shared-trajectory-like",
+    "localization_1000_primary": "Shared-trajectory-like",
+    "protocol_sensitivity": false,
+    "constraints": [
+      "Do not train ordinary LDSP-E22; overlaps prior E12a LDSA/E19a RCFA directions.",
+      "Any General Gate + Bounded Small Residual must detach the descriptor on the RSG auxiliary path.",
+      "Gradient-Isolated RSG may claim only that the direct auxiliary gradient is cut; indirect training-trajectory effects remain possible."
+    ]
+  }
+}

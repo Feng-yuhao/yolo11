@@ -1,0 +1,54 @@
+{
+  "iou_0.50": {
+    "small": {
+      "full1000_matched": 21846,
+      "paired_top500_matched": 21150,
+      "lost_when_truncated_to_500": 696,
+      "matched_at_rank_501_1000": 696,
+      "full1000_score_mean": 0.41402593105938057,
+      "full1000_rank_mean": 103.95967225121304
+    },
+    "medium": {
+      "full1000_matched": 10227,
+      "paired_top500_matched": 10111,
+      "lost_when_truncated_to_500": 116,
+      "matched_at_rank_501_1000": 116,
+      "full1000_score_mean": 0.6837605238690588,
+      "full1000_rank_mean": 43.490857533978684
+    },
+    "large": {
+      "full1000_matched": 989,
+      "paired_top500_matched": 988,
+      "lost_when_truncated_to_500": 1,
+      "matched_at_rank_501_1000": 1,
+      "full1000_score_mean": 0.8355907126889198,
+      "full1000_rank_mean": 11.24974721941355
+    }
+  },
+  "iou_0.75": {
+    "small": {
+      "full1000_matched": 12424,
+      "paired_top500_matched": 12057,
+      "lost_when_truncated_to_500": 367,
+      "matched_at_rank_501_1000": 367,
+      "full1000_score_mean": 0.4798238149699472,
+      "full1000_rank_mean": 89.71273341918867
+    },
+    "medium": {
+      "full1000_matched": 8872,
+      "paired_top500_matched": 8775,
+      "lost_when_truncated_to_500": 97,
+      "matched_at_rank_501_1000": 97,
+      "full1000_score_mean": 0.7189743062438901,
+      "full1000_rank_mean": 37.81221821460775
+    },
+    "large": {
+      "full1000_matched": 946,
+      "paired_top500_matched": 945,
+      "lost_when_truncated_to_500": 1,
+      "matched_at_rank_501_1000": 1,
+      "full1000_score_mean": 0.8450731672134928,
+      "full1000_rank_mean": 10.593023255813954
+    }
+  }
+}

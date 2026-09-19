@@ -1,0 +1,15 @@
+{
+  "mode": "REF",
+  "base": "E10a",
+  "donor": null,
+  "prefix": null,
+  "changed_key_count": 0,
+  "changed_parameter_count": 0,
+  "changed_buffer_count": 0,
+  "changed_keys": [],
+  "max_abs_error_to_donor": 0.0,
+  "max_abs_error_to_base_for_untouched": 0.0,
+  "strict_load": true,
+  "transplanted_before_fusion": true,
+  "eval_before_inference": true
+}

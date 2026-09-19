@@ -1,0 +1,23 @@
+D22 small-object error decomposition
+status: completed
+revision: D22_small_error_decomposition_v1
+report_dir: /root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D22_E10A_SMALL_ERROR_20260919_123618_214596
+ZERO TRAINING. max_det=1000 is diagnostic only; formal protocol remains max_det=500.
+
+decision:
+  choice: MIXED_STOP_NO_FORMAL_E22
+  rationale: No single family is sufficiently dominant across the two diagnostic IoU points. Do not train a new module from this result.
+
+E10a family shares among unmatched small GT:
+  E10a_iou0.50:
+    classification_ranking: 0.598594
+    dense_competition: 0.017123
+    coverage_localization: 0.384283
+    dominant: True
+    margin: 0.214311
+  E10a_iou0.75:
+    classification_ranking: 0.138785
+    dense_competition: 0.000748
+    coverage_localization: 0.860467
+    dominant: True
+    margin: 0.721682

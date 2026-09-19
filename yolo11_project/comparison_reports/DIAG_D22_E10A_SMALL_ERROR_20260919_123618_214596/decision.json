@@ -1,0 +1,63 @@
+{
+  "revision": "D22_small_error_decomposition_v1",
+  "dominance_margin": 0.1,
+  "E10a_iou0.50": {
+    "family_shares_of_unmatched_small_gt": {
+      "classification_ranking": 0.5985940879596251,
+      "dense_competition": 0.017123287671232876,
+      "coverage_localization": 0.384282624369142
+    },
+    "ranking": {
+      "top": "classification_ranking",
+      "top_share": 0.5985940879596251,
+      "second": "coverage_localization",
+      "second_share": 0.384282624369142,
+      "margin": 0.2143114635904831,
+      "dominant": true
+    }
+  },
+  "E10a_iou0.75": {
+    "family_shares_of_unmatched_small_gt": {
+      "classification_ranking": 0.13878495135723518,
+      "dense_competition": 0.0007483502279066603,
+      "coverage_localization": 0.8604666984148581
+    },
+    "ranking": {
+      "top": "coverage_localization",
+      "top_share": 0.8604666984148581,
+      "second": "classification_ranking",
+      "second_share": 0.13878495135723518,
+      "margin": 0.7216817470576229,
+      "dominant": true
+    }
+  },
+  "cross_model_evidence": {
+    "E21a_minus_E10a": {
+      "AP_small_delta": 0.0027195338275267933,
+      "best_sameclass_iou_mean_delta_at_0.50_analysis": -8.391701941046215e-05,
+      "best_valid_sameclass_score_mean_delta_at_0.50": 0.007293399288315627,
+      "interpretation_guard": "A positive AP_small/score delta with near-zero oracle-IoU delta supports a score/ranking mechanism but is not causal proof."
+    },
+    "E16a_minus_E10a": {
+      "AP_small_delta": -0.0031663923799545857,
+      "best_sameclass_iou_mean_delta_at_0.50_analysis": 0.00010071187293492212,
+      "interpretation_guard": "If localization-oriented E16a improves oracle geometry without AP_small, this weighs against pure localization as the sole bottleneck."
+    },
+    "E10a_dense_vs_sparse": {
+      "dense_match500_rate_iou0.50": 0.6951146857313077,
+      "sparse_match500_rate_iou0.50": 0.85177304964539,
+      "sparse_minus_dense_match_rate": 0.15665836391408228
+    }
+  },
+  "next_step": {
+    "choice": "MIXED_STOP_NO_FORMAL_E22",
+    "rationale": "No single family is sufficiently dominant across the two diagnostic IoU points. Do not train a new module from this result."
+  },
+  "hard_boundaries": [
+    "Do not change the formal max_det=500 protocol based on this diagnostic.",
+    "Do not interpret post-NMS coverage failure as pure backbone feature failure; NMS/assignment can also contribute.",
+    "Do not train E22a unless decision.choice explicitly selects E22A_SCALE_ISOLATED_P2_CLASSIFICATION_GUIDANCE.",
+    "Do not resume from E21a best.pt for a future E22a; preserve the deterministic E10a parent protocol.",
+    "The 10 pp dominance margin is a resource/decision rule, not a statistical significance threshold."
+  ]
+}

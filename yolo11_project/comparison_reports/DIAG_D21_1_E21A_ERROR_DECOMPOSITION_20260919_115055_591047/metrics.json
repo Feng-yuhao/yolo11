@@ -1,0 +1,119 @@
+{
+  "status": "completed",
+  "experiment": "DIAG_D21_1_E21A_ERROR_DECOMPOSITION",
+  "revision": "d21_1_saved_predictions_iou_geometry_fp_v2_vectorized_progress",
+  "started_at": "2026-09-19T11:50:55",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D21_1_E21A_ERROR_DECOMPOSITION_20260919_115055_591047",
+  "zero_training": true,
+  "zero_inference": true,
+  "scientific_boundary": "Post-hoc error decomposition on saved predictions. Descriptive localization/classification/FP evidence only; not proof of a training-time causal path.",
+  "iou_thresholds": [
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "formal_saved_prediction_max_det": 500,
+  "inputs": {
+    "root": "/root/autodl-tmp/yolo11_project",
+    "E10a_report": "/root/autodl-tmp/yolo11_project/comparison_reports/e10a_yolo11s_p2_dssg_img1024_seed1_20260910_222554_227195",
+    "E21a_report": "/root/autodl-tmp/yolo11_project/comparison_reports/e21a_yolo11s_p2_rsg_dssg_img1024_seed1_20260918_140258_356412",
+    "E10a_predictions": "/root/autodl-tmp/yolo11_project/comparison_reports/e10a_yolo11s_p2_dssg_img1024_seed1_20260910_222554_227195/area_predictions.json",
+    "E21a_predictions": "/root/autodl-tmp/yolo11_project/comparison_reports/e21a_yolo11s_p2_rsg_dssg_img1024_seed1_20260918_140258_356412/area_predictions.json",
+    "ground_truth": "/root/autodl-tmp/yolo11_project/comparison_reports/e21a_yolo11s_p2_rsg_dssg_img1024_seed1_20260918_140258_356412/area_ground_truth.json",
+    "E10a_predictions_sha256": "b40823dae406256a70cfc1c434ea5bb2f625fbadc78cd6bb7ec3a208c911ba5b",
+    "E21a_predictions_sha256": "f02dfc609de4fadf733eff12416a74de8c1adbb2ee48cded84e4ac4ca1f8d1da",
+    "ground_truth_sha256": "0bf644d08a7d26de58cdff26b5f3f0f16c1e0e2731fa7ba5315a22c717679b05",
+    "E10a_ground_truth_sha256": "0bf644d08a7d26de58cdff26b5f3f0f16c1e0e2731fa7ba5315a22c717679b05",
+    "images": 548,
+    "annotations": 38759,
+    "categories": 10,
+    "scale_counts": {
+      "medium": 11105,
+      "small": 26586,
+      "large": 1068
+    },
+    "E10a_prediction_audit": {
+      "prediction_count": 243002,
+      "images_with_predictions": 548,
+      "max_predictions_per_image": 500,
+      "images_at_or_above_500": 418,
+      "p95_predictions_per_image": 500
+    },
+    "E21a_prediction_audit": {
+      "prediction_count": 242315,
+      "images_with_predictions": 548,
+      "max_predictions_per_image": 500,
+      "images_at_or_above_500": 412,
+      "p95_predictions_per_image": 500
+    }
+  },
+  "decision": {
+    "status": "descriptive_only_not_causal",
+    "automatic_pattern_hint": "no_clear_automatic_signal",
+    "automatic_hint_boundary": "The hint is directional/descriptive only. It is not a preregistered causal verdict and must be interpreted together with per-threshold AP/AR, per-class large AP, geometry distributions, and FP decomposition.",
+    "large_AP_gap_pp_mean_iou_0.50_0.75": 9.020829918842308,
+    "large_AP_gap_pp_mean_iou_0.80_0.95": 5.9125579419504035,
+    "large_high_minus_low_gap_pp": -3.1082719768919045,
+    "large_oracle_best_same_class_iou": {
+      "REF": 0.8614206255006465,
+      "A": 0.858990799242659,
+      "A_minus_REF": -0.0024298262579874885
+    },
+    "large_score_ordered_matched_iou_at_0.50": {
+      "REF": 0.9235544721698247,
+      "A": 0.9210517414902483,
+      "A_minus_REF": -0.0025027306795764037
+    },
+    "large_prediction_FP": {
+      "REF": {
+        "model": "REF",
+        "pred_scale": "large",
+        "fp_count": 1532,
+        "score_mean": 0.0793176965312163,
+        "score_median": 0.00570425670593977,
+        "score_p90": 0.270148548483849,
+        "reason_duplicate_same_class": 106,
+        "reason_wrong_class_near_gt": 216,
+        "reason_same_class_localization_below_threshold": 296,
+        "reason_no_same_class_overlap": 914
+      },
+      "A": {
+        "model": "A",
+        "pred_scale": "large",
+        "fp_count": 1280,
+        "score_mean": 0.0905100543476692,
+        "score_median": 0.006898549385368824,
+        "score_p90": 0.35779835879802724,
+        "reason_duplicate_same_class": 97,
+        "reason_wrong_class_near_gt": 181,
+        "reason_same_class_localization_below_threshold": 212,
+        "reason_no_same_class_overlap": 790
+      },
+      "A_minus_REF_fp_count": -252,
+      "A_minus_REF_wrong_class_near_gt": -35,
+      "A_minus_REF_duplicate": -9
+    },
+    "next_step_rule": "If the high-IoU AP-large gap grows strongly while large localization geometry worsens more than small/medium and FP/class confusion does not explain it, Gradient-Isolated RSG remains the lowest-change formal retraining test. If FP/classification dominates, reassess score/classification mechanisms before retraining."
+  },
+  "seconds": 171.03242675960064,
+  "output_files": [
+    "iou_curve.csv",
+    "iou_curve_delta.csv",
+    "per_class_large_ap_by_iou.csv",
+    "geometry_summary.csv",
+    "gt_geometry_pairs.csv",
+    "score_ordered_matches.csv",
+    "fp_summary.csv",
+    "large_fp_by_class.csv",
+    "decision.json",
+    "metrics.json",
+    "metrics.txt"
+  ]
+}

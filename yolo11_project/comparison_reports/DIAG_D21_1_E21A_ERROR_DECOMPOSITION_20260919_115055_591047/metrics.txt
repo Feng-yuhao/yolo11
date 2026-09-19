@@ -1,0 +1,26 @@
+D21.1 E21a Error Decomposition
+========================================================================
+status: completed
+revision: d21_1_saved_predictions_iou_geometry_fp_v2_vectorized_progress
+zero_training: true
+zero_inference: true
+
+Inputs
+  E10a predictions: /root/autodl-tmp/yolo11_project/comparison_reports/e10a_yolo11s_p2_dssg_img1024_seed1_20260910_222554_227195/area_predictions.json
+  E21a predictions: /root/autodl-tmp/yolo11_project/comparison_reports/e21a_yolo11s_p2_rsg_dssg_img1024_seed1_20260918_140258_356412/area_predictions.json
+  Ground truth:      /root/autodl-tmp/yolo11_project/comparison_reports/e21a_yolo11s_p2_rsg_dssg_img1024_seed1_20260918_140258_356412/area_ground_truth.json
+
+Primary descriptive decomposition
+  automatic pattern hint: no_clear_automatic_signal
+  mean AP-L gap @ IoU .50-.75: 9.0208 pp
+  mean AP-L gap @ IoU .80-.95: 5.9126 pp
+  high-minus-low gap:           -3.1083 pp
+  large oracle best IoU REF/A:  0.861421 / 0.858991
+  large score-match IoU REF/A:  0.923554 / 0.921052
+
+Boundary
+  Post-hoc error decomposition only; not proof of training-time causality.
+  max_det=500 formal predictions are intentionally reused; D21 already tested max_det=1000 separately.
+
+See iou_curve.csv, per_class_large_ap_by_iou.csv, geometry_summary.csv,
+fp_summary.csv, large_fp_by_class.csv, and decision.json for the full decomposition.

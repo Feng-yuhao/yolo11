@@ -1,0 +1,37 @@
+{
+  "dataset_root": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val",
+  "images": 548,
+  "annotation_dimension_sha256": "058c87e779a61a09933bebe35af1c05c807a444dc842b4be12124dd36134c787",
+  "raw_class_counts": {
+    "0": 1378,
+    "1": 8844,
+    "2": 5125,
+    "3": 1287,
+    "4": 14064,
+    "5": 1975,
+    "6": 750,
+    "7": 1045,
+    "8": 532,
+    "9": 251,
+    "10": 4886,
+    "11": 32
+  },
+  "score_zero_counts": {
+    "0": 1378,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 32
+  },
+  "class0_ignore_regions": 1378,
+  "class11_others": 32,
+  "gt_rows_dropped_by_class0_region": 160,
+  "evaluated_gt_rows": 38599
+}

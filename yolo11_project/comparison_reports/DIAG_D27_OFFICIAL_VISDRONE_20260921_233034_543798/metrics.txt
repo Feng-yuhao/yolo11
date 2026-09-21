@@ -1,0 +1,26 @@
+D27 Official VisDrone DET protocol audit
+status: completed
+revision: d27_official_visdrone_det_matlab104_port_v1
+ZERO TRAINING. Existing saved predictions only. Automatic shutdown disabled.
+Primary AP uses a Python port of public VisDrone DET Matlab toolkit v1.0.4.
+Do not compare the absolute official AP directly with converted-label COCO area AP.
+
+[official model ranking]
+1. e21a: AP=32.8830% AP50=55.4840% AP75=33.0637% AR500=46.0729% small-FP-ignore@0.10=17.572%
+2. e16a: AP=32.5947% AP50=54.8909% AP75=32.7544% AR500=45.9329% small-FP-ignore@0.10=17.277%
+3. e10a: AP=32.5935% AP50=54.8901% AP75=32.6714% AR500=45.9501% small-FP-ignore@0.10=17.648%
+4. e26a: AP=32.4961% AP50=54.9807% AP75=32.6325% AR500=45.9510% small-FP-ignore@0.10=17.009%
+5. e1: AP=32.3398% AP50=54.6828% AP75=32.2472% AR500=45.9372% small-FP-ignore@0.10=17.460%
+6. e0: AP=29.8928% AP50=50.2985% AP75=29.9177% AR500=41.1819% small-FP-ignore@0.10=17.645%
+
+[decision]
+ranking_changed_vs_current_ultralytics: True
+ranking_changed_vs_current_coco_area: True
+e1_small_fp_ignore_fraction_conf010: 0.174599
+next_step: DESIGN_ONE_E1_IGNORE_AWARE_CAUSAL_RUN_BEFORE_NEW_ARCHITECTURE
+rationale: At least 10% of E1 small pre-filter false positives at conf=0.10 fall in class-0 ignore regions; first test whether preventing these regions from acting as negatives changes the full-view baseline.
+
+Scientific boundary:
+- The primary port follows the public Matlab v1.0.4 implementation, not a claim of server bit identity.
+- class-11 overlap is reported separately and is not silently inserted into the primary metric.
+- this audit does not establish that ignore-aware training will improve AP.

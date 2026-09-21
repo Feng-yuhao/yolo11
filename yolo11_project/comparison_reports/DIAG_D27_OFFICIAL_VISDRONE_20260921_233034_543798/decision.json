@@ -1,0 +1,34 @@
+{
+  "official_ranking": [
+    "e21a",
+    "e16a",
+    "e10a",
+    "e26a",
+    "e1",
+    "e0"
+  ],
+  "current_ultralytics_ranking": [
+    "e16a",
+    "e21a",
+    "e10a",
+    "e26a",
+    "e1",
+    "e0"
+  ],
+  "current_coco_area_ranking": [
+    "e21a",
+    "e10a",
+    "e16a",
+    "e26a",
+    "e1",
+    "e0"
+  ],
+  "ranking_changed_vs_current_ultralytics": true,
+  "ranking_changed_vs_current_coco_area": true,
+  "e1_small_fp_ignore_fraction_conf010": 0.17459894066989293,
+  "ignore_aware_causal_test_threshold": 0.1,
+  "ignore_aware_causal_test_recommended": true,
+  "next_step": "DESIGN_ONE_E1_IGNORE_AWARE_CAUSAL_RUN_BEFORE_NEW_ARCHITECTURE",
+  "rationale": "At least 10% of E1 small pre-filter false positives at conf=0.10 fall in class-0 ignore regions; first test whether preventing these regions from acting as negatives changes the full-view baseline.",
+  "no_new_architecture_was_trained": true
+}

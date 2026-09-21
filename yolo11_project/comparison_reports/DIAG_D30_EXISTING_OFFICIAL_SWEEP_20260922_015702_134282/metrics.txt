@@ -1,0 +1,40 @@
+D30 Existing-Model Official VisDrone Sweep
+status: completed
+revision: d30_existing_models_official_sweep_reuse_d27_v1
+D27 evaluator revision: d27_official_visdrone_det_matlab104_port_v1
+ZERO TRAINING. ZERO CHECKPOINT MODIFICATION. Existing formal predictions only.
+
+reproduction_gate_passed: True
+evaluated_models: 16
+missing_models: 2
+
+[official ranking]
+01. e18a      AP=32.8994% dE1=+0.5596pp AP50=55.3034% AP75=33.0363% AR500=45.8877% status=CLOSED band=GE_0.50_PP
+02. e21a      AP=32.8830% dE1=+0.5432pp AP50=55.4840% AP75=33.0637% AR500=46.0729% status=CLOSED band=GE_0.50_PP
+03. e15a      AP=32.7004% dE1=+0.3606pp AP50=55.0667% AP75=32.7306% AR500=46.2344% status=CLOSED band=0.35_TO_0.50_PP
+04. e20b      AP=32.6732% dE1=+0.3334pp AP50=54.9386% AP75=32.9404% AR500=46.1497% status=CLOSED band=0.20_TO_0.35_PP
+05. e25a      AP=32.6314% dE1=+0.2916pp AP50=54.8753% AP75=32.7640% AR500=45.9291% status=CLOSED band=0.20_TO_0.35_PP
+06. e16a      AP=32.5947% dE1=+0.2549pp AP50=54.8909% AP75=32.7544% AR500=45.9329% status=CLOSED band=0.20_TO_0.35_PP
+07. e10a      AP=32.5935% dE1=+0.2537pp AP50=54.8901% AP75=32.6714% AR500=45.9501% status=SUPPORTING_RESULT band=0.20_TO_0.35_PP
+08. e5a       AP=32.5889% dE1=+0.2491pp AP50=54.6027% AP75=32.7561% AR500=46.2354% status=CLOSED band=0.20_TO_0.35_PP
+09. e10clean  AP=32.5395% dE1=+0.1997pp AP50=54.9192% AP75=32.5464% AR500=45.8315% status=CLOSED band=0_TO_0.20_PP
+10. e26a      AP=32.4961% dE1=+0.1563pp AP50=54.9807% AP75=32.6325% AR500=45.9510% status=CLOSED band=0_TO_0.20_PP
+11. e9b       AP=32.4810% dE1=+0.1412pp AP50=54.7760% AP75=32.4983% AR500=46.0249% status=CLOSED band=0_TO_0.20_PP
+12. e8b       AP=32.4175% dE1=+0.0777pp AP50=54.6868% AP75=32.4697% AR500=46.1605% status=CLOSED band=0_TO_0.20_PP
+13. e17a      AP=32.3538% dE1=+0.0140pp AP50=54.6696% AP75=32.3951% AR500=45.7840% status=CLOSED band=0_TO_0.20_PP
+14. e1        AP=32.3398% dE1=+0.0000pp AP50=54.6828% AP75=32.2472% AR500=45.9372% status=ACTIVE_BASELINE band=0_TO_0.20_PP
+15. e19a      AP=32.2263% dE1=-0.1135pp AP50=54.2288% AP75=32.4863% AR500=45.8296% status=CLOSED band=BELOW_E1
+16. e0        AP=29.8928% dE1=-2.4470pp AP50=50.2985% AP75=29.9177% AR500=41.1819% status=REFERENCE band=BELOW_E1
+
+[missing formal saved predictions]
+- e20a: No formal report matching e20a_yolo11s_p2_sdqc_img1024_seed1_* with area_predictions.json + area_ground_truth.json + metrics.json
+- e23a: No formal report matching e23a_yolo11s_p2_dssg_regq_img1024_seed1_* with area_predictions.json + area_ground_truth.json + metrics.json
+
+[hard boundary]
+- Ranking changes do NOT automatically reopen CLOSED routes.
+- E21a/E25a remain closed regardless of ranking.
+- E27a is excluded because the formal run was interrupted.
+- D30 does not regenerate missing predictions and does not train.
+- Old custom AP-small/medium/large remain auxiliary diagnostics, not official VisDrone scale metrics.
+
+Use model_summary.csv for the unified comparison table.

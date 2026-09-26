@@ -1,0 +1,336 @@
+YOLO11s VisDrone experiment report
+status: completed
+purpose: baseline_yolo11s_img640_seed1
+report_dir: /root/autodl-tmp/yolo11_project/comparison_reports/baseline_yolo11s_img640_seed1_20260926_073621_610152
+P/R/AP/AR: fractions 0-1; multiply by 100 for percentages.
+One fixed seed only: no multi-seed mean/std or statistical significance claim.
+
+overall:
+  Precision: 0.5187797240404268
+  Recall: 0.39197438536461987
+  mAP50: 0.39987586259680963
+  mAP75: 0.24079059838368652
+  mAP50_95: 0.23845659733358704
+
+area_metrics:
+  AP_all: 0.21183185100226035
+  AR_all: 0.3026557962659024
+  AP_small: 0.11868973991445832
+  AR_small: 0.1934818869768325
+  AP_medium: 0.328403858103032
+  AR_medium: 0.4606020697004572
+  AP_large: 0.45184949156599385
+  AR_large: 0.5927288098283061
+  max_det: 500
+  prediction_count: 189263
+
+model_profile:
+  parameters: 9416670
+  imgsz: 640
+  state: post-validation, fused
+  GFLOPs: 21.316352
+
+training:
+  completed_epochs: 200
+  best_checkpoint_epoch: 92
+  best_epoch_by_map50_95: 92
+  best_checkpoint_rule: Ultralytics 8.3.0 validation fitness
+  memory_note: PyTorch allocator peaks, including in-training validation; not whole-device usage.
+  effective_amp: True
+  parameters_before_fusion: 9431662
+  elapsed_seconds: 9530.35754660517
+  peak_memory: {'allocated_GiB': 7.37397575378418, 'reserved_GiB': 13.458984375}
+  seconds_including_builtin_final_validation: 9530.355344835669
+
+validation:
+  seconds: 19.8018742762506
+  peak_memory: {'allocated_GiB': 0.6418390274047852, 'reserved_GiB': 0.8203125}
+  speed_ms_per_image: {'preprocess': 0.1897372468544619, 'inference': 6.149372915281867, 'loss': 0.0008431664348518761, 'postprocess': 4.932186029253216}
+  speed_note: Batched FP32 validation, NOT batch=1 deployment FPS.
+
+Per-class metrics:
+class, instances, P, R, AP50, AP50-95
+pedestrian, 8844, 0.5604647812202787, 0.40312811201677223, 0.43828604963711626, 0.19776998499325044
+people, 5125, 0.5928594149652674, 0.272, 0.3301140692253587, 0.12552670308042693
+bicycle, 1287, 0.30848973894939746, 0.1655011655011655, 0.1432095311793421, 0.06125137769068758
+car, 14064, 0.7334415372256831, 0.7728953356086462, 0.7933769893560125, 0.562694622399101
+van, 1975, 0.529632224730768, 0.44253164556962027, 0.44744825810754535, 0.3150291897494367
+truck, 750, 0.5855072399140597, 0.37066666666666664, 0.39045895958668336, 0.25514363064816326
+tricycle, 1045, 0.3972761390298884, 0.31483253588516746, 0.2918006525751539, 0.16269632088134103
+awning-tricycle, 532, 0.2870343353665683, 0.18045112781954886, 0.15356284228105826, 0.09939230917532788
+bus, 251, 0.6963569408906779, 0.5298804780876494, 0.5599391967773785, 0.4035753736529544
+motor, 4886, 0.4967348881116791, 0.46785678649096174, 0.4505620772424476, 0.20148646106518164
+
+Full metadata:
+{
+  "status": "completed",
+  "purpose": "baseline_yolo11s_img640_seed1",
+  "experiment": "baseline_yolo11s_img640_seed1",
+  "seed": 1,
+  "seed_count": 1,
+  "multi_seed_std": null,
+  "started_at": "2026-09-26T07:36:21",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/baseline_yolo11s_img640_seed1_20260926_073621_610152",
+  "evaluation_protocol": {
+    "split": "val",
+    "imgsz": 640,
+    "batch": 16,
+    "area_batch": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 500,
+    "half": false,
+    "protocol_id": "visdrone_yolo_labels_ultra830_fp32_area_separate_predict_v1",
+    "area_definition": "COCO default original-image bbox area ranges, IoU 0.50:0.95",
+    "notes": [
+      "COCO area evaluation on converted VisDrone labels, not official VisDrone ignore regions.",
+      "Ultralytics AP and COCO AP_all are separate evaluators/prediction passes; do not mix them.",
+      "Batch val may use rectangular padding; area predict uses each 4-image chunk padding.",
+      "P/R are Ultralytics selected F1 operating point metrics, not P/R at conf=0.001.",
+      "Training built-in validation may use FP16 and double batch; final report is standalone FP32."
+    ]
+  },
+  "updated_at": "2026-09-26T10:19:06",
+  "environment": {
+    "python": "3.10.21",
+    "ultralytics": "8.3.0",
+    "torch": "2.5.1+cu121",
+    "cuda_runtime": "12.1",
+    "cudnn": 90100,
+    "source": "/root/autodl-tmp/yolo11_src/ultralytics/__init__.py",
+    "gpu": "NVIDIA vGPU-32GB",
+    "platform": "Linux-5.15.0-124-generic-x86_64-with-glibc2.35"
+  },
+  "input_weights": {
+    "path": "/root/autodl-tmp/yolo11_project/weights/yolo11s.pt",
+    "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5"
+  },
+  "data_yaml_sha256": "2de8ad3c6f67db8cfa5731047292eaf7c4a3a721697bcb77b491525a3a43e6bd",
+  "dataset": {
+    "train_images": 6471,
+    "val_images": 548,
+    "validation_instances": 38759,
+    "validation_label_sha256": "9fcd8057313d2916d73303246707859dac41897e480aa0dd910ff419fde5dd6c",
+    "duplicate_validation_labels_removed": 0,
+    "class_names": {
+      "0": "pedestrian",
+      "1": "people",
+      "2": "bicycle",
+      "3": "car",
+      "4": "van",
+      "5": "truck",
+      "6": "tricycle",
+      "7": "awning-tricycle",
+      "8": "bus",
+      "9": "motor"
+    },
+    "class_counts": {
+      "0": 8844,
+      "1": 5125,
+      "2": 1287,
+      "3": 14064,
+      "4": 1975,
+      "5": 750,
+      "6": 1045,
+      "7": 532,
+      "8": 251,
+      "9": 4886
+    }
+  },
+  "train_params": {
+    "data": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019.yaml",
+    "epochs": 200,
+    "imgsz": 640,
+    "batch": 16,
+    "device": 0,
+    "workers": 8,
+    "seed": 1,
+    "deterministic": true,
+    "patience": 0,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "amp": true,
+    "cos_lr": true,
+    "close_mosaic": 10,
+    "max_det": 500,
+    "conf": 0.001,
+    "iou": 0.7,
+    "val": true,
+    "plots": true,
+    "save": true,
+    "save_period": -1,
+    "project": "/root/autodl-tmp/yolo11_project/runs",
+    "name": "baseline_yolo11s_img640_seed1",
+    "exist_ok": false,
+    "resume": false,
+    "pretrained": true,
+    "cache": false,
+    "rect": false,
+    "multi_scale": false,
+    "fraction": 1.0,
+    "nbs": 64,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "box": 7.5,
+    "cls": 0.5,
+    "dfl": 1.5,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 0.0,
+    "translate": 0.1,
+    "scale": 0.5,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "flipud": 0.0,
+    "fliplr": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.0,
+    "copy_paste": 0.0
+  },
+  "training": {
+    "completed_epochs": 200,
+    "best_checkpoint_epoch": 92,
+    "best_epoch_by_map50_95": 92,
+    "best_checkpoint_rule": "Ultralytics 8.3.0 validation fitness",
+    "memory_note": "PyTorch allocator peaks, including in-training validation; not whole-device usage.",
+    "effective_amp": true,
+    "parameters_before_fusion": 9431662,
+    "elapsed_seconds": 9530.35754660517,
+    "peak_memory": {
+      "allocated_GiB": 7.37397575378418,
+      "reserved_GiB": 13.458984375
+    },
+    "seconds_including_builtin_final_validation": 9530.355344835669
+  },
+  "run_dir": "/root/autodl-tmp/yolo11_project/runs/baseline_yolo11s_img640_seed1",
+  "evaluation_weights": {
+    "path": "/root/autodl-tmp/yolo11_project/runs/baseline_yolo11s_img640_seed1/weights/best.pt",
+    "sha256": "bc5d1304c7bf4e0c81db853d0d7a39dd46485940ec2b8c2da63df8c3eda934b8"
+  },
+  "validation": {
+    "seconds": 19.8018742762506,
+    "peak_memory": {
+      "allocated_GiB": 0.6418390274047852,
+      "reserved_GiB": 0.8203125
+    },
+    "speed_ms_per_image": {
+      "preprocess": 0.1897372468544619,
+      "inference": 6.149372915281867,
+      "loss": 0.0008431664348518761,
+      "postprocess": 4.932186029253216
+    },
+    "speed_note": "Batched FP32 validation, NOT batch=1 deployment FPS."
+  },
+  "overall": {
+    "Precision": 0.5187797240404268,
+    "Recall": 0.39197438536461987,
+    "mAP50": 0.39987586259680963,
+    "mAP75": 0.24079059838368652,
+    "mAP50_95": 0.23845659733358704
+  },
+  "per_class": {
+    "pedestrian": {
+      "instances": 8844,
+      "Precision": 0.5604647812202787,
+      "Recall": 0.40312811201677223,
+      "AP50": 0.43828604963711626,
+      "AP50_95": 0.19776998499325044
+    },
+    "people": {
+      "instances": 5125,
+      "Precision": 0.5928594149652674,
+      "Recall": 0.272,
+      "AP50": 0.3301140692253587,
+      "AP50_95": 0.12552670308042693
+    },
+    "bicycle": {
+      "instances": 1287,
+      "Precision": 0.30848973894939746,
+      "Recall": 0.1655011655011655,
+      "AP50": 0.1432095311793421,
+      "AP50_95": 0.06125137769068758
+    },
+    "car": {
+      "instances": 14064,
+      "Precision": 0.7334415372256831,
+      "Recall": 0.7728953356086462,
+      "AP50": 0.7933769893560125,
+      "AP50_95": 0.562694622399101
+    },
+    "van": {
+      "instances": 1975,
+      "Precision": 0.529632224730768,
+      "Recall": 0.44253164556962027,
+      "AP50": 0.44744825810754535,
+      "AP50_95": 0.3150291897494367
+    },
+    "truck": {
+      "instances": 750,
+      "Precision": 0.5855072399140597,
+      "Recall": 0.37066666666666664,
+      "AP50": 0.39045895958668336,
+      "AP50_95": 0.25514363064816326
+    },
+    "tricycle": {
+      "instances": 1045,
+      "Precision": 0.3972761390298884,
+      "Recall": 0.31483253588516746,
+      "AP50": 0.2918006525751539,
+      "AP50_95": 0.16269632088134103
+    },
+    "awning-tricycle": {
+      "instances": 532,
+      "Precision": 0.2870343353665683,
+      "Recall": 0.18045112781954886,
+      "AP50": 0.15356284228105826,
+      "AP50_95": 0.09939230917532788
+    },
+    "bus": {
+      "instances": 251,
+      "Precision": 0.6963569408906779,
+      "Recall": 0.5298804780876494,
+      "AP50": 0.5599391967773785,
+      "AP50_95": 0.4035753736529544
+    },
+    "motor": {
+      "instances": 4886,
+      "Precision": 0.4967348881116791,
+      "Recall": 0.46785678649096174,
+      "AP50": 0.4505620772424476,
+      "AP50_95": 0.20148646106518164
+    }
+  },
+  "model_profile": {
+    "parameters": 9416670,
+    "imgsz": 640,
+    "state": "post-validation, fused",
+    "GFLOPs": 21.316352
+  },
+  "area_progress_images": 548,
+  "area_prediction": {
+    "seconds": 13.205309931188822,
+    "peak_memory": {
+      "allocated_GiB": 0.2625131607055664,
+      "reserved_GiB": 0.400390625
+    }
+  },
+  "area_metrics": {
+    "AP_all": 0.21183185100226035,
+    "AR_all": 0.3026557962659024,
+    "AP_small": 0.11868973991445832,
+    "AR_small": 0.1934818869768325,
+    "AP_medium": 0.328403858103032,
+    "AR_medium": 0.4606020697004572,
+    "AP_large": 0.45184949156599385,
+    "AR_large": 0.5927288098283061,
+    "max_det": 500,
+    "prediction_count": 189263
+  },
+  "finished_at": "2026-09-26T10:19:06",
+  "total_seconds": 9764.881987039
+}

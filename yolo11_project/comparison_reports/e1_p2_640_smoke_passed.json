@@ -1,0 +1,8 @@
+{
+  "status": "smoke_passed",
+  "signature": "98d5d5223eca5d045d5b7c4588ede8f0906e62a9cb192f09709980ea8fbec5f0",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/SMOKE2_e1_yolo11s_p2add_img640_seed1_20260926_101908_217365",
+  "run_dir": "/root/autodl-tmp/yolo11_project/runs/smoke2_e1_yolo11s_p2add_img640_seed1",
+  "finished_at": "2026-09-26T10:27:48",
+  "note": "Two full training epochs + builtin validation + full FP32/area evaluation. Not an accuracy result."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "original_report": "/root/autodl-tmp/yolo11_project/comparison_reports/E39_RUN_20260929_125730_777892",
+  "evaluation_report": "/root/autodl-tmp/yolo11_project/comparison_reports/E39_RECOVERY_20260929_205446_664719",
+  "checkpoint_sha256": "b406fa6d132f18115a5d0c2720a76c10b40297c9e823eeee402470f07bc25f17",
+  "failure_sha256": "dae1ed2e5a75f4a84de78f13d23e9bf64d920ffd31fd31e92bebefe90dd66aa4",
+  "training_sha256": "ce5daf7c9f748bcc820c05c2c3ea2eb7c9b490b5d7a2bc82d07249094ccdc8b8",
+  "preserved_original_failure": true,
+  "no_retraining": true,
+  "source_sha256": {
+    "utils/tal.py": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9",
+    "utils/loss.py": "496dc5545169f0a8bf2c24fcc087456e6e8a9b23dc427dd198a35cbd50213102",
+    "engine/trainer.py": "94130a243a6ef28c04d1e78d900b18b336c044e93e58e077be5868181d5589c7",
+    "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279"
+  },
+  "recovered_at": "2026-09-29T20:56:31.662241",
+  "artifact_sha256": {
+    "comparison.json": "659e615548dbd64f304dd2c71d273b5b42847fb061e807d75ad98f54ceba50c8",
+    "REPORT.md": "9c775512a8a6cd2ebe6fc48cf429d6d7a52c0ce872f2e971a90d87c255944f6d",
+    "area_predictions.json": "59a6fc270f2fde4b8fa360852497e60d5871ce423e29c10403ac055e39f849d7",
+    "gt_rows.json": "0783746b1da7d501a3cbe90ff6bbc044e599d17241397bdd3608a945031f344b",
+    "official_metrics.json": "14a0e6d895389e85f2049808791e7aa64fb342783d72639be8a6afcad0a48f33"
+  }
+}

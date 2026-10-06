@@ -1,0 +1,15 @@
+path: C:\Users\Fengyuhao\Desktop\yolo11_backup\yolo11_project\comparison_reports\E40S3_LOCAL-INTEGRATION_20261002_222420_913098\fixture
+train: images/train
+val: images/val
+nc: 10
+names:
+- pedestrian
+- people
+- bicycle
+- car
+- van
+- truck
+- tricycle
+- awning-tricycle
+- bus
+- motor

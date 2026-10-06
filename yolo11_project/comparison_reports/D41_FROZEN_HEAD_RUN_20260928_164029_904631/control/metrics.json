@@ -1,0 +1,302 @@
+{
+  "official": {
+    "AP50_95_percent": 25.567051050327567,
+    "AP50_percent": 44.71137942927414,
+    "AP75_percent": 24.889578831023154,
+    "AR1_percent": 0.8410649795849754,
+    "AR10_percent": 7.415985839926708,
+    "AR100_percent": 31.305856903309728,
+    "AR500_percent": 37.72266242985897,
+    "class_image_weights": {
+      "1": 520,
+      "2": 482,
+      "3": 364,
+      "4": 515,
+      "5": 421,
+      "6": 265,
+      "7": 337,
+      "8": 219,
+      "9": 130,
+      "10": 485
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 520,
+        "AP50_95_percent": 24.399441532908817,
+        "AP50_percent": 51.866799407756595,
+        "AP75_percent": 19.240445354996837
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 482,
+        "AP50_95_percent": 16.080812891964463,
+        "AP50_percent": 40.33813862635854,
+        "AP75_percent": 9.517027230721189
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 364,
+        "AP50_95_percent": 7.369191104999423,
+        "AP50_percent": 16.846962012303198,
+        "AP75_percent": 5.254671200180655
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 515,
+        "AP50_95_percent": 58.68089861370889,
+        "AP50_percent": 84.06943551607412,
+        "AP75_percent": 65.78708533839442
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 421,
+        "AP50_95_percent": 28.566677955839925,
+        "AP50_percent": 39.4801270719875,
+        "AP75_percent": 33.127690428297896
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 265,
+        "AP50_95_percent": 23.605093276148466,
+        "AP50_percent": 35.752293948217876,
+        "AP75_percent": 25.791016611795943
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 337,
+        "AP50_95_percent": 15.53134108352119,
+        "AP50_percent": 28.248521088729028,
+        "AP75_percent": 15.885332368444327
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 219,
+        "AP50_95_percent": 7.198102116826969,
+        "AP50_percent": 11.4347574738627,
+        "AP75_percent": 7.8070332895335826
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 130,
+        "AP50_95_percent": 41.64219308826811,
+        "AP50_percent": 57.55733085759627,
+        "AP75_percent": 47.65398364833901
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 485,
+        "AP50_95_percent": 24.16922581239288,
+        "AP50_percent": 52.96382770037591,
+        "AP75_percent": 17.757660719840604
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "slices": {
+    "all": {
+      "gt_count": 38599,
+      "raw75": 0.023316666234876552,
+      "p2_raw75": 0.02072592554211249,
+      "mean_raw_iou": 0.018728425862089122
+    },
+    "lt8": {
+      "gt_count": 11819,
+      "raw75": 0.0,
+      "p2_raw75": 0.0,
+      "mean_raw_iou": 0.003981104996217462
+    },
+    "8_16": {
+      "gt_count": 15114,
+      "raw75": 0.0066163821622336905,
+      "p2_raw75": 0.0,
+      "mean_raw_iou": 0.012443391983069239
+    },
+    "16_24": {
+      "gt_count": 6186,
+      "raw75": 0.0,
+      "p2_raw75": 0.0,
+      "mean_raw_iou": 0.024749708291669646
+    },
+    "24_32": {
+      "gt_count": 2548,
+      "raw75": 0.0,
+      "p2_raw75": 0.0,
+      "mean_raw_iou": 0.0386824985138205
+    },
+    "ge32": {
+      "gt_count": 2932,
+      "raw75": 0.2728512960436562,
+      "p2_raw75": 0.2728512960436562,
+      "mean_raw_iou": 0.08052922979634962
+    }
+  },
+  "seconds": 76.07136567682028,
+  "subset_only": false,
+  "dataset": {
+    "dataset_root": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val",
+    "images": 548,
+    "annotation_dimension_sha256": "058c87e779a61a09933bebe35af1c05c807a444dc842b4be12124dd36134c787",
+    "raw_class_counts": {
+      "0": 1378,
+      "1": 8844,
+      "2": 5125,
+      "3": 1287,
+      "4": 14064,
+      "5": 1975,
+      "6": 750,
+      "7": 1045,
+      "8": 532,
+      "9": 251,
+      "10": 4886,
+      "11": 32
+    },
+    "score_zero_counts": {
+      "0": 1378,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 32
+    },
+    "class0_ignore_regions": 1378,
+    "class11_others": 32,
+    "gt_rows_dropped_by_class0_region": 160,
+    "evaluated_gt_rows": 38599
+  },
+  "ignore_audit": {
+    "raw_prediction_count": 239112,
+    "official_prediction_count_after_class0_filter": 217455,
+    "removed_by_class0_ignore": 21657,
+    "removed_by_class0_fraction": 0.09057261868914986,
+    "overlap_class11_others": 234,
+    "overlap_class11_fraction": 0.0009786208973200843,
+    "per_class": {
+      "1": {
+        "total": 61478,
+        "removed_by_class0": 4917,
+        "overlap_class11": 27
+      },
+      "2": {
+        "total": 20717,
+        "removed_by_class0": 1100,
+        "overlap_class11": 54
+      },
+      "3": {
+        "total": 20051,
+        "removed_by_class0": 752,
+        "overlap_class11": 12
+      },
+      "4": {
+        "total": 75112,
+        "removed_by_class0": 9377,
+        "overlap_class11": 33
+      },
+      "5": {
+        "total": 4183,
+        "removed_by_class0": 151,
+        "overlap_class11": 2
+      },
+      "6": {
+        "total": 4419,
+        "removed_by_class0": 489,
+        "overlap_class11": 20
+      },
+      "7": {
+        "total": 7115,
+        "removed_by_class0": 471,
+        "overlap_class11": 44
+      },
+      "8": {
+        "total": 1734,
+        "removed_by_class0": 201,
+        "overlap_class11": 11
+      },
+      "9": {
+        "total": 572,
+        "removed_by_class0": 56,
+        "overlap_class11": 3
+      },
+      "10": {
+        "total": 43731,
+        "removed_by_class0": 4143,
+        "overlap_class11": 28
+      }
+    },
+    "fp_audit": [
+      {
+        "confidence": 0.05,
+        "area_group": "all",
+        "fp": 60120,
+        "fp_ignore": 8141,
+        "fp_others": 94,
+        "tp": 27082,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.13541250831669993,
+        "fp_class11_others_fraction": 0.0015635395874916832
+      },
+      {
+        "confidence": 0.05,
+        "area_group": "small",
+        "fp": 49058,
+        "fp_ignore": 7523,
+        "fp_others": 49,
+        "tp": 16525,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.15334909698723959,
+        "fp_class11_others_fraction": 0.0009988177259570305
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "all",
+        "fp": 34257,
+        "fp_ignore": 4416,
+        "fp_others": 58,
+        "tp": 25674,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.1289079604168491,
+        "fp_class11_others_fraction": 0.0016930846250401378
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "small",
+        "fp": 27098,
+        "fp_ignore": 4051,
+        "fp_others": 30,
+        "tp": 15326,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.14949442763303564,
+        "fp_class11_others_fraction": 0.0011070927743744925
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "all",
+        "fp": 10943,
+        "fp_ignore": 1202,
+        "fp_others": 35,
+        "tp": 22122,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.10984190806908525,
+        "fp_class11_others_fraction": 0.003198391665905145
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "small",
+        "fp": 7713,
+        "fp_ignore": 1060,
+        "fp_others": 14,
+        "tp": 12274,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.13743031245948398,
+        "fp_class11_others_fraction": 0.0018151173343705432
+      }
+    ],
+    "fp_audit_note": "Greedy IoU=0.50 class-wise matching before class-0 raster filtering; ignored score-zero GT matches are neutral."
+  }
+}

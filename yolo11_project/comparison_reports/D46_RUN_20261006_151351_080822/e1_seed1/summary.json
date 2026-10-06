@@ -1,0 +1,1693 @@
+{
+  "slices": {
+    "all": {
+      "gt": 38599,
+      "geometric_near_misses": 9345,
+      "neighbor_direction_eligible": 5952,
+      "neighborward_fraction": 0.5633400537634409,
+      "mean_neighbor_cosine": 0.10906978044551,
+      "raw_correct75": 0.5582268970698723,
+      "final_correct75": 0.46980491722583484
+    },
+    "16_24": {
+      "gt": 6186,
+      "geometric_near_misses": 689,
+      "neighbor_direction_eligible": 272,
+      "neighborward_fraction": 0.5588235294117647,
+      "mean_neighbor_cosine": 0.08116244391422174,
+      "raw_correct75": 0.8047203362431297,
+      "final_correct75": 0.6881668283220175
+    },
+    "16_24/class_4/density_0": {
+      "gt": 1801,
+      "geometric_near_misses": 86,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.9339255968906163,
+      "final_correct75": 0.8900610771793448
+    },
+    "24_32": {
+      "gt": 2548,
+      "geometric_near_misses": 174,
+      "neighbor_direction_eligible": 31,
+      "neighborward_fraction": 0.41935483870967744,
+      "mean_neighbor_cosine": -0.09000146854392664,
+      "raw_correct75": 0.8740188383045526,
+      "final_correct75": 0.7998430141287284
+    },
+    "24_32/class_4/density_0": {
+      "gt": 1310,
+      "geometric_near_misses": 39,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.9603053435114504,
+      "final_correct75": 0.9251908396946565
+    },
+    "8_16": {
+      "gt": 15114,
+      "geometric_near_misses": 3891,
+      "neighbor_direction_eligible": 2384,
+      "neighborward_fraction": 0.56501677852349,
+      "mean_neighbor_cosine": 0.11170752940372797,
+      "raw_correct75": 0.605068148736271,
+      "final_correct75": 0.47948921529707556
+    },
+    "8_16/class_10/density_1_3": {
+      "gt": 1608,
+      "geometric_near_misses": 479,
+      "neighbor_direction_eligible": 219,
+      "neighborward_fraction": 0.54337899543379,
+      "mean_neighbor_cosine": 0.10279058644289615,
+      "raw_correct75": 0.6175373134328358,
+      "final_correct75": 0.43781094527363185
+    },
+    "8_16/class_2/density_1_3": {
+      "gt": 1861,
+      "geometric_near_misses": 639,
+      "neighbor_direction_eligible": 374,
+      "neighborward_fraction": 0.6497326203208557,
+      "mean_neighbor_cosine": 0.24577099576117456,
+      "raw_correct75": 0.4744760881246642,
+      "final_correct75": 0.3363782912412681
+    },
+    "8_16/class_1/density_0": {
+      "gt": 803,
+      "geometric_near_misses": 162,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7422166874221668,
+      "final_correct75": 0.5952677459526775
+    },
+    "8_16/class_1/density_1_3": {
+      "gt": 2325,
+      "geometric_near_misses": 691,
+      "neighbor_direction_eligible": 574,
+      "neighborward_fraction": 0.5696864111498258,
+      "mean_neighbor_cosine": 0.11874226656484826,
+      "raw_correct75": 0.5836559139784946,
+      "final_correct75": 0.43827956989247313
+    },
+    "16_24/class_8/density_1_3": {
+      "gt": 71,
+      "geometric_near_misses": 9,
+      "neighbor_direction_eligible": 3,
+      "neighborward_fraction": 0.3333333333333333,
+      "mean_neighbor_cosine": -0.39894185626129236,
+      "raw_correct75": 0.23943661971830985,
+      "final_correct75": 0.18309859154929578
+    },
+    "16_24/class_8/density_0": {
+      "gt": 53,
+      "geometric_near_misses": 8,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.4339622641509434,
+      "final_correct75": 0.37735849056603776
+    },
+    "8_16/class_10/density_0": {
+      "gt": 403,
+      "geometric_near_misses": 103,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.6426799007444168,
+      "final_correct75": 0.47146401985111663
+    },
+    "16_24/class_10/density_1_3": {
+      "gt": 442,
+      "geometric_near_misses": 73,
+      "neighbor_direction_eligible": 28,
+      "neighborward_fraction": 0.7142857142857143,
+      "mean_neighbor_cosine": 0.3075384259791752,
+      "raw_correct75": 0.7828054298642534,
+      "final_correct75": 0.5972850678733032
+    },
+    "16_24/class_7/density_1_3": {
+      "gt": 147,
+      "geometric_near_misses": 35,
+      "neighbor_direction_eligible": 7,
+      "neighborward_fraction": 0.7142857142857143,
+      "mean_neighbor_cosine": 0.24269171132750644,
+      "raw_correct75": 0.5374149659863946,
+      "final_correct75": 0.35374149659863946
+    },
+    "16_24/class_10/density_0": {
+      "gt": 211,
+      "geometric_near_misses": 33,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7867298578199052,
+      "final_correct75": 0.6350710900473934
+    },
+    "8_16/class_10/density_ge4": {
+      "gt": 309,
+      "geometric_near_misses": 141,
+      "neighbor_direction_eligible": 126,
+      "neighborward_fraction": 0.5714285714285714,
+      "mean_neighbor_cosine": 0.1154152643540257,
+      "raw_correct75": 0.41423948220064727,
+      "final_correct75": 0.2750809061488673
+    },
+    "8_16/class_8/density_1_3": {
+      "gt": 114,
+      "geometric_near_misses": 13,
+      "neighbor_direction_eligible": 7,
+      "neighborward_fraction": 0.8571428571428571,
+      "mean_neighbor_cosine": 0.5360346455830742,
+      "raw_correct75": 0.12280701754385964,
+      "final_correct75": 0.09649122807017543
+    },
+    "8_16/class_8/density_ge4": {
+      "gt": 56,
+      "geometric_near_misses": 12,
+      "neighbor_direction_eligible": 8,
+      "neighborward_fraction": 0.875,
+      "mean_neighbor_cosine": 0.5713817013498013,
+      "raw_correct75": 0.017857142857142856,
+      "final_correct75": 0.017857142857142856
+    },
+    "8_16/class_3/density_1_3": {
+      "gt": 423,
+      "geometric_near_misses": 180,
+      "neighbor_direction_eligible": 50,
+      "neighborward_fraction": 0.56,
+      "mean_neighbor_cosine": -0.005076876189922664,
+      "raw_correct75": 0.39952718676122934,
+      "final_correct75": 0.2553191489361702
+    },
+    "lt8": {
+      "gt": 11819,
+      "geometric_near_misses": 4473,
+      "neighbor_direction_eligible": 3262,
+      "neighborward_fraction": 0.5634580012262416,
+      "mean_neighbor_cosine": 0.11097686009199013,
+      "raw_correct75": 0.2151620272442677,
+      "final_correct75": 0.176410863863271
+    },
+    "lt8/class_1/density_ge4": {
+      "gt": 1728,
+      "geometric_near_misses": 649,
+      "neighbor_direction_eligible": 610,
+      "neighborward_fraction": 0.5573770491803278,
+      "mean_neighbor_cosine": 0.10910402361152273,
+      "raw_correct75": 0.13310185185185186,
+      "final_correct75": 0.10127314814814815
+    },
+    "lt8/class_10/density_ge4": {
+      "gt": 763,
+      "geometric_near_misses": 307,
+      "neighbor_direction_eligible": 252,
+      "neighborward_fraction": 0.5198412698412699,
+      "mean_neighbor_cosine": 0.02165669447360782,
+      "raw_correct75": 0.1598951507208388,
+      "final_correct75": 0.12975098296199214
+    },
+    "lt8/class_2/density_ge4": {
+      "gt": 1049,
+      "geometric_near_misses": 326,
+      "neighbor_direction_eligible": 299,
+      "neighborward_fraction": 0.5785953177257525,
+      "mean_neighbor_cosine": 0.15785273234734512,
+      "raw_correct75": 0.10200190657769304,
+      "final_correct75": 0.09532888465204957
+    },
+    "8_16/class_4/density_0": {
+      "gt": 1097,
+      "geometric_near_misses": 95,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.8915223336371924,
+      "final_correct75": 0.8277119416590701
+    },
+    "lt8/class_8/density_1_3": {
+      "gt": 28,
+      "geometric_near_misses": 2,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.10714285714285714,
+      "final_correct75": 0.07142857142857142
+    },
+    "lt8/class_1/density_1_3": {
+      "gt": 1997,
+      "geometric_near_misses": 915,
+      "neighbor_direction_eligible": 715,
+      "neighborward_fraction": 0.6139860139860139,
+      "mean_neighbor_cosine": 0.1556537178026743,
+      "raw_correct75": 0.20781171757636455,
+      "final_correct75": 0.1627441161742614
+    },
+    "8_16/class_4/density_ge4": {
+      "gt": 995,
+      "geometric_near_misses": 250,
+      "neighbor_direction_eligible": 235,
+      "neighborward_fraction": 0.49361702127659574,
+      "mean_neighbor_cosine": -0.024888138345747303,
+      "raw_correct75": 0.7246231155778895,
+      "final_correct75": 0.5899497487437186
+    },
+    "lt8/class_10/density_1_3": {
+      "gt": 836,
+      "geometric_near_misses": 347,
+      "neighbor_direction_eligible": 121,
+      "neighborward_fraction": 0.628099173553719,
+      "mean_neighbor_cosine": 0.17311455857166377,
+      "raw_correct75": 0.30980861244019137,
+      "final_correct75": 0.24401913875598086
+    },
+    "lt8/class_2/density_1_3": {
+      "gt": 1218,
+      "geometric_near_misses": 431,
+      "neighbor_direction_eligible": 202,
+      "neighborward_fraction": 0.6336633663366337,
+      "mean_neighbor_cosine": 0.2514816405375595,
+      "raw_correct75": 0.16502463054187191,
+      "final_correct75": 0.13793103448275862
+    },
+    "24_32/class_6/density_1_3": {
+      "gt": 23,
+      "geometric_near_misses": 4,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.6086956521739131,
+      "final_correct75": 0.4782608695652174
+    },
+    "16_24/class_4/density_1_3": {
+      "gt": 1187,
+      "geometric_near_misses": 87,
+      "neighbor_direction_eligible": 67,
+      "neighborward_fraction": 0.4626865671641791,
+      "mean_neighbor_cosine": -0.08325079429162184,
+      "raw_correct75": 0.9090143218197135,
+      "final_correct75": 0.8222409435551812
+    },
+    "8_16/class_4/density_1_3": {
+      "gt": 2498,
+      "geometric_near_misses": 413,
+      "neighbor_direction_eligible": 352,
+      "neighborward_fraction": 0.46875,
+      "mean_neighbor_cosine": -0.02281284182367066,
+      "raw_correct75": 0.8126501200960768,
+      "final_correct75": 0.7081665332265813
+    },
+    "16_24/class_5/density_0": {
+      "gt": 235,
+      "geometric_near_misses": 4,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.6127659574468085,
+      "final_correct75": 0.5829787234042553
+    },
+    "24_32/class_5/density_1_3": {
+      "gt": 46,
+      "geometric_near_misses": 4,
+      "neighbor_direction_eligible": 2,
+      "neighborward_fraction": 0.5,
+      "mean_neighbor_cosine": -0.046778569278206894,
+      "raw_correct75": 0.717391304347826,
+      "final_correct75": 0.6739130434782609
+    },
+    "lt8/class_3/density_ge4": {
+      "gt": 175,
+      "geometric_near_misses": 39,
+      "neighbor_direction_eligible": 24,
+      "neighborward_fraction": 0.6666666666666666,
+      "mean_neighbor_cosine": 0.25300995318127617,
+      "raw_correct75": 0.03428571428571429,
+      "final_correct75": 0.022857142857142857
+    },
+    "ge32": {
+      "gt": 2932,
+      "geometric_near_misses": 118,
+      "neighbor_direction_eligible": 3,
+      "neighborward_fraction": 1.0,
+      "mean_neighbor_cosine": 0.5266420911032507,
+      "raw_correct75": 0.9051841746248295,
+      "final_correct75": 0.8550477489768077
+    },
+    "ge32/class_4/density_0": {
+      "gt": 1983,
+      "geometric_near_misses": 36,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.9722642460917801,
+      "final_correct75": 0.9415027735753908
+    },
+    "8_16/class_7/density_1_3": {
+      "gt": 243,
+      "geometric_near_misses": 51,
+      "neighbor_direction_eligible": 9,
+      "neighborward_fraction": 0.6666666666666666,
+      "mean_neighbor_cosine": 0.10916383602706935,
+      "raw_correct75": 0.3168724279835391,
+      "final_correct75": 0.2716049382716049
+    },
+    "8_16/class_7/density_ge4": {
+      "gt": 59,
+      "geometric_near_misses": 11,
+      "neighbor_direction_eligible": 3,
+      "neighborward_fraction": 0.6666666666666666,
+      "mean_neighbor_cosine": 0.11077041512147967,
+      "raw_correct75": 0.3389830508474576,
+      "final_correct75": 0.2711864406779661
+    },
+    "8_16/class_8/density_0": {
+      "gt": 49,
+      "geometric_near_misses": 7,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.3673469387755102,
+      "final_correct75": 0.3469387755102041
+    },
+    "ge32/class_5/density_0": {
+      "gt": 290,
+      "geometric_near_misses": 7,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7103448275862069,
+      "final_correct75": 0.6482758620689655
+    },
+    "24_32/class_10/density_0": {
+      "gt": 57,
+      "geometric_near_misses": 12,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7368421052631579,
+      "final_correct75": 0.543859649122807
+    },
+    "8_16/class_2/density_ge4": {
+      "gt": 273,
+      "geometric_near_misses": 108,
+      "neighbor_direction_eligible": 101,
+      "neighborward_fraction": 0.6534653465346535,
+      "mean_neighbor_cosine": 0.28654331415766865,
+      "raw_correct75": 0.2967032967032967,
+      "final_correct75": 0.19047619047619047
+    },
+    "8_16/class_3/density_ge4": {
+      "gt": 118,
+      "geometric_near_misses": 66,
+      "neighbor_direction_eligible": 53,
+      "neighborward_fraction": 0.5849056603773585,
+      "mean_neighbor_cosine": 0.04401562678762879,
+      "raw_correct75": 0.15254237288135594,
+      "final_correct75": 0.1016949152542373
+    },
+    "lt8/class_10/density_0": {
+      "gt": 88,
+      "geometric_near_misses": 40,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.26136363636363635,
+      "final_correct75": 0.14772727272727273
+    },
+    "16_24/class_7/density_0": {
+      "gt": 104,
+      "geometric_near_misses": 25,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5384615384615384,
+      "final_correct75": 0.375
+    },
+    "8_16/class_1/density_ge4": {
+      "gt": 559,
+      "geometric_near_misses": 233,
+      "neighbor_direction_eligible": 227,
+      "neighborward_fraction": 0.5550660792951542,
+      "mean_neighbor_cosine": 0.11913112024936223,
+      "raw_correct75": 0.4597495527728086,
+      "final_correct75": 0.3363148479427549
+    },
+    "8_16/class_5/density_1_3": {
+      "gt": 335,
+      "geometric_near_misses": 33,
+      "neighbor_direction_eligible": 7,
+      "neighborward_fraction": 0.7142857142857143,
+      "mean_neighbor_cosine": 0.26652161296934723,
+      "raw_correct75": 0.408955223880597,
+      "final_correct75": 0.36716417910447763
+    },
+    "lt8/class_1/density_0": {
+      "gt": 339,
+      "geometric_near_misses": 163,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.3480825958702065,
+      "final_correct75": 0.2359882005899705
+    },
+    "lt8/class_3/density_1_3": {
+      "gt": 237,
+      "geometric_near_misses": 91,
+      "neighbor_direction_eligible": 26,
+      "neighborward_fraction": 0.4230769230769231,
+      "mean_neighbor_cosine": -0.020912069536720035,
+      "raw_correct75": 0.0759493670886076,
+      "final_correct75": 0.05063291139240506
+    },
+    "8_16/class_3/density_0": {
+      "gt": 98,
+      "geometric_near_misses": 32,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.4387755102040816,
+      "final_correct75": 0.22448979591836735
+    },
+    "8_16/class_2/density_0": {
+      "gt": 171,
+      "geometric_near_misses": 42,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5087719298245614,
+      "final_correct75": 0.2982456140350877
+    },
+    "24_32/class_7/density_0": {
+      "gt": 66,
+      "geometric_near_misses": 16,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.6666666666666666,
+      "final_correct75": 0.4393939393939394
+    },
+    "24_32/class_4/density_1_3": {
+      "gt": 318,
+      "geometric_near_misses": 12,
+      "neighbor_direction_eligible": 7,
+      "neighborward_fraction": 0.14285714285714285,
+      "mean_neighbor_cosine": -0.46517358411865295,
+      "raw_correct75": 0.9528301886792453,
+      "final_correct75": 0.8836477987421384
+    },
+    "16_24/class_5/density_ge4": {
+      "gt": 29,
+      "geometric_near_misses": 2,
+      "neighbor_direction_eligible": 2,
+      "neighborward_fraction": 1.0,
+      "mean_neighbor_cosine": 0.8582914010615611,
+      "raw_correct75": 0.6551724137931034,
+      "final_correct75": 0.6206896551724138
+    },
+    "16_24/class_5/density_1_3": {
+      "gt": 225,
+      "geometric_near_misses": 16,
+      "neighbor_direction_eligible": 4,
+      "neighborward_fraction": 0.5,
+      "mean_neighbor_cosine": -0.05051570178632958,
+      "raw_correct75": 0.6444444444444445,
+      "final_correct75": 0.5555555555555556
+    },
+    "16_24/class_4/density_ge4": {
+      "gt": 76,
+      "geometric_near_misses": 10,
+      "neighbor_direction_eligible": 10,
+      "neighborward_fraction": 0.7,
+      "mean_neighbor_cosine": 0.17230323328737757,
+      "raw_correct75": 0.8157894736842105,
+      "final_correct75": 0.7368421052631579
+    },
+    "8_16/class_5/density_ge4": {
+      "gt": 173,
+      "geometric_near_misses": 27,
+      "neighbor_direction_eligible": 22,
+      "neighborward_fraction": 0.8181818181818182,
+      "mean_neighbor_cosine": 0.4808609786048932,
+      "raw_correct75": 0.2832369942196532,
+      "final_correct75": 0.2138728323699422
+    },
+    "lt8/class_7/density_ge4": {
+      "gt": 94,
+      "geometric_near_misses": 11,
+      "neighbor_direction_eligible": 2,
+      "neighborward_fraction": 0.0,
+      "mean_neighbor_cosine": -0.6291291273502069,
+      "raw_correct75": 0.05319148936170213,
+      "final_correct75": 0.05319148936170213
+    },
+    "16_24/class_10/density_ge4": {
+      "gt": 16,
+      "geometric_near_misses": 8,
+      "neighbor_direction_eligible": 8,
+      "neighborward_fraction": 0.5,
+      "mean_neighbor_cosine": -0.1541818343767802,
+      "raw_correct75": 0.4375,
+      "final_correct75": 0.1875
+    },
+    "16_24/class_3/density_0": {
+      "gt": 60,
+      "geometric_near_misses": 14,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7166666666666667,
+      "final_correct75": 0.45
+    },
+    "16_24/class_3/density_1_3": {
+      "gt": 112,
+      "geometric_near_misses": 25,
+      "neighbor_direction_eligible": 5,
+      "neighborward_fraction": 0.8,
+      "mean_neighbor_cosine": 0.571784827527493,
+      "raw_correct75": 0.6696428571428571,
+      "final_correct75": 0.38392857142857145
+    },
+    "16_24/class_1/density_1_3": {
+      "gt": 456,
+      "geometric_near_misses": 83,
+      "neighbor_direction_eligible": 69,
+      "neighborward_fraction": 0.4927536231884058,
+      "mean_neighbor_cosine": 0.01644590359947764,
+      "raw_correct75": 0.7587719298245614,
+      "final_correct75": 0.5504385964912281
+    },
+    "lt8/class_2/density_0": {
+      "gt": 75,
+      "geometric_near_misses": 24,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.06666666666666667,
+      "final_correct75": 0.05333333333333334
+    },
+    "24_32/class_4/density_ge4": {
+      "gt": 6,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.6666666666666666,
+      "final_correct75": 0.5
+    },
+    "ge32/class_7/density_0": {
+      "gt": 58,
+      "geometric_near_misses": 10,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.8103448275862069,
+      "final_correct75": 0.6551724137931034
+    },
+    "16_24/class_2/density_1_3": {
+      "gt": 325,
+      "geometric_near_misses": 71,
+      "neighbor_direction_eligible": 50,
+      "neighborward_fraction": 0.62,
+      "mean_neighbor_cosine": 0.20034870020782108,
+      "raw_correct75": 0.7384615384615385,
+      "final_correct75": 0.4676923076923077
+    },
+    "ge32/class_10/density_0": {
+      "gt": 22,
+      "geometric_near_misses": 5,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7272727272727273,
+      "final_correct75": 0.6363636363636364
+    },
+    "ge32/class_1/density_0": {
+      "gt": 64,
+      "geometric_near_misses": 9,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.859375,
+      "final_correct75": 0.796875
+    },
+    "ge32/class_2/density_0": {
+      "gt": 12,
+      "geometric_near_misses": 5,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5833333333333334,
+      "final_correct75": 0.16666666666666666
+    },
+    "lt8/class_7/density_1_3": {
+      "gt": 68,
+      "geometric_near_misses": 12,
+      "neighbor_direction_eligible": 3,
+      "neighborward_fraction": 0.3333333333333333,
+      "mean_neighbor_cosine": 0.017066259262974077,
+      "raw_correct75": 0.11764705882352941,
+      "final_correct75": 0.11764705882352941
+    },
+    "24_32/class_1/density_1_3": {
+      "gt": 54,
+      "geometric_near_misses": 11,
+      "neighbor_direction_eligible": 10,
+      "neighborward_fraction": 0.5,
+      "mean_neighbor_cosine": 0.08691065032103902,
+      "raw_correct75": 0.7037037037037037,
+      "final_correct75": 0.5555555555555556
+    },
+    "16_24/class_1/density_0": {
+      "gt": 340,
+      "geometric_near_misses": 37,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.8588235294117647,
+      "final_correct75": 0.6764705882352942
+    },
+    "24_32/class_1/density_0": {
+      "gt": 100,
+      "geometric_near_misses": 10,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.86,
+      "final_correct75": 0.74
+    },
+    "24_32/class_2/density_1_3": {
+      "gt": 48,
+      "geometric_near_misses": 9,
+      "neighbor_direction_eligible": 5,
+      "neighborward_fraction": 0.6,
+      "mean_neighbor_cosine": -0.07011819349106535,
+      "raw_correct75": 0.7708333333333334,
+      "final_correct75": 0.5833333333333334
+    },
+    "ge32/class_2/density_1_3": {
+      "gt": 14,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.9285714285714286,
+      "final_correct75": 0.7857142857142857
+    },
+    "24_32/class_10/density_1_3": {
+      "gt": 99,
+      "geometric_near_misses": 15,
+      "neighbor_direction_eligible": 4,
+      "neighborward_fraction": 0.75,
+      "mean_neighbor_cosine": 0.45405782826481567,
+      "raw_correct75": 0.8282828282828283,
+      "final_correct75": 0.6868686868686869
+    },
+    "24_32/class_3/density_1_3": {
+      "gt": 14,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 2,
+      "neighborward_fraction": 0.0,
+      "mean_neighbor_cosine": -0.44358188636037765,
+      "raw_correct75": 0.6428571428571429,
+      "final_correct75": 0.2857142857142857
+    },
+    "ge32/class_1/density_1_3": {
+      "gt": 19,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 3,
+      "neighborward_fraction": 1.0,
+      "mean_neighbor_cosine": 0.5266420911032507,
+      "raw_correct75": 0.8421052631578947,
+      "final_correct75": 0.6842105263157895
+    },
+    "ge32/class_10/density_1_3": {
+      "gt": 26,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.8076923076923077,
+      "final_correct75": 0.6153846153846154
+    },
+    "ge32/class_8/density_1_3": {
+      "gt": 8,
+      "geometric_near_misses": 2,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.25,
+      "final_correct75": 0.25
+    },
+    "lt8/class_8/density_ge4": {
+      "gt": 43,
+      "geometric_near_misses": 6,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.046511627906976744,
+      "final_correct75": 0.0
+    },
+    "ge32/class_8/density_0": {
+      "gt": 37,
+      "geometric_near_misses": 8,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.35135135135135137,
+      "final_correct75": 0.32432432432432434
+    },
+    "16_24/class_2/density_ge4": {
+      "gt": 6,
+      "geometric_near_misses": 2,
+      "neighbor_direction_eligible": 2,
+      "neighborward_fraction": 0.5,
+      "mean_neighbor_cosine": -0.38007949163668797,
+      "raw_correct75": 0.16666666666666666,
+      "final_correct75": 0.0
+    },
+    "ge32/class_3/density_0": {
+      "gt": 6,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.3333333333333333,
+      "final_correct75": 0.3333333333333333
+    },
+    "ge32/class_10/density_ge4": {
+      "gt": 1,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.0,
+      "final_correct75": 0.0
+    },
+    "8_16/class_7/density_0": {
+      "gt": 112,
+      "geometric_near_misses": 32,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5267857142857143,
+      "final_correct75": 0.35714285714285715
+    },
+    "16_24/class_1/density_ge4": {
+      "gt": 19,
+      "geometric_near_misses": 8,
+      "neighbor_direction_eligible": 8,
+      "neighborward_fraction": 0.625,
+      "mean_neighbor_cosine": 0.19309150419595716,
+      "raw_correct75": 0.5263157894736842,
+      "final_correct75": 0.3157894736842105
+    },
+    "24_32/class_10/density_ge4": {
+      "gt": 1,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.0,
+      "final_correct75": 0.0
+    },
+    "lt8/class_8/density_0": {
+      "gt": 4,
+      "geometric_near_misses": 2,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.0,
+      "final_correct75": 0.0
+    },
+    "24_32/class_3/density_0": {
+      "gt": 15,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.8,
+      "final_correct75": 0.26666666666666666
+    },
+    "ge32/class_4/density_1_3": {
+      "gt": 98,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.9693877551020408,
+      "final_correct75": 0.8775510204081632
+    },
+    "24_32/class_5/density_0": {
+      "gt": 165,
+      "geometric_near_misses": 9,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.696969696969697,
+      "final_correct75": 0.6242424242424243
+    },
+    "24_32/class_7/density_1_3": {
+      "gt": 51,
+      "geometric_near_misses": 7,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7450980392156863,
+      "final_correct75": 0.5882352941176471
+    },
+    "lt8/class_4/density_0": {
+      "gt": 129,
+      "geometric_near_misses": 46,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5271317829457365,
+      "final_correct75": 0.4186046511627907
+    },
+    "8_16/class_5/density_0": {
+      "gt": 138,
+      "geometric_near_misses": 8,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5072463768115942,
+      "final_correct75": 0.4782608695652174
+    },
+    "16_24/class_6/density_0": {
+      "gt": 77,
+      "geometric_near_misses": 12,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5064935064935064,
+      "final_correct75": 0.36363636363636365
+    },
+    "24_32/class_2/density_0": {
+      "gt": 12,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5833333333333334,
+      "final_correct75": 0.5833333333333334
+    },
+    "16_24/class_2/density_0": {
+      "gt": 54,
+      "geometric_near_misses": 14,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5740740740740741,
+      "final_correct75": 0.37037037037037035
+    },
+    "ge32/class_6/density_0": {
+      "gt": 188,
+      "geometric_near_misses": 22,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7606382978723404,
+      "final_correct75": 0.6648936170212766
+    },
+    "16_24/class_3/density_ge4": {
+      "gt": 3,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 1,
+      "neighborward_fraction": 0.0,
+      "mean_neighbor_cosine": -0.40492759195313516,
+      "raw_correct75": 0.3333333333333333,
+      "final_correct75": 0.3333333333333333
+    },
+    "lt8/class_4/density_1_3": {
+      "gt": 679,
+      "geometric_near_misses": 253,
+      "neighbor_direction_eligible": 225,
+      "neighborward_fraction": 0.4666666666666667,
+      "mean_neighbor_cosine": 0.004384475082352096,
+      "raw_correct75": 0.49042709867452133,
+      "final_correct75": 0.43004418262150224
+    },
+    "lt8/class_4/density_ge4": {
+      "gt": 1800,
+      "geometric_near_misses": 774,
+      "neighbor_direction_eligible": 768,
+      "neighborward_fraction": 0.5377604166666666,
+      "mean_neighbor_cosine": 0.07272729673419127,
+      "raw_correct75": 0.33111111111111113,
+      "final_correct75": 0.2866666666666667
+    },
+    "24_32/class_6/density_0": {
+      "gt": 70,
+      "geometric_near_misses": 9,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.6142857142857143,
+      "final_correct75": 0.5285714285714286
+    },
+    "24_32/class_8/density_0": {
+      "gt": 41,
+      "geometric_near_misses": 2,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.6097560975609756,
+      "final_correct75": 0.5609756097560976
+    },
+    "24_32/class_8/density_1_3": {
+      "gt": 15,
+      "geometric_near_misses": 4,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.4,
+      "final_correct75": 0.3333333333333333
+    },
+    "16_24/class_6/density_1_3": {
+      "gt": 66,
+      "geometric_near_misses": 21,
+      "neighbor_direction_eligible": 6,
+      "neighborward_fraction": 0.6666666666666666,
+      "mean_neighbor_cosine": 0.3059711426454421,
+      "raw_correct75": 0.3939393939393939,
+      "final_correct75": 0.2878787878787879
+    },
+    "8_16/class_6/density_1_3": {
+      "gt": 107,
+      "geometric_near_misses": 27,
+      "neighbor_direction_eligible": 9,
+      "neighborward_fraction": 0.4444444444444444,
+      "mean_neighbor_cosine": 0.0010075390949440483,
+      "raw_correct75": 0.2616822429906542,
+      "final_correct75": 0.18691588785046728
+    },
+    "8_16/class_9/density_1_3": {
+      "gt": 31,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.4838709677419355,
+      "final_correct75": 0.3870967741935484
+    },
+    "ge32/class_9/density_0": {
+      "gt": 51,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.9019607843137255,
+      "final_correct75": 0.8627450980392157
+    },
+    "lt8/class_9/density_ge4": {
+      "gt": 31,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.03225806451612903,
+      "final_correct75": 0.03225806451612903
+    },
+    "24_32/class_9/density_1_3": {
+      "gt": 11,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.9090909090909091,
+      "final_correct75": 0.7272727272727273
+    },
+    "lt8/class_5/density_1_3": {
+      "gt": 92,
+      "geometric_near_misses": 4,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.07608695652173914,
+      "final_correct75": 0.07608695652173914
+    },
+    "ge32/class_7/density_1_3": {
+      "gt": 18,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.9444444444444444,
+      "final_correct75": 0.8888888888888888
+    },
+    "lt8/class_6/density_1_3": {
+      "gt": 36,
+      "geometric_near_misses": 8,
+      "neighbor_direction_eligible": 4,
+      "neighborward_fraction": 0.5,
+      "mean_neighbor_cosine": 0.023741360213920454,
+      "raw_correct75": 0.16666666666666666,
+      "final_correct75": 0.16666666666666666
+    },
+    "8_16/class_6/density_0": {
+      "gt": 54,
+      "geometric_near_misses": 11,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.42592592592592593,
+      "final_correct75": 0.25925925925925924
+    },
+    "lt8/class_5/density_0": {
+      "gt": 19,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.10526315789473684,
+      "final_correct75": 0.10526315789473684
+    },
+    "lt8/class_5/density_ge4": {
+      "gt": 205,
+      "geometric_near_misses": 5,
+      "neighbor_direction_eligible": 1,
+      "neighborward_fraction": 0.0,
+      "mean_neighbor_cosine": -0.63690918896336,
+      "raw_correct75": 0.00975609756097561,
+      "final_correct75": 0.00975609756097561
+    },
+    "8_16/class_6/density_ge4": {
+      "gt": 56,
+      "geometric_near_misses": 12,
+      "neighbor_direction_eligible": 7,
+      "neighborward_fraction": 0.7142857142857143,
+      "mean_neighbor_cosine": 0.27233540799333095,
+      "raw_correct75": 0.21428571428571427,
+      "final_correct75": 0.16071428571428573
+    },
+    "24_32/class_7/density_ge4": {
+      "gt": 5,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 1,
+      "neighborward_fraction": 0.0,
+      "mean_neighbor_cosine": -0.887856373568312,
+      "raw_correct75": 0.6,
+      "final_correct75": 0.6
+    },
+    "lt8/class_6/density_ge4": {
+      "gt": 48,
+      "geometric_near_misses": 11,
+      "neighbor_direction_eligible": 10,
+      "neighborward_fraction": 0.3,
+      "mean_neighbor_cosine": -0.08615445955978032,
+      "raw_correct75": 0.041666666666666664,
+      "final_correct75": 0.041666666666666664
+    },
+    "ge32/class_5/density_1_3": {
+      "gt": 19,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7368421052631579,
+      "final_correct75": 0.47368421052631576
+    },
+    "16_24/class_7/density_ge4": {
+      "gt": 4,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.75,
+      "final_correct75": 0.75
+    },
+    "8_16/class_9/density_ge4": {
+      "gt": 35,
+      "geometric_near_misses": 7,
+      "neighbor_direction_eligible": 1,
+      "neighborward_fraction": 1.0,
+      "mean_neighbor_cosine": 0.9989939049995669,
+      "raw_correct75": 0.4857142857142857,
+      "final_correct75": 0.37142857142857144
+    },
+    "16_24/class_8/density_ge4": {
+      "gt": 9,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.2222222222222222,
+      "final_correct75": 0.0
+    },
+    "16_24/class_9/density_1_3": {
+      "gt": 25,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.84,
+      "final_correct75": 0.72
+    },
+    "lt8/class_9/density_1_3": {
+      "gt": 4,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.0,
+      "final_correct75": 0.0
+    },
+    "16_24/class_6/density_ge4": {
+      "gt": 7,
+      "geometric_near_misses": 2,
+      "neighbor_direction_eligible": 2,
+      "neighborward_fraction": 0.5,
+      "mean_neighbor_cosine": 0.15509958041889577,
+      "raw_correct75": 0.42857142857142855,
+      "final_correct75": 0.14285714285714285
+    },
+    "8_16/class_9/density_0": {
+      "gt": 11,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.45454545454545453,
+      "final_correct75": 0.2727272727272727
+    },
+    "lt8/class_7/density_0": {
+      "gt": 14,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.07142857142857142,
+      "final_correct75": 0.07142857142857142
+    },
+    "lt8/class_3/density_0": {
+      "gt": 16,
+      "geometric_near_misses": 3,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.125,
+      "final_correct75": 0.125
+    },
+    "16_24/class_9/density_0": {
+      "gt": 18,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7777777777777778,
+      "final_correct75": 0.7222222222222222
+    },
+    "lt8/class_6/density_0": {
+      "gt": 4,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.25,
+      "final_correct75": 0.25
+    },
+    "24_32/class_9/density_0": {
+      "gt": 17,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.8823529411764706,
+      "final_correct75": 0.8235294117647058
+    },
+    "ge32/class_9/density_1_3": {
+      "gt": 5,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.6,
+      "final_correct75": 0.4
+    },
+    "ge32/class_6/density_1_3": {
+      "gt": 9,
+      "geometric_near_misses": 2,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.7777777777777778,
+      "final_correct75": 0.6666666666666666
+    },
+    "ge32/class_7/density_ge4": {
+      "gt": 1,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 1.0,
+      "final_correct75": 1.0
+    },
+    "16_24/class_9/density_ge4": {
+      "gt": 8,
+      "geometric_near_misses": 1,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.75,
+      "final_correct75": 0.625
+    },
+    "24_32/class_5/density_ge4": {
+      "gt": 2,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.5,
+      "final_correct75": 0.5
+    },
+    "24_32/class_6/density_ge4": {
+      "gt": 2,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 1.0,
+      "final_correct75": 0.5
+    },
+    "ge32/class_4/density_ge4": {
+      "gt": 1,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 0.0,
+      "final_correct75": 0.0
+    },
+    "ge32/class_6/density_ge4": {
+      "gt": 1,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 1.0,
+      "final_correct75": 1.0
+    },
+    "ge32/class_3/density_1_3": {
+      "gt": 1,
+      "geometric_near_misses": 0,
+      "neighbor_direction_eligible": 0,
+      "neighborward_fraction": null,
+      "mean_neighbor_cosine": null,
+      "raw_correct75": 1.0,
+      "final_correct75": 1.0
+    }
+  },
+  "matching": {
+    "raw": {
+      "gt": 38599,
+      "independent": 21547,
+      "maximum_one_to_one": 21545,
+      "independent_any": 24168,
+      "maximum_one_to_one_any": 24164
+    },
+    "confidence": {
+      "gt": 38599,
+      "independent": 21199,
+      "maximum_one_to_one": 21197,
+      "independent_any": 23762,
+      "maximum_one_to_one_any": 23759
+    },
+    "pre_nms": {
+      "gt": 38599,
+      "independent": 21199,
+      "maximum_one_to_one": 21197,
+      "independent_any": 23762,
+      "maximum_one_to_one_any": 23759
+    },
+    "post_nms": {
+      "gt": 38599,
+      "independent": 18544,
+      "maximum_one_to_one": 18535,
+      "independent_any": 20852,
+      "maximum_one_to_one_any": 20840
+    },
+    "final": {
+      "gt": 38599,
+      "independent": 18134,
+      "maximum_one_to_one": 18125,
+      "independent_any": 20289,
+      "maximum_one_to_one_any": 20278
+    }
+  },
+  "nms_good_candidate_events": {
+    "same_instance": 144522,
+    "cross_instance": 123
+  },
+  "cross_instance_unique_gt_without_nms_alternative": 37,
+  "poorer_witness_unique_gt_without_nms_alternative": 2650,
+  "neighbor_direction_control": {
+    "eligible_near_misses": 5952,
+    "exchangeable_near_misses": 3749,
+    "strata_used": 1218,
+    "excluded_singletons": 2203,
+    "repetitions": 100,
+    "observed_mean_cosine": 0.12234914316781194,
+    "permuted_mean_cosine": 0.02678273189229857,
+    "observed_minus_permuted": 0.09556641127551337,
+    "boundary": "Descriptive within-stratum direction control, not a causal test or a training gate; limited exchangeable coverage may make it inconclusive."
+  },
+  "event_count": 144645,
+  "image_count": 548,
+  "boundaries": [
+    "Maximum matching is score-independent geometric upper coverage, NOT achievable AP or official recall.",
+    "Matched GT identity can vary among equal-cardinality solutions; only image totals are compared.",
+    "Density/neighbor direction remain confounded; candidate geometry-selected bias is not training root cause.",
+    "NMS witness counts are candidate events, not recoverable unique GT; rows also record surviving alternatives.",
+    "Continuous geometry/argmax classes and pre-ignore candidates are distinct from official AP."
+  ],
+  "key": "e1_seed1",
+  "seed": 1,
+  "reproduction": {
+    "images": 548,
+    "max_box_error": 0.0,
+    "max_score_error": 0.0
+  },
+  "checkpoint_sha256": "f1a5ba6642a01445a99b2c7c80d8e79299a4402159bc37d2a08bb31ff365df12",
+  "subset_only": false,
+  "weights_unchanged": true,
+  "no_gradients": true,
+  "elapsed_seconds": 93.70904211699963,
+  "official": {
+    "AP50_95_percent": 25.63123996261998,
+    "AP50_percent": 44.72545960536977,
+    "AP75_percent": 25.02982351561637,
+    "AR1_percent": 0.8421943039985544,
+    "AR10_percent": 7.422139030448752,
+    "AR100_percent": 31.380066288726432,
+    "AR500_percent": 37.81471652145795,
+    "class_image_weights": {
+      "1": 520,
+      "2": 482,
+      "3": 364,
+      "4": 515,
+      "5": 421,
+      "6": 265,
+      "7": 337,
+      "8": 219,
+      "9": 130,
+      "10": 485
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 520,
+        "AP50_95_percent": 24.44589871238268,
+        "AP50_percent": 51.87940380981975,
+        "AP75_percent": 19.409358306333736
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 482,
+        "AP50_95_percent": 16.217739046878016,
+        "AP50_percent": 40.48828030391201,
+        "AP75_percent": 9.55079641006781
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 364,
+        "AP50_95_percent": 7.365884377040189,
+        "AP50_percent": 16.840324110985648,
+        "AP75_percent": 5.365392514741362
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 515,
+        "AP50_95_percent": 58.72134090571279,
+        "AP50_percent": 84.01407929578303,
+        "AP75_percent": 65.76437799870106
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 421,
+        "AP50_95_percent": 28.645400991315814,
+        "AP50_percent": 39.40792042493454,
+        "AP75_percent": 33.316347454856334
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 265,
+        "AP50_95_percent": 23.65582114710501,
+        "AP50_percent": 35.80539527641513,
+        "AP75_percent": 25.82937503522007
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 337,
+        "AP50_95_percent": 15.660213206562991,
+        "AP50_percent": 28.27578105858166,
+        "AP75_percent": 16.164697497693343
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 219,
+        "AP50_95_percent": 7.251052583790201,
+        "AP50_percent": 11.42900301926514,
+        "AP75_percent": 7.805471015179176
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 130,
+        "AP50_95_percent": 41.69205221463901,
+        "AP50_percent": 57.57106021527599,
+        "AP75_percent": 48.32520842160696
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 485,
+        "AP50_95_percent": 24.21472035848026,
+        "AP50_percent": 52.98702299063689,
+        "AP75_percent": 18.00686103308703
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "official_reference": {
+    "AP50_95_percent": 25.63123996261998,
+    "AP50_percent": 44.72545960536977,
+    "AP75_percent": 25.02982351561637,
+    "AR1_percent": 0.8421943039985544,
+    "AR10_percent": 7.422139030448752,
+    "AR100_percent": 31.380066288726432,
+    "AR500_percent": 37.81471652145795,
+    "class_image_weights": {
+      "1": 520,
+      "2": 482,
+      "3": 364,
+      "4": 515,
+      "5": 421,
+      "6": 265,
+      "7": 337,
+      "8": 219,
+      "9": 130,
+      "10": 485
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 520,
+        "AP50_95_percent": 24.44589871238268,
+        "AP50_percent": 51.87940380981975,
+        "AP75_percent": 19.409358306333736
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 482,
+        "AP50_95_percent": 16.217739046878016,
+        "AP50_percent": 40.48828030391201,
+        "AP75_percent": 9.55079641006781
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 364,
+        "AP50_95_percent": 7.365884377040189,
+        "AP50_percent": 16.840324110985648,
+        "AP75_percent": 5.365392514741362
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 515,
+        "AP50_95_percent": 58.72134090571279,
+        "AP50_percent": 84.01407929578303,
+        "AP75_percent": 65.76437799870106
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 421,
+        "AP50_95_percent": 28.645400991315814,
+        "AP50_percent": 39.40792042493454,
+        "AP75_percent": 33.316347454856334
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 265,
+        "AP50_95_percent": 23.65582114710501,
+        "AP50_percent": 35.80539527641513,
+        "AP75_percent": 25.82937503522007
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 337,
+        "AP50_95_percent": 15.660213206562991,
+        "AP50_percent": 28.27578105858166,
+        "AP75_percent": 16.164697497693343
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 219,
+        "AP50_95_percent": 7.251052583790201,
+        "AP50_percent": 11.42900301926514,
+        "AP75_percent": 7.805471015179176
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 130,
+        "AP50_95_percent": 41.69205221463901,
+        "AP50_percent": 57.57106021527599,
+        "AP75_percent": 48.32520842160696
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 485,
+        "AP50_95_percent": 24.21472035848026,
+        "AP50_percent": 52.98702299063689,
+        "AP75_percent": 18.00686103308703
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "ignore_audit": {
+    "raw_prediction_count": 239305,
+    "official_prediction_count_after_class0_filter": 217660,
+    "removed_by_class0_ignore": 21645,
+    "removed_by_class0_fraction": 0.09044942646413573,
+    "overlap_class11_others": 234,
+    "overlap_class11_fraction": 0.0009778316374501159,
+    "per_class": {
+      "1": {
+        "total": 61455,
+        "removed_by_class0": 4897,
+        "overlap_class11": 28
+      },
+      "2": {
+        "total": 20847,
+        "removed_by_class0": 1093,
+        "overlap_class11": 54
+      },
+      "3": {
+        "total": 20129,
+        "removed_by_class0": 752,
+        "overlap_class11": 13
+      },
+      "4": {
+        "total": 75119,
+        "removed_by_class0": 9393,
+        "overlap_class11": 33
+      },
+      "5": {
+        "total": 4173,
+        "removed_by_class0": 150,
+        "overlap_class11": 2
+      },
+      "6": {
+        "total": 4434,
+        "removed_by_class0": 491,
+        "overlap_class11": 19
+      },
+      "7": {
+        "total": 7078,
+        "removed_by_class0": 469,
+        "overlap_class11": 43
+      },
+      "8": {
+        "total": 1739,
+        "removed_by_class0": 198,
+        "overlap_class11": 11
+      },
+      "9": {
+        "total": 570,
+        "removed_by_class0": 56,
+        "overlap_class11": 2
+      },
+      "10": {
+        "total": 43761,
+        "removed_by_class0": 4146,
+        "overlap_class11": 29
+      }
+    },
+    "fp_audit": [
+      {
+        "confidence": 0.05,
+        "area_group": "all",
+        "fp": 60321,
+        "fp_ignore": 8150,
+        "fp_others": 95,
+        "tp": 27072,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.135110492200063,
+        "fp_class11_others_fraction": 0.0015749075777921452
+      },
+      {
+        "confidence": 0.05,
+        "area_group": "small",
+        "fp": 49206,
+        "fp_ignore": 7521,
+        "fp_others": 50,
+        "tp": 16538,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.1528472137544202,
+        "fp_class11_others_fraction": 0.001016136243547535
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "all",
+        "fp": 34410,
+        "fp_ignore": 4432,
+        "fp_others": 59,
+        "tp": 25669,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.12879976750944494,
+        "fp_class11_others_fraction": 0.0017146178436501017
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "small",
+        "fp": 27212,
+        "fp_ignore": 4058,
+        "fp_others": 31,
+        "tp": 15345,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.14912538585917978,
+        "fp_class11_others_fraction": 0.0011392032926650008
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "all",
+        "fp": 10976,
+        "fp_ignore": 1208,
+        "fp_others": 35,
+        "tp": 22119,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.11005830903790087,
+        "fp_class11_others_fraction": 0.0031887755102040817
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "small",
+        "fp": 7742,
+        "fp_ignore": 1066,
+        "fp_others": 14,
+        "tp": 12293,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.13769051924567297,
+        "fp_class11_others_fraction": 0.0018083182640144665
+      }
+    ],
+    "fp_audit_note": "Greedy IoU=0.50 class-wise matching before class-0 raster filtering; ignored score-zero GT matches are neutral."
+  },
+  "official_reproduction_passed": true
+}

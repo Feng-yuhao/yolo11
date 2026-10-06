@@ -1,0 +1,14 @@
+{
+  "d27_official.py": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+  "test_d44.py": "624e0ff44600308cb4833b485f133b0188beca4ea4dd38635f987ac93a65ed2a",
+  "models/e43/extension.py": "0aff7b4a0d86d55ddc07becffdefffc9c19534c29256011fe8c543662cae0199",
+  "models/e42/spatial_task_head.py": "271f751e1190bdf68fb3ddc1ee4b7dd95c65dc723b9878265df05d6ad86c7358",
+  "models/e40/spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+  "models/e43/spatial_task_head.py": "46219e7413ea96cc9bfe67ff1d1ce07258dbd961bab72e7b5494fd88b81e43ab",
+  "d38_common.py": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+  "interventions.py": "6b0be04758891b57fe1f88b91c903ae9dfb8d63f463b2ce8a5efa1640512f87b",
+  "routing_stats.py": "ee22a83b669da5c509724db263f7a162b473354739fb8d384a9f940977f12e9f",
+  "models/e42/extension.py": "0aff7b4a0d86d55ddc07becffdefffc9c19534c29256011fe8c543662cae0199",
+  "diagnose_worker.py": "40cf2c346991bbc1ad0a3c47ef97f934cec9857985a47d8e77ddd7ba2edd7797",
+  "diagnose_d44.py": "a053de17f81e3d94dd357143a519e30afce7230f7acc6487ddb947d0a54fd0e1"
+}

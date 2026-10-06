@@ -1,0 +1,425 @@
+{
+  "status": "completed",
+  "revision": "d33_irp_path_official_and_raw_oracle_v1",
+  "d27_revision": "d27_official_visdrone_det_matlab104_port_v1",
+  "no_training": true,
+  "off_manifold": true,
+  "smoke": true,
+  "image_count": 8,
+  "dataset": {
+    "dataset_root": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val",
+    "images": 548,
+    "annotation_dimension_sha256": "058c87e779a61a09933bebe35af1c05c807a444dc842b4be12124dd36134c787",
+    "raw_class_counts": {
+      "0": 1378,
+      "1": 8844,
+      "2": 5125,
+      "3": 1287,
+      "4": 14064,
+      "5": 1975,
+      "6": 750,
+      "7": 1045,
+      "8": 532,
+      "9": 251,
+      "10": 4886,
+      "11": 32
+    },
+    "score_zero_counts": {
+      "0": 1378,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 32
+    },
+    "class0_ignore_regions": 1378,
+    "class11_others": 32,
+    "gt_rows_dropped_by_class0_region": 160,
+    "evaluated_gt_rows": 38599
+  },
+  "d27_unit_tests": {
+    "union_area": "passed",
+    "integral_region_coverage": "passed",
+    "ordinary_match": "passed",
+    "ignore_match": "passed",
+    "normal_preferred": "passed",
+    "voc_ap": "passed",
+    "official_end_to_end": "passed"
+  },
+  "checkpoints": {
+    "e1_seed2": {
+      "path": "/root/autodl-tmp/yolo11_project/runs/e1_yolo11s_p2add_img1024_seed2/weights/best.pt",
+      "sha256": "4c38169b5ee41b11df8e4f056276e9fdc3e9457c15cb5da1d8a3b895fa2e3ba1"
+    },
+    "e33a_seed2": {
+      "path": "/root/autodl-tmp/yolo11_project/runs/e33a_irp_e1_img1024_seed2/weights/best.pt",
+      "sha256": "688145ea26591343662bff2b32373f858e87e85749028fd6a268610bc9319440"
+    }
+  },
+  "protocol": {
+    "imgsz": 1024,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 500,
+    "batch": 4,
+    "half": false,
+    "augment": false,
+    "rect": true,
+    "raw_conf": 0.001,
+    "raw_pre_nms_top_k": 500
+  },
+  "limitations": [
+    "Bypasses intervene on a model trained with both IRP paths; they are not retrained ablations.",
+    "Per-GT raw oracles reuse predictions across GT and do not implement official one-to-one matching.",
+    "Pre-NMS top500 is diagnostic and is not the model's post-NMS max_det=500.",
+    "Original-image area bins in raw_oracle are diagnostic, not official VisDrone scale AP."
+  ],
+  "modes": {
+    "e33_full": {
+      "diagnostics": {
+        "images": 8,
+        "prediction_count": 4000,
+        "raw_gt_count": 871,
+        "raw_oracle": {
+          "all": {
+            "gt_count": 871,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.8059701492537313,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.5407577497129736,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.6900114810562572,
+            "best_scored_P3_fraction": 0.20436280137772675,
+            "best_scored_P4_fraction": 0.06888633754305395,
+            "best_scored_P5_fraction": 0.02870264064293915
+          },
+          "small": {
+            "gt_count": 471,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.7600849256900213,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.37791932059447986,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.8046709129511678,
+            "best_scored_P3_fraction": 0.11677282377919321,
+            "best_scored_P4_fraction": 0.03397027600849257,
+            "best_scored_P5_fraction": 0.044585987261146494
+          },
+          "medium": {
+            "gt_count": 366,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.8524590163934426,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.7131147540983607,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.5983606557377049,
+            "best_scored_P3_fraction": 0.2978142076502732,
+            "best_scored_P4_fraction": 0.07650273224043716,
+            "best_scored_P5_fraction": 0.00819672131147541
+          },
+          "large": {
+            "gt_count": 34,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.9411764705882353,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.9411764705882353,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.08823529411764706,
+            "best_scored_P3_fraction": 0.4117647058823529,
+            "best_scored_P4_fraction": 0.47058823529411764,
+            "best_scored_P5_fraction": 0.029411764705882353
+          }
+        },
+        "update_residual": {
+          "relative_l2": 0.00048518423260837125,
+          "mean_abs": 0.00016607156592524715,
+          "elements": 9437184
+        },
+        "return_residual": {
+          "relative_l2": 1.655084313413742e-05,
+          "mean_abs": 6.421381436262487e-06,
+          "elements": 37748736
+        }
+      }
+    },
+    "e33_return_off": {
+      "diagnostics": {
+        "images": 8,
+        "prediction_count": 4000,
+        "raw_gt_count": 871,
+        "raw_oracle": {
+          "all": {
+            "gt_count": 871,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.8059701492537313,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.5407577497129736,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.6900114810562572,
+            "best_scored_P3_fraction": 0.20436280137772675,
+            "best_scored_P4_fraction": 0.06888633754305395,
+            "best_scored_P5_fraction": 0.02870264064293915
+          },
+          "small": {
+            "gt_count": 471,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.7600849256900213,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.37791932059447986,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.8046709129511678,
+            "best_scored_P3_fraction": 0.11677282377919321,
+            "best_scored_P4_fraction": 0.03397027600849257,
+            "best_scored_P5_fraction": 0.044585987261146494
+          },
+          "medium": {
+            "gt_count": 366,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.8524590163934426,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.7131147540983607,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.5983606557377049,
+            "best_scored_P3_fraction": 0.2978142076502732,
+            "best_scored_P4_fraction": 0.07650273224043716,
+            "best_scored_P5_fraction": 0.00819672131147541
+          },
+          "large": {
+            "gt_count": 34,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.9411764705882353,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.9411764705882353,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.08823529411764706,
+            "best_scored_P3_fraction": 0.4117647058823529,
+            "best_scored_P4_fraction": 0.47058823529411764,
+            "best_scored_P5_fraction": 0.029411764705882353
+          }
+        },
+        "update_residual": {
+          "relative_l2": 0.00048518423260837125,
+          "mean_abs": 0.00016607156592524715,
+          "elements": 9437184
+        },
+        "return_residual": {
+          "relative_l2": 0.0,
+          "mean_abs": 0.0,
+          "elements": 37748736
+        }
+      }
+    },
+    "e33_update_off": {
+      "diagnostics": {
+        "images": 8,
+        "prediction_count": 4000,
+        "raw_gt_count": 871,
+        "raw_oracle": {
+          "all": {
+            "gt_count": 871,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.8059701492537313,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.5407577497129736,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.6900114810562572,
+            "best_scored_P3_fraction": 0.20436280137772675,
+            "best_scored_P4_fraction": 0.06888633754305395,
+            "best_scored_P5_fraction": 0.02870264064293915
+          },
+          "small": {
+            "gt_count": 471,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.7600849256900213,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.37791932059447986,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.8046709129511678,
+            "best_scored_P3_fraction": 0.11677282377919321,
+            "best_scored_P4_fraction": 0.03397027600849257,
+            "best_scored_P5_fraction": 0.044585987261146494
+          },
+          "medium": {
+            "gt_count": 366,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.8524590163934426,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.7131147540983607,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.5983606557377049,
+            "best_scored_P3_fraction": 0.2978142076502732,
+            "best_scored_P4_fraction": 0.07650273224043716,
+            "best_scored_P5_fraction": 0.00819672131147541
+          },
+          "large": {
+            "gt_count": 34,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.9411764705882353,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.9411764705882353,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.08823529411764706,
+            "best_scored_P3_fraction": 0.4117647058823529,
+            "best_scored_P4_fraction": 0.47058823529411764,
+            "best_scored_P5_fraction": 0.029411764705882353
+          }
+        },
+        "update_residual": {
+          "relative_l2": 0.0,
+          "mean_abs": 0.0,
+          "elements": 9437184
+        },
+        "return_residual": {
+          "relative_l2": 0.0,
+          "mean_abs": 0.0,
+          "elements": 37748736
+        }
+      }
+    },
+    "e1_seed2": {
+      "diagnostics": {
+        "images": 8,
+        "prediction_count": 4000,
+        "raw_gt_count": 871,
+        "raw_oracle": {
+          "all": {
+            "gt_count": 871,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.8163030998851895,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.5304247990815155,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.6980482204362801,
+            "best_scored_P3_fraction": 0.19058553386911595,
+            "best_scored_P4_fraction": 0.08266360505166476,
+            "best_scored_P5_fraction": 0.024110218140068886
+          },
+          "small": {
+            "gt_count": 471,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.7579617834394905,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.35456475583864117,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.8343949044585988,
+            "best_scored_P3_fraction": 0.09341825902335456,
+            "best_scored_P4_fraction": 0.025477707006369428,
+            "best_scored_P5_fraction": 0.044585987261146494
+          },
+          "medium": {
+            "gt_count": 366,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.8825136612021858,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.7213114754098361,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.5655737704918032,
+            "best_scored_P3_fraction": 0.29508196721311475,
+            "best_scored_P4_fraction": 0.13114754098360656,
+            "best_scored_P5_fraction": 0.0
+          },
+          "large": {
+            "gt_count": 34,
+            "raw_any_iou_at_50": 0.0,
+            "raw_sameclass_conf_iou_at_50": 0.0,
+            "raw_top500_iou_at_50": 0.0,
+            "final_iou_at_50": 0.9117647058823529,
+            "P2_scored_at_50": 0.0,
+            "raw_any_iou_at_75": 0.0,
+            "raw_sameclass_conf_iou_at_75": 0.0,
+            "raw_top500_iou_at_75": 0.0,
+            "final_iou_at_75": 0.9117647058823529,
+            "P2_scored_at_75": 0.0,
+            "best_scored_P2_fraction": 0.23529411764705882,
+            "best_scored_P3_fraction": 0.4117647058823529,
+            "best_scored_P4_fraction": 0.35294117647058826,
+            "best_scored_P5_fraction": 0.0
+          }
+        },
+        "update_residual": null,
+        "return_residual": null
+      }
+    }
+  }
+}

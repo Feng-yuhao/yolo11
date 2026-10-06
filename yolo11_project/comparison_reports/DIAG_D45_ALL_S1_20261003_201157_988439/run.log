@@ -1,0 +1,99 @@
+D45 run START 2026-10-03T20:12:34.689476+08:00 REPORT=/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D45_ALL_S1_20261003_201157_988439/run
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D45 IMAGES 4/548 six head states; elapsed=0.1min inference_remaining~8.7min reserved=1.02GiB
+D45 IMAGES 40/548 six head states; elapsed=0.3min inference_remaining~3.6min reserved=1.93GiB
+D45 IMAGES 80/548 six head states; elapsed=0.6min inference_remaining~3.6min reserved=1.93GiB
+D45 IMAGES 120/548 six head states; elapsed=0.9min inference_remaining~3.4min reserved=1.93GiB
+D45 IMAGES 160/548 six head states; elapsed=1.2min inference_remaining~3.0min reserved=1.93GiB
+D45 IMAGES 200/548 six head states; elapsed=1.6min inference_remaining~2.7min reserved=1.93GiB
+D45 IMAGES 240/548 six head states; elapsed=1.8min inference_remaining~2.3min reserved=1.93GiB
+D45 IMAGES 280/548 six head states; elapsed=2.2min inference_remaining~2.1min reserved=1.93GiB
+D45 IMAGES 320/548 six head states; elapsed=2.4min inference_remaining~1.7min reserved=1.93GiB
+D45 IMAGES 360/548 six head states; elapsed=2.9min inference_remaining~1.5min reserved=1.93GiB
+D45 IMAGES 400/548 six head states; elapsed=3.5min inference_remaining~1.3min reserved=1.93GiB
+D45 IMAGES 440/548 six head states; elapsed=3.8min inference_remaining~0.9min reserved=1.93GiB
+D45 IMAGES 480/548 six head states; elapsed=4.1min inference_remaining~0.6min reserved=1.93GiB
+D45 IMAGES 520/548 six head states; elapsed=4.4min inference_remaining~0.2min reserved=1.93GiB
+D45 IMAGES 548/548 six head states; elapsed=4.6min inference_remaining~0.0min reserved=1.93GiB
+D45 CPU OFFICIAL SCORING normal; MODEL TENSORS RELEASED (CUDA context remains)
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D45 normal AP=26.402008 delta_vs_normal={'AP50_95_percent': 0.0, 'AP50_percent': 0.0, 'AP75_percent': 0.0, 'AR500_percent': 0.0}
+D45 CPU OFFICIAL SCORING p2_cls_off; MODEL TENSORS RELEASED (CUDA context remains)
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D45 p2_cls_off AP=25.777157 delta_vs_normal={'AP50_95_percent': -0.6248502686419855, 'AP50_percent': -1.055161099289009, 'AP75_percent': -0.7462739579623765, 'AR500_percent': -0.1575274042983139}
+D45 CPU OFFICIAL SCORING p2_reg_off; MODEL TENSORS RELEASED (CUDA context remains)
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D45 p2_reg_off AP=25.993542 delta_vs_normal={'AP50_95_percent': -0.4084659872437655, 'AP50_percent': -0.5027474144990691, 'AP75_percent': -0.5154590318795158, 'AR500_percent': -0.4050082717716492}
+D45 CPU OFFICIAL SCORING p3_cls_off; MODEL TENSORS RELEASED (CUDA context remains)
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D45 p3_cls_off AP=26.432099 delta_vs_normal={'AP50_95_percent': 0.030091500905182755, 'AP50_percent': 0.04123632487819151, 'AP75_percent': 0.059896320973436445, 'AR500_percent': 4.844057666986146e-05}
+D45 CPU OFFICIAL SCORING p3_reg_off; MODEL TENSORS RELEASED (CUDA context remains)
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D45 p3_reg_off AP=26.365658 delta_vs_normal={'AP50_95_percent': -0.03634990495988433, 'AP50_percent': -0.03538073601965408, 'AP75_percent': -0.014221241134084295, 'AR500_percent': -0.06869483899190953}
+D45 CPU OFFICIAL SCORING all_readout_off; MODEL TENSORS RELEASED (CUDA context remains)
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D45 all_readout_off AP=25.462332 delta_vs_normal={'AP50_95_percent': -0.9396759613311474, 'AP50_percent': -1.5341805884062722, 'AP75_percent': -0.9964416120132107, 'AR500_percent': -0.5000463976658693}
+D45 RUN FINISHED REPORT=/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D45_ALL_S1_20261003_201157_988439/run

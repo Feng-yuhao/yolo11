@@ -1,0 +1,21 @@
+# VisDrone2019-DET for YOLOv8
+path: /root/autodl-tmp/project/VisDrone2019
+train: VisDrone2019-DET-train/images
+val: VisDrone2019-DET-val/images
+test: VisDrone2019-DET-test-dev/images
+
+# YOLOv8 会自动找 labels/ 目录，不需要在 yaml 里写
+# 它默认 images/ 的同级目录下 labels/ 就是标注
+
+nc: 10
+names:
+  0: pedestrian
+  1: people
+  2: bicycle
+  3: car
+  4: van
+  5: truck
+  6: tricycle
+  7: awning-tricycle
+  8: bus
+  9: motor

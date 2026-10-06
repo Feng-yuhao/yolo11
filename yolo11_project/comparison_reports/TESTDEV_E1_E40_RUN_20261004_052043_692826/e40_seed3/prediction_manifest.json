@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "binding": {
+    "revision": "testdev_e1_e40_paired3_v1",
+    "key": "e40_seed3",
+    "checkpoint_sha256": "6a2a59025f61391d1c59ab8c28110a58e67953e9758f7946b13298f7f63ff267",
+    "dataset_annotation_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+    "dataset_image_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+    "protocol": {
+      "imgsz": 640,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "verbose": false,
+      "save": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "batch": 4,
+      "device": "0",
+      "letterbox": "unchanged Ultralytics 8.3.0 predictor pre_transform",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "source_sha256": "a28845ee9c70cb7de892482fe7cdecd2ae253208fea93844a2b2a27c003f8875",
+    "image_count": 1610,
+    "smoke_only": false
+  },
+  "seen_images": 1610,
+  "predictions": 654954,
+  "sha256": "9f9b3bd5821fe94ccafaa6d5ac2e48d5523236a38a24cb25bf4a46c451a5255d",
+  "actual_tensor_shapes": {
+    "4x3x384x640": 321,
+    "4x3x640x640": 16,
+    "4x3x480x640": 65,
+    "2x3x480x640": 1
+  },
+  "peak_reserved_gib": 0.765625,
+  "elapsed_seconds": 66.41179432719946,
+  "finished_at": "2026-10-04T05:27:44+08:00",
+  "model_class": "SpatialTaskDetect",
+  "cuda_smoke": false,
+  "backend": {
+    "deterministic": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true
+  }
+}

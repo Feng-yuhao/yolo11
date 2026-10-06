@@ -1,0 +1,134 @@
+{
+  "status": "completed",
+  "binding": {
+    "revision": "testdev_e1_e40_paired3_v1",
+    "key": "e1_seed2",
+    "checkpoint_sha256": "271901db9ff32c5b3a7735f218779eb27e1e1a6bc6604d3c77d37e338fd039d4",
+    "dataset_annotation_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+    "dataset_image_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+    "protocol": {
+      "imgsz": 640,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "verbose": false,
+      "save": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "batch": 4,
+      "device": "0",
+      "letterbox": "unchanged Ultralytics 8.3.0 predictor pre_transform",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "source_sha256": "a28845ee9c70cb7de892482fe7cdecd2ae253208fea93844a2b2a27c003f8875",
+    "image_count": 1610,
+    "smoke_only": false
+  },
+  "prediction_sha256": "8b600d5b052287035e376c7b2961c45134a1e84c220cec0a9ec7446fc9e8b859",
+  "official": {
+    "AP50_95_percent": 23.22362559358684,
+    "AP50_percent": 39.93826935686226,
+    "AP75_percent": 23.765319224589454,
+    "AR1_percent": 1.9662611283332296,
+    "AR10_percent": 11.535242819793138,
+    "AR100_percent": 30.825194687120934,
+    "AR500_percent": 34.926970229356336,
+    "class_image_weights": {
+      "1": 1197,
+      "2": 797,
+      "3": 377,
+      "4": 1530,
+      "5": 1167,
+      "6": 750,
+      "7": 245,
+      "8": 232,
+      "9": 838,
+      "10": 794
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 1197,
+        "AP50_95_percent": 13.801291971531729,
+        "AP50_percent": 34.320516860603846,
+        "AP75_percent": 8.190555968858197
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 797,
+        "AP50_95_percent": 6.920161745382766,
+        "AP50_percent": 19.261860896300036,
+        "AP75_percent": 2.9487386265214326
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 377,
+        "AP50_95_percent": 4.4846042518882046,
+        "AP50_percent": 10.696711809904867,
+        "AP75_percent": 2.934727455755451
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 1530,
+        "AP50_95_percent": 47.13769856983488,
+        "AP50_percent": 74.51026383332031,
+        "AP75_percent": 52.14639892240771
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 1167,
+        "AP50_95_percent": 19.496171344607834,
+        "AP50_percent": 28.182472954011256,
+        "AP75_percent": 23.345693109852974
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 750,
+        "AP50_95_percent": 24.33657939852875,
+        "AP50_percent": 38.23964114125313,
+        "AP75_percent": 27.296730642092452
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 245,
+        "AP50_95_percent": 10.144026093838615,
+        "AP50_percent": 19.17705269705897,
+        "AP75_percent": 9.176493050008649
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 232,
+        "AP50_95_percent": 8.859140652438414,
+        "AP50_percent": 14.737557607647279,
+        "AP75_percent": 10.0425280626528
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 838,
+        "AP50_95_percent": 37.269698322336815,
+        "AP50_percent": 53.449116401229055,
+        "AP75_percent": 42.523009164413445
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 794,
+        "AP50_95_percent": 14.445477755707534,
+        "AP50_percent": 34.8204127768066,
+        "AP75_percent": 9.33715602370575
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "ignore": {
+    "raw_predictions": 638570,
+    "removed_by_class0": 22890,
+    "kept_predictions": 615680
+  },
+  "cpu_seconds": 68.56408100575209,
+  "finished_at": "2026-10-04T05:31:32+08:00"
+}

@@ -1,0 +1,62 @@
+{
+  "mask_minus_synchronized_control_pp": {
+    "AP50_95_percent": 0.0007954353011747628,
+    "AP50_percent": -0.001688271402713326,
+    "AP75_percent": 0.004339252886939704,
+    "AR500_percent": 0.0003234175195885314
+  },
+  "raw_geometry_transitions": {
+    "all": {
+      "gained": 0,
+      "lost": 0,
+      "net": 0,
+      "raw75_delta_pp": 0.0
+    },
+    "lt8": {
+      "gained": 0,
+      "lost": 0,
+      "net": 0,
+      "raw75_delta_pp": 0.0
+    },
+    "8_16": {
+      "gained": 0,
+      "lost": 0,
+      "net": 0,
+      "raw75_delta_pp": 0.0
+    },
+    "16_24": {
+      "gained": 0,
+      "lost": 0,
+      "net": 0,
+      "raw75_delta_pp": 0.0
+    },
+    "24_32": {
+      "gained": 0,
+      "lost": 0,
+      "net": 0,
+      "raw75_delta_pp": 0.0
+    },
+    "ge32": {
+      "gained": 0,
+      "lost": 0,
+      "net": 0,
+      "raw75_delta_pp": 0.0
+    }
+  },
+  "screening_signal": false,
+  "interpretation": "A positive signal supports further study; failure is inconclusive for full retraining. No automatic formal training.",
+  "baseline_comparisons": {
+    "control": {
+      "AP50_95_percent": -0.06418891229241197,
+      "AP50_percent": -0.014080176095632169,
+      "AP75_percent": -0.14024468459321682,
+      "AR500_percent": -0.09205409159898181
+    },
+    "mask": {
+      "AP50_95_percent": -0.06339347699123721,
+      "AP50_percent": -0.015768447498345495,
+      "AP75_percent": -0.1359054317062771,
+      "AR500_percent": -0.09173067407939328
+    }
+  }
+}

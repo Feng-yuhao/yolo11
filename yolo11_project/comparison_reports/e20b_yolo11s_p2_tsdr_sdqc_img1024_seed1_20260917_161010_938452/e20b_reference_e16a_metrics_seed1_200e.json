@@ -1,0 +1,21 @@
+{
+  "reference_experiment": "e16a_yolo11s_p2_tsdr_img1024_seed1",
+  "epochs": 200,
+  "seed": 1,
+  "imgsz": 1024,
+  "batch": 8,
+  "evaluation_protocol_id": "visdrone_yolo_labels_ultra830_fp32_area_separate_predict_v1",
+  "source_report": "comparison_reports/e16a_yolo11s_p2_tsdr_img1024_seed1_20260914_082236_805369/metrics.json",
+  "overall": {
+    "Precision": 0.6260676810609633,
+    "Recall": 0.51662852387775,
+    "mAP50": 0.548564220552449,
+    "mAP75": 0.3581553422954913,
+    "mAP50_95": 0.34430695330296773
+  },
+  "area_metrics": {
+    "AP_small": 0.22575069388305966,
+    "AP_medium": 0.4255794546689282,
+    "AP_large": 0.5770781709544781
+  }
+}

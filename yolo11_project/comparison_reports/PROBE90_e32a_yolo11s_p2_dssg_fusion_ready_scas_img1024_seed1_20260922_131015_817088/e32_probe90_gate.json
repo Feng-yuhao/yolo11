@@ -1,0 +1,12 @@
+{
+  "decision": "CLOSE_E32_KEEP_E18",
+  "official_delta_vs_E18a_pp": {
+    "AP50_95_percent": -0.15127043370295468,
+    "AP50_percent": -0.3038823510863864,
+    "AP75_percent": -0.16123205544761987,
+    "AR500_percent": 0.0016883129925275853
+  },
+  "epoch81_90_ultralytics_map_delta_pp": -0.028500000000003523,
+  "best_epoch_by_ultralytics_map": 90,
+  "continue_rule": "Official AP >= +0.25pp with AP50/AP75 non-decreasing; borderline also needs last10 >= +0.10pp and best epoch >=75."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "zero_training": true,
+  "automatic_shutdown": false,
+  "seed": 1,
+  "mode": "check",
+  "started_at": "2026-10-03T16:49:19.290598+08:00",
+  "report_dir": "C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\yolo11_project\\comparison_reports\\DIAG_D45_CHECK_S1_20261003_164919_288598",
+  "finished_at": "2026-10-03T16:49:26.582998+08:00",
+  "elapsed_seconds": 7.2918573
+}

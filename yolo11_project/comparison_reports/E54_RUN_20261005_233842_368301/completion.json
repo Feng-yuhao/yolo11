@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "trained_epochs": 200,
+  "official_evaluation_completed": true,
+  "finished_at": "2026-10-06T13:38:24.170892"
+}

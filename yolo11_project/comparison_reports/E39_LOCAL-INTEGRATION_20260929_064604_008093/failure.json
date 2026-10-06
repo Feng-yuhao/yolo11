@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\run_e39.py\", line 302, in <module>\n    main()\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\run_e39.py\", line 264, in main\n    integration(core,args,REPORT)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\checks.py\", line 223, in integration\n    require(branch(model).project.weight.abs().sum()>0,'No trained branch in saved EMA model')\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\checks.py\", line 15, in require\n    raise RuntimeError(message)\nRuntimeError: No trained branch in saved EMA model\n"
+}

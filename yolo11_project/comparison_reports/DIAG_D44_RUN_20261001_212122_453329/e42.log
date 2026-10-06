@@ -1,0 +1,53 @@
+D44 e42 run START 2026-10-01T21:25:57.513961+08:00 REPORT=/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D44_RUN_20261001_212122_453329/e42
+D44 e42 IMAGES 4/548 all 3 head modes elapsed=0.0min inference_remaining~1.8min reserved=0.53GiB
+D44 e42 IMAGES 40/548 all 3 head modes elapsed=0.0min inference_remaining~0.4min reserved=0.90GiB
+D44 e42 IMAGES 80/548 all 3 head modes elapsed=0.1min inference_remaining~0.3min reserved=0.90GiB
+D44 e42 IMAGES 120/548 all 3 head modes elapsed=0.1min inference_remaining~0.3min reserved=0.90GiB
+D44 e42 IMAGES 160/548 all 3 head modes elapsed=0.1min inference_remaining~0.2min reserved=0.90GiB
+D44 e42 IMAGES 200/548 all 3 head modes elapsed=0.1min inference_remaining~0.2min reserved=0.90GiB
+D44 e42 IMAGES 240/548 all 3 head modes elapsed=0.1min inference_remaining~0.2min reserved=0.90GiB
+D44 e42 IMAGES 280/548 all 3 head modes elapsed=0.2min inference_remaining~0.2min reserved=0.90GiB
+D44 e42 IMAGES 320/548 all 3 head modes elapsed=0.2min inference_remaining~0.1min reserved=0.90GiB
+D44 e42 IMAGES 360/548 all 3 head modes elapsed=0.2min inference_remaining~0.1min reserved=0.90GiB
+D44 e42 IMAGES 400/548 all 3 head modes elapsed=0.2min inference_remaining~0.1min reserved=0.90GiB
+D44 e42 IMAGES 440/548 all 3 head modes elapsed=0.3min inference_remaining~0.1min reserved=0.90GiB
+D44 e42 IMAGES 480/548 all 3 head modes elapsed=0.3min inference_remaining~0.0min reserved=0.90GiB
+D44 e42 IMAGES 520/548 all 3 head modes elapsed=0.3min inference_remaining~0.0min reserved=0.90GiB
+D44 e42 IMAGES 548/548 all 3 head modes elapsed=0.3min inference_remaining~0.0min reserved=0.90GiB
+D44 e42 OFFICIAL SCORING normal START (CPU; GPU released)
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D44 e42 OFFICIAL normal AP=26.012438 delta={'AP50_95_percent': 0.0, 'AP50_percent': 0.0, 'AP75_percent': 0.0, 'AR500_percent': 0.0}
+D44 e42 OFFICIAL SCORING channel_off_p2 START (CPU; GPU released)
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D44 e42 OFFICIAL channel_off_p2 AP=26.005416 delta={'AP50_95_percent': -0.007021287066464765, 'AP50_percent': -0.008800384866319177, 'AP75_percent': -0.013718450495151302, 'AR500_percent': 0.005444156635832087}
+D44 e42 OFFICIAL SCORING channel_off_p3 START (CPU; GPU released)
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D44 e42 OFFICIAL channel_off_p3 AP=26.013185 delta={'AP50_95_percent': 0.0007470163631104754, 'AP50_percent': 0.008177133194763542, 'AP75_percent': 0.003260838759452156, 'AR500_percent': 0.0019665494270739714}
+D44 e42 RUN COMPLETED REPORT=/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D44_RUN_20261001_212122_453329/e42

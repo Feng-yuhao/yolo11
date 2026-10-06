@@ -1,0 +1,12 @@
+D36 status=completed
+No training. No source patching. No automatic shutdown.
+normal: predictions=242704
+  AP50_95_percent=25.2147, AP50_percent=43.9407, AP75_percent=24.6155, AR500_percent=37.5837
+context_off: predictions=241982
+  AP50_95_percent=24.6324, AP50_percent=42.9206, AP75_percent=24.1513, AR500_percent=36.8286
+  delta vs normal: {'AP50_95_percent': -0.582298674977455, 'AP50_percent': -1.0201332771707499, 'AP75_percent': -0.464170006223636, 'AR500_percent': -0.7551015622025545}
+caa_spatial_mean: predictions=242705
+  AP50_95_percent=25.2128, AP50_percent=43.9342, AP75_percent=24.6130, AR500_percent=37.5808
+  delta vs normal: {'AP50_95_percent': -0.0018711941238045426, 'AP50_percent': -0.006485932839389363, 'AP75_percent': -0.002424523631610498, 'AR500_percent': -0.0029427627996412298}
+Inference interventions are off-manifold, not retrained ablations or root-cause proof. Activation norms are descriptive. They do not establish usefulness. No claim that pretrained Bottleneck removal caused the deficit.
+Report: /root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D36_PKI_FUNCTION_20260927_144626_316063

@@ -1,0 +1,408 @@
+{
+  "status": "completed",
+  "kind": "cached_matched_report_descriptive_comparison",
+  "seed": 1,
+  "imgsz": 640,
+  "inputs": {
+    "e47": "C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\yolo11_project\\comparison_reports\\E47P_RUN_20261002_223526_450642",
+    "e40": "C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\yolo11_project\\comparison_reports\\E40_RUN_20260929_205658_507620"
+  },
+  "source_sha256": {
+    "e47": {
+      "comparison.json": "6122a6fae0a63bae5c0238082ef5917e8cbbc9b24efe62b3dab21babc4b02be5",
+      "official_metrics.json": "d7ae7cdb3c871c5e78291afa4245f366d0fb174693655835fee2f587acb4d070",
+      "gt_rows.json": "b10f8753a2e2e9d02eb3ad5d08d0210691776934f4cc64059bec3c0323161732"
+    },
+    "e40": {
+      "comparison.json": "1acf7e45b4d54eb40eb3f1abd86232d3000ce9794c3797ac024f540aac6ab6de",
+      "official_metrics.json": "b4417184b4cdc70d733c277e6b46fcf290afb0343caf63f4a006cd9a9f0a6ec1",
+      "gt_rows.json": "b397693f2eddba3f3821e8bb4d5ad541dc3f1012ec447a89f6a4ac0547d7b292"
+    }
+  },
+  "checkpoint_sha256": {
+    "e47": "b205bd2a7aa5cea8d7ce4600ef674c6aca3f808fe5899e33c25752692aff189b",
+    "e40": "0a9fdac26c4fe7a9161900c82e879f584026afa569f870c0159d41feca031337"
+  },
+  "pairing": {
+    "stable_key": [
+      "image_id",
+      "gt_index"
+    ],
+    "gt_count": 38599,
+    "annotation_dimension_sha256": "058c87e779a61a09933bebe35af1c05c807a444dc842b4be12124dd36134c787",
+    "exact_key_set_match": true,
+    "class_and_size_match": true,
+    "per_row_coordinates_checked": false,
+    "coordinate_note": "Legacy rows lack coordinates; SHA/classes/sizes/keys checked instead",
+    "density_available_in_both_reports": false
+  },
+  "official": {
+    "e47": {
+      "AP50_95_percent": 26.402007638651753,
+      "AP50_percent": 45.64554054709653,
+      "AP75_percent": 26.014810713031974
+    },
+    "e40": {
+      "AP50_95_percent": 26.222452343067726,
+      "AP50_percent": 45.36131607297944,
+      "AP75_percent": 25.84445413321985
+    },
+    "delta_pp": {
+      "AP50_95_percent": 0.17955529558402716,
+      "AP50_percent": 0.28422447411708873,
+      "AP75_percent": 0.17035657981212537
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "e47": {
+          "AP50_95_percent": 25.38416411287574,
+          "AP50_percent": 53.22892064598701,
+          "AP75_percent": 20.659106019417607
+        },
+        "e40": {
+          "AP50_95_percent": 25.23984432866796,
+          "AP50_percent": 53.16384388440244,
+          "AP75_percent": 20.215777510350087
+        },
+        "delta_pp": {
+          "AP50_95_percent": 0.1443197842077808,
+          "AP50_percent": 0.06507676158457087,
+          "AP75_percent": 0.44332850906751986
+        }
+      },
+      "2": {
+        "name": "people",
+        "e47": {
+          "AP50_95_percent": 16.742326332332713,
+          "AP50_percent": 41.08417989109769,
+          "AP75_percent": 9.96600962911183
+        },
+        "e40": {
+          "AP50_95_percent": 16.948330975081273,
+          "AP50_percent": 41.35218651284052,
+          "AP75_percent": 10.350237388557142
+        },
+        "delta_pp": {
+          "AP50_95_percent": -0.20600464274856023,
+          "AP50_percent": -0.26800662174282763,
+          "AP75_percent": -0.3842277594453112
+        }
+      },
+      "3": {
+        "name": "bicycle",
+        "e47": {
+          "AP50_95_percent": 8.587678714415963,
+          "AP50_percent": 18.33656538975643,
+          "AP75_percent": 6.494016510544862
+        },
+        "e40": {
+          "AP50_95_percent": 8.13828817734112,
+          "AP50_percent": 17.472530664298755,
+          "AP75_percent": 5.936312392275564
+        },
+        "delta_pp": {
+          "AP50_95_percent": 0.44939053707484256,
+          "AP50_percent": 0.8640347254576746,
+          "AP75_percent": 0.5577041182692977
+        }
+      },
+      "4": {
+        "name": "car",
+        "e47": {
+          "AP50_95_percent": 59.50013630929404,
+          "AP50_percent": 84.52609593308524,
+          "AP75_percent": 66.79280535873883
+        },
+        "e40": {
+          "AP50_95_percent": 59.20314034895337,
+          "AP50_percent": 84.35815412184246,
+          "AP75_percent": 66.20640440294956
+        },
+        "delta_pp": {
+          "AP50_95_percent": 0.29699596034067355,
+          "AP50_percent": 0.16794181124278396,
+          "AP75_percent": 0.5864009557892729
+        }
+      },
+      "5": {
+        "name": "van",
+        "e47": {
+          "AP50_95_percent": 28.76782177599707,
+          "AP50_percent": 39.41759941158808,
+          "AP75_percent": 33.19145937162842
+        },
+        "e40": {
+          "AP50_95_percent": 28.910234074371793,
+          "AP50_percent": 39.59743234880719,
+          "AP75_percent": 33.53499818452473
+        },
+        "delta_pp": {
+          "AP50_95_percent": -0.14241229837472247,
+          "AP50_percent": -0.17983293721911053,
+          "AP75_percent": -0.3435388128963126
+        }
+      },
+      "6": {
+        "name": "truck",
+        "e47": {
+          "AP50_95_percent": 25.004608665255937,
+          "AP50_percent": 38.13069595183786,
+          "AP75_percent": 26.66807234240424
+        },
+        "e40": {
+          "AP50_95_percent": 24.19179166575403,
+          "AP50_percent": 36.85915014981103,
+          "AP75_percent": 27.456451813442563
+        },
+        "delta_pp": {
+          "AP50_95_percent": 0.812816999501905,
+          "AP50_percent": 1.2715458020268287,
+          "AP75_percent": -0.7883794710383221
+        }
+      },
+      "7": {
+        "name": "tricycle",
+        "e47": {
+          "AP50_95_percent": 16.49022452405306,
+          "AP50_percent": 29.652212366902425,
+          "AP75_percent": 17.90640144534331
+        },
+        "e40": {
+          "AP50_95_percent": 16.085544532641997,
+          "AP50_percent": 28.649167445846857,
+          "AP75_percent": 16.80146687383831
+        },
+        "delta_pp": {
+          "AP50_95_percent": 0.4046799914110615,
+          "AP50_percent": 1.0030449210555688,
+          "AP75_percent": 1.104934571504998
+        }
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "e47": {
+          "AP50_95_percent": 7.469704480125034,
+          "AP50_percent": 11.787159067461214,
+          "AP75_percent": 8.246534093251757
+        },
+        "e40": {
+          "AP50_95_percent": 8.8676748375965,
+          "AP50_percent": 13.49136673097254,
+          "AP75_percent": 10.069793550149363
+        },
+        "delta_pp": {
+          "AP50_95_percent": -1.3979703574714657,
+          "AP50_percent": -1.7042076635113261,
+          "AP75_percent": -1.8232594568976062
+        }
+      },
+      "9": {
+        "name": "bus",
+        "e47": {
+          "AP50_95_percent": 42.81483706070137,
+          "AP50_percent": 59.12399949434302,
+          "AP75_percent": 49.45366269571603
+        },
+        "e40": {
+          "AP50_95_percent": 40.83713245507388,
+          "AP50_percent": 55.45458483630382,
+          "AP75_percent": 49.41877288579876
+        },
+        "delta_pp": {
+          "AP50_95_percent": 1.977704605627494,
+          "AP50_percent": 3.6694146580391944,
+          "AP75_percent": 0.0348898099172672
+        }
+      },
+      "10": {
+        "name": "motor",
+        "e47": {
+          "AP50_95_percent": 25.064285862751795,
+          "AP50_percent": 53.55921813817304,
+          "AP75_percent": 19.84500192630312
+        },
+        "e40": {
+          "AP50_95_percent": 24.783604635873328,
+          "AP50_percent": 53.448510611473296,
+          "AP75_percent": 18.8915902672879
+        },
+        "delta_pp": {
+          "AP50_95_percent": 0.2806812268784675,
+          "AP50_percent": 0.11070752669974127,
+          "AP75_percent": 0.9534116590152202
+        }
+      }
+    }
+  },
+  "overall": {
+    "gt_count": 38599,
+    "iou_threshold": 0.75,
+    "coverage": {
+      "raw_any": {
+        "e47_good_count": 24297,
+        "e40_good_count": 24287,
+        "e47_percent": 62.94722661208839,
+        "e40_percent": 62.921319205160756,
+        "improved_count": 1985,
+        "lost_count": 1975,
+        "net_count": 10,
+        "delta_pp": 0.02590740692764061,
+        "unchanged_good_count": 22312,
+        "unchanged_bad_count": 12327,
+        "mean_iou_delta": 0.0006094282173703952
+      },
+      "raw_p2": {
+        "e47_good_count": 22066,
+        "e40_good_count": 22149,
+        "e47_percent": 57.167284126531776,
+        "e40_percent": 57.38231560403119,
+        "improved_count": 2139,
+        "lost_count": 2222,
+        "net_count": -83,
+        "delta_pp": -0.2150314774994171,
+        "unchanged_good_count": 19927,
+        "unchanged_bad_count": 14311,
+        "mean_iou_delta": -0.000417868288312763
+      },
+      "raw_p3": {
+        "e47_good_count": 16383,
+        "e40_good_count": 16352,
+        "e47_percent": 42.44410476955362,
+        "e40_percent": 42.36379180807793,
+        "improved_count": 1520,
+        "lost_count": 1489,
+        "net_count": 31,
+        "delta_pp": 0.0803129614756859,
+        "unchanged_good_count": 14863,
+        "unchanged_bad_count": 20727,
+        "mean_iou_delta": 0.00038179377133925544
+      },
+      "raw_correct": {
+        "e47_good_count": 21640,
+        "e40_good_count": 21611,
+        "e47_percent": 56.063628591414286,
+        "e40_percent": 55.98849711132413,
+        "improved_count": 2160,
+        "lost_count": 2131,
+        "net_count": 29,
+        "delta_pp": 0.07513148009015777,
+        "unchanged_good_count": 19480,
+        "unchanged_bad_count": 14828,
+        "mean_iou_delta": 0.0010404875849771306
+      },
+      "final_any": {
+        "e47_good_count": 20615,
+        "e40_good_count": 20483,
+        "e47_percent": 53.408119381331126,
+        "e40_percent": 53.066141609886266,
+        "improved_count": 2610,
+        "lost_count": 2478,
+        "net_count": 132,
+        "delta_pp": 0.3419777714448561,
+        "unchanged_good_count": 18005,
+        "unchanged_bad_count": 15506,
+        "mean_iou_delta": 0.0018927366654699945
+      },
+      "final_correct": {
+        "e47_good_count": 18429,
+        "e40_good_count": 18267,
+        "e47_percent": 47.744760226948884,
+        "e40_percent": 47.32506023472111,
+        "improved_count": 2547,
+        "lost_count": 2385,
+        "net_count": 162,
+        "delta_pp": 0.41969999222777793,
+        "unchanged_good_count": 15882,
+        "unchanged_bad_count": 17785,
+        "mean_iou_delta": 0.0031786367927710787
+      }
+    },
+    "failure_stage_ordering": {
+      "e47_counts": {
+        "final_correct_present": 18429,
+        "raw_geometry_missing": 14302,
+        "raw_argmax_label_missing": 2657,
+        "postprocess_candidate_missing": 3211
+      },
+      "e40_counts": {
+        "final_correct_present": 18267,
+        "raw_geometry_missing": 14312,
+        "raw_argmax_label_missing": 2676,
+        "postprocess_candidate_missing": 3344
+      },
+      "e47_percent": {
+        "final_correct_present": 47.744760226948884,
+        "raw_geometry_missing": 37.05277338791161,
+        "raw_argmax_label_missing": 6.8835980206741105,
+        "postprocess_candidate_missing": 8.3188683644654
+      },
+      "e40_percent": {
+        "final_correct_present": 47.32506023472111,
+        "raw_geometry_missing": 37.078680794839244,
+        "raw_argmax_label_missing": 6.932822093836628,
+        "postprocess_candidate_missing": 8.66343687660302
+      },
+      "delta_count": {
+        "final_correct_present": 162,
+        "raw_geometry_missing": -10,
+        "raw_argmax_label_missing": -19,
+        "postprocess_candidate_missing": -133
+      },
+      "transition_matrix_e40_to_e47": {
+        "final_correct_present": {
+          "final_correct_present": 15882,
+          "raw_geometry_missing": 821,
+          "raw_argmax_label_missing": 395,
+          "postprocess_candidate_missing": 1169
+        },
+        "raw_geometry_missing": {
+          "final_correct_present": 869,
+          "raw_geometry_missing": 12327,
+          "raw_argmax_label_missing": 457,
+          "postprocess_candidate_missing": 659
+        },
+        "raw_argmax_label_missing": {
+          "final_correct_present": 402,
+          "raw_geometry_missing": 475,
+          "raw_argmax_label_missing": 1569,
+          "postprocess_candidate_missing": 230
+        },
+        "postprocess_candidate_missing": {
+          "final_correct_present": 1276,
+          "raw_geometry_missing": 679,
+          "raw_argmax_label_missing": 236,
+          "postprocess_candidate_missing": 1153
+        }
+      },
+      "non_nested_threshold_counts": {
+        "e47": {
+          "final_correct_without_raw_argmax_correct": 0,
+          "final_any_without_raw_any": 0,
+          "raw_correct_without_raw_any": 0,
+          "final_correct_without_final_any": 0
+        },
+        "e40": {
+          "final_correct_without_raw_argmax_correct": 0,
+          "final_any_without_raw_any": 0,
+          "raw_correct_without_raw_any": 0,
+          "final_correct_without_final_any": 0
+        }
+      }
+    }
+  },
+  "boundaries": [
+    "Official AP uses the formal VisDrone ignore handling; legacy final coverage is before official prediction ignore filtering.",
+    "Size is sqrt(GT area)*640/max(original width,height), not official AP-small/medium/large.",
+    "Coverage is independent candidate existence per GT, not one-to-one matching recall or AP.",
+    "raw_correct uses raw argmax class, while final_correct uses emitted class; these stages are not guaranteed nested.",
+    "Mutually exclusive failure groups use final-correct first, then raw geometry, then raw argmax label, then postprocessing. This ordering is descriptive, not causal.",
+    "This is a matched-checkpoint descriptive comparison; it cannot establish training root cause, seed-variance cause, or which added path is causally responsible.",
+    "Legacy GT rows omit coordinates. When absent, annotation/dimension SHA, exact GT keys, classes and sizes are checked, not nonexistent per-row coordinates.",
+    "Differences across size/class slices do not prove a module mechanism; rare slices have limited support."
+  ],
+  "missing_optional_data": [
+    "No matched per-GT density: density slices were not fabricated"
+  ],
+  "interpretation": "Positive/negative paired transitions show checkpoint-level tradeoffs. Added-path dependence requires separately reproduced intervention inference; neither establishes training root cause."
+}

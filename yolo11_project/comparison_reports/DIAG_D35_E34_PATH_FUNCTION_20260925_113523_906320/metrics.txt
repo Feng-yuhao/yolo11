@@ -1,0 +1,33 @@
+D35 E34a two-path functional bypass audit
+NO TRAINING. Bypasses are off-manifold, not retrained architecture ablations.
+Status: completed
+Report: /root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D35_E34_PATH_FUNCTION_20260925_113523_906320
+
+e1_seed2 saved formal: AP=32.4919 AP50=55.0243 AP75=32.4056 AR500=46.1286
+e34a_seed2 saved formal: AP=32.4054 AP50=54.5974 AP75=32.7319 AR500=45.9136
+full: AP=32.4054 AP50=54.5974 AP75=32.7319 AR500=45.9136
+  feedback relative L2 computed/effective: 0.331863 / 0.331863
+  H2->P2 relative L2 computed/effective: 0.336688 / 0.336688
+feedback_off: AP=31.8000 AP50=53.9669 AP75=31.9633 AR500=44.9793
+  feedback relative L2 computed/effective: 0.331863 / 0
+  H2->P2 relative L2 computed/effective: 0.332122 / 0.332122
+  first-batch raw max/mean absolute difference vs full: {'max_abs': 300.4483642578125, 'mean_abs': 0.8914844989776611}
+p2_off: AP=32.0536 AP50=53.9895 AP75=32.3119 AR500=45.6103
+  feedback relative L2 computed/effective: 0.331863 / 0.331863
+  H2->P2 relative L2 computed/effective: 0.336688 / 0
+  first-batch raw max/mean absolute difference vs full: {'max_abs': 51.3812255859375, 'mean_abs': 0.28004106879234314}
+both_off: AP=31.4432 AP50=53.3336 AP75=31.5290 AR500=44.7667
+  feedback relative L2 computed/effective: 0.331863 / 0
+  H2->P2 relative L2 computed/effective: 0.332122 / 0
+  first-batch raw max/mean absolute difference vs full: {'max_abs': 300.4483642578125, 'mean_abs': 0.9419667720794678}
+
+Official deltas versus trained E34a full (pp):
+  feedback_off: {'AP50_95_percent': -0.6054201042292569, 'AP50_percent': -0.630491361661889, 'AP75_percent': -0.7685404046261404, 'AR500_percent': -0.9342141895265925}
+  p2_off: {'AP50_95_percent': -0.3518013963797131, 'AP50_percent': -0.6078700262490386, 'AP75_percent': -0.4200128629026523, 'AR500_percent': -0.3032874389844551}
+  both_off: {'AP50_95_percent': -0.9622295539330992, 'AP50_percent': -1.2637322012918162, 'AP75_percent': -1.2029178264925449, 'AR500_percent': -1.1468225949428117}
+
+Interpretation boundary:
+- Same trained E34a weights in all four modes; no optimizer step or checkpoint edit.
+- Full mode must reproduce saved E34a predictions under the same D27 official protocol.
+- A bypass can show functional dependence, not prove a training-time root cause or predict retraining.
+- Both-off is NOT E1: E34a weights were trained on a different computation graph.

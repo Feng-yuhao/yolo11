@@ -1,0 +1,30 @@
+D33 E1/E33a paired IRP-path audit
+NO TRAINING. Bypasses are off-manifold interventions, not retrained ablations.
+Report: /root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D33_IRP_PATHS_20260924_174433_140243
+
+e33_full: AP=None, AP50=None, AP75=None, AR500=None
+  update_residual={'relative_l2': 0.00048518423260837125, 'mean_abs': 0.00016607156592524715, 'elements': 9437184} return_residual={'relative_l2': 1.655084313413742e-05, 'mean_abs': 6.421381436262487e-06, 'elements': 37748736}
+  raw_all: GT=871 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.5407577497129736
+  raw_small: GT=471 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.37791932059447986
+  raw_medium: GT=366 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.7131147540983607
+  raw_large: GT=34 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.9411764705882353
+e33_return_off: AP=None, AP50=None, AP75=None, AR500=None
+  update_residual={'relative_l2': 0.00048518423260837125, 'mean_abs': 0.00016607156592524715, 'elements': 9437184} return_residual={'relative_l2': 0.0, 'mean_abs': 0.0, 'elements': 37748736}
+  raw_all: GT=871 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.5407577497129736
+  raw_small: GT=471 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.37791932059447986
+  raw_medium: GT=366 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.7131147540983607
+  raw_large: GT=34 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.9411764705882353
+e33_update_off: AP=None, AP50=None, AP75=None, AR500=None
+  update_residual={'relative_l2': 0.0, 'mean_abs': 0.0, 'elements': 9437184} return_residual={'relative_l2': 0.0, 'mean_abs': 0.0, 'elements': 37748736}
+  raw_all: GT=871 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.5407577497129736
+  raw_small: GT=471 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.37791932059447986
+  raw_medium: GT=366 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.7131147540983607
+  raw_large: GT=34 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.9411764705882353
+e1_seed2: AP=None, AP50=None, AP75=None, AR500=None
+  update_residual=None return_residual=None
+  raw_all: GT=871 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.5304247990815155
+  raw_small: GT=471 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.35456475583864117
+  raw_medium: GT=366 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.7213114754098361
+  raw_large: GT=34 geometry50=0.0 scored50=0.0 geometry75=0.0 scored75=0.0 final75=0.9117647058823529
+
+Raw oracle permits one prediction to cover multiple GT; it is NOT official AP or an exact NMS failure decomposition.

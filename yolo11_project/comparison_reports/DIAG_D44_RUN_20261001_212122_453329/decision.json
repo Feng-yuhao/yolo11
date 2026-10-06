@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "directional_hints": {
+    "E44": {
+      "frozen_rescue_at_levels": [
+        "P3"
+      ],
+      "boundary": "Not proof that S+C competition caused training degradation; independent compensation still needs controlled training."
+    },
+    "E45": {
+      "observed_P2_bypass_rescue_and_P3_bypass_not_rescue": false,
+      "boundary": "Even this pattern does not isolate training causality or guarantee P3-only Dense will help."
+    },
+    "E40_uniform_depth": {
+      "AP_delta_seed1": -1.4378756799593972,
+      "AP_delta_seed2": -1.3275350256672773,
+      "both_negative": true,
+      "boundary": "Measures trained model dependence, not which component originally created the training gain."
+    },
+    "E40_shared_task": {
+      "AP_delta_seed1": -0.008377559825998304,
+      "AP_delta_seed2": -0.07122636902570889,
+      "both_negative": true,
+      "boundary": "Measures trained model dependence, not which component originally created the training gain."
+    }
+  },
+  "next_action": "Review full AP/AP50/AP75 and routing evidence before finalizing TWO training designs; no automatic training authorization."
+}

@@ -1,0 +1,94 @@
+{
+  "AP50_95_percent": 25.572065314532495,
+  "AP50_percent": 44.357103265863685,
+  "AP75_percent": 24.97904781267528,
+  "AR1_percent": 0.9316579720517695,
+  "AR10_percent": 7.40478205407494,
+  "AR100_percent": 31.091453112099096,
+  "AR500_percent": 37.44409487247553,
+  "class_image_weights": {
+    "1": 520,
+    "2": 482,
+    "3": 364,
+    "4": 515,
+    "5": 421,
+    "6": 265,
+    "7": 337,
+    "8": 219,
+    "9": 130,
+    "10": 485
+  },
+  "per_class": {
+    "1": {
+      "name": "pedestrian",
+      "images_with_class_weight": 520,
+      "AP50_95_percent": 24.407691402474065,
+      "AP50_percent": 51.88055569432743,
+      "AP75_percent": 19.429625763127078
+    },
+    "2": {
+      "name": "people",
+      "images_with_class_weight": 482,
+      "AP50_95_percent": 16.200520694225013,
+      "AP50_percent": 39.6093290364252,
+      "AP75_percent": 9.536140325826167
+    },
+    "3": {
+      "name": "bicycle",
+      "images_with_class_weight": 364,
+      "AP50_95_percent": 7.432771124079116,
+      "AP50_percent": 16.484626657474,
+      "AP75_percent": 5.463382491049218
+    },
+    "4": {
+      "name": "car",
+      "images_with_class_weight": 515,
+      "AP50_95_percent": 58.68322944158181,
+      "AP50_percent": 83.88207651923439,
+      "AP75_percent": 65.95874242616254
+    },
+    "5": {
+      "name": "van",
+      "images_with_class_weight": 421,
+      "AP50_95_percent": 28.145028490937865,
+      "AP50_percent": 38.479167225434566,
+      "AP75_percent": 32.11405345433525
+    },
+    "6": {
+      "name": "truck",
+      "images_with_class_weight": 265,
+      "AP50_95_percent": 23.36663703287718,
+      "AP50_percent": 35.391450808738334,
+      "AP75_percent": 25.033405139320074
+    },
+    "7": {
+      "name": "tricycle",
+      "images_with_class_weight": 337,
+      "AP50_95_percent": 15.885532227377535,
+      "AP50_percent": 28.55956217540051,
+      "AP75_percent": 16.445812644512664
+    },
+    "8": {
+      "name": "awning-tricycle",
+      "images_with_class_weight": 219,
+      "AP50_95_percent": 6.700891135980517,
+      "AP50_percent": 10.385759701002122,
+      "AP75_percent": 7.354615197939955
+    },
+    "9": {
+      "name": "bus",
+      "images_with_class_weight": 130,
+      "AP50_95_percent": 41.80443580963177,
+      "AP50_percent": 56.78118276710031,
+      "AP75_percent": 49.7660166579534
+    },
+    "10": {
+      "name": "motor",
+      "images_with_class_weight": 485,
+      "AP50_95_percent": 24.46108413852515,
+      "AP50_percent": 52.945405127606,
+      "AP75_percent": 18.429034004972706
+    }
+  },
+  "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+}

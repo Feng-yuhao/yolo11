@@ -1,0 +1,20 @@
+D45 smoke START 2026-10-03T20:12:10.189739+08:00 REPORT=/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D45_ALL_S1_20261003_201157_988439/smoke
+Official evaluation class 1/10 (pedestrian)
+Official evaluation class 2/10 (people)
+Official evaluation class 3/10 (bicycle)
+Official evaluation class 4/10 (car)
+Official evaluation class 5/10 (van)
+Official evaluation class 6/10 (truck)
+Official evaluation class 7/10 (tricycle)
+Official evaluation class 8/10 (awning-tricycle)
+Official evaluation class 9/10 (bus)
+Official evaluation class 10/10 (motor)
+D45 IMAGES 4/8 six head states; elapsed=0.1min inference_remaining~0.1min reserved=1.02GiB
+D45 IMAGES 8/8 six head states; elapsed=0.1min inference_remaining~0.0min reserved=1.02GiB
+D45 CPU IGNORE/GEOMETRY CHECK normal; MODEL TENSORS RELEASED (CUDA context remains)
+D45 CPU IGNORE/GEOMETRY CHECK p2_cls_off; MODEL TENSORS RELEASED (CUDA context remains)
+D45 CPU IGNORE/GEOMETRY CHECK p2_reg_off; MODEL TENSORS RELEASED (CUDA context remains)
+D45 CPU IGNORE/GEOMETRY CHECK p3_cls_off; MODEL TENSORS RELEASED (CUDA context remains)
+D45 CPU IGNORE/GEOMETRY CHECK p3_reg_off; MODEL TENSORS RELEASED (CUDA context remains)
+D45 CPU IGNORE/GEOMETRY CHECK all_readout_off; MODEL TENSORS RELEASED (CUDA context remains)
+D45 SMOKE FINISHED REPORT=/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D45_ALL_S1_20261003_201157_988439/smoke

@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "reproduction_passed": true,
+  "training_authorized": false,
+  "next_step": "Review paired seeds, size/class-conditioned neighbor errors and distinct-instance NMS witnesses before proposing training.",
+  "unsupported_claims": [
+    "crowding is the causal root",
+    "witness events equal recoverable AP",
+    "maximum matching can be achieved by the trained model",
+    "a relation module will improve AP"
+  ]
+}

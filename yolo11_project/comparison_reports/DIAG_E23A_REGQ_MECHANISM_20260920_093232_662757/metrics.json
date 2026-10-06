@@ -1,0 +1,108 @@
+{
+  "status": "completed",
+  "revision": "e23a_regq_mechanism_audit_v1",
+  "started_at": "2026-09-20T09:32:32",
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_E23A_REGQ_MECHANISM_20260920_093232_662757",
+  "weights": "/root/autodl-tmp/yolo11_project/runs/e23a_yolo11s_p2_dssg_regq_img1024_seed1/weights/best.pt",
+  "weights_sha256": "e1228c6fe348c5a7e1a834447683d38cc2a3b994c1b867d4e1009aba468da998",
+  "finished_at": "2026-09-20T09:33:02",
+  "source_d23": {
+    "candidate_csv": "/root/autodl-tmp/yolo11_project/comparison_reports/DIAG_D23_SMALL_CANDIDATE_ORIGIN_TAL_20260919_133752_497010/small_candidate_origin.csv",
+    "candidate_sha256": "bb53bbf2a38fca565cd522f928b468121f96f165e83212fe1c71e3edc22e9d46",
+    "stable_MMM_count": 6631
+  },
+  "curve": [
+    {
+      "iou": 0.5,
+      "E10a_raw_geometry_rate": 0.9491837809373355,
+      "E23a_raw_geometry_rate": 0.9520424283457459,
+      "delta_raw_geometry_rate": 0.002858647408410464,
+      "E10a_P2_raw_geometry_rate": 0.942262845106447,
+      "E23a_P2_raw_geometry_rate": 0.9457609268035808,
+      "delta_P2_raw_geometry_rate": 0.003498081697133837,
+      "E10a_correct_argmax_rate": 0.8438651922064244,
+      "E23a_correct_argmax_rate": 0.8625216279244715,
+      "delta_correct_argmax_rate": 0.018656435718047093
+    },
+    {
+      "iou": 0.75,
+      "E10a_raw_geometry_rate": 0.6669675769201836,
+      "E23a_raw_geometry_rate": 0.6678703076807342,
+      "delta_raw_geometry_rate": 0.0009027307605505852,
+      "E10a_P2_raw_geometry_rate": 0.6372903031670805,
+      "E23a_P2_raw_geometry_rate": 0.637816896110735,
+      "delta_P2_raw_geometry_rate": 0.0005265929436545358,
+      "E10a_correct_argmax_rate": 0.57737154893553,
+      "E23a_correct_argmax_rate": 0.5937711577522004,
+      "delta_correct_argmax_rate": 0.016399608816670352
+    },
+    {
+      "iou": 0.8,
+      "E10a_raw_geometry_rate": 0.5329496727600993,
+      "E23a_raw_geometry_rate": 0.5362220717670955,
+      "delta_raw_geometry_rate": 0.003272399006996163,
+      "E10a_P2_raw_geometry_rate": 0.49819453847889866,
+      "E23a_P2_raw_geometry_rate": 0.5022568269013766,
+      "delta_P2_raw_geometry_rate": 0.0040622884224779665,
+      "E10a_correct_argmax_rate": 0.4545625517189498,
+      "E23a_correct_argmax_rate": 0.47186489129617093,
+      "delta_correct_argmax_rate": 0.017302339577221104
+    },
+    {
+      "iou": 0.85,
+      "E10a_raw_geometry_rate": 0.3678627849243963,
+      "E23a_raw_geometry_rate": 0.3695177913187392,
+      "delta_raw_geometry_rate": 0.001655006394342906,
+      "E10a_P2_raw_geometry_rate": 0.3331452644248853,
+      "E23a_P2_raw_geometry_rate": 0.3370947115022944,
+      "delta_P2_raw_geometry_rate": 0.0039494470774091295,
+      "E10a_correct_argmax_rate": 0.3020386669675769,
+      "E23a_correct_argmax_rate": 0.3161814488828707,
+      "delta_correct_argmax_rate": 0.014142781915293778
+    },
+    {
+      "iou": 0.9,
+      "E10a_raw_geometry_rate": 0.18122320018054616,
+      "E23a_raw_geometry_rate": 0.1840818475889566,
+      "delta_raw_geometry_rate": 0.0028586474084104363,
+      "E10a_P2_raw_geometry_rate": 0.15703753855412622,
+      "E23a_P2_raw_geometry_rate": 0.16162641992025878,
+      "delta_P2_raw_geometry_rate": 0.004588881366132558,
+      "E10a_correct_argmax_rate": 0.13777928232904535,
+      "E23a_correct_argmax_rate": 0.14695704506131047,
+      "delta_correct_argmax_rate": 0.009177762732265116
+    }
+  ],
+  "stable_MMM": {
+    "n": 6631,
+    "E10a_mean_best_raw_iou": 0.5884374044998489,
+    "E23a_mean_best_raw_iou": 0.5991366178453499,
+    "mean_delta_best_raw_iou": 0.010699213345500974,
+    "recovered_to_raw075_count": 444,
+    "recovered_to_raw075_rate": 0.06695822651183833,
+    "P2_recovered_to_raw075_count": 377,
+    "P2_recovered_to_raw075_rate": 0.056854169808475345
+  },
+  "metric_gate": null,
+  "mechanism_gate": {
+    "rules": {
+      "all_raw075_min_delta": 0.005,
+      "P2_raw075_min_delta": 0.005,
+      "P2_raw080_min_delta": 0.0,
+      "P2_raw085_min_delta": -0.001,
+      "raw_correct_cls_050_min_delta": -0.002,
+      "stable_MMM_mean_iou_delta": ">0"
+    },
+    "checks": {
+      "all_raw075_delta_ge_0.005": false,
+      "P2_raw075_delta_ge_0.005": false,
+      "P2_raw080_not_lower": true,
+      "P2_raw085_not_lower_by_more_than_0.001": true,
+      "raw_correct_cls_at_050_not_lower_by_more_than_0.002": true,
+      "stable_MMM_mean_iou_improves": true
+    },
+    "passed": false
+  },
+  "final_screening_pass": false,
+  "interpretation": "A metric gain without P2 raw-geometry gain does NOT validate the E23a regression-quality hypothesis."
+}

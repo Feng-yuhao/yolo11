@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "mode": "check",
+  "zero_training": true,
+  "models": [
+    "e40",
+    "e40s2",
+    "e42",
+    "e43"
+  ],
+  "completed": [
+    "e40",
+    "e40s2",
+    "e42",
+    "e43"
+  ],
+  "started_at": "2026-10-01T21:08:58.646542+08:00",
+  "report_dir": "C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\yolo11_project\\comparison_reports\\DIAG_D44_CHECK_20261001_210858_646542",
+  "automatic_shutdown": false,
+  "finished_at": "2026-10-01T21:09:23.898167+08:00",
+  "elapsed_seconds": 25.2497471
+}

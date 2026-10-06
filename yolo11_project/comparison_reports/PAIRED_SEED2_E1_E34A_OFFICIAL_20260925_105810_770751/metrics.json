@@ -1,0 +1,515 @@
+{
+  "status": "completed",
+  "revision": "e34a_e1_seed2_official_d27_v1",
+  "d27_revision": "d27_official_visdrone_det_matlab104_port_v1",
+  "zero_training": true,
+  "dataset": {
+    "dataset_root": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val",
+    "images": 548,
+    "annotation_dimension_sha256": "058c87e779a61a09933bebe35af1c05c807a444dc842b4be12124dd36134c787",
+    "raw_class_counts": {
+      "0": 1378,
+      "1": 8844,
+      "2": 5125,
+      "3": 1287,
+      "4": 14064,
+      "5": 1975,
+      "6": 750,
+      "7": 1045,
+      "8": 532,
+      "9": 251,
+      "10": 4886,
+      "11": 32
+    },
+    "score_zero_counts": {
+      "0": 1378,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 32
+    },
+    "class0_ignore_regions": 1378,
+    "class11_others": 32,
+    "gt_rows_dropped_by_class0_region": 160,
+    "evaluated_gt_rows": 38599
+  },
+  "unit_tests": {
+    "union_area": "passed",
+    "integral_region_coverage": "passed",
+    "ordinary_match": "passed",
+    "ignore_match": "passed",
+    "normal_preferred": "passed",
+    "voc_ap": "passed",
+    "official_end_to_end": "passed"
+  },
+  "models": {
+    "e1_seed2": {
+      "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/e1_yolo11s_p2add_img1024_seed2_20260922_215932_812242",
+      "predictions_sha256": "d92d8157d816df892f62b723797c13a5c39e4516febcc247296e530c0b5fd9ae",
+      "official": {
+        "AP50_95_percent": 32.49192464398786,
+        "AP50_percent": 55.02427029073583,
+        "AP75_percent": 32.40564524777232,
+        "AR1_percent": 0.9523557104838813,
+        "AR10_percent": 7.894244445873442,
+        "AR100_percent": 37.847164584761714,
+        "AR500_percent": 46.128647205437794,
+        "class_image_weights": {
+          "1": 520,
+          "2": 482,
+          "3": 364,
+          "4": 515,
+          "5": 421,
+          "6": 265,
+          "7": 337,
+          "8": 219,
+          "9": 130,
+          "10": 485
+        },
+        "per_class": {
+          "1": {
+            "name": "pedestrian",
+            "images_with_class_weight": 520,
+            "AP50_95_percent": 32.43214660386808,
+            "AP50_percent": 64.69544561012495,
+            "AP75_percent": 27.829066051245483
+          },
+          "2": {
+            "name": "people",
+            "images_with_class_weight": 482,
+            "AP50_95_percent": 22.011265841216897,
+            "AP50_percent": 51.35049306939285,
+            "AP75_percent": 14.727289705879777
+          },
+          "3": {
+            "name": "bicycle",
+            "images_with_class_weight": 364,
+            "AP50_95_percent": 15.949428588095435,
+            "AP50_percent": 32.9167471917457,
+            "AP75_percent": 12.727049563541199
+          },
+          "4": {
+            "name": "car",
+            "images_with_class_weight": 515,
+            "AP50_95_percent": 63.63206818091559,
+            "AP50_percent": 88.22186973788043,
+            "AP75_percent": 72.02490137995838
+          },
+          "5": {
+            "name": "van",
+            "images_with_class_weight": 421,
+            "AP50_95_percent": 34.610365391513696,
+            "AP50_percent": 46.860012170714676,
+            "AP75_percent": 40.088609407743014
+          },
+          "6": {
+            "name": "truck",
+            "images_with_class_weight": 265,
+            "AP50_95_percent": 32.4095237433563,
+            "AP50_percent": 46.9162635015776,
+            "AP75_percent": 36.08636176058909
+          },
+          "7": {
+            "name": "tricycle",
+            "images_with_class_weight": 337,
+            "AP50_95_percent": 22.99563972989729,
+            "AP50_percent": 39.37358074232505,
+            "AP75_percent": 23.164148556520363
+          },
+          "8": {
+            "name": "awning-tricycle",
+            "images_with_class_weight": 219,
+            "AP50_95_percent": 12.551806406189488,
+            "AP50_percent": 20.236325510789182,
+            "AP75_percent": 13.705217559822305
+          },
+          "9": {
+            "name": "bus",
+            "images_with_class_weight": 130,
+            "AP50_95_percent": 50.860212565125074,
+            "AP50_percent": 67.55340017377705,
+            "AP75_percent": 60.264965448077454
+          },
+          "10": {
+            "name": "motor",
+            "images_with_class_weight": 485,
+            "AP50_95_percent": 31.205916254219694,
+            "AP50_percent": 64.38912392958349,
+            "AP75_percent": 26.29848877292624
+          }
+        },
+        "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+      },
+      "ignore_audit": {
+        "raw_prediction_count": 245268,
+        "official_prediction_count_after_class0_filter": 220757,
+        "removed_by_class0_ignore": 24511,
+        "removed_by_class0_fraction": 0.09993558067093955,
+        "overlap_class11_others": 280,
+        "overlap_class11_fraction": 0.0011416083630966943,
+        "per_class": {
+          "1": {
+            "total": 59984,
+            "removed_by_class0": 5019,
+            "overlap_class11": 57
+          },
+          "2": {
+            "total": 32712,
+            "removed_by_class0": 2039,
+            "overlap_class11": 70
+          },
+          "3": {
+            "total": 19079,
+            "removed_by_class0": 954,
+            "overlap_class11": 9
+          },
+          "4": {
+            "total": 68162,
+            "removed_by_class0": 9754,
+            "overlap_class11": 17
+          },
+          "5": {
+            "total": 3701,
+            "removed_by_class0": 247,
+            "overlap_class11": 4
+          },
+          "6": {
+            "total": 5165,
+            "removed_by_class0": 735,
+            "overlap_class11": 29
+          },
+          "7": {
+            "total": 8161,
+            "removed_by_class0": 512,
+            "overlap_class11": 44
+          },
+          "8": {
+            "total": 2170,
+            "removed_by_class0": 209,
+            "overlap_class11": 18
+          },
+          "9": {
+            "total": 674,
+            "removed_by_class0": 96,
+            "overlap_class11": 2
+          },
+          "10": {
+            "total": 45460,
+            "removed_by_class0": 4946,
+            "overlap_class11": 30
+          }
+        },
+        "fp_audit": [
+          {
+            "confidence": 0.05,
+            "area_group": "all",
+            "fp": 58213,
+            "fp_ignore": 8759,
+            "fp_others": 97,
+            "tp": 30217,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.15046467283940013,
+            "fp_class11_others_fraction": 0.0016662944703073196
+          },
+          {
+            "confidence": 0.05,
+            "area_group": "small",
+            "fp": 48851,
+            "fp_ignore": 8088,
+            "fp_others": 56,
+            "tp": 19209,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.1655646762604655,
+            "fp_class11_others_fraction": 0.0011463429612495139
+          },
+          {
+            "confidence": 0.1,
+            "area_group": "all",
+            "fp": 32546,
+            "fp_ignore": 4856,
+            "fp_others": 66,
+            "tp": 28803,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.14920420328150924,
+            "fp_class11_others_fraction": 0.0020278989737602163
+          },
+          {
+            "confidence": 0.1,
+            "area_group": "small",
+            "fp": 26686,
+            "fp_ignore": 4454,
+            "fp_others": 30,
+            "tp": 17971,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.16690399460391217,
+            "fp_class11_others_fraction": 0.0011241849658997227
+          },
+          {
+            "confidence": 0.25,
+            "area_group": "all",
+            "fp": 11142,
+            "fp_ignore": 1605,
+            "fp_others": 29,
+            "tp": 25489,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.1440495422724825,
+            "fp_class11_others_fraction": 0.002602764315203734
+          },
+          {
+            "confidence": 0.25,
+            "area_group": "small",
+            "fp": 8316,
+            "fp_ignore": 1435,
+            "fp_others": 7,
+            "tp": 15079,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.17255892255892255,
+            "fp_class11_others_fraction": 0.0008417508417508417
+          }
+        ],
+        "fp_audit_note": "Greedy IoU=0.50 class-wise matching before class-0 raster filtering; ignored score-zero GT matches are neutral."
+      }
+    },
+    "e34a_seed2": {
+      "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/e34a_persistent_p2_e1_img1024_seed2_20260924_205353_771600",
+      "predictions_sha256": "26f8312d51af5835b7142eedcd8d0906566ffe75024b5d363f07b0a07ff95025",
+      "official": {
+        "AP50_95_percent": 32.40541219103162,
+        "AP50_percent": 54.59735189622098,
+        "AP75_percent": 32.73188912981867,
+        "AR1_percent": 0.8324872314529392,
+        "AR10_percent": 7.75476772644255,
+        "AR100_percent": 37.742701935651546,
+        "AR500_percent": 45.913551733195696,
+        "class_image_weights": {
+          "1": 520,
+          "2": 482,
+          "3": 364,
+          "4": 515,
+          "5": 421,
+          "6": 265,
+          "7": 337,
+          "8": 219,
+          "9": 130,
+          "10": 485
+        },
+        "per_class": {
+          "1": {
+            "name": "pedestrian",
+            "images_with_class_weight": 520,
+            "AP50_95_percent": 33.18455843065773,
+            "AP50_percent": 65.94470273200358,
+            "AP75_percent": 28.90859676826035
+          },
+          "2": {
+            "name": "people",
+            "images_with_class_weight": 482,
+            "AP50_95_percent": 22.44898308891368,
+            "AP50_percent": 51.8516705807717,
+            "AP75_percent": 15.46374288979643
+          },
+          "3": {
+            "name": "bicycle",
+            "images_with_class_weight": 364,
+            "AP50_95_percent": 15.666930721960753,
+            "AP50_percent": 30.861717561409073,
+            "AP75_percent": 14.26955481882386
+          },
+          "4": {
+            "name": "car",
+            "images_with_class_weight": 515,
+            "AP50_95_percent": 63.45109063712025,
+            "AP50_percent": 87.96675175843222,
+            "AP75_percent": 71.93225568879346
+          },
+          "5": {
+            "name": "van",
+            "images_with_class_weight": 421,
+            "AP50_95_percent": 34.3641706337636,
+            "AP50_percent": 47.06115285078055,
+            "AP75_percent": 39.90822911810357
+          },
+          "6": {
+            "name": "truck",
+            "images_with_class_weight": 265,
+            "AP50_95_percent": 30.622270005549883,
+            "AP50_percent": 44.26989206889117,
+            "AP75_percent": 34.10299713924299
+          },
+          "7": {
+            "name": "tricycle",
+            "images_with_class_weight": 337,
+            "AP50_95_percent": 22.69525093155683,
+            "AP50_percent": 39.09375087101621,
+            "AP75_percent": 23.210232035125628
+          },
+          "8": {
+            "name": "awning-tricycle",
+            "images_with_class_weight": 219,
+            "AP50_95_percent": 11.998467488290292,
+            "AP50_percent": 18.531163224912383,
+            "AP75_percent": 13.061207383279704
+          },
+          "9": {
+            "name": "bus",
+            "images_with_class_weight": 130,
+            "AP50_95_percent": 49.02527902421703,
+            "AP50_percent": 64.85675699520594,
+            "AP75_percent": 58.43227151420132
+          },
+          "10": {
+            "name": "motor",
+            "images_with_class_weight": 485,
+            "AP50_95_percent": 31.842285507347487,
+            "AP50_percent": 64.03308134423686,
+            "AP75_percent": 27.854579238889965
+          }
+        },
+        "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+      },
+      "ignore_audit": {
+        "raw_prediction_count": 240709,
+        "official_prediction_count_after_class0_filter": 216138,
+        "removed_by_class0_ignore": 24571,
+        "removed_by_class0_fraction": 0.10207761238674083,
+        "overlap_class11_others": 279,
+        "overlap_class11_fraction": 0.0011590758966220623,
+        "per_class": {
+          "1": {
+            "total": 57519,
+            "removed_by_class0": 5266,
+            "overlap_class11": 46
+          },
+          "2": {
+            "total": 32274,
+            "removed_by_class0": 2247,
+            "overlap_class11": 89
+          },
+          "3": {
+            "total": 20509,
+            "removed_by_class0": 805,
+            "overlap_class11": 12
+          },
+          "4": {
+            "total": 66700,
+            "removed_by_class0": 9341,
+            "overlap_class11": 12
+          },
+          "5": {
+            "total": 4022,
+            "removed_by_class0": 269,
+            "overlap_class11": 2
+          },
+          "6": {
+            "total": 4869,
+            "removed_by_class0": 702,
+            "overlap_class11": 28
+          },
+          "7": {
+            "total": 6900,
+            "removed_by_class0": 490,
+            "overlap_class11": 41
+          },
+          "8": {
+            "total": 2069,
+            "removed_by_class0": 187,
+            "overlap_class11": 19
+          },
+          "9": {
+            "total": 571,
+            "removed_by_class0": 77,
+            "overlap_class11": 2
+          },
+          "10": {
+            "total": 45276,
+            "removed_by_class0": 5187,
+            "overlap_class11": 28
+          }
+        },
+        "fp_audit": [
+          {
+            "confidence": 0.05,
+            "area_group": "all",
+            "fp": 55599,
+            "fp_ignore": 8390,
+            "fp_others": 85,
+            "tp": 30203,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.15090199464019138,
+            "fp_class11_others_fraction": 0.0015288044749006276
+          },
+          {
+            "confidence": 0.05,
+            "area_group": "small",
+            "fp": 46821,
+            "fp_ignore": 7834,
+            "fp_others": 47,
+            "tp": 19231,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.16731808376583157,
+            "fp_class11_others_fraction": 0.0010038230708442793
+          },
+          {
+            "confidence": 0.1,
+            "area_group": "all",
+            "fp": 31453,
+            "fp_ignore": 4681,
+            "fp_others": 57,
+            "tp": 28897,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.1488252312974915,
+            "fp_class11_others_fraction": 0.0018122277684163672
+          },
+          {
+            "confidence": 0.1,
+            "area_group": "small",
+            "fp": 25819,
+            "fp_ignore": 4338,
+            "fp_others": 27,
+            "tp": 18102,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.16801580231612379,
+            "fp_class11_others_fraction": 0.0010457415081916418
+          },
+          {
+            "confidence": 0.25,
+            "area_group": "all",
+            "fp": 11453,
+            "fp_ignore": 1657,
+            "fp_others": 30,
+            "tp": 25779,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.14467825024011177,
+            "fp_class11_others_fraction": 0.0026194010302977386
+          },
+          {
+            "confidence": 0.25,
+            "area_group": "small",
+            "fp": 8586,
+            "fp_ignore": 1512,
+            "fp_others": 13,
+            "tp": 15364,
+            "neutral": 0,
+            "fp_class0_ignore_fraction": 0.1761006289308176,
+            "fp_class11_others_fraction": 0.0015140927090612625
+          }
+        ],
+        "fp_audit_note": "Greedy IoU=0.50 class-wise matching before class-0 raster filtering; ignored score-zero GT matches are neutral."
+      }
+    }
+  },
+  "e34a_minus_e1_pp": {
+    "AP50_95_percent": -0.08651245295623511,
+    "AP50_percent": -0.4269183945148498,
+    "AP75_percent": 0.3262438820463487,
+    "AR500_percent": -0.21509547224209769
+  },
+  "interpretation_boundary": "Single paired seed2; no stability or publication claim before replication."
+}

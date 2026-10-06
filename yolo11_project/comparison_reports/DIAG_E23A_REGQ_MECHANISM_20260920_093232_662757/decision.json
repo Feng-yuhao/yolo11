@@ -1,0 +1,7 @@
+{
+  "metric_gate_passed": false,
+  "mechanism_gate_passed": false,
+  "final_screening_pass": false,
+  "next_step": "STOP_E23A_OR_RUN_CHEAP_SECONDARY_DIAGNOSTIC",
+  "note": "Resource-screening decision, not statistical significance."
+}

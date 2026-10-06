@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "mode": "smoke",
+  "signature": {
+    "parent": "f1a5ba6642a01445a99b2c7c80d8e79299a4402159bc37d2a08bb31ff365df12",
+    "config": {
+      "epochs": 10,
+      "imgsz": 640,
+      "batch": 16,
+      "nbs": 64,
+      "lr": 0.001,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "grad_clip": 10.0,
+      "amp": false,
+      "seed": 1,
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "copy_paste": 0.0,
+      "bn_running_stats": "frozen",
+      "schedule": "constant",
+      "ema": false,
+      "train_tf32": false
+    },
+    "workers": 4,
+    "source": {
+      "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+      "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+      "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+      "nn/modules/block.py": "d003cf2646c3c6bb6826874ae506e5822bec35f7c663e455de7ceb918c8149e0",
+      "utils/loss.py": "496dc5545169f0a8bf2c24fcc087456e6e8a9b23dc427dd198a35cbd50213102",
+      "utils/tal.py": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9",
+      "utils/ops.py": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd",
+      "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70",
+      "data/build.py": "01f326cf4b072189b0af2ffdd2d10915193f933d12dd2a2549c557a981e24f4f",
+      "engine/predictor.py": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e",
+      "models/yolo/detect/predict.py": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390"
+    },
+    "package": "f72fa02742163934fc5b8b780162ff9763ceaa6c0e60d361e37f79c3bd0e17b3",
+    "torch": "2.5.1+cu121",
+    "device": "cuda:0",
+    "cuda": "12.1",
+    "device_name": "NVIDIA vGPU-32GB",
+    "inference_tf32": {
+      "matmul": false,
+      "cudnn": true
+    },
+    "data": "2de8ad3c6f67db8cfa5731047292eaf7c4a3a721697bcb77b491525a3a43e6bd"
+  },
+  "started_at": "2026-09-28T16:39:58.924607",
+  "finished_at": "2026-09-28T16:40:25.244303"
+}

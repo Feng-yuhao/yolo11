@@ -1,0 +1,10 @@
+{
+  "report_dir": "C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\yolo11_project\\comparison_reports\\E38_FORMAL_CHECK_20260929_023422_954973",
+  "completed_epochs": 10,
+  "refiner_stats": {
+    "calls": 3,
+    "selected": 34,
+    "nonempty_batches": 2
+  },
+  "elapsed_seconds": 0.0013238999999991563
+}

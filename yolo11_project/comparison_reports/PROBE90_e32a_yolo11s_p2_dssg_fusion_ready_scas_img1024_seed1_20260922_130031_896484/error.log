@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/yolo11_project/yolo11s_p2_e32a_scas_img1024_seed1.py", line 751, in _run_probe90
+    core.verify_smoke_gate(report)
+  File "/root/autodl-tmp/yolo11_project/yolo11s_p2_img1024_seed1.py", line 533, in verify_smoke_gate
+    raise RuntimeError('Smoke gate does not match current code/config/environment. Run --smoke2 again.')
+RuntimeError: Smoke gate does not match current code/config/environment. Run --smoke2 again.

@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E49a_E40_GuidedReassembly_AutoDL\\run_e49.py\", line 420, in <module>\n    main()\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E49a_E40_GuidedReassembly_AutoDL\\run_e49.py\", line 390, in main\n    result=check_all(core,args,REPORT)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E49a_E40_GuidedReassembly_AutoDL\\checks.py\", line 180, in check_all\n    require(any(not torch.equal(p,before[n]) for n,p in new.named_parameters() if n.startswith(group)),\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E49a_E40_GuidedReassembly_AutoDL\\checks.py\", line 16, in require\n    raise RuntimeError(message)\nRuntimeError: No loss-only group update reassembly.kernel.0.\n"
+}

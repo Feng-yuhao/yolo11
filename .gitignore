@@ -18,3 +18,39 @@ comparison_reports/**/predictions*.json
 comparison_reports/**/area_predictions.json
 
 **/.git_saved/
+
+# Local temporary / verification workspaces
+tmp/
+
+# Accidental temporary files
+1E-08
+d
+
+# Python/runtime cache
+__pycache__/
+*.pyc
+*.pyo
+*.cache
+
+# Model checkpoints / exports
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Runtime locks
+*.lock
+
+# Large local logs
+logs/
+
+# Large raw diagnostic dumps
+**/nms_events.json
+**/routing_rows.json
+**/readout_rows.json
+
+# Large raw test-dev predictions
+**/TESTDEV_*/**/predictions.json
+
+# Large slicing raw predictions
+**/DIAG_SLICING_*/**/*_predictions.json

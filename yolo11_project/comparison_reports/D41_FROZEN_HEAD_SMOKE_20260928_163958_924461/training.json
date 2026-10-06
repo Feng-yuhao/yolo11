@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "config": {
+    "epochs": 10,
+    "imgsz": 640,
+    "batch": 16,
+    "nbs": 64,
+    "lr": 0.001,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "grad_clip": 10.0,
+    "amp": false,
+    "seed": 1,
+    "mosaic": 0.0,
+    "mixup": 0.0,
+    "copy_paste": 0.0,
+    "bn_running_stats": "frozen",
+    "schedule": "constant",
+    "ema": false,
+    "train_tf32": false
+  },
+  "smoke_only": true,
+  "train_images": 6471,
+  "batches_per_epoch": 405,
+  "parent": "f1a5ba6642a01445a99b2c7c80d8e79299a4402159bc37d2a08bb31ff365df12",
+  "frozen_state_start": "1a2875ea7ff78c2b99f7053bd0b0bc7699b8d7d5d49614fc8c7d26529d22c61b",
+  "same_batch_and_frozen_features": true,
+  "hypothesis": "P2 regression head utility on fixed E1 features",
+  "tal_note": "Original TAL formula, independent current-box assignments for each arm.",
+  "started_at": "2026-09-28T16:40:11.588760",
+  "initial_real_batch_max_abs_raw_difference": 1.239776611328125e-05,
+  "initial_real_batch_per_image_loss": {
+    "control": 2.7936203479766846,
+    "mask": 2.7936203479766846
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "batches": 8,
+      "seconds": 4.800459984689951,
+      "loss": {
+        "control": 2.8648651838302612,
+        "mask": 2.8648649156093597
+      },
+      "updates": {
+        "control": 2,
+        "mask": 2
+      }
+    }
+  ],
+  "batch_trace_sha256": "578f84270c9cbcdbb47991e85e8c9b88e972f057647b09b91cb99428b2f144a9",
+  "completed_epochs": 1,
+  "seconds": 5.631812036037445,
+  "frozen_state_end": "1a2875ea7ff78c2b99f7053bd0b0bc7699b8d7d5d49614fc8c7d26529d22c61b",
+  "frozen_bn_unchanged": true,
+  "classification_and_p3_p5_predictions_unchanged": true,
+  "matching_execution": {
+    "revision": "imagewise_tal_830_v1",
+    "calls": 16,
+    "images": 256,
+    "max_forward_batch": 16,
+    "max_padded_gt_per_image": 270,
+    "max_prediction_locations": 34000
+  },
+  "finished_at": "2026-09-28T16:40:17.263452",
+  "updates": {
+    "control": 2,
+    "mask": 2
+  },
+  "peak_allocated_GiB": 2.310141086578369,
+  "peak_reserved_GiB": 4.212890625
+}

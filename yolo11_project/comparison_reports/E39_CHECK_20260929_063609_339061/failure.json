@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\run_e39.py\", line 288, in <module>\n    main()\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\run_e39.py\", line 271, in main\n    result=check_all(core,args,REPORT)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\checks.py\", line 59, in check_all\n    model,reference,audit=build_model(core)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\run_e39.py\", line 110, in build_model\n    audit = core.load_p2_pretrained(reference)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\e1_640_core.py\", line 360, in load_p2_pretrained\n    original = YOLO(str(PRETRAINED)).model.float()\nNameError: name 'YOLO' is not defined\n"
+}

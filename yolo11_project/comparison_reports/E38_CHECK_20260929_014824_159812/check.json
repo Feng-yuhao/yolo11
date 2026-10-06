@@ -1,0 +1,340 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "torch": "2.6.0+cu124",
+  "cuda_executed": false,
+  "scorer": "frozen D27 unit tests passed",
+  "tal": [
+    {
+      "case": "random",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 954,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "mixed_empty",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 218,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "dense",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 1323,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "ties_and_conflicts",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 50,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "all_empty",
+      "score_dtype": "torch.float32",
+      "positive_assignments": 0,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "random",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 917,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "mixed_empty",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 227,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "dense",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 1303,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "ties_and_conflicts",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 50,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "all_empty",
+      "score_dtype": "torch.float16",
+      "positive_assignments": 0,
+      "checks": [
+        {
+          "name": "labels",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "boxes",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "scores",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "foreground_mask",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "name": "local_gt_indices",
+          "exact_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ]
+    }
+  ],
+  "exact_zero_start": true,
+  "detached_inputs": true,
+  "new_branches_learn": true,
+  "frozen_E1_digest": "1a2875ea7ff78c2b99f7053bd0b0bc7699b8d7d5d49614fc8c7d26529d22c61b",
+  "coarse_assignment_unchanged": true,
+  "empty_targets": true,
+  "bypass_classification_P3_P5": true,
+  "coordinate_ramp": true,
+  "positive_bounded_boxes": true,
+  "reload_fuse_fresh_process": true,
+  "normal_predictor": true
+}

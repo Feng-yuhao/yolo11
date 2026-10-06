@@ -1,0 +1,68 @@
+{
+  "all": {
+    "gt_count": 871,
+    "raw_any75_percent": 55.223880597014926,
+    "raw_p275_percent": 52.81285878300804,
+    "raw_p375_percent": 35.246842709529275,
+    "raw_correct75_percent": 47.64638346727899,
+    "final_any75_percent": 47.18714121699196,
+    "final_correct75_percent": 41.10218140068886,
+    "official_final_any75_percent": 47.18714121699196,
+    "official_final_correct75_percent": 41.10218140068886
+  },
+  "lt8": {
+    "gt_count": 301,
+    "raw_any75_percent": 22.591362126245848,
+    "raw_p275_percent": 21.92691029900332,
+    "raw_p375_percent": 3.3222591362126246,
+    "raw_correct75_percent": 16.943521594684384,
+    "final_any75_percent": 16.943521594684384,
+    "final_correct75_percent": 13.289036544850498,
+    "official_final_any75_percent": 16.943521594684384,
+    "official_final_correct75_percent": 13.289036544850498
+  },
+  "8_16": {
+    "gt_count": 371,
+    "raw_any75_percent": 62.264150943396224,
+    "raw_p275_percent": 59.299191374663074,
+    "raw_p375_percent": 33.15363881401617,
+    "raw_correct75_percent": 52.2911051212938,
+    "final_any75_percent": 50.67385444743935,
+    "final_correct75_percent": 42.58760107816712,
+    "official_final_any75_percent": 50.67385444743935,
+    "official_final_correct75_percent": 42.58760107816712
+  },
+  "16_24": {
+    "gt_count": 113,
+    "raw_any75_percent": 84.95575221238938,
+    "raw_p275_percent": 82.30088495575221,
+    "raw_p375_percent": 78.76106194690266,
+    "raw_correct75_percent": 76.99115044247787,
+    "final_any75_percent": 77.87610619469027,
+    "final_correct75_percent": 70.79646017699115,
+    "official_final_any75_percent": 77.87610619469027,
+    "official_final_correct75_percent": 70.79646017699115
+  },
+  "24_32": {
+    "gt_count": 52,
+    "raw_any75_percent": 100.0,
+    "raw_p275_percent": 96.15384615384616,
+    "raw_p375_percent": 98.07692307692308,
+    "raw_correct75_percent": 94.23076923076923,
+    "final_any75_percent": 96.15384615384616,
+    "final_correct75_percent": 90.38461538461539,
+    "official_final_any75_percent": 96.15384615384616,
+    "official_final_correct75_percent": 90.38461538461539
+  },
+  "ge32": {
+    "gt_count": 34,
+    "raw_any75_percent": 100.0,
+    "raw_p275_percent": 91.17647058823529,
+    "raw_p375_percent": 100.0,
+    "raw_correct75_percent": 100.0,
+    "final_any75_percent": 100.0,
+    "final_correct75_percent": 97.05882352941177,
+    "official_final_any75_percent": 100.0,
+    "official_final_correct75_percent": 97.05882352941177
+  }
+}

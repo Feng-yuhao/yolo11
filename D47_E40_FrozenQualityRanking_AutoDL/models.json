@@ -1,0 +1,16 @@
+{
+  "revision": "testdev_e1_e40_paired3_v1",
+  "checkpoint_selection": "Existing val-selected best.pt; no test-based selection or ensemble",
+  "vendor_sha256": {
+    "d27_official.py": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
+  },
+  "models": [
+    {"key": "e1_seed1", "model": "E1", "seed": 1, "weights": "runs/e1_yolo11s_p2add_img640_seed1/weights/best.pt", "sha256": "f1a5ba6642a01445a99b2c7c80d8e79299a4402159bc37d2a08bb31ff365df12"},
+    {"key": "e40_seed1", "model": "E40", "seed": 1, "weights": "runs/e40a_spatial_task_head_img640_seed1_200e/weights/best.pt", "sha256": "0a9fdac26c4fe7a9161900c82e879f584026afa569f870c0159d41feca031337"},
+    {"key": "e1_seed2", "model": "E1", "seed": 2, "weights": "runs/e1_yolo11s_p2add_img640_seed2/weights/best.pt", "sha256": "271901db9ff32c5b3a7735f218779eb27e1e1a6bc6604d3c77d37e338fd039d4"},
+    {"key": "e40_seed2", "model": "E40", "seed": 2, "weights": "runs/e40a_spatial_task_head_img640_seed2_200e/weights/best.pt", "sha256": "d5e21c610335dc44cd6b6c9a0766b7535c3cc5b68e75560d6c371509e78a8a09"},
+    {"key": "e1_seed3", "model": "E1", "seed": 3, "weights": "runs/e1_yolo11s_p2add_img640_seed3/weights/best.pt", "sha256": "11e656c7cdeb9112d303bae0d68c32a874031a7734ad88fda1f37fa9c88778eb"},
+    {"key": "e40_seed3", "model": "E40", "seed": 3, "weights": "runs/e40a_spatial_task_head_img640_seed3_200e/weights/best.pt", "sha256": "6a2a59025f61391d1c59ab8c28110a58e67953e9758f7946b13298f7f63ff267"}
+  ]
+}

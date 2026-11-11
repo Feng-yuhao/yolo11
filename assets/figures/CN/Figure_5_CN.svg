@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="700" viewBox="0 0 1320 700">
+<rect width="1320" height="700" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#292A2C">
+<text x="18" y="29" text-anchor="start" font-size="27" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">test-dev 上相较 P2 基准的 AP 差值</text>
+<path d="M302.8125,74 L302.8125,600" fill="none" stroke="#DDD9D1" stroke-width="1"/>
+<text x="302.8125" y="627" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">-1</text>
+<path d="M514.0625,74 L514.0625,600" fill="none" stroke="#959188" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="514.0625" y="627" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">0</text>
+<path d="M725.3125,74 L725.3125,600" fill="none" stroke="#DDD9D1" stroke-width="1"/>
+<text x="725.3125" y="627" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">1</text>
+<path d="M936.5625,74 L936.5625,600" fill="none" stroke="#DDD9D1" stroke-width="1"/>
+<text x="936.5625" y="627" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">2</text>
+<text x="1195" y="58" text-anchor="middle" font-size="22" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">均值 ± 样本标准差</text>
+<text x="226" y="107" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">pedestrian</text>
+<path d="M626.320219784152,99 L789.4439187128204,99" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M626.320219784152,92 L626.320219784152,106" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M789.4439187128204,92 L789.4439187128204,106" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="680.7597231647355" cy="89" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="794.5497019798626" y="94" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M643.3367826008604,103 L649.3367826008604,114 L637.3367826008604,114 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M707.8820692484862,91 L715.8820692484862,99 L707.8820692484862,107 L699.8820692484862,99 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="107" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+0.92 ± 0.39</text>
+<text x="226" y="157" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">people</text>
+<path d="M619.0134896963871,149 L696.6935294184714,149" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M619.0134896963871,142 L619.0134896963871,156" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M696.6935294184714,142 L696.6935294184714,156" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="620.1932592157559" cy="139" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="692.774540374018" y="144" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M655.5927290825136,153 L661.5927290825136,164 L649.5927290825136,164 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M657.8535095574291,141 L665.8535095574291,149 L657.8535095574291,157 L649.8535095574291,149 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="157" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+0.68 ± 0.18</text>
+<text x="226" y="207" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">bicycle</text>
+<path d="M404.723227800343,199 L846.1482965131294,199" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M404.723227800343,192 L404.723227800343,206" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M846.1482965131294,192 L846.1482965131294,206" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="642.5008887508147" cy="189" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="832.1203846394815" y="194" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M396.6860130799125,203 L402.6860130799125,214 L390.6860130799125,214 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M625.4357621567362,191 L633.4357621567362,199 L625.4357621567362,207 L617.4357621567362,199 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="207" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+0.53 ± 1.04</text>
+<text x="226" y="257" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">car</text>
+<path d="M695.2538951398526,249 L811.5975219381023,249" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M695.2538951398526,242 L695.2538951398526,256" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M811.5975219381023,242 L811.5975219381023,256" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="699.4617809585551" cy="239" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="810.046967417481" y="244" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M745.7683772408964,253 L751.7683772408964,264 L739.7683772408964,264 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M753.4257085389775,241 L761.4257085389775,249 L753.4257085389775,257 L745.4257085389775,249 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="257" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+1.13 ± 0.28</text>
+<text x="226" y="307" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">van</text>
+<path d="M682.3163560183002,299 L898.9076551245952,299" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M682.3163560183002,292 L682.3163560183002,306" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M898.9076551245952,292 L898.9076551245952,306" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="702.2104396939187" cy="289" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="906.4079585598884" y="294" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M758.2176184605362,303 L764.2176184605362,314 L752.2176184605362,314 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M790.6120055714476,291 L798.6120055714476,299 L790.6120055714476,307 L782.6120055714476,299 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="307" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+1.31 ± 0.51</text>
+<text x="226" y="357" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">truck</text>
+<path d="M501.85558123293174,349 L663.9021737260896,349" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M501.85558123293174,342 L501.85558123293174,356" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M663.9021737260896,342 L663.9021737260896,356" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="553.4613869660459" cy="339" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="669.5014249669125" y="344" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M520.6738205055735,353 L526.6738205055735,364 L514.6738205055735,364 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M582.8788774795106,341 L590.8788774795106,349 L582.8788774795106,357 L574.8788774795106,349 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="357" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+0.33 ± 0.38</text>
+<text x="226" y="407" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">tricycle</text>
+<path d="M325.61154121078664,399 L1011.024067934685,399" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M325.61154121078664,392 L325.61154121078664,406" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M1011.024067934685,392 L1011.024067934685,406" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="314.4856164253913" cy="389" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="993.6929157182515" y="394" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M691.7748815745647,403 L697.7748815745647,414 L685.7748815745647,414 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M668.3178045727358,391 L676.3178045727358,399 L668.3178045727358,407 L660.3178045727358,399 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="407" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+0.73 ± 1.62</text>
+<text x="226" y="457" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">awning-tricycle</text>
+<path d="M440.7582146530753,449 L763.89524989944,449" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M440.7582146530753,442 L440.7582146530753,456" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M763.89524989944,442 L763.89524989944,456" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="505.7639784758824" cy="439" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="783.8510540988487" y="444" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M512.3651642540418,453 L518.3651642540418,464 L506.3651642540418,464 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M602.3267322762576,441 L610.3267322762576,449 L602.3267322762576,457 L594.3267322762576,449 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="457" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+0.42 ± 0.76</text>
+<text x="226" y="507" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">bus</text>
+<path d="M641.7190891232469,499 L944.0577082415658,499" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M641.7190891232469,492 L641.7190891232469,506" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M944.0577082415658,492 L944.0577082415658,506" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="682.9515575254048" cy="489" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="725.4362998875536" y="494" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M965.2773386342608,503 L971.2773386342608,514 L959.2773386342608,514 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M792.8883986824063,491 L800.8883986824063,499 L792.8883986824063,507 L784.8883986824063,499 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="507" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+1.32 ± 0.72</text>
+<text x="226" y="557" text-anchor="end" font-size="25" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">motor</text>
+<path d="M638.3388532135289,549 L774.9811990817665,549" fill="none" stroke="#7B3F4B" stroke-width="2.5"/>
+<path d="M638.3388532135289,542 L638.3388532135289,556" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<path d="M774.9811990817665,542 L774.9811990817665,556" fill="none" stroke="#7B3F4B" stroke-width="2"/>
+<circle cx="656.0491095502219" cy="539" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<rect x="779.3743006128232" y="544" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<path d="M679.5566682798978,553 L685.5566682798978,564 L673.5566682798978,564 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<path d="M706.6600261476477,541 L714.6600261476477,549 L706.6600261476477,557 L698.6600261476477,549 Z" fill="#7B3F4B" stroke="white" stroke-width="1"/>
+<text x="1195" y="557" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">+0.91 ± 0.32</text>
+<text x="674" y="653" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">ΔAP（百分点）</text>
+<circle cx="274" cy="675" r="5" stroke="#536858" fill="white" stroke-width="2"/>
+<text x="331" y="682" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">种子 1</text>
+<rect x="478" y="670" width="10" height="10" stroke="#68665F" fill="white" stroke-width="2"/>
+<text x="540" y="682" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">种子 2</text>
+<path d="M690,669 L696,680 L684,680 Z" stroke="#536858" fill="white" stroke-width="2"/>
+<text x="747" y="682" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">种子 3</text>
+</g></svg>

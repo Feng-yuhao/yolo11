@@ -1,0 +1,11 @@
+{
+  "AP70_overall_percent": 34.10634049189854,
+  "images": 16592,
+  "GT_boxes": 375884,
+  "detections": 3362242,
+  "class_agnostic": true,
+  "IoU_threshold": 0.7,
+  "integral_VOC_AP": true,
+  "implementation": "Python author-overall-math port; not MATLAB execution",
+  "predictions": "Same fixed mapped three-class NMS/top500 predictions after strict ignore filter"
+}

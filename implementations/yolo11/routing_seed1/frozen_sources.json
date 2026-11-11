@@ -1,0 +1,16 @@
+{
+  "e1_640_core.py": "e1_640_core.py",
+  "e1_reference.yaml": "e1_reference.yaml",
+  "e57_spatial_task_head.py": "e57_spatial_task_head.py",
+  "e58_spatial_task_head.py": "e58_spatial_task_head.py",
+  "parent_spatial_task_head.py": "parent_spatial_task_head.py",
+  "p2_tal_chunked.py": "p2_tal_chunked.py",
+  "d27_official.py": "d27_official.py",
+  "d38_common.py": "d38_common.py",
+  "group_checks.py": "group_checks.py",
+  "precision_checks.py": "precision_checks.py",
+  "optimizer_checks.py": "optimizer_checks.py",
+  "smoke_progress.py": "smoke_progress.py",
+  "e60_full_head.py": "spatial_task_head.py",
+  "e60_validation_smoke.py": "validation_smoke.py"
+}

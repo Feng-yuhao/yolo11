@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="485" viewBox="0 0 1320 485">
+<defs><marker id="ink" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#292A2C"/></marker><marker id="burgundy" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#7B3F4B"/></marker><marker id="olive" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#536858"/></marker></defs>
+<rect width="1320" height="485" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#292A2C">
+<text x="76" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#292A2C">Detector</text>
+<text x="255" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#292A2C">Pyramid inputs</text>
+<text x="585" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#292A2C">ST-MDRF</text>
+<text x="1010" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#292A2C">Original prediction towers</text>
+<rect x="14" y="57" width="125" height="389" fill="#F6F3ED" stroke="#959188" stroke-width="1.6"/>
+<text x="76" y="225" text-anchor="middle" font-size="23" font-weight="normal" fill="#292A2C">Backbone</text>
+<text x="76" y="255" text-anchor="middle" font-size="23" font-weight="normal" fill="#292A2C">+ neck</text>
+<text x="76" y="296" text-anchor="middle" font-size="20" font-weight="normal" fill="#68665F">unchanged</text>
+<path d="M139,101 H180" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="181" y="71" width="147" height="60" fill="#F5F2EC" stroke="#959188" stroke-width="1.6"/>
+<text x="254" y="96" text-anchor="middle" font-size="26" font-weight="bold" fill="#292A2C">P2</text>
+<text x="254" y="120" text-anchor="middle" font-size="18" font-weight="normal" fill="#292A2C">128 × 160 × 160</text>
+<path d="M328,101 H377" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="378" y="63" width="405" height="76" fill="#F5EBED" stroke="#959188" stroke-width="1.6"/>
+<text x="580" y="94" text-anchor="middle" font-size="24" font-weight="bold" fill="#292A2C">Four depths, grouped readouts</text>
+<text x="580" y="121" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C">Position-wise, task-specific fusion</text>
+<path d="M348,101 V54 H854 V74" fill="none" stroke="#68665F" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<path d="M348,101 V148 H854 V128" fill="none" stroke="#68665F" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<path d="M783,86 H839" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<circle cx="854" cy="86" r="12" fill="white" stroke="#292A2C" stroke-width="1.8"/>
+<text x="854" y="93" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">+</text>
+<path d="M866,86 H896" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<rect x="897" y="74" width="217" height="24" fill="#F5EBED" stroke="#959188" stroke-width="1.6"/>
+<text x="1005" y="93" text-anchor="middle" font-size="21" font-weight="normal" fill="#7B3F4B">Classification</text>
+<path d="M1114,86 H1151 V101 H1175" fill="none" stroke="#292A2C" stroke-width="1.6" marker-end="url(#ink)"/>
+<path d="M783,116 H839" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<circle cx="854" cy="116" r="12" fill="white" stroke="#292A2C" stroke-width="1.8"/>
+<text x="854" y="123" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">+</text>
+<path d="M866,116 H896" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<rect x="897" y="104" width="217" height="24" fill="#EAF0E8" stroke="#959188" stroke-width="1.6"/>
+<text x="1005" y="123" text-anchor="middle" font-size="21" font-weight="normal" fill="#536858">Regression</text>
+<path d="M1114,116 H1151 V101 H1175" fill="none" stroke="#292A2C" stroke-width="1.6" marker-end="url(#ink)"/>
+<text x="1221" y="108" text-anchor="middle" font-size="22" font-weight="normal" fill="#292A2C">Outputs</text>
+<path d="M139,205 H180" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="181" y="175" width="147" height="60" fill="#E5E0D8" stroke="#959188" stroke-width="1.6"/>
+<text x="254" y="200" text-anchor="middle" font-size="26" font-weight="bold" fill="#292A2C">P3</text>
+<text x="254" y="224" text-anchor="middle" font-size="18" font-weight="normal" fill="#292A2C">128 × 80 × 80</text>
+<path d="M328,205 H377" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="378" y="167" width="405" height="76" fill="#F5EBED" stroke="#959188" stroke-width="1.6"/>
+<text x="580" y="198" text-anchor="middle" font-size="24" font-weight="bold" fill="#292A2C">Four depths, grouped readouts</text>
+<text x="580" y="225" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C">Position-wise, task-specific fusion</text>
+<path d="M348,205 V158 H854 V178" fill="none" stroke="#68665F" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<path d="M348,205 V252 H854 V232" fill="none" stroke="#68665F" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<path d="M783,190 H839" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<circle cx="854" cy="190" r="12" fill="white" stroke="#292A2C" stroke-width="1.8"/>
+<text x="854" y="197" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">+</text>
+<path d="M866,190 H896" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<rect x="897" y="178" width="217" height="24" fill="#F5EBED" stroke="#959188" stroke-width="1.6"/>
+<text x="1005" y="197" text-anchor="middle" font-size="21" font-weight="normal" fill="#7B3F4B">Classification</text>
+<path d="M1114,190 H1151 V205 H1175" fill="none" stroke="#292A2C" stroke-width="1.6" marker-end="url(#ink)"/>
+<path d="M783,220 H839" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<circle cx="854" cy="220" r="12" fill="white" stroke="#292A2C" stroke-width="1.8"/>
+<text x="854" y="227" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">+</text>
+<path d="M866,220 H896" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<rect x="897" y="208" width="217" height="24" fill="#EAF0E8" stroke="#959188" stroke-width="1.6"/>
+<text x="1005" y="227" text-anchor="middle" font-size="21" font-weight="normal" fill="#536858">Regression</text>
+<path d="M1114,220 H1151 V205 H1175" fill="none" stroke="#292A2C" stroke-width="1.6" marker-end="url(#ink)"/>
+<text x="1221" y="212" text-anchor="middle" font-size="22" font-weight="normal" fill="#292A2C">Outputs</text>
+<path d="M139,309 H180" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="181" y="279" width="147" height="60" fill="#D4CFC6" stroke="#959188" stroke-width="1.6"/>
+<text x="254" y="304" text-anchor="middle" font-size="26" font-weight="bold" fill="#292A2C">P4</text>
+<text x="254" y="328" text-anchor="middle" font-size="18" font-weight="normal" fill="#292A2C">256 × 40 × 40</text>
+<path d="M328,309 H377" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="378" y="271" width="405" height="76" fill="#F6F3ED" stroke="#959188" stroke-width="1.6"/>
+<text x="580" y="302" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">Four readout depths</text>
+<text x="580" y="329" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C">Position-wise, task-specific fusion</text>
+<path d="M348,309 V262 H854 V282" fill="none" stroke="#68665F" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<path d="M348,309 V356 H854 V336" fill="none" stroke="#68665F" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<path d="M783,294 H839" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<circle cx="854" cy="294" r="12" fill="white" stroke="#292A2C" stroke-width="1.8"/>
+<text x="854" y="301" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">+</text>
+<path d="M866,294 H896" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<rect x="897" y="282" width="217" height="24" fill="#F5EBED" stroke="#959188" stroke-width="1.6"/>
+<text x="1005" y="301" text-anchor="middle" font-size="21" font-weight="normal" fill="#7B3F4B">Classification</text>
+<path d="M1114,294 H1151 V309 H1175" fill="none" stroke="#292A2C" stroke-width="1.6" marker-end="url(#ink)"/>
+<path d="M783,324 H839" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<circle cx="854" cy="324" r="12" fill="white" stroke="#292A2C" stroke-width="1.8"/>
+<text x="854" y="331" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">+</text>
+<path d="M866,324 H896" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<rect x="897" y="312" width="217" height="24" fill="#EAF0E8" stroke="#959188" stroke-width="1.6"/>
+<text x="1005" y="331" text-anchor="middle" font-size="21" font-weight="normal" fill="#536858">Regression</text>
+<path d="M1114,324 H1151 V309 H1175" fill="none" stroke="#292A2C" stroke-width="1.6" marker-end="url(#ink)"/>
+<text x="1221" y="316" text-anchor="middle" font-size="22" font-weight="normal" fill="#292A2C">Outputs</text>
+<path d="M139,413 H180" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="181" y="383" width="147" height="60" fill="#C2BBB1" stroke="#959188" stroke-width="1.6"/>
+<text x="254" y="408" text-anchor="middle" font-size="26" font-weight="bold" fill="#292A2C">P5</text>
+<text x="254" y="432" text-anchor="middle" font-size="18" font-weight="normal" fill="#292A2C">512 × 20 × 20</text>
+<path d="M328,413 H377" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="378" y="375" width="405" height="76" fill="#F6F3ED" stroke="#959188" stroke-width="1.6"/>
+<text x="580" y="406" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">Four readout depths</text>
+<text x="580" y="433" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C">Position-wise, task-specific fusion</text>
+<path d="M348,413 V366 H854 V386" fill="none" stroke="#68665F" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<path d="M348,413 V460 H854 V440" fill="none" stroke="#68665F" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<path d="M783,398 H839" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<circle cx="854" cy="398" r="12" fill="white" stroke="#292A2C" stroke-width="1.8"/>
+<text x="854" y="405" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">+</text>
+<path d="M866,398 H896" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<rect x="897" y="386" width="217" height="24" fill="#F5EBED" stroke="#959188" stroke-width="1.6"/>
+<text x="1005" y="405" text-anchor="middle" font-size="21" font-weight="normal" fill="#7B3F4B">Classification</text>
+<path d="M1114,398 H1151 V413 H1175" fill="none" stroke="#292A2C" stroke-width="1.6" marker-end="url(#ink)"/>
+<path d="M783,428 H839" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<circle cx="854" cy="428" r="12" fill="white" stroke="#292A2C" stroke-width="1.8"/>
+<text x="854" y="435" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">+</text>
+<path d="M866,428 H896" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<rect x="897" y="416" width="217" height="24" fill="#EAF0E8" stroke="#959188" stroke-width="1.6"/>
+<text x="1005" y="435" text-anchor="middle" font-size="21" font-weight="normal" fill="#536858">Regression</text>
+<path d="M1114,428 H1151 V413 H1175" fill="none" stroke="#292A2C" stroke-width="1.6" marker-end="url(#ink)"/>
+<text x="1221" y="420" text-anchor="middle" font-size="22" font-weight="normal" fill="#292A2C">Outputs</text>
+<text x="653" y="480" text-anchor="middle" font-size="21" font-weight="normal" fill="#68665F">Each module includes two 1×1 output projections; dashed lines carry the original X.</text>
+</g></svg>

@@ -1,4 +1,0 @@
-{
-  "status": "failed",
-  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E42E43_E40_JointDense_Parallel_AutoDL\\e42\\run_e40.py\", line 360, in <module>\n    main()\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E42E43_E40_JointDense_Parallel_AutoDL\\e42\\run_e40.py\", line 331, in main\n    result=check_all(core,args,REPORT)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E42E43_E40_JointDense_Parallel_AutoDL\\e42\\checks.py\", line 168, in check_all\n    require(any(p.grad.abs().sum()>0 for p in selected),'Zero group gradient '+group)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E42E43_E40_JointDense_Parallel_AutoDL\\e42\\checks.py\", line 16, in require\n    raise RuntimeError(message)\nRuntimeError: Zero group gradient 1.out_reg.\n"
-}

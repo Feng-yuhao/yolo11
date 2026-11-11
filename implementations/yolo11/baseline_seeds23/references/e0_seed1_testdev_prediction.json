@@ -1,0 +1,103 @@
+{
+  "status": "completed",
+  "seen_images": 1610,
+  "predictions": 474977,
+  "sha256": "d82e7378e09e9cef40a0e0cd33431715eefb7b4dc0b948d77480735d350b4f50",
+  "actual_tensor_shapes": {
+    "4x3x384x640": 321,
+    "4x3x640x640": 16,
+    "4x3x480x640": 65,
+    "2x3x480x640": 1
+  },
+  "elapsed_seconds": 56.65901633352041,
+  "finished_at": "2026-10-08T15:06:21+08:00",
+  "topology": {
+    "head": "ultralytics.nn.modules.head.Detect",
+    "nc": 10,
+    "detection_scales": 3,
+    "stride": [
+      8,
+      16,
+      32
+    ],
+    "parameter_count": 9431662
+  },
+  "backend": {
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true
+  },
+  "binding": {
+    "revision": "testdev_e0_e58_seed1_v1",
+    "package": {
+      "run.sh": "6bf56d944b201645cd5da377b2aebe6d33af4c59aa61315ccaff5633a056b9fa",
+      "README.md": "31e47ee29c31c3fc36702f34bca2d7f5cc1c82237afecabe3920e534a7c37188",
+      "references/e40_testdev_prediction_manifest.json": "d286a114cdb48d773457433daecaf3c9d1186fd19bd321cdf8494eb6879f975c",
+      "spatial_task_head.py": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+      "LICENSE-Ultralytics.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "references/e1_testdev_prediction_manifest.json": "a48aaaac62b901b34a70fd4be803db03a129d41102a9af77885309363dd5b473",
+      "references/e1_val_metadata.json": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+      "e57_spatial_task_head.py": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+      "test_local.py": "d91e4e63ee7ad147e2106212df1202377f56af54b0b7ecab53281e6bd4511407",
+      "references/e58_val_comparison.json": "428a3ed161d670c8cb25653dcdc2b5a7f5d4075c4de30c4369227eaad595c414",
+      "references/e0_val_metadata.json": "67a20e3bed484e9f5c7a4df62d6dd9213a632cd7577df12a26c5dd42b608938a",
+      "LOCAL_VALIDATION.md": "364774999a1371510f87cc16e716089fee846b5db909a5dd4e4328b2bc520276",
+      "run_eval.py": "5e77ba0494c00cbcd7582325b8c94b31a13fed228e3284d217210c6776ff6bcb",
+      "references/e58_training.json": "8cad1af1577cfb3d08cb2e81ff1b2e5513311490a152b3d9d87d573ceaf210b6",
+      "references/testdev_input_manifest.json": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+      "references/e40_testdev_official.json": "552f4e82067e4e8346efcbddec7e91ea9339ad3547a8a9028e4de15f49b7fa69",
+      "references/e1_testdev_official.json": "557ebad077b10985890e3b180242634b0d8942bb4b0b992bb870f3e4d8826241",
+      "d27_official.py": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+      "parent_spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
+    },
+    "source": {
+      "nn/modules/block.py": "d003cf2646c3c6bb6826874ae506e5822bec35f7c663e455de7ceb918c8149e0",
+      "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+      "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+      "engine/model.py": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97",
+      "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+      "engine/predictor.py": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e",
+      "models/yolo/detect/predict.py": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390",
+      "utils/ops.py": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd",
+      "nn/autobackend.py": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d",
+      "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70"
+    },
+    "checkpoint_sha256": {
+      "e0_seed1": "bc5d1304c7bf4e0c81db853d0d7a39dd46485940ec2b8c2da63df8c3eda934b8",
+      "e58_seed1": "d4afe6bcbedb415f5551a09e3f48e6f0d436d6a49d0d8080a5b9f6394fb7319e"
+    },
+    "val_prediction_sha256": {
+      "e0_seed1": "1299748cc7fa204c0243a836e71ddf4f862a3cb8241f559ed4268949b8786c26",
+      "e58_seed1": "5703f5c6903c2de91e25a900b4d7b90d88ede373ff66616e1f9a191df9ff0e21"
+    },
+    "protocol": {
+      "imgsz": 640,
+      "device": "0",
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "verbose": false,
+      "save": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "batch": 4,
+      "letterbox": "unchanged Ultralytics 8.3.0 predictor pre_transform",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "dataset_annotation_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+    "dataset_image_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+    "image_count": 1610,
+    "environment": {
+      "python": "3.10.21",
+      "torch": "2.5.1+cu121",
+      "cuda": "12.1",
+      "cudnn": 90100,
+      "gpu": "NVIDIA vGPU-32GB"
+    },
+    "allocator_cap_GiB": 6
+  }
+}

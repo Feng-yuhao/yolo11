@@ -1,6 +1,0 @@
-{
-  "status": "passed",
-  "synthetic_only": true,
-  "epochs": 2,
-  "standard_trainer_EMA_save_reload": true
-}

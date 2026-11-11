@@ -1,0 +1,10 @@
+{
+  "baseline": {
+    "relative_path": "runs/yolo26s_p2_baseline_img640_seed1_200e/weights/best.pt",
+    "sha256": "3f4af2b0d81509b4354025c09c77600e1c278a5ae35d425cd8342d43086c2ed7"
+  },
+  "e60": {
+    "relative_path": "runs/yolo26s_p2_e60_img640_seed1_200e/weights/best.pt",
+    "sha256": "13ca4403e9c7efa6d2b9ac05068a0489d826ba5a4020e4e8e12341f1795cb8f1"
+  }
+}

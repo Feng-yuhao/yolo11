@@ -1,6 +1,0 @@
-E36a vs E1, 640, seed1, frozen D27 official protocol
-AP50_95_percent: E1=25.6312, E36a=25.6111, delta=-0.0201 pp
-AP50_percent: E1=44.7255, E36a=44.5976, delta=-0.1278 pp
-AP75_percent: E1=25.0298, E36a=24.9678, delta=-0.0620 pp
-AR500_percent: E1=37.8147, E36a=37.8654, delta=+0.0507 pp
-Report: /root/autodl-tmp/yolo11_project/comparison_reports/PAIRED_SEED1_E1_E36A_640_OFFICIAL_20260928_143115_822735

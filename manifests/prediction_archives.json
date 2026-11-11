@@ -1,0 +1,454 @@
+{
+  "release_tag": "ivc-repro-v1.0.0",
+  "archives": [
+    {
+      "asset": "predictions_visdrone_yolo11.zip",
+      "bytes": 551524334,
+      "sha256": "72eb6e41de957f0d94b9a0aaf0739bcafc02c63e05ca653502b37b0ec27198ee",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/predictions_visdrone_yolo11.zip"
+    },
+    {
+      "asset": "predictions_visdrone_yolo26.zip",
+      "bytes": 160089867,
+      "sha256": "5ae645770e19868245fdfcda2d3f271157d7e94629c3f140e2b1eea32941ae77",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/predictions_visdrone_yolo26.zip"
+    },
+    {
+      "asset": "predictions_songdo.zip",
+      "bytes": 118688996,
+      "sha256": "98bfff5da6ad97c93974cdb06a691122ce672b22f7d5ca50d6dfa9d5bc575fe0",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/predictions_songdo.zip"
+    },
+    {
+      "asset": "predictions_dior.zip",
+      "bytes": 205470671,
+      "sha256": "18e9502f11672e797cefdd83de3a50935fc17ebbcf2550ffcd9e25a23e7f5501",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/predictions_dior.zip"
+    },
+    {
+      "asset": "predictions_uavdt_seed1.zip",
+      "bytes": 518716922,
+      "sha256": "39af0ab9a786b986364276404202946dc0695a8cbddc7c2021bb05f7c81ef5cf",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/predictions_uavdt_seed1.zip"
+    },
+    {
+      "asset": "predictions_uavdt_seed2.zip",
+      "bytes": 460805701,
+      "sha256": "d7acc6fe43e35a83a1a355444619fa6fe859fc7a9eaab5a2a7ea94c300e019a6",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/predictions_uavdt_seed2.zip"
+    },
+    {
+      "asset": "predictions_uavdt_seed3.zip",
+      "bytes": 468337408,
+      "sha256": "8b03db2afe31d4bcad1154d4c55770dee8151c2dcae902a53779399154e9cfc4",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/predictions_uavdt_seed3.zip"
+    }
+  ],
+  "members": [
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo11s-p2",
+      "seed": 1,
+      "member": "visdrone-test-dev/yolo11s-p2_seed1/predictions.json",
+      "bytes": 90470922,
+      "sha256": "048211d7875297658162953e0e3f7d4ae492caff8e96eb62af00b6cf56616a67",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo11s-p2",
+      "seed": 2,
+      "member": "visdrone-test-dev/yolo11s-p2_seed2/predictions.json",
+      "bytes": 90519624,
+      "sha256": "8b600d5b052287035e376c7b2961c45134a1e84c220cec0a9ec7446fc9e8b859",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo11s-p2",
+      "seed": 3,
+      "member": "visdrone-test-dev/yolo11s-p2_seed3/predictions.json",
+      "bytes": 91956049,
+      "sha256": "98033a1c0d2b82294a0768ecdeba5b02cb1b1f66ca813082c4b3e4cc980b1e8c",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo11s",
+      "seed": 1,
+      "member": "visdrone-test-dev/yolo11s_seed1/area_predictions.json",
+      "bytes": 97280155,
+      "sha256": "d82e7378e09e9cef40a0e0cd33431715eefb7b4dc0b948d77480735d350b4f50",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo11s",
+      "seed": 2,
+      "member": "visdrone-test-dev/yolo11s_seed2/area_predictions.json",
+      "bytes": 96736951,
+      "sha256": "2ce42820d8a23d01c0446d72bb5315a4968f1597db1a87106608e8d57b8bc2e1",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo11s",
+      "seed": 3,
+      "member": "visdrone-test-dev/yolo11s_seed3/area_predictions.json",
+      "bytes": 97534662,
+      "sha256": "d420c78fb80073fd22f4daed5226a6c841e765510a2fe17523cc6b01939f51fe",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "st-mdrf",
+      "seed": 1,
+      "member": "visdrone-test-dev/st-mdrf_seed1/area_predictions.json",
+      "bytes": 135920328,
+      "sha256": "ca22b92d3c74c73a8f38dc478e2cc84667a564840c159357ea0729d339ef7f06",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "st-mdrf",
+      "seed": 2,
+      "member": "visdrone-test-dev/st-mdrf_seed2/area_predictions.json",
+      "bytes": 131514264,
+      "sha256": "3e06286d32772cba370ba1a13ceb85adad6303fca2c5f58590f2126229326b52",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "st-mdrf",
+      "seed": 3,
+      "member": "visdrone-test-dev/st-mdrf_seed3/area_predictions.json",
+      "bytes": 132566961,
+      "sha256": "76b4857ce02b6f5b40bd328abe631fcfb1bf613f18d86224669e5fb048e856bb",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "no-group",
+      "seed": 1,
+      "member": "visdrone-test-dev/no-group_seed1/area_predictions.json",
+      "bytes": 129410993,
+      "sha256": "10e48a1e4de9b7367e71dd897fd6553c2c7a67ad1930c575101eab239fa62b45",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "no-group",
+      "seed": 2,
+      "member": "visdrone-test-dev/no-group_seed2/area_predictions.json",
+      "bytes": 131769789,
+      "sha256": "0330501c8e131ad1833d7cfb16c93b63548ece30d1c1e0bd637f2bdcbffc8dbd",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "no-group",
+      "seed": 3,
+      "member": "visdrone-test-dev/no-group_seed3/area_predictions.json",
+      "bytes": 130139006,
+      "sha256": "da5baf1fda8998107067af5bb3db265629f8e897a76c4b05552e80902ba0ad0a",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "uniform",
+      "seed": 1,
+      "member": "visdrone-test-dev/uniform_seed1/area_predictions.json",
+      "bytes": 132921807,
+      "sha256": "a6574e6775a60d46856eb86c5d2a380e957d3bba6f6f3661943657cf6a2e1e29",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "uniform",
+      "seed": 2,
+      "member": "visdrone-test-dev/uniform_seed2/area_predictions.json",
+      "bytes": 128079041,
+      "sha256": "25f37b4a34e9d7e8985463163bb59d5cd6f69b272608d46e3bce894ebc2091a5",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "uniform",
+      "seed": 3,
+      "member": "visdrone-test-dev/uniform_seed3/area_predictions.json",
+      "bytes": 128037418,
+      "sha256": "272acd3e23a64844ae37cb68bb0a9805a7eb36e9324c032168eb66d0cb58625a",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "shared",
+      "seed": 1,
+      "member": "visdrone-test-dev/shared_seed1/area_predictions.json",
+      "bytes": 134334704,
+      "sha256": "3846000529f7b573752524200151b70dc9d009df45880ed7589396fd11900651",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "shared",
+      "seed": 2,
+      "member": "visdrone-test-dev/shared_seed2/area_predictions.json",
+      "bytes": 130405313,
+      "sha256": "8dc26d55d80ad53b06ced78837ced37010b4ea91c5f5dc55fe757f6e49f6a705",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "shared",
+      "seed": 3,
+      "member": "visdrone-test-dev/shared_seed3/area_predictions.json",
+      "bytes": 133932627,
+      "sha256": "30f44eb2b55dec2811e3f145d91cc10525cf27c3241e2dce7ba9f57961867f29",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "tood-td",
+      "seed": 1,
+      "member": "visdrone-test-dev/tood-td_seed1/area_predictions.json",
+      "bytes": 130794778,
+      "sha256": "dab35c0dd5a06bcde55cd70ed9cabef7b802847508eecc5ea1fe01eef882835d",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "tood-td",
+      "seed": 2,
+      "member": "visdrone-test-dev/tood-td_seed2/area_predictions.json",
+      "bytes": 135478731,
+      "sha256": "3f133ce3ce711b50c13d16eddd39c8327c0b23a3a0da06c05725c927377ee7d0",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "tood-td",
+      "seed": 3,
+      "member": "visdrone-test-dev/tood-td_seed3/area_predictions.json",
+      "bytes": 129407261,
+      "sha256": "c8d6f5bc95d312bd2d0f1bde0a9b101d4fb8f33cab041d4ae718163655b85d25",
+      "asset": "predictions_visdrone_yolo11.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo26s-p2",
+      "seed": 1,
+      "member": "visdrone-test-dev/yolo26s-p2_seed1/area_predictions.json",
+      "bytes": 126081859,
+      "sha256": "0798c875d0104f9233e1569e817a2b9d0509d1622d0c8f9c0d4f5485e03671a3",
+      "asset": "predictions_visdrone_yolo26.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo26s-p2",
+      "seed": 2,
+      "member": "visdrone-test-dev/yolo26s-p2_seed2/area_predictions.json",
+      "bytes": 129468755,
+      "sha256": "ba43893822389ecbaa026097334a0abc2a07c6d3632a4c760e27d1e8cbcfcdc4",
+      "asset": "predictions_visdrone_yolo26.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo26s-p2",
+      "seed": 3,
+      "member": "visdrone-test-dev/yolo26s-p2_seed3/area_predictions.json",
+      "bytes": 127613380,
+      "sha256": "dc02b870a117369329b209ae294c2e3ecc335b2381635a2d71b2918428d31e19",
+      "asset": "predictions_visdrone_yolo26.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 1,
+      "member": "visdrone-test-dev/yolo26s-p2-st-mdrf_seed1/area_predictions.json",
+      "bytes": 126362062,
+      "sha256": "73d9693c6d907d7ad0188316c3aaf83e033dd84ea5177777427705d66fb8238a",
+      "asset": "predictions_visdrone_yolo26.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 2,
+      "member": "visdrone-test-dev/yolo26s-p2-st-mdrf_seed2/area_predictions.json",
+      "bytes": 122541555,
+      "sha256": "7c29c5aa9666984ee326c31dfbc006b443c100dd7a3f7b22b9b7a2308358abef",
+      "asset": "predictions_visdrone_yolo26.zip"
+    },
+    {
+      "dataset": "visdrone-test-dev",
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 3,
+      "member": "visdrone-test-dev/yolo26s-p2-st-mdrf_seed3/area_predictions.json",
+      "bytes": 132883525,
+      "sha256": "7ed78ebd2b36227ac3bce8e39948427645527b09ac8c50c2e5138e8605dabd85",
+      "asset": "predictions_visdrone_yolo26.zip"
+    },
+    {
+      "dataset": "songdo",
+      "model": "yolo11s-p2",
+      "seed": 1,
+      "member": "songdo/yolo11s-p2_seed1/coco_predictions.json",
+      "bytes": 103596972,
+      "sha256": "f4411e36d578d8e31a8dc8da57ea2d33f356bc28ee6de60d6eb62e1ad47f63f0",
+      "asset": "predictions_songdo.zip"
+    },
+    {
+      "dataset": "songdo",
+      "model": "yolo11s-p2",
+      "seed": 2,
+      "member": "songdo/yolo11s-p2_seed2/coco_predictions.json",
+      "bytes": 98878725,
+      "sha256": "5ffddd7153045a7955860a18ef54916538327557ef7aa89989cba01aabb61244",
+      "asset": "predictions_songdo.zip"
+    },
+    {
+      "dataset": "songdo",
+      "model": "yolo11s-p2",
+      "seed": 3,
+      "member": "songdo/yolo11s-p2_seed3/coco_predictions.json",
+      "bytes": 106587996,
+      "sha256": "e65ccb39604925e98624955442e985ed1036c82b2bdfe27652d775af8e71942a",
+      "asset": "predictions_songdo.zip"
+    },
+    {
+      "dataset": "songdo",
+      "model": "st-mdrf",
+      "seed": 1,
+      "member": "songdo/st-mdrf_seed1/coco_predictions.json",
+      "bytes": 103498704,
+      "sha256": "76117f99ca00466739e7a38763c7a1d61c3314c3c587318766401e9fd2b416b5",
+      "asset": "predictions_songdo.zip"
+    },
+    {
+      "dataset": "songdo",
+      "model": "st-mdrf",
+      "seed": 2,
+      "member": "songdo/st-mdrf_seed2/coco_predictions.json",
+      "bytes": 103444766,
+      "sha256": "77e450ad354a1075fda7219b37a7c02a95b76f62905535203061d82bdf5118cc",
+      "asset": "predictions_songdo.zip"
+    },
+    {
+      "dataset": "songdo",
+      "model": "st-mdrf",
+      "seed": 3,
+      "member": "songdo/st-mdrf_seed3/coco_predictions.json",
+      "bytes": 104504272,
+      "sha256": "1db4572d331598de71ad39f203b1fc914df230b599ff7cdb69d98a12a583ed71",
+      "asset": "predictions_songdo.zip"
+    },
+    {
+      "dataset": "dior",
+      "model": "yolo11s-p2",
+      "seed": 1,
+      "member": "dior/yolo11s-p2_seed1/predictions.json.gz",
+      "bytes": 29910151,
+      "sha256": "03d2bfd3f8fb9d5833453cdec5a70a98683310e27f67662582da96774e6ebe3f",
+      "asset": "predictions_dior.zip"
+    },
+    {
+      "dataset": "dior",
+      "model": "yolo11s-p2",
+      "seed": 2,
+      "member": "dior/yolo11s-p2_seed2/predictions.json.gz",
+      "bytes": 34963100,
+      "sha256": "48d51917c4940fa2206b886a618f5335050e27ae3af57bf7da24a4a4d3be2954",
+      "asset": "predictions_dior.zip"
+    },
+    {
+      "dataset": "dior",
+      "model": "yolo11s-p2",
+      "seed": 3,
+      "member": "dior/yolo11s-p2_seed3/predictions.json.gz",
+      "bytes": 40182244,
+      "sha256": "79a748ae1e3e1ac485afac77e762480701a4dad14088dc8fa232f9b22e0367e3",
+      "asset": "predictions_dior.zip"
+    },
+    {
+      "dataset": "dior",
+      "model": "st-mdrf",
+      "seed": 1,
+      "member": "dior/st-mdrf_seed1/predictions.json.gz",
+      "bytes": 32413035,
+      "sha256": "e3c427e283d28b7cb0c6b0279cdc7b2037b82e6d00bae7e7272b9f52b4310150",
+      "asset": "predictions_dior.zip"
+    },
+    {
+      "dataset": "dior",
+      "model": "st-mdrf",
+      "seed": 2,
+      "member": "dior/st-mdrf_seed2/predictions.json.gz",
+      "bytes": 31559544,
+      "sha256": "e0a1fce9039254eed955024beacbfee90bc2780507311b7fa00c342b8d4ebf95",
+      "asset": "predictions_dior.zip"
+    },
+    {
+      "dataset": "dior",
+      "model": "st-mdrf",
+      "seed": 3,
+      "member": "dior/st-mdrf_seed3/predictions.json.gz",
+      "bytes": 36440884,
+      "sha256": "0948f6a2a121963d98cf7a1608ecdb01b0944b94e4a5b4eb27fa5ebee42ba06a",
+      "asset": "predictions_dior.zip"
+    },
+    {
+      "dataset": "uavdt",
+      "model": "yolo11s-p2",
+      "seed": 1,
+      "member": "uavdt/yolo11s-p2_seed1/coco_predictions.json",
+      "bytes": 1231934968,
+      "sha256": "5f898137c0c6fd040fdd6fcaf0f1d322742cd3332984a83c6501c08ec8395440",
+      "asset": "predictions_uavdt_seed1.zip"
+    },
+    {
+      "dataset": "uavdt",
+      "model": "st-mdrf",
+      "seed": 1,
+      "member": "uavdt/st-mdrf_seed1/coco_predictions.json",
+      "bytes": 1244473088,
+      "sha256": "2f9eb8b4f24aedb12334f2441bf7b32314f2d9e8991af43a5b11028843c2839f",
+      "asset": "predictions_uavdt_seed1.zip"
+    },
+    {
+      "dataset": "uavdt",
+      "model": "yolo11s-p2",
+      "seed": 2,
+      "member": "uavdt/yolo11s-p2_seed2/coco_predictions.json",
+      "bytes": 846222193,
+      "sha256": "80015b144514c9bf2e27adb0ec1f09dd1ad1293d4446557048abb6ed4dbc015c",
+      "asset": "predictions_uavdt_seed2.zip"
+    },
+    {
+      "dataset": "uavdt",
+      "model": "st-mdrf",
+      "seed": 2,
+      "member": "uavdt/st-mdrf_seed2/coco_predictions.json",
+      "bytes": 800430294,
+      "sha256": "eae95ae99c55a7821713f5c39024196fdf7b25437be11b62bc4950a7f40daa93",
+      "asset": "predictions_uavdt_seed2.zip"
+    },
+    {
+      "dataset": "uavdt",
+      "model": "yolo11s-p2",
+      "seed": 3,
+      "member": "uavdt/yolo11s-p2_seed3/coco_predictions.json",
+      "bytes": 846444570,
+      "sha256": "243da18d2b6383e41ea47cad97466ca0ded719f2fb3c68b222c4402f54df735f",
+      "asset": "predictions_uavdt_seed3.zip"
+    },
+    {
+      "dataset": "uavdt",
+      "model": "st-mdrf",
+      "seed": 3,
+      "member": "uavdt/st-mdrf_seed3/coco_predictions.json",
+      "bytes": 827709916,
+      "sha256": "e908ec7bc1f6c92f28588452348f9b36c1bab68b4c805dd842bb69d0593d7b93",
+      "asset": "predictions_uavdt_seed3.zip"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-{
-  "status": "failed",
-  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\run_e39.py\", line 343, in <module>\n    main()\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\run_e39.py\", line 314, in main\n    result=check_all(core,args,REPORT)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\checks.py\", line 136, in check_all\n    require(any(not torch.equal(p,before[n]) for n,p in new.named_parameters() if n.startswith(group+'.')),\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\checks.py\", line 16, in require\n    raise RuntimeError(message)\nRuntimeError: No actual parameter update reduce\n"
-}

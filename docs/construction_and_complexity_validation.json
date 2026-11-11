@@ -1,0 +1,126 @@
+{
+  "fresh_model_constructions": [
+    {
+      "model": "no-group",
+      "seed": 1,
+      "fresh_construction_from_original_pretraining": true,
+      "parameters": 11023640,
+      "training_executed": false
+    },
+    {
+      "model": "shared",
+      "seed": 1,
+      "fresh_construction_from_original_pretraining": true,
+      "parameters": 11172584,
+      "training_executed": false
+    },
+    {
+      "model": "st-mdrf",
+      "seed": 1,
+      "fresh_construction_from_original_pretraining": true,
+      "parameters": 11173112,
+      "training_executed": false
+    },
+    {
+      "model": "tood-td",
+      "seed": 1,
+      "fresh_construction_from_original_pretraining": true,
+      "parameters": 10153716,
+      "training_executed": false
+    },
+    {
+      "model": "uniform",
+      "seed": 1,
+      "fresh_construction_from_original_pretraining": true,
+      "parameters": 11121752,
+      "training_executed": false
+    },
+    {
+      "model": "yolo11s-p2",
+      "seed": 1,
+      "fresh_construction_from_original_pretraining": true,
+      "parameters": 9678968,
+      "training_executed": false
+    },
+    {
+      "model": "yolo11s",
+      "seed": 1,
+      "fresh_construction_from_original_pretraining": true,
+      "parameters": 9431662,
+      "training_executed": false
+    },
+    {
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 1,
+      "fresh_construction_from_original_pretraining": true,
+      "parameters": 11143856,
+      "training_executed": false
+    },
+    {
+      "model": "yolo26s-p2",
+      "seed": 1,
+      "fresh_construction_from_original_pretraining": true,
+      "parameters": 9668144,
+      "training_executed": false
+    }
+  ],
+  "all_parameters_match_original_checkpoints": true,
+  "unfused_640_profiles": [
+    {
+      "model": "yolo11s-p2",
+      "seed": 1,
+      "parameters": 9678968,
+      "Conv_Linear_MACs": 16938163200,
+      "TD_bmm_MACs": 0,
+      "Conv_Linear_GMACs": 16.9381632,
+      "TD_bmm_GMACs": 0.0,
+      "executed_dense_GMACs": 16.9381632,
+      "input": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "unfused": true,
+      "excluded": "normalization, activation, element-wise fusion, decoding and other uncounted operators; no latency measurement"
+    },
+    {
+      "model": "tood-td",
+      "seed": 1,
+      "parameters": 10153716,
+      "Conv_Linear_MACs": 25362840960,
+      "TD_bmm_MACs": 1671168000,
+      "Conv_Linear_GMACs": 25.36284096,
+      "TD_bmm_GMACs": 1.671168,
+      "executed_dense_GMACs": 27.03400896,
+      "input": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "unfused": true,
+      "excluded": "normalization, activation, element-wise fusion, decoding and other uncounted operators; no latency measurement"
+    },
+    {
+      "model": "st-mdrf",
+      "seed": 1,
+      "parameters": 11173112,
+      "Conv_Linear_MACs": 29569062400,
+      "TD_bmm_MACs": 0,
+      "Conv_Linear_GMACs": 29.5690624,
+      "TD_bmm_GMACs": 0.0,
+      "executed_dense_GMACs": 29.5690624,
+      "input": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "unfused": true,
+      "excluded": "normalization, activation, element-wise fusion, decoding and other uncounted operators; no latency measurement"
+    }
+  ],
+  "all_counts_match_original_records": true,
+  "training_or_AP_scoring_executed": false
+}

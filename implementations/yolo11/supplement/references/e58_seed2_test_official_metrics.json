@@ -1,0 +1,302 @@
+{
+  "status": "completed",
+  "official": {
+    "AP50_95_percent": 24.143693232632295,
+    "AP50_percent": 41.17819365304118,
+    "AP75_percent": 24.718895658404453,
+    "AR1_percent": 2.008076502552699,
+    "AR10_percent": 11.69696220942949,
+    "AR100_percent": 31.65084036169508,
+    "AR500_percent": 35.669843087875165,
+    "class_image_weights": {
+      "1": 1197,
+      "2": 797,
+      "3": 377,
+      "4": 1530,
+      "5": 1167,
+      "6": 750,
+      "7": 245,
+      "8": 232,
+      "9": 838,
+      "10": 794
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 1197,
+        "AP50_95_percent": 14.981842014485741,
+        "AP50_percent": 36.145115692975985,
+        "AP75_percent": 9.522249675939442
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 797,
+        "AP50_95_percent": 7.680103539306498,
+        "AP50_percent": 21.355268372997468,
+        "AP75_percent": 3.385898633608417
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 377,
+        "AP50_95_percent": 4.9616121341937305,
+        "AP50_percent": 11.449157461254048,
+        "AP75_percent": 3.5918077134262045
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 1530,
+        "AP50_95_percent": 48.27747790910778,
+        "AP50_percent": 75.77802108173002,
+        "AP75_percent": 53.72282302749232
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 1167,
+        "AP50_95_percent": 20.79463244370879,
+        "AP50_percent": 29.66804682182379,
+        "AP75_percent": 24.67034091142695
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 750,
+        "AP50_95_percent": 24.427473923469385,
+        "AP50_percent": 37.88587668513439,
+        "AP75_percent": 26.847738946872152
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 245,
+        "AP50_95_percent": 10.942986931169372,
+        "AP50_percent": 20.49629276617709,
+        "AP75_percent": 10.24591488788417
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 232,
+        "AP50_95_percent": 8.6588254723253,
+        "AP50_percent": 14.533814929455485,
+        "AP75_percent": 9.163959691920406
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 838,
+        "AP50_95_percent": 38.04333767711843,
+        "AP50_percent": 53.772638571778884,
+        "AP75_percent": 43.74191829719057
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 794,
+        "AP50_95_percent": 15.666929574095892,
+        "AP50_percent": 37.00888919714056,
+        "AP75_percent": 10.178657037996919
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "ignore_audit": {
+    "raw_prediction_count": 643526,
+    "official_prediction_count_after_class0_filter": 619888,
+    "removed_by_class0_ignore": 23638,
+    "removed_by_class0_fraction": 0.036732004612090266,
+    "overlap_class11_others": 1497,
+    "overlap_class11_fraction": 0.002326246336589353,
+    "per_class": {
+      "1": {
+        "total": 224236,
+        "removed_by_class0": 7444,
+        "overlap_class11": 415
+      },
+      "2": {
+        "total": 20320,
+        "removed_by_class0": 1363,
+        "overlap_class11": 87
+      },
+      "3": {
+        "total": 32526,
+        "removed_by_class0": 1000,
+        "overlap_class11": 71
+      },
+      "4": {
+        "total": 241301,
+        "removed_by_class0": 9069,
+        "overlap_class11": 307
+      },
+      "5": {
+        "total": 13348,
+        "removed_by_class0": 80,
+        "overlap_class11": 32
+      },
+      "6": {
+        "total": 23180,
+        "removed_by_class0": 295,
+        "overlap_class11": 215
+      },
+      "7": {
+        "total": 7022,
+        "removed_by_class0": 294,
+        "overlap_class11": 113
+      },
+      "8": {
+        "total": 2817,
+        "removed_by_class0": 75,
+        "overlap_class11": 73
+      },
+      "9": {
+        "total": 10724,
+        "removed_by_class0": 75,
+        "overlap_class11": 5
+      },
+      "10": {
+        "total": 68052,
+        "removed_by_class0": 3943,
+        "overlap_class11": 179
+      }
+    },
+    "fp_audit": [
+      {
+        "confidence": 0.05,
+        "area_group": "all",
+        "fp": 91137,
+        "fp_ignore": 8010,
+        "fp_others": 340,
+        "tp": 43973,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.0878896606208236,
+        "fp_class11_others_fraction": 0.003730647267300877
+      },
+      {
+        "confidence": 0.05,
+        "area_group": "small",
+        "fp": 71716,
+        "fp_ignore": 7671,
+        "fp_others": 179,
+        "tp": 24367,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.10696357855987507,
+        "fp_class11_others_fraction": 0.0024959562719616265
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "all",
+        "fp": 51901,
+        "fp_ignore": 4216,
+        "fp_others": 212,
+        "tp": 41755,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.08123157549950868,
+        "fp_class11_others_fraction": 0.004084699716768463
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "small",
+        "fp": 39256,
+        "fp_ignore": 4015,
+        "fp_others": 100,
+        "tp": 22552,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.10227735887507643,
+        "fp_class11_others_fraction": 0.002547381292031791
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "all",
+        "fp": 19537,
+        "fp_ignore": 1215,
+        "fp_others": 99,
+        "tp": 36801,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.06218969135486513,
+        "fp_class11_others_fraction": 0.005067308184470492
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "small",
+        "fp": 12794,
+        "fp_ignore": 1116,
+        "fp_others": 43,
+        "tp": 18524,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.08722838830701891,
+        "fp_class11_others_fraction": 0.0033609504455213383
+      }
+    ],
+    "fp_audit_note": "Greedy IoU=0.50 class-wise matching before class-0 raster filtering; ignored score-zero GT matches are neutral."
+  },
+  "binding": {
+    "revision": "testdev_e58_seed2_v1",
+    "seed": 2,
+    "package": {
+      "base_eval.py": "5e77ba0494c00cbcd7582325b8c94b31a13fed228e3284d217210c6776ff6bcb",
+      "d27_official.py": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+      "e57_spatial_task_head.py": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+      "LICENSE-Ultralytics.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "LOCAL_VALIDATION.md": "01e00d9a901a9e3854967d1f6e3c5d013ebf0a13b5ae99ca0b562eade6b85c28",
+      "parent_spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+      "README.md": "b63b52ddefca6b6cbe1e1648329f5e60c45d4e7a941a27b6bbaeea12a934a12f",
+      "references/e1_seed2_official_metrics.json": "61265fef7b358b6f1cfd676c1485cbba6ee0a1a7df3952bc26b9692be2b08178",
+      "references/e1_seed2_prediction_manifest.json": "20979a7019157ed032ab772c658a9efaf98fba109412046637de5bdb26432025",
+      "references/e1_val_metadata.json": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+      "references/e40_seed2_official_metrics.json": "3d70b5cf7eefc6570983c46eceec42ca145d0a966124d9370f6b60641f2b01d5",
+      "references/e40_seed2_prediction_manifest.json": "fb9a6f924314006399501f7268dc97234567ffd830f11de49449ba8009265161",
+      "references/e58_seed2_comparison.json": "53d95b3537c1311df0971db9eb2e7db772af2c56b1cd9ec8264de54a9c5fc481",
+      "references/e58_seed2_completion.json": "b3c1795ab2e4fac540d06fe6903a213053d950fe93831a1eec2e735884378062",
+      "references/e58_seed2_training.json": "ecb279b57840ea4dbe4feb058caef8e704d964e038c51b9b948b476b30a7c10c",
+      "references/seed1_testdev_summary.json": "1fa43c7f95b22fe764be4740e371461cbe962ab8f2bddb07faa4fc1133ae803c",
+      "references/testdev_input_manifest.json": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+      "references/val_smoke.json": "2bfc0db0a7007c1a9149a960f2ebda87ec24e4e3213e4196e15366db8fa8fd9d",
+      "run.sh": "775dcaada97c5654556f827592285d817e1938fb58eb40849d1b65e34c8ecd7f",
+      "run_eval.py": "dc6868b9c231c45c891d15945ec0a8ea77db362adacb336af4cb6f4500345c04",
+      "spatial_task_head.py": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+      "test_local.py": "55a5eba2f20c61072402793a266d4469b790410642d186238f8ad5e851505c1b"
+    },
+    "source": {
+      "nn/modules/block.py": "d003cf2646c3c6bb6826874ae506e5822bec35f7c663e455de7ceb918c8149e0",
+      "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+      "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+      "engine/model.py": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97",
+      "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+      "engine/predictor.py": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e",
+      "models/yolo/detect/predict.py": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390",
+      "utils/ops.py": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd",
+      "nn/autobackend.py": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d",
+      "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70"
+    },
+    "checkpoint_sha256": "0024eac956589836c2215e35ad30e295286f1a958129322a0a05b74c6ae5f9a2",
+    "val_smoke_sha256": "2bfc0db0a7007c1a9149a960f2ebda87ec24e4e3213e4196e15366db8fa8fd9d",
+    "protocol": {
+      "imgsz": 640,
+      "device": "0",
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "verbose": false,
+      "save": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "batch": 4,
+      "letterbox": "unchanged Ultralytics 8.3.0 predictor pre_transform",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "dataset_annotation_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+    "dataset_image_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+    "image_count": 1610,
+    "environment": {
+      "python": "3.10.21",
+      "torch": "2.5.1+cu121",
+      "cuda": "12.1",
+      "cudnn": 90100,
+      "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+    },
+    "allocator_cap_GiB": 6
+  },
+  "checkpoint": "/root/autodl-tmp/yolo11_project/runs/e58a_e57_allscale_w96_img640_seed2_200e/weights/best.pt",
+  "checkpoint_sha256": "0024eac956589836c2215e35ad30e295286f1a958129322a0a05b74c6ae5f9a2",
+  "prediction_sha256": "0330501c8e131ad1833d7cfb16c93b63548ece30d1c1e0bd637f2bdcbffc8dbd",
+  "finished_at": "2026-10-09T01:21:06+08:00"
+}

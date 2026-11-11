@@ -1,0 +1,12 @@
+{
+  "dior": {
+    "manifest_sha256": "81e7d131ac251aad9406342ca0832cdf89269d6069e84f3fe932ed7710bf36cb",
+    "protocol_sha256": "e39a1ff263f67a22d85eeab1da9f626f02cff258dda7805015c928cc97efad15",
+    "gt_sha256": "732f613405151cf0d99ad5b4d8f7f48ab6e93b78f5dcb5c3e6cc99331ae11740"
+  },
+  "tiny": {
+    "manifest_sha256": "d144aad99517da2a3c6c6843e9f0c7a6db2a1a2ba7e235279cd0f9d58d204d94",
+    "protocol_sha256": "a5b850a5bd05f72e53b9caf5b0ae394e404a611807321f2e8fc556efda90cbaa",
+    "gt_sha256": "0c1c14f31a7ba0213c10d91cfddd977d085a907e569b617e070924f7109db437"
+  }
+}

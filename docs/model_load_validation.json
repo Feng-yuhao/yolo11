@@ -1,0 +1,621 @@
+{
+  "checkpoint_loads": 27,
+  "synthetic_forwards": 9,
+  "device": "cpu",
+  "training_or_AP_evaluation_executed": false,
+  "results": [
+    {
+      "model": "yolo11s-p2",
+      "seed": 1,
+      "checkpoint_sha_verified": true,
+      "parameters": 9678968,
+      "training_seed_metadata": 1,
+      "loaded_on": "cpu",
+      "native_head": "ultralytics.nn.modules.head.Detect",
+      "synthetic_forward_shapes": [
+        [
+          1,
+          14,
+          1360
+        ],
+        [
+          1,
+          74,
+          32,
+          32
+        ],
+        [
+          1,
+          74,
+          16,
+          16
+        ],
+        [
+          1,
+          74,
+          8,
+          8
+        ],
+        [
+          1,
+          74,
+          4,
+          4
+        ]
+      ],
+      "finite_synthetic_128_forward": true
+    },
+    {
+      "model": "yolo11s-p2",
+      "seed": 2,
+      "checkpoint_sha_verified": true,
+      "parameters": 9678968,
+      "training_seed_metadata": 2,
+      "loaded_on": "cpu",
+      "native_head": "ultralytics.nn.modules.head.Detect"
+    },
+    {
+      "model": "yolo11s-p2",
+      "seed": 3,
+      "checkpoint_sha_verified": true,
+      "parameters": 9678968,
+      "training_seed_metadata": 3,
+      "loaded_on": "cpu",
+      "native_head": "ultralytics.nn.modules.head.Detect"
+    },
+    {
+      "model": "yolo11s",
+      "seed": 1,
+      "checkpoint_sha_verified": true,
+      "parameters": 9431662,
+      "training_seed_metadata": 1,
+      "loaded_on": "cpu",
+      "native_head": "ultralytics.nn.modules.head.Detect",
+      "synthetic_forward_shapes": [
+        [
+          1,
+          14,
+          336
+        ],
+        [
+          1,
+          74,
+          16,
+          16
+        ],
+        [
+          1,
+          74,
+          8,
+          8
+        ],
+        [
+          1,
+          74,
+          4,
+          4
+        ]
+      ],
+      "finite_synthetic_128_forward": true
+    },
+    {
+      "model": "yolo11s",
+      "seed": 2,
+      "checkpoint_sha_verified": true,
+      "parameters": 9431662,
+      "training_seed_metadata": 2,
+      "loaded_on": "cpu",
+      "native_head": "ultralytics.nn.modules.head.Detect"
+    },
+    {
+      "model": "yolo11s",
+      "seed": 3,
+      "checkpoint_sha_verified": true,
+      "parameters": 9431662,
+      "training_seed_metadata": 3,
+      "loaded_on": "cpu",
+      "native_head": "ultralytics.nn.modules.head.Detect"
+    },
+    {
+      "model": "st-mdrf",
+      "seed": 1,
+      "checkpoint_sha_verified": true,
+      "parameters": 11173112,
+      "training_seed_metadata": 1,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect",
+      "synthetic_forward_shapes": [
+        [
+          1,
+          14,
+          1360
+        ],
+        [
+          1,
+          74,
+          32,
+          32
+        ],
+        [
+          1,
+          74,
+          16,
+          16
+        ],
+        [
+          1,
+          74,
+          8,
+          8
+        ],
+        [
+          1,
+          74,
+          4,
+          4
+        ]
+      ],
+      "finite_synthetic_128_forward": true
+    },
+    {
+      "model": "st-mdrf",
+      "seed": 2,
+      "checkpoint_sha_verified": true,
+      "parameters": 11173112,
+      "training_seed_metadata": 2,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect"
+    },
+    {
+      "model": "st-mdrf",
+      "seed": 3,
+      "checkpoint_sha_verified": true,
+      "parameters": 11173112,
+      "training_seed_metadata": 3,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect"
+    },
+    {
+      "model": "no-group",
+      "seed": 1,
+      "checkpoint_sha_verified": true,
+      "parameters": 11023640,
+      "training_seed_metadata": 1,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect",
+      "synthetic_forward_shapes": [
+        [
+          1,
+          14,
+          1360
+        ],
+        [
+          1,
+          74,
+          32,
+          32
+        ],
+        [
+          1,
+          74,
+          16,
+          16
+        ],
+        [
+          1,
+          74,
+          8,
+          8
+        ],
+        [
+          1,
+          74,
+          4,
+          4
+        ]
+      ],
+      "finite_synthetic_128_forward": true
+    },
+    {
+      "model": "no-group",
+      "seed": 2,
+      "checkpoint_sha_verified": true,
+      "parameters": 11023640,
+      "training_seed_metadata": 2,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect"
+    },
+    {
+      "model": "no-group",
+      "seed": 3,
+      "checkpoint_sha_verified": true,
+      "parameters": 11023640,
+      "training_seed_metadata": 3,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect"
+    },
+    {
+      "model": "uniform",
+      "seed": 1,
+      "checkpoint_sha_verified": true,
+      "parameters": 11121752,
+      "training_seed_metadata": 1,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect",
+      "synthetic_forward_shapes": [
+        [
+          1,
+          14,
+          1360
+        ],
+        [
+          1,
+          74,
+          32,
+          32
+        ],
+        [
+          1,
+          74,
+          16,
+          16
+        ],
+        [
+          1,
+          74,
+          8,
+          8
+        ],
+        [
+          1,
+          74,
+          4,
+          4
+        ]
+      ],
+      "finite_synthetic_128_forward": true
+    },
+    {
+      "model": "uniform",
+      "seed": 2,
+      "checkpoint_sha_verified": true,
+      "parameters": 11121752,
+      "training_seed_metadata": 2,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect"
+    },
+    {
+      "model": "uniform",
+      "seed": 3,
+      "checkpoint_sha_verified": true,
+      "parameters": 11121752,
+      "training_seed_metadata": 3,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect"
+    },
+    {
+      "model": "shared",
+      "seed": 1,
+      "checkpoint_sha_verified": true,
+      "parameters": 11172584,
+      "training_seed_metadata": 1,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect",
+      "synthetic_forward_shapes": [
+        [
+          1,
+          14,
+          1360
+        ],
+        [
+          1,
+          74,
+          32,
+          32
+        ],
+        [
+          1,
+          74,
+          16,
+          16
+        ],
+        [
+          1,
+          74,
+          8,
+          8
+        ],
+        [
+          1,
+          74,
+          4,
+          4
+        ]
+      ],
+      "finite_synthetic_128_forward": true
+    },
+    {
+      "model": "shared",
+      "seed": 2,
+      "checkpoint_sha_verified": true,
+      "parameters": 11172584,
+      "training_seed_metadata": 2,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect"
+    },
+    {
+      "model": "shared",
+      "seed": 3,
+      "checkpoint_sha_verified": true,
+      "parameters": 11172584,
+      "training_seed_metadata": 3,
+      "loaded_on": "cpu",
+      "native_head": "spatial_task_head.SpatialTaskDetect"
+    },
+    {
+      "model": "tood-td",
+      "seed": 1,
+      "checkpoint_sha_verified": true,
+      "parameters": 10153716,
+      "training_seed_metadata": 1,
+      "loaded_on": "cpu",
+      "native_head": "tood_td_head.TOODTDDetect",
+      "synthetic_forward_shapes": [
+        [
+          1,
+          14,
+          1360
+        ],
+        [
+          1,
+          74,
+          32,
+          32
+        ],
+        [
+          1,
+          74,
+          16,
+          16
+        ],
+        [
+          1,
+          74,
+          8,
+          8
+        ],
+        [
+          1,
+          74,
+          4,
+          4
+        ]
+      ],
+      "finite_synthetic_128_forward": true
+    },
+    {
+      "model": "tood-td",
+      "seed": 2,
+      "checkpoint_sha_verified": true,
+      "parameters": 10153716,
+      "training_seed_metadata": 2,
+      "loaded_on": "cpu",
+      "native_head": "tood_td_head.TOODTDDetect"
+    },
+    {
+      "model": "tood-td",
+      "seed": 3,
+      "checkpoint_sha_verified": true,
+      "parameters": 10153716,
+      "training_seed_metadata": 3,
+      "loaded_on": "cpu",
+      "native_head": "tood_td_head.TOODTDDetect"
+    },
+    {
+      "model": "yolo26s-p2",
+      "seed": 1,
+      "checkpoint_sha_verified": true,
+      "parameters": 9668144,
+      "training_seed_metadata": 1,
+      "loaded_on": "cpu",
+      "native_head": "ultralytics.nn.modules.head.Detect",
+      "synthetic_forward_shapes": [
+        [
+          1,
+          14,
+          1360
+        ],
+        [
+          1,
+          4,
+          1360
+        ],
+        [
+          1,
+          10,
+          1360
+        ],
+        [
+          1,
+          64,
+          32,
+          32
+        ],
+        [
+          1,
+          128,
+          16,
+          16
+        ],
+        [
+          1,
+          256,
+          8,
+          8
+        ],
+        [
+          1,
+          512,
+          4,
+          4
+        ],
+        [
+          1,
+          4,
+          1360
+        ],
+        [
+          1,
+          10,
+          1360
+        ],
+        [
+          1,
+          64,
+          32,
+          32
+        ],
+        [
+          1,
+          128,
+          16,
+          16
+        ],
+        [
+          1,
+          256,
+          8,
+          8
+        ],
+        [
+          1,
+          512,
+          4,
+          4
+        ]
+      ],
+      "finite_synthetic_128_forward": true
+    },
+    {
+      "model": "yolo26s-p2",
+      "seed": 2,
+      "checkpoint_sha_verified": true,
+      "parameters": 9668144,
+      "training_seed_metadata": 2,
+      "loaded_on": "cpu",
+      "native_head": "ultralytics.nn.modules.head.Detect"
+    },
+    {
+      "model": "yolo26s-p2",
+      "seed": 3,
+      "checkpoint_sha_verified": true,
+      "parameters": 9668144,
+      "training_seed_metadata": 3,
+      "loaded_on": "cpu",
+      "native_head": "ultralytics.nn.modules.head.Detect"
+    },
+    {
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 1,
+      "checkpoint_sha_verified": true,
+      "parameters": 11143856,
+      "training_seed_metadata": 1,
+      "loaded_on": "cpu",
+      "native_head": "e60_adapter.E60Detect26",
+      "synthetic_forward_shapes": [
+        [
+          1,
+          14,
+          1360
+        ],
+        [
+          1,
+          4,
+          1360
+        ],
+        [
+          1,
+          10,
+          1360
+        ],
+        [
+          1,
+          64,
+          32,
+          32
+        ],
+        [
+          1,
+          128,
+          16,
+          16
+        ],
+        [
+          1,
+          256,
+          8,
+          8
+        ],
+        [
+          1,
+          512,
+          4,
+          4
+        ],
+        [
+          1,
+          4,
+          1360
+        ],
+        [
+          1,
+          10,
+          1360
+        ],
+        [
+          1,
+          64,
+          32,
+          32
+        ],
+        [
+          1,
+          128,
+          16,
+          16
+        ],
+        [
+          1,
+          256,
+          8,
+          8
+        ],
+        [
+          1,
+          512,
+          4,
+          4
+        ]
+      ],
+      "finite_synthetic_128_forward": true
+    },
+    {
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 2,
+      "checkpoint_sha_verified": true,
+      "parameters": 11143856,
+      "training_seed_metadata": 2,
+      "loaded_on": "cpu",
+      "native_head": "e60_adapter.E60Detect26"
+    },
+    {
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 3,
+      "checkpoint_sha_verified": true,
+      "parameters": 11143856,
+      "training_seed_metadata": 3,
+      "loaded_on": "cpu",
+      "native_head": "e60_adapter.E60Detect26"
+    }
+  ]
+}

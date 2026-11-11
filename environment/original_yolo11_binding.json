@@ -1,0 +1,117 @@
+{
+  "package_sha256": "3410623125709df7f1a4b5d3bc0fd5b30f9a62a40b2521381cdd7e7104147ece",
+  "source": {
+    "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+    "nn/modules/block.py": "d003cf2646c3c6bb6826874ae506e5822bec35f7c663e455de7ceb918c8149e0",
+    "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+    "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+    "engine/model.py": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97",
+    "engine/trainer.py": "94130a243a6ef28c04d1e78d900b18b336c044e93e58e077be5868181d5589c7",
+    "models/yolo/detect/train.py": "7079424e3dfd4ebe9bbad40e411ade0859d53832b622a6a8801a53010b8600f1",
+    "utils/tal.py": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9",
+    "utils/loss.py": "496dc5545169f0a8bf2c24fcc087456e6e8a9b23dc427dd198a35cbd50213102",
+    "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70"
+  },
+  "data_yaml": "2de8ad3c6f67db8cfa5731047292eaf7c4a3a721697bcb77b491525a3a43e6bd",
+  "pretrained": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+  "train_names_and_label_sha256": "7ac9962a06c0150d9e4ba052827ba41d2bec7f487ec9ccd2a72cfafa4eccedd5",
+  "input_files_sha256": "39800f134f6acbc0e9decf20f077a10f6dc555bd03e946f713119a71dc538416",
+  "val": {
+    "dataset_root": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val",
+    "images": 548,
+    "annotation_dimension_sha256": "058c87e779a61a09933bebe35af1c05c807a444dc842b4be12124dd36134c787",
+    "raw_class_counts": {
+      "0": 1378,
+      "1": 8844,
+      "2": 5125,
+      "3": 1287,
+      "4": 14064,
+      "5": 1975,
+      "6": 750,
+      "7": 1045,
+      "8": 532,
+      "9": 251,
+      "10": 4886,
+      "11": 32
+    },
+    "score_zero_counts": {
+      "0": 1378,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 32
+    },
+    "class0_ignore_regions": 1378,
+    "class11_others": 32,
+    "gt_rows_dropped_by_class0_region": 160,
+    "evaluated_gt_rows": 38599
+  },
+  "test": {
+    "dataset_root": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-test-dev",
+    "images": 1610,
+    "annotation_dimension_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+    "raw_class_counts": {
+      "0": 2180,
+      "1": 21006,
+      "2": 6376,
+      "3": 1302,
+      "4": 28074,
+      "5": 5771,
+      "6": 2659,
+      "7": 530,
+      "8": 599,
+      "9": 2940,
+      "10": 5845,
+      "11": 265
+    },
+    "score_zero_counts": {
+      "0": 2180,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 265
+    },
+    "class0_ignore_regions": 2180,
+    "class11_others": 265,
+    "gt_rows_dropped_by_class0_region": 395,
+    "evaluated_gt_rows": 74707,
+    "image_content_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+    "pixel_hashes_checked_this_phase": true
+  },
+  "torch": "2.5.1+cu121",
+  "cuda": "12.1",
+  "versions": {
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "seaborn": "0.13.2",
+    "Pillow": "12.3.0",
+    "ultralytics-thop": "2.1.6"
+  },
+  "GPU": {
+    "name": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_bytes": 33796456448,
+    "capability": [
+      8,
+      9
+    ]
+  },
+  "formal_recipe": "Original same-seed E1/E60; 640/b16/workers8/SGD/200e; native val32",
+  "tasks_py_binding_policy": "Actual SHA recorded; unrelated registrations allowed; DetectionModel topology/tensors checked"
+}

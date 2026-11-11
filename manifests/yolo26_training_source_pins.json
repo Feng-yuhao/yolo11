@@ -1,0 +1,23 @@
+{
+  "pyproject.toml": "9e85cf01d7c9a8587dc99b3a1a2178bbddc48f0f91a5fb71fe9d9e658ddfbda0",
+  "ultralytics/__init__.py": "1af6545e47570b6673e45b7c3eff40edd0f66d816b138d5119703be7e3a4e453",
+  "ultralytics/cfg/default.yaml": "b91e4622e293270595e6e58d5bc3f3cdcb4a1d4f8b28c9035ec883bb2835081f",
+  "ultralytics/cfg/models/26/yolo26.yaml": "b1d1fa0c69eced64f9939536038bd8d697c32e72200b34187a767de431af7ef0",
+  "ultralytics/cfg/models/26/yolo26-p2.yaml": "0dbc2fa3dfede5edcda2566ab8c7ea150ad066ea29d79e68d6c4da2bab476279",
+  "ultralytics/nn/tasks.py": "1048ab8db7504e7c57a77d05bfbd855e9de0ef477e15a5aae8cdb7e8a958246a",
+  "ultralytics/nn/modules/head.py": "b471bb8a39cc1e38672c20feaa8c28bdf43739adb8eafd14226807b34b31f3ee",
+  "ultralytics/nn/modules/conv.py": "927d511e0b494307e5e8104893f28addf27425999eab0ec83452bbf1f3b4df17",
+  "ultralytics/nn/modules/block.py": "3be57fed557f10f76701f66cf91788bc6ec9ce1683f1a34b407aba65847c744f",
+  "ultralytics/engine/trainer.py": "7016131a47b61a8b9b9ea51ef5a9e59b0fb896a328eed4901c89ac7a83169655",
+  "ultralytics/engine/validator.py": "4fa6e43d3b090e50c563ab904e7af095348e5f8471374048adb60eee66452111",
+  "ultralytics/engine/model.py": "baff966d3f3340917e4dc5e434a8211f8532bec50d4e878b65679e8c733eb5b0",
+  "ultralytics/nn/autobackend.py": "450d5d5301e441896f8422cd333ce35c414c2e7ac39a88af01fd5edbd2e552dd",
+  "ultralytics/models/yolo/detect/train.py": "584e9c89f73f4c4ff68e2870c9e0778d254d808c421746c7ad66163b143b36d6",
+  "ultralytics/models/yolo/detect/val.py": "c9f738b513ba3e59f19fbc7e97028e4e68b70b4846c6b96a1611e3f65b3322d7",
+  "ultralytics/models/yolo/detect/predict.py": "1711eaacf6f577d5277e0933a5437881e2c3ba833d13358d3dc4244424b5edc2",
+  "ultralytics/utils/loss.py": "8eb4e089b7c36cef13bb872f9aa37e346da5c022bcfd979e11e7a57a0666b106",
+  "ultralytics/utils/tal.py": "c69ec67990777a4d13df219ef9b254085b2df283fbe5fd283245b76d6b461b3c",
+  "ultralytics/utils/nms.py": "386cd0e3e38fddef5d434fbcfd58264bedfa37295534e9a2b7174a3436d4db62",
+  "ultralytics/utils/torch_utils.py": "9bd9e9e9476959e93214ceccec4f8ead10f3b8aa8a7791efe22f5f1a9ef86f77",
+  "ultralytics/utils/checks.py": "0ea4e57399ddc308541507d0294843722425a8e7ff03a0e21b3d428ac8862291"
+}

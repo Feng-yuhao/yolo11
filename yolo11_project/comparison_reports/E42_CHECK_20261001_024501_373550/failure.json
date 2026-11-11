@@ -1,4 +1,0 @@
-{
-  "status": "failed",
-  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E42E43_E40_JointDense_Parallel_AutoDL\\e42\\run_e40.py\", line 360, in <module>\n    main()\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E42E43_E40_JointDense_Parallel_AutoDL\\e42\\run_e40.py\", line 331, in main\n    result=check_all(core,args,REPORT)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E42E43_E40_JointDense_Parallel_AutoDL\\e42\\checks.py\", line 175, in check_all\n    require(any(not torch.equal(p,before[n]) for n,p in new.named_parameters() if n.startswith(group)), 'No actual group update '+group)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E42E43_E40_JointDense_Parallel_AutoDL\\e42\\checks.py\", line 16, in require\n    raise RuntimeError(message)\nRuntimeError: No actual group update 0.channel_router.1.\n"
-}

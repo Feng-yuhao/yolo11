@@ -1,0 +1,31 @@
+{
+  "revision": "visdrone_to_uavdt_seed1_source_only_v1",
+  "files": {
+    "admission.py": "e33f2a3ae88ec17aeb053b3469f1c5d098206de376fd246d49b976bc19f4e9a0",
+    "build_release.py": "536cbc23cabd413e0b79cc25c8343969481b380a39e5e2e9d848caa015765d3b",
+    "coco_eval.py": "c7a65a9890669e71abe83bb36e8706d216441f552670cfcd0b01e2bf12f82a7d",
+    "common.py": "dfa6a9d8d719ef7460beaa14a5132c05ea9101bc43fa6d9c1193032139f1c15b",
+    "controller.py": "604761e669d79786c4d4e1a34e8acde7632518529614a9816feefed15dcec62e",
+    "e57_spatial_task_head.py": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "e58_spatial_task_head.py": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "inference.py": "bce96d792593df2cdd1219edb6efc3d7f14bb38b001e703dc24860cb18fc822f",
+    "LICENSE-Ultralytics.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "LOCAL_VALIDATION.md": "5f0026c4ef1869fe5024f5b623d4ebf26666a5fedec48905bb0d8bd7fa923c5d",
+    "mapping.py": "04ea84a82d7194d54d72f9c11ab1582ee551e95f09240c7ab86582433ac31842",
+    "modeling.py": "f6c3499de92ca7257ed4b2f8e97149a73156ed8d5273b35cb1de71df2c98883b",
+    "native_ap70.py": "34ade305fd92d5cb9b2c0d9f7732ec2a1d66d297acee797599d2a7bcfc8266b7",
+    "parent_spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "prepare_dataset.sh": "1018b375a694f8b3b620fdf526995649ca4c5e8567558620cde17486f2c3454b",
+    "README.md": "a42f6714fc89bd2ca47d0c9cf91d0da4377ff76a28fd2f76f3ed352064e67374",
+    "references/checkpoints.json": "50523d34077c122e40d3b11150de1e973f6f7c009859b7c4464df1ce1ae533c4",
+    "references/frozen_model_assets.json": "cd20257e3c9ce683008be0981843d190323b222df1de7877739595a432c4cd3b",
+    "references/source_bindings.json": "ff9e9ec937212f88615fa70115be7f77d4d4119fc5046c8b5b9e09d3cd97342d",
+    "run.sh": "ca08ea132787233bbae3fc2a762313858d0117294ac0bd5f4a627157d08b706f",
+    "spatial_task_head.py": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "start_all.sh": "d8efa5c48f542ea40c1b5dc17d294350f1a997bc0bb068cffc336df84bb8d7e3",
+    "test_release.py": "c29216945ec1f2b550bda0dd23d6a21884e30b899a19f0c3031b5251f366325c",
+    "uavdt_data.py": "a888ec6c1968ad1639181dfe05cccf39061317427a867d17a3e9aca2e8dede58",
+    "watch_progress.py": "e8104f457b3de3bd0c7a46fb571669031f23109178e0db76bb92ca45521c97c5",
+    "worker.py": "43879a36b662304d0c2517a6dcf2e25663b2d9cfa29b45de5ba141a614dc9083"
+  }
+}

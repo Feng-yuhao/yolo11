@@ -1,4 +1,0 @@
-{
-  "status": "failed",
-  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E47a_E40_DRF_AutoDL\\run_e47.py\", line 392, in <module>\n    main()\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E47a_E40_DRF_AutoDL\\run_e47.py\", line 362, in main\n    result=check_all(core,args,REPORT)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E47a_E40_DRF_AutoDL\\checks.py\", line 252, in check_all\n    require(abs(flops-expected_total)<1e-5,'Registered readout convolutions missing from profiler')\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E47a_E40_DRF_AutoDL\\checks.py\", line 16, in require\n    raise RuntimeError(message)\nRuntimeError: Registered readout convolutions missing from profiler\n"
-}

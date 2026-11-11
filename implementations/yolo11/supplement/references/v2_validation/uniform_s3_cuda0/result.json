@@ -1,0 +1,4841 @@
+{
+  "status": "passed",
+  "device": "cuda:0",
+  "cuda_executed": true,
+  "initialization": {
+    "rule": "identity layers 0..22; Detect 23->26; old branches 0,1,2->new 1,2,3",
+    "source": "original 80-class yolo11s.pt; never baseline best.pt",
+    "loaded_tensors": 493,
+    "groups": {
+      "backbone": {
+        "tensors": 240,
+        "elements_including_buffers": 5458760
+      },
+      "original_neck": {
+        "tensors": 138,
+        "elements_including_buffers": 3174807
+      },
+      "original_P3_P4_P5_detect_and_DFL": {
+        "tensors": 115,
+        "elements_including_buffers": 824290
+      }
+    },
+    "skipped_class_outputs": [
+      {
+        "source": "model.23.cv3.0.2.weight",
+        "target": "model.26.cv3.1.2.weight",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.0.2.bias",
+        "target": "model.26.cv3.1.2.bias",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.1.2.weight",
+        "target": "model.26.cv3.2.2.weight",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.1.2.bias",
+        "target": "model.26.cv3.2.2.bias",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.2.2.weight",
+        "target": "model.26.cv3.3.2.weight",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.2.2.bias",
+        "target": "model.26.cv3.3.2.bias",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      }
+    ],
+    "new_or_reinitialized_target_tensors": [
+      "model.25.cv1.bn.bias",
+      "model.25.cv1.bn.num_batches_tracked",
+      "model.25.cv1.bn.running_mean",
+      "model.25.cv1.bn.running_var",
+      "model.25.cv1.bn.weight",
+      "model.25.cv1.conv.weight",
+      "model.25.cv2.bn.bias",
+      "model.25.cv2.bn.num_batches_tracked",
+      "model.25.cv2.bn.running_mean",
+      "model.25.cv2.bn.running_var",
+      "model.25.cv2.bn.weight",
+      "model.25.cv2.conv.weight",
+      "model.25.m.0.cv1.bn.bias",
+      "model.25.m.0.cv1.bn.num_batches_tracked",
+      "model.25.m.0.cv1.bn.running_mean",
+      "model.25.m.0.cv1.bn.running_var",
+      "model.25.m.0.cv1.bn.weight",
+      "model.25.m.0.cv1.conv.weight",
+      "model.25.m.0.cv2.bn.bias",
+      "model.25.m.0.cv2.bn.num_batches_tracked",
+      "model.25.m.0.cv2.bn.running_mean",
+      "model.25.m.0.cv2.bn.running_var",
+      "model.25.m.0.cv2.bn.weight",
+      "model.25.m.0.cv2.conv.weight",
+      "model.26.cv2.0.0.bn.bias",
+      "model.26.cv2.0.0.bn.num_batches_tracked",
+      "model.26.cv2.0.0.bn.running_mean",
+      "model.26.cv2.0.0.bn.running_var",
+      "model.26.cv2.0.0.bn.weight",
+      "model.26.cv2.0.0.conv.weight",
+      "model.26.cv2.0.1.bn.bias",
+      "model.26.cv2.0.1.bn.num_batches_tracked",
+      "model.26.cv2.0.1.bn.running_mean",
+      "model.26.cv2.0.1.bn.running_var",
+      "model.26.cv2.0.1.bn.weight",
+      "model.26.cv2.0.1.conv.weight",
+      "model.26.cv2.0.2.bias",
+      "model.26.cv2.0.2.weight",
+      "model.26.cv3.0.0.0.bn.bias",
+      "model.26.cv3.0.0.0.bn.num_batches_tracked",
+      "model.26.cv3.0.0.0.bn.running_mean",
+      "model.26.cv3.0.0.0.bn.running_var",
+      "model.26.cv3.0.0.0.bn.weight",
+      "model.26.cv3.0.0.0.conv.weight",
+      "model.26.cv3.0.0.1.bn.bias",
+      "model.26.cv3.0.0.1.bn.num_batches_tracked",
+      "model.26.cv3.0.0.1.bn.running_mean",
+      "model.26.cv3.0.0.1.bn.running_var",
+      "model.26.cv3.0.0.1.bn.weight",
+      "model.26.cv3.0.0.1.conv.weight",
+      "model.26.cv3.0.1.0.bn.bias",
+      "model.26.cv3.0.1.0.bn.num_batches_tracked",
+      "model.26.cv3.0.1.0.bn.running_mean",
+      "model.26.cv3.0.1.0.bn.running_var",
+      "model.26.cv3.0.1.0.bn.weight",
+      "model.26.cv3.0.1.0.conv.weight",
+      "model.26.cv3.0.1.1.bn.bias",
+      "model.26.cv3.0.1.1.bn.num_batches_tracked",
+      "model.26.cv3.0.1.1.bn.running_mean",
+      "model.26.cv3.0.1.1.bn.running_var",
+      "model.26.cv3.0.1.1.bn.weight",
+      "model.26.cv3.0.1.1.conv.weight",
+      "model.26.cv3.0.2.bias",
+      "model.26.cv3.0.2.weight",
+      "model.26.cv3.1.2.bias",
+      "model.26.cv3.1.2.weight",
+      "model.26.cv3.2.2.bias",
+      "model.26.cv3.2.2.weight",
+      "model.26.cv3.3.2.bias",
+      "model.26.cv3.3.2.weight"
+    ],
+    "tensor_mapping": [
+      {
+        "source": "model.0.conv.weight",
+        "target": "model.0.conv.weight",
+        "shape": [
+          32,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.0.bn.weight",
+        "target": "model.0.bn.weight",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.0.bn.bias",
+        "target": "model.0.bn.bias",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.0.bn.running_mean",
+        "target": "model.0.bn.running_mean",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.0.bn.running_var",
+        "target": "model.0.bn.running_var",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.0.bn.num_batches_tracked",
+        "target": "model.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.1.conv.weight",
+        "target": "model.1.conv.weight",
+        "shape": [
+          64,
+          32,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.1.bn.weight",
+        "target": "model.1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.1.bn.bias",
+        "target": "model.1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.1.bn.running_mean",
+        "target": "model.1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.1.bn.running_var",
+        "target": "model.1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.1.bn.num_batches_tracked",
+        "target": "model.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.2.cv1.conv.weight",
+        "target": "model.2.cv1.conv.weight",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.weight",
+        "target": "model.2.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.bias",
+        "target": "model.2.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.running_mean",
+        "target": "model.2.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.running_var",
+        "target": "model.2.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.num_batches_tracked",
+        "target": "model.2.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.2.cv2.conv.weight",
+        "target": "model.2.cv2.conv.weight",
+        "shape": [
+          128,
+          96,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.weight",
+        "target": "model.2.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.bias",
+        "target": "model.2.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.running_mean",
+        "target": "model.2.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.running_var",
+        "target": "model.2.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.num_batches_tracked",
+        "target": "model.2.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.2.m.0.cv1.conv.weight",
+        "target": "model.2.m.0.cv1.conv.weight",
+        "shape": [
+          16,
+          32,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.weight",
+        "target": "model.2.m.0.cv1.bn.weight",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.bias",
+        "target": "model.2.m.0.cv1.bn.bias",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.running_mean",
+        "target": "model.2.m.0.cv1.bn.running_mean",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.running_var",
+        "target": "model.2.m.0.cv1.bn.running_var",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.2.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.2.m.0.cv2.conv.weight",
+        "target": "model.2.m.0.cv2.conv.weight",
+        "shape": [
+          32,
+          16,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.weight",
+        "target": "model.2.m.0.cv2.bn.weight",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.bias",
+        "target": "model.2.m.0.cv2.bn.bias",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.running_mean",
+        "target": "model.2.m.0.cv2.bn.running_mean",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.running_var",
+        "target": "model.2.m.0.cv2.bn.running_var",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.2.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.3.conv.weight",
+        "target": "model.3.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.3.bn.weight",
+        "target": "model.3.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.3.bn.bias",
+        "target": "model.3.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.3.bn.running_mean",
+        "target": "model.3.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.3.bn.running_var",
+        "target": "model.3.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.3.bn.num_batches_tracked",
+        "target": "model.3.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.4.cv1.conv.weight",
+        "target": "model.4.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.weight",
+        "target": "model.4.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.bias",
+        "target": "model.4.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.running_mean",
+        "target": "model.4.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.running_var",
+        "target": "model.4.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.num_batches_tracked",
+        "target": "model.4.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.4.cv2.conv.weight",
+        "target": "model.4.cv2.conv.weight",
+        "shape": [
+          256,
+          192,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.weight",
+        "target": "model.4.cv2.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.bias",
+        "target": "model.4.cv2.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.running_mean",
+        "target": "model.4.cv2.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.running_var",
+        "target": "model.4.cv2.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.num_batches_tracked",
+        "target": "model.4.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.4.m.0.cv1.conv.weight",
+        "target": "model.4.m.0.cv1.conv.weight",
+        "shape": [
+          32,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.weight",
+        "target": "model.4.m.0.cv1.bn.weight",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.bias",
+        "target": "model.4.m.0.cv1.bn.bias",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.running_mean",
+        "target": "model.4.m.0.cv1.bn.running_mean",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.running_var",
+        "target": "model.4.m.0.cv1.bn.running_var",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.4.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.4.m.0.cv2.conv.weight",
+        "target": "model.4.m.0.cv2.conv.weight",
+        "shape": [
+          64,
+          32,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.weight",
+        "target": "model.4.m.0.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.bias",
+        "target": "model.4.m.0.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.running_mean",
+        "target": "model.4.m.0.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.running_var",
+        "target": "model.4.m.0.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.4.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.5.conv.weight",
+        "target": "model.5.conv.weight",
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.5.bn.weight",
+        "target": "model.5.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.5.bn.bias",
+        "target": "model.5.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.5.bn.running_mean",
+        "target": "model.5.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.5.bn.running_var",
+        "target": "model.5.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.5.bn.num_batches_tracked",
+        "target": "model.5.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.cv1.conv.weight",
+        "target": "model.6.cv1.conv.weight",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.weight",
+        "target": "model.6.cv1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.bias",
+        "target": "model.6.cv1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.running_mean",
+        "target": "model.6.cv1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.running_var",
+        "target": "model.6.cv1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.num_batches_tracked",
+        "target": "model.6.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.cv2.conv.weight",
+        "target": "model.6.cv2.conv.weight",
+        "shape": [
+          256,
+          384,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.weight",
+        "target": "model.6.cv2.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.bias",
+        "target": "model.6.cv2.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.running_mean",
+        "target": "model.6.cv2.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.running_var",
+        "target": "model.6.cv2.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.num_batches_tracked",
+        "target": "model.6.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.cv1.conv.weight",
+        "target": "model.6.m.0.cv1.conv.weight",
+        "shape": [
+          64,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.weight",
+        "target": "model.6.m.0.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.bias",
+        "target": "model.6.m.0.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.running_mean",
+        "target": "model.6.m.0.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.running_var",
+        "target": "model.6.m.0.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.6.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.cv2.conv.weight",
+        "target": "model.6.m.0.cv2.conv.weight",
+        "shape": [
+          64,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.weight",
+        "target": "model.6.m.0.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.bias",
+        "target": "model.6.m.0.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.running_mean",
+        "target": "model.6.m.0.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.running_var",
+        "target": "model.6.m.0.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.6.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.cv3.conv.weight",
+        "target": "model.6.m.0.cv3.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.weight",
+        "target": "model.6.m.0.cv3.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.bias",
+        "target": "model.6.m.0.cv3.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.running_mean",
+        "target": "model.6.m.0.cv3.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.running_var",
+        "target": "model.6.m.0.cv3.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.num_batches_tracked",
+        "target": "model.6.m.0.cv3.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.conv.weight",
+        "target": "model.6.m.0.m.0.cv1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.weight",
+        "target": "model.6.m.0.m.0.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.bias",
+        "target": "model.6.m.0.m.0.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.running_mean",
+        "target": "model.6.m.0.m.0.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.running_var",
+        "target": "model.6.m.0.m.0.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.6.m.0.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.conv.weight",
+        "target": "model.6.m.0.m.0.cv2.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.weight",
+        "target": "model.6.m.0.m.0.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.bias",
+        "target": "model.6.m.0.m.0.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.running_mean",
+        "target": "model.6.m.0.m.0.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.running_var",
+        "target": "model.6.m.0.m.0.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.6.m.0.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.conv.weight",
+        "target": "model.6.m.0.m.1.cv1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.weight",
+        "target": "model.6.m.0.m.1.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.bias",
+        "target": "model.6.m.0.m.1.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.running_mean",
+        "target": "model.6.m.0.m.1.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.running_var",
+        "target": "model.6.m.0.m.1.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.num_batches_tracked",
+        "target": "model.6.m.0.m.1.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.conv.weight",
+        "target": "model.6.m.0.m.1.cv2.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.weight",
+        "target": "model.6.m.0.m.1.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.bias",
+        "target": "model.6.m.0.m.1.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.running_mean",
+        "target": "model.6.m.0.m.1.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.running_var",
+        "target": "model.6.m.0.m.1.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.num_batches_tracked",
+        "target": "model.6.m.0.m.1.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.7.conv.weight",
+        "target": "model.7.conv.weight",
+        "shape": [
+          512,
+          256,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.7.bn.weight",
+        "target": "model.7.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.7.bn.bias",
+        "target": "model.7.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.7.bn.running_mean",
+        "target": "model.7.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.7.bn.running_var",
+        "target": "model.7.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.7.bn.num_batches_tracked",
+        "target": "model.7.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.cv1.conv.weight",
+        "target": "model.8.cv1.conv.weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.weight",
+        "target": "model.8.cv1.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.bias",
+        "target": "model.8.cv1.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.running_mean",
+        "target": "model.8.cv1.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.running_var",
+        "target": "model.8.cv1.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.num_batches_tracked",
+        "target": "model.8.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.cv2.conv.weight",
+        "target": "model.8.cv2.conv.weight",
+        "shape": [
+          512,
+          768,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.weight",
+        "target": "model.8.cv2.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.bias",
+        "target": "model.8.cv2.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.running_mean",
+        "target": "model.8.cv2.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.running_var",
+        "target": "model.8.cv2.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.num_batches_tracked",
+        "target": "model.8.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.cv1.conv.weight",
+        "target": "model.8.m.0.cv1.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.weight",
+        "target": "model.8.m.0.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.bias",
+        "target": "model.8.m.0.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.running_mean",
+        "target": "model.8.m.0.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.running_var",
+        "target": "model.8.m.0.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.8.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.cv2.conv.weight",
+        "target": "model.8.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.weight",
+        "target": "model.8.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.bias",
+        "target": "model.8.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.running_mean",
+        "target": "model.8.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.running_var",
+        "target": "model.8.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.8.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.cv3.conv.weight",
+        "target": "model.8.m.0.cv3.conv.weight",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.weight",
+        "target": "model.8.m.0.cv3.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.bias",
+        "target": "model.8.m.0.cv3.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.running_mean",
+        "target": "model.8.m.0.cv3.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.running_var",
+        "target": "model.8.m.0.cv3.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.num_batches_tracked",
+        "target": "model.8.m.0.cv3.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.conv.weight",
+        "target": "model.8.m.0.m.0.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.weight",
+        "target": "model.8.m.0.m.0.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.bias",
+        "target": "model.8.m.0.m.0.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.running_mean",
+        "target": "model.8.m.0.m.0.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.running_var",
+        "target": "model.8.m.0.m.0.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.8.m.0.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.conv.weight",
+        "target": "model.8.m.0.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.weight",
+        "target": "model.8.m.0.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.bias",
+        "target": "model.8.m.0.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.running_mean",
+        "target": "model.8.m.0.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.running_var",
+        "target": "model.8.m.0.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.8.m.0.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.conv.weight",
+        "target": "model.8.m.0.m.1.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.weight",
+        "target": "model.8.m.0.m.1.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.bias",
+        "target": "model.8.m.0.m.1.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.running_mean",
+        "target": "model.8.m.0.m.1.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.running_var",
+        "target": "model.8.m.0.m.1.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.num_batches_tracked",
+        "target": "model.8.m.0.m.1.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.conv.weight",
+        "target": "model.8.m.0.m.1.cv2.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.weight",
+        "target": "model.8.m.0.m.1.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.bias",
+        "target": "model.8.m.0.m.1.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.running_mean",
+        "target": "model.8.m.0.m.1.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.running_var",
+        "target": "model.8.m.0.m.1.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.num_batches_tracked",
+        "target": "model.8.m.0.m.1.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.9.cv1.conv.weight",
+        "target": "model.9.cv1.conv.weight",
+        "shape": [
+          256,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.weight",
+        "target": "model.9.cv1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.bias",
+        "target": "model.9.cv1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.running_mean",
+        "target": "model.9.cv1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.running_var",
+        "target": "model.9.cv1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.num_batches_tracked",
+        "target": "model.9.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.9.cv2.conv.weight",
+        "target": "model.9.cv2.conv.weight",
+        "shape": [
+          512,
+          1024,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.weight",
+        "target": "model.9.cv2.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.bias",
+        "target": "model.9.cv2.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.running_mean",
+        "target": "model.9.cv2.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.running_var",
+        "target": "model.9.cv2.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.num_batches_tracked",
+        "target": "model.9.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.cv1.conv.weight",
+        "target": "model.10.cv1.conv.weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.weight",
+        "target": "model.10.cv1.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.bias",
+        "target": "model.10.cv1.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.running_mean",
+        "target": "model.10.cv1.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.running_var",
+        "target": "model.10.cv1.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.num_batches_tracked",
+        "target": "model.10.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.cv2.conv.weight",
+        "target": "model.10.cv2.conv.weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.weight",
+        "target": "model.10.cv2.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.bias",
+        "target": "model.10.cv2.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.running_mean",
+        "target": "model.10.cv2.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.running_var",
+        "target": "model.10.cv2.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.num_batches_tracked",
+        "target": "model.10.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.conv.weight",
+        "target": "model.10.m.0.attn.qkv.conv.weight",
+        "shape": [
+          512,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.weight",
+        "target": "model.10.m.0.attn.qkv.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.bias",
+        "target": "model.10.m.0.attn.qkv.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.running_mean",
+        "target": "model.10.m.0.attn.qkv.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.running_var",
+        "target": "model.10.m.0.attn.qkv.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.num_batches_tracked",
+        "target": "model.10.m.0.attn.qkv.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.attn.proj.conv.weight",
+        "target": "model.10.m.0.attn.proj.conv.weight",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.weight",
+        "target": "model.10.m.0.attn.proj.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.bias",
+        "target": "model.10.m.0.attn.proj.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.running_mean",
+        "target": "model.10.m.0.attn.proj.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.running_var",
+        "target": "model.10.m.0.attn.proj.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.num_batches_tracked",
+        "target": "model.10.m.0.attn.proj.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.attn.pe.conv.weight",
+        "target": "model.10.m.0.attn.pe.conv.weight",
+        "shape": [
+          256,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.weight",
+        "target": "model.10.m.0.attn.pe.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.bias",
+        "target": "model.10.m.0.attn.pe.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.running_mean",
+        "target": "model.10.m.0.attn.pe.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.running_var",
+        "target": "model.10.m.0.attn.pe.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.num_batches_tracked",
+        "target": "model.10.m.0.attn.pe.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.ffn.0.conv.weight",
+        "target": "model.10.m.0.ffn.0.conv.weight",
+        "shape": [
+          512,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.weight",
+        "target": "model.10.m.0.ffn.0.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.bias",
+        "target": "model.10.m.0.ffn.0.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.running_mean",
+        "target": "model.10.m.0.ffn.0.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.running_var",
+        "target": "model.10.m.0.ffn.0.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.num_batches_tracked",
+        "target": "model.10.m.0.ffn.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.ffn.1.conv.weight",
+        "target": "model.10.m.0.ffn.1.conv.weight",
+        "shape": [
+          256,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.weight",
+        "target": "model.10.m.0.ffn.1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.bias",
+        "target": "model.10.m.0.ffn.1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.running_mean",
+        "target": "model.10.m.0.ffn.1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.running_var",
+        "target": "model.10.m.0.ffn.1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.num_batches_tracked",
+        "target": "model.10.m.0.ffn.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.13.cv1.conv.weight",
+        "target": "model.13.cv1.conv.weight",
+        "shape": [
+          256,
+          768,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.weight",
+        "target": "model.13.cv1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.bias",
+        "target": "model.13.cv1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.running_mean",
+        "target": "model.13.cv1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.running_var",
+        "target": "model.13.cv1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.num_batches_tracked",
+        "target": "model.13.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.13.cv2.conv.weight",
+        "target": "model.13.cv2.conv.weight",
+        "shape": [
+          256,
+          384,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.weight",
+        "target": "model.13.cv2.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.bias",
+        "target": "model.13.cv2.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.running_mean",
+        "target": "model.13.cv2.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.running_var",
+        "target": "model.13.cv2.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.num_batches_tracked",
+        "target": "model.13.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.13.m.0.cv1.conv.weight",
+        "target": "model.13.m.0.cv1.conv.weight",
+        "shape": [
+          64,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.weight",
+        "target": "model.13.m.0.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.bias",
+        "target": "model.13.m.0.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.running_mean",
+        "target": "model.13.m.0.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.running_var",
+        "target": "model.13.m.0.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.13.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.13.m.0.cv2.conv.weight",
+        "target": "model.13.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.weight",
+        "target": "model.13.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.bias",
+        "target": "model.13.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.running_mean",
+        "target": "model.13.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.running_var",
+        "target": "model.13.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.13.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.16.cv1.conv.weight",
+        "target": "model.16.cv1.conv.weight",
+        "shape": [
+          128,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.weight",
+        "target": "model.16.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.bias",
+        "target": "model.16.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.running_mean",
+        "target": "model.16.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.running_var",
+        "target": "model.16.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.num_batches_tracked",
+        "target": "model.16.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.16.cv2.conv.weight",
+        "target": "model.16.cv2.conv.weight",
+        "shape": [
+          128,
+          192,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.weight",
+        "target": "model.16.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.bias",
+        "target": "model.16.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.running_mean",
+        "target": "model.16.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.running_var",
+        "target": "model.16.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.num_batches_tracked",
+        "target": "model.16.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.16.m.0.cv1.conv.weight",
+        "target": "model.16.m.0.cv1.conv.weight",
+        "shape": [
+          32,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.weight",
+        "target": "model.16.m.0.cv1.bn.weight",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.bias",
+        "target": "model.16.m.0.cv1.bn.bias",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.running_mean",
+        "target": "model.16.m.0.cv1.bn.running_mean",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.running_var",
+        "target": "model.16.m.0.cv1.bn.running_var",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.16.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.16.m.0.cv2.conv.weight",
+        "target": "model.16.m.0.cv2.conv.weight",
+        "shape": [
+          64,
+          32,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.weight",
+        "target": "model.16.m.0.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.bias",
+        "target": "model.16.m.0.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.running_mean",
+        "target": "model.16.m.0.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.running_var",
+        "target": "model.16.m.0.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.16.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.17.conv.weight",
+        "target": "model.17.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.17.bn.weight",
+        "target": "model.17.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.17.bn.bias",
+        "target": "model.17.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.17.bn.running_mean",
+        "target": "model.17.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.17.bn.running_var",
+        "target": "model.17.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.17.bn.num_batches_tracked",
+        "target": "model.17.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.19.cv1.conv.weight",
+        "target": "model.19.cv1.conv.weight",
+        "shape": [
+          256,
+          384,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.weight",
+        "target": "model.19.cv1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.bias",
+        "target": "model.19.cv1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.running_mean",
+        "target": "model.19.cv1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.running_var",
+        "target": "model.19.cv1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.num_batches_tracked",
+        "target": "model.19.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.19.cv2.conv.weight",
+        "target": "model.19.cv2.conv.weight",
+        "shape": [
+          256,
+          384,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.weight",
+        "target": "model.19.cv2.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.bias",
+        "target": "model.19.cv2.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.running_mean",
+        "target": "model.19.cv2.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.running_var",
+        "target": "model.19.cv2.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.num_batches_tracked",
+        "target": "model.19.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.19.m.0.cv1.conv.weight",
+        "target": "model.19.m.0.cv1.conv.weight",
+        "shape": [
+          64,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.weight",
+        "target": "model.19.m.0.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.bias",
+        "target": "model.19.m.0.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.running_mean",
+        "target": "model.19.m.0.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.running_var",
+        "target": "model.19.m.0.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.19.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.19.m.0.cv2.conv.weight",
+        "target": "model.19.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.weight",
+        "target": "model.19.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.bias",
+        "target": "model.19.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.running_mean",
+        "target": "model.19.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.running_var",
+        "target": "model.19.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.19.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.20.conv.weight",
+        "target": "model.20.conv.weight",
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.20.bn.weight",
+        "target": "model.20.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.20.bn.bias",
+        "target": "model.20.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.20.bn.running_mean",
+        "target": "model.20.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.20.bn.running_var",
+        "target": "model.20.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.20.bn.num_batches_tracked",
+        "target": "model.20.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.cv1.conv.weight",
+        "target": "model.22.cv1.conv.weight",
+        "shape": [
+          512,
+          768,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.weight",
+        "target": "model.22.cv1.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.bias",
+        "target": "model.22.cv1.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.running_mean",
+        "target": "model.22.cv1.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.running_var",
+        "target": "model.22.cv1.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.num_batches_tracked",
+        "target": "model.22.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.cv2.conv.weight",
+        "target": "model.22.cv2.conv.weight",
+        "shape": [
+          512,
+          768,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.weight",
+        "target": "model.22.cv2.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.bias",
+        "target": "model.22.cv2.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.running_mean",
+        "target": "model.22.cv2.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.running_var",
+        "target": "model.22.cv2.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.num_batches_tracked",
+        "target": "model.22.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.cv1.conv.weight",
+        "target": "model.22.m.0.cv1.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.weight",
+        "target": "model.22.m.0.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.bias",
+        "target": "model.22.m.0.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.running_mean",
+        "target": "model.22.m.0.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.running_var",
+        "target": "model.22.m.0.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.22.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.cv2.conv.weight",
+        "target": "model.22.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.weight",
+        "target": "model.22.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.bias",
+        "target": "model.22.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.running_mean",
+        "target": "model.22.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.running_var",
+        "target": "model.22.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.22.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.cv3.conv.weight",
+        "target": "model.22.m.0.cv3.conv.weight",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.weight",
+        "target": "model.22.m.0.cv3.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.bias",
+        "target": "model.22.m.0.cv3.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.running_mean",
+        "target": "model.22.m.0.cv3.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.running_var",
+        "target": "model.22.m.0.cv3.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.num_batches_tracked",
+        "target": "model.22.m.0.cv3.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.conv.weight",
+        "target": "model.22.m.0.m.0.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.weight",
+        "target": "model.22.m.0.m.0.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.bias",
+        "target": "model.22.m.0.m.0.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.running_mean",
+        "target": "model.22.m.0.m.0.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.running_var",
+        "target": "model.22.m.0.m.0.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.22.m.0.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.conv.weight",
+        "target": "model.22.m.0.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.weight",
+        "target": "model.22.m.0.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.bias",
+        "target": "model.22.m.0.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.running_mean",
+        "target": "model.22.m.0.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.running_var",
+        "target": "model.22.m.0.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.22.m.0.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.conv.weight",
+        "target": "model.22.m.0.m.1.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.weight",
+        "target": "model.22.m.0.m.1.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.bias",
+        "target": "model.22.m.0.m.1.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.running_mean",
+        "target": "model.22.m.0.m.1.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.running_var",
+        "target": "model.22.m.0.m.1.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.num_batches_tracked",
+        "target": "model.22.m.0.m.1.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.conv.weight",
+        "target": "model.22.m.0.m.1.cv2.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.weight",
+        "target": "model.22.m.0.m.1.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.bias",
+        "target": "model.22.m.0.m.1.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.running_mean",
+        "target": "model.22.m.0.m.1.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.running_var",
+        "target": "model.22.m.0.m.1.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.num_batches_tracked",
+        "target": "model.22.m.0.m.1.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.0.0.conv.weight",
+        "target": "model.26.cv2.1.0.conv.weight",
+        "shape": [
+          64,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.weight",
+        "target": "model.26.cv2.1.0.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.bias",
+        "target": "model.26.cv2.1.0.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.running_mean",
+        "target": "model.26.cv2.1.0.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.running_var",
+        "target": "model.26.cv2.1.0.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.num_batches_tracked",
+        "target": "model.26.cv2.1.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.0.1.conv.weight",
+        "target": "model.26.cv2.1.1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.weight",
+        "target": "model.26.cv2.1.1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.bias",
+        "target": "model.26.cv2.1.1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.running_mean",
+        "target": "model.26.cv2.1.1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.running_var",
+        "target": "model.26.cv2.1.1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.num_batches_tracked",
+        "target": "model.26.cv2.1.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.0.2.weight",
+        "target": "model.26.cv2.1.2.weight",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.2.bias",
+        "target": "model.26.cv2.1.2.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.conv.weight",
+        "target": "model.26.cv2.2.0.conv.weight",
+        "shape": [
+          64,
+          256,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.weight",
+        "target": "model.26.cv2.2.0.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.bias",
+        "target": "model.26.cv2.2.0.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.running_mean",
+        "target": "model.26.cv2.2.0.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.running_var",
+        "target": "model.26.cv2.2.0.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.num_batches_tracked",
+        "target": "model.26.cv2.2.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.1.1.conv.weight",
+        "target": "model.26.cv2.2.1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.weight",
+        "target": "model.26.cv2.2.1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.bias",
+        "target": "model.26.cv2.2.1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.running_mean",
+        "target": "model.26.cv2.2.1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.running_var",
+        "target": "model.26.cv2.2.1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.num_batches_tracked",
+        "target": "model.26.cv2.2.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.1.2.weight",
+        "target": "model.26.cv2.2.2.weight",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.2.bias",
+        "target": "model.26.cv2.2.2.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.conv.weight",
+        "target": "model.26.cv2.3.0.conv.weight",
+        "shape": [
+          64,
+          512,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.weight",
+        "target": "model.26.cv2.3.0.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.bias",
+        "target": "model.26.cv2.3.0.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.running_mean",
+        "target": "model.26.cv2.3.0.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.running_var",
+        "target": "model.26.cv2.3.0.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.num_batches_tracked",
+        "target": "model.26.cv2.3.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.2.1.conv.weight",
+        "target": "model.26.cv2.3.1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.weight",
+        "target": "model.26.cv2.3.1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.bias",
+        "target": "model.26.cv2.3.1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.running_mean",
+        "target": "model.26.cv2.3.1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.running_var",
+        "target": "model.26.cv2.3.1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.num_batches_tracked",
+        "target": "model.26.cv2.3.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.2.2.weight",
+        "target": "model.26.cv2.3.2.weight",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.2.bias",
+        "target": "model.26.cv2.3.2.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.conv.weight",
+        "target": "model.26.cv3.1.0.0.conv.weight",
+        "shape": [
+          128,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.weight",
+        "target": "model.26.cv3.1.0.0.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.bias",
+        "target": "model.26.cv3.1.0.0.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.running_mean",
+        "target": "model.26.cv3.1.0.0.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.running_var",
+        "target": "model.26.cv3.1.0.0.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.1.0.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.0.0.1.conv.weight",
+        "target": "model.26.cv3.1.0.1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.weight",
+        "target": "model.26.cv3.1.0.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.bias",
+        "target": "model.26.cv3.1.0.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.running_mean",
+        "target": "model.26.cv3.1.0.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.running_var",
+        "target": "model.26.cv3.1.0.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.1.0.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.0.1.0.conv.weight",
+        "target": "model.26.cv3.1.1.0.conv.weight",
+        "shape": [
+          128,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.weight",
+        "target": "model.26.cv3.1.1.0.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.bias",
+        "target": "model.26.cv3.1.1.0.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.running_mean",
+        "target": "model.26.cv3.1.1.0.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.running_var",
+        "target": "model.26.cv3.1.1.0.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.1.1.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.0.1.1.conv.weight",
+        "target": "model.26.cv3.1.1.1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.weight",
+        "target": "model.26.cv3.1.1.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.bias",
+        "target": "model.26.cv3.1.1.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.running_mean",
+        "target": "model.26.cv3.1.1.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.running_var",
+        "target": "model.26.cv3.1.1.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.1.1.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.1.0.0.conv.weight",
+        "target": "model.26.cv3.2.0.0.conv.weight",
+        "shape": [
+          256,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.weight",
+        "target": "model.26.cv3.2.0.0.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.bias",
+        "target": "model.26.cv3.2.0.0.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.running_mean",
+        "target": "model.26.cv3.2.0.0.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.running_var",
+        "target": "model.26.cv3.2.0.0.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.2.0.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.1.0.1.conv.weight",
+        "target": "model.26.cv3.2.0.1.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.weight",
+        "target": "model.26.cv3.2.0.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.bias",
+        "target": "model.26.cv3.2.0.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.running_mean",
+        "target": "model.26.cv3.2.0.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.running_var",
+        "target": "model.26.cv3.2.0.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.2.0.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.1.1.0.conv.weight",
+        "target": "model.26.cv3.2.1.0.conv.weight",
+        "shape": [
+          128,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.weight",
+        "target": "model.26.cv3.2.1.0.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.bias",
+        "target": "model.26.cv3.2.1.0.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.running_mean",
+        "target": "model.26.cv3.2.1.0.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.running_var",
+        "target": "model.26.cv3.2.1.0.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.2.1.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.1.1.1.conv.weight",
+        "target": "model.26.cv3.2.1.1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.weight",
+        "target": "model.26.cv3.2.1.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.bias",
+        "target": "model.26.cv3.2.1.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.running_mean",
+        "target": "model.26.cv3.2.1.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.running_var",
+        "target": "model.26.cv3.2.1.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.2.1.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.2.0.0.conv.weight",
+        "target": "model.26.cv3.3.0.0.conv.weight",
+        "shape": [
+          512,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.weight",
+        "target": "model.26.cv3.3.0.0.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.bias",
+        "target": "model.26.cv3.3.0.0.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.running_mean",
+        "target": "model.26.cv3.3.0.0.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.running_var",
+        "target": "model.26.cv3.3.0.0.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.3.0.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.2.0.1.conv.weight",
+        "target": "model.26.cv3.3.0.1.conv.weight",
+        "shape": [
+          128,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.weight",
+        "target": "model.26.cv3.3.0.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.bias",
+        "target": "model.26.cv3.3.0.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.running_mean",
+        "target": "model.26.cv3.3.0.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.running_var",
+        "target": "model.26.cv3.3.0.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.3.0.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.2.1.0.conv.weight",
+        "target": "model.26.cv3.3.1.0.conv.weight",
+        "shape": [
+          128,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.weight",
+        "target": "model.26.cv3.3.1.0.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.bias",
+        "target": "model.26.cv3.3.1.0.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.running_mean",
+        "target": "model.26.cv3.3.1.0.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.running_var",
+        "target": "model.26.cv3.3.1.0.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.3.1.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.2.1.1.conv.weight",
+        "target": "model.26.cv3.3.1.1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.weight",
+        "target": "model.26.cv3.3.1.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.bias",
+        "target": "model.26.cv3.3.1.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.running_mean",
+        "target": "model.26.cv3.3.1.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.running_var",
+        "target": "model.26.cv3.3.1.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.3.1.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.dfl.conv.weight",
+        "target": "model.26.dfl.conv.weight",
+        "shape": [
+          1,
+          16,
+          1,
+          1
+        ]
+      }
+    ],
+    "note": "P2 fusion and P2 Detect are random; 10-class output layers are reinitialized.",
+    "verified_tensor_equality": true,
+    "training_seed": 3,
+    "variant": "uniform",
+    "COCO_initialization_only": true,
+    "module_construction_rule": "original isolated construction seeds preserved",
+    "common_E1_tensors_exact": true,
+    "from_trained_best": false
+  },
+  "original_loss_and_gradients_equal_at_start": true,
+  "actual_optimizer_updates": 3,
+  "branch_groups": [
+    "0.reduce.",
+    "0.depths.0.",
+    "0.depths.1.",
+    "0.depths.2.",
+    "0.out_cls.",
+    "0.out_reg.",
+    "1.reduce.",
+    "1.depths.0.",
+    "1.depths.1.",
+    "1.depths.2.",
+    "1.out_cls.",
+    "1.out_reg.",
+    "2.reduce.",
+    "2.depths.0.",
+    "2.depths.1.",
+    "2.depths.2.",
+    "2.out_cls.",
+    "2.out_reg.",
+    "3.reduce.",
+    "3.depths.0.",
+    "3.depths.1.",
+    "3.depths.2.",
+    "3.out_cls.",
+    "3.out_reg.",
+    "0.refinements.0.kernels.0.",
+    "0.refinements.0.kernels.1.",
+    "0.refinements.0.kernels.2.",
+    "0.refinements.0.project.",
+    "0.refinements.1.kernels.0.",
+    "0.refinements.1.kernels.1.",
+    "0.refinements.1.kernels.2.",
+    "0.refinements.1.project.",
+    "0.refinements.2.kernels.0.",
+    "0.refinements.2.kernels.1.",
+    "0.refinements.2.kernels.2.",
+    "0.refinements.2.project.",
+    "1.refinements.0.kernels.0.",
+    "1.refinements.0.kernels.1.",
+    "1.refinements.0.kernels.2.",
+    "1.refinements.0.project.",
+    "1.refinements.1.kernels.0.",
+    "1.refinements.1.kernels.1.",
+    "1.refinements.1.kernels.2.",
+    "1.refinements.1.project.",
+    "1.refinements.2.kernels.0.",
+    "1.refinements.2.kernels.1.",
+    "1.refinements.2.kernels.2.",
+    "1.refinements.2.project."
+  ],
+  "routing": {
+    "cv2_reg_cv3_cls_correct": true,
+    "all_four_levels_executed": true,
+    "caller_list_untouched": true
+  },
+  "routing_unit": {
+    "group_oracle": {
+      "identity_at_zero_projection": true,
+      "independent_value_and_gradient_oracle": true,
+      "separate_group_kernels": true,
+      "no_detach_no_inplace": true,
+      "parameters_per_refiner": 24912,
+      "active_pure_half_max_absolute_error": 0.0010333061218261719
+    },
+    "tiny_AMP_weights": {
+      "cuda_fixture_executed": true,
+      "fixed": true,
+      "project_FP32_nonzero": 9216,
+      "project_FP16_nonzero": 0,
+      "ambient_AMP_inner_gradient_max": {
+        "kernels.0.": 4.373989384021115e-07,
+        "kernels.1.": 4.859988393945969e-07,
+        "kernels.2.": 5.04839874793106e-07
+      },
+      "FP32_control_inner_gradient_max": {
+        "kernels.0.": 4.373989384021115e-07,
+        "kernels.1.": 4.859988393945969e-07,
+        "kernels.2.": 5.04839874793106e-07
+      },
+      "all_inner_groups_really_updated": true
+    },
+    "checkpoint_precision": {
+      "tiny_FP32_weights_survive_half_bfloat16_save_reload": true,
+      "device_transfer_preserved": true,
+      "output_dtype_preserved": true
+    },
+    "levels": {
+      "128": {
+        "variant": "uniform",
+        "weighted_sum_and_gradient_oracle": true,
+        "original_serial_inputs_unchanged": true,
+        "P2_P3_refiners_unchanged": true,
+        "task_weights_identical": true,
+        "separate_output_projections": true,
+        "uniform_router_absent": true,
+        "no_input_mutation": true
+      },
+      "256": {
+        "variant": "uniform",
+        "weighted_sum_and_gradient_oracle": true,
+        "original_serial_inputs_unchanged": true,
+        "P2_P3_refiners_unchanged": false,
+        "task_weights_identical": true,
+        "separate_output_projections": true,
+        "uniform_router_absent": true,
+        "no_input_mutation": true
+      },
+      "512": {
+        "variant": "uniform",
+        "weighted_sum_and_gradient_oracle": true,
+        "original_serial_inputs_unchanged": true,
+        "P2_P3_refiners_unchanged": false,
+        "task_weights_identical": true,
+        "separate_output_projections": true,
+        "uniform_router_absent": true,
+        "no_input_mutation": true
+      }
+    }
+  },
+  "empty_GT": true,
+  "AMP_updates": [
+    {
+      "updated": false,
+      "scale_before": 65536.0,
+      "scale_after": 32768.0,
+      "status": "overflow_skip",
+      "bad_parameter_count": 328
+    },
+    {
+      "updated": false,
+      "scale_before": 32768.0,
+      "scale_after": 16384.0,
+      "status": "overflow_skip",
+      "bad_parameter_count": 322
+    },
+    {
+      "updated": false,
+      "scale_before": 16384.0,
+      "scale_after": 8192.0,
+      "status": "overflow_skip",
+      "bad_parameter_count": 300
+    },
+    {
+      "updated": false,
+      "scale_before": 8192.0,
+      "scale_after": 4096.0,
+      "status": "overflow_skip",
+      "bad_parameter_count": 249
+    },
+    {
+      "updated": false,
+      "scale_before": 4096.0,
+      "scale_after": 2048.0,
+      "status": "overflow_skip",
+      "bad_parameter_count": 111
+    },
+    {
+      "updated": false,
+      "scale_before": 2048.0,
+      "scale_after": 1024.0,
+      "status": "overflow_skip",
+      "bad_parameter_count": 25
+    },
+    {
+      "updated": false,
+      "scale_before": 1024.0,
+      "scale_after": 512.0,
+      "status": "overflow_skip",
+      "bad_parameter_count": 6
+    },
+    {
+      "updated": false,
+      "scale_before": 512.0,
+      "scale_after": 256.0,
+      "status": "overflow_skip",
+      "bad_parameter_count": 2
+    },
+    {
+      "updated": false,
+      "scale_before": 256.0,
+      "scale_after": 128.0,
+      "status": "overflow_skip",
+      "bad_parameter_count": 1
+    },
+    {
+      "updated": true,
+      "scale_before": 128.0,
+      "scale_after": 128.0,
+      "status": "finite_update",
+      "bad_parameter_count": 0
+    }
+  ],
+  "fresh_reload_fuse": true,
+  "standard_predictor": true,
+  "official": {
+    "union_area": "passed",
+    "integral_region_coverage": "passed",
+    "ordinary_match": "passed",
+    "ignore_match": "passed",
+    "normal_preferred": "passed",
+    "voc_ap": "passed",
+    "official_end_to_end": "passed"
+  },
+  "geometry": {
+    "empty_and_wrong_class": true,
+    "multiple_gt_one_box_explicit": true,
+    "rectangular_coordinate_conversion": true,
+    "class_aware_nms_and_prefix": true,
+    "actual_predictor_configuration_valid": true
+  },
+  "TAL": {
+    "status": "passed",
+    "device": "cuda:0",
+    "torch": "2.6.0+cu124",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "implementation": {
+      "revision": "imagewise_tal_830_v1",
+      "original_tal_sha256": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9",
+      "helper_sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+      "forward_batch_unchanged": true,
+      "matching_images_per_chunk": 1,
+      "GT_padding_unchanged": true,
+      "batch_loss_normalization_unchanged": true,
+      "checkpoint_classes_unchanged": true
+    },
+    "seconds": 8.380610400000002,
+    "assignment_cases": [
+      {
+        "case": "random",
+        "score_dtype": "torch.float32",
+        "positive_assignments": 855,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      },
+      {
+        "case": "mixed_empty",
+        "score_dtype": "torch.float32",
+        "positive_assignments": 192,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      },
+      {
+        "case": "dense",
+        "score_dtype": "torch.float32",
+        "positive_assignments": 1354,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      },
+      {
+        "case": "ties_and_conflicts",
+        "score_dtype": "torch.float32",
+        "positive_assignments": 50,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      },
+      {
+        "case": "all_empty",
+        "score_dtype": "torch.float32",
+        "positive_assignments": 0,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      },
+      {
+        "case": "random",
+        "score_dtype": "torch.float16",
+        "positive_assignments": 865,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      },
+      {
+        "case": "mixed_empty",
+        "score_dtype": "torch.float16",
+        "positive_assignments": 254,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      },
+      {
+        "case": "dense",
+        "score_dtype": "torch.float16",
+        "positive_assignments": 1276,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      },
+      {
+        "case": "ties_and_conflicts",
+        "score_dtype": "torch.float16",
+        "positive_assignments": 50,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      },
+      {
+        "case": "all_empty",
+        "score_dtype": "torch.float16",
+        "positive_assignments": 0,
+        "checks": [
+          {
+            "name": "labels",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "boxes",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "scores",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "foreground_mask",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "local_gt_indices",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ]
+      }
+    ],
+    "real_model_steps": [
+      {
+        "model": "P2",
+        "amp": false,
+        "step": 1,
+        "forward_batch": 8,
+        "image_size": 128,
+        "checks": [
+          {
+            "name": "full_batch_loss",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "box_cls_dfl_loss",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ],
+        "gradient_max_abs_difference": 0.0,
+        "updated_state_max_abs_difference": 0.0
+      },
+      {
+        "model": "P2",
+        "amp": false,
+        "step": 2,
+        "forward_batch": 8,
+        "image_size": 128,
+        "checks": [
+          {
+            "name": "full_batch_loss",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "box_cls_dfl_loss",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ],
+        "gradient_max_abs_difference": 0.0,
+        "updated_state_max_abs_difference": 0.0
+      },
+      {
+        "model": "P2",
+        "amp": true,
+        "step": 1,
+        "forward_batch": 8,
+        "image_size": 128,
+        "checks": [
+          {
+            "name": "full_batch_loss",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "box_cls_dfl_loss",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ],
+        "gradient_max_abs_difference": 0.0,
+        "updated_state_max_abs_difference": 0.0
+      },
+      {
+        "model": "P2",
+        "amp": true,
+        "step": 2,
+        "forward_batch": 8,
+        "image_size": 128,
+        "checks": [
+          {
+            "name": "full_batch_loss",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          },
+          {
+            "name": "box_cls_dfl_loss",
+            "exact_equal": true,
+            "max_abs_difference": 0.0
+          }
+        ],
+        "gradient_max_abs_difference": 0.0,
+        "updated_state_max_abs_difference": 0.0
+      }
+    ],
+    "original_yolo11s_model_steps": [],
+    "tolerances": {
+      "discrete_outputs": "exact; also shapes/dtypes",
+      "float_rtol": 1e-06,
+      "float_atol": 1e-07,
+      "gradient_rtol": 1e-05
+    },
+    "limits": "Synthetic FP32-GT cases and batch8 real-model 128px steps; not a 1024px memory test or a guarantee of identical final AP."
+  },
+  "trained_E1_fixture_only": true,
+  "new_parameters": 1442784,
+  "parameters": 11121752,
+  "GFLOPs640": 58.2655488,
+  "E1_GFLOPs640": 33.8763264,
+  "computation_profile": {
+    "candidate": {
+      "parameters": 11121752,
+      "Conv_Linear_GMACs": 29.1327744,
+      "Conv_Linear_GFLOPs_2ops_per_MAC": 58.2655488,
+      "boundary": "Conv2d/Linear only, not normalization/activation/softmax/weighted sums/complete FLOPs"
+    },
+    "E1": {
+      "parameters": 9678968,
+      "Conv_Linear_GMACs": 16.9381632,
+      "Conv_Linear_GFLOPs_2ops_per_MAC": 33.8763264,
+      "boundary": "Conv2d/Linear only, not normalization/activation/softmax/weighted sums/complete FLOPs"
+    },
+    "full_E60": {
+      "parameters": 11173112,
+      "Conv_Linear_GMACs": 29.5690624,
+      "Conv_Linear_GFLOPs_2ops_per_MAC": 59.1381248,
+      "boundary": "Conv2d/Linear only, not normalization/activation/softmax/weighted sums/complete FLOPs"
+    },
+    "removed_router_Conv_GFLOPs": 0.8725760000000022
+  },
+  "parent_E60_common_initialization_preserved": true,
+  "cold_start_AMP": {
+    "synthetic_only": true,
+    "AMP_from_original_nested_zero_init": true,
+    "attempts": 18,
+    "successful_updates": 8,
+    "groups_with_gradient": 48,
+    "groups_with_real_update": 48,
+    "expected_groups": 48,
+    "updates": [
+      {
+        "updated": false,
+        "scale_before": 65536.0,
+        "scale_after": 32768.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 312
+      },
+      {
+        "updated": false,
+        "scale_before": 32768.0,
+        "scale_after": 16384.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 303
+      },
+      {
+        "updated": false,
+        "scale_before": 16384.0,
+        "scale_after": 8192.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 201
+      },
+      {
+        "updated": false,
+        "scale_before": 8192.0,
+        "scale_after": 4096.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 93
+      },
+      {
+        "updated": false,
+        "scale_before": 4096.0,
+        "scale_after": 2048.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 39
+      },
+      {
+        "updated": false,
+        "scale_before": 2048.0,
+        "scale_after": 1024.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 7
+      },
+      {
+        "updated": false,
+        "scale_before": 1024.0,
+        "scale_after": 512.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 2
+      },
+      {
+        "updated": false,
+        "scale_before": 512.0,
+        "scale_after": 256.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 2
+      },
+      {
+        "updated": true,
+        "scale_before": 256.0,
+        "scale_after": 256.0,
+        "status": "finite_update",
+        "bad_parameter_count": 0
+      },
+      {
+        "updated": false,
+        "scale_before": 256.0,
+        "scale_after": 128.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 1
+      },
+      {
+        "updated": false,
+        "scale_before": 128.0,
+        "scale_after": 64.0,
+        "status": "overflow_skip",
+        "bad_parameter_count": 1
+      },
+      {
+        "updated": true,
+        "scale_before": 64.0,
+        "scale_after": 64.0,
+        "status": "finite_update",
+        "bad_parameter_count": 0
+      },
+      {
+        "updated": true,
+        "scale_before": 64.0,
+        "scale_after": 64.0,
+        "status": "finite_update",
+        "bad_parameter_count": 0
+      },
+      {
+        "updated": true,
+        "scale_before": 64.0,
+        "scale_after": 64.0,
+        "status": "finite_update",
+        "bad_parameter_count": 0
+      },
+      {
+        "updated": true,
+        "scale_before": 64.0,
+        "scale_after": 64.0,
+        "status": "finite_update",
+        "bad_parameter_count": 0
+      },
+      {
+        "updated": true,
+        "scale_before": 64.0,
+        "scale_after": 64.0,
+        "status": "finite_update",
+        "bad_parameter_count": 0
+      },
+      {
+        "updated": true,
+        "scale_before": 64.0,
+        "scale_after": 64.0,
+        "status": "finite_update",
+        "bad_parameter_count": 0
+      },
+      {
+        "updated": true,
+        "scale_before": 64.0,
+        "scale_after": 64.0,
+        "status": "finite_update",
+        "bad_parameter_count": 0
+      }
+    ],
+    "optimizer_numerics": {
+      "successful_steps_verified": 8,
+      "all_actual_steps_match_SGD_reference": true,
+      "subULP_groups": [],
+      "group_numerics": {
+        "0.reduce.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.1054984483394037e-08,
+          "max_proposed_delta": 2.4678993071347578e-11,
+          "max_delta_over_ULP": 9.14435915592146e+30
+        },
+        "0.depths.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 9.956424129597963e-09,
+          "max_proposed_delta": 2.4167725598545078e-11,
+          "max_delta_over_ULP": 5.401861785673261e+31
+        },
+        "0.depths.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.0985601761603903e-08,
+          "max_proposed_delta": 2.533937859539037e-11,
+          "max_delta_over_ULP": 3.6207302455459826e+31
+        },
+        "0.depths.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 6.198192181727791e-09,
+          "max_proposed_delta": 1.3592131864470503e-11,
+          "max_delta_over_ULP": 4.30592436276626e+31
+        },
+        "0.out_cls.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 0.000191338243894279,
+          "max_proposed_delta": 4.988809814676643e-07,
+          "max_delta_over_ULP": 4.388053171211709e+37
+        },
+        "0.out_reg.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 0.000189493628568016,
+          "max_proposed_delta": 4.947968409396708e-07,
+          "max_delta_over_ULP": 5.616826318904237e+37
+        },
+        "1.reduce.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 8.845051343087107e-05,
+          "max_proposed_delta": 1.4241397730074822e-07,
+          "max_delta_over_ULP": 2.480565822249444e+34
+        },
+        "1.depths.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 8.720910409465432e-05,
+          "max_proposed_delta": 1.4313473366200924e-07,
+          "max_delta_over_ULP": 2.2264107504578857e+34
+        },
+        "1.depths.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 5.3691011999035254e-05,
+          "max_proposed_delta": 8.828172576613724e-08,
+          "max_delta_over_ULP": 1.4135344933687545e+34
+        },
+        "1.depths.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 5.663936462951824e-05,
+          "max_proposed_delta": 8.616241393610835e-08,
+          "max_delta_over_ULP": 8.261652918614438e+33
+        },
+        "1.out_cls.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 0.02748979814350605,
+          "max_proposed_delta": 6.125519797205925e-05,
+          "max_delta_over_ULP": 2.922052536957947e+39
+        },
+        "1.out_reg.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 0.008289196528494358,
+          "max_proposed_delta": 2.053629979491234e-05,
+          "max_delta_over_ULP": 3.289677788366179e+39
+        },
+        "2.reduce.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 3.4381257592031034e-06,
+          "max_proposed_delta": 7.409218596876599e-09,
+          "max_delta_over_ULP": 1.030090976269559e+33
+        },
+        "2.depths.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 3.4526735817053122e-06,
+          "max_proposed_delta": 6.171007044031285e-09,
+          "max_delta_over_ULP": 8.190545642757886e+32
+        },
+        "2.depths.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.5323663546951138e-06,
+          "max_proposed_delta": 2.8480244509410114e-09,
+          "max_delta_over_ULP": 5.918192017884331e+32
+        },
+        "2.depths.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.2498968544605304e-06,
+          "max_proposed_delta": 1.9109531876893014e-09,
+          "max_delta_over_ULP": 3.413420597571119e+32
+        },
+        "2.out_cls.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 0.00412644911557436,
+          "max_proposed_delta": 1.2366194278001786e-05,
+          "max_delta_over_ULP": 1.0545539135101785e+39
+        },
+        "2.out_reg.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 0.0032996695954352617,
+          "max_proposed_delta": 7.094969041645527e-06,
+          "max_delta_over_ULP": 8.091545824611087e+38
+        },
+        "3.reduce.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 6.897570528963115e-06,
+          "max_proposed_delta": 2.0364001102279873e-08,
+          "max_delta_over_ULP": 1.0955671580123073e+34
+        },
+        "3.depths.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 4.174066361883888e-06,
+          "max_proposed_delta": 1.0783403922687286e-08,
+          "max_delta_over_ULP": 4.384228863554892e+33
+        },
+        "3.depths.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 2.890762971219374e-06,
+          "max_proposed_delta": 8.910881660995074e-09,
+          "max_delta_over_ULP": 2.899487076697227e+33
+        },
+        "3.depths.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 2.3667844288866036e-06,
+          "max_proposed_delta": 5.5350878938043026e-09,
+          "max_delta_over_ULP": 1.9037323184107503e+33
+        },
+        "3.out_cls.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 0.005350092425942421,
+          "max_proposed_delta": 1.9553955644369127e-05,
+          "max_delta_over_ULP": 1.6410489328601077e+39
+        },
+        "3.out_reg.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 0.0007453401922248304,
+          "max_proposed_delta": 1.3309126952663063e-06,
+          "max_delta_over_ULP": 2.430306259913937e+38
+        },
+        "0.refinements.0.kernels.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.1635791995479172e-19,
+          "max_proposed_delta": 2.219236920057865e-22,
+          "max_delta_over_ULP": 5.447088549655873e+18
+        },
+        "0.refinements.0.kernels.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 7.255225063392187e-20,
+          "max_proposed_delta": 1.502148101674993e-22,
+          "max_delta_over_ULP": 7.309526842807037e+18
+        },
+        "0.refinements.0.kernels.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 5.819699639215864e-20,
+          "max_proposed_delta": 1.1950474764949072e-22,
+          "max_delta_over_ULP": 5.686034346235408e+18
+        },
+        "0.refinements.0.project.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.8184866945603062e-09,
+          "max_proposed_delta": 3.970995532398547e-12,
+          "max_delta_over_ULP": 7.863450589254496e+31
+        },
+        "0.refinements.1.kernels.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 7.87945885135989e-20,
+          "max_proposed_delta": 1.618610220537572e-22,
+          "max_delta_over_ULP": 4.954886205730877e+18
+        },
+        "0.refinements.1.kernels.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 8.520657596703173e-20,
+          "max_proposed_delta": 1.819697827449213e-22,
+          "max_delta_over_ULP": 6.164613864237562e+18
+        },
+        "0.refinements.1.kernels.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 6.305312173686458e-20,
+          "max_proposed_delta": 1.313875848897271e-22,
+          "max_delta_over_ULP": 5.414986328562022e+18
+        },
+        "0.refinements.1.project.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.6665537838633782e-09,
+          "max_proposed_delta": 3.635993728323683e-12,
+          "max_delta_over_ULP": 7.368389949552005e+31
+        },
+        "0.refinements.2.kernels.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.105989334338327e-19,
+          "max_proposed_delta": 2.206680576853252e-22,
+          "max_delta_over_ULP": 7.072021072208353e+18
+        },
+        "0.refinements.2.kernels.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 9.187721892060077e-20,
+          "max_proposed_delta": 1.7118407134026582e-22,
+          "max_delta_over_ULP": 4.244270538877481e+18
+        },
+        "0.refinements.2.kernels.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.1675349323335107e-19,
+          "max_proposed_delta": 2.171026507512802e-22,
+          "max_delta_over_ULP": 9.195430578866662e+18
+        },
+        "0.refinements.2.project.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 2.05592520785558e-09,
+          "max_proposed_delta": 4.560798849695402e-12,
+          "max_delta_over_ULP": 9.93442920118392e+31
+        },
+        "1.refinements.0.kernels.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 6.976271990644101e-12,
+          "max_proposed_delta": 8.440658762209896e-15,
+          "max_delta_over_ULP": 3.2127130459578287e+25
+        },
+        "1.refinements.0.kernels.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 6.9990944463749205e-12,
+          "max_proposed_delta": 8.579855576007489e-15,
+          "max_delta_over_ULP": 6.164389256552017e+25
+        },
+        "1.refinements.0.kernels.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 2.4994546363177328e-12,
+          "max_proposed_delta": 2.982694386616247e-15,
+          "max_delta_over_ULP": 1.1377904520999224e+25
+        },
+        "1.refinements.0.project.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.3622041478811298e-05,
+          "max_proposed_delta": 2.1400643163360656e-08,
+          "max_delta_over_ULP": 1.9981900352361567e+34
+        },
+        "1.refinements.1.kernels.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 6.637490470445817e-12,
+          "max_proposed_delta": 8.074678078950903e-15,
+          "max_delta_over_ULP": 1.964016164179444e+25
+        },
+        "1.refinements.1.kernels.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 6.6946006030410565e-12,
+          "max_proposed_delta": 8.814169012716366e-15,
+          "max_delta_over_ULP": 3.4288515097489377e+25
+        },
+        "1.refinements.1.kernels.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 2.3891216695964834e-12,
+          "max_proposed_delta": 2.6528024568706065e-15,
+          "max_delta_over_ULP": 1.4882369146161924e+25
+        },
+        "1.refinements.1.project.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.3114955436321907e-05,
+          "max_proposed_delta": 2.1077914425404743e-08,
+          "max_delta_over_ULP": 2.3702274857646186e+34
+        },
+        "1.refinements.2.kernels.0.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.0081993399857492e-11,
+          "max_proposed_delta": 1.1635122552922095e-14,
+          "max_delta_over_ULP": 2.0904546933383887e+25
+        },
+        "1.refinements.2.kernels.1.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 6.498621519385184e-12,
+          "max_proposed_delta": 7.435701360192227e-15,
+          "max_delta_over_ULP": 2.0486260960980467e+25
+        },
+        "1.refinements.2.kernels.2.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 1.831181256975456e-12,
+          "max_proposed_delta": 2.0817681346124715e-15,
+          "max_delta_over_ULP": 1.7492965353981128e+25
+        },
+        "1.refinements.2.project.": {
+          "nonzero_direction": true,
+          "ever_changed": true,
+          "max_clipped_gradient": 2.024995774263516e-05,
+          "max_proposed_delta": 3.0306957341963424e-08,
+          "max_delta_over_ULP": 2.3598723015414744e+34
+        }
+      }
+    },
+    "boundary": "Sub-ULP synthetic updates are not actual changes; real smoke requires all retained groups (uniform48/shared52)."
+  },
+  "key": "uniform_s3",
+  "seed": 3,
+  "local_only": true,
+  "formal_training_started": false,
+  "torch": "2.6.0+cu124",
+  "seconds": 28.03200000000652
+}

@@ -1,0 +1,614 @@
+{
+  "status": "completed",
+  "official": {
+    "AP50_95_percent": 24.052167016467585,
+    "AP50_percent": 41.04922474489787,
+    "AP75_percent": 24.672804877305715,
+    "AR1_percent": 1.8959209398017431,
+    "AR10_percent": 11.616322700992132,
+    "AR100_percent": 31.622925927619587,
+    "AR500_percent": 35.53394611610484,
+    "class_image_weights": {
+      "1": 1197,
+      "2": 797,
+      "3": 377,
+      "4": 1530,
+      "5": 1167,
+      "6": 750,
+      "7": 245,
+      "8": 232,
+      "9": 838,
+      "10": 794
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 1197,
+        "AP50_95_percent": 14.803695879536363,
+        "AP50_percent": 35.97027751629016,
+        "AP75_percent": 9.486844135767333
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 797,
+        "AP50_95_percent": 7.225581953813643,
+        "AP50_percent": 20.08228388514502,
+        "AP75_percent": 3.2381675402723844
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 377,
+        "AP50_95_percent": 5.10525879484503,
+        "AP50_percent": 11.494052728229965,
+        "AP75_percent": 4.167551906069803
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 1530,
+        "AP50_95_percent": 47.95848355659289,
+        "AP50_percent": 75.19993107499243,
+        "AP75_percent": 53.24085682336626
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 1167,
+        "AP50_95_percent": 20.831824006722222,
+        "AP50_percent": 30.031117694217812,
+        "AP75_percent": 24.481809610276194
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 750,
+        "AP50_95_percent": 24.623547598665233,
+        "AP50_percent": 38.511642391779006,
+        "AP75_percent": 27.990805902869088
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 245,
+        "AP50_95_percent": 10.571382576615253,
+        "AP50_percent": 19.824687681306656,
+        "AP75_percent": 9.829682654366296
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 232,
+        "AP50_95_percent": 10.06871286972704,
+        "AP50_percent": 16.61360389911724,
+        "AP75_percent": 10.844120072196123
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 838,
+        "AP50_95_percent": 38.254958664406814,
+        "AP50_percent": 54.21395722989244,
+        "AP75_percent": 43.54608865650661
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 794,
+        "AP50_95_percent": 15.263939489466319,
+        "AP50_percent": 36.36436120643924,
+        "AP75_percent": 9.617087720890712
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "binding": {
+    "seed": 1,
+    "split": "test-dev",
+    "checkpoint_sha256": "64d6762463e6fad4f0e6f77f23a8ef5454a40e699b26d1a56ef82797dff58b47",
+    "protocol": {
+      "imgsz": 640,
+      "device": "cuda:0",
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "verbose": false,
+      "save": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "batch": 4
+    },
+    "dataset": {
+      "dataset_root": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-test-dev",
+      "images": 1610,
+      "annotation_dimension_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+      "raw_class_counts": {
+        "0": 2180,
+        "1": 21006,
+        "2": 6376,
+        "3": 1302,
+        "4": 28074,
+        "5": 5771,
+        "6": 2659,
+        "7": 530,
+        "8": 599,
+        "9": 2940,
+        "10": 5845,
+        "11": 265
+      },
+      "score_zero_counts": {
+        "0": 2180,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 265
+      },
+      "class0_ignore_regions": 2180,
+      "class11_others": 265,
+      "gt_rows_dropped_by_class0_region": 395,
+      "evaluated_gt_rows": 74707,
+      "image_content_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b"
+    },
+    "scorer_sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "prediction_sha256": "dab35c0dd5a06bcde55cd70ed9cabef7b802847508eecc5ea1fe01eef882835d"
+  },
+  "ignore": {
+    "raw_prediction_count": 638764,
+    "official_prediction_count_after_class0_filter": 615037,
+    "removed_by_class0_ignore": 23727,
+    "removed_by_class0_fraction": 0.03714517411751445,
+    "overlap_class11_others": 1403,
+    "overlap_class11_fraction": 0.00219642935419028,
+    "per_class": {
+      "1": {
+        "total": 219812,
+        "removed_by_class0": 7327,
+        "overlap_class11": 350
+      },
+      "2": {
+        "total": 18275,
+        "removed_by_class0": 1144,
+        "overlap_class11": 86
+      },
+      "3": {
+        "total": 31628,
+        "removed_by_class0": 1109,
+        "overlap_class11": 59
+      },
+      "4": {
+        "total": 236295,
+        "removed_by_class0": 9195,
+        "overlap_class11": 301
+      },
+      "5": {
+        "total": 14253,
+        "removed_by_class0": 88,
+        "overlap_class11": 29
+      },
+      "6": {
+        "total": 22038,
+        "removed_by_class0": 264,
+        "overlap_class11": 204
+      },
+      "7": {
+        "total": 7258,
+        "removed_by_class0": 275,
+        "overlap_class11": 105
+      },
+      "8": {
+        "total": 2874,
+        "removed_by_class0": 62,
+        "overlap_class11": 44
+      },
+      "9": {
+        "total": 12996,
+        "removed_by_class0": 120,
+        "overlap_class11": 20
+      },
+      "10": {
+        "total": 73335,
+        "removed_by_class0": 4143,
+        "overlap_class11": 205
+      }
+    },
+    "fp_audit": [
+      {
+        "confidence": 0.05,
+        "area_group": "all",
+        "fp": 88317,
+        "fp_ignore": 7777,
+        "fp_others": 310,
+        "tp": 43642,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.08805779181810976,
+        "fp_class11_others_fraction": 0.003510082996478594
+      },
+      {
+        "confidence": 0.05,
+        "area_group": "small",
+        "fp": 69766,
+        "fp_ignore": 7453,
+        "fp_others": 159,
+        "tp": 23957,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.10682854112318321,
+        "fp_class11_others_fraction": 0.0022790471003067397
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "all",
+        "fp": 50767,
+        "fp_ignore": 4242,
+        "fp_others": 211,
+        "tp": 41341,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.08355821695195698,
+        "fp_class11_others_fraction": 0.004156243228869147
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "small",
+        "fp": 38380,
+        "fp_ignore": 4043,
+        "fp_others": 104,
+        "tp": 22061,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.10534132360604481,
+        "fp_class11_others_fraction": 0.002709744658676394
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "all",
+        "fp": 19543,
+        "fp_ignore": 1246,
+        "fp_others": 102,
+        "tp": 36644,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.06375684388272015,
+        "fp_class11_others_fraction": 0.005219260093127974
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "small",
+        "fp": 12680,
+        "fp_ignore": 1163,
+        "fp_others": 40,
+        "tp": 18263,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.0917192429022082,
+        "fp_class11_others_fraction": 0.0031545741324921135
+      }
+    ],
+    "fp_audit_note": "Greedy IoU=0.50 class-wise matching before class-0 raster filtering; ignored score-zero GT matches are neutral."
+  },
+  "cached_references": {
+    "e1": {
+      "official": {
+        "AP50_95_percent": 23.682731706712655,
+        "AP50_percent": 40.577843655216356,
+        "AP75_percent": 24.212877822091002,
+        "AR1_percent": 2.08747000661947,
+        "AR10_percent": 11.808106192178212,
+        "AR100_percent": 31.2157204211833,
+        "AR500_percent": 35.26287384970503,
+        "class_image_weights": {
+          "1": 1197,
+          "2": 797,
+          "3": 377,
+          "4": 1530,
+          "5": 1167,
+          "6": 750,
+          "7": 245,
+          "8": 232,
+          "9": 838,
+          "10": 794
+        },
+        "per_class": {
+          "1": {
+            "name": "pedestrian",
+            "images_with_class_weight": 1197,
+            "AP50_95_percent": 14.130722450445546,
+            "AP50_percent": 34.85324230228051,
+            "AP75_percent": 8.858591182164192
+          },
+          "2": {
+            "name": "people",
+            "images_with_class_weight": 797,
+            "AP50_95_percent": 7.145634228181626,
+            "AP50_percent": 20.141402637280898,
+            "AP75_percent": 2.9858607882327695
+          },
+          "3": {
+            "name": "bicycle",
+            "images_with_class_weight": 377,
+            "AP50_95_percent": 4.734596635382812,
+            "AP50_percent": 10.938510420195207,
+            "AP75_percent": 3.4019419782115867
+          },
+          "4": {
+            "name": "car",
+            "images_with_class_weight": 1530,
+            "AP50_95_percent": 47.169670305792984,
+            "AP50_percent": 74.29955409531604,
+            "AP75_percent": 52.1499796100533
+          },
+          "5": {
+            "name": "van",
+            "images_with_class_weight": 1167,
+            "AP50_95_percent": 20.487031383917447,
+            "AP50_percent": 29.766978640576113,
+            "AP75_percent": 24.295021977229286
+          },
+          "6": {
+            "name": "truck",
+            "images_with_class_weight": 750,
+            "AP50_95_percent": 25.02190321979746,
+            "AP50_percent": 38.596310340228534,
+            "AP75_percent": 27.90239902625417
+          },
+          "7": {
+            "name": "tricycle",
+            "images_with_class_weight": 245,
+            "AP50_95_percent": 10.408635035749427,
+            "AP50_percent": 19.68992304615245,
+            "AP75_percent": 9.912367204530883
+          },
+          "8": {
+            "name": "awning-tricycle",
+            "images_with_class_weight": 232,
+            "AP50_95_percent": 9.518930046785602,
+            "AP50_percent": 15.839870479372149,
+            "AP75_percent": 10.049405201749709
+          },
+          "9": {
+            "name": "bus",
+            "images_with_class_weight": 838,
+            "AP50_95_percent": 38.21986800269847,
+            "AP50_percent": 54.64635085737227,
+            "AP75_percent": 43.34131765744084
+          },
+          "10": {
+            "name": "motor",
+            "images_with_class_weight": 794,
+            "AP50_95_percent": 14.744811972179605,
+            "AP50_percent": 35.401236244567826,
+            "AP75_percent": 9.472179832880858
+          }
+        },
+        "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+      },
+      "provenance": {
+        "binding": {
+          "revision": "testdev_e1_e40_paired3_v1",
+          "key": "e1_seed1",
+          "checkpoint_sha256": "f1a5ba6642a01445a99b2c7c80d8e79299a4402159bc37d2a08bb31ff365df12",
+          "dataset_annotation_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+          "dataset_image_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+          "protocol": {
+            "imgsz": 640,
+            "conf": 0.001,
+            "iou": 0.7,
+            "max_det": 500,
+            "half": false,
+            "augment": false,
+            "verbose": false,
+            "save": false,
+            "agnostic_nms": false,
+            "classes": null,
+            "batch": 4,
+            "device": "0",
+            "letterbox": "unchanged Ultralytics 8.3.0 predictor pre_transform",
+            "deterministic_algorithms": true,
+            "deterministic_warn_only": true,
+            "cudnn_deterministic": true,
+            "cudnn_benchmark": false
+          },
+          "source_sha256": "a28845ee9c70cb7de892482fe7cdecd2ae253208fea93844a2b2a27c003f8875",
+          "image_count": 1610,
+          "smoke_only": false
+        },
+        "prediction_sha256": "048211d7875297658162953e0e3f7d4ae492caff8e96eb62af00b6cf56616a67",
+        "original_report": "references/e1_seed1_official_metrics.json"
+      },
+      "inference_rerun": false,
+      "seed": 1,
+      "checkpoint_sha256": "f1a5ba6642a01445a99b2c7c80d8e79299a4402159bc37d2a08bb31ff365df12"
+    },
+    "e60": {
+      "official": {
+        "AP50_95_percent": 24.320962413519315,
+        "AP50_percent": 41.38959097139901,
+        "AP75_percent": 24.996084540660465,
+        "AR1_percent": 1.857939742162174,
+        "AR10_percent": 11.727184717616337,
+        "AR100_percent": 31.943830719005565,
+        "AR500_percent": 35.97280090471201,
+        "class_image_weights": {
+          "1": 1197,
+          "2": 797,
+          "3": 377,
+          "4": 1530,
+          "5": 1167,
+          "6": 750,
+          "7": 245,
+          "8": 232,
+          "9": 838,
+          "10": 794
+        },
+        "per_class": {
+          "1": {
+            "name": "pedestrian",
+            "images_with_class_weight": 1197,
+            "AP50_95_percent": 14.919821731698732,
+            "AP50_percent": 36.300563748047196,
+            "AP75_percent": 9.590823783843915
+          },
+          "2": {
+            "name": "people",
+            "images_with_class_weight": 797,
+            "AP50_95_percent": 7.648028354646742,
+            "AP50_percent": 21.134867443319592,
+            "AP75_percent": 3.5455467014920203
+          },
+          "3": {
+            "name": "bicycle",
+            "images_with_class_weight": 377,
+            "AP50_95_percent": 5.342589008167733,
+            "AP50_percent": 12.124759840517562,
+            "AP75_percent": 4.100149371100624
+          },
+          "4": {
+            "name": "car",
+            "images_with_class_weight": 1530,
+            "AP50_95_percent": 48.047300038141174,
+            "AP50_percent": 75.27750292042667,
+            "AP75_percent": 53.43494169995279
+          },
+          "5": {
+            "name": "van",
+            "images_with_class_weight": 1167,
+            "AP50_95_percent": 21.377672518563216,
+            "AP50_percent": 30.550129449093973,
+            "AP75_percent": 25.150103337341324
+          },
+          "6": {
+            "name": "truck",
+            "images_with_class_weight": 750,
+            "AP50_95_percent": 25.20840682673732,
+            "AP50_percent": 38.72494684085645,
+            "AP75_percent": 27.647779990563677
+          },
+          "7": {
+            "name": "tricycle",
+            "images_with_class_weight": 245,
+            "AP50_95_percent": 9.463892391609267,
+            "AP50_percent": 18.17415986448414,
+            "AP75_percent": 8.668305169418183
+          },
+          "8": {
+            "name": "awning-tricycle",
+            "images_with_class_weight": 232,
+            "AP50_95_percent": 9.479647104659602,
+            "AP50_percent": 15.552831001444456,
+            "AP75_percent": 10.11409215150315
+          },
+          "9": {
+            "name": "bus",
+            "images_with_class_weight": 838,
+            "AP50_95_percent": 39.019342831221095,
+            "AP50_percent": 55.21697764566933,
+            "AP75_percent": 45.07453700061291
+          },
+          "10": {
+            "name": "motor",
+            "images_with_class_weight": 794,
+            "AP50_95_percent": 15.41693793454752,
+            "AP50_percent": 36.555346498078336,
+            "AP75_percent": 10.33760265725774
+          }
+        },
+        "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+      },
+      "provenance": {
+        "binding": {
+          "revision": "testdev_e60_seed1_v1",
+          "seed": 1,
+          "package": {
+            "base_eval.py": "5e77ba0494c00cbcd7582325b8c94b31a13fed228e3284d217210c6776ff6bcb",
+            "build_release.py": "73c871b5e75d4266ac63cc6b6a66a1406633facbbf78be50d9e40a95dac24cdc",
+            "d27_official.py": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+            "e57_spatial_task_head.py": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+            "e58_spatial_task_head.py": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+            "LICENSE-Ultralytics.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+            "LOCAL_VALIDATION.md": "4bb1ccd90bd04764cc76a5ed01d63a54f23fbfba26571c1af81a36658a54865e",
+            "parent_spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+            "README.md": "b46a5d8809cb587f388533a71caf8afd8a50afe970f5ed8e7da5f6d92d40212d",
+            "references/e0_seed1_official_metrics.json": "810d31c14e8e0e0a4145a4344c7af3cb4073e5fa6ea81335ee74f397c5d84590",
+            "references/e0_seed1_prediction_manifest.json": "ae2db7f5a2bc80cfb13a1d66939d287881452b2522d3e324ef031ce3ab5ff91c",
+            "references/e1_seed1_official_metrics.json": "557ebad077b10985890e3b180242634b0d8942bb4b0b992bb870f3e4d8826241",
+            "references/e1_seed1_prediction_manifest.json": "a48aaaac62b901b34a70fd4be803db03a129d41102a9af77885309363dd5b473",
+            "references/e1_val_metadata.json": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+            "references/e40_seed1_official_metrics.json": "552f4e82067e4e8346efcbddec7e91ea9339ad3547a8a9028e4de15f49b7fa69",
+            "references/e40_seed1_prediction_manifest.json": "d286a114cdb48d773457433daecaf3c9d1186fd19bd321cdf8494eb6879f975c",
+            "references/e58_seed1_official_metrics.json": "aeef063728fc68a3d3f974a00438e250352c7e93321205c67aeb5efd3dfccc35",
+            "references/e58_seed1_prediction_manifest.json": "47750fbea7471ffda8fc439bfc7f5f2b2e384f3ef424b3381ea10cfad239641c",
+            "references/e60_seed1_comparison.json": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52",
+            "references/e60_seed1_completion.json": "e7ce04509891249286630df229ed4b6dd9a84514dae73d1c16a82272bda36f98",
+            "references/e60_seed1_training.json": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71",
+            "references/seed1_testdev_summary.json": "1fa43c7f95b22fe764be4740e371461cbe962ab8f2bddb07faa4fc1133ae803c",
+            "references/testdev_input_manifest.json": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+            "references/val_smoke.json": "98a317a6fe9f030cee69ce3bfc95c5d5c55ea2b3db38d07a5a780443ecdc2fd9",
+            "run.sh": "775dcaada97c5654556f827592285d817e1938fb58eb40849d1b65e34c8ecd7f",
+            "run_eval.py": "49db3bfee4276d023a245534a0bf6db41fcc44c2adbec1b83787f7c5dfa58d72",
+            "spatial_task_head.py": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+            "test_local.py": "88fe04795e6478b8345d21c8b1fda68c7fda3ec758fdbaad717404850038d1df"
+          },
+          "source": {
+            "nn/modules/block.py": "d003cf2646c3c6bb6826874ae506e5822bec35f7c663e455de7ceb918c8149e0",
+            "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+            "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+            "engine/model.py": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97",
+            "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+            "engine/predictor.py": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e",
+            "models/yolo/detect/predict.py": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390",
+            "utils/ops.py": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd",
+            "nn/autobackend.py": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d",
+            "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70"
+          },
+          "checkpoint_sha256": "bf38299c8723f5fe399e2f94fa4042df2ff6ae51dcb99fceece8bc85ed00dc17",
+          "val_smoke_sha256": "1ee94fa0da65fed29094cb02c36f13d36e7648414979aba85d4f7551fb1bd594",
+          "protocol": {
+            "imgsz": 640,
+            "device": "0",
+            "conf": 0.001,
+            "iou": 0.7,
+            "max_det": 500,
+            "half": false,
+            "augment": false,
+            "verbose": false,
+            "save": false,
+            "agnostic_nms": false,
+            "classes": null,
+            "batch": 4,
+            "letterbox": "unchanged Ultralytics 8.3.0 predictor pre_transform",
+            "deterministic_algorithms": true,
+            "deterministic_warn_only": true,
+            "cudnn_deterministic": true,
+            "cudnn_benchmark": false
+          },
+          "dataset_annotation_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+          "dataset_image_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+          "image_count": 1610,
+          "environment": {
+            "python": "3.10.21",
+            "torch": "2.5.1+cu121",
+            "cuda": "12.1",
+            "cudnn": 90100,
+            "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+          },
+          "allocator_cap_GiB": 6
+        },
+        "prediction_sha256": "ca22b92d3c74c73a8f38dc478e2cc84667a564840c159357ea0729d339ef7f06",
+        "original_report": "references/e60_seed1_official_metrics.json"
+      },
+      "inference_rerun": false,
+      "seed": 1,
+      "checkpoint_sha256": "bf38299c8723f5fe399e2f94fa4042df2ff6ae51dcb99fceece8bc85ed00dc17"
+    }
+  },
+  "prediction_sha256": "dab35c0dd5a06bcde55cd70ed9cabef7b802847508eecc5ea1fe01eef882835d",
+  "delta_vs_E1_pp": {
+    "AP50_95_percent": 0.36943530975493033,
+    "AP50_percent": 0.4713810896815147,
+    "AP75_percent": 0.4599270552147132,
+    "AR500_percent": 0.27107226639981263
+  },
+  "delta_vs_E60_pp": {
+    "AP50_95_percent": -0.26879539705172917,
+    "AP50_percent": -0.3403662265011391,
+    "AP75_percent": -0.3232796633547501,
+    "AR500_percent": -0.4388547886071663
+  },
+  "boundary": "One predeclared seed1 public-module adaptation; not complete TOOD; no test tuning."
+}

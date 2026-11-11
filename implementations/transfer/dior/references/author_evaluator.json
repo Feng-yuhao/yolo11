@@ -1,0 +1,32 @@
+{
+  "source_archive": {
+    "url": "https://codeload.github.com/ucas-vg/PointTinyBenchmark/tar.gz/refs/heads/TinyBenchmark",
+    "archive_sha256": "444b5489f6f2c5048924703be37aa2615acba71618c4444f24e6713ae63d6e02",
+    "files": {
+      "PointTinyBenchmark-TinyBenchmark/LICENSE": {
+        "bytes": 1068,
+        "sha256": "5a75968d514f9ab9423264c07430162670731efc27edbed3daec618ab9faf464"
+      },
+      "PointTinyBenchmark-TinyBenchmark/tiny_benchmark/LICENSE-MASKRCNN-BENCHMARK": {
+        "bytes": 1065,
+        "sha256": "a3a92ad0429b82684cbf1f4c932deeedee17e760b4012cf2d8991d98e6759964"
+      },
+      "PointTinyBenchmark-TinyBenchmark/tiny_benchmark/maskrcnn_benchmark/data/datasets/evaluation/coco/coco_eval.py": {
+        "bytes": 14749,
+        "sha256": "20841fbc6db74cc361475871dadda1fe57f8013f270601836d8c395c1a4edd9a"
+      },
+      "PointTinyBenchmark-TinyBenchmark/tiny_benchmark/maskrcnn_benchmark/data/datasets/evaluation/coco/cocoeval.py": {
+        "bytes": 32665,
+        "sha256": "222b3173510e7a89bd03d077dce5d4a11e23ea6a7cd22afbbe930817b0886557"
+      }
+    }
+  },
+  "original_sha256": "222b3173510e7a89bd03d077dce5d4a11e23ea6a7cd22afbbe930817b0886557",
+  "original_url": "https://github.com/ucas-vg/PointTinyBenchmark/blob/TinyBenchmark/tiny_benchmark/maskrcnn_benchmark/data/datasets/evaluation/coco/cocoeval.py",
+  "compatibility_only": [
+    "dtype=np.float -> dtype=float",
+    "linspace np.round sample count -> int(np.round)"
+  ],
+  "original_matching_preserved": true,
+  "IOD_threshold": "IOD >= IoU threshold, original TinyBenchmark v1"
+}

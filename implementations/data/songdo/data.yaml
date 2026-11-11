@@ -1,0 +1,12 @@
+# Songdo Vision v2, fixed train-only holdout. Official test is NOT used as val.
+# Pass an absolute path to this YAML. Without a path: key, Ultralytics resolves
+# the image paths against this YAML's directory (8.3.0 and 8.4.x).
+train: images/train
+val: images/val
+test: images/test
+nc: 4
+names:
+  0: car
+  1: bus
+  2: truck
+  3: motorcycle

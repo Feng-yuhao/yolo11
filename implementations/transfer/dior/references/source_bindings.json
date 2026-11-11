@@ -1,0 +1,18 @@
+{
+  "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+  "nn/modules/block.py": "d003cf2646c3c6bb6826874ae506e5822bec35f7c663e455de7ceb918c8149e0",
+  "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+  "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+  "engine/model.py": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97",
+  "engine/trainer.py": "94130a243a6ef28c04d1e78d900b18b336c044e93e58e077be5868181d5589c7",
+  "models/yolo/detect/train.py": "7079424e3dfd4ebe9bbad40e411ade0859d53832b622a6a8801a53010b8600f1",
+  "utils/tal.py": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9",
+  "utils/loss.py": "496dc5545169f0a8bf2c24fcc087456e6e8a9b23dc427dd198a35cbd50213102",
+  "engine/predictor.py": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e",
+  "models/yolo/detect/predict.py": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390",
+  "utils/ops.py": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd",
+  "nn/autobackend.py": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d",
+  "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70",
+  "data/build.py": "01f326cf4b072189b0af2ffdd2d10915193f933d12dd2a2549c557a981e24f4f",
+  "utils/torch_utils.py": "7835546446a6e138deaf1fe865ce85ef5957610a135512e04818ab0efaff062e"
+}

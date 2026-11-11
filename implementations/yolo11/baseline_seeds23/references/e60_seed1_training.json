@@ -1,0 +1,3894 @@
+{
+  "status": "completed",
+  "variant": "e60",
+  "seed": 1,
+  "allocator_cap_GiB": 28.0,
+  "report_dir": "/root/autodl-tmp/yolo11_project/comparison_reports/E60_RUN_20261010_133029_103161",
+  "started_at": "2026-10-10T13:30:33.650581",
+  "params": {
+    "data": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019.yaml",
+    "epochs": 200,
+    "imgsz": 640,
+    "batch": 16,
+    "device": "cuda:0",
+    "workers": 8,
+    "seed": 1,
+    "deterministic": true,
+    "patience": 0,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "amp": true,
+    "cos_lr": true,
+    "close_mosaic": 10,
+    "max_det": 500,
+    "conf": 0.001,
+    "iou": 0.7,
+    "val": true,
+    "plots": true,
+    "save": true,
+    "save_period": -1,
+    "project": "/root/autodl-tmp/yolo11_project/runs",
+    "name": "e60a_e58_group_residual_encoding_img640_seed1_200e",
+    "exist_ok": false,
+    "resume": false,
+    "pretrained": true,
+    "cache": false,
+    "rect": false,
+    "multi_scale": false,
+    "fraction": 1.0,
+    "nbs": 64,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "box": 7.5,
+    "cls": 0.5,
+    "dfl": 1.5,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 0.0,
+    "translate": 0.1,
+    "scale": 0.5,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "flipud": 0.0,
+    "fliplr": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.0,
+    "copy_paste": 0.0,
+    "model": "/root/autodl-tmp/E60a_E58_GroupResidualEncoding_AutoDL/e1_reference.yaml"
+  },
+  "completed_epochs": 200,
+  "precision_policy": {
+    "new_refinements": "FP32_compute_and_parameters",
+    "parent": "unchanged_AMP",
+    "residual_output": "parent_bank_dtype"
+  },
+  "signature": {
+    "params": {
+      "data": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019.yaml",
+      "epochs": 200,
+      "imgsz": 640,
+      "batch": 16,
+      "device": "cuda:0",
+      "workers": 8,
+      "seed": 1,
+      "deterministic": true,
+      "patience": 0,
+      "optimizer": "SGD",
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "amp": true,
+      "cos_lr": true,
+      "close_mosaic": 10,
+      "max_det": 500,
+      "conf": 0.001,
+      "iou": 0.7,
+      "val": true,
+      "plots": true,
+      "save": true,
+      "save_period": -1,
+      "project": "/root/autodl-tmp/yolo11_project/runs",
+      "name": "e60a_e58_group_residual_encoding_img640_seed1_200e",
+      "exist_ok": false,
+      "resume": false,
+      "pretrained": true,
+      "cache": false,
+      "rect": false,
+      "multi_scale": false,
+      "fraction": 1.0,
+      "nbs": 64,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "warmup_bias_lr": 0.1,
+      "box": 7.5,
+      "cls": 0.5,
+      "dfl": 1.5,
+      "hsv_h": 0.015,
+      "hsv_s": 0.7,
+      "hsv_v": 0.4,
+      "degrees": 0.0,
+      "translate": 0.1,
+      "scale": 0.5,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.5,
+      "mosaic": 1.0,
+      "mixup": 0.0,
+      "copy_paste": 0.0,
+      "model": "/root/autodl-tmp/E60a_E58_GroupResidualEncoding_AutoDL/e1_reference.yaml"
+    },
+    "torch": "2.5.1+cu121",
+    "cuda": "12.1",
+    "variant": "e60",
+    "GPU": {
+      "name": "NVIDIA GeForce RTX 4080 SUPER",
+      "total_memory": 33796456448,
+      "capability": [
+        8,
+        9
+      ]
+    },
+    "allocator_cap_GiB": 28.0,
+    "evaluation_dataset": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val",
+    "parent": "1acf7e45b4d54eb40eb3f1abd86232d3000ce9794c3797ac024f540aac6ab6de",
+    "E58_parent": "428a3ed161d670c8cb25653dcdc2b5a7f5d4075c4de30c4369227eaad595c414",
+    "reference_predictions": {
+      "e1_yolo11s_p2add_img640_seed1_20260926_102750_718906": "f7541ce8a61c1121546d73e9cb885f062080b55a7dc4fce3b5570e2db3851279",
+      "E40_RUN_20260929_205658_507620": "e1f79d8ec882f403002cf233d1d16ec78ed317f4d71a1089335b5d89ba2eb3e9",
+      "E58_RUN_20261008_001519_559728": "5703f5c6903c2de91e25a900b4d7b90d88ede373ff66616e1f9a191df9ff0e21"
+    },
+    "E58_seed1_protocol": "8cad1af1577cfb3d08cb2e81ff1b2e5513311490a152b3d9d87d573ceaf210b6",
+    "seed": 1,
+    "source": {
+      "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+      "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+      "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+      "utils/loss.py": "496dc5545169f0a8bf2c24fcc087456e6e8a9b23dc427dd198a35cbd50213102",
+      "utils/tal.py": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9",
+      "engine/trainer.py": "94130a243a6ef28c04d1e78d900b18b336c044e93e58e077be5868181d5589c7",
+      "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70"
+    },
+    "package": {
+      "build_release.py": "96458a68573f24b808b80eeb1c6f7aa22d671a5b0efe5e72d6abed577622c3f9",
+      "checks.py": "812b9bcd218a4d704b88fd06fd0199bdc1cadcf821b082722597e31787a256bc",
+      "controller.py": "122bd06ba63fc4889dfd9b75a82429a360496a85d7f963b92d8afe38e02b6738",
+      "d27_official.py": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+      "d38_common.py": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+      "e1_640_core.py": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+      "e1_reference.yaml": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+      "e57_spatial_task_head.py": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+      "e58_spatial_task_head.py": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+      "evaluate.py": "ad98cffb7498e8ed0c497d7d4067d23f7e0413d21d444b4f8e5a8d9d9802b0e3",
+      "group_checks.py": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8",
+      "local_validate.py": "e500c8e16d2663254e112e48dceb67cf2482d1f003dc1d79cee22d3bc5486a85",
+      "optimizer_checks.py": "5254f0f1e0aed42c5fe3ba550c87e6ca8b0f575d497e3f9dc0da3b32621b2587",
+      "p2_tal_chunked.py": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+      "parent_reference.py": "783e630431ee192dac96ad21737412008a1761345f9b93714e6b91102946d2d2",
+      "parent_spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+      "precision_checks.py": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a",
+      "run.sh": "c88acd75d20cfc02b5bb7d0fd7305232a0be3502e90c92aee4ac3f092cd4297d",
+      "run_experiment.py": "7635839819f4eca0288bd14bde72cc5933138afd74ba947a850ea074c6cb6c99",
+      "shutdown_safety.py": "d453a316dc55f3159c94b80827ceadfb726ec1dca7d6274e6e5724496f8c289b",
+      "single_safety.py": "a640988726fd7d0ac41fd4b2de944caa36f9ea5543b19580e06d3989b7fff3f4",
+      "smoke_memory.py": "77896d3ba8fab22bbd2ee8a776ffc7e5ccbb04ed23fbb8e78151473c45ff03bf",
+      "smoke_progress.py": "5289bd5dcca68437fe978e940635f0ce133d07106014c377a9c293c8584f9b8b",
+      "spatial_task_head.py": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+      "test_release.py": "511536e43617df57126374f264bf074d7a4fee260d69216c7a44db519dbb1022",
+      "validation_smoke.py": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf"
+    },
+    "yaml": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "pretrained": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+    "baseline": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+    "data": "2de8ad3c6f67db8cfa5731047292eaf7c4a3a721697bcb77b491525a3a43e6bd"
+  },
+  "initialization": {
+    "rule": "identity layers 0..22; Detect 23->26; old branches 0,1,2->new 1,2,3",
+    "source": "original 80-class yolo11s.pt; never baseline best.pt",
+    "loaded_tensors": 493,
+    "groups": {
+      "backbone": {
+        "tensors": 240,
+        "elements_including_buffers": 5458760
+      },
+      "original_neck": {
+        "tensors": 138,
+        "elements_including_buffers": 3174807
+      },
+      "original_P3_P4_P5_detect_and_DFL": {
+        "tensors": 115,
+        "elements_including_buffers": 824290
+      }
+    },
+    "skipped_class_outputs": [
+      {
+        "source": "model.23.cv3.0.2.weight",
+        "target": "model.26.cv3.1.2.weight",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.0.2.bias",
+        "target": "model.26.cv3.1.2.bias",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.1.2.weight",
+        "target": "model.26.cv3.2.2.weight",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.1.2.bias",
+        "target": "model.26.cv3.2.2.bias",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.2.2.weight",
+        "target": "model.26.cv3.3.2.weight",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      },
+      {
+        "source": "model.23.cv3.2.2.bias",
+        "target": "model.26.cv3.3.2.bias",
+        "reason": "80 COCO classes -> 10 VisDrone classes"
+      }
+    ],
+    "new_or_reinitialized_target_tensors": [
+      "model.25.cv1.bn.bias",
+      "model.25.cv1.bn.num_batches_tracked",
+      "model.25.cv1.bn.running_mean",
+      "model.25.cv1.bn.running_var",
+      "model.25.cv1.bn.weight",
+      "model.25.cv1.conv.weight",
+      "model.25.cv2.bn.bias",
+      "model.25.cv2.bn.num_batches_tracked",
+      "model.25.cv2.bn.running_mean",
+      "model.25.cv2.bn.running_var",
+      "model.25.cv2.bn.weight",
+      "model.25.cv2.conv.weight",
+      "model.25.m.0.cv1.bn.bias",
+      "model.25.m.0.cv1.bn.num_batches_tracked",
+      "model.25.m.0.cv1.bn.running_mean",
+      "model.25.m.0.cv1.bn.running_var",
+      "model.25.m.0.cv1.bn.weight",
+      "model.25.m.0.cv1.conv.weight",
+      "model.25.m.0.cv2.bn.bias",
+      "model.25.m.0.cv2.bn.num_batches_tracked",
+      "model.25.m.0.cv2.bn.running_mean",
+      "model.25.m.0.cv2.bn.running_var",
+      "model.25.m.0.cv2.bn.weight",
+      "model.25.m.0.cv2.conv.weight",
+      "model.26.cv2.0.0.bn.bias",
+      "model.26.cv2.0.0.bn.num_batches_tracked",
+      "model.26.cv2.0.0.bn.running_mean",
+      "model.26.cv2.0.0.bn.running_var",
+      "model.26.cv2.0.0.bn.weight",
+      "model.26.cv2.0.0.conv.weight",
+      "model.26.cv2.0.1.bn.bias",
+      "model.26.cv2.0.1.bn.num_batches_tracked",
+      "model.26.cv2.0.1.bn.running_mean",
+      "model.26.cv2.0.1.bn.running_var",
+      "model.26.cv2.0.1.bn.weight",
+      "model.26.cv2.0.1.conv.weight",
+      "model.26.cv2.0.2.bias",
+      "model.26.cv2.0.2.weight",
+      "model.26.cv3.0.0.0.bn.bias",
+      "model.26.cv3.0.0.0.bn.num_batches_tracked",
+      "model.26.cv3.0.0.0.bn.running_mean",
+      "model.26.cv3.0.0.0.bn.running_var",
+      "model.26.cv3.0.0.0.bn.weight",
+      "model.26.cv3.0.0.0.conv.weight",
+      "model.26.cv3.0.0.1.bn.bias",
+      "model.26.cv3.0.0.1.bn.num_batches_tracked",
+      "model.26.cv3.0.0.1.bn.running_mean",
+      "model.26.cv3.0.0.1.bn.running_var",
+      "model.26.cv3.0.0.1.bn.weight",
+      "model.26.cv3.0.0.1.conv.weight",
+      "model.26.cv3.0.1.0.bn.bias",
+      "model.26.cv3.0.1.0.bn.num_batches_tracked",
+      "model.26.cv3.0.1.0.bn.running_mean",
+      "model.26.cv3.0.1.0.bn.running_var",
+      "model.26.cv3.0.1.0.bn.weight",
+      "model.26.cv3.0.1.0.conv.weight",
+      "model.26.cv3.0.1.1.bn.bias",
+      "model.26.cv3.0.1.1.bn.num_batches_tracked",
+      "model.26.cv3.0.1.1.bn.running_mean",
+      "model.26.cv3.0.1.1.bn.running_var",
+      "model.26.cv3.0.1.1.bn.weight",
+      "model.26.cv3.0.1.1.conv.weight",
+      "model.26.cv3.0.2.bias",
+      "model.26.cv3.0.2.weight",
+      "model.26.cv3.1.2.bias",
+      "model.26.cv3.1.2.weight",
+      "model.26.cv3.2.2.bias",
+      "model.26.cv3.2.2.weight",
+      "model.26.cv3.3.2.bias",
+      "model.26.cv3.3.2.weight"
+    ],
+    "tensor_mapping": [
+      {
+        "source": "model.0.conv.weight",
+        "target": "model.0.conv.weight",
+        "shape": [
+          32,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.0.bn.weight",
+        "target": "model.0.bn.weight",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.0.bn.bias",
+        "target": "model.0.bn.bias",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.0.bn.running_mean",
+        "target": "model.0.bn.running_mean",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.0.bn.running_var",
+        "target": "model.0.bn.running_var",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.0.bn.num_batches_tracked",
+        "target": "model.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.1.conv.weight",
+        "target": "model.1.conv.weight",
+        "shape": [
+          64,
+          32,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.1.bn.weight",
+        "target": "model.1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.1.bn.bias",
+        "target": "model.1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.1.bn.running_mean",
+        "target": "model.1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.1.bn.running_var",
+        "target": "model.1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.1.bn.num_batches_tracked",
+        "target": "model.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.2.cv1.conv.weight",
+        "target": "model.2.cv1.conv.weight",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.weight",
+        "target": "model.2.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.bias",
+        "target": "model.2.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.running_mean",
+        "target": "model.2.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.running_var",
+        "target": "model.2.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.2.cv1.bn.num_batches_tracked",
+        "target": "model.2.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.2.cv2.conv.weight",
+        "target": "model.2.cv2.conv.weight",
+        "shape": [
+          128,
+          96,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.weight",
+        "target": "model.2.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.bias",
+        "target": "model.2.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.running_mean",
+        "target": "model.2.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.running_var",
+        "target": "model.2.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.2.cv2.bn.num_batches_tracked",
+        "target": "model.2.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.2.m.0.cv1.conv.weight",
+        "target": "model.2.m.0.cv1.conv.weight",
+        "shape": [
+          16,
+          32,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.weight",
+        "target": "model.2.m.0.cv1.bn.weight",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.bias",
+        "target": "model.2.m.0.cv1.bn.bias",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.running_mean",
+        "target": "model.2.m.0.cv1.bn.running_mean",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.running_var",
+        "target": "model.2.m.0.cv1.bn.running_var",
+        "shape": [
+          16
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.2.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.2.m.0.cv2.conv.weight",
+        "target": "model.2.m.0.cv2.conv.weight",
+        "shape": [
+          32,
+          16,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.weight",
+        "target": "model.2.m.0.cv2.bn.weight",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.bias",
+        "target": "model.2.m.0.cv2.bn.bias",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.running_mean",
+        "target": "model.2.m.0.cv2.bn.running_mean",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.running_var",
+        "target": "model.2.m.0.cv2.bn.running_var",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.2.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.2.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.3.conv.weight",
+        "target": "model.3.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.3.bn.weight",
+        "target": "model.3.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.3.bn.bias",
+        "target": "model.3.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.3.bn.running_mean",
+        "target": "model.3.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.3.bn.running_var",
+        "target": "model.3.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.3.bn.num_batches_tracked",
+        "target": "model.3.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.4.cv1.conv.weight",
+        "target": "model.4.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.weight",
+        "target": "model.4.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.bias",
+        "target": "model.4.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.running_mean",
+        "target": "model.4.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.running_var",
+        "target": "model.4.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.4.cv1.bn.num_batches_tracked",
+        "target": "model.4.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.4.cv2.conv.weight",
+        "target": "model.4.cv2.conv.weight",
+        "shape": [
+          256,
+          192,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.weight",
+        "target": "model.4.cv2.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.bias",
+        "target": "model.4.cv2.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.running_mean",
+        "target": "model.4.cv2.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.running_var",
+        "target": "model.4.cv2.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.4.cv2.bn.num_batches_tracked",
+        "target": "model.4.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.4.m.0.cv1.conv.weight",
+        "target": "model.4.m.0.cv1.conv.weight",
+        "shape": [
+          32,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.weight",
+        "target": "model.4.m.0.cv1.bn.weight",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.bias",
+        "target": "model.4.m.0.cv1.bn.bias",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.running_mean",
+        "target": "model.4.m.0.cv1.bn.running_mean",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.running_var",
+        "target": "model.4.m.0.cv1.bn.running_var",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.4.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.4.m.0.cv2.conv.weight",
+        "target": "model.4.m.0.cv2.conv.weight",
+        "shape": [
+          64,
+          32,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.weight",
+        "target": "model.4.m.0.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.bias",
+        "target": "model.4.m.0.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.running_mean",
+        "target": "model.4.m.0.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.running_var",
+        "target": "model.4.m.0.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.4.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.4.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.5.conv.weight",
+        "target": "model.5.conv.weight",
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.5.bn.weight",
+        "target": "model.5.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.5.bn.bias",
+        "target": "model.5.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.5.bn.running_mean",
+        "target": "model.5.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.5.bn.running_var",
+        "target": "model.5.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.5.bn.num_batches_tracked",
+        "target": "model.5.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.cv1.conv.weight",
+        "target": "model.6.cv1.conv.weight",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.weight",
+        "target": "model.6.cv1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.bias",
+        "target": "model.6.cv1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.running_mean",
+        "target": "model.6.cv1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.running_var",
+        "target": "model.6.cv1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv1.bn.num_batches_tracked",
+        "target": "model.6.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.cv2.conv.weight",
+        "target": "model.6.cv2.conv.weight",
+        "shape": [
+          256,
+          384,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.weight",
+        "target": "model.6.cv2.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.bias",
+        "target": "model.6.cv2.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.running_mean",
+        "target": "model.6.cv2.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.running_var",
+        "target": "model.6.cv2.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.6.cv2.bn.num_batches_tracked",
+        "target": "model.6.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.cv1.conv.weight",
+        "target": "model.6.m.0.cv1.conv.weight",
+        "shape": [
+          64,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.weight",
+        "target": "model.6.m.0.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.bias",
+        "target": "model.6.m.0.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.running_mean",
+        "target": "model.6.m.0.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.running_var",
+        "target": "model.6.m.0.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.6.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.cv2.conv.weight",
+        "target": "model.6.m.0.cv2.conv.weight",
+        "shape": [
+          64,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.weight",
+        "target": "model.6.m.0.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.bias",
+        "target": "model.6.m.0.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.running_mean",
+        "target": "model.6.m.0.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.running_var",
+        "target": "model.6.m.0.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.6.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.cv3.conv.weight",
+        "target": "model.6.m.0.cv3.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.weight",
+        "target": "model.6.m.0.cv3.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.bias",
+        "target": "model.6.m.0.cv3.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.running_mean",
+        "target": "model.6.m.0.cv3.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.running_var",
+        "target": "model.6.m.0.cv3.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.6.m.0.cv3.bn.num_batches_tracked",
+        "target": "model.6.m.0.cv3.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.conv.weight",
+        "target": "model.6.m.0.m.0.cv1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.weight",
+        "target": "model.6.m.0.m.0.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.bias",
+        "target": "model.6.m.0.m.0.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.running_mean",
+        "target": "model.6.m.0.m.0.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.running_var",
+        "target": "model.6.m.0.m.0.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.6.m.0.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.conv.weight",
+        "target": "model.6.m.0.m.0.cv2.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.weight",
+        "target": "model.6.m.0.m.0.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.bias",
+        "target": "model.6.m.0.m.0.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.running_mean",
+        "target": "model.6.m.0.m.0.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.running_var",
+        "target": "model.6.m.0.m.0.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.6.m.0.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.conv.weight",
+        "target": "model.6.m.0.m.1.cv1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.weight",
+        "target": "model.6.m.0.m.1.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.bias",
+        "target": "model.6.m.0.m.1.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.running_mean",
+        "target": "model.6.m.0.m.1.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.running_var",
+        "target": "model.6.m.0.m.1.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv1.bn.num_batches_tracked",
+        "target": "model.6.m.0.m.1.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.conv.weight",
+        "target": "model.6.m.0.m.1.cv2.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.weight",
+        "target": "model.6.m.0.m.1.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.bias",
+        "target": "model.6.m.0.m.1.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.running_mean",
+        "target": "model.6.m.0.m.1.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.running_var",
+        "target": "model.6.m.0.m.1.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.6.m.0.m.1.cv2.bn.num_batches_tracked",
+        "target": "model.6.m.0.m.1.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.7.conv.weight",
+        "target": "model.7.conv.weight",
+        "shape": [
+          512,
+          256,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.7.bn.weight",
+        "target": "model.7.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.7.bn.bias",
+        "target": "model.7.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.7.bn.running_mean",
+        "target": "model.7.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.7.bn.running_var",
+        "target": "model.7.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.7.bn.num_batches_tracked",
+        "target": "model.7.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.cv1.conv.weight",
+        "target": "model.8.cv1.conv.weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.weight",
+        "target": "model.8.cv1.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.bias",
+        "target": "model.8.cv1.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.running_mean",
+        "target": "model.8.cv1.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.running_var",
+        "target": "model.8.cv1.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv1.bn.num_batches_tracked",
+        "target": "model.8.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.cv2.conv.weight",
+        "target": "model.8.cv2.conv.weight",
+        "shape": [
+          512,
+          768,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.weight",
+        "target": "model.8.cv2.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.bias",
+        "target": "model.8.cv2.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.running_mean",
+        "target": "model.8.cv2.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.running_var",
+        "target": "model.8.cv2.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.8.cv2.bn.num_batches_tracked",
+        "target": "model.8.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.cv1.conv.weight",
+        "target": "model.8.m.0.cv1.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.weight",
+        "target": "model.8.m.0.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.bias",
+        "target": "model.8.m.0.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.running_mean",
+        "target": "model.8.m.0.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.running_var",
+        "target": "model.8.m.0.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.8.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.cv2.conv.weight",
+        "target": "model.8.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.weight",
+        "target": "model.8.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.bias",
+        "target": "model.8.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.running_mean",
+        "target": "model.8.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.running_var",
+        "target": "model.8.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.8.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.cv3.conv.weight",
+        "target": "model.8.m.0.cv3.conv.weight",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.weight",
+        "target": "model.8.m.0.cv3.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.bias",
+        "target": "model.8.m.0.cv3.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.running_mean",
+        "target": "model.8.m.0.cv3.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.running_var",
+        "target": "model.8.m.0.cv3.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.8.m.0.cv3.bn.num_batches_tracked",
+        "target": "model.8.m.0.cv3.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.conv.weight",
+        "target": "model.8.m.0.m.0.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.weight",
+        "target": "model.8.m.0.m.0.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.bias",
+        "target": "model.8.m.0.m.0.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.running_mean",
+        "target": "model.8.m.0.m.0.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.running_var",
+        "target": "model.8.m.0.m.0.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.8.m.0.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.conv.weight",
+        "target": "model.8.m.0.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.weight",
+        "target": "model.8.m.0.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.bias",
+        "target": "model.8.m.0.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.running_mean",
+        "target": "model.8.m.0.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.running_var",
+        "target": "model.8.m.0.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.8.m.0.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.conv.weight",
+        "target": "model.8.m.0.m.1.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.weight",
+        "target": "model.8.m.0.m.1.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.bias",
+        "target": "model.8.m.0.m.1.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.running_mean",
+        "target": "model.8.m.0.m.1.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.running_var",
+        "target": "model.8.m.0.m.1.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv1.bn.num_batches_tracked",
+        "target": "model.8.m.0.m.1.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.conv.weight",
+        "target": "model.8.m.0.m.1.cv2.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.weight",
+        "target": "model.8.m.0.m.1.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.bias",
+        "target": "model.8.m.0.m.1.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.running_mean",
+        "target": "model.8.m.0.m.1.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.running_var",
+        "target": "model.8.m.0.m.1.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.8.m.0.m.1.cv2.bn.num_batches_tracked",
+        "target": "model.8.m.0.m.1.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.9.cv1.conv.weight",
+        "target": "model.9.cv1.conv.weight",
+        "shape": [
+          256,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.weight",
+        "target": "model.9.cv1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.bias",
+        "target": "model.9.cv1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.running_mean",
+        "target": "model.9.cv1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.running_var",
+        "target": "model.9.cv1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.9.cv1.bn.num_batches_tracked",
+        "target": "model.9.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.9.cv2.conv.weight",
+        "target": "model.9.cv2.conv.weight",
+        "shape": [
+          512,
+          1024,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.weight",
+        "target": "model.9.cv2.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.bias",
+        "target": "model.9.cv2.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.running_mean",
+        "target": "model.9.cv2.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.running_var",
+        "target": "model.9.cv2.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.9.cv2.bn.num_batches_tracked",
+        "target": "model.9.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.cv1.conv.weight",
+        "target": "model.10.cv1.conv.weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.weight",
+        "target": "model.10.cv1.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.bias",
+        "target": "model.10.cv1.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.running_mean",
+        "target": "model.10.cv1.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.running_var",
+        "target": "model.10.cv1.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv1.bn.num_batches_tracked",
+        "target": "model.10.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.cv2.conv.weight",
+        "target": "model.10.cv2.conv.weight",
+        "shape": [
+          512,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.weight",
+        "target": "model.10.cv2.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.bias",
+        "target": "model.10.cv2.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.running_mean",
+        "target": "model.10.cv2.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.running_var",
+        "target": "model.10.cv2.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.cv2.bn.num_batches_tracked",
+        "target": "model.10.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.conv.weight",
+        "target": "model.10.m.0.attn.qkv.conv.weight",
+        "shape": [
+          512,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.weight",
+        "target": "model.10.m.0.attn.qkv.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.bias",
+        "target": "model.10.m.0.attn.qkv.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.running_mean",
+        "target": "model.10.m.0.attn.qkv.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.running_var",
+        "target": "model.10.m.0.attn.qkv.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.qkv.bn.num_batches_tracked",
+        "target": "model.10.m.0.attn.qkv.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.attn.proj.conv.weight",
+        "target": "model.10.m.0.attn.proj.conv.weight",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.weight",
+        "target": "model.10.m.0.attn.proj.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.bias",
+        "target": "model.10.m.0.attn.proj.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.running_mean",
+        "target": "model.10.m.0.attn.proj.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.running_var",
+        "target": "model.10.m.0.attn.proj.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.proj.bn.num_batches_tracked",
+        "target": "model.10.m.0.attn.proj.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.attn.pe.conv.weight",
+        "target": "model.10.m.0.attn.pe.conv.weight",
+        "shape": [
+          256,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.weight",
+        "target": "model.10.m.0.attn.pe.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.bias",
+        "target": "model.10.m.0.attn.pe.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.running_mean",
+        "target": "model.10.m.0.attn.pe.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.running_var",
+        "target": "model.10.m.0.attn.pe.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.attn.pe.bn.num_batches_tracked",
+        "target": "model.10.m.0.attn.pe.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.ffn.0.conv.weight",
+        "target": "model.10.m.0.ffn.0.conv.weight",
+        "shape": [
+          512,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.weight",
+        "target": "model.10.m.0.ffn.0.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.bias",
+        "target": "model.10.m.0.ffn.0.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.running_mean",
+        "target": "model.10.m.0.ffn.0.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.running_var",
+        "target": "model.10.m.0.ffn.0.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.0.bn.num_batches_tracked",
+        "target": "model.10.m.0.ffn.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.10.m.0.ffn.1.conv.weight",
+        "target": "model.10.m.0.ffn.1.conv.weight",
+        "shape": [
+          256,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.weight",
+        "target": "model.10.m.0.ffn.1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.bias",
+        "target": "model.10.m.0.ffn.1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.running_mean",
+        "target": "model.10.m.0.ffn.1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.running_var",
+        "target": "model.10.m.0.ffn.1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.10.m.0.ffn.1.bn.num_batches_tracked",
+        "target": "model.10.m.0.ffn.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.13.cv1.conv.weight",
+        "target": "model.13.cv1.conv.weight",
+        "shape": [
+          256,
+          768,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.weight",
+        "target": "model.13.cv1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.bias",
+        "target": "model.13.cv1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.running_mean",
+        "target": "model.13.cv1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.running_var",
+        "target": "model.13.cv1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv1.bn.num_batches_tracked",
+        "target": "model.13.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.13.cv2.conv.weight",
+        "target": "model.13.cv2.conv.weight",
+        "shape": [
+          256,
+          384,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.weight",
+        "target": "model.13.cv2.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.bias",
+        "target": "model.13.cv2.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.running_mean",
+        "target": "model.13.cv2.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.running_var",
+        "target": "model.13.cv2.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.13.cv2.bn.num_batches_tracked",
+        "target": "model.13.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.13.m.0.cv1.conv.weight",
+        "target": "model.13.m.0.cv1.conv.weight",
+        "shape": [
+          64,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.weight",
+        "target": "model.13.m.0.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.bias",
+        "target": "model.13.m.0.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.running_mean",
+        "target": "model.13.m.0.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.running_var",
+        "target": "model.13.m.0.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.13.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.13.m.0.cv2.conv.weight",
+        "target": "model.13.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.weight",
+        "target": "model.13.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.bias",
+        "target": "model.13.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.running_mean",
+        "target": "model.13.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.running_var",
+        "target": "model.13.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.13.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.13.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.16.cv1.conv.weight",
+        "target": "model.16.cv1.conv.weight",
+        "shape": [
+          128,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.weight",
+        "target": "model.16.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.bias",
+        "target": "model.16.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.running_mean",
+        "target": "model.16.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.running_var",
+        "target": "model.16.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv1.bn.num_batches_tracked",
+        "target": "model.16.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.16.cv2.conv.weight",
+        "target": "model.16.cv2.conv.weight",
+        "shape": [
+          128,
+          192,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.weight",
+        "target": "model.16.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.bias",
+        "target": "model.16.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.running_mean",
+        "target": "model.16.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.running_var",
+        "target": "model.16.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.16.cv2.bn.num_batches_tracked",
+        "target": "model.16.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.16.m.0.cv1.conv.weight",
+        "target": "model.16.m.0.cv1.conv.weight",
+        "shape": [
+          32,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.weight",
+        "target": "model.16.m.0.cv1.bn.weight",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.bias",
+        "target": "model.16.m.0.cv1.bn.bias",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.running_mean",
+        "target": "model.16.m.0.cv1.bn.running_mean",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.running_var",
+        "target": "model.16.m.0.cv1.bn.running_var",
+        "shape": [
+          32
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.16.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.16.m.0.cv2.conv.weight",
+        "target": "model.16.m.0.cv2.conv.weight",
+        "shape": [
+          64,
+          32,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.weight",
+        "target": "model.16.m.0.cv2.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.bias",
+        "target": "model.16.m.0.cv2.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.running_mean",
+        "target": "model.16.m.0.cv2.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.running_var",
+        "target": "model.16.m.0.cv2.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.16.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.16.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.17.conv.weight",
+        "target": "model.17.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.17.bn.weight",
+        "target": "model.17.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.17.bn.bias",
+        "target": "model.17.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.17.bn.running_mean",
+        "target": "model.17.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.17.bn.running_var",
+        "target": "model.17.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.17.bn.num_batches_tracked",
+        "target": "model.17.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.19.cv1.conv.weight",
+        "target": "model.19.cv1.conv.weight",
+        "shape": [
+          256,
+          384,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.weight",
+        "target": "model.19.cv1.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.bias",
+        "target": "model.19.cv1.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.running_mean",
+        "target": "model.19.cv1.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.running_var",
+        "target": "model.19.cv1.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv1.bn.num_batches_tracked",
+        "target": "model.19.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.19.cv2.conv.weight",
+        "target": "model.19.cv2.conv.weight",
+        "shape": [
+          256,
+          384,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.weight",
+        "target": "model.19.cv2.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.bias",
+        "target": "model.19.cv2.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.running_mean",
+        "target": "model.19.cv2.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.running_var",
+        "target": "model.19.cv2.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.19.cv2.bn.num_batches_tracked",
+        "target": "model.19.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.19.m.0.cv1.conv.weight",
+        "target": "model.19.m.0.cv1.conv.weight",
+        "shape": [
+          64,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.weight",
+        "target": "model.19.m.0.cv1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.bias",
+        "target": "model.19.m.0.cv1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.running_mean",
+        "target": "model.19.m.0.cv1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.running_var",
+        "target": "model.19.m.0.cv1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.19.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.19.m.0.cv2.conv.weight",
+        "target": "model.19.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.weight",
+        "target": "model.19.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.bias",
+        "target": "model.19.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.running_mean",
+        "target": "model.19.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.running_var",
+        "target": "model.19.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.19.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.19.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.20.conv.weight",
+        "target": "model.20.conv.weight",
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.20.bn.weight",
+        "target": "model.20.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.20.bn.bias",
+        "target": "model.20.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.20.bn.running_mean",
+        "target": "model.20.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.20.bn.running_var",
+        "target": "model.20.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.20.bn.num_batches_tracked",
+        "target": "model.20.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.cv1.conv.weight",
+        "target": "model.22.cv1.conv.weight",
+        "shape": [
+          512,
+          768,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.weight",
+        "target": "model.22.cv1.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.bias",
+        "target": "model.22.cv1.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.running_mean",
+        "target": "model.22.cv1.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.running_var",
+        "target": "model.22.cv1.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv1.bn.num_batches_tracked",
+        "target": "model.22.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.cv2.conv.weight",
+        "target": "model.22.cv2.conv.weight",
+        "shape": [
+          512,
+          768,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.weight",
+        "target": "model.22.cv2.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.bias",
+        "target": "model.22.cv2.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.running_mean",
+        "target": "model.22.cv2.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.running_var",
+        "target": "model.22.cv2.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.22.cv2.bn.num_batches_tracked",
+        "target": "model.22.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.cv1.conv.weight",
+        "target": "model.22.m.0.cv1.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.weight",
+        "target": "model.22.m.0.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.bias",
+        "target": "model.22.m.0.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.running_mean",
+        "target": "model.22.m.0.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.running_var",
+        "target": "model.22.m.0.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.22.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.cv2.conv.weight",
+        "target": "model.22.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.weight",
+        "target": "model.22.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.bias",
+        "target": "model.22.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.running_mean",
+        "target": "model.22.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.running_var",
+        "target": "model.22.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.22.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.cv3.conv.weight",
+        "target": "model.22.m.0.cv3.conv.weight",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.weight",
+        "target": "model.22.m.0.cv3.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.bias",
+        "target": "model.22.m.0.cv3.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.running_mean",
+        "target": "model.22.m.0.cv3.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.running_var",
+        "target": "model.22.m.0.cv3.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.22.m.0.cv3.bn.num_batches_tracked",
+        "target": "model.22.m.0.cv3.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.conv.weight",
+        "target": "model.22.m.0.m.0.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.weight",
+        "target": "model.22.m.0.m.0.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.bias",
+        "target": "model.22.m.0.m.0.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.running_mean",
+        "target": "model.22.m.0.m.0.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.running_var",
+        "target": "model.22.m.0.m.0.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv1.bn.num_batches_tracked",
+        "target": "model.22.m.0.m.0.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.conv.weight",
+        "target": "model.22.m.0.m.0.cv2.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.weight",
+        "target": "model.22.m.0.m.0.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.bias",
+        "target": "model.22.m.0.m.0.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.running_mean",
+        "target": "model.22.m.0.m.0.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.running_var",
+        "target": "model.22.m.0.m.0.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.0.cv2.bn.num_batches_tracked",
+        "target": "model.22.m.0.m.0.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.conv.weight",
+        "target": "model.22.m.0.m.1.cv1.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.weight",
+        "target": "model.22.m.0.m.1.cv1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.bias",
+        "target": "model.22.m.0.m.1.cv1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.running_mean",
+        "target": "model.22.m.0.m.1.cv1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.running_var",
+        "target": "model.22.m.0.m.1.cv1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv1.bn.num_batches_tracked",
+        "target": "model.22.m.0.m.1.cv1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.conv.weight",
+        "target": "model.22.m.0.m.1.cv2.conv.weight",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.weight",
+        "target": "model.22.m.0.m.1.cv2.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.bias",
+        "target": "model.22.m.0.m.1.cv2.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.running_mean",
+        "target": "model.22.m.0.m.1.cv2.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.running_var",
+        "target": "model.22.m.0.m.1.cv2.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.22.m.0.m.1.cv2.bn.num_batches_tracked",
+        "target": "model.22.m.0.m.1.cv2.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.0.0.conv.weight",
+        "target": "model.26.cv2.1.0.conv.weight",
+        "shape": [
+          64,
+          128,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.weight",
+        "target": "model.26.cv2.1.0.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.bias",
+        "target": "model.26.cv2.1.0.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.running_mean",
+        "target": "model.26.cv2.1.0.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.running_var",
+        "target": "model.26.cv2.1.0.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.0.bn.num_batches_tracked",
+        "target": "model.26.cv2.1.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.0.1.conv.weight",
+        "target": "model.26.cv2.1.1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.weight",
+        "target": "model.26.cv2.1.1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.bias",
+        "target": "model.26.cv2.1.1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.running_mean",
+        "target": "model.26.cv2.1.1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.running_var",
+        "target": "model.26.cv2.1.1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.1.bn.num_batches_tracked",
+        "target": "model.26.cv2.1.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.0.2.weight",
+        "target": "model.26.cv2.1.2.weight",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv2.0.2.bias",
+        "target": "model.26.cv2.1.2.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.conv.weight",
+        "target": "model.26.cv2.2.0.conv.weight",
+        "shape": [
+          64,
+          256,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.weight",
+        "target": "model.26.cv2.2.0.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.bias",
+        "target": "model.26.cv2.2.0.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.running_mean",
+        "target": "model.26.cv2.2.0.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.running_var",
+        "target": "model.26.cv2.2.0.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.0.bn.num_batches_tracked",
+        "target": "model.26.cv2.2.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.1.1.conv.weight",
+        "target": "model.26.cv2.2.1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.weight",
+        "target": "model.26.cv2.2.1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.bias",
+        "target": "model.26.cv2.2.1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.running_mean",
+        "target": "model.26.cv2.2.1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.running_var",
+        "target": "model.26.cv2.2.1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.1.bn.num_batches_tracked",
+        "target": "model.26.cv2.2.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.1.2.weight",
+        "target": "model.26.cv2.2.2.weight",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv2.1.2.bias",
+        "target": "model.26.cv2.2.2.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.conv.weight",
+        "target": "model.26.cv2.3.0.conv.weight",
+        "shape": [
+          64,
+          512,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.weight",
+        "target": "model.26.cv2.3.0.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.bias",
+        "target": "model.26.cv2.3.0.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.running_mean",
+        "target": "model.26.cv2.3.0.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.running_var",
+        "target": "model.26.cv2.3.0.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.0.bn.num_batches_tracked",
+        "target": "model.26.cv2.3.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.2.1.conv.weight",
+        "target": "model.26.cv2.3.1.conv.weight",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.weight",
+        "target": "model.26.cv2.3.1.bn.weight",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.bias",
+        "target": "model.26.cv2.3.1.bn.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.running_mean",
+        "target": "model.26.cv2.3.1.bn.running_mean",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.running_var",
+        "target": "model.26.cv2.3.1.bn.running_var",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.1.bn.num_batches_tracked",
+        "target": "model.26.cv2.3.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv2.2.2.weight",
+        "target": "model.26.cv2.3.2.weight",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv2.2.2.bias",
+        "target": "model.26.cv2.3.2.bias",
+        "shape": [
+          64
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.conv.weight",
+        "target": "model.26.cv3.1.0.0.conv.weight",
+        "shape": [
+          128,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.weight",
+        "target": "model.26.cv3.1.0.0.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.bias",
+        "target": "model.26.cv3.1.0.0.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.running_mean",
+        "target": "model.26.cv3.1.0.0.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.running_var",
+        "target": "model.26.cv3.1.0.0.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.1.0.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.0.0.1.conv.weight",
+        "target": "model.26.cv3.1.0.1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.weight",
+        "target": "model.26.cv3.1.0.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.bias",
+        "target": "model.26.cv3.1.0.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.running_mean",
+        "target": "model.26.cv3.1.0.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.running_var",
+        "target": "model.26.cv3.1.0.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.0.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.1.0.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.0.1.0.conv.weight",
+        "target": "model.26.cv3.1.1.0.conv.weight",
+        "shape": [
+          128,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.weight",
+        "target": "model.26.cv3.1.1.0.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.bias",
+        "target": "model.26.cv3.1.1.0.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.running_mean",
+        "target": "model.26.cv3.1.1.0.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.running_var",
+        "target": "model.26.cv3.1.1.0.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.1.1.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.0.1.1.conv.weight",
+        "target": "model.26.cv3.1.1.1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.weight",
+        "target": "model.26.cv3.1.1.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.bias",
+        "target": "model.26.cv3.1.1.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.running_mean",
+        "target": "model.26.cv3.1.1.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.running_var",
+        "target": "model.26.cv3.1.1.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.0.1.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.1.1.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.1.0.0.conv.weight",
+        "target": "model.26.cv3.2.0.0.conv.weight",
+        "shape": [
+          256,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.weight",
+        "target": "model.26.cv3.2.0.0.bn.weight",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.bias",
+        "target": "model.26.cv3.2.0.0.bn.bias",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.running_mean",
+        "target": "model.26.cv3.2.0.0.bn.running_mean",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.running_var",
+        "target": "model.26.cv3.2.0.0.bn.running_var",
+        "shape": [
+          256
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.2.0.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.1.0.1.conv.weight",
+        "target": "model.26.cv3.2.0.1.conv.weight",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.weight",
+        "target": "model.26.cv3.2.0.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.bias",
+        "target": "model.26.cv3.2.0.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.running_mean",
+        "target": "model.26.cv3.2.0.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.running_var",
+        "target": "model.26.cv3.2.0.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.0.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.2.0.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.1.1.0.conv.weight",
+        "target": "model.26.cv3.2.1.0.conv.weight",
+        "shape": [
+          128,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.weight",
+        "target": "model.26.cv3.2.1.0.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.bias",
+        "target": "model.26.cv3.2.1.0.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.running_mean",
+        "target": "model.26.cv3.2.1.0.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.running_var",
+        "target": "model.26.cv3.2.1.0.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.2.1.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.1.1.1.conv.weight",
+        "target": "model.26.cv3.2.1.1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.weight",
+        "target": "model.26.cv3.2.1.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.bias",
+        "target": "model.26.cv3.2.1.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.running_mean",
+        "target": "model.26.cv3.2.1.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.running_var",
+        "target": "model.26.cv3.2.1.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.1.1.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.2.1.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.2.0.0.conv.weight",
+        "target": "model.26.cv3.3.0.0.conv.weight",
+        "shape": [
+          512,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.weight",
+        "target": "model.26.cv3.3.0.0.bn.weight",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.bias",
+        "target": "model.26.cv3.3.0.0.bn.bias",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.running_mean",
+        "target": "model.26.cv3.3.0.0.bn.running_mean",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.running_var",
+        "target": "model.26.cv3.3.0.0.bn.running_var",
+        "shape": [
+          512
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.3.0.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.2.0.1.conv.weight",
+        "target": "model.26.cv3.3.0.1.conv.weight",
+        "shape": [
+          128,
+          512,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.weight",
+        "target": "model.26.cv3.3.0.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.bias",
+        "target": "model.26.cv3.3.0.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.running_mean",
+        "target": "model.26.cv3.3.0.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.running_var",
+        "target": "model.26.cv3.3.0.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.0.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.3.0.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.2.1.0.conv.weight",
+        "target": "model.26.cv3.3.1.0.conv.weight",
+        "shape": [
+          128,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.weight",
+        "target": "model.26.cv3.3.1.0.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.bias",
+        "target": "model.26.cv3.3.1.0.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.running_mean",
+        "target": "model.26.cv3.3.1.0.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.running_var",
+        "target": "model.26.cv3.3.1.0.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.0.bn.num_batches_tracked",
+        "target": "model.26.cv3.3.1.0.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.cv3.2.1.1.conv.weight",
+        "target": "model.26.cv3.3.1.1.conv.weight",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.weight",
+        "target": "model.26.cv3.3.1.1.bn.weight",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.bias",
+        "target": "model.26.cv3.3.1.1.bn.bias",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.running_mean",
+        "target": "model.26.cv3.3.1.1.bn.running_mean",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.running_var",
+        "target": "model.26.cv3.3.1.1.bn.running_var",
+        "shape": [
+          128
+        ]
+      },
+      {
+        "source": "model.23.cv3.2.1.1.bn.num_batches_tracked",
+        "target": "model.26.cv3.3.1.1.bn.num_batches_tracked",
+        "shape": []
+      },
+      {
+        "source": "model.23.dfl.conv.weight",
+        "target": "model.26.dfl.conv.weight",
+        "shape": [
+          1,
+          16,
+          1,
+          1
+        ]
+      }
+    ],
+    "note": "P2 fusion and P2 Detect are random; 10-class output layers are reinitialized.",
+    "verified_tensor_equality": true
+  },
+  "new_parameters": 1494144,
+  "parameters": 11173112,
+  "elapsed_seconds": 32586.914065487683,
+  "last_epoch_seconds": 153.6027816850692,
+  "task_output_weights_L1": [
+    319.3443298339844,
+    381.2958068847656,
+    170.1934814453125,
+    198.58349609375,
+    48.71025085449219,
+    55.659324645996094,
+    5.9747114181518555,
+    5.3564934730529785,
+    60.355018615722656,
+    106.01438903808594,
+    220.1581268310547,
+    26.196044921875,
+    32.52679443359375,
+    45.481712341308594
+  ],
+  "training_finished_at": "2026-10-10T22:33:58.847817",
+  "best": "/root/autodl-tmp/yolo11_project/runs/e60a_e58_group_residual_encoding_img640_seed1_200e/weights/best.pt",
+  "last": "/root/autodl-tmp/yolo11_project/runs/e60a_e58_group_residual_encoding_img640_seed1_200e/weights/last.pt",
+  "matching": {
+    "revision": "imagewise_tal_830_v1",
+    "calls": 84600,
+    "images": 1403800,
+    "max_forward_batch": 32,
+    "max_padded_gt_per_image": 935,
+    "max_prediction_locations": 34000
+  },
+  "finished_at": "2026-10-10T22:38:28.860954"
+}

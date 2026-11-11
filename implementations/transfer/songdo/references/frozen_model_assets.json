@@ -1,0 +1,18 @@
+{
+  "spatial_task_head.py": {
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "origin": "evaluation_TESTDEV_E60_seed1/spatial_task_head.py"
+  },
+  "e58_spatial_task_head.py": {
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "origin": "evaluation_TESTDEV_E60_seed1/e58_spatial_task_head.py"
+  },
+  "e57_spatial_task_head.py": {
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "origin": "evaluation_TESTDEV_E60_seed1/e57_spatial_task_head.py"
+  },
+  "parent_spatial_task_head.py": {
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "origin": "evaluation_TESTDEV_E60_seed1/parent_spatial_task_head.py"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "fingerprint": "49ba40c129580a470ccacd8a9111ba0656c426bbd3e05f6e4db6b860b4a38e17",
+  "payload": {
+    "package": "983a8c555a51eace5d4819ebf20138207bb34ad4d76d11904f1b7da977e52dcb",
+    "source": "439d1e1abb4ca5e06829084994c21f8de68ab0cb9bab3ff0117f2ba07acadaf8",
+    "versions": {
+      "torch": "2.5.1+cu121",
+      "torchvision": "0.20.1+cu121"
+    },
+    "data_yaml": "2de8ad3c6f67db8cfa5731047292eaf7c4a3a721697bcb77b491525a3a43e6bd",
+    "dataset": {
+      "train": {
+        "images": 6471,
+        "unique_instances": 343200,
+        "duplicate_rows": 4,
+        "sha256": "723f9be559d9ffe83a0d11ff60a09e6788b55e3651ead81e63a3ea63049d4a45"
+      },
+      "val": {
+        "images": 548,
+        "unique_instances": 38759,
+        "duplicate_rows": 0,
+        "sha256": "8b21804d1dc678d921dc968e3df8d1b12b26f536f83234099d07c360c5bd8f01"
+      },
+      "official_val": {
+        "dataset_root": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-val",
+        "images": 548,
+        "annotation_dimension_sha256": "058c87e779a61a09933bebe35af1c05c807a444dc842b4be12124dd36134c787",
+        "raw_class_counts": {
+          "0": 1378,
+          "1": 8844,
+          "2": 5125,
+          "3": 1287,
+          "4": 14064,
+          "5": 1975,
+          "6": 750,
+          "7": 1045,
+          "8": 532,
+          "9": 251,
+          "10": 4886,
+          "11": 32
+        },
+        "score_zero_counts": {
+          "0": 1378,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 32
+        },
+        "class0_ignore_regions": 1378,
+        "class11_others": 32,
+        "gt_rows_dropped_by_class0_region": 160,
+        "evaluated_gt_rows": 38599
+      },
+      "raw_annotation_yolo_coordinates_checked": true
+    },
+    "weights": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b",
+    "seed": 1,
+    "layout": "serial",
+    "allocator_cap_GiB": 28,
+    "train_batch": 16,
+    "val_batch": 32,
+    "imgsz": 640,
+    "epochs": 200,
+    "nms": true,
+    "device": {
+      "name": "NVIDIA GeForce RTX 4080 SUPER",
+      "total_bytes": 33796456448
+    },
+    "local_fixture": false,
+    "engineering": {
+      "path": "/root/autodl-tmp/yolo26_project/comparison_reports/YOLO26_P2_E60_ENGINEERING_20261014_131304_794690/check.json",
+      "sha256": "f1844c5846097b3b33c6a630bbe18dd0d54930dc811a0295923cd4054105f3d0"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "images": 6471,
+  "fingerprint_rule": "SHA256 of sorted(image_filename UTF8 + NUL + YOLO_label_raw_bytes + NUL)",
+  "sha256": "7ac9962a06c0150d9e4ba052827ba41d2bec7f487ec9ccd2a72cfafa4eccedd5",
+  "source": "original supplementary training admission record"
+}

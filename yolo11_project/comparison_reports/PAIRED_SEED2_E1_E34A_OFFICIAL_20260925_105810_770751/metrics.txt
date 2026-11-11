@@ -1,8 +1,0 @@
-Paired E1/E34a seed2 official VisDrone evaluation
-E1 seed2 AP: 32.4919%
-E34a seed2 AP: 32.4054%
-E34a minus E1 AP: -0.0865 pp
-AP50 delta: -0.4269 pp
-AP75 delta: +0.3262 pp
-AR500 delta: -0.2151 pp
-Report: /root/autodl-tmp/yolo11_project/comparison_reports/PAIRED_SEED2_E1_E34A_OFFICIAL_20260925_105810_770751

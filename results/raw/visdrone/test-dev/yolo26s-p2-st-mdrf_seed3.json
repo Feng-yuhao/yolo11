@@ -1,0 +1,299 @@
+{
+  "status": "completed",
+  "variant": "e60",
+  "seed": 3,
+  "split": "test-dev",
+  "dataset": {
+    "dataset_root": "/root/autodl-tmp/project/VisDrone2019/VisDrone2019-DET-test-dev",
+    "images": 1610,
+    "annotation_dimension_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+    "raw_class_counts": {
+      "0": 2180,
+      "1": 21006,
+      "2": 6376,
+      "3": 1302,
+      "4": 28074,
+      "5": 5771,
+      "6": 2659,
+      "7": 530,
+      "8": 599,
+      "9": 2940,
+      "10": 5845,
+      "11": 265
+    },
+    "score_zero_counts": {
+      "0": 2180,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 265
+    },
+    "class0_ignore_regions": 2180,
+    "class11_others": 265,
+    "gt_rows_dropped_by_class0_region": 395,
+    "evaluated_gt_rows": 74707,
+    "image_content_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+    "split": "test-dev"
+  },
+  "official_metrics": {
+    "AP50_95_percent": 23.833940505647103,
+    "AP50_percent": 41.17148750538936,
+    "AP75_percent": 24.257269142542185,
+    "AR1_percent": 2.044051071564079,
+    "AR10_percent": 11.76862922088268,
+    "AR100_percent": 31.27285391628473,
+    "AR500_percent": 35.12529388432603,
+    "class_image_weights": {
+      "1": 1197,
+      "2": 797,
+      "3": 377,
+      "4": 1530,
+      "5": 1167,
+      "6": 750,
+      "7": 245,
+      "8": 232,
+      "9": 838,
+      "10": 794
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 1197,
+        "AP50_95_percent": 15.184129931046499,
+        "AP50_percent": 37.020774550731524,
+        "AP75_percent": 9.617497814368605
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 797,
+        "AP50_95_percent": 7.338402540378025,
+        "AP50_percent": 20.585048741785265,
+        "AP75_percent": 3.1648361510952236
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 377,
+        "AP50_95_percent": 4.983347595680861,
+        "AP50_percent": 11.871380320798671,
+        "AP75_percent": 3.387850170901738
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 1530,
+        "AP50_95_percent": 48.02225044119034,
+        "AP50_percent": 75.51261928385814,
+        "AP75_percent": 53.302546774408995
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 1167,
+        "AP50_95_percent": 20.45181357552484,
+        "AP50_percent": 29.374659187038958,
+        "AP75_percent": 24.229015026763523
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 750,
+        "AP50_95_percent": 23.790402939730235,
+        "AP50_percent": 37.907396498633126,
+        "AP75_percent": 25.68790045360638
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 245,
+        "AP50_95_percent": 10.701046782866765,
+        "AP50_percent": 20.310076935564673,
+        "AP75_percent": 9.607249182655519
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 232,
+        "AP50_95_percent": 8.4762196519736,
+        "AP50_percent": 15.068995101555338,
+        "AP75_percent": 8.80000750437016
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 838,
+        "AP50_95_percent": 37.098596666701674,
+        "AP50_percent": 53.41136077908612,
+        "AP75_percent": 42.57524676517141
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 794,
+        "AP50_95_percent": 15.32473393241358,
+        "AP50_percent": 37.399171151953695,
+        "AP75_percent": 9.833900076849034
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "prediction": {
+    "images": 1610,
+    "detections": 649222,
+    "seconds": 43.42565648071468,
+    "one2many_NMS": true,
+    "FP32": true,
+    "batch": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 500,
+    "inverse_coordinates_independently_checked": true,
+    "raw_predictions_not_mutated": true,
+    "checkpoint_sha256": "7d5cb26440cac74c2a971c252b4c4fc8cabfbc4077faaf61bf0e11ba4cc8361c"
+  },
+  "prediction_sha256": "7ed78ebd2b36227ac3bce8e39948427645527b09ac8c50c2e5138e8605dabd85",
+  "checkpoint": "/root/autodl-tmp/yolo26_project/runs/yolo26s_p2_e60_img640_seed3_200e/weights/best.pt",
+  "checkpoint_sha256": "7d5cb26440cac74c2a971c252b4c4fc8cabfbc4077faaf61bf0e11ba4cc8361c",
+  "ignore": {
+    "raw_prediction_count": 649222,
+    "official_prediction_count_after_class0_filter": 623815,
+    "removed_by_class0_ignore": 25407,
+    "removed_by_class0_fraction": 0.03913453333374408,
+    "overlap_class11_others": 1377,
+    "overlap_class11_fraction": 0.002121000212562113,
+    "per_class": {
+      "1": {
+        "total": 245513,
+        "removed_by_class0": 8644,
+        "overlap_class11": 361
+      },
+      "2": {
+        "total": 23797,
+        "removed_by_class0": 1324,
+        "overlap_class11": 104
+      },
+      "3": {
+        "total": 27251,
+        "removed_by_class0": 824,
+        "overlap_class11": 45
+      },
+      "4": {
+        "total": 232426,
+        "removed_by_class0": 9761,
+        "overlap_class11": 255
+      },
+      "5": {
+        "total": 12970,
+        "removed_by_class0": 76,
+        "overlap_class11": 34
+      },
+      "6": {
+        "total": 20142,
+        "removed_by_class0": 235,
+        "overlap_class11": 248
+      },
+      "7": {
+        "total": 6583,
+        "removed_by_class0": 327,
+        "overlap_class11": 135
+      },
+      "8": {
+        "total": 1899,
+        "removed_by_class0": 62,
+        "overlap_class11": 35
+      },
+      "9": {
+        "total": 11204,
+        "removed_by_class0": 93,
+        "overlap_class11": 20
+      },
+      "10": {
+        "total": 67437,
+        "removed_by_class0": 4061,
+        "overlap_class11": 140
+      }
+    },
+    "fp_audit": [
+      {
+        "confidence": 0.05,
+        "area_group": "all",
+        "fp": 98229,
+        "fp_ignore": 9645,
+        "fp_others": 324,
+        "tp": 44580,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.09818892587728675,
+        "fp_class11_others_fraction": 0.003298414928381639
+      },
+      {
+        "confidence": 0.05,
+        "area_group": "small",
+        "fp": 79529,
+        "fp_ignore": 9267,
+        "fp_others": 178,
+        "tp": 25066,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.11652353229639503,
+        "fp_class11_others_fraction": 0.0022381772686692904
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "all",
+        "fp": 55869,
+        "fp_ignore": 5263,
+        "fp_others": 214,
+        "tp": 42248,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.09420250944172977,
+        "fp_class11_others_fraction": 0.0038303889455690993
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "small",
+        "fp": 43460,
+        "fp_ignore": 5027,
+        "fp_others": 103,
+        "tp": 23115,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.11566958122411412,
+        "fp_class11_others_fraction": 0.0023699953980671883
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "all",
+        "fp": 20493,
+        "fp_ignore": 1449,
+        "fp_others": 98,
+        "tp": 37152,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.0707070707070707,
+        "fp_class11_others_fraction": 0.00478212072414971
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "small",
+        "fp": 13791,
+        "fp_ignore": 1348,
+        "fp_others": 33,
+        "tp": 18912,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.09774490609817997,
+        "fp_class11_others_fraction": 0.0023928649118990647
+      }
+    ],
+    "fp_audit_note": "Greedy IoU=0.50 class-wise matching before class-0 raster filtering; ignored score-zero GT matches are neutral."
+  },
+  "scorer_revision": "d27_official_visdrone_det_matlab104_port_v1",
+  "scorer_sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+  "selection": "fixed val-best; no test-dev selection",
+  "local_fixture": false,
+  "protocol": {
+    "imgsz": 640,
+    "batch": 4,
+    "half": false,
+    "one2many_NMS": true,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 500
+  },
+  "finished_at": "2026-10-17T15:34:45+08:00"
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "published_file": "report_01.json",
+    "archive_relative_path": "project/comparison_reports/E60_RUN_20261010_133029_103161/official_metrics.json",
+    "sha256": "21873782007c5fc4d59894405636c7e69a010a2913cc45fe9a20b17b886af4aa"
+  },
+  {
+    "published_file": "report_02.json",
+    "archive_relative_path": "project/comparison_reports/E60S2_RUN_20261011_120724_723053/official_metrics.json",
+    "sha256": "736f323048fd4efd33937075bec38d090a046442be6a23055cfee8ab8c5e2af2"
+  },
+  {
+    "published_file": "report_03.json",
+    "archive_relative_path": "project/comparison_reports/E60S3_RUN_20261011_220512_228555/official_metrics.json",
+    "sha256": "d52d8b116882e4d8f82871b87edabaac8f2e31cfba195708d52d7525bd5291f7"
+  },
+  {
+    "published_file": "report_04.json",
+    "archive_relative_path": "yolo26_project/comparison_reports/YOLO26_P2_E60_RUN_20261014_135537_497769/baseline_eval/official_metrics.json",
+    "sha256": "1f3ec644159593404d930e6c2b9766baa816a94759808dc3d85a15b35ece71ba"
+  },
+  {
+    "published_file": "report_05.json",
+    "archive_relative_path": "yolo26_project/comparison_reports/YOLO26_P2_E60_RUN_20261014_135537_497769/e60_eval/official_metrics.json",
+    "sha256": "b913cbd12207408ed204c8a4a2026d33d54826112c7d37d8b7bbb048adfe71c9"
+  },
+  {
+    "published_file": "report_06.json",
+    "archive_relative_path": "yolo26_project/comparison_reports/YOLO26_P2_E60_S2_ALL_20261016_144617_924724/baseline_val/official_metrics.json",
+    "sha256": "c3fe9de78e118089d3fcae8529d9dbdbfc223d50d443e43ae71a8d3843f5da97"
+  },
+  {
+    "published_file": "report_07.json",
+    "archive_relative_path": "yolo26_project/comparison_reports/YOLO26_P2_E60_S2_ALL_20261016_144617_924724/e60_val/official_metrics.json",
+    "sha256": "4af2e09c436638e90eec62dd432b17f82beae5ae3225e911538829f9f62468ea"
+  },
+  {
+    "published_file": "report_08.json",
+    "archive_relative_path": "yolo26_project/comparison_reports/YOLO26_P2_E60_S3_ALL_20261017_031529_463935/baseline_val/official_metrics.json",
+    "sha256": "357e827e54764ec04bfd32d5da514c4a7a3f3192c9614d496d674a1fb03bf647"
+  },
+  {
+    "published_file": "report_09.json",
+    "archive_relative_path": "yolo26_project/comparison_reports/YOLO26_P2_E60_S3_ALL_20261017_031529_463935/e60_val/official_metrics.json",
+    "sha256": "ed7623e2c0e50be686932a5da31079b669fc4ea5aa7440abd024c9da87179463"
+  }
+]

@@ -1,0 +1,318 @@
+{
+  "status": "completed",
+  "official": {
+    "AP50_95_percent": 24.5570423044251,
+    "AP50_percent": 41.62116509796656,
+    "AP75_percent": 25.34091096280211,
+    "AR1_percent": 1.9646657053334393,
+    "AR10_percent": 11.886336147940415,
+    "AR100_percent": 32.029969108129045,
+    "AR500_percent": 35.96827761379803,
+    "class_image_weights": {
+      "1": 1197,
+      "2": 797,
+      "3": 377,
+      "4": 1530,
+      "5": 1167,
+      "6": 750,
+      "7": 245,
+      "8": 232,
+      "9": 838,
+      "10": 794
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 1197,
+        "AP50_95_percent": 15.152710679128711,
+        "AP50_percent": 36.44906524946174,
+        "AP75_percent": 9.79170891491797
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 797,
+        "AP50_95_percent": 7.789804540052674,
+        "AP50_percent": 21.081484168684618,
+        "AP75_percent": 3.5304378580911657
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 377,
+        "AP50_95_percent": 6.013872344856164,
+        "AP50_percent": 13.249149337198885,
+        "AP75_percent": 4.50284530189282
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 1530,
+        "AP50_95_percent": 48.56247711382296,
+        "AP50_percent": 75.88547770805904,
+        "AP75_percent": 53.9652360090419
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 1167,
+        "AP50_95_percent": 21.377096592228607,
+        "AP50_percent": 30.62872977764532,
+        "AP75_percent": 25.241272141879467
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 750,
+        "AP50_95_percent": 25.096053599555557,
+        "AP50_percent": 38.67047915361962,
+        "AP75_percent": 28.471471268377897
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 245,
+        "AP50_95_percent": 12.438134570611403,
+        "AP50_percent": 22.94202903372779,
+        "AP75_percent": 12.55141287413934
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 232,
+        "AP50_95_percent": 10.15991487302468,
+        "AP50_percent": 15.876353727267384,
+        "AP75_percent": 11.560398683684028
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 838,
+        "AP50_95_percent": 38.29395299636074,
+        "AP50_percent": 53.79573273759286,
+        "AP75_percent": 44.3780706812638
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 794,
+        "AP50_95_percent": 15.725060243815573,
+        "AP50_percent": 36.8618001564992,
+        "AP75_percent": 10.481716580471703
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "binding": {
+    "key": "e60_seed2",
+    "checkpoint_sha256": "03e58654cd47412b4122e4c1fe0a7880844e37692931289ebf59f2e1d65130d0",
+    "protocol": {
+      "imgsz": 640,
+      "device": "0",
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "verbose": false,
+      "save": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "batch": 4,
+      "letterbox": "unchanged Ultralytics 8.3.0 predictor pre_transform",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "dataset_annotation_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+    "dataset_image_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+    "image_count": 1610,
+    "smoke_only": false,
+    "source": {
+      "nn/modules/block.py": "d003cf2646c3c6bb6826874ae506e5822bec35f7c663e455de7ceb918c8149e0",
+      "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+      "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+      "engine/model.py": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97",
+      "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+      "engine/predictor.py": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e",
+      "models/yolo/detect/predict.py": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390",
+      "utils/ops.py": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd",
+      "nn/autobackend.py": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d",
+      "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70"
+    },
+    "package": {
+      "base_eval.py": "5e77ba0494c00cbcd7582325b8c94b31a13fed228e3284d217210c6776ff6bcb",
+      "build_release.py": "d8a9892309cb94a02930701caa998481345c3102fb50c5bb0cb28cd8d39aa003",
+      "common.py": "ee2d939e37d7e34a91b74bfcf91676489da5218bfef8acf28c21c342443747f8",
+      "controller.py": "bdd35af55b1c9d47b54bd560bd594f10a327d35a59b2c529cc383dfb229f1b9b",
+      "d27_official.py": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+      "e0_core.py": "37251a52e119b6d754b8278ce4299663d6ed82df13c33938c6c7e433b66704a0",
+      "e57_spatial_task_head.py": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+      "e58_spatial_task_head.py": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+      "e60_eval_reference.py": "49db3bfee4276d023a245534a0bf6db41fcc44c2adbec1b83787f7c5dfa58d72",
+      "evaluate_all.py": "92e7e116a711333422a17b953d1d93f305bd5d15e43392e96fcbd1fe48c33018",
+      "install.sh": "bfcd5159aa82a94f13960870a8111e771e8615f2cffdffa28839ef3fce73d109",
+      "LICENSE-Ultralytics.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "LOCAL_VALIDATION.md": "00062c0f1dfdd35452d0d28651724b8e274183dc1fc9b44d6e222a115aedbca4",
+      "parent_spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+      "README.md": "dc24619ab577a92bf9e1c4ad7110f8ac1a7c5c2ddc5d665a224f003a7d14c4f9",
+      "references/e0_seed1_testdev_metrics.json": "810d31c14e8e0e0a4145a4344c7af3cb4073e5fa6ea81335ee74f397c5d84590",
+      "references/e0_seed1_testdev_prediction.json": "ae2db7f5a2bc80cfb13a1d66939d287881452b2522d3e324ef031ce3ab5ff91c",
+      "references/e0_seed1_training.json": "67a20e3bed484e9f5c7a4df62d6dd9213a632cd7577df12a26c5dd42b608938a",
+      "references/e1_seed1_testdev_metrics.json": "557ebad077b10985890e3b180242634b0d8942bb4b0b992bb870f3e4d8826241",
+      "references/e1_seed1_testdev_prediction.json": "a48aaaac62b901b34a70fd4be803db03a129d41102a9af77885309363dd5b473",
+      "references/e1_seed2_testdev_metrics.json": "61265fef7b358b6f1cfd676c1485cbba6ee0a1a7df3952bc26b9692be2b08178",
+      "references/e1_seed2_testdev_prediction.json": "20979a7019157ed032ab772c658a9efaf98fba109412046637de5bdb26432025",
+      "references/e1_seed3_testdev_metrics.json": "90fb691aaa8fdf3536d7e0d1e2db1b1b2a9735a8a44506759b11fce2201dd3fd",
+      "references/e1_seed3_testdev_prediction.json": "ca9a85948176e0d3052887f53f7ce3836f19694c0b69414bc919319daa8a2ae0",
+      "references/e1_val_metadata.json": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+      "references/e60_seed1_comparison.json": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52",
+      "references/e60_seed1_completion.json": "e7ce04509891249286630df229ed4b6dd9a84514dae73d1c16a82272bda36f98",
+      "references/e60_seed1_testdev_metrics.json": "42ab5405b66c3ffc7bdf5fa4d0c84ff0b6c5e14a666706b6a6edc1e2925faa00",
+      "references/e60_seed1_testdev_prediction.json": "acba09955413caf179af8f4995fdac3ab42f403f19a2bc353336fae99553794c",
+      "references/e60_seed1_training.json": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71",
+      "references/e60_seed1_val_smoke.json": "646c4e5cd1d1bf854fca95b0698145039ff26995e5c4d7847fd934c72a66abaa",
+      "references/e60_seed2_comparison.json": "2440fb58d686a6778179e8d8df7c4c2414002f356732c9fea83bc2f579106566",
+      "references/e60_seed2_completion.json": "fbf18fc1d83278e8498a26b9398b0f4a065aec9b07c5b823920216c7b71dd058",
+      "references/e60_seed2_training.json": "c26a105ea6f4d747473fceeb999f6c8acc6e2713f0f864d8ebc1f3078e0b35f2",
+      "references/e60_seed2_val_smoke.json": "828e9df0d085f87fa111e67c10f2c34857457a7d13724abd0c55839125b847e7",
+      "references/e60_seed3_comparison.json": "a188822c25e987062b36a05c60e2fa1fbadb60da15af3ad683966cc08d58587b",
+      "references/e60_seed3_completion.json": "31cce129822debfeee2b324d81b262e04dd14b9653cadcf27116e03cffaabba7",
+      "references/e60_seed3_training.json": "7ed567b58bd2e8bd849b8a6eb3bc0ce07d5d203c06d42c4101d18ee0287c53d0",
+      "references/e60_seed3_val_smoke.json": "8aaf2ee4e05adf7f09a6c959dcbd4a7e24f10586226c00510d824b393e6aea43",
+      "references/identities.json": "d1c1ea2adba0ab741bd324fdba25c5ffef456df14527bf0fd385afac6280206e",
+      "references/seed1_testdev_summary.json": "1fa43c7f95b22fe764be4740e371461cbe962ab8f2bddb07faa4fc1133ae803c",
+      "references/testdev_input_manifest.json": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+      "run.sh": "143233f289dbbec5cec6b312908397622c013106e57f00896e1bf415a1d08f37",
+      "shutdown_after.py": "68a9dd0051cac845a3a0990f81d6437f3453631e1dca2e9cbd7885cd456fd57c",
+      "shutdown_safety.py": "d453a316dc55f3159c94b80827ceadfb726ec1dca7d6274e6e5724496f8c289b",
+      "spatial_task_head.py": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+      "test_local.py": "73c7060430a808f7030116ead45d77fb341d287970a274e8515114466485b729",
+      "train_e0.py": "61ec15245f2c0dfac48ea8a501367692c1158ba96f496b0799407750295ea4af"
+    }
+  },
+  "ignore_audit": {
+    "raw_prediction_count": 642511,
+    "official_prediction_count_after_class0_filter": 618518,
+    "removed_by_class0_ignore": 23993,
+    "removed_by_class0_fraction": 0.037342551333751486,
+    "overlap_class11_others": 1399,
+    "overlap_class11_fraction": 0.0021773946282631737,
+    "per_class": {
+      "1": {
+        "total": 244329,
+        "removed_by_class0": 8218,
+        "overlap_class11": 355
+      },
+      "2": {
+        "total": 20107,
+        "removed_by_class0": 1072,
+        "overlap_class11": 104
+      },
+      "3": {
+        "total": 35625,
+        "removed_by_class0": 1008,
+        "overlap_class11": 78
+      },
+      "4": {
+        "total": 219951,
+        "removed_by_class0": 9178,
+        "overlap_class11": 217
+      },
+      "5": {
+        "total": 13827,
+        "removed_by_class0": 124,
+        "overlap_class11": 30
+      },
+      "6": {
+        "total": 19705,
+        "removed_by_class0": 263,
+        "overlap_class11": 218
+      },
+      "7": {
+        "total": 7019,
+        "removed_by_class0": 331,
+        "overlap_class11": 136
+      },
+      "8": {
+        "total": 2734,
+        "removed_by_class0": 75,
+        "overlap_class11": 64
+      },
+      "9": {
+        "total": 12177,
+        "removed_by_class0": 100,
+        "overlap_class11": 14
+      },
+      "10": {
+        "total": 67037,
+        "removed_by_class0": 3624,
+        "overlap_class11": 183
+      }
+    },
+    "fp_audit": [
+      {
+        "confidence": 0.05,
+        "area_group": "all",
+        "fp": 91706,
+        "fp_ignore": 8142,
+        "fp_others": 338,
+        "tp": 44001,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.08878372189387826,
+        "fp_class11_others_fraction": 0.00368569123067193
+      },
+      {
+        "confidence": 0.05,
+        "area_group": "small",
+        "fp": 73271,
+        "fp_ignore": 7774,
+        "fp_others": 182,
+        "tp": 24424,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.10609927529309003,
+        "fp_class11_others_fraction": 0.002483929521911807
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "all",
+        "fp": 53233,
+        "fp_ignore": 4529,
+        "fp_others": 213,
+        "tp": 41919,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.08507880450096744,
+        "fp_class11_others_fraction": 0.0040012774031146095
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "small",
+        "fp": 40837,
+        "fp_ignore": 4303,
+        "fp_others": 108,
+        "tp": 22710,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.10537013002914024,
+        "fp_class11_others_fraction": 0.00264466047946715
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "all",
+        "fp": 20410,
+        "fp_ignore": 1379,
+        "fp_others": 89,
+        "tp": 37355,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.06756491915727585,
+        "fp_class11_others_fraction": 0.004360607545320921
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "small",
+        "fp": 13580,
+        "fp_ignore": 1272,
+        "fp_others": 37,
+        "tp": 18939,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.09366715758468336,
+        "fp_class11_others_fraction": 0.0027245949926362296
+      }
+    ],
+    "fp_audit_note": "Greedy IoU=0.50 class-wise matching before class-0 raster filtering; ignored score-zero GT matches are neutral."
+  },
+  "checkpoint": "/root/autodl-tmp/yolo11_project/runs/e60a_e58_group_residual_encoding_img640_seed2_200e/weights/best.pt",
+  "prediction_sha256": "3e06286d32772cba370ba1a13ceb85adad6303fca2c5f58590f2126229326b52",
+  "finished_at": "2026-10-12T17:20:24+08:00"
+}

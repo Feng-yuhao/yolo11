@@ -1,0 +1,47 @@
+# Songdo Vision dataset: https://doi.org/10.5281/zenodo.13828407 (always resolves to the latest version)
+
+# Configuration file for YOLOv5, YOLOv8, or YOLOv11 training.
+# This file defines the paths to your data, the number of classes, and class names.
+
+# Expected dataset layout (~15 GB):
+# songdo_vision
+# ├── data.yaml                   # This configuration file
+# ├── names.txt                   # Class names (one per line)
+# ├── train
+# │   ├── coco_annotations.json   # COCO format, one file for the whole subset
+# │   ├── images                  # Training images (4,335 .jpg files)
+# │   │   ├── 00001.jpg
+# │   │   ├── 00002.jpg
+# │   │   ├── ...
+# │   └── labels                  # YOLO .txt and Pascal VOC .xml, one pair per image
+# │       ├── 00001.txt
+# │       ├── 00001.xml
+# │       ├── ...
+# └── test
+#     ├── coco_annotations.json
+#     ├── images                  # Test images (1,084 .jpg files)
+#     │   ├── 00027.jpg
+#     │   ├── 00040.jpg
+#     │   ├── ...
+#     └── labels
+#         ├── 00027.txt
+#         ├── 00027.xml
+#         ├── ...
+#
+# Only the labels/*.txt files are used for YOLO training; the .xml and .json files are ignored.
+
+# Dataset location
+#
+# A relative 'path' is resolved against the Ultralytics datasets directory, not against
+# the location of this file. Inspect or change that directory with:  yolo settings
+# To avoid any ambiguity, give an absolute path instead, e.g.:
+#   path: /abs/path/to/songdo_vision
+path: songdo_vision  # Dataset root, relative to the Ultralytics datasets directory
+
+train: train/images  # Path to training images (relative to 'path')
+val: test/images  # Path to validation images (relative to 'path')
+test: test/images  # Path to test images (relative to 'path')
+
+# Class information
+nc: 4  # Number of classes
+names: ['car', 'bus', 'truck', 'motorcycle']  # List of class names

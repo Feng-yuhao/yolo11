@@ -1,0 +1,108 @@
+{
+  "AP_percent": 18.54395969184149,
+  "AP50_percent": 35.62563624289366,
+  "AP75_percent": 17.651221671051978,
+  "AP_small_percent": 8.988495510356122,
+  "AP_medium_percent": 33.74499103425405,
+  "AP_large_percent": 23.98235808978031,
+  "AR1_percent": 17.94242860916499,
+  "AR10_percent": 29.027362867469026,
+  "AR100_percent": 34.90017539698794,
+  "AR_small_percent": 19.64451122554543,
+  "AR_medium_percent": 53.59383029527627,
+  "AR_large_percent": 59.590173648444676,
+  "per_class_AP_percent": {
+    "car": 28.82904859975503,
+    "truck": 4.921670469866808,
+    "bus": 21.88116000590263
+  },
+  "GT_counts": {
+    "car": 361055,
+    "truck": 7595,
+    "bus": 7234
+  },
+  "images": 16592,
+  "gt_sha256": "54695144ce3daa52a91b1ea33d5a4eb93c56733a35940f23ee33dbf2202b549f",
+  "maxDets": [
+    1,
+    10,
+    100
+  ],
+  "protocol": {
+    "id": "VisDrone10_to_UAVDT3_source_only_seed1_v1",
+    "source": "VisDrone2019",
+    "target": "UAVDT DET official 20 test sequences",
+    "source_classes": [
+      "pedestrian",
+      "people",
+      "bicycle",
+      "car",
+      "van",
+      "truck",
+      "tricycle",
+      "awning-tricycle",
+      "bus",
+      "motor"
+    ],
+    "target_classes": [
+      "car",
+      "truck",
+      "bus"
+    ],
+    "mapping": {
+      "car": [
+        "car",
+        "van"
+      ],
+      "truck": [
+        "truck"
+      ],
+      "bus": [
+        "bus"
+      ]
+    },
+    "score_merge": "per anchor max(car,van); other mapped scores unchanged; never sum independent sigmoid scores",
+    "postprocess": "map BEFORE best-class selection, class-aware NMS and top500; discard unmapped classes",
+    "predict": {
+      "imgsz": 640,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "rect": false,
+      "agnostic_nms": false,
+      "save": false,
+      "save_txt": false,
+      "save_conf": false,
+      "verbose": false
+    },
+    "batch": 4,
+    "multi_label": false,
+    "max_nms": 30000,
+    "preprocessing": "Pinned 8.3.0 native LetterBox: max side640, minimum stride padding for same-shape batches; mixed orientations square-pad. Actual BCHW shapes recorded; rect flag does not override this old predictor.",
+    "evaluator": "COCO-style 3-class bbox AP@[.50:.05:.95] after author strict-containment ignored-region prediction filter; NOT official UAVDT COCO AP",
+    "maxDets": [
+      1,
+      10,
+      100
+    ],
+    "GT": "original *_gt_whole.txt continuous xywh, no clipping/minus-one; deterministic sequence/frame IDs; all 375884 DET boxes",
+    "AP_small": "original-image area<32^2, not the resized640 size",
+    "selection": "two existing seed1 source-val-selected best.pt, never target-selected",
+    "native_supplement": "Python port of author overall class-agnostic AP70/VOC integral math; same fixed mapped predictions; not MATLAB execution or a new official submission",
+    "ignored_regions": "Remove prediction only when all four edges strictly inside a same-frame ignore region in the 18 sequences listed by author evaluator; never delete GT using ignore regions",
+    "adaptation": false,
+    "training": false,
+    "target_BN_updates": false,
+    "shutdown": false,
+    "caveat": "Source-only direct transfer, not novel-class/open-vocabulary zero-shot. Target retraining is a different experiment."
+  },
+  "status": "completed",
+  "key": "e1_seed1",
+  "seed": 1,
+  "checkpoint_sha256": "f1a5ba6642a01445a99b2c7c80d8e79299a4402159bc37d2a08bb31ff365df12",
+  "prediction_sha256": "5f898137c0c6fd040fdd6fcaf0f1d322742cd3332984a83c6501c08ec8395440",
+  "seconds": 1364.4715104177594,
+  "finished_at": "2026-10-23T18:15:15+08:00"
+}

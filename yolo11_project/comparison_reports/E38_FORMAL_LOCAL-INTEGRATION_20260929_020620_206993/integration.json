@@ -1,8 +1,0 @@
-{
-  "status": "passed",
-  "synthetic_only": true,
-  "standard_trainer": true,
-  "epochs": 2,
-  "EMA_save_reload": true,
-  "four_loss_columns": true
-}

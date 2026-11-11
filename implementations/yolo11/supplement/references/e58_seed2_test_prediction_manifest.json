@@ -1,0 +1,102 @@
+{
+  "status": "completed",
+  "seen_images": 1610,
+  "predictions": 643526,
+  "sha256": "0330501c8e131ad1833d7cfb16c93b63548ece30d1c1e0bd637f2bdcbffc8dbd",
+  "actual_tensor_shapes": {
+    "4x3x384x640": 321,
+    "4x3x640x640": 16,
+    "4x3x480x640": 65,
+    "2x3x480x640": 1
+  },
+  "elapsed_seconds": 58.98710639216006,
+  "finished_at": "2026-10-09T01:19:42+08:00",
+  "topology": {
+    "head": "spatial_task_head.SpatialTaskDetect",
+    "nc": 10,
+    "detection_scales": 4,
+    "stride": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "parameter_count": 11023640
+  },
+  "backend": {
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true
+  },
+  "binding": {
+    "revision": "testdev_e58_seed2_v1",
+    "seed": 2,
+    "package": {
+      "base_eval.py": "5e77ba0494c00cbcd7582325b8c94b31a13fed228e3284d217210c6776ff6bcb",
+      "d27_official.py": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+      "e57_spatial_task_head.py": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+      "LICENSE-Ultralytics.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "LOCAL_VALIDATION.md": "01e00d9a901a9e3854967d1f6e3c5d013ebf0a13b5ae99ca0b562eade6b85c28",
+      "parent_spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+      "README.md": "b63b52ddefca6b6cbe1e1648329f5e60c45d4e7a941a27b6bbaeea12a934a12f",
+      "references/e1_seed2_official_metrics.json": "61265fef7b358b6f1cfd676c1485cbba6ee0a1a7df3952bc26b9692be2b08178",
+      "references/e1_seed2_prediction_manifest.json": "20979a7019157ed032ab772c658a9efaf98fba109412046637de5bdb26432025",
+      "references/e1_val_metadata.json": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+      "references/e40_seed2_official_metrics.json": "3d70b5cf7eefc6570983c46eceec42ca145d0a966124d9370f6b60641f2b01d5",
+      "references/e40_seed2_prediction_manifest.json": "fb9a6f924314006399501f7268dc97234567ffd830f11de49449ba8009265161",
+      "references/e58_seed2_comparison.json": "53d95b3537c1311df0971db9eb2e7db772af2c56b1cd9ec8264de54a9c5fc481",
+      "references/e58_seed2_completion.json": "b3c1795ab2e4fac540d06fe6903a213053d950fe93831a1eec2e735884378062",
+      "references/e58_seed2_training.json": "ecb279b57840ea4dbe4feb058caef8e704d964e038c51b9b948b476b30a7c10c",
+      "references/seed1_testdev_summary.json": "1fa43c7f95b22fe764be4740e371461cbe962ab8f2bddb07faa4fc1133ae803c",
+      "references/testdev_input_manifest.json": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+      "references/val_smoke.json": "2bfc0db0a7007c1a9149a960f2ebda87ec24e4e3213e4196e15366db8fa8fd9d",
+      "run.sh": "775dcaada97c5654556f827592285d817e1938fb58eb40849d1b65e34c8ecd7f",
+      "run_eval.py": "dc6868b9c231c45c891d15945ec0a8ea77db362adacb336af4cb6f4500345c04",
+      "spatial_task_head.py": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+      "test_local.py": "55a5eba2f20c61072402793a266d4469b790410642d186238f8ad5e851505c1b"
+    },
+    "source": {
+      "nn/modules/block.py": "d003cf2646c3c6bb6826874ae506e5822bec35f7c663e455de7ceb918c8149e0",
+      "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+      "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+      "engine/model.py": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97",
+      "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+      "engine/predictor.py": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e",
+      "models/yolo/detect/predict.py": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390",
+      "utils/ops.py": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd",
+      "nn/autobackend.py": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d",
+      "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70"
+    },
+    "checkpoint_sha256": "0024eac956589836c2215e35ad30e295286f1a958129322a0a05b74c6ae5f9a2",
+    "val_smoke_sha256": "2bfc0db0a7007c1a9149a960f2ebda87ec24e4e3213e4196e15366db8fa8fd9d",
+    "protocol": {
+      "imgsz": 640,
+      "device": "0",
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "verbose": false,
+      "save": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "batch": 4,
+      "letterbox": "unchanged Ultralytics 8.3.0 predictor pre_transform",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "dataset_annotation_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+    "dataset_image_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+    "image_count": 1610,
+    "environment": {
+      "python": "3.10.21",
+      "torch": "2.5.1+cu121",
+      "cuda": "12.1",
+      "cudnn": 90100,
+      "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+    },
+    "allocator_cap_GiB": 6
+  }
+}

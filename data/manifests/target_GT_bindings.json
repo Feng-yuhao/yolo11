@@ -1,0 +1,23 @@
+[
+  {
+    "dataset": "songdo",
+    "images": 1084,
+    "GT_sha256": "779d8e5c148dcff354d04dbb409a69f596c3a6bfc660ed6ffd89f54f7ef065e8",
+    "image_order": "ascending original image ID",
+    "GT_file": "original/prepared annotation obtained from official inputs; raw GT is not mirrored here"
+  },
+  {
+    "dataset": "dior",
+    "images": 11738,
+    "GT_sha256": "732f613405151cf0d99ad5b4d8f7f48ab6e93b78f5dcb5c3e6cc99331ae11740",
+    "image_order": "ascending original image ID",
+    "GT_file": "original/prepared annotation obtained from official inputs; raw GT is not mirrored here"
+  },
+  {
+    "dataset": "uavdt",
+    "images": 16592,
+    "GT_sha256": "54695144ce3daa52a91b1ea33d5a4eb93c56733a35940f23ee33dbf2202b549f",
+    "image_order": "ascending original image ID",
+    "GT_file": "original/prepared annotation obtained from official inputs; raw GT is not mirrored here"
+  }
+]

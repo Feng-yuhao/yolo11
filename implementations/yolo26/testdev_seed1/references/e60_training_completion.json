@@ -1,0 +1,11 @@
+{
+  "status": "training_completed",
+  "variant": "e60",
+  "epochs": 200,
+  "run": "/root/autodl-tmp/yolo26_project/runs/yolo26s_p2_e60_img640_seed1_200e",
+  "best": "/root/autodl-tmp/yolo26_project/runs/yolo26s_p2_e60_img640_seed1_200e/weights/best.pt",
+  "best_sha256": "13ca4403e9c7efa6d2b9ac05068a0489d826ba5a4020e4e8e12341f1795cb8f1",
+  "last": "/root/autodl-tmp/yolo26_project/runs/yolo26s_p2_e60_img640_seed1_200e/weights/last.pt",
+  "finished_at": "2026-10-15T02:13:43+08:00",
+  "official_scoring_completed": false
+}

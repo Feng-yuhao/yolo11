@@ -1,0 +1,37 @@
+{
+  "release_tag": "ivc-repro-v1.0.0",
+  "files": [
+    {
+      "asset": "pretrained_yolo11s.pt",
+      "bytes": 19313732,
+      "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/pretrained_yolo11s.pt",
+      "destination": "weights/pretrained/yolo11s.pt",
+      "purpose": "formal YOLO11 COCO initialization"
+    },
+    {
+      "asset": "pretrained_yolo26s.pt",
+      "bytes": 20422725,
+      "sha256": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/pretrained_yolo26s.pt",
+      "destination": "weights/pretrained/yolo26s.pt",
+      "purpose": "formal YOLO26 initialization; upstream Objects365/COCO history"
+    },
+    {
+      "asset": "pretrained_yolov8n.pt",
+      "bytes": 6549796,
+      "sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/pretrained_yolov8n.pt",
+      "destination": "weights/pretrained/yolov8n.pt",
+      "purpose": "auxiliary native AMP check only; not formal model initialization"
+    },
+    {
+      "asset": "pretrained_yolo26n.pt",
+      "bytes": 5544453,
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/pretrained_yolo26n.pt",
+      "destination": "weights/pretrained/yolo26n.pt",
+      "purpose": "auxiliary native AMP check only; not formal model initialization"
+    }
+  ]
+}

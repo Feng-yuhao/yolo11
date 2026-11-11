@@ -1,0 +1,245 @@
+[
+  {
+    "model": "yolo11s-p2",
+    "seed": 1,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/full_seed1",
+    "weights": "weights/trained/yolo11s-p2_seed1.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo11s-p2_seed1.json",
+    "training_args": "results/training/yolo11s-p2_seed1/args.yaml"
+  },
+  {
+    "model": "yolo11s-p2",
+    "seed": 2,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/full_seed1",
+    "weights": "weights/trained/yolo11s-p2_seed2.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo11s-p2_seed2.json",
+    "training_args": "results/training/yolo11s-p2_seed2/args.yaml"
+  },
+  {
+    "model": "yolo11s-p2",
+    "seed": 3,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/full_seed1",
+    "weights": "weights/trained/yolo11s-p2_seed3.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo11s-p2_seed3.json",
+    "training_args": "results/training/yolo11s-p2_seed3/args.yaml"
+  },
+  {
+    "model": "yolo11s",
+    "seed": 1,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/full_seed1",
+    "weights": "weights/trained/yolo11s_seed1.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo11s_seed1.json",
+    "training_args": "results/training/yolo11s_seed1/args.yaml"
+  },
+  {
+    "model": "yolo11s",
+    "seed": 2,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/full_seed1",
+    "weights": "weights/trained/yolo11s_seed2.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo11s_seed2.json",
+    "training_args": "results/training/yolo11s_seed2/args.yaml"
+  },
+  {
+    "model": "yolo11s",
+    "seed": 3,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/full_seed1",
+    "weights": "weights/trained/yolo11s_seed3.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo11s_seed3.json",
+    "training_args": "results/training/yolo11s_seed3/args.yaml"
+  },
+  {
+    "model": "st-mdrf",
+    "seed": 1,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/full_seed1",
+    "weights": "weights/trained/st-mdrf_seed1.pt",
+    "metrics": "results/raw/visdrone/test-dev/st-mdrf_seed1.json",
+    "training_args": "results/training/st-mdrf_seed1/args.yaml"
+  },
+  {
+    "model": "st-mdrf",
+    "seed": 2,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/full_seed2",
+    "weights": "weights/trained/st-mdrf_seed2.pt",
+    "metrics": "results/raw/visdrone/test-dev/st-mdrf_seed2.json",
+    "training_args": "results/training/st-mdrf_seed2/args.yaml"
+  },
+  {
+    "model": "st-mdrf",
+    "seed": 3,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/full_seed3",
+    "weights": "weights/trained/st-mdrf_seed3.pt",
+    "metrics": "results/raw/visdrone/test-dev/st-mdrf_seed3.json",
+    "training_args": "results/training/st-mdrf_seed3/args.yaml"
+  },
+  {
+    "model": "no-group",
+    "seed": 1,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/no_group_seed1",
+    "weights": "weights/trained/no-group_seed1.pt",
+    "metrics": "results/raw/visdrone/test-dev/no-group_seed1.json",
+    "training_args": "results/training/no-group_seed1/args.yaml"
+  },
+  {
+    "model": "no-group",
+    "seed": 2,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/no_group_seed2",
+    "weights": "weights/trained/no-group_seed2.pt",
+    "metrics": "results/raw/visdrone/test-dev/no-group_seed2.json",
+    "training_args": "results/training/no-group_seed2/args.yaml"
+  },
+  {
+    "model": "no-group",
+    "seed": 3,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/supplement/frozen/e58",
+    "weights": "weights/trained/no-group_seed3.pt",
+    "metrics": "results/raw/visdrone/test-dev/no-group_seed3.json",
+    "training_args": "results/training/no-group_seed3/args.yaml"
+  },
+  {
+    "model": "uniform",
+    "seed": 1,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/routing_seed1",
+    "weights": "weights/trained/uniform_seed1.pt",
+    "metrics": "results/raw/visdrone/test-dev/uniform_seed1.json",
+    "training_args": "results/training/uniform_seed1/args.yaml"
+  },
+  {
+    "model": "uniform",
+    "seed": 2,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/supplement/frozen/routing",
+    "weights": "weights/trained/uniform_seed2.pt",
+    "metrics": "results/raw/visdrone/test-dev/uniform_seed2.json",
+    "training_args": "results/training/uniform_seed2/args.yaml"
+  },
+  {
+    "model": "uniform",
+    "seed": 3,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/supplement/frozen/routing",
+    "weights": "weights/trained/uniform_seed3.pt",
+    "metrics": "results/raw/visdrone/test-dev/uniform_seed3.json",
+    "training_args": "results/training/uniform_seed3/args.yaml"
+  },
+  {
+    "model": "shared",
+    "seed": 1,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/routing_seed1",
+    "weights": "weights/trained/shared_seed1.pt",
+    "metrics": "results/raw/visdrone/test-dev/shared_seed1.json",
+    "training_args": "results/training/shared_seed1/args.yaml"
+  },
+  {
+    "model": "shared",
+    "seed": 2,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/supplement/frozen/routing",
+    "weights": "weights/trained/shared_seed2.pt",
+    "metrics": "results/raw/visdrone/test-dev/shared_seed2.json",
+    "training_args": "results/training/shared_seed2/args.yaml"
+  },
+  {
+    "model": "shared",
+    "seed": 3,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/supplement/frozen/routing",
+    "weights": "weights/trained/shared_seed3.pt",
+    "metrics": "results/raw/visdrone/test-dev/shared_seed3.json",
+    "training_args": "results/training/shared_seed3/args.yaml"
+  },
+  {
+    "model": "tood-td",
+    "seed": 1,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/td_seed1",
+    "weights": "weights/trained/tood-td_seed1.pt",
+    "metrics": "results/raw/visdrone/test-dev/tood-td_seed1.json",
+    "training_args": "results/training/tood-td_seed1/args.yaml"
+  },
+  {
+    "model": "tood-td",
+    "seed": 2,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/supplement/frozen/td",
+    "weights": "weights/trained/tood-td_seed2.pt",
+    "metrics": "results/raw/visdrone/test-dev/tood-td_seed2.json",
+    "training_args": "results/training/tood-td_seed2/args.yaml"
+  },
+  {
+    "model": "tood-td",
+    "seed": 3,
+    "family": "yolo11",
+    "implementation": "implementations/yolo11/supplement/frozen/td",
+    "weights": "weights/trained/tood-td_seed3.pt",
+    "metrics": "results/raw/visdrone/test-dev/tood-td_seed3.json",
+    "training_args": "results/training/tood-td_seed3/args.yaml"
+  },
+  {
+    "model": "yolo26s-p2",
+    "seed": 1,
+    "family": "yolo26",
+    "implementation": "implementations/yolo26/seed1",
+    "weights": "weights/trained/yolo26s-p2_seed1.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo26s-p2_seed1.json",
+    "training_args": "results/training/yolo26s-p2_seed1/args.yaml"
+  },
+  {
+    "model": "yolo26s-p2",
+    "seed": 2,
+    "family": "yolo26",
+    "implementation": "implementations/yolo26/seed2",
+    "weights": "weights/trained/yolo26s-p2_seed2.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo26s-p2_seed2.json",
+    "training_args": "results/training/yolo26s-p2_seed2/args.yaml"
+  },
+  {
+    "model": "yolo26s-p2",
+    "seed": 3,
+    "family": "yolo26",
+    "implementation": "implementations/yolo26/seed3",
+    "weights": "weights/trained/yolo26s-p2_seed3.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo26s-p2_seed3.json",
+    "training_args": "results/training/yolo26s-p2_seed3/args.yaml"
+  },
+  {
+    "model": "yolo26s-p2-st-mdrf",
+    "seed": 1,
+    "family": "yolo26",
+    "implementation": "implementations/yolo26/seed1",
+    "weights": "weights/trained/yolo26s-p2-st-mdrf_seed1.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo26s-p2-st-mdrf_seed1.json",
+    "training_args": "results/training/yolo26s-p2-st-mdrf_seed1/args.yaml"
+  },
+  {
+    "model": "yolo26s-p2-st-mdrf",
+    "seed": 2,
+    "family": "yolo26",
+    "implementation": "implementations/yolo26/seed2",
+    "weights": "weights/trained/yolo26s-p2-st-mdrf_seed2.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo26s-p2-st-mdrf_seed2.json",
+    "training_args": "results/training/yolo26s-p2-st-mdrf_seed2/args.yaml"
+  },
+  {
+    "model": "yolo26s-p2-st-mdrf",
+    "seed": 3,
+    "family": "yolo26",
+    "implementation": "implementations/yolo26/seed3",
+    "weights": "weights/trained/yolo26s-p2-st-mdrf_seed3.pt",
+    "metrics": "results/raw/visdrone/test-dev/yolo26s-p2-st-mdrf_seed3.json",
+    "training_args": "results/training/yolo26s-p2-st-mdrf_seed3/args.yaml"
+  }
+]

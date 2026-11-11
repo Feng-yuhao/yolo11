@@ -1,0 +1,179 @@
+{
+  "status": "completed",
+  "key": "uniform_s1",
+  "seed": 1,
+  "official": {
+    "AP50_95_percent": 24.27767506774674,
+    "AP50_percent": 41.27427144788584,
+    "AP75_percent": 25.030252573919174,
+    "AR1_percent": 1.9178670611153499,
+    "AR10_percent": 11.69621684541435,
+    "AR100_percent": 31.684321366781376,
+    "AR500_percent": 35.62156420611084,
+    "class_image_weights": {
+      "1": 1197,
+      "2": 797,
+      "3": 377,
+      "4": 1530,
+      "5": 1167,
+      "6": 750,
+      "7": 245,
+      "8": 232,
+      "9": 838,
+      "10": 794
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 1197,
+        "AP50_95_percent": 14.876170895725826,
+        "AP50_percent": 36.20082949324142,
+        "AP75_percent": 9.475103643471506
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 797,
+        "AP50_95_percent": 7.673309564479256,
+        "AP50_percent": 21.01963461990672,
+        "AP75_percent": 3.513466671525113
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 377,
+        "AP50_95_percent": 4.875855689996274,
+        "AP50_percent": 10.896574952568374,
+        "AP75_percent": 4.040174411914748
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 1530,
+        "AP50_95_percent": 48.251974424423636,
+        "AP50_percent": 75.747528789142,
+        "AP75_percent": 53.74749659481094
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 1167,
+        "AP50_95_percent": 21.043317129628285,
+        "AP50_percent": 30.214110378000917,
+        "AP75_percent": 24.849352934735116
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 750,
+        "AP50_95_percent": 24.47125755701318,
+        "AP50_percent": 37.60091207497672,
+        "AP75_percent": 27.414072918772202
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 245,
+        "AP50_95_percent": 11.044576263214676,
+        "AP50_percent": 21.017045546968145,
+        "AP75_percent": 10.66453711342184
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 232,
+        "AP50_95_percent": 10.00114609289794,
+        "AP50_percent": 16.05263252745004,
+        "AP75_percent": 11.490244811705864
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 838,
+        "AP50_95_percent": 38.84533512744492,
+        "AP50_percent": 54.718474010806176,
+        "AP75_percent": 44.70164201148281
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 794,
+        "AP50_95_percent": 15.583671712321173,
+        "AP50_percent": 36.40599656627088,
+        "AP75_percent": 10.349862283403063
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "binding": {
+    "key": "uniform_s1",
+    "seed": 1,
+    "split": "test-dev",
+    "images": 1610,
+    "checkpoint_sha256": "1cc9b65fb8696a95aeab2242c23e5a77b13095840887cbf81f87e03bae32681b",
+    "original_run": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\runs\\e60_ablation_uniform_img640_seed1_200e",
+    "completed_training_epochs": 200,
+    "smoke_only": false,
+    "scorer_sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "package_sha256": "3410623125709df7f1a4b5d3bc0fd5b30f9a62a40b2521381cdd7e7104147ece",
+    "dataset": {
+      "dataset_root": "C:\\YOLO26_Local\\reports\\PAPER_V26_SEED1_TEST_20261028_152000\\dataset\\VisDrone2019-DET-test-dev",
+      "images": 1610,
+      "annotation_dimension_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+      "raw_class_counts": {
+        "0": 2180,
+        "1": 21006,
+        "2": 6376,
+        "3": 1302,
+        "4": 28074,
+        "5": 5771,
+        "6": 2659,
+        "7": 530,
+        "8": 599,
+        "9": 2940,
+        "10": 5845,
+        "11": 265
+      },
+      "score_zero_counts": {
+        "0": 2180,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 265
+      },
+      "class0_ignore_regions": 2180,
+      "class11_others": 265,
+      "gt_rows_dropped_by_class0_region": 395,
+      "evaluated_gt_rows": 74707,
+      "image_content_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+      "pixel_hashes_checked_this_phase": true
+    },
+    "protocol": {
+      "imgsz": 640,
+      "device": "cuda:0",
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "verbose": false,
+      "save": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "batch": 4
+    },
+    "no_test_selection": true,
+    "environment": {
+      "torch": "2.5.1+cu121",
+      "torchvision": "0.20.1+cu121",
+      "GPU": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "ultralytics": "8.3.0",
+      "FP32": true,
+      "source": "C:\\YOLO26_Local\\reports\\PAPER_V26_SEED1_TEST_20261028_152000\\code\\yolo11_src",
+      "source_provenance": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\server_received_20261013\\yolo11_src"
+    }
+  },
+  "prediction_sha256": "a6574e6775a60d46856eb86c5d2a380e957d3bba6f6f3661943657cf6a2e1e29",
+  "no_training": true,
+  "no_test_selection": true,
+  "finished_at": "2026-10-28T17:22:40+08:00",
+  "scorer": "unchanged_D27_VisDrone_Matlab104_ignore_port"
+}

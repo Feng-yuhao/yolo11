@@ -1,0 +1,107 @@
+{
+  "checks": [
+    {
+      "check": "help_check_data",
+      "passed": true
+    },
+    {
+      "check": "help_download",
+      "passed": true
+    },
+    {
+      "check": "help_plot_per_class",
+      "passed": true
+    },
+    {
+      "check": "help_predict_transfer",
+      "passed": true
+    },
+    {
+      "check": "help_predict_visdrone",
+      "passed": true
+    },
+    {
+      "check": "help_prepare_data",
+      "passed": true
+    },
+    {
+      "check": "help_profile_model",
+      "passed": true
+    },
+    {
+      "check": "help_reproduce_tables",
+      "passed": true
+    },
+    {
+      "check": "help_score_transfer",
+      "passed": true
+    },
+    {
+      "check": "help_score_visdrone",
+      "passed": true
+    },
+    {
+      "check": "help_train",
+      "passed": true
+    },
+    {
+      "check": "help_verify_release",
+      "passed": true
+    },
+    {
+      "check": "build_yolo11s-p2",
+      "passed": true
+    },
+    {
+      "check": "build_yolo11s",
+      "passed": true
+    },
+    {
+      "check": "build_st-mdrf",
+      "passed": true
+    },
+    {
+      "check": "build_no-group",
+      "passed": true
+    },
+    {
+      "check": "build_uniform",
+      "passed": true
+    },
+    {
+      "check": "build_shared",
+      "passed": true
+    },
+    {
+      "check": "build_tood-td",
+      "passed": true
+    },
+    {
+      "check": "build_yolo26s-p2",
+      "passed": true
+    },
+    {
+      "check": "build_yolo26s-p2-st-mdrf",
+      "passed": true
+    },
+    {
+      "check": "profile_yolo11s-p2",
+      "passed": true
+    },
+    {
+      "check": "profile_st-mdrf",
+      "passed": true
+    },
+    {
+      "check": "profile_tood-td",
+      "passed": true
+    },
+    {
+      "check": "data_protocols",
+      "passed": true,
+      "rerun_passed_after_fixture_and_portable_serialization_fixes": true
+    }
+  ],
+  "all_passed": true,
+  "formal_training_or_AP_scoring_executed": false
+}

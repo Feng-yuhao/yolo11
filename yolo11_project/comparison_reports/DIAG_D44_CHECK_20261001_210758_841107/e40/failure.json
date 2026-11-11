@@ -1,5 +1,0 @@
-{
-  "status": "failed",
-  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\D44_E40_RoutingDense_Diagnostic_AutoDL\\diagnose_worker.py\", line 363, in main\n    run(a,a.out)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\D44_E40_RoutingDense_Diagnostic_AutoDL\\diagnose_worker.py\", line 251, in run\n    torch=setup(a)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\D44_E40_RoutingDense_Diagnostic_AutoDL\\diagnose_worker.py\", line 77, in setup\n    raise RuntimeError(f'Need cap={a.memory_cap_gib} GiB + 1 GiB headroom; free={free/2**30:.2f} GiB. Do not kill other jobs.')\nRuntimeError: Need cap=6.0 GiB + 1 GiB headroom; free=6.94 GiB. Do not kill other jobs.\n",
-  "zero_training": true
-}

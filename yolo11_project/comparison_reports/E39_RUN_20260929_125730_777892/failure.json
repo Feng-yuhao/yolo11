@@ -1,4 +1,0 @@
-{
-  "status": "failed",
-  "error": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/E39a_P2_LocalContext_AutoDL/run_e39.py\", line 343, in <module>\n  File \"/root/autodl-tmp/E39a_P2_LocalContext_AutoDL/run_e39.py\", line 337, in main\n  File \"/root/autodl-tmp/E39a_P2_LocalContext_AutoDL/run_e39.py\", line 281, in train\nModuleNotFoundError: No module named 'evaluate'\n"
-}

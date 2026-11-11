@@ -1,8 +1,0 @@
-E1/E10a original DSSG seed2 paired official evaluation
-E1 seed2 AP: 32.4919%
-E10a seed2 AP: 32.2786%
-E10a - E1 AP: -0.2134 pp
-AP50 delta: -0.6897 pp
-AP75 delta: -0.1148 pp
-AR500 delta: -0.3496 pp
-Report: /root/autodl-tmp/yolo11_project/comparison_reports/PAIRED_SEED2_E1_E10A_OFFICIAL_20260926_023432_694924

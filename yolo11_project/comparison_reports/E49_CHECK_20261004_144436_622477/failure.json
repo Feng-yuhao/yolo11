@@ -1,4 +1,0 @@
-{
-  "status": "failed",
-  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E49a_E40_GuidedReassembly_AutoDL\\run_e49.py\", line 420, in <module>\n    main()\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E49a_E40_GuidedReassembly_AutoDL\\run_e49.py\", line 390, in main\n    result=check_all(core,args,REPORT)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E49a_E40_GuidedReassembly_AutoDL\\checks.py\", line 281, in check_all\n    require(abs(flops-(parent_flops+added))<1e-5,'Convolution profiler delta drift')\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E49a_E40_GuidedReassembly_AutoDL\\checks.py\", line 16, in require\n    raise RuntimeError(message)\nRuntimeError: Convolution profiler delta drift\n"
-}

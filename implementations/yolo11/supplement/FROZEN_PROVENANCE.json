@@ -1,0 +1,403 @@
+{
+  "status": "copied_byte_identically",
+  "files": [
+    {
+      "package_file": "frozen/routing/e1_640_core.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\e1_640_core.py",
+      "original_sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+      "copied_sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe"
+    },
+    {
+      "package_file": "frozen/routing/e1_reference.yaml",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\e1_reference.yaml",
+      "original_sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+      "copied_sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b"
+    },
+    {
+      "package_file": "frozen/routing/p2_tal_chunked.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\p2_tal_chunked.py",
+      "original_sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+      "copied_sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6"
+    },
+    {
+      "package_file": "frozen/routing/d27_official.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\d27_official.py",
+      "original_sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+      "copied_sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60"
+    },
+    {
+      "package_file": "frozen/routing/checks.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\checks.py",
+      "original_sha256": "6b241180296594dfa11257e6a1bdb699e91041ac799d39f12b236c79a12a7ed8",
+      "copied_sha256": "6b241180296594dfa11257e6a1bdb699e91041ac799d39f12b236c79a12a7ed8"
+    },
+    {
+      "package_file": "frozen/routing/LICENSE-Ultralytics.txt",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\LICENSE-Ultralytics.txt",
+      "original_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "copied_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "package_file": "frozen/routing/spatial_task_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\spatial_task_head.py",
+      "original_sha256": "1b318369bf67809aec71ea2d2c34b01d707153b3aec978f1c774beec034d8745",
+      "copied_sha256": "1b318369bf67809aec71ea2d2c34b01d707153b3aec978f1c774beec034d8745"
+    },
+    {
+      "package_file": "frozen/routing/e60_full_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\e60_full_head.py",
+      "original_sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+      "copied_sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe"
+    },
+    {
+      "package_file": "frozen/routing/e58_spatial_task_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\e58_spatial_task_head.py",
+      "original_sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+      "copied_sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314"
+    },
+    {
+      "package_file": "frozen/routing/e57_spatial_task_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\e57_spatial_task_head.py",
+      "original_sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+      "copied_sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9"
+    },
+    {
+      "package_file": "frozen/routing/parent_spatial_task_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\parent_spatial_task_head.py",
+      "original_sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+      "copied_sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
+    },
+    {
+      "package_file": "frozen/routing/d38_common.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\d38_common.py",
+      "original_sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+      "copied_sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6"
+    },
+    {
+      "package_file": "frozen/routing/routing_checks.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\routing_checks.py",
+      "original_sha256": "4b622d8bbbe25550da29bb60bf08751d8faea6c2203c6abba05c01da0d0146bb",
+      "copied_sha256": "4b622d8bbbe25550da29bb60bf08751d8faea6c2203c6abba05c01da0d0146bb"
+    },
+    {
+      "package_file": "frozen/routing/group_checks.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\group_checks.py",
+      "original_sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8",
+      "copied_sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8"
+    },
+    {
+      "package_file": "frozen/routing/precision_checks.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\precision_checks.py",
+      "original_sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a",
+      "copied_sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a"
+    },
+    {
+      "package_file": "frozen/routing/optimizer_checks.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\optimizer_checks.py",
+      "original_sha256": "5254f0f1e0aed42c5fe3ba550c87e6ca8b0f575d497e3f9dc0da3b32621b2587",
+      "copied_sha256": "5254f0f1e0aed42c5fe3ba550c87e6ca8b0f575d497e3f9dc0da3b32621b2587"
+    },
+    {
+      "package_file": "frozen/e58/e1_640_core.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\e1_640_core.py",
+      "original_sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+      "copied_sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe"
+    },
+    {
+      "package_file": "frozen/e58/e1_reference.yaml",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\e1_reference.yaml",
+      "original_sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+      "copied_sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b"
+    },
+    {
+      "package_file": "frozen/e58/p2_tal_chunked.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\p2_tal_chunked.py",
+      "original_sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+      "copied_sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6"
+    },
+    {
+      "package_file": "frozen/e58/d27_official.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\d27_official.py",
+      "original_sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+      "copied_sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60"
+    },
+    {
+      "package_file": "frozen/e58/checks.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\checks.py",
+      "original_sha256": "df4f3510bccc054d5837572fb56f5d8dbc0cfc6bd7811086ada3ee40c5a9b230",
+      "copied_sha256": "df4f3510bccc054d5837572fb56f5d8dbc0cfc6bd7811086ada3ee40c5a9b230"
+    },
+    {
+      "package_file": "frozen/e58/LICENSE-Ultralytics.txt",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\LICENSE-Ultralytics.txt",
+      "original_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "copied_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "package_file": "frozen/e58/spatial_task_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\spatial_task_head.py",
+      "original_sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+      "copied_sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314"
+    },
+    {
+      "package_file": "frozen/e58/e57_spatial_task_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\e57_spatial_task_head.py",
+      "original_sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+      "copied_sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9"
+    },
+    {
+      "package_file": "frozen/e58/parent_spatial_task_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\parent_spatial_task_head.py",
+      "original_sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+      "copied_sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
+    },
+    {
+      "package_file": "frozen/e58/parent_reference.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\parent_reference.py",
+      "original_sha256": "a46e4273f7b345fe74bde5628000856dfee27b7f5aa0774597aad0e9237c2817",
+      "copied_sha256": "a46e4273f7b345fe74bde5628000856dfee27b7f5aa0774597aad0e9237c2817"
+    },
+    {
+      "package_file": "frozen/e58/d38_common.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E58_seed2\\d38_common.py",
+      "original_sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+      "copied_sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6"
+    },
+    {
+      "package_file": "frozen/td/e1_640_core.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\e1_640_core.py",
+      "original_sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+      "copied_sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe"
+    },
+    {
+      "package_file": "frozen/td/e1_reference.yaml",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\e1_reference.yaml",
+      "original_sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+      "copied_sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b"
+    },
+    {
+      "package_file": "frozen/td/p2_tal_chunked.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\p2_tal_chunked.py",
+      "original_sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+      "copied_sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6"
+    },
+    {
+      "package_file": "frozen/td/d27_official.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\d27_official.py",
+      "original_sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+      "copied_sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60"
+    },
+    {
+      "package_file": "frozen/td/checks.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\checks.py",
+      "original_sha256": "5ada7af837968072dc8e2969fc8c59504ebf6613fc00fa5728e0f1ec2d89568c",
+      "copied_sha256": "5ada7af837968072dc8e2969fc8c59504ebf6613fc00fa5728e0f1ec2d89568c"
+    },
+    {
+      "package_file": "frozen/td/LICENSE-Ultralytics.txt",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\LICENSE-Ultralytics.txt",
+      "original_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "copied_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "package_file": "frozen/td/tood_td_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\tood_td_head.py",
+      "original_sha256": "25963991eda6ba8fde71874149853a584f759f93b17aea0c43f27e223f9252c8",
+      "copied_sha256": "25963991eda6ba8fde71874149853a584f759f93b17aea0c43f27e223f9252c8"
+    },
+    {
+      "package_file": "frozen/td/shutdown_safety.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\shutdown_safety.py",
+      "original_sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+      "copied_sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a"
+    },
+    {
+      "package_file": "frozen/td/evaluation.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\evaluation.py",
+      "original_sha256": "943a6eae7e747bb75b92640538530a443eb4f15838394c6a5615f52857417761",
+      "copied_sha256": "943a6eae7e747bb75b92640538530a443eb4f15838394c6a5615f52857417761"
+    },
+    {
+      "package_file": "frozen/td/author_source/LICENSE.txt",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\author_source\\LICENSE.txt",
+      "original_sha256": "02c5c55e19772184872c6c455553b15e4acac4b3a757550e7374f47723868ce1",
+      "copied_sha256": "02c5c55e19772184872c6c455553b15e4acac4b3a757550e7374f47723868ce1"
+    },
+    {
+      "package_file": "frozen/td/author_source/PROVENANCE.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\author_source\\PROVENANCE.json",
+      "original_sha256": "34abe55feabc7c8ade8bcb8d362026b23924e49553104fbc4337c4043f88816f",
+      "copied_sha256": "34abe55feabc7c8ade8bcb8d362026b23924e49553104fbc4337c4043f88816f"
+    },
+    {
+      "package_file": "frozen/td/author_source/tood_head.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\author_source\\tood_head.py",
+      "original_sha256": "2f92e486d2ac7db835dede8f7b8008c2d1dcddd1e2166fb9e516fff804a599ef",
+      "copied_sha256": "2f92e486d2ac7db835dede8f7b8008c2d1dcddd1e2166fb9e516fff804a599ef"
+    },
+    {
+      "package_file": "validation_smoke.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\E60_Routing_Ablations_Seed1_Parallel_AutoDL\\validation_smoke.py",
+      "original_sha256": "deb774db70060e5625275c85fee662f6c7f1d1f694106f4290f2e628554a7b2b",
+      "copied_sha256": "deb774db70060e5625275c85fee662f6c7f1d1f694106f4290f2e628554a7b2b"
+    },
+    {
+      "package_file": "platform_safety.py",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\shutdown_safety.py",
+      "original_sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+      "copied_sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a"
+    },
+    {
+      "package_file": "assets/yolov8n.pt",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\yolov8n.pt",
+      "original_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+      "copied_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36"
+    },
+    {
+      "package_file": "assets/Arial.ttf",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\tood_td_settings\\Arial.ttf",
+      "original_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+      "copied_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    {
+      "package_file": "references/td_seed1/e1_seed1_official_metrics.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\references\\e1_seed1_official_metrics.json",
+      "original_sha256": "557ebad077b10985890e3b180242634b0d8942bb4b0b992bb870f3e4d8826241",
+      "copied_sha256": "557ebad077b10985890e3b180242634b0d8942bb4b0b992bb870f3e4d8826241"
+    },
+    {
+      "package_file": "references/td_seed1/e1_seed1_prediction_manifest.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\references\\e1_seed1_prediction_manifest.json",
+      "original_sha256": "a48aaaac62b901b34a70fd4be803db03a129d41102a9af77885309363dd5b473",
+      "copied_sha256": "a48aaaac62b901b34a70fd4be803db03a129d41102a9af77885309363dd5b473"
+    },
+    {
+      "package_file": "references/td_seed1/e1_training.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\references\\e1_training.json",
+      "original_sha256": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+      "copied_sha256": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b"
+    },
+    {
+      "package_file": "references/td_seed1/e60_seed1_official_metrics.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\references\\e60_seed1_official_metrics.json",
+      "original_sha256": "42ab5405b66c3ffc7bdf5fa4d0c84ff0b6c5e14a666706b6a6edc1e2925faa00",
+      "copied_sha256": "42ab5405b66c3ffc7bdf5fa4d0c84ff0b6c5e14a666706b6a6edc1e2925faa00"
+    },
+    {
+      "package_file": "references/td_seed1/e60_seed1_prediction_manifest.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\references\\e60_seed1_prediction_manifest.json",
+      "original_sha256": "acba09955413caf179af8f4995fdac3ab42f403f19a2bc353336fae99553794c",
+      "copied_sha256": "acba09955413caf179af8f4995fdac3ab42f403f19a2bc353336fae99553794c"
+    },
+    {
+      "package_file": "references/td_seed1/e60_training.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\references\\e60_training.json",
+      "original_sha256": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71",
+      "copied_sha256": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71"
+    },
+    {
+      "package_file": "references/td_seed1/testdev_input_manifest.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\references\\testdev_input_manifest.json",
+      "original_sha256": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+      "copied_sha256": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7"
+    },
+    {
+      "package_file": "references/td_seed1/val_e1_e60.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\code\\TOOD_TD_E1_Seed1_AutoDL\\references\\val_e1_e60.json",
+      "original_sha256": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52",
+      "copied_sha256": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52"
+    },
+    {
+      "package_file": "references/e60_seed1_training.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\E60_RUN_20261010_133029_103161\\training.json",
+      "original_sha256": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71",
+      "copied_sha256": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71"
+    },
+    {
+      "package_file": "references/e60_seed1_comparison.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\E60_RUN_20261010_133029_103161\\comparison.json",
+      "original_sha256": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52",
+      "copied_sha256": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52"
+    },
+    {
+      "package_file": "references/e60_seed2_training.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\E60S2_RUN_20261011_120724_723053\\training.json",
+      "original_sha256": "c26a105ea6f4d747473fceeb999f6c8acc6e2713f0f864d8ebc1f3078e0b35f2",
+      "copied_sha256": "c26a105ea6f4d747473fceeb999f6c8acc6e2713f0f864d8ebc1f3078e0b35f2"
+    },
+    {
+      "package_file": "references/e60_seed2_comparison.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\E60S2_RUN_20261011_120724_723053\\comparison.json",
+      "original_sha256": "2440fb58d686a6778179e8d8df7c4c2414002f356732c9fea83bc2f579106566",
+      "copied_sha256": "2440fb58d686a6778179e8d8df7c4c2414002f356732c9fea83bc2f579106566"
+    },
+    {
+      "package_file": "references/e60_seed3_training.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\E60S3_RUN_20261011_220512_228555\\training.json",
+      "original_sha256": "7ed567b58bd2e8bd849b8a6eb3bc0ce07d5d203c06d42c4101d18ee0287c53d0",
+      "copied_sha256": "7ed567b58bd2e8bd849b8a6eb3bc0ce07d5d203c06d42c4101d18ee0287c53d0"
+    },
+    {
+      "package_file": "references/e60_seed3_comparison.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\E60S3_RUN_20261011_220512_228555\\comparison.json",
+      "original_sha256": "a188822c25e987062b36a05c60e2fa1fbadb60da15af3ad683966cc08d58587b",
+      "copied_sha256": "a188822c25e987062b36a05c60e2fa1fbadb60da15af3ad683966cc08d58587b"
+    },
+    {
+      "package_file": "references/e58_seed1_comparison.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\E58_RUN_20261008_001519_559728\\comparison.json",
+      "original_sha256": "428a3ed161d670c8cb25653dcdc2b5a7f5d4075c4de30c4369227eaad595c414",
+      "copied_sha256": "428a3ed161d670c8cb25653dcdc2b5a7f5d4075c4de30c4369227eaad595c414"
+    },
+    {
+      "package_file": "references/e58_seed2_comparison.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\E58S2_RUN_20261008_162925_565240\\comparison.json",
+      "original_sha256": "53d95b3537c1311df0971db9eb2e7db772af2c56b1cd9ec8264de54a9c5fc481",
+      "copied_sha256": "53d95b3537c1311df0971db9eb2e7db772af2c56b1cd9ec8264de54a9c5fc481"
+    },
+    {
+      "package_file": "references/e58_seed1_test_official_metrics.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\TESTDEV_E0_E58_RUN_20261008_150524_396506\\e58_seed1\\official_metrics.json",
+      "original_sha256": "aeef063728fc68a3d3f974a00438e250352c7e93321205c67aeb5efd3dfccc35",
+      "copied_sha256": "aeef063728fc68a3d3f974a00438e250352c7e93321205c67aeb5efd3dfccc35"
+    },
+    {
+      "package_file": "references/e58_seed1_test_prediction_manifest.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\TESTDEV_E0_E58_RUN_20261008_150524_396506\\e58_seed1\\prediction_manifest.json",
+      "original_sha256": "47750fbea7471ffda8fc439bfc7f5f2b2e384f3ef424b3381ea10cfad239641c",
+      "copied_sha256": "47750fbea7471ffda8fc439bfc7f5f2b2e384f3ef424b3381ea10cfad239641c"
+    },
+    {
+      "package_file": "references/e58_seed2_test_official_metrics.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\TESTDEV_E58S2_ALL_20261009_011830_949736\\e58_seed2\\official_metrics.json",
+      "original_sha256": "53b9ec2a19376f1a96d493976fa4509de7493375ecd179fcc20204b56eb4e9cb",
+      "copied_sha256": "53b9ec2a19376f1a96d493976fa4509de7493375ecd179fcc20204b56eb4e9cb"
+    },
+    {
+      "package_file": "references/e58_seed2_test_prediction_manifest.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\TESTDEV_E58S2_ALL_20261009_011830_949736\\e58_seed2\\prediction_manifest.json",
+      "original_sha256": "415d579a16b0669c57b99c02b465da859c178fc8c0b299b4257b25791a9c3883",
+      "copied_sha256": "415d579a16b0669c57b99c02b465da859c178fc8c0b299b4257b25791a9c3883"
+    },
+    {
+      "package_file": "references/td_seed1_val_metrics.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\TOOD_TD_ALL_2026-10-17T163409_0800_1866\\val\\official_metrics.json",
+      "original_sha256": "29f8103d8aefd226f721af18408ca4d74025977bcea55d2b152336bd0d27427f",
+      "copied_sha256": "29f8103d8aefd226f721af18408ca4d74025977bcea55d2b152336bd0d27427f"
+    },
+    {
+      "package_file": "references/td_seed1_test_metrics.json",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\TOOD_TD_ALL_2026-10-17T163409_0800_1866\\test\\official_metrics.json",
+      "original_sha256": "f36e8bf0d61fbdbe57db578c455b5c723c03d9388aba10b5559675d6f65ce215",
+      "copied_sha256": "f36e8bf0d61fbdbe57db578c455b5c723c03d9388aba10b5559675d6f65ce215"
+    },
+    {
+      "package_file": "references/official_main_per_seed.csv",
+      "original": "D:\\YOLO11_研究总档案\\02_论文与有效实验\\PAPER_EXPERIMENTS\\project\\comparison_reports\\PAPER_SUPPLEMENT_ALL_20261013_123643_521444\\tables\\official_per_seed.csv",
+      "original_sha256": "9adbb6d97581fa950b7abe8d642b4adcf23b611a36aeed8cfcb9ec8a31f3220a",
+      "copied_sha256": "9adbb6d97581fa950b7abe8d642b4adcf23b611a36aeed8cfcb9ec8a31f3220a"
+    }
+  ],
+  "architecture_changed": false,
+  "driver": "New seed-aware orchestrator; original architecture/loss/optimizer recipes retained"
+}

@@ -1,0 +1,7 @@
+{
+  "raw": 5949757,
+  "kept": 3362242,
+  "removed": 2587515,
+  "rule": "Remove prediction only when all four edges strictly inside a same-frame ignore region in the 18 sequences listed by author evaluator; never delete GT using ignore regions",
+  "filtered_sha256": "7ec6841204852c2f23035179fefc185ccdd7483b24a1ce91bc5ab89616320fcf"
+}

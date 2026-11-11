@@ -1,0 +1,2 @@
+# Default YOLO11 dependencies. Use requirements-yolo26.txt for YOLO26.
+-r requirements-yolo11.txt

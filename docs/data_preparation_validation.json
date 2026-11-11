@@ -1,0 +1,12 @@
+{
+  "VisDrone_validation_label_files_matching_frozen_converter": 548,
+  "VisDrone_validation_positive_labels": 38759,
+  "DIOR_images_and_label_files": 11738,
+  "DIOR_GT_and_labels_byte_identical": true,
+  "UAVDT_GT_and_ignore_byte_identical": true,
+  "UAVDT_test_frame_order_verified": 16592,
+  "strict_ignore_boundary_checked": true,
+  "image_transport_not_retested_in_annotation_fixtures": true,
+  "complete_VisDrone_training_conversion_rerun": false,
+  "training_or_AP_scoring_executed": false
+}

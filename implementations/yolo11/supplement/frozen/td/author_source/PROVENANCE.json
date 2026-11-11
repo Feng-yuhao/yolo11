@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/fcjian/TOOD",
+  "commit": "1bda27c6f290c5b828c566eb95ea50fed75a53cb",
+  "verified_with": "git ls-remote refs/heads/master; downloaded immutable raw commit URLs",
+  "files": {
+    "tood_head.py": {
+      "original_path": "mmdet/models/dense_heads/tood_head.py",
+      "sha256": "2f92e486d2ac7db835dede8f7b8008c2d1dcddd1e2166fb9e516fff804a599ef"
+    },
+    "LICENSE.txt": {
+      "original_path": "LICENSE",
+      "sha256": "02c5c55e19772184872c6c455553b15e4acac4b3a757550e7374f47723868ce1"
+    }
+  },
+  "license": "Apache-2.0 (TOOD source); copied Ultralytics helpers remain AGPL-3.0",
+  "citation": "Feng et al., TOOD: Task-aligned One-stage Object Detection, ICCV 2021",
+  "scope": "TaskDecomposition plus shared intermediate features adapted to YOLO11-P2; not complete TOOD or a reproduction of its published metrics"
+}

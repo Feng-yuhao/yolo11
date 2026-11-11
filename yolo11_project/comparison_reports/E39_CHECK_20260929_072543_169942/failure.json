@@ -1,4 +1,0 @@
-{
-  "status": "failed",
-  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\run_e39.py\", line 343, in <module>\n    main()\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\run_e39.py\", line 314, in main\n    result=check_all(core,args,REPORT)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\checks.py\", line 136, in check_all\n    smoke_prediction=smoke_inference(model,image)\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\checks.py\", line 32, in smoke_inference\n    require(torch.isfinite(prediction).all(),'Smoke inference nonfinite')\n  File \"C:\\Users\\Fengyuhao\\Desktop\\yolo11_backup\\E39a_P2_LocalContext_AutoDL\\checks.py\", line 16, in require\n    raise RuntimeError(message)\nRuntimeError: Smoke inference nonfinite\n"
-}

@@ -1,0 +1,304 @@
+{
+  "status": "completed",
+  "official": {
+    "AP50_95_percent": 24.110768286885722,
+    "AP50_percent": 40.92450417553006,
+    "AP75_percent": 24.80066524844379,
+    "AR1_percent": 1.9372716670713763,
+    "AR10_percent": 11.692909314015827,
+    "AR100_percent": 31.695844713734196,
+    "AR500_percent": 35.553160062911104,
+    "class_image_weights": {
+      "1": 1197,
+      "2": 797,
+      "3": 377,
+      "4": 1530,
+      "5": 1167,
+      "6": 750,
+      "7": 245,
+      "8": 232,
+      "9": 838,
+      "10": 794
+    },
+    "per_class": {
+      "1": {
+        "name": "pedestrian",
+        "images_with_class_weight": 1197,
+        "AP50_95_percent": 14.95322067990035,
+        "AP50_percent": 36.23338815418259,
+        "AP75_percent": 9.547622316657739
+      },
+      "2": {
+        "name": "people",
+        "images_with_class_weight": 797,
+        "AP50_95_percent": 7.61730426465558,
+        "AP50_percent": 21.182229694194866,
+        "AP75_percent": 3.4442561202785376
+      },
+      "3": {
+        "name": "bicycle",
+        "images_with_class_weight": 377,
+        "AP50_95_percent": 4.859344568062326,
+        "AP50_percent": 11.193456400302928,
+        "AP75_percent": 3.543700967068279
+      },
+      "4": {
+        "name": "car",
+        "images_with_class_weight": 1530,
+        "AP50_95_percent": 48.2240302740453,
+        "AP50_percent": 75.3856256052298,
+        "AP75_percent": 53.493709055447155
+      },
+      "5": {
+        "name": "van",
+        "images_with_class_weight": 1167,
+        "AP50_95_percent": 20.781240178090204,
+        "AP50_percent": 29.584684115204844,
+        "AP75_percent": 24.580207102108837
+      },
+      "6": {
+        "name": "truck",
+        "images_with_class_weight": 750,
+        "AP50_95_percent": 23.63328147125345,
+        "AP50_percent": 36.221328252463856,
+        "AP75_percent": 26.7299333738803
+      },
+      "7": {
+        "name": "tricycle",
+        "images_with_class_weight": 245,
+        "AP50_95_percent": 10.039130808492036,
+        "AP50_percent": 19.110869638086804,
+        "AP75_percent": 9.170232303732792
+      },
+      "8": {
+        "name": "awning-tricycle",
+        "images_with_class_weight": 232,
+        "AP50_95_percent": 8.854181333047125,
+        "AP50_percent": 13.906875058877336,
+        "AP75_percent": 9.981527043622515
+      },
+      "9": {
+        "name": "bus",
+        "images_with_class_weight": 838,
+        "AP50_95_percent": 39.15906410641697,
+        "AP50_percent": 55.10847283184892,
+        "AP75_percent": 45.16401527435791
+      },
+      "10": {
+        "name": "motor",
+        "images_with_class_weight": 794,
+        "AP50_95_percent": 15.41007947874915,
+        "AP50_percent": 36.289950647114544,
+        "AP75_percent": 10.198399945939066
+      }
+    },
+    "aggregation_note": "Exact calcAccuracy.m class-availability weighting, which repeats a class once per image containing it."
+  },
+  "ignore_audit": {
+    "raw_prediction_count": 632093,
+    "official_prediction_count_after_class0_filter": 608372,
+    "removed_by_class0_ignore": 23721,
+    "removed_by_class0_fraction": 0.037527705574970774,
+    "overlap_class11_others": 1462,
+    "overlap_class11_fraction": 0.0023129507841409412,
+    "per_class": {
+      "1": {
+        "total": 229972,
+        "removed_by_class0": 8129,
+        "overlap_class11": 346
+      },
+      "2": {
+        "total": 20042,
+        "removed_by_class0": 1153,
+        "overlap_class11": 110
+      },
+      "3": {
+        "total": 33601,
+        "removed_by_class0": 931,
+        "overlap_class11": 71
+      },
+      "4": {
+        "total": 222981,
+        "removed_by_class0": 8864,
+        "overlap_class11": 244
+      },
+      "5": {
+        "total": 14317,
+        "removed_by_class0": 103,
+        "overlap_class11": 34
+      },
+      "6": {
+        "total": 19334,
+        "removed_by_class0": 262,
+        "overlap_class11": 253
+      },
+      "7": {
+        "total": 7138,
+        "removed_by_class0": 323,
+        "overlap_class11": 124
+      },
+      "8": {
+        "total": 3150,
+        "removed_by_class0": 110,
+        "overlap_class11": 77
+      },
+      "9": {
+        "total": 12757,
+        "removed_by_class0": 112,
+        "overlap_class11": 8
+      },
+      "10": {
+        "total": 68801,
+        "removed_by_class0": 3734,
+        "overlap_class11": 195
+      }
+    },
+    "fp_audit": [
+      {
+        "confidence": 0.05,
+        "area_group": "all",
+        "fp": 89814,
+        "fp_ignore": 7904,
+        "fp_others": 323,
+        "tp": 43720,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.08800409735675953,
+        "fp_class11_others_fraction": 0.0035963212862137306
+      },
+      {
+        "confidence": 0.05,
+        "area_group": "small",
+        "fp": 71072,
+        "fp_ignore": 7592,
+        "fp_others": 170,
+        "tp": 24238,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.10682125168842864,
+        "fp_class11_others_fraction": 0.0023919405673120215
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "all",
+        "fp": 51865,
+        "fp_ignore": 4399,
+        "fp_others": 205,
+        "tp": 41588,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.08481635013978599,
+        "fp_class11_others_fraction": 0.003952569169960474
+      },
+      {
+        "confidence": 0.1,
+        "area_group": "small",
+        "fp": 39276,
+        "fp_ignore": 4199,
+        "fp_others": 101,
+        "tp": 22463,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.10691007230878909,
+        "fp_class11_others_fraction": 0.0025715449638456056
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "all",
+        "fp": 20204,
+        "fp_ignore": 1357,
+        "fp_others": 95,
+        "tp": 36854,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.06716491783805187,
+        "fp_class11_others_fraction": 0.0047020392001583845
+      },
+      {
+        "confidence": 0.25,
+        "area_group": "small",
+        "fp": 13280,
+        "fp_ignore": 1262,
+        "fp_others": 35,
+        "tp": 18608,
+        "neutral": 0,
+        "fp_class0_ignore_fraction": 0.09503012048192772,
+        "fp_class11_others_fraction": 0.0026355421686746986
+      }
+    ],
+    "fp_audit_note": "Greedy IoU=0.50 class-wise matching before class-0 raster filtering; ignored score-zero GT matches are neutral."
+  },
+  "checkpoint": "/root/autodl-tmp/yolo11_project/runs/e58a_e57_allscale_w96_img640_seed1_200e/weights/best.pt",
+  "checkpoint_sha256": "d4afe6bcbedb415f5551a09e3f48e6f0d436d6a49d0d8080a5b9f6394fb7319e",
+  "prediction_sha256": "10e48a1e4de9b7367e71dd897fd6553c2c7a67ad1930c575101eab239fa62b45",
+  "binding": {
+    "revision": "testdev_e0_e58_seed1_v1",
+    "package": {
+      "run.sh": "6bf56d944b201645cd5da377b2aebe6d33af4c59aa61315ccaff5633a056b9fa",
+      "README.md": "31e47ee29c31c3fc36702f34bca2d7f5cc1c82237afecabe3920e534a7c37188",
+      "references/e40_testdev_prediction_manifest.json": "d286a114cdb48d773457433daecaf3c9d1186fd19bd321cdf8494eb6879f975c",
+      "spatial_task_head.py": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+      "LICENSE-Ultralytics.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "references/e1_testdev_prediction_manifest.json": "a48aaaac62b901b34a70fd4be803db03a129d41102a9af77885309363dd5b473",
+      "references/e1_val_metadata.json": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+      "e57_spatial_task_head.py": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+      "test_local.py": "d91e4e63ee7ad147e2106212df1202377f56af54b0b7ecab53281e6bd4511407",
+      "references/e58_val_comparison.json": "428a3ed161d670c8cb25653dcdc2b5a7f5d4075c4de30c4369227eaad595c414",
+      "references/e0_val_metadata.json": "67a20e3bed484e9f5c7a4df62d6dd9213a632cd7577df12a26c5dd42b608938a",
+      "LOCAL_VALIDATION.md": "364774999a1371510f87cc16e716089fee846b5db909a5dd4e4328b2bc520276",
+      "run_eval.py": "5e77ba0494c00cbcd7582325b8c94b31a13fed228e3284d217210c6776ff6bcb",
+      "references/e58_training.json": "8cad1af1577cfb3d08cb2e81ff1b2e5513311490a152b3d9d87d573ceaf210b6",
+      "references/testdev_input_manifest.json": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+      "references/e40_testdev_official.json": "552f4e82067e4e8346efcbddec7e91ea9339ad3547a8a9028e4de15f49b7fa69",
+      "references/e1_testdev_official.json": "557ebad077b10985890e3b180242634b0d8942bb4b0b992bb870f3e4d8826241",
+      "d27_official.py": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+      "parent_spatial_task_head.py": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
+    },
+    "source": {
+      "nn/modules/block.py": "d003cf2646c3c6bb6826874ae506e5822bec35f7c663e455de7ceb918c8149e0",
+      "nn/modules/head.py": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279",
+      "nn/modules/conv.py": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4",
+      "engine/model.py": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97",
+      "nn/tasks.py": "b1fd9ba3a303b26eb8e932d558498b42fdbc766ef33e6795ce191d4554f6100b",
+      "engine/predictor.py": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e",
+      "models/yolo/detect/predict.py": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390",
+      "utils/ops.py": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd",
+      "nn/autobackend.py": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d",
+      "data/augment.py": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70"
+    },
+    "checkpoint_sha256": {
+      "e0_seed1": "bc5d1304c7bf4e0c81db853d0d7a39dd46485940ec2b8c2da63df8c3eda934b8",
+      "e58_seed1": "d4afe6bcbedb415f5551a09e3f48e6f0d436d6a49d0d8080a5b9f6394fb7319e"
+    },
+    "val_prediction_sha256": {
+      "e0_seed1": "1299748cc7fa204c0243a836e71ddf4f862a3cb8241f559ed4268949b8786c26",
+      "e58_seed1": "5703f5c6903c2de91e25a900b4d7b90d88ede373ff66616e1f9a191df9ff0e21"
+    },
+    "protocol": {
+      "imgsz": 640,
+      "device": "0",
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "verbose": false,
+      "save": false,
+      "agnostic_nms": false,
+      "classes": null,
+      "batch": 4,
+      "letterbox": "unchanged Ultralytics 8.3.0 predictor pre_transform",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "dataset_annotation_sha256": "8ac85f9cf40c98b0373281ccf5d3c902b7bb502492e51a48537249b0a1b8dffd",
+    "dataset_image_sha256": "09a2d2daa96dc1ad5deb2311fb132edece644e554fd2c7bc6f0418384654f20b",
+    "image_count": 1610,
+    "environment": {
+      "python": "3.10.21",
+      "torch": "2.5.1+cu121",
+      "cuda": "12.1",
+      "cudnn": 90100,
+      "gpu": "NVIDIA vGPU-32GB"
+    },
+    "allocator_cap_GiB": 6
+  },
+  "provenance": "new full test-dev prediction from frozen val-best"
+}

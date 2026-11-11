@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this versioned software release and the associated paper when available."
+type: software
+title: "ST-MDRF for object detection in UAV imagery"
+version: "1.0.0"
+date-released: 2026-11-12
+url: "https://github.com/Feng-yuhao/yolo11"
+repository-code: "https://github.com/Feng-yuhao/yolo11"
+authors:
+  - family-names: Feng
+    given-names: Yuhao
+  - family-names: Wang
+    given-names: Xuyang
+license: AGPL-3.0

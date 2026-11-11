@@ -1,0 +1,275 @@
+{
+  "release_tag": "ivc-repro-v1.0.0",
+  "checkpoints": [
+    {
+      "model": "yolo11s-p2",
+      "seed": 1,
+      "asset": "yolo11s-p2_seed1.pt",
+      "bytes": 19796371,
+      "sha256": "f1a5ba6642a01445a99b2c7c80d8e79299a4402159bc37d2a08bb31ff365df12",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo11s-p2_seed1.pt",
+      "destination": "weights/trained/yolo11s-p2_seed1.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo11s-p2",
+      "seed": 2,
+      "asset": "yolo11s-p2_seed2.pt",
+      "bytes": 19796371,
+      "sha256": "271901db9ff32c5b3a7735f218779eb27e1e1a6bc6604d3c77d37e338fd039d4",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo11s-p2_seed2.pt",
+      "destination": "weights/trained/yolo11s-p2_seed2.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo11s-p2",
+      "seed": 3,
+      "asset": "yolo11s-p2_seed3.pt",
+      "bytes": 19796371,
+      "sha256": "11e656c7cdeb9112d303bae0d68c32a874031a7734ad88fda1f37fa9c88778eb",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo11s-p2_seed3.pt",
+      "destination": "weights/trained/yolo11s-p2_seed3.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo11s",
+      "seed": 1,
+      "asset": "yolo11s_seed1.pt",
+      "bytes": 19176787,
+      "sha256": "bc5d1304c7bf4e0c81db853d0d7a39dd46485940ec2b8c2da63df8c3eda934b8",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo11s_seed1.pt",
+      "destination": "weights/trained/yolo11s_seed1.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo11s",
+      "seed": 2,
+      "asset": "yolo11s_seed2.pt",
+      "bytes": 19176787,
+      "sha256": "8cec61b6b8e31002d5b364b27deee41cbd0591c61c4c5c39f060fc09fb16d67c",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo11s_seed2.pt",
+      "destination": "weights/trained/yolo11s_seed2.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo11s",
+      "seed": 3,
+      "asset": "yolo11s_seed3.pt",
+      "bytes": 19176787,
+      "sha256": "b3ddf39590e7e067dcbb59b5bc1c11bb13f51c1bb4229b71088f7c646644d3aa",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo11s_seed3.pt",
+      "destination": "weights/trained/yolo11s_seed3.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "st-mdrf",
+      "seed": 1,
+      "asset": "st-mdrf_seed1.pt",
+      "bytes": 23161535,
+      "sha256": "bf38299c8723f5fe399e2f94fa4042df2ff6ae51dcb99fceece8bc85ed00dc17",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/st-mdrf_seed1.pt",
+      "destination": "weights/trained/st-mdrf_seed1.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "st-mdrf",
+      "seed": 2,
+      "asset": "st-mdrf_seed2.pt",
+      "bytes": 23161535,
+      "sha256": "03e58654cd47412b4122e4c1fe0a7880844e37692931289ebf59f2e1d65130d0",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/st-mdrf_seed2.pt",
+      "destination": "weights/trained/st-mdrf_seed2.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "st-mdrf",
+      "seed": 3,
+      "asset": "st-mdrf_seed3.pt",
+      "bytes": 23161599,
+      "sha256": "92e0bcf4d43cb889d8558e679dc4c171cb6b97d410262acb32d92038a160f385",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/st-mdrf_seed3.pt",
+      "destination": "weights/trained/st-mdrf_seed3.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "no-group",
+      "seed": 1,
+      "asset": "no-group_seed1.pt",
+      "bytes": 22527531,
+      "sha256": "d4afe6bcbedb415f5551a09e3f48e6f0d436d6a49d0d8080a5b9f6394fb7319e",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/no-group_seed1.pt",
+      "destination": "weights/trained/no-group_seed1.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "no-group",
+      "seed": 2,
+      "asset": "no-group_seed2.pt",
+      "bytes": 22527531,
+      "sha256": "0024eac956589836c2215e35ad30e295286f1a958129322a0a05b74c6ae5f9a2",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/no-group_seed2.pt",
+      "destination": "weights/trained/no-group_seed2.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "no-group",
+      "seed": 3,
+      "asset": "no-group_seed3.pt",
+      "bytes": 22527595,
+      "sha256": "815700f308cae51b256ad2284535583bf90673947eb020c89e09f760d28786a2",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/no-group_seed3.pt",
+      "destination": "weights/trained/no-group_seed3.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "uniform",
+      "seed": 1,
+      "asset": "uniform_seed1.pt",
+      "bytes": 23049039,
+      "sha256": "1cc9b65fb8696a95aeab2242c23e5a77b13095840887cbf81f87e03bae32681b",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/uniform_seed1.pt",
+      "destination": "weights/trained/uniform_seed1.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "uniform",
+      "seed": 2,
+      "asset": "uniform_seed2.pt",
+      "bytes": 23049039,
+      "sha256": "34584c41148fe07d40e101db4eda169b5a02d32c75b0413104db647afbf10add",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/uniform_seed2.pt",
+      "destination": "weights/trained/uniform_seed2.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "uniform",
+      "seed": 3,
+      "asset": "uniform_seed3.pt",
+      "bytes": 23049039,
+      "sha256": "4bb8750b163c2b42da544e32669c173ec9ef2f52e7eb8aaeb70f40c8d071d113",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/uniform_seed3.pt",
+      "destination": "weights/trained/uniform_seed3.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "shared",
+      "seed": 1,
+      "asset": "shared_seed1.pt",
+      "bytes": 23160575,
+      "sha256": "fbd7d12b9f941d75bc639d180a0e1d8e2c57f3fa78c9f4ba71f971c5be4fe69d",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/shared_seed1.pt",
+      "destination": "weights/trained/shared_seed1.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "shared",
+      "seed": 2,
+      "asset": "shared_seed2.pt",
+      "bytes": 23160575,
+      "sha256": "cd5ec898f0f6b8e6f6ae3a1f1a1355f1a9e7bb5ead001b7115bf7e6453ed1d09",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/shared_seed2.pt",
+      "destination": "weights/trained/shared_seed2.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "shared",
+      "seed": 3,
+      "asset": "shared_seed3.pt",
+      "bytes": 23160575,
+      "sha256": "862db26149e8ec6994c5bc79fed6c3fe58bc78daebc9fbb35231e45c93b4ef35",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/shared_seed3.pt",
+      "destination": "weights/trained/shared_seed3.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "tood-td",
+      "seed": 1,
+      "asset": "tood-td_seed1.pt",
+      "bytes": 20775503,
+      "sha256": "64d6762463e6fad4f0e6f77f23a8ef5454a40e699b26d1a56ef82797dff58b47",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/tood-td_seed1.pt",
+      "destination": "weights/trained/tood-td_seed1.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "tood-td",
+      "seed": 2,
+      "asset": "tood-td_seed2.pt",
+      "bytes": 20775503,
+      "sha256": "7099dfc48b08eb0460b9575f2faa701426cac73e51c853f64121a85f46629b04",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/tood-td_seed2.pt",
+      "destination": "weights/trained/tood-td_seed2.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "tood-td",
+      "seed": 3,
+      "asset": "tood-td_seed3.pt",
+      "bytes": 20775503,
+      "sha256": "ce0878694ef7e2e1bdb3e95f895c0c89f6b8a2c389832d4da6a3ced000e7daff",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/tood-td_seed3.pt",
+      "destination": "weights/trained/tood-td_seed3.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo26s-p2",
+      "seed": 1,
+      "asset": "yolo26s-p2_seed1.pt",
+      "bytes": 19917108,
+      "sha256": "3f4af2b0d81509b4354025c09c77600e1c278a5ae35d425cd8342d43086c2ed7",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo26s-p2_seed1.pt",
+      "destination": "weights/trained/yolo26s-p2_seed1.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo26s-p2",
+      "seed": 2,
+      "asset": "yolo26s-p2_seed2.pt",
+      "bytes": 19917108,
+      "sha256": "1b5810833c375e30e3d39b277490d2373c75fd1fac1b1a9a816da53cdadc306a",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo26s-p2_seed2.pt",
+      "destination": "weights/trained/yolo26s-p2_seed2.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo26s-p2",
+      "seed": 3,
+      "asset": "yolo26s-p2_seed3.pt",
+      "bytes": 19917108,
+      "sha256": "9455dfe1bcaf194a1de966f57279375968753d30cf687db7f03a130006eee021",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo26s-p2_seed3.pt",
+      "destination": "weights/trained/yolo26s-p2_seed3.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 1,
+      "asset": "yolo26s-p2-st-mdrf_seed1.pt",
+      "bytes": 23245254,
+      "sha256": "13ca4403e9c7efa6d2b9ac05068a0489d826ba5a4020e4e8e12341f1795cb8f1",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo26s-p2-st-mdrf_seed1.pt",
+      "destination": "weights/trained/yolo26s-p2-st-mdrf_seed1.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 2,
+      "asset": "yolo26s-p2-st-mdrf_seed2.pt",
+      "bytes": 23245254,
+      "sha256": "1065823197c5a5ae10a83aaea78fb0c68f7ed13a5e42d87dc4282231a9ac02da",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo26s-p2-st-mdrf_seed2.pt",
+      "destination": "weights/trained/yolo26s-p2-st-mdrf_seed2.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    },
+    {
+      "model": "yolo26s-p2-st-mdrf",
+      "seed": 3,
+      "asset": "yolo26s-p2-st-mdrf_seed3.pt",
+      "bytes": 23245254,
+      "sha256": "7d5cb26440cac74c2a971c252b4c4fc8cabfbc4077faaf61bf0e11ba4cc8361c",
+      "url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-repro-v1.0.0/yolo26s-p2-st-mdrf_seed3.pt",
+      "destination": "weights/trained/yolo26s-p2-st-mdrf_seed3.pt",
+      "selection": "original source-validation-selected best.pt; no test-dev selection"
+    }
+  ]
+}

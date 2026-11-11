@@ -1,0 +1,261 @@
+{
+  "status": "v2_local_checks_passed",
+  "at": "2026-10-25T18:02:46.894780+08:00",
+  "formal_training_started": false,
+  "server_connected": false,
+  "server_CUDA_tested": false,
+  "real640_batch16_smoke_executed": false,
+  "local_CUDA_engineering_tested": true,
+  "local_torch": "2.6.0+cu124",
+  "server_expected_torch": "2.5.1+cu121",
+  "modification_scope": "TD engineering synthetic fixture/coverage observer only; monitor launcher filename hint",
+  "v1_existing_code_files_changed": [
+    "engine7.py",
+    "watch_progress.py"
+  ],
+  "engine_AST_unchanged_except_check": true,
+  "unchanged_engine_functions": [
+    "dataset_lock",
+    "setup",
+    "config",
+    "build_model",
+    "topology",
+    "source_binding",
+    "stat_snapshot",
+    "prepare",
+    "binding",
+    "rendezvous",
+    "trainer_class",
+    "save_training",
+    "branch_state",
+    "amp_step",
+    "real_gradient_smoke",
+    "reload_checkpoint",
+    "native_smoke",
+    "smoke",
+    "train"
+  ],
+  "unchanged_frozen_files_verified": 66,
+  "all_formal_architecture_training_smoke_scoring_controller_guard_unchanged": true,
+  "local_full_engineering_checks": {
+    "td_s2_cpu": {
+      "status": "passed",
+      "torch": "2.6.0+cu124",
+      "local_only": true,
+      "report_sha256": "4b6357605c0009524582ea540b921f41d36b05f8f0b6857f558723c1d683d922",
+      "synthetic_coverage": {
+        "False": {
+          "finite_updates": 8,
+          "attempts": 8,
+          "gradient_groups": 24,
+          "actual_update_groups": 24,
+          "original_TAL_positive_weights_P2_P5": [
+            32,
+            8,
+            6,
+            34
+          ],
+          "report_sha256": "b56a8b2d95f7640c967ef447729be31d5302720a8f9824ac833082d77c0de6d7"
+        }
+      }
+    },
+    "td_s3_cpu": {
+      "status": "passed",
+      "torch": "2.6.0+cu124",
+      "local_only": true,
+      "report_sha256": "54838ead238077f8641ab121df945fc3bfb1bc90c582c1e467516e56baba9895",
+      "synthetic_coverage": {
+        "False": {
+          "finite_updates": 8,
+          "attempts": 8,
+          "gradient_groups": 24,
+          "actual_update_groups": 24,
+          "original_TAL_positive_weights_P2_P5": [
+            31,
+            9,
+            8,
+            32
+          ],
+          "report_sha256": "92783d50de6498b8f0a115e89ee6618ce97734d3ad74042d00cc9f86b9771174"
+        }
+      }
+    },
+    "td_s2_cuda0": {
+      "status": "passed",
+      "torch": "2.6.0+cu124",
+      "local_only": true,
+      "report_sha256": "7da3c864644156d3bdfdfc2e498cf30b63383810d54c00499bec240c49b43b5b",
+      "synthetic_coverage": {
+        "False": {
+          "finite_updates": 8,
+          "attempts": 8,
+          "gradient_groups": 24,
+          "actual_update_groups": 24,
+          "original_TAL_positive_weights_P2_P5": [
+            32,
+            8,
+            5,
+            35
+          ],
+          "report_sha256": "b0e497bf67dd35fa0a8e76c04ee326d9dc54248e687cde0caeefb0fc3aa9816a"
+        },
+        "True": {
+          "finite_updates": 8,
+          "attempts": 14,
+          "gradient_groups": 24,
+          "actual_update_groups": 24,
+          "original_TAL_positive_weights_P2_P5": [
+            42,
+            8,
+            1,
+            29
+          ],
+          "report_sha256": "8345dcb6d6152f65a743d35abfc385fe4e0d1c8f4e3d7dc234b851fd80ca6dba"
+        }
+      }
+    },
+    "td_s3_cuda0": {
+      "status": "passed",
+      "torch": "2.6.0+cu124",
+      "local_only": true,
+      "report_sha256": "d348d42d495877b00624111cc057248beaa96b6759b2a55d7fb4664fff5edcce",
+      "synthetic_coverage": {
+        "False": {
+          "finite_updates": 8,
+          "attempts": 8,
+          "gradient_groups": 24,
+          "actual_update_groups": 24,
+          "original_TAL_positive_weights_P2_P5": [
+            31,
+            9,
+            8,
+            32
+          ],
+          "report_sha256": "2c6c7dfbe4aa74b0b65b896cba269c5f56652853e28a9c1493528939ce3f9ceb"
+        },
+        "True": {
+          "finite_updates": 8,
+          "attempts": 14,
+          "gradient_groups": 24,
+          "actual_update_groups": 24,
+          "original_TAL_positive_weights_P2_P5": [
+            41,
+            9,
+            4,
+            26
+          ],
+          "report_sha256": "5b58bacf891f77ce31950f3fc0406e0ad151cdc86e67ad23f2fb4f2391508afe"
+        }
+      }
+    },
+    "shared_s3_cuda0": {
+      "status": "passed",
+      "torch": "2.6.0+cu124",
+      "local_only": true,
+      "report_sha256": "1ce5de9eb94605829b63bd8bf8249eadc69b41fe74c73be28d90806cd7648056"
+    },
+    "uniform_s3_cuda0": {
+      "status": "passed",
+      "torch": "2.6.0+cu124",
+      "local_only": true,
+      "report_sha256": "76c8ba4f8924c4146c3f04a9e6b040ff5c744085e01a0ea54658a0f69dd01b84"
+    }
+  },
+  "unit_tests": {
+    "test_safety.py": {
+      "passed": 20,
+      "exit_code": 0,
+      "output_sha256": "1d459515ab60bbe370457dc734598b87a74779c9809b36e2388c0ebc43558f7d"
+    },
+    "test_td_coverage.py": {
+      "passed": 3,
+      "exit_code": 0,
+      "output_sha256": "b0c6428762ac75144d3faef0d55e7bbcbb04a35cfbeee65a055d2bd42d086ed6"
+    }
+  },
+  "checked_driver_sha256": {
+    "common7.py": "55939f44578916c2dfdbb71e8af90a77289b214f46bb5cf7271ac1a01c1643c0",
+    "controller.py": "fe2623295e7e1011220fcc455e5d36a57be1b0889d5bffe7a7183ab93e927331",
+    "engine7.py": "31f1ac9c279d9b56b4c5e1e6de109a8a8a11b9e2817999b917ff5a2a8987b683",
+    "platform_safety.py": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+    "preservation7.py": "16dc815222d23a52c7d649ddc6e9a64dad627a205f17b481aff9798a4cbc5aa4",
+    "scoring7.py": "10c42af8dec6c1411c933427fa3385820f2eae271d022dc7fd2009cd9d7001a7",
+    "shutdown_guard.py": "f7decdabc26c7ffe520ae7b2aab7ccd2b3316cfd0f9c360fccaba85baa25a932",
+    "smoke_memory.py": "74142f5902b14cb46ecbcd0712442bf86b5ed3f1ed381d67cfb698a3003a1bb2",
+    "start_all_auto_shutdown.sh": "2210bb7a6010b79db2e8eb658eb782dde3dee15a9c344a9b36f87a2e39f9b1b8",
+    "summary7.py": "50b436d5305d01392b7203c59ea6acd921421dcb50053f6ce723995447510741",
+    "td_coverage_check.py": "65ca9e03cec73738da73a518f22329e26e7578b99ac3513a8a5bde130bd89b8e",
+    "test_safety.py": "4505c551966b08a9d963f0bf94996d361fc256d71b9be4676954006b482fbfe8",
+    "test_td_coverage.py": "2fd6ba3b1f502b83286533a21af87bd1fc1ecf0d29a172eda3b9172c31bed74a",
+    "validation_smoke.py": "deb774db70060e5625275c85fee662f6c7f1d1f694106f4290f2e628554a7b2b",
+    "watch_progress.py": "27d98dbd0e6f220050788c6df4e9a0fd6e0dfc595d765a2b8fa7826e9d48486e",
+    "worker.py": "b1b2dd73cee08d99f8a3871ad2365efb2116e2f570a3e270bf51f365b16bce3c"
+  },
+  "original_seven_CPU_checks_retained_as_prior_architecture_evidence": {
+    "shared_s2": {
+      "status": "passed",
+      "report_sha256": "5c1952968cc6c8d56e6ebfe4b9e228adbc9f3e3eff99d455ea7744a2a590d0e4",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "e58_s3": {
+      "status": "passed",
+      "report_sha256": "6f3db01e17321f224cb4c8a6bc7d99205e44ec3bcea4812d1abf64faafb6934d",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "uniform_s2": {
+      "status": "passed",
+      "report_sha256": "bf72b0b88b60a51eee9c499fbd40226293be80357643f610cea516bbe32f6691",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "td_s2": {
+      "status": "passed",
+      "report_sha256": "d60c219281117d16bb895da972dc01a5a9d062882650c1beff8c6543e9b85c27",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "shared_s3": {
+      "status": "passed",
+      "report_sha256": "d176150b1268b79429b0ee8a4f7423042ecc892d2421415ec4da6b24b1fe3a01",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "td_s3": {
+      "status": "passed",
+      "report_sha256": "933d84aa85b592a80242224480277b6280bc684fe61b639e9a6d1b0df63de106",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "uniform_s3": {
+      "status": "passed",
+      "report_sha256": "e06a3abf1e30e528288a6fb04393f0e2de1d42d3f0b04df210c70947f38be7f1",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    }
+  },
+  "diagnosis_boundary": "Old server log proves no out_reg.3 gradient/update, not its TAL masks. Local old-fixture probes often show zero P5 positives but do reach it on other steps; the exact server failure was not reproduced on local Torch2.6/hardware.",
+  "boundary": "Local CPU/CUDA synthetic engineering checks are not server Torch2.5 gates. All seven checks and real640/b16 individual/joint smokes run freshly on AutoDL before any formal training. No actual shutdown command invoked in local tests."
+}

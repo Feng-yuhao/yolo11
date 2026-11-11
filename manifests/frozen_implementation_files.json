@@ -1,0 +1,3830 @@
+[
+  {
+    "path": "implementations/yolo11/baselines/diagnose_d27_official_visdrone.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/E0_E1_original/diagnose_d27_official_visdrone.py"
+  },
+  {
+    "path": "implementations/yolo11/baselines/p2_tal_chunked.py",
+    "sha256": "18e7d288810ad15a20535bdbc2ae37f2ddfc10f2568bccb5a1a0f0b8ea480bac",
+    "bytes": 15683,
+    "source_relative_to_archive": "code/E0_E1_original/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/baselines/p2_tal_chunked_vgpu32.py",
+    "sha256": "5b839ec87b1c5142b731320366dceb459630168755e69f1a10ff8c4be84fb39c",
+    "bytes": 5343,
+    "source_relative_to_archive": "code/E0_E1_original/p2_tal_chunked_vgpu32.py"
+  },
+  {
+    "path": "implementations/yolo11/baselines/reference_yolo11s-p2-add.yaml",
+    "sha256": "1625b1b90d5337d6449032c0e8bd5e6d315dbe1075be891b6caebdc2437c9ee0",
+    "bytes": 1198,
+    "source_relative_to_archive": "code/E0_E1_original/reference_yolo11s-p2-add.yaml"
+  },
+  {
+    "path": "implementations/yolo11/baselines/run_d27_official_visdrone.sh",
+    "sha256": "a266f277439d9b1158c826218fc61de3758275e34599acbab5c69666f040b04b",
+    "bytes": 429,
+    "source_relative_to_archive": "code/E0_E1_original/run_d27_official_visdrone.sh"
+  },
+  {
+    "path": "implementations/yolo11/baselines/run_e0_e1_640_overnight.sh",
+    "sha256": "9f2c270c3371ca74e0c1ab3c8720cc48dcacb6d29346d9da995f1808179dd76e",
+    "bytes": 1298,
+    "source_relative_to_archive": "code/E0_E1_original/run_e0_e1_640_overnight.sh"
+  },
+  {
+    "path": "implementations/yolo11/baselines/run_yolo11_baseline.sh",
+    "sha256": "1d5eb960d2a19f4a0b2148ada6cd62a4cab6d57361140cf4c0a5ee17899b583d",
+    "bytes": 1432,
+    "source_relative_to_archive": "code/E0_E1_original/run_yolo11_baseline.sh"
+  },
+  {
+    "path": "implementations/yolo11/baselines/run_yolo11_p2.sh",
+    "sha256": "5f3e0cf366112ade546cbbe806fdabbba6b28a7468a01fb9ecf0e1d0d613e0a7",
+    "bytes": 1650,
+    "source_relative_to_archive": "code/E0_E1_original/run_yolo11_p2.sh"
+  },
+  {
+    "path": "implementations/yolo11/baselines/yolo11s-p2-add.yaml",
+    "sha256": "7b031edf83bfc8f3753a0c240e102ca290904126c3d5b7bc626f1b8bc31aad69",
+    "bytes": 2534,
+    "source_relative_to_archive": "code/E0_E1_original/yolo11s-p2-add.yaml"
+  },
+  {
+    "path": "implementations/yolo11/baselines/yolo11s_img640_seed1.py",
+    "sha256": "37251a52e119b6d754b8278ce4299663d6ed82df13c33938c6c7e433b66704a0",
+    "bytes": 26946,
+    "source_relative_to_archive": "code/E0_E1_original/yolo11s_img640_seed1.py"
+  },
+  {
+    "path": "implementations/yolo11/baselines/yolo11s_p2_img640_seed1.py",
+    "sha256": "f003b2f136ff921a9432aa838edcf1cff3dcf3449a3ae9af81ac9b2c4470ca90",
+    "bytes": 42675,
+    "source_relative_to_archive": "code/E0_E1_original/yolo11s_p2_img640_seed1.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/base_eval.py",
+    "sha256": "5e77ba0494c00cbcd7582325b8c94b31a13fed228e3284d217210c6776ff6bcb",
+    "bytes": 29947,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/base_eval.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/build_release.py",
+    "sha256": "d8a9892309cb94a02930701caa998481345c3102fb50c5bb0cb28cd8d39aa003",
+    "bytes": 4108,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/build_release.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/common.py",
+    "sha256": "ee2d939e37d7e34a91b74bfcf91676489da5218bfef8acf28c21c342443747f8",
+    "bytes": 8379,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/common.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/controller.py",
+    "sha256": "bdd35af55b1c9d47b54bd560bd594f10a327d35a59b2c529cc383dfb229f1b9b",
+    "bytes": 8527,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/controller.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/e0_core.py",
+    "sha256": "37251a52e119b6d754b8278ce4299663d6ed82df13c33938c6c7e433b66704a0",
+    "bytes": 26946,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/e0_core.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/e60_eval_reference.py",
+    "sha256": "49db3bfee4276d023a245534a0bf6db41fcc44c2adbec1b83787f7c5dfa58d72",
+    "bytes": 17003,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/e60_eval_reference.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/evaluate_all.py",
+    "sha256": "92e7e116a711333422a17b953d1d93f305bd5d15e43392e96fcbd1fe48c33018",
+    "bytes": 10581,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/evaluate_all.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/install.sh",
+    "sha256": "bfcd5159aa82a94f13960870a8111e771e8615f2cffdffa28839ef3fce73d109",
+    "bytes": 660,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/install.sh"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/LOCAL_VALIDATION.md",
+    "sha256": "00062c0f1dfdd35452d0d28651724b8e274183dc1fc9b44d6e222a115aedbca4",
+    "bytes": 2184,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/manifest.json",
+    "sha256": "a27d02340186b5caeae03d3fe2c1ae33b3f882e1e26ff16219cb89f037a66b92",
+    "bytes": 5116,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/README.md",
+    "sha256": "dc24619ab577a92bf9e1c4ad7110f8ac1a7c5c2ddc5d665a224f003a7d14c4f9",
+    "bytes": 5354,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/README.md"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e0_seed1_testdev_metrics.json",
+    "sha256": "b09c9c2236a0bd03483876c1a4072ef36fd01bdef4219f15541ba9e71eb5d366",
+    "bytes": 11367,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e0_seed1_testdev_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e0_seed1_testdev_prediction.json",
+    "sha256": "a02eefca83161c25942737cfd6ed327fd59a589b4ab12bb2e42496ee34637bbf",
+    "bytes": 5110,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e0_seed1_testdev_prediction.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e0_seed1_training.json",
+    "sha256": "67a20e3bed484e9f5c7a4df62d6dd9213a632cd7577df12a26c5dd42b608938a",
+    "bytes": 7912,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e0_seed1_training.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e1_seed1_testdev_metrics.json",
+    "sha256": "e49a8f014922714d08a6ea2817b4bf09dc48de887d9b6b0b631043d23bd9fe0a",
+    "bytes": 4344,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e1_seed1_testdev_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e1_seed1_testdev_prediction.json",
+    "sha256": "e8b9954a56438dc442588638e0670b48b8b9689245c11e301b74bb0c23e2eeb3",
+    "bytes": 1696,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e1_seed1_testdev_prediction.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e1_seed2_testdev_metrics.json",
+    "sha256": "7002ee267bca10c8f2f98f04c6cb3c588eba8f2765262ca35b6231402a4ca006",
+    "bytes": 4346,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e1_seed2_testdev_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e1_seed2_testdev_prediction.json",
+    "sha256": "1428ad06235430380da1ebfced68378a913a769b5bcce81ecc88f2622437f9cc",
+    "bytes": 1696,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e1_seed2_testdev_prediction.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e1_seed3_testdev_metrics.json",
+    "sha256": "5ba33624c7f1d1e4fce85ad350487e4ada1a15c007e8bb09cdea3e3045b5ecc5",
+    "bytes": 4342,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e1_seed3_testdev_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e1_seed3_testdev_prediction.json",
+    "sha256": "bcf15ad7ea4dadbc45d49330d47199eb0465c86b5df652fe207fc4d161431a2b",
+    "bytes": 1696,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e1_seed3_testdev_prediction.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e1_val_metadata.json",
+    "sha256": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+    "bytes": 196056,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e1_val_metadata.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed1_comparison.json",
+    "sha256": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52",
+    "bytes": 22885,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed1_comparison.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed1_completion.json",
+    "sha256": "e7ce04509891249286630df229ed4b6dd9a84514dae73d1c16a82272bda36f98",
+    "bytes": 140,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed1_completion.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed1_testdev_metrics.json",
+    "sha256": "b70a2ce4caf65d763daa3bcd69694f14430ecb6bb6fbd3a96f1cd8a993c60785",
+    "bytes": 12185,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed1_testdev_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed1_testdev_prediction.json",
+    "sha256": "fd4215cd62d17660842ea94eb828749735dc5be4753031802b7aed9164995938",
+    "bytes": 6095,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed1_testdev_prediction.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed1_training.json",
+    "sha256": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71",
+    "bytes": 94481,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed1_training.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed1_val_smoke.json",
+    "sha256": "b0500a4146b69e68f192ec7645eaa2b9efa81eb09efa85db6ec1aa867a947303",
+    "bytes": 937698,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed1_val_smoke.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed2_comparison.json",
+    "sha256": "2440fb58d686a6778179e8d8df7c4c2414002f356732c9fea83bc2f579106566",
+    "bytes": 22902,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed2_comparison.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed2_completion.json",
+    "sha256": "fbf18fc1d83278e8498a26b9398b0f4a065aec9b07c5b823920216c7b71dd058",
+    "bytes": 140,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed2_completion.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed2_training.json",
+    "sha256": "c26a105ea6f4d747473fceeb999f6c8acc6e2713f0f864d8ebc1f3078e0b35f2",
+    "bytes": 94844,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed2_training.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed2_val_smoke.json",
+    "sha256": "ecdc3e292e3902ae03e9444de06d7e934e95bd5b94108b9dfab52be0ed3950a4",
+    "bytes": 937503,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed2_val_smoke.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed3_comparison.json",
+    "sha256": "a188822c25e987062b36a05c60e2fa1fbadb60da15af3ad683966cc08d58587b",
+    "bytes": 17759,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed3_comparison.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed3_completion.json",
+    "sha256": "31cce129822debfeee2b324d81b262e04dd14b9653cadcf27116e03cffaabba7",
+    "bytes": 140,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed3_completion.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed3_training.json",
+    "sha256": "7ed567b58bd2e8bd849b8a6eb3bc0ce07d5d203c06d42c4101d18ee0287c53d0",
+    "bytes": 94893,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed3_training.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/e60_seed3_val_smoke.json",
+    "sha256": "54f810b36415c4bb8d6d46016f8864a6ddb510be1419565a8590356d0439e6c5",
+    "bytes": 937647,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/e60_seed3_val_smoke.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/identities.json",
+    "sha256": "61238ff1ea7437186fe22f9c0f56e72684d49249c0c6ff2c35d115f97b890a2d",
+    "bytes": 457,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/identities.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/seed1_testdev_summary.json",
+    "sha256": "1fa43c7f95b22fe764be4740e371461cbe962ab8f2bddb07faa4fc1133ae803c",
+    "bytes": 40149,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/seed1_testdev_summary.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/references/testdev_input_manifest.json",
+    "sha256": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+    "bytes": 508075,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/references/testdev_input_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/run.sh",
+    "sha256": "143233f289dbbec5cec6b312908397622c013106e57f00896e1bf415a1d08f37",
+    "bytes": 401,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/run.sh"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/shutdown_after.py",
+    "sha256": "68a9dd0051cac845a3a0990f81d6437f3453631e1dca2e9cbd7885cd456fd57c",
+    "bytes": 913,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/shutdown_after.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/shutdown_safety.py",
+    "sha256": "d453a316dc55f3159c94b80827ceadfb726ec1dca7d6274e6e5724496f8c289b",
+    "bytes": 6084,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/spatial_task_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/test_local.py",
+    "sha256": "73c7060430a808f7030116ead45d77fb341d287970a274e8515114466485b729",
+    "bytes": 10562,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/test_local.py"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/train_e0.py",
+    "sha256": "61ec15245f2c0dfac48ea8a501367692c1158ba96f496b0799407750295ea4af",
+    "bytes": 11735,
+    "source_relative_to_archive": "code/E0_seed23_and_testdev/train_e0.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/build_release.py",
+    "sha256": "96458a68573f24b808b80eeb1c6f7aa22d671a5b0efe5e72d6abed577622c3f9",
+    "bytes": 970,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/build_release.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/checks.py",
+    "sha256": "812b9bcd218a4d704b88fd06fd0199bdc1cadcf821b082722597e31787a256bc",
+    "bytes": 26896,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/controller.py",
+    "sha256": "122bd06ba63fc4889dfd9b75a82429a360496a85d7f963b92d8afe38e02b6738",
+    "bytes": 6142,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/controller.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/d38_common.py",
+    "sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+    "bytes": 20194,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/d38_common.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/evaluate.py",
+    "sha256": "ad98cffb7498e8ed0c497d7d4067d23f7e0413d21d444b4f8e5a8d9d9802b0e3",
+    "bytes": 10064,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/evaluate.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/FIX_V2.md",
+    "sha256": "110005a78657e6fed7a8e17dcf2c379c5ddec85529b6382831a82f50433fdcc9",
+    "bytes": 2968,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/FIX_V2.md"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/FIX_V3.md",
+    "sha256": "a32c6b6612013c0c0006f7474c924d469186f4923022decb04cb9067d20c0c26",
+    "bytes": 2641,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/FIX_V3.md"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/group_checks.py",
+    "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8",
+    "bytes": 5286,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/group_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/local_validate.py",
+    "sha256": "e500c8e16d2663254e112e48dceb67cf2482d1f003dc1d79cee22d3bc5486a85",
+    "bytes": 1792,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/local_validate.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/LOCAL_VALIDATION.md",
+    "sha256": "2c47aa5f575a9b7bbd14a54f6eb11ec32d4a2a4d02be29c61b5dd1a1217ff19f",
+    "bytes": 4464,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/manifest.json",
+    "sha256": "a630044ae59c9135d96d8d845e6e33394ad1e923a3c57e44bc186d3da52601e0",
+    "bytes": 2798,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/optimizer_checks.py",
+    "sha256": "5254f0f1e0aed42c5fe3ba550c87e6ca8b0f575d497e3f9dc0da3b32621b2587",
+    "bytes": 4478,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/optimizer_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/parent_reference.py",
+    "sha256": "783e630431ee192dac96ad21737412008a1761345f9b93714e6b91102946d2d2",
+    "bytes": 3511,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/parent_reference.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/precision_checks.py",
+    "sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a",
+    "bytes": 5722,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/precision_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/README.md",
+    "sha256": "447f2eac0a7b4cc6c0e278e8bd78a23d0100c9c179fda62cb8b5070d5adb1b2f",
+    "bytes": 7607,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/README.md"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/run.sh",
+    "sha256": "c88acd75d20cfc02b5bb7d0fd7305232a0be3502e90c92aee4ac3f092cd4297d",
+    "bytes": 435,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/run.sh"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/run_experiment.py",
+    "sha256": "7635839819f4eca0288bd14bde72cc5933138afd74ba947a850ea074c6cb6c99",
+    "bytes": 28736,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/run_experiment.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/shutdown_safety.py",
+    "sha256": "d453a316dc55f3159c94b80827ceadfb726ec1dca7d6274e6e5724496f8c289b",
+    "bytes": 6084,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/single_safety.py",
+    "sha256": "a640988726fd7d0ac41fd4b2de944caa36f9ea5543b19580e06d3989b7fff3f4",
+    "bytes": 1347,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/single_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/smoke_memory.py",
+    "sha256": "77896d3ba8fab22bbd2ee8a776ffc7e5ccbb04ed23fbb8e78151473c45ff03bf",
+    "bytes": 1115,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/smoke_memory.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/smoke_progress.py",
+    "sha256": "5289bd5dcca68437fe978e940635f0ce133d07106014c377a9c293c8584f9b8b",
+    "bytes": 2085,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/smoke_progress.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/spatial_task_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/test_release.py",
+    "sha256": "511536e43617df57126374f264bf074d7a4fee260d69216c7a44db519dbb1022",
+    "bytes": 12064,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/test_release.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/validation_smoke.py",
+    "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf",
+    "bytes": 6425,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60_RUN_20261010_133029_103161/validation_smoke.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/build_release.py",
+    "sha256": "96458a68573f24b808b80eeb1c6f7aa22d671a5b0efe5e72d6abed577622c3f9",
+    "bytes": 970,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/build_release.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/checks.py",
+    "sha256": "74779a336e014588c3cbc85d199b852373396ce71810ec6f75bfb5e08e7c12a6",
+    "bytes": 26896,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/controller.py",
+    "sha256": "404747a4eb3932da5ce12a89c87d1fecbac1ed4e7782c85ebd2c8e5b058ee25f",
+    "bytes": 6170,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/controller.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/d38_common.py",
+    "sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+    "bytes": 20194,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/d38_common.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/evaluate.py",
+    "sha256": "1e8b16c02de591b0d5488683bf998568bf7289ab448bda0fd89c6d5fedd14ad3",
+    "bytes": 10999,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/evaluate.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/group_checks.py",
+    "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8",
+    "bytes": 5286,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/group_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/local_validate.py",
+    "sha256": "c8b93da04e2fe11fdbbbec416ba05d7225e767f7c5fa4dc28c8b9ccee9383eb2",
+    "bytes": 1798,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/local_validate.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/LOCAL_VALIDATION.md",
+    "sha256": "24a935cb3837c524d3417145d7c55d88593dbba233f0d540a23f95106d16a281",
+    "bytes": 2770,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/manifest.json",
+    "sha256": "63fdca0cee482a7ebfca8216bb54856bef747dcc544eca4c48d19c89b715b14a",
+    "bytes": 2724,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/optimizer_checks.py",
+    "sha256": "5254f0f1e0aed42c5fe3ba550c87e6ca8b0f575d497e3f9dc0da3b32621b2587",
+    "bytes": 4478,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/optimizer_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/parent_reference.py",
+    "sha256": "422e1cae023f135b6b6d481c1a24889eea52c7d051a60cab9bde068071ad134d",
+    "bytes": 3528,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/parent_reference.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/precision_checks.py",
+    "sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a",
+    "bytes": 5722,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/precision_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/README.md",
+    "sha256": "abfaae32d75165673717e7734ed6d88d4f70eee5e558e8778ab59f7e52f39923",
+    "bytes": 5511,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/README.md"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/run.sh",
+    "sha256": "eda32cb7e0e7e0a21081a71baa08fb97dd3945e73c83e98f3fc90216fb41c7ca",
+    "bytes": 441,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/run.sh"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/run_experiment.py",
+    "sha256": "31e8ce5fc6019c2f0e4a8eb109d738463095c6366a2dc7eec2771bbc682166cc",
+    "bytes": 29306,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/run_experiment.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/seed1_reference.py",
+    "sha256": "fcc634c7b33d59c98685151277dc505b7f7c9d54f55ff86ab371e2f76010d81f",
+    "bytes": 4138,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/seed1_reference.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/shutdown_safety.py",
+    "sha256": "d453a316dc55f3159c94b80827ceadfb726ec1dca7d6274e6e5724496f8c289b",
+    "bytes": 6084,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/single_safety.py",
+    "sha256": "8c74790cf364c9c43980dc191e26d002aa639d4e98e98c6151657daf06ee7b60",
+    "bytes": 1347,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/single_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/smoke_memory.py",
+    "sha256": "77896d3ba8fab22bbd2ee8a776ffc7e5ccbb04ed23fbb8e78151473c45ff03bf",
+    "bytes": 1115,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/smoke_memory.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/smoke_progress.py",
+    "sha256": "5289bd5dcca68437fe978e940635f0ce133d07106014c377a9c293c8584f9b8b",
+    "bytes": 2085,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/smoke_progress.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/spatial_task_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/test_release.py",
+    "sha256": "e67db80da18e994a4038b391aa1219647f5034d2c4792e868e978e3a74df16a2",
+    "bytes": 17433,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/test_release.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/validation_smoke.py",
+    "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf",
+    "bytes": 6425,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S2_RUN_20261011_120724_723053/validation_smoke.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/build_release.py",
+    "sha256": "96458a68573f24b808b80eeb1c6f7aa22d671a5b0efe5e72d6abed577622c3f9",
+    "bytes": 970,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/build_release.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/checks.py",
+    "sha256": "05b02b58e710b60acdbd4de405a23ec277cd2cec5a3abc9ec766e4eb94f3b5fb",
+    "bytes": 26942,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/controller.py",
+    "sha256": "b083302a0b23c783a8f9cefcf8183e3ccda98e72125933b040362ae26b46ef9a",
+    "bytes": 6170,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/controller.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/d38_common.py",
+    "sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+    "bytes": 20194,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/d38_common.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/evaluate.py",
+    "sha256": "adb4f96de51400f3028b453de2ae58c820b0ac27c113c6a5853c7f63364e253a",
+    "bytes": 10661,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/evaluate.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/group_checks.py",
+    "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8",
+    "bytes": 5286,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/group_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/local_validate.py",
+    "sha256": "2038e6382e71e9832b26071a4ff1e577ee7bcd0e78a648da3faaf4245733d3fa",
+    "bytes": 1798,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/local_validate.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/LOCAL_VALIDATION.md",
+    "sha256": "0c26ddfe61c0b908309df9c79072e8fcf1c35a434c0edba777583b4e3724bb51",
+    "bytes": 2599,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/manifest.json",
+    "sha256": "1f8af78586dbb24fb9a31d1b6a2c7ea2f4b70db83767c9c60b7e0e91cc35d63f",
+    "bytes": 2724,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/optimizer_checks.py",
+    "sha256": "5254f0f1e0aed42c5fe3ba550c87e6ca8b0f575d497e3f9dc0da3b32621b2587",
+    "bytes": 4478,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/optimizer_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/parent_reference.py",
+    "sha256": "986947e38a044adb5440dc054c7887dea4e383a6b01f41753ee43038e73c53fe",
+    "bytes": 3267,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/parent_reference.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/precision_checks.py",
+    "sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a",
+    "bytes": 5722,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/precision_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/README.md",
+    "sha256": "5f6beab43f8e7153bf14ea0377d9e827bec5f3e024679bc73bc84d86030d8e3a",
+    "bytes": 5688,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/README.md"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/run.sh",
+    "sha256": "1caba5938ded42eee1b2fc0a5afb665c3094bf7f4f4de52846b6df9e8af13b07",
+    "bytes": 441,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/run.sh"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/run_experiment.py",
+    "sha256": "4f04e722f35e9778c0fc88f36afe3c0175f07cba0a882db305d9eb661a017e38",
+    "bytes": 29007,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/run_experiment.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/seed1_reference.py",
+    "sha256": "d182e6e7db8acd7917ccaf298f27089aa9b7908dec6c168d62e9087a24a5d890",
+    "bytes": 6436,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/seed1_reference.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/shutdown_safety.py",
+    "sha256": "d453a316dc55f3159c94b80827ceadfb726ec1dca7d6274e6e5724496f8c289b",
+    "bytes": 6084,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/single_safety.py",
+    "sha256": "463261cce3ec7d4f1cb0a3337aedb938cefe076658e9289057e8bc5c58f47708",
+    "bytes": 1347,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/single_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/smoke_memory.py",
+    "sha256": "77896d3ba8fab22bbd2ee8a776ffc7e5ccbb04ed23fbb8e78151473c45ff03bf",
+    "bytes": 1115,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/smoke_memory.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/smoke_progress.py",
+    "sha256": "5289bd5dcca68437fe978e940635f0ce133d07106014c377a9c293c8584f9b8b",
+    "bytes": 2085,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/smoke_progress.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/spatial_task_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/test_release.py",
+    "sha256": "c1386cb873d7816b976386114a996a400cc74a898cdf0781faaf547d9dc2fef5",
+    "bytes": 18626,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/test_release.py"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/validation_smoke.py",
+    "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf",
+    "bytes": 6425,
+    "source_relative_to_archive": "code/actual_training_snapshots/E60S3_RUN_20261011_220512_228555/validation_smoke.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/build_release.py",
+    "sha256": "96458a68573f24b808b80eeb1c6f7aa22d671a5b0efe5e72d6abed577622c3f9",
+    "bytes": 970,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/build_release.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/checks.py",
+    "sha256": "47a72b6fc0daaff599c3616bbaf1fc066e06c1fc4c054bdb12c4f1cfbf597879",
+    "bytes": 21325,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/d38_common.py",
+    "sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+    "bytes": 20194,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/d38_common.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/evaluate.py",
+    "sha256": "c13c60aaec9c490b4d4fcba91186c689672f61b1a81a192168a3bb343a29af14",
+    "bytes": 10093,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/evaluate.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/FIX_V2.md",
+    "sha256": "1bc3c682be7de7e2c3b91dd3ea43713146104b78a73680c313322c29ebb5ee6f",
+    "bytes": 1225,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/FIX_V2.md"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/LOCAL_VALIDATION.md",
+    "sha256": "df14e26f1bef2e3fe04a585ea9835c830bf2d2e51ffa8f4e5ce48d48ee896c2e",
+    "bytes": 2351,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/manifest.json",
+    "sha256": "95af3f186c400c616ebcb4d550157b72f051e392f735a269fab35a0d9e588612",
+    "bytes": 2274,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/pair_safety.py",
+    "sha256": "b192770df5960920de3a91186edc05a9440fb8fee435eb9a6145dfecd0a3891e",
+    "bytes": 4412,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/pair_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/parent_reference.py",
+    "sha256": "6c0321e636e5ba11175cddc715b127415b966cc515e0bafa48f0d8637e8238e6",
+    "bytes": 2385,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/parent_reference.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/README.md",
+    "sha256": "88e521458482943044a72c8d843357a1c18fde649d9f0c43373093ae22186bd4",
+    "bytes": 4452,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/README.md"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/run_experiment.py",
+    "sha256": "fdf9de04351fbdef580ac684405c17f059ab9ad569b63741cf0762d9063146f5",
+    "bytes": 25989,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/run_experiment.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/run_pair.py",
+    "sha256": "6dc1b563cc9c9bad6ea2aa1bfc2c8f67f028dc7fafc489ab7b60c986ebe247fb",
+    "bytes": 8096,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/run_pair.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/run_pair.sh",
+    "sha256": "e36bbc70dededef2fca644069d7a4f8990f574c7cc28ff55b5065c8daad8c535",
+    "bytes": 436,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/run_pair.sh"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/smoke_memory.py",
+    "sha256": "8f2951fd2f3d31d7e3f12d6b80bd8b74d183fd69a9d1431549e9a421cb0dca13",
+    "bytes": 1102,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/smoke_memory.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/smoke_progress.py",
+    "sha256": "5289bd5dcca68437fe978e940635f0ce133d07106014c377a9c293c8584f9b8b",
+    "bytes": 2085,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/smoke_progress.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/test_release.py",
+    "sha256": "7cb9670a5048ce69faa9c958e5c1b05da4f76a377eb14e06d4649e63afb36078",
+    "bytes": 14101,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/test_release.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/validation_smoke.py",
+    "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf",
+    "bytes": 6425,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/validation_smoke.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/watch_logs.sh",
+    "sha256": "ce1c6b0aab88fcdcd90c837cec4e972b3f3fdae5d82f619ad25c12981ddffdf5",
+    "bytes": 543,
+    "source_relative_to_archive": "code/E58_seed1_and_E59_reference/watch_logs.sh"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/build_release.py",
+    "sha256": "96458a68573f24b808b80eeb1c6f7aa22d671a5b0efe5e72d6abed577622c3f9",
+    "bytes": 970,
+    "source_relative_to_archive": "code/E58_seed2/build_release.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/checks.py",
+    "sha256": "df4f3510bccc054d5837572fb56f5d8dbc0cfc6bd7811086ada3ee40c5a9b230",
+    "bytes": 21325,
+    "source_relative_to_archive": "code/E58_seed2/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/controller.py",
+    "sha256": "f1f227c957fe852e53347c637f37e93451d6041664384e1276bf0bc87b8ea104",
+    "bytes": 6178,
+    "source_relative_to_archive": "code/E58_seed2/controller.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/E58_seed2/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/d38_common.py",
+    "sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+    "bytes": 20194,
+    "source_relative_to_archive": "code/E58_seed2/d38_common.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/E58_seed2/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/E58_seed2/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/E58_seed2/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/evaluate.py",
+    "sha256": "6848280fe2d68bd42ac9086b583357169b04d34349231c813961a75070e68307",
+    "bytes": 8527,
+    "source_relative_to_archive": "code/E58_seed2/evaluate.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/E58_seed2/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/local_validate.py",
+    "sha256": "662e7aa063d46071d89fb425e3b402c9f96c9cf87991f257fbc93e50513db2d5",
+    "bytes": 1397,
+    "source_relative_to_archive": "code/E58_seed2/local_validate.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/LOCAL_VALIDATION.md",
+    "sha256": "1c1abdb01fcdbb83c6c31f38e71157565cf0dec7f8484468969a21840e785350",
+    "bytes": 2429,
+    "source_relative_to_archive": "code/E58_seed2/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/manifest.json",
+    "sha256": "d493d49d79583ff3fcdcb6a1225c4b8c44719025ef3c73c34986e3b433fa5698",
+    "bytes": 2286,
+    "source_relative_to_archive": "code/E58_seed2/manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/E58_seed2/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/parent_reference.py",
+    "sha256": "a46e4273f7b345fe74bde5628000856dfee27b7f5aa0774597aad0e9237c2817",
+    "bytes": 2254,
+    "source_relative_to_archive": "code/E58_seed2/parent_reference.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/E58_seed2/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/README.md",
+    "sha256": "63fed266e92e93dec75e636e1b069318eea922c14dc36b0e390281430509d85f",
+    "bytes": 4934,
+    "source_relative_to_archive": "code/E58_seed2/README.md"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/run.sh",
+    "sha256": "1cf7a0ff8316ced928cf776c68e00672c94261722214860946ccf0aac44bfa2c",
+    "bytes": 441,
+    "source_relative_to_archive": "code/E58_seed2/run.sh"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/run_experiment.py",
+    "sha256": "3cfe1a17af50a3489eeea9afd9e3f048400b73afb5aeb651b0fcb1a557835365",
+    "bytes": 26032,
+    "source_relative_to_archive": "code/E58_seed2/run_experiment.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/shutdown_safety.py",
+    "sha256": "23709cc7e8b7f1d909b0561ca6d9bf6e4dcaf70e7d8ebc0eea80d65eec7d30d7",
+    "bytes": 5489,
+    "source_relative_to_archive": "code/E58_seed2/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/single_safety.py",
+    "sha256": "d3c8d3a3322cd29a7b65e834dc49d358b0caf7f95334f5d4571ce05ed04e7d3b",
+    "bytes": 1343,
+    "source_relative_to_archive": "code/E58_seed2/single_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/smoke_memory.py",
+    "sha256": "93180df94935cce4a9ebbfd82b29d2506a9050c74c9344ab0d755e6546e6c60d",
+    "bytes": 1104,
+    "source_relative_to_archive": "code/E58_seed2/smoke_memory.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/smoke_progress.py",
+    "sha256": "5289bd5dcca68437fe978e940635f0ce133d07106014c377a9c293c8584f9b8b",
+    "bytes": 2085,
+    "source_relative_to_archive": "code/E58_seed2/smoke_progress.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/E58_seed2/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/test_release.py",
+    "sha256": "e512665cc35ca12df4d0ef45bec9b629777abcc7a7b4e7ceba7fe940bf9eae9b",
+    "bytes": 10535,
+    "source_relative_to_archive": "code/E58_seed2/test_release.py"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/validation_smoke.py",
+    "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf",
+    "bytes": 6425,
+    "source_relative_to_archive": "code/E58_seed2/validation_smoke.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/build_release.py",
+    "sha256": "b8048cb41ceb02fc64f678870f0fb86f0100b30892221a07d3cc89e642a5bdd4",
+    "bytes": 2133,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/checks.py",
+    "sha256": "6b241180296594dfa11257e6a1bdb699e91041ac799d39f12b236c79a12a7ed8",
+    "bytes": 24072,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/common.py",
+    "sha256": "a46bd3564af7b353992e4d09d40f3ab90919a26dbedf2de560b4692527561206",
+    "bytes": 6798,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/common.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/controller.py",
+    "sha256": "be7c72cbc8980cca3bee714999c38e49673e4fbdc9b2da6d6bf7709d6506d8c2",
+    "bytes": 12994,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/controller.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/d38_common.py",
+    "sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+    "bytes": 20194,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/d38_common.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/e60_checks.py",
+    "sha256": "05b02b58e710b60acdbd4de405a23ec277cd2cec5a3abc9ec766e4eb94f3b5fb",
+    "bytes": 26942,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/e60_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/e60_evaluate.py",
+    "sha256": "adb4f96de51400f3028b453de2ae58c820b0ac27c113c6a5853c7f63364e253a",
+    "bytes": 10661,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/e60_evaluate.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/e60_full_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/e60_full_head.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/e60_validation_smoke.py",
+    "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf",
+    "bytes": 6425,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/e60_validation_smoke.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/evaluate.py",
+    "sha256": "89bed4c9d15424685ab7392cd8c110c326cbaab422a6658069ab89ea605ccf17",
+    "bytes": 3006,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/evaluate.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/frozen_sources.json",
+    "sha256": "c1cac3269057cb8689b5188ae58123951bed18998e610d94efa763c701c1fc6d",
+    "bytes": 663,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/frozen_sources.json"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/group_checks.py",
+    "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8",
+    "bytes": 5286,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/group_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/LOCAL_VALIDATION.md",
+    "sha256": "765cadc59914b56ae2b0ec39796e23ed026d62f62003d78e38ffc5fe3a7352e1",
+    "bytes": 2542,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/manifest.json",
+    "sha256": "1a5a702290130d9fa190a1751928d707a1feb42be02613f02ef9ba729c09e02e",
+    "bytes": 3263,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/optimizer_checks.py",
+    "sha256": "5254f0f1e0aed42c5fe3ba550c87e6ca8b0f575d497e3f9dc0da3b32621b2587",
+    "bytes": 4478,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/optimizer_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/pair_safety.py",
+    "sha256": "1e4e64bd59a84fae688389120080e21fc8694ae33effc8df0aab56619d984290",
+    "bytes": 2642,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/pair_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/precision_checks.py",
+    "sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a",
+    "bytes": 5722,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/precision_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/README.md",
+    "sha256": "76fbc3ec418fc90117ae3106a16d9ababdf91470e6a0ca3a37133e01580338ae",
+    "bytes": 5378,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/routing_checks.py",
+    "sha256": "4b622d8bbbe25550da29bb60bf08751d8faea6c2203c6abba05c01da0d0146bb",
+    "bytes": 7152,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/routing_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/run_experiment.py",
+    "sha256": "35798af34ef60ac6eb60970c0d38c7dfedae2f003bbd74e8b24f9307d7c3e46b",
+    "bytes": 20108,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/run_experiment.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/run_pair.sh",
+    "sha256": "e13636fb150a7c8b909c97af9a9d85a9e563e39420d5be00c6c1c92c380db0e4",
+    "bytes": 295,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/run_pair.sh"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/shutdown_after.py",
+    "sha256": "d8cec6136cf5a2b7c21d351217e86185615587e2bfc7ce89613085971bb35151",
+    "bytes": 588,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/shutdown_after.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/shutdown_safety.py",
+    "sha256": "d453a316dc55f3159c94b80827ceadfb726ec1dca7d6274e6e5724496f8c289b",
+    "bytes": 6084,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/smoke_memory.py",
+    "sha256": "3b697c7942f2ce8ea150fdc06a9f5c33fbf205b692e9d2538369ebb8f4e390a2",
+    "bytes": 892,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/smoke_memory.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/smoke_progress.py",
+    "sha256": "5289bd5dcca68437fe978e940635f0ce133d07106014c377a9c293c8584f9b8b",
+    "bytes": 2085,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/smoke_progress.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/spatial_task_head.py",
+    "sha256": "1b318369bf67809aec71ea2d2c34b01d707153b3aec978f1c774beec034d8745",
+    "bytes": 6286,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/test_release.py",
+    "sha256": "63e576c1446d65eeb56646c82e1d60d34500c035439c8414ceea9fa52f68b510",
+    "bytes": 7268,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/test_release.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/validation_smoke.py",
+    "sha256": "deb774db70060e5625275c85fee662f6c7f1d1f694106f4290f2e628554a7b2b",
+    "bytes": 6541,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/validation_smoke.py"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/watch_progress.py",
+    "sha256": "461e3cdc566f571be0ea8e01d73a1eba4e35cfcc7c9e8338f0b9c37715eca60d",
+    "bytes": 1589,
+    "source_relative_to_archive": "code/E60_Routing_Ablations_Seed1_Parallel_AutoDL/watch_progress.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/common7.py",
+    "sha256": "55939f44578916c2dfdbb71e8af90a77289b214f46bb5cf7271ac1a01c1643c0",
+    "bytes": 8572,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/common7.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/controller.py",
+    "sha256": "fe2623295e7e1011220fcc455e5d36a57be1b0889d5bffe7a7183ab93e927331",
+    "bytes": 13869,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/controller.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/engine7.py",
+    "sha256": "31f1ac9c279d9b56b4c5e1e6de109a8a8a11b9e2817999b917ff5a2a8987b683",
+    "bytes": 29741,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/engine7.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/checks.py",
+    "sha256": "df4f3510bccc054d5837572fb56f5d8dbc0cfc6bd7811086ada3ee40c5a9b230",
+    "bytes": 21325,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/d38_common.py",
+    "sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+    "bytes": 20194,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/d38_common.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/parent_reference.py",
+    "sha256": "a46e4273f7b345fe74bde5628000856dfee27b7f5aa0774597aad0e9237c2817",
+    "bytes": 2254,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/parent_reference.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/e58/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/checks.py",
+    "sha256": "6b241180296594dfa11257e6a1bdb699e91041ac799d39f12b236c79a12a7ed8",
+    "bytes": 24072,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/d38_common.py",
+    "sha256": "534db76aa5074225b0014b971f5ca66d75ac324112ed5adaf482309b68a2f3e6",
+    "bytes": 20194,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/d38_common.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/e60_full_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/e60_full_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/group_checks.py",
+    "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8",
+    "bytes": 5286,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/group_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/optimizer_checks.py",
+    "sha256": "5254f0f1e0aed42c5fe3ba550c87e6ca8b0f575d497e3f9dc0da3b32621b2587",
+    "bytes": 4478,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/optimizer_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/precision_checks.py",
+    "sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a",
+    "bytes": 5722,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/precision_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/routing_checks.py",
+    "sha256": "4b622d8bbbe25550da29bb60bf08751d8faea6c2203c6abba05c01da0d0146bb",
+    "bytes": 7152,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/routing_checks.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/spatial_task_head.py",
+    "sha256": "1b318369bf67809aec71ea2d2c34b01d707153b3aec978f1c774beec034d8745",
+    "bytes": 6286,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/routing/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/author_source/LICENSE.txt",
+    "sha256": "02c5c55e19772184872c6c455553b15e4acac4b3a757550e7374f47723868ce1",
+    "bytes": 11400,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/author_source/LICENSE.txt"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/author_source/PROVENANCE.json",
+    "sha256": "34abe55feabc7c8ade8bcb8d362026b23924e49553104fbc4337c4043f88816f",
+    "bytes": 860,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/author_source/PROVENANCE.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/author_source/tood_head.py",
+    "sha256": "2f92e486d2ac7db835dede8f7b8008c2d1dcddd1e2166fb9e516fff804a599ef",
+    "bytes": 37586,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/author_source/tood_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/checks.py",
+    "sha256": "5ada7af837968072dc8e2969fc8c59504ebf6613fc00fa5728e0f1ec2d89568c",
+    "bytes": 22213,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/evaluation.py",
+    "sha256": "943a6eae7e747bb75b92640538530a443eb4f15838394c6a5615f52857417761",
+    "bytes": 17537,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/evaluation.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/shutdown_safety.py",
+    "sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+    "bytes": 6835,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/tood_td_head.py",
+    "sha256": "25963991eda6ba8fde71874149853a584f759f93b17aea0c43f27e223f9252c8",
+    "bytes": 8003,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/frozen/td/tood_td_head.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/FROZEN_PROVENANCE.json",
+    "sha256": "ff101b9715297db8f108b83565e545d8ff80342181d24e28e240f2ddfd9f0269",
+    "bytes": 27900,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/FROZEN_PROVENANCE.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/LOCAL_VALIDATION.json",
+    "sha256": "fdb89fe77600bfbcc101b3adabafae834f6a67035caf42c6e5286a89511ae242",
+    "bytes": 9439,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/LOCAL_VALIDATION.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/package_manifest.json",
+    "sha256": "3410623125709df7f1a4b5d3bc0fd5b30f9a62a40b2521381cdd7e7104147ece",
+    "bytes": 11632,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/package_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/platform_safety.py",
+    "sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+    "bytes": 6835,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/platform_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/preservation7.py",
+    "sha256": "16dc815222d23a52c7d649ddc6e9a64dad627a205f17b481aff9798a4cbc5aa4",
+    "bytes": 2517,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/preservation7.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/README.md",
+    "sha256": "302f053fb730ad68cb4e811c0379207870d17c8996f9367c6735e2cca2d61f91",
+    "bytes": 10739,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/README.md"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e58_seed1_comparison.json",
+    "sha256": "428a3ed161d670c8cb25653dcdc2b5a7f5d4075c4de30c4369227eaad595c414",
+    "bytes": 23007,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e58_seed1_comparison.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e58_seed1_test_official_metrics.json",
+    "sha256": "aeef063728fc68a3d3f974a00438e250352c7e93321205c67aeb5efd3dfccc35",
+    "bytes": 11089,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e58_seed1_test_official_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e58_seed1_test_prediction_manifest.json",
+    "sha256": "47750fbea7471ffda8fc439bfc7f5f2b2e384f3ef424b3381ea10cfad239641c",
+    "bytes": 5020,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e58_seed1_test_prediction_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e58_seed2_comparison.json",
+    "sha256": "53d95b3537c1311df0971db9eb2e7db772af2c56b1cd9ec8264de54a9c5fc481",
+    "bytes": 17611,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e58_seed2_comparison.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e58_seed2_test_official_metrics.json",
+    "sha256": "53b9ec2a19376f1a96d493976fa4509de7493375ecd179fcc20204b56eb4e9cb",
+    "bytes": 11181,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e58_seed2_test_official_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e58_seed2_test_prediction_manifest.json",
+    "sha256": "415d579a16b0669c57b99c02b465da859c178fc8c0b299b4257b25791a9c3883",
+    "bytes": 5142,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e58_seed2_test_prediction_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e60_seed1_comparison.json",
+    "sha256": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52",
+    "bytes": 22885,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e60_seed1_comparison.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e60_seed1_training.json",
+    "sha256": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71",
+    "bytes": 94481,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e60_seed1_training.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e60_seed2_comparison.json",
+    "sha256": "2440fb58d686a6778179e8d8df7c4c2414002f356732c9fea83bc2f579106566",
+    "bytes": 22902,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e60_seed2_comparison.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e60_seed2_training.json",
+    "sha256": "c26a105ea6f4d747473fceeb999f6c8acc6e2713f0f864d8ebc1f3078e0b35f2",
+    "bytes": 94844,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e60_seed2_training.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e60_seed3_comparison.json",
+    "sha256": "a188822c25e987062b36a05c60e2fa1fbadb60da15af3ad683966cc08d58587b",
+    "bytes": 17759,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e60_seed3_comparison.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/e60_seed3_training.json",
+    "sha256": "7ed567b58bd2e8bd849b8a6eb3bc0ce07d5d203c06d42c4101d18ee0287c53d0",
+    "bytes": 94893,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/e60_seed3_training.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/official_main_per_seed.csv",
+    "sha256": "9adbb6d97581fa950b7abe8d642b4adcf23b611a36aeed8cfcb9ec8a31f3220a",
+    "bytes": 1893,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/official_main_per_seed.csv"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/reference_protocol.json",
+    "sha256": "a9646235047ef148b025da1310d86a5b8d27a4958fe90b31cf3deb7cc762015a",
+    "bytes": 8022,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/reference_protocol.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/routing_seed1_summary.json",
+    "sha256": "e872abd662a85d7094666bf5cc2f4260f69b3628602720f41a79d810d7f20998",
+    "bytes": 33869,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/routing_seed1_summary.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/source_pins.json",
+    "sha256": "c34ab07674d52e1e904452675df74197ac617d1a775c41d638b256638ba7c77b",
+    "bytes": 920,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/source_pins.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1/e1_seed1_official_metrics.json",
+    "sha256": "557ebad077b10985890e3b180242634b0d8942bb4b0b992bb870f3e4d8826241",
+    "bytes": 4211,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1/e1_seed1_official_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1/e1_seed1_prediction_manifest.json",
+    "sha256": "a48aaaac62b901b34a70fd4be803db03a129d41102a9af77885309363dd5b473",
+    "bytes": 1644,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1/e1_seed1_prediction_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1/e1_training.json",
+    "sha256": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+    "bytes": 196056,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1/e1_training.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1/e60_seed1_official_metrics.json",
+    "sha256": "42ab5405b66c3ffc7bdf5fa4d0c84ff0b6c5e14a666706b6a6edc1e2925faa00",
+    "bytes": 11878,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1/e60_seed1_official_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1/e60_seed1_prediction_manifest.json",
+    "sha256": "acba09955413caf179af8f4995fdac3ab42f403f19a2bc353336fae99553794c",
+    "bytes": 5975,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1/e60_seed1_prediction_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1/e60_training.json",
+    "sha256": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71",
+    "bytes": 94481,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1/e60_training.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1/testdev_input_manifest.json",
+    "sha256": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+    "bytes": 508075,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1/testdev_input_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1/val_e1_e60.json",
+    "sha256": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52",
+    "bytes": 22885,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1/val_e1_e60.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1_test_metrics.json",
+    "sha256": "f36e8bf0d61fbdbe57db578c455b5c723c03d9388aba10b5559675d6f65ce215",
+    "bytes": 22632,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1_test_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/td_seed1_val_metrics.json",
+    "sha256": "29f8103d8aefd226f721af18408ca4d74025977bcea55d2b152336bd0d27427f",
+    "bytes": 17755,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/td_seed1_val_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/shared_s3_cuda0/result.json",
+    "sha256": "1ce5de9eb94605829b63bd8bf8249eadc69b41fe74c73be28d90806cd7648056",
+    "bytes": 122478,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/shared_s3_cuda0/result.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s2_cpu/old_fixture_diagnosis.json",
+    "sha256": "e30536ad37336449f74ec3a67a014be15a51314f513dbc93f87be396a32c7f44",
+    "bytes": 50332,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s2_cpu/old_fixture_diagnosis.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s2_cpu/result.json",
+    "sha256": "4b6357605c0009524582ea540b921f41d36b05f8f0b6857f558723c1d683d922",
+    "bytes": 99774,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s2_cpu/result.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s2_cpu/synthetic_AMPFalse.json",
+    "sha256": "b56a8b2d95f7640c967ef447729be31d5302720a8f9824ac833082d77c0de6d7",
+    "bytes": 5436,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s2_cpu/synthetic_AMPFalse.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s2_cuda0/old_fixture_diagnosis.json",
+    "sha256": "ced936f37082df0d38243c2d9cc218608083d68c2fccffcabfb8b665a42c98b7",
+    "bytes": 50307,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s2_cuda0/old_fixture_diagnosis.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s2_cuda0/result.json",
+    "sha256": "7da3c864644156d3bdfdfc2e498cf30b63383810d54c00499bec240c49b43b5b",
+    "bytes": 102439,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s2_cuda0/result.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s2_cuda0/synthetic_AMPFalse.json",
+    "sha256": "b0e497bf67dd35fa0a8e76c04ee326d9dc54248e687cde0caeefb0fc3aa9816a",
+    "bytes": 5435,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s2_cuda0/synthetic_AMPFalse.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s2_cuda0/synthetic_AMPTrue.json",
+    "sha256": "8345dcb6d6152f65a743d35abfc385fe4e0d1c8f4e3d7dc234b851fd80ca6dba",
+    "bytes": 8697,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s2_cuda0/synthetic_AMPTrue.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s3_cpu/old_fixture_diagnosis.json",
+    "sha256": "957c76ead9aa0964738706d5e034a273bda25d104a3917861b2a51b63780a563",
+    "bytes": 50340,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s3_cpu/old_fixture_diagnosis.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s3_cpu/result.json",
+    "sha256": "54838ead238077f8641ab121df945fc3bfb1bc90c582c1e467516e56baba9895",
+    "bytes": 99775,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s3_cpu/result.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s3_cpu/synthetic_AMPFalse.json",
+    "sha256": "92783d50de6498b8f0a115e89ee6618ce97734d3ad74042d00cc9f86b9771174",
+    "bytes": 5436,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s3_cpu/synthetic_AMPFalse.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s3_cuda0/old_fixture_diagnosis.json",
+    "sha256": "d9b714e764e2442b81f1356ceda32fc8e70550afb33a238e38d016c70a4bb710",
+    "bytes": 50335,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s3_cuda0/old_fixture_diagnosis.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s3_cuda0/result.json",
+    "sha256": "d348d42d495877b00624111cc057248beaa96b6759b2a55d7fb4664fff5edcce",
+    "bytes": 102439,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s3_cuda0/result.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s3_cuda0/synthetic_AMPFalse.json",
+    "sha256": "2c6c7dfbe4aa74b0b65b896cba269c5f56652853e28a9c1493528939ce3f9ceb",
+    "bytes": 5438,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s3_cuda0/synthetic_AMPFalse.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/td_s3_cuda0/synthetic_AMPTrue.json",
+    "sha256": "5b58bacf891f77ce31950f3fc0406e0ad151cdc86e67ad23f2fb4f2391508afe",
+    "bytes": 8696,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/td_s3_cuda0/synthetic_AMPTrue.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/uniform_s3_cuda0/result.json",
+    "sha256": "76c8ba4f8924c4146c3f04a9e6b040ff5c744085e01a0ea54658a0f69dd01b84",
+    "bytes": 121360,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/uniform_s3_cuda0/result.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/references/v2_validation/v1_prior_cpu_validation.json",
+    "sha256": "92f18df1d0434b83ffc552eb3224f3623222197c1ca8c397f35ada7245c43a21",
+    "bytes": 5650,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/references/v2_validation/v1_prior_cpu_validation.json"
+  },
+  {
+    "path": "implementations/yolo11/supplement/scoring7.py",
+    "sha256": "10c42af8dec6c1411c933427fa3385820f2eae271d022dc7fd2009cd9d7001a7",
+    "bytes": 9796,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/scoring7.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/shutdown_guard.py",
+    "sha256": "f7decdabc26c7ffe520ae7b2aab7ccd2b3316cfd0f9c360fccaba85baa25a932",
+    "bytes": 7311,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/shutdown_guard.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/smoke_memory.py",
+    "sha256": "74142f5902b14cb46ecbcd0712442bf86b5ed3f1ed381d67cfb698a3003a1bb2",
+    "bytes": 348,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/smoke_memory.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/start_all_auto_shutdown.sh",
+    "sha256": "2210bb7a6010b79db2e8eb658eb782dde3dee15a9c344a9b36f87a2e39f9b1b8",
+    "bytes": 422,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/start_all_auto_shutdown.sh"
+  },
+  {
+    "path": "implementations/yolo11/supplement/summary7.py",
+    "sha256": "50b436d5305d01392b7203c59ea6acd921421dcb50053f6ce723995447510741",
+    "bytes": 7206,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/summary7.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/td_coverage_check.py",
+    "sha256": "65ca9e03cec73738da73a518f22329e26e7578b99ac3513a8a5bde130bd89b8e",
+    "bytes": 6105,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/td_coverage_check.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/test_safety.py",
+    "sha256": "4505c551966b08a9d963f0bf94996d361fc256d71b9be4676954006b482fbfe8",
+    "bytes": 19286,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/test_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/test_td_coverage.py",
+    "sha256": "2fd6ba3b1f502b83286533a21af87bd1fc1ecf0d29a172eda3b9172c31bed74a",
+    "bytes": 2815,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/test_td_coverage.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/validation_smoke.py",
+    "sha256": "deb774db70060e5625275c85fee662f6c7f1d1f694106f4290f2e628554a7b2b",
+    "bytes": 6541,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/validation_smoke.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/watch_progress.py",
+    "sha256": "27d98dbd0e6f220050788c6df4e9a0fd6e0dfc595d765a2b8fa7826e9d48486e",
+    "bytes": 3019,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/watch_progress.py"
+  },
+  {
+    "path": "implementations/yolo11/supplement/worker.py",
+    "sha256": "b1b2dd73cee08d99f8a3871ad2365efb2116e2f570a3e270bf51f365b16bce3c",
+    "bytes": 2883,
+    "source_relative_to_archive": "code/ST_MDRF_SevenRuns_Seeds23_AutoDL_v2/worker.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/author_source/LICENSE.txt",
+    "sha256": "02c5c55e19772184872c6c455553b15e4acac4b3a757550e7374f47723868ce1",
+    "bytes": 11400,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/author_source/LICENSE.txt"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/author_source/PROVENANCE.json",
+    "sha256": "34abe55feabc7c8ade8bcb8d362026b23924e49553104fbc4337c4043f88816f",
+    "bytes": 860,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/author_source/PROVENANCE.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/author_source/tood_head.py",
+    "sha256": "2f92e486d2ac7db835dede8f7b8008c2d1dcddd1e2166fb9e516fff804a599ef",
+    "bytes": 37586,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/author_source/tood_head.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/build_release.py",
+    "sha256": "17fea21b951dfcdf11eb0929c201ba1ae8b9e8af4e4194ca2bd90a0fbfaee3f4",
+    "bytes": 2201,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/checks.py",
+    "sha256": "5ada7af837968072dc8e2969fc8c59504ebf6613fc00fa5728e0f1ec2d89568c",
+    "bytes": 22213,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/checks.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/controller.py",
+    "sha256": "c7301d482cdb12f61589b01fffeab904510776a656be8e010ea2a14656c471cc",
+    "bytes": 9336,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/controller.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/e1_640_core.py",
+    "sha256": "a0c5397ef809244085d66f3763935147d3b635c289822167716cdb4a781d1bfe",
+    "bytes": 42806,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/e1_640_core.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/e1_reference.yaml",
+    "sha256": "98df605986f71295216f2abc549f5f0e381a7a39a6cc81b0419ab118cb29135b",
+    "bytes": 2480,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/e1_reference.yaml"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/evaluation.py",
+    "sha256": "943a6eae7e747bb75b92640538530a443eb4f15838394c6a5615f52857417761",
+    "bytes": 17537,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/evaluation.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/local_validate.py",
+    "sha256": "6a1a03f35500ba02aa94588984b6c8e2ec56bef0f960ff44eb5524959ed2de0a",
+    "bytes": 4863,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/local_validate.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/LOCAL_VALIDATION.md",
+    "sha256": "db7e28db28ffc09320e396b779b477e8e3c55512f20845544c728d240a27c794",
+    "bytes": 1867,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/manifest.json",
+    "sha256": "e50946d8ae53999cf2fe8472b9e8f57df2b63cf59a9903f842c671ae584aef59",
+    "bytes": 3519,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/p2_tal_chunked.py",
+    "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6",
+    "bytes": 15395,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/p2_tal_chunked.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/README.md",
+    "sha256": "0d69b20d3bd575ecb70f520b194d9a21d30305541db742c5075e116e6ac61e6b",
+    "bytes": 5961,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/references/e1_seed1_official_metrics.json",
+    "sha256": "557ebad077b10985890e3b180242634b0d8942bb4b0b992bb870f3e4d8826241",
+    "bytes": 4211,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/references/e1_seed1_official_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/references/e1_seed1_prediction_manifest.json",
+    "sha256": "a48aaaac62b901b34a70fd4be803db03a129d41102a9af77885309363dd5b473",
+    "bytes": 1644,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/references/e1_seed1_prediction_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/references/e1_training.json",
+    "sha256": "006137171d804ccd1d823f80650b615925433b16280999a3ef2b67fb667c605b",
+    "bytes": 196056,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/references/e1_training.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/references/e60_seed1_official_metrics.json",
+    "sha256": "42ab5405b66c3ffc7bdf5fa4d0c84ff0b6c5e14a666706b6a6edc1e2925faa00",
+    "bytes": 11878,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/references/e60_seed1_official_metrics.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/references/e60_seed1_prediction_manifest.json",
+    "sha256": "acba09955413caf179af8f4995fdac3ab42f403f19a2bc353336fae99553794c",
+    "bytes": 5975,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/references/e60_seed1_prediction_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/references/e60_training.json",
+    "sha256": "1b5193e9519b553fe1a5b529c6f1e82dca07cc17cb9e33166a2d34e6fa169a71",
+    "bytes": 94481,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/references/e60_training.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/references/testdev_input_manifest.json",
+    "sha256": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+    "bytes": 508075,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/references/testdev_input_manifest.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/references/val_e1_e60.json",
+    "sha256": "ec725df132920faddd1fb417adb1838267c74ae4b24610fbb3b0c8fe885ced52",
+    "bytes": 22885,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/references/val_e1_e60.json"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/run.sh",
+    "sha256": "7ea0fc53e178ebc0e4f7692c1abd1663b458c47b9bb315439387c014feb2758e",
+    "bytes": 322,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/run.sh"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/run_experiment.py",
+    "sha256": "7926018e5b91f6a904e1cb965b3459a20bd98c41257357f789c3227e87bf10e6",
+    "bytes": 21169,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/run_experiment.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/shutdown_after.py",
+    "sha256": "e9bfa6453fe29897132312bf0f91c3852a0ec5821b259309ac6970a4b4ce2f53",
+    "bytes": 11322,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/shutdown_after.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/shutdown_safety.py",
+    "sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+    "bytes": 6835,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/single_safety.py",
+    "sha256": "9f1fc60a0e1813aff633c67f9343ff9ccb2f89bab836a0f9d0a94470ee43a840",
+    "bytes": 1276,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/single_safety.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/smoke_memory.py",
+    "sha256": "252e7038f3696c2844f444e243718a9ef843a7ec941bfd08e9367f37748d6da2",
+    "bytes": 598,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/smoke_memory.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/smoke_progress.py",
+    "sha256": "5289bd5dcca68437fe978e940635f0ce133d07106014c377a9c293c8584f9b8b",
+    "bytes": 2085,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/smoke_progress.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/start_all_auto_shutdown.sh",
+    "sha256": "99305f766d35dd82621289a94e9ca560f35dc4cc3e16c329c2b918c9c4c69c86",
+    "bytes": 283,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/start_all_auto_shutdown.sh"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/test_pipeline.py",
+    "sha256": "d83afb09e5ea99e9e9e8ef876dcae2c0cf7f56299f6882eee65a60237a1d83ec",
+    "bytes": 4926,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/test_pipeline.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/test_shutdown.py",
+    "sha256": "701d63040f0ea1324956fa8a85ac5d932401003e3ac3915c7ada975218f9d62c",
+    "bytes": 12177,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/test_shutdown.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/tood_td_head.py",
+    "sha256": "25963991eda6ba8fde71874149853a584f759f93b17aea0c43f27e223f9252c8",
+    "bytes": 8003,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/tood_td_head.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/validation_smoke.py",
+    "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf",
+    "bytes": 6425,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/validation_smoke.py"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/watch_progress.py",
+    "sha256": "515b6afe17f2ccdfbb8927ebc2346a9f9210c1e9a79d9b27606949eb0d42642a",
+    "bytes": 2612,
+    "source_relative_to_archive": "code/TOOD_TD_E1_Seed1_AutoDL/watch_progress.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/build_release.py",
+    "sha256": "150338e9d841f050933aef25da665c7dce375bf026a70563b37b749ee74ac9c6",
+    "bytes": 2313,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/checks26.py",
+    "sha256": "6448b961802cff4a2547a369a7356755ee4dc23395590bb8cf06831e492f2553",
+    "bytes": 12990,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/checks26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/common.py",
+    "sha256": "380b68905160f43f78fc370b6ee81fd16f6741f52dc2904fc40442f9801f002e",
+    "bytes": 4925,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/common.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/controller.py",
+    "sha256": "5534d39aad32a3aaeb4908f1ab6f83801a5775319ca4740a409f34bfc1ca1b44",
+    "bytes": 6262,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/controller.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/e60_adapter.py",
+    "sha256": "7fa5b1c0a1a2df5ed2b041117546fc057202c18f8b6a59c5f217c8e9176a4b9f",
+    "bytes": 7266,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/e60_adapter.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/LICENSE",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/LICENSE"
+  },
+  {
+    "path": "implementations/yolo26/seed1/LOCAL_VALIDATION.md",
+    "sha256": "6cc355f77b60defa062e89cf71f6b51ba1f435037dea5b2702df05192e03422c",
+    "bytes": 3617,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo26/seed1/local_validation.py",
+    "sha256": "867388622c9d535069b78d3e91fc3a283e483fd049edcc87216c2dda82e6ed14",
+    "bytes": 3363,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/local_validation.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/manifest.json",
+    "sha256": "983a8c555a51eace5d4819ebf20138207bb34ad4d76d11904f1b7da977e52dcb",
+    "bytes": 1853,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/yolo26/seed1/models26.py",
+    "sha256": "2b1e59a2f3b2188a52ebca75ca7869023717ff0527e71bba518b5495dcc30bd0",
+    "bytes": 4345,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/models26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/protocol.py",
+    "sha256": "36b6998d7ca86e2891da67280cfbb0d47c4831cd23afb87a3d2348b4147f584d",
+    "bytes": 10527,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/protocol.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/README.md",
+    "sha256": "3b7238475bc745326ae496dab6c8ed767885e52e9b77e47ebeb3534da7a29098",
+    "bytes": 5109,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/yolo26/seed1/run_pair.sh",
+    "sha256": "6b36cd8f8a21cc2659f34460d87c5eb2b054fc2fc54352cf4eff453cf9c086e2",
+    "bytes": 332,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/run_pair.sh"
+  },
+  {
+    "path": "implementations/yolo26/seed1/scoring26.py",
+    "sha256": "dad2e30513bb85db8af91264d4e7f118ac8d5ee890f80bdfaca7b9f52163f799",
+    "bytes": 6422,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/scoring26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/source_sha256.json",
+    "sha256": "439d1e1abb4ca5e06829084994c21f8de68ab0cb9bab3ff0117f2ba07acadaf8",
+    "bytes": 2178,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/source_sha256.json"
+  },
+  {
+    "path": "implementations/yolo26/seed1/test_protocol.py",
+    "sha256": "bf44afb845a4bab1654cde157b43ce92fbed046ca6a8a254466ed0135d637434",
+    "bytes": 6273,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/test_protocol.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/training26.py",
+    "sha256": "5ddccd291a704c7e1eca5f2416767f95c7fb1be8f42f2d164fd6c3bbf77ffb8f",
+    "bytes": 15722,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/training26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed1/training_source_sha256.json",
+    "sha256": "ac2736eaf1f67cbf790f1d07e6db736eac79039a49e1290556a57166ea3e046a",
+    "bytes": 39283,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/training_source_sha256.json"
+  },
+  {
+    "path": "implementations/yolo26/seed1/worker.py",
+    "sha256": "4684e1ce495a3fde0115e6909c81ad951bb17ab0fcc1147779426404b240404e",
+    "bytes": 4222,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed1_AutoDL/worker.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/build_release.py",
+    "sha256": "beb33cbb13aa3a6415fd2256f66fd0dfb379c0f82f0a4959ecc06e167d732f66",
+    "bytes": 3745,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/checks26.py",
+    "sha256": "6448b961802cff4a2547a369a7356755ee4dc23395590bb8cf06831e492f2553",
+    "bytes": 12990,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/checks26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/common.py",
+    "sha256": "380b68905160f43f78fc370b6ee81fd16f6741f52dc2904fc40442f9801f002e",
+    "bytes": 4925,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/common.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/controller.py",
+    "sha256": "19a07e11fabd8a5ad1e2d9ab5af065d88ab5813c0ddb4617eaa5366a9d25aabb",
+    "bytes": 9444,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/controller.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/e60_adapter.py",
+    "sha256": "7fa5b1c0a1a2df5ed2b041117546fc057202c18f8b6a59c5f217c8e9176a4b9f",
+    "bytes": 7266,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/e60_adapter.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/fixture_tools.py",
+    "sha256": "867388622c9d535069b78d3e91fc3a283e483fd049edcc87216c2dda82e6ed14",
+    "bytes": 3363,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/fixture_tools.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/LICENSE",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/LICENSE"
+  },
+  {
+    "path": "implementations/yolo26/seed2/LOCAL_VALIDATION.md",
+    "sha256": "cb3e622e78adb0555c828596e12b0228e98cbef60876223427852c6b9f473f27",
+    "bytes": 4014,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo26/seed2/local_validation.py",
+    "sha256": "abb20be22719e4fbfe12602b59eae077a881a3e0095b80478c4f2fa613ad0a4d",
+    "bytes": 2753,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/local_validation.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/manifest.json",
+    "sha256": "fc3650589dab86c46b769078f284ed5cff5752eb46512cddf2df37855f2eedf9",
+    "bytes": 3327,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/models26.py",
+    "sha256": "2b1e59a2f3b2188a52ebca75ca7869023717ff0527e71bba518b5495dcc30bd0",
+    "bytes": 4345,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/models26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/process_lock.py",
+    "sha256": "a12b1006b42ec510506b9e0597d85e8e26efd1c1f9303107590b119a86d6179a",
+    "bytes": 705,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/process_lock.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/protocol.py",
+    "sha256": "7563952765c9bcc0eee2cf2374370880bcaf0da6a91368a8ea55a032d1af951f",
+    "bytes": 11485,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/protocol.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/README.md",
+    "sha256": "3e4b1b20f0b0a131fc3eae654152b7bb486748233b39dee3349b136dd1af6936",
+    "bytes": 5365,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/yolo26/seed2/references/baseline_seed1_test_dev.json",
+    "sha256": "967a037d6db99005f5b9af249d8b8fdbe8b73d6b336179a315171be82f56c831",
+    "bytes": 9597,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/references/baseline_seed1_test_dev.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/references/baseline_seed1_val.json",
+    "sha256": "1f3ec644159593404d930e6c2b9766baa816a94759808dc3d85a15b35ece71ba",
+    "bytes": 8040,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/references/baseline_seed1_val.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/references/e60_seed1_test_dev.json",
+    "sha256": "66dd3b96d1fb2a77412ac0179bc14ec5e83fadaf558cf7c5bbf8b4a04aea59ec",
+    "bytes": 9592,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/references/e60_seed1_test_dev.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/references/e60_seed1_val.json",
+    "sha256": "b913cbd12207408ed204c8a4a2026d33d54826112c7d37d8b7bbb048adfe71c9",
+    "bytes": 8026,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/references/e60_seed1_val.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/references/frozen_seed1_files.json",
+    "sha256": "c799a947b88d60db9dcda947692d404db80026bffdaded6e1bdcb4821a583a04",
+    "bytes": 971,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/references/frozen_seed1_files.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/references/seed1_signature.json",
+    "sha256": "f7a7d78c8aae599ebe2c7ea6eae9259ea78d2d27cdf6a12ec8504513798221f7",
+    "bytes": 2496,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/references/seed1_signature.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/references/testdev_input_manifest.json",
+    "sha256": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+    "bytes": 508075,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/references/testdev_input_manifest.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/run_pair.sh",
+    "sha256": "02e2a04c6f644ae1ce4dcc0a9ceeb69c3a7e7b8ea93b791da8a05dba76383bfe",
+    "bytes": 388,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/run_pair.sh"
+  },
+  {
+    "path": "implementations/yolo26/seed2/scoring26.py",
+    "sha256": "dad2e30513bb85db8af91264d4e7f118ac8d5ee890f80bdfaca7b9f52163f799",
+    "bytes": 6422,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/scoring26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/seed1_protocol.py",
+    "sha256": "36b6998d7ca86e2891da67280cfbb0d47c4831cd23afb87a3d2348b4147f584d",
+    "bytes": 10527,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/seed1_protocol.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/shutdown_after.py",
+    "sha256": "10b8cca027e820e36d03640e7160d6008e5fa9ffa944abb213922d28337a2717",
+    "bytes": 9866,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/shutdown_after.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/shutdown_safety.py",
+    "sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+    "bytes": 6835,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/source_sha256.json",
+    "sha256": "439d1e1abb4ca5e06829084994c21f8de68ab0cb9bab3ff0117f2ba07acadaf8",
+    "bytes": 2178,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/source_sha256.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/summarize.py",
+    "sha256": "4fff3c4eb163b538ce650fadc2d2bcfb8b2c113b91779fbf9d7e685b1189621e",
+    "bytes": 5059,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/summarize.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/test_local.py",
+    "sha256": "66d146108c6ccb08dd6b0621e46bfd03b5a4ae00313db4c14ccf5ed95582e7b2",
+    "bytes": 13313,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/test_local.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/training26.py",
+    "sha256": "5ddccd291a704c7e1eca5f2416767f95c7fb1be8f42f2d164fd6c3bbf77ffb8f",
+    "bytes": 15722,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/training26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/training_source_sha256.json",
+    "sha256": "ac2736eaf1f67cbf790f1d07e6db736eac79039a49e1290556a57166ea3e046a",
+    "bytes": 39283,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/training_source_sha256.json"
+  },
+  {
+    "path": "implementations/yolo26/seed2/watch_progress.py",
+    "sha256": "85bc2dd64c1fd2070f54393d44a4d904c5be6dc9b26fca4cf41a9eb7090a0291",
+    "bytes": 2293,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/watch_progress.py"
+  },
+  {
+    "path": "implementations/yolo26/seed2/worker.py",
+    "sha256": "8204c403f305eaba837ea6831e481ed48c257eaa7f91d92c4e2f736f2bf837f8",
+    "bytes": 4603,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed2_Serial_AutoDL/worker.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/build_release.py",
+    "sha256": "285193674839360bb3184b780c0dcd2dea795153ae68f269ec7a3260502d00b2",
+    "bytes": 2964,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/checks26.py",
+    "sha256": "6448b961802cff4a2547a369a7356755ee4dc23395590bb8cf06831e492f2553",
+    "bytes": 12990,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/checks26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/common.py",
+    "sha256": "380b68905160f43f78fc370b6ee81fd16f6741f52dc2904fc40442f9801f002e",
+    "bytes": 4925,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/common.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/controller.py",
+    "sha256": "d5c201cf80e049adec7917708cd65b9eba9ec8805633d19a69e7e76de78b0a6a",
+    "bytes": 9444,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/controller.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/e60_adapter.py",
+    "sha256": "7fa5b1c0a1a2df5ed2b041117546fc057202c18f8b6a59c5f217c8e9176a4b9f",
+    "bytes": 7266,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/e60_adapter.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/fixture_tools.py",
+    "sha256": "867388622c9d535069b78d3e91fc3a283e483fd049edcc87216c2dda82e6ed14",
+    "bytes": 3363,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/fixture_tools.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/LICENSE",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/LICENSE"
+  },
+  {
+    "path": "implementations/yolo26/seed3/LOCAL_VALIDATION.md",
+    "sha256": "8fbcc9a5575a31e62b0c1b959f485906b526c0bec697d2f3a01dd11618031f99",
+    "bytes": 3485,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo26/seed3/local_validation.py",
+    "sha256": "561d014f12da8e5106ac94d9750f7c099370e1f3a7dc0dc9bdfb5d98732c1f89",
+    "bytes": 2753,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/local_validation.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/manifest.json",
+    "sha256": "abd45684a7278263e399b0c561046a5e87f05a6aaf90779a67ac5760f2ed995f",
+    "bytes": 3622,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/models26.py",
+    "sha256": "2b1e59a2f3b2188a52ebca75ca7869023717ff0527e71bba518b5495dcc30bd0",
+    "bytes": 4345,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/models26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/process_lock.py",
+    "sha256": "a12b1006b42ec510506b9e0597d85e8e26efd1c1f9303107590b119a86d6179a",
+    "bytes": 705,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/process_lock.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/protocol.py",
+    "sha256": "e645b6191463e3e5cdbb0e20c037d112130202ad5f40ddb8c1955c4a24164ef7",
+    "bytes": 11485,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/protocol.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/README.md",
+    "sha256": "6715e0b42cfdc98f5e661700c6e7cac017f91e91b70f32d798dceb2dc5f2db8a",
+    "bytes": 5051,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/yolo26/seed3/references/baseline_seed1_test_dev.json",
+    "sha256": "967a037d6db99005f5b9af249d8b8fdbe8b73d6b336179a315171be82f56c831",
+    "bytes": 9597,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/references/baseline_seed1_test_dev.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/references/baseline_seed1_val.json",
+    "sha256": "1f3ec644159593404d930e6c2b9766baa816a94759808dc3d85a15b35ece71ba",
+    "bytes": 8040,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/references/baseline_seed1_val.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/references/e60_seed1_test_dev.json",
+    "sha256": "66dd3b96d1fb2a77412ac0179bc14ec5e83fadaf558cf7c5bbf8b4a04aea59ec",
+    "bytes": 9592,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/references/e60_seed1_test_dev.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/references/e60_seed1_val.json",
+    "sha256": "b913cbd12207408ed204c8a4a2026d33d54826112c7d37d8b7bbb048adfe71c9",
+    "bytes": 8026,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/references/e60_seed1_val.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/references/frozen_seed1_files.json",
+    "sha256": "c799a947b88d60db9dcda947692d404db80026bffdaded6e1bdcb4821a583a04",
+    "bytes": 971,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/references/frozen_seed1_files.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/references/frozen_seed2_files.json",
+    "sha256": "7abfee4faa8245499b5cbf0e598b4f8f23735f22dac1cb0c613810267d9a76d8",
+    "bytes": 1242,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/references/frozen_seed2_files.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/references/seed1_signature.json",
+    "sha256": "f7a7d78c8aae599ebe2c7ea6eae9259ea78d2d27cdf6a12ec8504513798221f7",
+    "bytes": 2496,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/references/seed1_signature.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/references/testdev_input_manifest.json",
+    "sha256": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+    "bytes": 508075,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/references/testdev_input_manifest.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/run_pair.sh",
+    "sha256": "02e2a04c6f644ae1ce4dcc0a9ceeb69c3a7e7b8ea93b791da8a05dba76383bfe",
+    "bytes": 388,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/run_pair.sh"
+  },
+  {
+    "path": "implementations/yolo26/seed3/scoring26.py",
+    "sha256": "dad2e30513bb85db8af91264d4e7f118ac8d5ee890f80bdfaca7b9f52163f799",
+    "bytes": 6422,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/scoring26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/seed1_protocol.py",
+    "sha256": "36b6998d7ca86e2891da67280cfbb0d47c4831cd23afb87a3d2348b4147f584d",
+    "bytes": 10527,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/seed1_protocol.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/shutdown_after.py",
+    "sha256": "86f6122cf2de23c39d4feb70284e3084b5ccf88c16d24ecaaf2ae7ebd174ae34",
+    "bytes": 11672,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/shutdown_after.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/shutdown_safety.py",
+    "sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+    "bytes": 6835,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/source_sha256.json",
+    "sha256": "439d1e1abb4ca5e06829084994c21f8de68ab0cb9bab3ff0117f2ba07acadaf8",
+    "bytes": 2178,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/source_sha256.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/start_all_auto_shutdown.sh",
+    "sha256": "1c18815fd16e9f5ca8961ad7e2574f56c8936f80c65139b4b1aff22f52c125d3",
+    "bytes": 289,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/start_all_auto_shutdown.sh"
+  },
+  {
+    "path": "implementations/yolo26/seed3/summarize.py",
+    "sha256": "f66f90584d33ad9dd9adb90f58619964b58f42caa618794cbf161f28970fe5db",
+    "bytes": 9961,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/summarize.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/test_local.py",
+    "sha256": "947d1ff49ae4e8e7ee32131ef61fff5cdb3d89ce61310842aa31dadf61b24f0d",
+    "bytes": 13313,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/test_local.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/test_seed3.py",
+    "sha256": "2b081bd42590c00cc59ce3c7139a2bde3067f3916854a9ee5a5f679ec2e19756",
+    "bytes": 13169,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/test_seed3.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/training26.py",
+    "sha256": "5ddccd291a704c7e1eca5f2416767f95c7fb1be8f42f2d164fd6c3bbf77ffb8f",
+    "bytes": 15722,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/training26.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/training_source_sha256.json",
+    "sha256": "ac2736eaf1f67cbf790f1d07e6db736eac79039a49e1290556a57166ea3e046a",
+    "bytes": 39283,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/training_source_sha256.json"
+  },
+  {
+    "path": "implementations/yolo26/seed3/watch_progress.py",
+    "sha256": "bb0f47e17cae4854b5f2f5cee0f69ff43c8c9f994c4aea777b153fd70db67ad0",
+    "bytes": 2293,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/watch_progress.py"
+  },
+  {
+    "path": "implementations/yolo26/seed3/worker.py",
+    "sha256": "90f5f219f00bb351c0c6785c2fed8271cc6458978388c21f3a236d28ec69a3ed",
+    "bytes": 4603,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Seed3_Serial_AutoDL/worker.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/build_release.py",
+    "sha256": "d5637cc40d4913ad4f57a4e3985b6d95ed79eea07c7c4318d4a52f885c2692b8",
+    "bytes": 3638,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/common.py",
+    "sha256": "380b68905160f43f78fc370b6ee81fd16f6741f52dc2904fc40442f9801f002e",
+    "bytes": 4925,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/common.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/d27_official.py",
+    "sha256": "a9e0f50885f81e72ed85baf57a880800c6c51a51527a646b5c60184a1b76bf60",
+    "bytes": 43385,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/d27_official.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/e60_adapter.py",
+    "sha256": "7fa5b1c0a1a2df5ed2b041117546fc057202c18f8b6a59c5f217c8e9176a4b9f",
+    "bytes": 7266,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/e60_adapter.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/LICENSE",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/LICENSE"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/LOCAL_VALIDATION.md",
+    "sha256": "911294d6fd77d35e74925cb30935dbacf43af8c9a474d23c227c739b6a615b90",
+    "bytes": 2617,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/local_validation.py",
+    "sha256": "2301212fc237c5869a43fa746e92d70abf685b59511b10185bb76f884ce221f8",
+    "bytes": 3111,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/local_validation.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/manifest.json",
+    "sha256": "1510edb1e4087a2e42449d1b59dc1aa4e5a2eca03832062e9e67c3ad22809bb1",
+    "bytes": 2238,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/protocol.py",
+    "sha256": "36b6998d7ca86e2891da67280cfbb0d47c4831cd23afb87a3d2348b4147f584d",
+    "bytes": 10527,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/protocol.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/README.md",
+    "sha256": "b5eb4617523c8de4d470d5c22bb37f7586f7b19e66a66be00026afea3582b2a3",
+    "bytes": 2999,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/references/baseline_training_completion.json",
+    "sha256": "05184b1a101abee168be9bbf7682eaa94e73ae402234ecfe84cd67836500f4a7",
+    "bytes": 544,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/references/baseline_training_completion.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/references/baseline_val_first8_predictions.json",
+    "sha256": "2031a91cb9c6a3668398de874470735c10ebcca5626b32468abc199c7c1933cf",
+    "bytes": 803217,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/references/baseline_val_first8_predictions.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/references/baseline_val_official_metrics.json",
+    "sha256": "1f3ec644159593404d930e6c2b9766baa816a94759808dc3d85a15b35ece71ba",
+    "bytes": 8040,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/references/baseline_val_official_metrics.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/references/checkpoint_specs.json",
+    "sha256": "ba7e573ffbfcee358004a8afc8943e945e3bdff8c79712f55098ace985e0978a",
+    "bytes": 363,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/references/checkpoint_specs.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/references/e60_training_completion.json",
+    "sha256": "c93c926f44fb6575b1274ee381079b76b6fdff8bc7c523c5664e2255acd1cfd1",
+    "bytes": 524,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/references/e60_training_completion.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/references/e60_val_first8_predictions.json",
+    "sha256": "2429b4e9fd74b1fee7fca27a2ecc21703badcc18bbf352776f8de80a07bba93d",
+    "bytes": 803504,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/references/e60_val_first8_predictions.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/references/e60_val_official_metrics.json",
+    "sha256": "b913cbd12207408ed204c8a4a2026d33d54826112c7d37d8b7bbb048adfe71c9",
+    "bytes": 8026,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/references/e60_val_official_metrics.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/references/testdev_input_manifest.json",
+    "sha256": "5b61e4b392c328ab44fe6d160695a4aafbaeb2a1c13f425c5f34543636211cb7",
+    "bytes": 508075,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/references/testdev_input_manifest.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/run.sh",
+    "sha256": "59abbe8b01540247bb9b23d79f79bdb68ee87e5dbb0c373fb8557a3e27fc57e0",
+    "bytes": 386,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/run.sh"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/run_eval.py",
+    "sha256": "e24bf62f788c852c572d4c9919f0e7208b316c56bfdf4d59828011bcafd456ac",
+    "bytes": 21846,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/run_eval.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/scoring26.py",
+    "sha256": "dad2e30513bb85db8af91264d4e7f118ac8d5ee890f80bdfaca7b9f52163f799",
+    "bytes": 6422,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/scoring26.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/source_sha256.json",
+    "sha256": "439d1e1abb4ca5e06829084994c21f8de68ab0cb9bab3ff0117f2ba07acadaf8",
+    "bytes": 2178,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/source_sha256.json"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/test_local.py",
+    "sha256": "ea12a1140b009e097f9e8c08660f670d8d1094d004c4e66abc1c3e6a80bd90d8",
+    "bytes": 5938,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/test_local.py"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/training_source_sha256.json",
+    "sha256": "ac2736eaf1f67cbf790f1d07e6db736eac79039a49e1290556a57166ea3e046a",
+    "bytes": 39283,
+    "source_relative_to_archive": "code/YOLO26_P2_E60_Testdev_Seed1_AutoDL/training_source_sha256.json"
+  },
+  {
+    "path": "implementations/transfer/songdo/admission.py",
+    "sha256": "e33f2a3ae88ec17aeb053b3469f1c5d098206de376fd246d49b976bc19f4e9a0",
+    "bytes": 2717,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/admission.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/build_release.py",
+    "sha256": "dceca63617cb786b3ff77e595bbf7cbd01c50873b4786ed74ed862683ab2752f",
+    "bytes": 3392,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/coco_eval.py",
+    "sha256": "80e6dd215eaf09efbba3be312174639d20e69af6cfebfd2df8de987d9d96972c",
+    "bytes": 3725,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/coco_eval.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/common.py",
+    "sha256": "5cde6f7ba8963ed72f71678372a0e043daf32588710dfb0947577bc8f29b9962",
+    "bytes": 8602,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/common.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/controller.py",
+    "sha256": "46e4ff11ee5938840f9a1bb96cd05c68aa26f470c69d4263a95564a390a38d6d",
+    "bytes": 8617,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/controller.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/inference.py",
+    "sha256": "d0b5e73b593e4eafa0013cb2a8e2195bfcf38594fd0e60e7451a4e108542ba3e",
+    "bytes": 7090,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/inference.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/transfer/songdo/LOCAL_VALIDATION.md",
+    "sha256": "2d2db0fd4d8a9d8d78dccea82cfe20cb870dd5b0f5ce75fc8abaf23ddb409455",
+    "bytes": 1738,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/transfer/songdo/manifest.json",
+    "sha256": "4bb78d28e1f8045ce1a4b536eaf9f0f58849d324551a688433189f6ae17a38d9",
+    "bytes": 2351,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/transfer/songdo/mapping.py",
+    "sha256": "4401d77be3d9c49316499fd222781918baca39d12da402667e83aeec6349aa24",
+    "bytes": 1618,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/mapping.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/modeling.py",
+    "sha256": "f6c3499de92ca7257ed4b2f8e97149a73156ed8d5273b35cb1de71df2c98883b",
+    "bytes": 2885,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/modeling.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/README.md",
+    "sha256": "aa0f3c2239c02ec5cbd34cd49b7b2e5d191a51ecec02d375328534da8443f621",
+    "bytes": 4281,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/transfer/songdo/references/checkpoints.json",
+    "sha256": "9fadaf7f00ef31faf5e948848e677112ffe16e2da73a9e21ccf1e6517fe6243f",
+    "bytes": 2363,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/references/checkpoints.json"
+  },
+  {
+    "path": "implementations/transfer/songdo/references/frozen_model_assets.json",
+    "sha256": "cd20257e3c9ce683008be0981843d190323b222df1de7877739595a432c4cd3b",
+    "bytes": 775,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/references/frozen_model_assets.json"
+  },
+  {
+    "path": "implementations/transfer/songdo/references/songdo_author_README.md",
+    "sha256": "8718b1d25c78af7dc30d61c31cf74113ee490e69b13ede785c006dfd95e281a1",
+    "bytes": 18781,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/references/songdo_author_README.md"
+  },
+  {
+    "path": "implementations/transfer/songdo/references/source_bindings.json",
+    "sha256": "ff9e9ec937212f88615fa70115be7f77d4d4119fc5046c8b5b9e09d3cd97342d",
+    "bytes": 1462,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/references/source_bindings.json"
+  },
+  {
+    "path": "implementations/transfer/songdo/run.sh",
+    "sha256": "ca08ea132787233bbae3fc2a762313858d0117294ac0bd5f4a627157d08b706f",
+    "bytes": 227,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/run.sh"
+  },
+  {
+    "path": "implementations/transfer/songdo/spatial_task_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/start_all.sh",
+    "sha256": "6256bdda5663525272c9f7b4befc998f0d08fa52bb959a97b363e9657accb6ed",
+    "bytes": 137,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/start_all.sh"
+  },
+  {
+    "path": "implementations/transfer/songdo/test_release.py",
+    "sha256": "50ac8783f401b2b89442a1daf97dad4b69951b5ecf9421658f3609678260e279",
+    "bytes": 10410,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/test_release.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/watch_progress.py",
+    "sha256": "26c9030eb70e77b8da755454ab16542a194fb86067a888c972212b4dbce5f0af",
+    "bytes": 1687,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/watch_progress.py"
+  },
+  {
+    "path": "implementations/transfer/songdo/worker.py",
+    "sha256": "f4aaaea7930dc22be50e68ef309a748096b3aa317244ddaefc093bd8b9bd6945",
+    "bytes": 3599,
+    "source_relative_to_archive": "code/VisDrone_to_Songdo_SourceOnly_AutoDL/worker.py"
+  },
+  {
+    "path": "implementations/transfer/dior/admission.py",
+    "sha256": "e33f2a3ae88ec17aeb053b3469f1c5d098206de376fd246d49b976bc19f4e9a0",
+    "bytes": 2717,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/admission.py"
+  },
+  {
+    "path": "implementations/transfer/dior/author_eval/LICENSE-COCO-BSD.txt",
+    "sha256": "33b29e27282ec5c7c567b2845b40cf80a0e54207ee86cdbc80f9b63581c649ea",
+    "bytes": 1526,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/author_eval/LICENSE-COCO-BSD.txt"
+  },
+  {
+    "path": "implementations/transfer/dior/author_eval/LICENSE-MASKRCNN-BENCHMARK.txt",
+    "sha256": "a3a92ad0429b82684cbf1f4c932deeedee17e760b4012cf2d8991d98e6759964",
+    "bytes": 1065,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/author_eval/LICENSE-MASKRCNN-BENCHMARK.txt"
+  },
+  {
+    "path": "implementations/transfer/dior/author_eval/LICENSE-TinyBenchmark-MIT.txt",
+    "sha256": "5a75968d514f9ab9423264c07430162670731efc27edbed3daec618ab9faf464",
+    "bytes": 1068,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/author_eval/LICENSE-TinyBenchmark-MIT.txt"
+  },
+  {
+    "path": "implementations/transfer/dior/author_eval/tiny_cocoeval_original.py",
+    "sha256": "222b3173510e7a89bd03d077dce5d4a11e23ea6a7cd22afbbe930817b0886557",
+    "bytes": 32665,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/author_eval/tiny_cocoeval_original.py"
+  },
+  {
+    "path": "implementations/transfer/dior/build_release.py",
+    "sha256": "4d4867b5e8f5b004cdee931934c3669668035a5d128e72c7c306622f1c062133",
+    "bytes": 1928,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/transfer/dior/common.py",
+    "sha256": "5ff8098881a0aff32b273786e9ff43e4394973a7c8d55dcba20dcb75fd8c0312",
+    "bytes": 6862,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/common.py"
+  },
+  {
+    "path": "implementations/transfer/dior/completion.py",
+    "sha256": "e54665ad4084475baf10a8a445a5bd70416edbd28e83a376f4d43dea6b13d11f",
+    "bytes": 2502,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/completion.py"
+  },
+  {
+    "path": "implementations/transfer/dior/controller.py",
+    "sha256": "9a66bb7b9b5da27641ec7bcfae5b9e6cf36ef563643da363f299d04400607787",
+    "bytes": 6668,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/controller.py"
+  },
+  {
+    "path": "implementations/transfer/dior/dataset_verify.py",
+    "sha256": "edcd0903536db0c540269b13824f4b5aeddd467d9c209cba5adbbc7b977ddcb0",
+    "bytes": 2968,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/dataset_verify.py"
+  },
+  {
+    "path": "implementations/transfer/dior/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/dior/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/dior/inference.py",
+    "sha256": "61ea96e0e96e3aab651525767a6aab236dc7364d2cadf5b33d6bdc33d6d360f2",
+    "bytes": 6977,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/inference.py"
+  },
+  {
+    "path": "implementations/transfer/dior/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/transfer/dior/LOCAL_VALIDATION.md",
+    "sha256": "8e80af11e3e489ca9971b188906eca4a3216436c6dd39067f8a8bf900dbd7b99",
+    "bytes": 3568,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/transfer/dior/manifest.json",
+    "sha256": "3a5fac01f41865ef1c6ee18354dcbf720556c2bf683daaac6bac762a4a7e7806",
+    "bytes": 3510,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/transfer/dior/mapping.py",
+    "sha256": "5b108f0a960eaf5248237bce2b41af7167cd1f8605782002c93ae427c74f8064",
+    "bytes": 1111,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/mapping.py"
+  },
+  {
+    "path": "implementations/transfer/dior/modeling.py",
+    "sha256": "f6c3499de92ca7257ed4b2f8e97149a73156ed8d5273b35cb1de71df2c98883b",
+    "bytes": 2885,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/modeling.py"
+  },
+  {
+    "path": "implementations/transfer/dior/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/dior/README.md",
+    "sha256": "ac7ddbabb170a7a6fd0fae0f0936c6ac4c5a0555b33742f5d8041ce7dec58bdd",
+    "bytes": 5866,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/transfer/dior/references/author_evaluator.json",
+    "sha256": "ab06c11554c561bbdf5a0e159a182edd3569539968e792e048a0a466edb84ffc",
+    "bytes": 1604,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/references/author_evaluator.json"
+  },
+  {
+    "path": "implementations/transfer/dior/references/checkpoints.json",
+    "sha256": "9ddc2c44d26a5bdf533fc0b4be69f8c41166db25b385b1aed1ab4586085df8c8",
+    "bytes": 2313,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/references/checkpoints.json"
+  },
+  {
+    "path": "implementations/transfer/dior/references/datasets.json",
+    "sha256": "cf508fef3cac4a3738eaf7cc05b17ecfebedc2ec38cfad58881edc9451ba9aa8",
+    "bytes": 581,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/references/datasets.json"
+  },
+  {
+    "path": "implementations/transfer/dior/references/source_bindings.json",
+    "sha256": "ff9e9ec937212f88615fa70115be7f77d4d4119fc5046c8b5b9e09d3cd97342d",
+    "bytes": 1462,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/references/source_bindings.json"
+  },
+  {
+    "path": "implementations/transfer/dior/run.sh",
+    "sha256": "ca08ea132787233bbae3fc2a762313858d0117294ac0bd5f4a627157d08b706f",
+    "bytes": 227,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/run.sh"
+  },
+  {
+    "path": "implementations/transfer/dior/scoring.py",
+    "sha256": "5bf867210aaab7086f02b924fcf81090eeba9835f0481b4dd5ea9a283ec7699d",
+    "bytes": 4517,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/scoring.py"
+  },
+  {
+    "path": "implementations/transfer/dior/shutdown_after.py",
+    "sha256": "073769c6ceb5545d8322532fc4d7ba92eb138193075881ccf977c806f94b945f",
+    "bytes": 4560,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/shutdown_after.py"
+  },
+  {
+    "path": "implementations/transfer/dior/shutdown_safety.py",
+    "sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+    "bytes": 6835,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/transfer/dior/spatial_task_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/dior/start_all.sh",
+    "sha256": "6256bdda5663525272c9f7b4befc998f0d08fa52bb959a97b363e9657accb6ed",
+    "bytes": 137,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/start_all.sh"
+  },
+  {
+    "path": "implementations/transfer/dior/start_all_auto_shutdown.sh",
+    "sha256": "bfe2f5b05ee283f658934413165b50f80776a053131dbae9ba1486f008f49917",
+    "bytes": 153,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/start_all_auto_shutdown.sh"
+  },
+  {
+    "path": "implementations/transfer/dior/storage.py",
+    "sha256": "ceebb886abf2c49140c3c07dfe46080d815465ca973ce5e1b78f965889a5e978",
+    "bytes": 1583,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/storage.py"
+  },
+  {
+    "path": "implementations/transfer/dior/summary.py",
+    "sha256": "fa013b5980390b4d0b7130b23b3df96122601f642f1ecbf14cdc909da16b8f92",
+    "bytes": 3032,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/summary.py"
+  },
+  {
+    "path": "implementations/transfer/dior/target_data.py",
+    "sha256": "0f46c032dfb0800b70827dd6f0ffb4ac7810e90b32c6e99c1985cf0b3d5f10c2",
+    "bytes": 4051,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/target_data.py"
+  },
+  {
+    "path": "implementations/transfer/dior/test_release.py",
+    "sha256": "d5c8c4255ee2c3b0df19490bec8fdc4775cb3b9b582c63e8d71b3ec7dd9d64c4",
+    "bytes": 8472,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/test_release.py"
+  },
+  {
+    "path": "implementations/transfer/dior/watch_progress.py",
+    "sha256": "c18b77d89156b61cb80e7c02ec9244874970fbccaaa587d973f17388384f2683",
+    "bytes": 1788,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/watch_progress.py"
+  },
+  {
+    "path": "implementations/transfer/dior/worker.py",
+    "sha256": "02e73d3000778fea2117a9ef5dd53f7ea02b5b5f5f0fd541a17a26c5e686e56f",
+    "bytes": 3267,
+    "source_relative_to_archive": "code/VisDrone_to_DIOR_TinyPerson_ThreeSeeds_SourceOnly_AutoDL/worker.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/admission.py",
+    "sha256": "e33f2a3ae88ec17aeb053b3469f1c5d098206de376fd246d49b976bc19f4e9a0",
+    "bytes": 2717,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/admission.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/build_release.py",
+    "sha256": "536cbc23cabd413e0b79cc25c8343969481b380a39e5e2e9d848caa015765d3b",
+    "bytes": 2397,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/coco_eval.py",
+    "sha256": "c7a65a9890669e71abe83bb36e8706d216441f552670cfcd0b01e2bf12f82a7d",
+    "bytes": 3234,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/coco_eval.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/common.py",
+    "sha256": "dfa6a9d8d719ef7460beaa14a5132c05ea9101bc43fa6d9c1193032139f1c15b",
+    "bytes": 7269,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/common.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/controller.py",
+    "sha256": "604761e669d79786c4d4e1a34e8acde7632518529614a9816feefed15dcec62e",
+    "bytes": 7610,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/controller.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/inference.py",
+    "sha256": "bce96d792593df2cdd1219edb6efc3d7f14bb38b001e703dc24860cb18fc822f",
+    "bytes": 7078,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/inference.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/LOCAL_VALIDATION.md",
+    "sha256": "5f0026c4ef1869fe5024f5b623d4ebf26666a5fedec48905bb0d8bd7fa923c5d",
+    "bytes": 2000,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/manifest.json",
+    "sha256": "0da501bfe8e68af78bb8e1aaf3e02de8fc8f8d73bcb38495e8960b2f8e10b28f",
+    "bytes": 2521,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/mapping.py",
+    "sha256": "04ea84a82d7194d54d72f9c11ab1582ee551e95f09240c7ab86582433ac31842",
+    "bytes": 1605,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/mapping.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/modeling.py",
+    "sha256": "f6c3499de92ca7257ed4b2f8e97149a73156ed8d5273b35cb1de71df2c98883b",
+    "bytes": 2885,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/modeling.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/native_ap70.py",
+    "sha256": "34ade305fd92d5cb9b2c0d9f7732ec2a1d66d297acee797599d2a7bcfc8266b7",
+    "bytes": 2576,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/native_ap70.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/prepare_dataset.sh",
+    "sha256": "1018b375a694f8b3b620fdf526995649ca4c5e8567558620cde17486f2c3454b",
+    "bytes": 620,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/prepare_dataset.sh"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/README.md",
+    "sha256": "a42f6714fc89bd2ca47d0c9cf91d0da4377ff76a28fd2f76f3ed352064e67374",
+    "bytes": 4201,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/references/checkpoints.json",
+    "sha256": "50523d34077c122e40d3b11150de1e973f6f7c009859b7c4464df1ce1ae533c4",
+    "bytes": 791,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/references/checkpoints.json"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/references/frozen_model_assets.json",
+    "sha256": "cd20257e3c9ce683008be0981843d190323b222df1de7877739595a432c4cd3b",
+    "bytes": 775,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/references/frozen_model_assets.json"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/references/songdo_author_README.md",
+    "sha256": "8718b1d25c78af7dc30d61c31cf74113ee490e69b13ede785c006dfd95e281a1",
+    "bytes": 18781,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/references/songdo_author_README.md"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/references/source_bindings.json",
+    "sha256": "ff9e9ec937212f88615fa70115be7f77d4d4119fc5046c8b5b9e09d3cd97342d",
+    "bytes": 1462,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/references/source_bindings.json"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/run.sh",
+    "sha256": "ca08ea132787233bbae3fc2a762313858d0117294ac0bd5f4a627157d08b706f",
+    "bytes": 227,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/run.sh"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/spatial_task_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/start_all.sh",
+    "sha256": "d8efa5c48f542ea40c1b5dc17d294350f1a997bc0bb068cffc336df84bb8d7e3",
+    "bytes": 172,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/start_all.sh"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/test_release.py",
+    "sha256": "c29216945ec1f2b550bda0dd23d6a21884e30b899a19f0c3031b5251f366325c",
+    "bytes": 8006,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/test_release.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/uavdt_data.py",
+    "sha256": "a888ec6c1968ad1639181dfe05cccf39061317427a867d17a3e9aca2e8dede58",
+    "bytes": 5242,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/uavdt_data.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/watch_progress.py",
+    "sha256": "e8104f457b3de3bd0c7a46fb571669031f23109178e0db76bb92ca45521c97c5",
+    "bytes": 1877,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/watch_progress.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/worker.py",
+    "sha256": "43879a36b662304d0c2517a6dcf2e25663b2d9cfa29b45de5ba141a614dc9083",
+    "bytes": 4888,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seed1_SourceOnly_AutoDL/worker.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/admission.py",
+    "sha256": "e33f2a3ae88ec17aeb053b3469f1c5d098206de376fd246d49b976bc19f4e9a0",
+    "bytes": 2717,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/admission.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/build_release.py",
+    "sha256": "e0142c6cccc7fb3126ba7027c60e701d1bb7d9b7005cee69718a0bafdc7b7b4c",
+    "bytes": 3615,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/build_release.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/coco_eval.py",
+    "sha256": "c7a65a9890669e71abe83bb36e8706d216441f552670cfcd0b01e2bf12f82a7d",
+    "bytes": 3234,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/coco_eval.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/common.py",
+    "sha256": "4e3abfb24b16725b9cb570ee6b4f8a405df9403226144f282e33569a6e515c0a",
+    "bytes": 7538,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/common.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/controller.py",
+    "sha256": "54011eba922232736b6292a9d8c9932fdf016018a35a88519f8a45fd32709435",
+    "bytes": 6349,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/controller.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/e57_spatial_task_head.py",
+    "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9",
+    "bytes": 3078,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/e57_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/e58_spatial_task_head.py",
+    "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314",
+    "bytes": 5735,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/e58_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/inference.py",
+    "sha256": "bce96d792593df2cdd1219edb6efc3d7f14bb38b001e703dc24860cb18fc822f",
+    "bytes": 7078,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/inference.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/LICENSE-Ultralytics.txt",
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "bytes": 34523,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/LICENSE-Ultralytics.txt"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/LOCAL_VALIDATION.md",
+    "sha256": "22547203fea93dcfe407b4b32c1703d5f1e75f12855b3028b7326edcc8f094fd",
+    "bytes": 1866,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/LOCAL_VALIDATION.md"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/manifest.json",
+    "sha256": "44d6217248379a0b40ab125dcfe22610266163418a3c5dbe63526b950aa7ec32",
+    "bytes": 3010,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/manifest.json"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/mapping.py",
+    "sha256": "04ea84a82d7194d54d72f9c11ab1582ee551e95f09240c7ab86582433ac31842",
+    "bytes": 1605,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/mapping.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/modeling.py",
+    "sha256": "f6c3499de92ca7257ed4b2f8e97149a73156ed8d5273b35cb1de71df2c98883b",
+    "bytes": 2885,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/modeling.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/native_ap70.py",
+    "sha256": "34ade305fd92d5cb9b2c0d9f7732ec2a1d66d297acee797599d2a7bcfc8266b7",
+    "bytes": 2576,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/native_ap70.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/parent_spatial_task_head.py",
+    "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9",
+    "bytes": 4180,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/parent_spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/prepare_dataset.sh",
+    "sha256": "1018b375a694f8b3b620fdf526995649ca4c5e8567558620cde17486f2c3454b",
+    "bytes": 620,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/prepare_dataset.sh"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/README.md",
+    "sha256": "052148c926e27c4fdc0399f11238e9e37c9473f86688e27b2338558046c20b65",
+    "bytes": 2776,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/README.md"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/references/checkpoints.json",
+    "sha256": "e74951418d18fd6a98ca91793600c3989dd70ccfd654b82508293f3caa255977",
+    "bytes": 1577,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/references/checkpoints.json"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/references/frozen_model_assets.json",
+    "sha256": "cd20257e3c9ce683008be0981843d190323b222df1de7877739595a432c4cd3b",
+    "bytes": 775,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/references/frozen_model_assets.json"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/references/seed1_reference.json",
+    "sha256": "863bdf30270af4f2e5a38c733c394489a4c65585e0f133a434a748a994b2d8ff",
+    "bytes": 9494,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/references/seed1_reference.json"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/references/songdo_author_README.md",
+    "sha256": "8718b1d25c78af7dc30d61c31cf74113ee490e69b13ede785c006dfd95e281a1",
+    "bytes": 18781,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/references/songdo_author_README.md"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/references/source_bindings.json",
+    "sha256": "ff9e9ec937212f88615fa70115be7f77d4d4119fc5046c8b5b9e09d3cd97342d",
+    "bytes": 1462,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/references/source_bindings.json"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/run.sh",
+    "sha256": "ca08ea132787233bbae3fc2a762313858d0117294ac0bd5f4a627157d08b706f",
+    "bytes": 227,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/run.sh"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/shutdown_after.py",
+    "sha256": "c67b24a4918bc115e651d4b87ce19eb29adbe14b195f1961710937d44310ff99",
+    "bytes": 5879,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/shutdown_after.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/shutdown_safety.py",
+    "sha256": "c606221763f386a404096845e132e9ba8b8e9d169220b02df87d110947a95b1a",
+    "bytes": 6835,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/shutdown_safety.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/spatial_task_head.py",
+    "sha256": "31dfb24b6d7a187aceedcf6ec6a96abe1fdcb6ad06a0bfeec9b5c735e37c64fe",
+    "bytes": 4912,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/spatial_task_head.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/start_all.sh",
+    "sha256": "d8efa5c48f542ea40c1b5dc17d294350f1a997bc0bb068cffc336df84bb8d7e3",
+    "bytes": 172,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/start_all.sh"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/start_all_auto_shutdown.sh",
+    "sha256": "c12757dd5973414753e360b2ddbcd681a07b1e448c3b205bbb846cc21a10d9d6",
+    "bytes": 155,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/start_all_auto_shutdown.sh"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/summary.py",
+    "sha256": "0382798e82d826614fc7c1669a69da4cd2f968ddc187cd1fd58a817896ef863b",
+    "bytes": 3625,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/summary.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/test_release.py",
+    "sha256": "c9d49360e9a14b1f8cd55b7ecb684149be62cf18917966779ea422905dab5f01",
+    "bytes": 11375,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/test_release.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/uavdt_data.py",
+    "sha256": "a888ec6c1968ad1639181dfe05cccf39061317427a867d17a3e9aca2e8dede58",
+    "bytes": 5242,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/uavdt_data.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/watch_progress.py",
+    "sha256": "60c75df0ead507db404c583f12985de73d751a8a7ad62127b3460d747b5a9fa5",
+    "bytes": 2022,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/watch_progress.py"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/worker.py",
+    "sha256": "43879a36b662304d0c2517a6dcf2e25663b2d9cfa29b45de5ba141a614dc9083",
+    "bytes": 4888,
+    "source_relative_to_archive": "code/VisDrone_to_UAVDT_Seeds23_SourceOnly_AutoDL/worker.py"
+  },
+  {
+    "path": "implementations/data/songdo/audit_archives.py",
+    "sha256": "f4d3fdf3d5650ec8a5b24445ade25fda495207a9e70238a120381f8a8c56bf29",
+    "bytes": 5574,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/audit_archives.py"
+  },
+  {
+    "path": "implementations/data/songdo/check_ultralytics.py",
+    "sha256": "3caaf11e0423efbd8d493428bff6479eb7b592f4ee06befbd5972c458973d75d",
+    "bytes": 3125,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/check_ultralytics.py"
+  },
+  {
+    "path": "implementations/data/songdo/convert_songdo.py",
+    "sha256": "1c9bf79337929153578a54c8255cc0f9c6fb025c86d8c621359076df593f3b12",
+    "bytes": 16568,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/convert_songdo.py"
+  },
+  {
+    "path": "implementations/data/songdo/data.yaml",
+    "sha256": "2995907d5a5204f7773a4a75e961e9ba16a73c82d495df23264c46fb2c136f75",
+    "bytes": 339,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/data.yaml"
+  },
+  {
+    "path": "implementations/data/songdo/DATASET_README.md",
+    "sha256": "f12bd2e2531262625a7da6ea3481091afe78984a0edc7656cd64bcd0211a87dd",
+    "bytes": 4375,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/DATASET_README.md"
+  },
+  {
+    "path": "implementations/data/songdo/finalize_qa.py",
+    "sha256": "d6c81dd5988b056a5e4aa4f0858128f06cdc47d4b2f144576fcc02a78d9564ee",
+    "bytes": 5541,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/finalize_qa.py"
+  },
+  {
+    "path": "implementations/data/songdo/inspect_annotations.py",
+    "sha256": "f5e8870087dbc800c2b53729325361629bb1aae829f0dd8ed0ae1ae074c1cd17",
+    "bytes": 3875,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/inspect_annotations.py"
+  },
+  {
+    "path": "implementations/data/songdo/official/data.yaml",
+    "sha256": "30b62a5fa9056507c701b72c1c8cb56868508570d7c150475fbe189b56ad49c5",
+    "bytes": 2018,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/official/data.yaml"
+  },
+  {
+    "path": "implementations/data/songdo/official/LICENSE.txt",
+    "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+    "bytes": 18656,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/official/LICENSE.txt"
+  },
+  {
+    "path": "implementations/data/songdo/official/names.txt",
+    "sha256": "2b4323968f0bf6dd5252fddc6cfdb4212378259d34ede83c48a1c2d97b775468",
+    "bytes": 25,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/official/names.txt"
+  },
+  {
+    "path": "implementations/data/songdo/official/README.md",
+    "sha256": "8718b1d25c78af7dc30d61c31cf74113ee490e69b13ede785c006dfd95e281a1",
+    "bytes": 18781,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/official/README.md"
+  },
+  {
+    "path": "implementations/data/songdo/pack_dataset.py",
+    "sha256": "37f8f6fc322f5df83f9c5a7f17b217f8d306a334424a10ef7c11d38e8f0109c3",
+    "bytes": 3021,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/pack_dataset.py"
+  },
+  {
+    "path": "implementations/data/songdo/test_preparation.py",
+    "sha256": "c43753ca6002960a42c6cccf9e860741529dd879f19f1cb98ff247b4acf641fe",
+    "bytes": 2413,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/test_preparation.py"
+  },
+  {
+    "path": "implementations/data/songdo/verify_dataset.py",
+    "sha256": "5031eae83d36c81606130fe068cef961ede0cab4631dfa4d9f7ee50ad0d552d0",
+    "bytes": 11545,
+    "source_relative_to_archive": "code/SongdoVision_Preparation/verify_dataset.py"
+  },
+  {
+    "path": "implementations/data/dior/build.py",
+    "sha256": "9d0305d30cd947387c1503995f36b54eee2dd53e3eee5df173e772587196181f",
+    "bytes": 12735,
+    "source_relative_to_archive": "datasets/DIOR_TestOnly_Vehicle_v1/preparation_code/build.py"
+  },
+  {
+    "path": "implementations/data/dior/verify_dataset.py",
+    "sha256": "edcd0903536db0c540269b13824f4b5aeddd467d9c209cba5adbbc7b977ddcb0",
+    "bytes": 2968,
+    "source_relative_to_archive": "datasets/DIOR_TestOnly_Vehicle_v1/preparation_code/verify_dataset.py"
+  },
+  {
+    "path": "implementations/data/uavdt/build_test_package.py",
+    "sha256": "1d09272f060740f967ba7988d80e6e5949a63fdbf6da4d8da5f0b51bcd343860",
+    "bytes": 10428,
+    "source_relative_to_archive": "code/UAVDT_TestOnly_Prepare/build_test_package.py"
+  },
+  {
+    "path": "implementations/data/uavdt/verify_dataset.py",
+    "sha256": "1d5fa61a4018fb0f19e3933fb033ac190dbe43b2d44b30db08393e50e9e3a9a5",
+    "bytes": 1241,
+    "source_relative_to_archive": "code/UAVDT_TestOnly_Prepare/verify_dataset.py"
+  }
+]

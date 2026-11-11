@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="911" viewBox="0 0 1320 911">
+<defs><marker id="ink" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#292A2C"/></marker><marker id="burgundy" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#7B3F4B"/></marker><marker id="olive" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#536858"/></marker></defs>
+<rect width="1320" height="911" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#292A2C">
+<text x="18" y="32" text-anchor="start" font-size="27" font-weight="bold" fill="#292A2C">(a) Encoding states and retained readouts</text>
+<rect x="18" y="79" width="122" height="52" fill="#F6F3ED" stroke="#959188" stroke-width="1.6"/>
+<text x="79" y="112" text-anchor="middle" font-size="25" font-weight="normal" fill="#292A2C">Input X</text>
+<path d="M140,105 H204" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<text x="174" y="84" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C">1 × 1</text>
+<rect x="205" y="74" width="164" height="62" fill="#F5F2EC" stroke="#959188" stroke-width="1.6"/>
+<text x="287" y="114" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C">Z0</text>
+<path d="M369,105 H484" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<text x="427.5" y="84" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C">3 × 3</text>
+<path d="M287,136 V162" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="180" y="163" width="214" height="51" fill="#F6F3ED" stroke="#959188" stroke-width="1.6"/>
+<text x="287" y="196" text-anchor="middle" font-size="23" font-weight="normal" fill="#292A2C">Identity</text>
+<path d="M287,214 V243" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="205" y="244" width="164" height="53" fill="#F5F2EC" stroke="#959188" stroke-width="1.6"/>
+<text x="287" y="278" text-anchor="middle" font-size="27" font-weight="bold" fill="#292A2C">B0</text>
+<rect x="486" y="74" width="164" height="62" fill="#E5E0D8" stroke="#959188" stroke-width="1.6"/>
+<text x="568" y="114" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C">Z1</text>
+<path d="M650,105 H765" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<text x="708.5" y="84" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C">3 × 3</text>
+<path d="M568,136 V162" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="461" y="163" width="214" height="51" fill="#F5EBED" stroke="#959188" stroke-width="1.6"/>
+<text x="568" y="196" text-anchor="middle" font-size="23" font-weight="normal" fill="#292A2C">G1 + identity</text>
+<path d="M568,214 V243" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="486" y="244" width="164" height="53" fill="#E5E0D8" stroke="#959188" stroke-width="1.6"/>
+<text x="568" y="278" text-anchor="middle" font-size="27" font-weight="bold" fill="#292A2C">B1</text>
+<rect x="767" y="74" width="164" height="62" fill="#D4CFC6" stroke="#959188" stroke-width="1.6"/>
+<text x="849" y="114" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C">Z2</text>
+<path d="M931,105 H1046" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<text x="989.5" y="84" text-anchor="middle" font-size="21" font-weight="normal" fill="#292A2C">3 × 3</text>
+<path d="M849,136 V162" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="742" y="163" width="214" height="51" fill="#F5EBED" stroke="#959188" stroke-width="1.6"/>
+<text x="849" y="196" text-anchor="middle" font-size="23" font-weight="normal" fill="#292A2C">G2 + identity</text>
+<path d="M849,214 V243" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="767" y="244" width="164" height="53" fill="#D4CFC6" stroke="#959188" stroke-width="1.6"/>
+<text x="849" y="278" text-anchor="middle" font-size="27" font-weight="bold" fill="#292A2C">B2</text>
+<rect x="1048" y="74" width="164" height="62" fill="#C2BBB1" stroke="#959188" stroke-width="1.6"/>
+<text x="1130" y="114" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C">Z3</text>
+<path d="M1130,136 V162" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="1023" y="163" width="214" height="51" fill="#F5EBED" stroke="#959188" stroke-width="1.6"/>
+<text x="1130" y="196" text-anchor="middle" font-size="23" font-weight="normal" fill="#292A2C">G3 + identity</text>
+<path d="M1130,214 V243" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<rect x="1048" y="244" width="164" height="53" fill="#C2BBB1" stroke="#959188" stroke-width="1.6"/>
+<text x="1130" y="278" text-anchor="middle" font-size="27" font-weight="bold" fill="#292A2C">B3</text>
+<text x="660" y="327" text-anchor="middle" font-size="22" font-weight="normal" fill="#68665F">P2/P3: enhanced B1–B3; P4/P5: Bk = Zk. Every B has 96 channels.</text>
+<path d="M18,350 H1302" fill="none" stroke="#959188" stroke-width="1"/>
+<text x="18" y="389" text-anchor="start" font-size="27" font-weight="bold" fill="#292A2C">(b) Spatial weights and task-specific fusion</text>
+<rect x="28" y="423" width="250" height="72" fill="#F6F3ED" stroke="#959188" stroke-width="1.6"/>
+<text x="153" y="451" text-anchor="middle" font-size="25" font-weight="bold" fill="#292A2C">Readout bank</text>
+<text x="153" y="479" text-anchor="middle" font-size="24" font-weight="normal" fill="#292A2C">B0, B1, B2, B3</text>
+<path d="M278,459 H1170 V667" fill="none" stroke="#292A2C" stroke-width="2" marker-end="url(#ink)"/>
+<text x="708" y="448" text-anchor="middle" font-size="22" font-weight="bold" fill="#292A2C">Uncompressed values: 4 × (N × 96 × H × W)</text>
+<path d="M1100,459 V768 H1170 V790" fill="none" stroke="#292A2C" stroke-width="2" marker-end="url(#ink)"/>
+<path d="M153,495 V521" fill="none" stroke="#292A2C" stroke-width="2.2" marker-end="url(#ink)"/>
+<text x="215" y="518" text-anchor="start" font-size="20" font-weight="normal" fill="#68665F">Channel concat</text>
+<rect x="28" y="522" width="496" height="88" fill="#F5EBED" stroke="#7B3F4B" stroke-width="1.6"/>
+<text x="276" y="553" text-anchor="middle" font-size="25" font-weight="normal" fill="#292A2C">1 × 1: 384 → 32 + SiLU</text>
+<text x="276" y="584" text-anchor="middle" font-size="23" font-weight="normal" fill="#292A2C">DW 3 × 3 + SiLU; 1 × 1: 32 → 8</text>
+<path d="M276,610 V640" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<rect x="28" y="641" width="496" height="83" fill="#F5EBED" stroke="#7B3F4B" stroke-width="1.6"/>
+<text x="276" y="672" text-anchor="middle" font-size="25" font-weight="normal" fill="#292A2C">Reshape: N × 2 × 4 × H × W</text>
+<text x="276" y="705" text-anchor="middle" font-size="23" font-weight="normal" fill="#292A2C">Softmax along the four depths</text>
+<path d="M524,682 H578 V688 H622" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<text x="790" y="646" text-anchor="middle" font-size="23" font-weight="normal" fill="#7B3F4B">A_cls: four position-wise weights</text>
+<rect x="623" y="666" width="78" height="44" fill="#F5F2EC" stroke="#7B3F4B" stroke-width="1.6"/>
+<text x="662" y="696" text-anchor="middle" font-size="24" font-weight="normal" fill="#7B3F4B">0</text>
+<rect x="706" y="666" width="78" height="44" fill="#E5E0D8" stroke="#7B3F4B" stroke-width="1.6"/>
+<text x="745" y="696" text-anchor="middle" font-size="24" font-weight="normal" fill="#7B3F4B">1</text>
+<rect x="789" y="666" width="78" height="44" fill="#D4CFC6" stroke="#7B3F4B" stroke-width="1.6"/>
+<text x="828" y="696" text-anchor="middle" font-size="24" font-weight="normal" fill="#7B3F4B">2</text>
+<rect x="872" y="666" width="78" height="44" fill="#C2BBB1" stroke="#7B3F4B" stroke-width="1.6"/>
+<text x="911" y="696" text-anchor="middle" font-size="24" font-weight="normal" fill="#7B3F4B">3</text>
+<path d="M950,688 H1092 Q1100,674 1108,688 H1149" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<circle cx="1170" cy="688" r="21" stroke="#292A2C" fill="#F6F3ED" stroke-width="2"/>
+<text x="1170" y="696" text-anchor="middle" font-size="26" font-weight="bold" fill="#292A2C">Σ</text>
+<path d="M1191,688 H1242" fill="none" stroke="#7B3F4B" stroke-width="2.2" marker-end="url(#burgundy)"/>
+<text x="1272" y="696" text-anchor="middle" font-size="22" font-weight="bold" fill="#7B3F4B">F_cls</text>
+<path d="M276,724 V811 H622" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<text x="790" y="769" text-anchor="middle" font-size="23" font-weight="normal" fill="#536858">A_reg: four position-wise weights</text>
+<rect x="623" y="789" width="78" height="44" fill="#F5F2EC" stroke="#536858" stroke-width="1.6"/>
+<text x="662" y="819" text-anchor="middle" font-size="24" font-weight="normal" fill="#536858">0</text>
+<rect x="706" y="789" width="78" height="44" fill="#E5E0D8" stroke="#536858" stroke-width="1.6"/>
+<text x="745" y="819" text-anchor="middle" font-size="24" font-weight="normal" fill="#536858">1</text>
+<rect x="789" y="789" width="78" height="44" fill="#D4CFC6" stroke="#536858" stroke-width="1.6"/>
+<text x="828" y="819" text-anchor="middle" font-size="24" font-weight="normal" fill="#536858">2</text>
+<rect x="872" y="789" width="78" height="44" fill="#C2BBB1" stroke="#536858" stroke-width="1.6"/>
+<text x="911" y="819" text-anchor="middle" font-size="24" font-weight="normal" fill="#536858">3</text>
+<path d="M950,811 H1149" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<circle cx="1170" cy="811" r="21" stroke="#292A2C" fill="#F6F3ED" stroke-width="2"/>
+<text x="1170" y="819" text-anchor="middle" font-size="26" font-weight="bold" fill="#292A2C">Σ</text>
+<path d="M1191,811 H1242" fill="none" stroke="#536858" stroke-width="2.2" marker-end="url(#olive)"/>
+<text x="1272" y="819" text-anchor="middle" font-size="22" font-weight="bold" fill="#536858">F_reg</text>
+<text x="655" y="874" text-anchor="middle" font-size="22" font-weight="normal" fill="#68665F">Σ: sum of readouts B weighted by A. The four weights sum to 1 and are shared across 96 channels.</text>
+<text x="655" y="904" text-anchor="middle" font-size="21" font-weight="normal" fill="#68665F">Residual output projections and original-X bypass: see Figure 2 and Equation (8).</text>
+</g></svg>

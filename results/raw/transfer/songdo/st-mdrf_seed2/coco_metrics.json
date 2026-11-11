@@ -1,0 +1,112 @@
+{
+  "AP_percent": 30.564504623240108,
+  "AP50_percent": 47.70179473994135,
+  "AP75_percent": 36.43676096964511,
+  "AP_small_percent": 10.526683293088043,
+  "AP_medium_percent": 28.29006685792806,
+  "AP_large_percent": 24.41768621865448,
+  "AR1_percent": 11.726195901937864,
+  "AR10_percent": 28.16721708331177,
+  "AR100_percent": 43.028548845818335,
+  "AR_small_percent": 18.51039605678781,
+  "AR_medium_percent": 41.49524843711343,
+  "AR_large_percent": 53.261406154805144,
+  "per_class_AP_percent": {
+    "car": 60.08385489489686,
+    "bus": 44.47858673887512,
+    "truck": 8.45244507026502,
+    "motorcycle": 9.24313178892344
+  },
+  "GT_counts": {
+    "car": 49862,
+    "bus": 1766,
+    "truck": 3080,
+    "motorcycle": 820
+  },
+  "images": 1084,
+  "gt_sha256": "779d8e5c148dcff354d04dbb409a69f596c3a6bfc660ed6ffd89f54f7ef065e8",
+  "maxDets": [
+    1,
+    10,
+    100
+  ],
+  "protocol": {
+    "id": "VisDrone10_to_Songdo4_source_only_v1",
+    "source": "VisDrone2019",
+    "target": "Songdo Vision v2 official test",
+    "source_classes": [
+      "pedestrian",
+      "people",
+      "bicycle",
+      "car",
+      "van",
+      "truck",
+      "tricycle",
+      "awning-tricycle",
+      "bus",
+      "motor"
+    ],
+    "target_classes": [
+      "car",
+      "bus",
+      "truck",
+      "motorcycle"
+    ],
+    "mapping": {
+      "car": [
+        "car",
+        "van"
+      ],
+      "bus": [
+        "bus"
+      ],
+      "truck": [
+        "truck"
+      ],
+      "motorcycle": [
+        "motor"
+      ]
+    },
+    "score_merge": "per anchor max(car,van); other mapped scores unchanged; never sum independent sigmoid scores",
+    "postprocess": "map BEFORE best-class selection, class-aware NMS and top500; discard unmapped classes",
+    "predict": {
+      "imgsz": 640,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 500,
+      "half": false,
+      "augment": false,
+      "rect": false,
+      "agnostic_nms": false,
+      "save": false,
+      "save_txt": false,
+      "save_conf": false,
+      "verbose": false
+    },
+    "batch": 4,
+    "multi_label": false,
+    "max_nms": 30000,
+    "preprocessing": "Pinned 8.3.0 native LetterBox: max side640, minimum stride padding for same-shape batches; mixed orientations square-pad. Actual BCHW shapes recorded; rect flag does not override this old predictor.",
+    "evaluator": "standard pycocotools COCO bbox AP@[.50:.05:.95]",
+    "maxDets": [
+      1,
+      10,
+      100
+    ],
+    "GT": "original author v2 integer COCO boxes/areas/IDs, all four classes",
+    "AP_small": "original-image area<32^2, not the resized640 size",
+    "selection": "all six existing source-val-selected best.pt, never target-selected",
+    "adaptation": false,
+    "training": false,
+    "target_BN_updates": false,
+    "shutdown": false,
+    "caveat": "Source-only direct transfer, not novel-class/open-vocabulary zero-shot. Target retraining is a different experiment."
+  },
+  "status": "completed",
+  "key": "e60_seed2",
+  "seed": 2,
+  "checkpoint_sha256": "03e58654cd47412b4122e4c1fe0a7880844e37692931289ebf59f2e1d65130d0",
+  "prediction_sha256": "77e450ad354a1075fda7219b37a7c02a95b76f62905535203061d82bdf5118cc",
+  "seconds": 300.2385009266436,
+  "finished_at": "2026-10-23T16:22:12+08:00"
+}

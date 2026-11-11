@@ -1,0 +1,34 @@
+{
+  "e1_seed2": {
+    "relative_path": "runs/e1_yolo11s_p2add_img640_seed2/weights/best.pt",
+    "sha256": "271901db9ff32c5b3a7735f218779eb27e1e1a6bc6604d3c77d37e338fd039d4",
+    "source_dataset": "VisDrone2019",
+    "source_seed": 2,
+    "selection": "source val-selected best, not target selected",
+    "original_binding": "Paper_NoTrain_Supplement_AutoDL/inputs.json"
+  },
+  "e60_seed2": {
+    "relative_path": "runs/e60a_e58_group_residual_encoding_img640_seed2_200e/weights/best.pt",
+    "sha256": "03e58654cd47412b4122e4c1fe0a7880844e37692931289ebf59f2e1d65130d0",
+    "source_dataset": "VisDrone2019",
+    "source_seed": 2,
+    "selection": "source val-selected best, not target selected",
+    "original_binding": "Paper_NoTrain_Supplement_AutoDL/inputs.json"
+  },
+  "e1_seed3": {
+    "relative_path": "runs/e1_yolo11s_p2add_img640_seed3/weights/best.pt",
+    "sha256": "11e656c7cdeb9112d303bae0d68c32a874031a7734ad88fda1f37fa9c88778eb",
+    "source_dataset": "VisDrone2019",
+    "source_seed": 3,
+    "selection": "source val-selected best, not target selected",
+    "original_binding": "Paper_NoTrain_Supplement_AutoDL/inputs.json"
+  },
+  "e60_seed3": {
+    "relative_path": "runs/e60a_e58_group_residual_encoding_img640_seed3_200e/weights/best.pt",
+    "sha256": "92e0bcf4d43cb889d8558e679dc4c171cb6b97d410262acb32d92038a160f385",
+    "source_dataset": "VisDrone2019",
+    "source_seed": 3,
+    "selection": "source val-selected best, not target selected",
+    "original_binding": "Paper_NoTrain_Supplement_AutoDL/inputs.json"
+  }
+}

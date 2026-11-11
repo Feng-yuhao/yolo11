@@ -1,0 +1,27 @@
+{
+  "AP_percent": 10.85749606359809,
+  "AP50_percent": 21.711770135087846,
+  "AP75_percent": 9.360335905606423,
+  "AP_small_percent": 4.450751376622679,
+  "AP_medium_percent": 39.04135711468895,
+  "AP_large_percent": 10.30874985977851,
+  "images": 11738,
+  "positive_boxes": 26639,
+  "ignored_entries": 1,
+  "gt_sha256": "ac5c83182aaa49249d66c4a7c13d3ffe87828d731e159cbaf8d1ebab7723339d",
+  "evaluator": "standard pycocotools COCO AP",
+  "maxDets": [
+    1,
+    10,
+    100
+  ],
+  "native_maxDets": null,
+  "status": "completed",
+  "key": "dior_e1_seed3",
+  "checkpoint_sha256": "11e656c7cdeb9112d303bae0d68c32a874031a7734ad88fda1f37fa9c88778eb",
+  "prediction_sha256": "79a748ae1e3e1ac485afac77e762480701a4dad14088dc8fa232f9b22e0367e3",
+  "seconds": 426.827287113294,
+  "finished_at": "2026-10-24T14:06:46+08:00",
+  "gzip_readback_verified": true,
+  "engineering_only": false
+}

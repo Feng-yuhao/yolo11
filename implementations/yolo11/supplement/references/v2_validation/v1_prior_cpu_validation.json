@@ -1,0 +1,136 @@
+{
+  "status": "local_checks_passed",
+  "at": "2026-10-25T16:43:58+08:00",
+  "formal_training_started": false,
+  "server_connected": false,
+  "AutoDL_CUDA_check_claimed": false,
+  "unchanged_frozen_files_verified": 66,
+  "python_modules_parsed": 44,
+  "safety_regression_tests": 20,
+  "safety_test_output_sha256": "fc9de6af3a3505b42eca5c34912149a51f44fe6754da2883c0ce177c7bc73476",
+  "seven_CPU_model_checks": {
+    "shared_s2": {
+      "status": "passed",
+      "report_sha256": "5c1952968cc6c8d56e6ebfe4b9e228adbc9f3e3eff99d455ea7744a2a590d0e4",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "e58_s3": {
+      "status": "passed",
+      "report_sha256": "6f3db01e17321f224cb4c8a6bc7d99205e44ec3bcea4812d1abf64faafb6934d",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "uniform_s2": {
+      "status": "passed",
+      "report_sha256": "bf72b0b88b60a51eee9c499fbd40226293be80357643f610cea516bbe32f6691",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "td_s2": {
+      "status": "passed",
+      "report_sha256": "d60c219281117d16bb895da972dc01a5a9d062882650c1beff8c6543e9b85c27",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "shared_s3": {
+      "status": "passed",
+      "report_sha256": "d176150b1268b79429b0ee8a4f7423042ecc892d2421415ec4da6b24b1fe3a01",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "td_s3": {
+      "status": "passed",
+      "report_sha256": "933d84aa85b592a80242224480277b6280bc684fe61b639e9a6d1b0df63de106",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    },
+    "uniform_s3": {
+      "status": "passed",
+      "report_sha256": "e06a3abf1e30e528288a6fb04393f0e2de1d42d3f0b04df210c70947f38be7f1",
+      "torch": "2.6.0+cu124",
+      "CPU_only": true,
+      "initial_prediction_loss_common_gradients_exact": true,
+      "branch_updated": true,
+      "checkpoint_roundtrip": true
+    }
+  },
+  "full_CPU_suites_and_synthetic_prediction_scoring": {
+    "shared_s2": {
+      "archived_full_CPU_suite_passed": true,
+      "synthetic_predictor_and_official_scorer": true,
+      "report_sha256": "5c1952968cc6c8d56e6ebfe4b9e228adbc9f3e3eff99d455ea7744a2a590d0e4"
+    },
+    "uniform_s2": {
+      "archived_full_CPU_suite_passed": true,
+      "synthetic_predictor_and_official_scorer": true,
+      "report_sha256": "bf72b0b88b60a51eee9c499fbd40226293be80357643f610cea516bbe32f6691"
+    },
+    "e58_s3": {
+      "archived_full_CPU_suite_passed": true,
+      "synthetic_predictor_and_official_scorer": true,
+      "report_sha256": "6f3db01e17321f224cb4c8a6bc7d99205e44ec3bcea4812d1abf64faafb6934d"
+    },
+    "td_s2": {
+      "archived_full_CPU_suite_passed": true,
+      "synthetic_predictor_and_official_scorer": true,
+      "report_sha256": "d60c219281117d16bb895da972dc01a5a9d062882650c1beff8c6543e9b85c27"
+    }
+  },
+  "driver_interface_checks": {
+    "shared_s2": {
+      "status": "passed",
+      "report_sha256": "66155f79af273365efe7d89d1d13a7a3480ab481dd829b52b75b16f981944275",
+      "real_val_annotation_audit": true,
+      "native_callback_optimizer_checkpoint_interfaces": true
+    },
+    "uniform_s2": {
+      "status": "passed",
+      "report_sha256": "f6d84d87d1fb0b3171a0c25b0c32b31715c38b72821db1ebb7829ca7552d8a66",
+      "real_val_annotation_audit": true,
+      "native_callback_optimizer_checkpoint_interfaces": true
+    },
+    "e58_s3": {
+      "status": "passed",
+      "report_sha256": "a81cb7b4217070e14e89e47945a655def28e0362710ac66b55722295c1312378",
+      "real_val_annotation_audit": true,
+      "native_callback_optimizer_checkpoint_interfaces": true
+    },
+    "td_s2": {
+      "status": "passed",
+      "report_sha256": "21507bec41f7c54ddf087b7f043b31d4fa2c1e393653df378368ca08d593db72",
+      "real_val_annotation_audit": true,
+      "native_callback_optimizer_checkpoint_interfaces": true
+    }
+  },
+  "checked_driver_sha256": {
+    "common7.py": "55939f44578916c2dfdbb71e8af90a77289b214f46bb5cf7271ac1a01c1643c0",
+    "controller.py": "fe2623295e7e1011220fcc455e5d36a57be1b0889d5bffe7a7183ab93e927331",
+    "worker.py": "b1b2dd73cee08d99f8a3871ad2365efb2116e2f570a3e270bf51f365b16bce3c",
+    "engine7.py": "d6a2c85ca17db432781cd14a0417568e5a94fb8c77ed554f1aed647143376dba",
+    "scoring7.py": "10c42af8dec6c1411c933427fa3385820f2eae271d022dc7fd2009cd9d7001a7",
+    "summary7.py": "50b436d5305d01392b7203c59ea6acd921421dcb50053f6ce723995447510741",
+    "preservation7.py": "16dc815222d23a52c7d649ddc6e9a64dad627a205f17b481aff9798a4cbc5aa4",
+    "shutdown_guard.py": "f7decdabc26c7ffe520ae7b2aab7ccd2b3316cfd0f9c360fccaba85baa25a932",
+    "watch_progress.py": "7f5b0c271fe3225806d2c6730117d63ae70615ac6f486127e98f83cd4bb8cbe2"
+  },
+  "boundary": "CPU tests used local torch2.6.0+cu124, not server torch2.5.1+cu121. No real training or shutdown was invoked. Real CUDA, 640/b16, native val32 and pair gates run on AutoDL before formal jobs."
+}

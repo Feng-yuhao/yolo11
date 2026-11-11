@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1038" viewBox="0 0 1500 1038">
+<defs><marker id="arrow" markerWidth="11" markerHeight="11" refX="10" refY="5.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,5.5 L0,11 Z" fill="#292A2C"/></marker><marker id="green" markerWidth="11" markerHeight="11" refX="10" refY="5.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,5.5 L0,11 Z" fill="#536858"/></marker></defs>
+<rect width="1500" height="1038" fill="white"/>
+<g fill="#292A2C" font-family="Arial, Helvetica, sans-serif">
+<text x="177" y="35" text-anchor="middle" font-size="33" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">骨干网络</text>
+<text x="785" y="35" text-anchor="middle" font-size="33" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">特征融合颈部网络</text>
+<text x="1335" y="35" text-anchor="middle" font-size="33" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">检测头</text>
+<text x="605" y="82" text-anchor="middle" font-size="27" font-weight="normal" fill="#68665F" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">自顶向下融合</text>
+<text x="990" y="82" text-anchor="middle" font-size="27" font-weight="normal" fill="#68665F" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">自底向上融合</text>
+<rect x="40" y="70" width="275" height="60" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="177" y="109" text-anchor="middle" font-size="30" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">输入 640 × 640</text>
+<rect x="40" y="155" width="275" height="65" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="177.5" y="184" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Conv s2 (0)</text>
+<text x="177.5" y="212" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">32 × 320 × 320</text>
+<rect x="40" y="250" width="275" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="177.5" y="282" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P2 (1–2)</text>
+<text x="177.5" y="315" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Conv s2 → C3k2</text>
+<text x="177.5" y="347" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">128 × 160 × 160</text>
+<rect x="40" y="390" width="275" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="177.5" y="422" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P3 (3–4)</text>
+<text x="177.5" y="455" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Conv s2 → C3k2</text>
+<text x="177.5" y="487" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">256 × 80 × 80</text>
+<rect x="40" y="583" width="275" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="177.5" y="615" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P4 (5–6)</text>
+<text x="177.5" y="648" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Conv s2 → C3k2</text>
+<text x="177.5" y="680" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">256 × 40 × 40</text>
+<rect x="40" y="778" width="275" height="145" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="177.5" y="809" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P5 (7–10)</text>
+<text x="177.5" y="842" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Conv s2 → C3k2</text>
+<text x="177.5" y="874" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">SPPF → C2PSA</text>
+<text x="177.5" y="907" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">512 × 20 × 20</text>
+<path d="M177,130 V155" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M177,220 V250" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M177,360 V390" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M177,500 V583" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M177,693 V778" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="440" y="583" width="330" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="605.0" y="615" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P4 (11–13)</text>
+<text x="605.0" y="648" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Up ×2 → Cat → C3k2</text>
+<text x="605.0" y="680" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">256 × 40 × 40</text>
+<rect x="440" y="390" width="330" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="605.0" y="422" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P3 (14–16)</text>
+<text x="605.0" y="455" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Up ×2 → Cat → C3k2</text>
+<text x="605.0" y="487" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">128 × 80 × 80</text>
+<rect x="440" y="250" width="330" height="110" fill="#EAF0E8" stroke="#536858" stroke-width="2"/>
+<text x="605.0" y="282" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">新增 P2（23–25）</text>
+<text x="605.0" y="315" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Up ×2 → Cat → C3k2</text>
+<text x="605.0" y="347" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">128 × 160 × 160</text>
+<path d="M315,850 H365 V668 H440" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M315,638 H440" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M315,445 H440" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M315,305 H440" fill="none" stroke="#536858" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M605,583 V500" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M605,390 V360" fill="none" stroke="#536858" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#green)"/>
+<rect x="855" y="500" width="270" height="65" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="990" y="540" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Conv s2 (17)</text>
+<rect x="855" y="583" width="270" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="990.0" y="615" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P4 (18–19)</text>
+<text x="990.0" y="648" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Cat → C3k2</text>
+<text x="990.0" y="680" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">256 × 40 × 40</text>
+<rect x="855" y="708" width="270" height="65" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="990" y="748" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Conv s2 (20)</text>
+<rect x="855" y="798" width="270" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="990.0" y="830" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P5 (21–22)</text>
+<text x="990.0" y="863" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Cat → C3k2</text>
+<text x="990.0" y="895" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">512 × 20 × 20</text>
+<path d="M990,445 V500" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M990,565 V583" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M770,638 H855" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M990,693 V708" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M990,773 V798" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M177,923 V958 H990 V908" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="590" y="948" text-anchor="middle" font-size="25" font-weight="normal" fill="#68665F" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">骨干 P5</text>
+<rect x="1210" y="250" width="250" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="1335.0" y="282" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P2 预测</text>
+<text x="1335.0" y="315" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">分类 +</text>
+<text x="1335.0" y="347" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">边界框回归</text>
+<rect x="1210" y="390" width="250" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="1335.0" y="422" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P3 预测</text>
+<text x="1335.0" y="455" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">分类 +</text>
+<text x="1335.0" y="487" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">边界框回归</text>
+<rect x="1210" y="583" width="250" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="1335.0" y="615" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P4 预测</text>
+<text x="1335.0" y="648" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">分类 +</text>
+<text x="1335.0" y="680" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">边界框回归</text>
+<rect x="1210" y="798" width="250" height="110" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="1335.0" y="830" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">P5 预测</text>
+<text x="1335.0" y="863" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">分类 +</text>
+<text x="1335.0" y="895" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">边界框回归</text>
+<path d="M770,305 H1210" fill="none" stroke="#536858" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M770,445 H1210" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<circle cx="990" cy="445" r="5" fill="#292A2C"/>
+<path d="M1125,638 H1210" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1125,853 H1210" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1460,305 H1482" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1460,445 H1482" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1460,638 H1482" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1460,853 H1482" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1482,305 V945 H1460" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1210" y="918" width="250" height="55" fill="#F6F3ED" stroke="#959188" stroke-width="2"/>
+<text x="1335" y="955" text-anchor="middle" font-size="29" font-weight="bold" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">解码 + NMS</text>
+<path d="M1335,973 V994" fill="none" stroke="#292A2C" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1335" y="1026" text-anchor="middle" font-size="27" font-weight="normal" fill="#292A2C" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">检测结果</text>
+<rect x="40" y="993" width="32" height="22" fill="#EAF0E8" stroke="#536858" stroke-width="2"/>
+<text x="85" y="1013" text-anchor="start" font-size="26" font-weight="normal" fill="#536858" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">新增 P2 分支</text>
+<text x="440" y="1013" text-anchor="start" font-size="25" font-weight="normal" fill="#68665F" font-family="Arial, Microsoft YaHei, SimSun, sans-serif">Up ×2：最近邻上采样；Cat：沿通道拼接</text>
+</g></svg>

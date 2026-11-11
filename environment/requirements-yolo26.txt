@@ -1,0 +1,19 @@
+# Install torch 2.5.1 / torchvision 0.20.1 cu121 separately as in README.
+# Frozen Ultralytics sources are supplied; do not install a replacement ultralytics package.
+numpy==1.26.4
+matplotlib>=3.8,<3.11
+opencv-python==4.10.0.84
+Pillow>=10,<13
+PyYAML>=6,<7
+requests>=2.31,<3
+scipy>=1.13,<1.16
+pandas>=2.2,<2.4
+seaborn==0.13.2
+tqdm==4.67.1
+psutil>=5.9
+py-cpuinfo>=9
+ultralytics-thop>=2.2.2,<3
+pycocotools==2.0.11
+polars>=1,<2
+nvidia-ml-py>=12
+ultralytics-platform>=0.1.45; python_version >= "3.11"

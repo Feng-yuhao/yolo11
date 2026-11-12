@@ -6,9 +6,13 @@ Authors: Yuhao Feng and Xuyang Wang. School of Computer Science and Artificial I
 
 ST-MDRF retains four encoding-depth readouts at each pyramid level, enhances intermediate readouts at P2/P3 with grouped residual units, and fuses them with spatially varying classification/regression weights. The original prediction towers remain in use.
 
+## Supplementary placement experiment (S1)
+
+The additional archived **seed-1 validation** comparison of grouped enhancement at P2/P3 versus P2/P3/P4/P5 is documented in [Supplementary Material S1](docs/SUPPLEMENTARY_S1.md). [View the unrounded results](results/supplementary/s1_placement_validation_seed1.csv) or [download its complete code, checkpoint, predictions, and original records](https://github.com/Feng-yuhao/yolo11/releases/download/ivc-supplement-s1-v1.0.0/Supplementary_Material_S1_Placement.zip). S1 is separate from the main three-seed test-dev experiments and does not change the main release's stated counts.
+
 ## Scope and results
 
-This release contains the preserved implementations and original results for **nine configurations and three training seeds (27 source training runs)**, plus **18 frozen-weight target evaluations** on Songdo Vision v2, the DIOR vehicle task, and UAVDT. The target evaluations reuse the six YOLO11s-P2/ST-MDRF source checkpoints; they do not retrain target models.
+The main reproduction release contains the preserved implementations and original results for **nine configurations and three training seeds (27 source training runs)**, plus **18 frozen-weight target evaluations** on Songdo Vision v2, the DIOR vehicle task, and UAVDT. The target evaluations reuse the six YOLO11s-P2/ST-MDRF source checkpoints; they do not retrain target models.
 
 | Configuration | VisDrone2019 test-dev AP (%) |
 |---|---:|

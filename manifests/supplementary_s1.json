@@ -1,0 +1,79 @@
+{
+  "name": "Supplementary Material S1: grouped-enhancement placement",
+  "tag": "ivc-supplement-s1-v1.0.0",
+  "release_url": "https://github.com/Feng-yuhao/yolo11/releases/tag/ivc-supplement-s1-v1.0.0",
+  "download_url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-supplement-s1-v1.0.0/Supplementary_Material_S1_Placement.zip",
+  "asset_name": "Supplementary_Material_S1_Placement.zip",
+  "bytes": 32242552,
+  "sha256": "8f7c0785f1d81ef345b31d37c6df9e703d8c6506b369462a953e3b172595a95f",
+  "scope": "One archived seed-1 VisDrone2019 validation placement comparison, separate from main three-seed test-dev results",
+  "main_release": "https://github.com/Feng-yuhao/yolo11/releases/tag/ivc-repro-v1.0.0",
+  "source_run": "E61_RUN_20261011_000627_657189",
+  "archive_payloads": [
+    {
+      "path": "actual_source.zip",
+      "bytes": 112943,
+      "sha256": "452802614bba22f71786036ad16fddc472731abc250c9524d598c189af195ac2"
+    },
+    {
+      "path": "area_predictions.json",
+      "bytes": 48992385,
+      "sha256": "d9aeabf1310309f1461dc11776cf7b3e9965e6d91f7a92bbabac95d8750ec28c"
+    },
+    {
+      "path": "args.yaml",
+      "bytes": 1799,
+      "sha256": "2f16ab0e031c53570cc9b7713fb5ddb628b69d1758721e503b12ff34784527f8"
+    },
+    {
+      "path": "comparison.json",
+      "bytes": 28102,
+      "sha256": "358fd97912f151b787980670dd675dd6b22f5a508e0c9525075b438c82a407a4"
+    },
+    {
+      "path": "completion.json",
+      "bytes": 140,
+      "sha256": "823c15eac4e9636264d82cacaac1fc4cbd1b2a62ad4ec913ec1d348e9c099456"
+    },
+    {
+      "path": "E61_seed1_best.pt",
+      "bytes": 23795411,
+      "sha256": "5560523f4e1b88213e8f8e90503ecb1be58f5926424cb45d8fb8dae65e548c9e"
+    },
+    {
+      "path": "official_metrics.json",
+      "bytes": 16030,
+      "sha256": "6aae84930abd8cc146c2447fc33785b1dc380d1adcd9f15acc7e9361afa15023"
+    },
+    {
+      "path": "placement_validation_seed1.csv",
+      "bytes": 319,
+      "sha256": "5a30f168fe576353c8e0d8d37cd60d48ddf6161e347c2c0bcbe3766c023f6ea2"
+    },
+    {
+      "path": "README_EN.md",
+      "bytes": 3471,
+      "sha256": "156690fab164a3e5365cf9e7e09628f9d429fe124518171fdeaa2f9554117ad3"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 1039,
+      "sha256": "40e4214bbd0a4285f408d1d0c00c6d9c1df42f2fcc7070dc5f1d5ddec55f1d47"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "bytes": 1019,
+      "sha256": "ee1f446b6d7e19c67c416c0ae7333591107983c97c991f947fcc048e1cb56d50"
+    },
+    {
+      "path": "training.json",
+      "bytes": 95025,
+      "sha256": "1ffe7c4ba0030931ab659331a3693bafa61be84c20b77e50035322152827731c"
+    },
+    {
+      "path": "training_completion.json",
+      "bytes": 261,
+      "sha256": "f948ea138d643246abf319d2460b06d4a578536f91167d2708a614bbccb5ddf8"
+    }
+  ]
+}

@@ -10,6 +10,26 @@
     "sha256": "3a070033310b386f997e37295d0b2f494d6251d32af255e3e6cc4d9f304e8219"
   },
   {
+    "path": "CITATION.cff",
+    "bytes": 460,
+    "sha256": "c4e776d56d403010dca21395b9e7981e0178eb18cbc17e8fcc92e45091f3e2fb"
+  },
+  {
+    "path": "LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "README.md",
+    "bytes": 5787,
+    "sha256": "aaf25e52ab96a7ea8d4b48d8f13c7273a5f09a08afed79bbabf2eedadd20c10c"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "bytes": 1701,
+    "sha256": "0727b8fd244216904e0fa9a51aa8d00dcc28152c09491d357fd6c969b8ab875f"
+  },
+  {
     "path": "assets/figures/CN/Figure_1_CN.svg",
     "bytes": 15372,
     "sha256": "a985949d64f1784f0836f9f0910728af0c765b4c75868a09859ad5588c620886"
@@ -60,14 +80,14 @@
     "sha256": "f3315d454df3761137b16b096ac39d1cbae9629a6babae00232b5a89ceb8fd8f"
   },
   {
-    "path": "CITATION.cff",
-    "bytes": 460,
-    "sha256": "c4e776d56d403010dca21395b9e7981e0178eb18cbc17e8fcc92e45091f3e2fb"
-  },
-  {
     "path": "configs/experiments.json",
     "bytes": 8976,
     "sha256": "171ad7fa76a7b947e893b60668679b381d647a05474d5ff613edf15db8fd5381"
+  },
+  {
+    "path": "data/README.md",
+    "bytes": 3080,
+    "sha256": "20339c276d37b26fddd7daa1eb8b4a5300c44a821b4a030104cce6be03bf49d6"
   },
   {
     "path": "data/manifests/dior_test.csv",
@@ -110,9 +130,19 @@
     "sha256": "042ea2e78579966d8dbba23657b9a8d8a03108b3725df9abd7da2790db67ad8b"
   },
   {
-    "path": "data/README.md",
-    "bytes": 3080,
-    "sha256": "20339c276d37b26fddd7daa1eb8b4a5300c44a821b4a030104cce6be03bf49d6"
+    "path": "docs/PROTOCOLS.md",
+    "bytes": 2385,
+    "sha256": "9e561f57e977d225a46eb6253b6a0adc705e263676cb9f7b96cdd35712a9d627"
+  },
+  {
+    "path": "docs/SUPPLEMENTARY_S1.md",
+    "bytes": 4524,
+    "sha256": "0afd91aa90ee49dbe14c688d0f4c273d2641ee4a6ac4ebe603aafda1d3954d85"
+  },
+  {
+    "path": "docs/VALIDATION.md",
+    "bytes": 2625,
+    "sha256": "0fa16109b7beef9d32bf4295c8cfc961e28a108c1c2aea05d98e74094d6f577c"
   },
   {
     "path": "docs/construction_and_complexity_validation.json",
@@ -130,19 +160,9 @@
     "sha256": "5b57fd2e35fa469c37647819ced8992b197d3708b5440ccb0154cf8425f4901a"
   },
   {
-    "path": "docs/PROTOCOLS.md",
-    "bytes": 2385,
-    "sha256": "9e561f57e977d225a46eb6253b6a0adc705e263676cb9f7b96cdd35712a9d627"
-  },
-  {
     "path": "docs/public_entrypoint_validation.json",
     "bytes": 1902,
     "sha256": "9fb3550dfc8036b65807ab40b078c59b56fb2c71d15e67676fc454be85318adb"
-  },
-  {
-    "path": "docs/VALIDATION.md",
-    "bytes": 2625,
-    "sha256": "0fa16109b7beef9d32bf4295c8cfc961e28a108c1c2aea05d98e74094d6f577c"
   },
   {
     "path": "environment/original_yolo11_binding.json",
@@ -180,6 +200,11 @@
     "sha256": "edcd0903536db0c540269b13824f4b5aeddd467d9c209cba5adbbc7b977ddcb0"
   },
   {
+    "path": "implementations/data/songdo/DATASET_README.md",
+    "bytes": 4375,
+    "sha256": "f12bd2e2531262625a7da6ea3481091afe78984a0edc7656cd64bcd0211a87dd"
+  },
+  {
     "path": "implementations/data/songdo/audit_archives.py",
     "bytes": 5574,
     "sha256": "f4d3fdf3d5650ec8a5b24445ade25fda495207a9e70238a120381f8a8c56bf29"
@@ -200,11 +225,6 @@
     "sha256": "2995907d5a5204f7773a4a75e961e9ba16a73c82d495df23264c46fb2c136f75"
   },
   {
-    "path": "implementations/data/songdo/DATASET_README.md",
-    "bytes": 4375,
-    "sha256": "f12bd2e2531262625a7da6ea3481091afe78984a0edc7656cd64bcd0211a87dd"
-  },
-  {
     "path": "implementations/data/songdo/finalize_qa.py",
     "bytes": 5541,
     "sha256": "d6c81dd5988b056a5e4aa4f0858128f06cdc47d4b2f144576fcc02a78d9564ee"
@@ -215,24 +235,24 @@
     "sha256": "f5e8870087dbc800c2b53729325361629bb1aae829f0dd8ed0ae1ae074c1cd17"
   },
   {
-    "path": "implementations/data/songdo/official/data.yaml",
-    "bytes": 2018,
-    "sha256": "30b62a5fa9056507c701b72c1c8cb56868508570d7c150475fbe189b56ad49c5"
-  },
-  {
     "path": "implementations/data/songdo/official/LICENSE.txt",
     "bytes": 18656,
     "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
   },
   {
-    "path": "implementations/data/songdo/official/names.txt",
-    "bytes": 25,
-    "sha256": "2b4323968f0bf6dd5252fddc6cfdb4212378259d34ede83c48a1c2d97b775468"
-  },
-  {
     "path": "implementations/data/songdo/official/README.md",
     "bytes": 18781,
     "sha256": "8718b1d25c78af7dc30d61c31cf74113ee490e69b13ede785c006dfd95e281a1"
+  },
+  {
+    "path": "implementations/data/songdo/official/data.yaml",
+    "bytes": 2018,
+    "sha256": "30b62a5fa9056507c701b72c1c8cb56868508570d7c150475fbe189b56ad49c5"
+  },
+  {
+    "path": "implementations/data/songdo/official/names.txt",
+    "bytes": 25,
+    "sha256": "2b4323968f0bf6dd5252fddc6cfdb4212378259d34ede83c48a1c2d97b775468"
   },
   {
     "path": "implementations/data/songdo/pack_dataset.py",
@@ -258,6 +278,21 @@
     "path": "implementations/data/uavdt/verify_dataset.py",
     "bytes": 1241,
     "sha256": "1d5fa61a4018fb0f19e3933fb033ac190dbe43b2d44b30db08393e50e9e3a9a5"
+  },
+  {
+    "path": "implementations/transfer/dior/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/transfer/dior/LOCAL_VALIDATION.md",
+    "bytes": 3568,
+    "sha256": "8e80af11e3e489ca9971b188906eca4a3216436c6dd39067f8a8bf900dbd7b99"
+  },
+  {
+    "path": "implementations/transfer/dior/README.md",
+    "bytes": 5866,
+    "sha256": "ac7ddbabb170a7a6fd0fae0f0936c6ac4c5a0555b33742f5d8041ce7dec58bdd"
   },
   {
     "path": "implementations/transfer/dior/admission.py",
@@ -325,16 +360,6 @@
     "sha256": "61ea96e0e96e3aab651525767a6aab236dc7364d2cadf5b33d6bdc33d6d360f2"
   },
   {
-    "path": "implementations/transfer/dior/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/transfer/dior/LOCAL_VALIDATION.md",
-    "bytes": 3568,
-    "sha256": "8e80af11e3e489ca9971b188906eca4a3216436c6dd39067f8a8bf900dbd7b99"
-  },
-  {
     "path": "implementations/transfer/dior/manifest.json",
     "bytes": 3510,
     "sha256": "3a5fac01f41865ef1c6ee18354dcbf720556c2bf683daaac6bac762a4a7e7806"
@@ -353,11 +378,6 @@
     "path": "implementations/transfer/dior/parent_spatial_task_head.py",
     "bytes": 4180,
     "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
-  },
-  {
-    "path": "implementations/transfer/dior/README.md",
-    "bytes": 5866,
-    "sha256": "ac7ddbabb170a7a6fd0fae0f0936c6ac4c5a0555b33742f5d8041ce7dec58bdd"
   },
   {
     "path": "implementations/transfer/dior/references/author_evaluator.json",
@@ -445,6 +465,21 @@
     "sha256": "02e73d3000778fea2117a9ef5dd53f7ea02b5b5f5f0fd541a17a26c5e686e56f"
   },
   {
+    "path": "implementations/transfer/songdo/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/transfer/songdo/LOCAL_VALIDATION.md",
+    "bytes": 1738,
+    "sha256": "2d2db0fd4d8a9d8d78dccea82cfe20cb870dd5b0f5ce75fc8abaf23ddb409455"
+  },
+  {
+    "path": "implementations/transfer/songdo/README.md",
+    "bytes": 4281,
+    "sha256": "aa0f3c2239c02ec5cbd34cd49b7b2e5d191a51ecec02d375328534da8443f621"
+  },
+  {
     "path": "implementations/transfer/songdo/admission.py",
     "bytes": 2717,
     "sha256": "e33f2a3ae88ec17aeb053b3469f1c5d098206de376fd246d49b976bc19f4e9a0"
@@ -485,16 +520,6 @@
     "sha256": "d0b5e73b593e4eafa0013cb2a8e2195bfcf38594fd0e60e7451a4e108542ba3e"
   },
   {
-    "path": "implementations/transfer/songdo/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/transfer/songdo/LOCAL_VALIDATION.md",
-    "bytes": 1738,
-    "sha256": "2d2db0fd4d8a9d8d78dccea82cfe20cb870dd5b0f5ce75fc8abaf23ddb409455"
-  },
-  {
     "path": "implementations/transfer/songdo/manifest.json",
     "bytes": 2351,
     "sha256": "4bb78d28e1f8045ce1a4b536eaf9f0f58849d324551a688433189f6ae17a38d9"
@@ -513,11 +538,6 @@
     "path": "implementations/transfer/songdo/parent_spatial_task_head.py",
     "bytes": 4180,
     "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
-  },
-  {
-    "path": "implementations/transfer/songdo/README.md",
-    "bytes": 4281,
-    "sha256": "aa0f3c2239c02ec5cbd34cd49b7b2e5d191a51ecec02d375328534da8443f621"
   },
   {
     "path": "implementations/transfer/songdo/references/checkpoints.json",
@@ -570,6 +590,21 @@
     "sha256": "f4aaaea7930dc22be50e68ef309a748096b3aa317244ddaefc093bd8b9bd6945"
   },
   {
+    "path": "implementations/transfer/uavdt_seed1/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/LOCAL_VALIDATION.md",
+    "bytes": 2000,
+    "sha256": "5f0026c4ef1869fe5024f5b623d4ebf26666a5fedec48905bb0d8bd7fa923c5d"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seed1/README.md",
+    "bytes": 4201,
+    "sha256": "a42f6714fc89bd2ca47d0c9cf91d0da4377ff76a28fd2f76f3ed352064e67374"
+  },
+  {
     "path": "implementations/transfer/uavdt_seed1/admission.py",
     "bytes": 2717,
     "sha256": "e33f2a3ae88ec17aeb053b3469f1c5d098206de376fd246d49b976bc19f4e9a0"
@@ -610,16 +645,6 @@
     "sha256": "bce96d792593df2cdd1219edb6efc3d7f14bb38b001e703dc24860cb18fc822f"
   },
   {
-    "path": "implementations/transfer/uavdt_seed1/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/transfer/uavdt_seed1/LOCAL_VALIDATION.md",
-    "bytes": 2000,
-    "sha256": "5f0026c4ef1869fe5024f5b623d4ebf26666a5fedec48905bb0d8bd7fa923c5d"
-  },
-  {
     "path": "implementations/transfer/uavdt_seed1/manifest.json",
     "bytes": 2521,
     "sha256": "0da501bfe8e68af78bb8e1aaf3e02de8fc8f8d73bcb38495e8960b2f8e10b28f"
@@ -648,11 +673,6 @@
     "path": "implementations/transfer/uavdt_seed1/prepare_dataset.sh",
     "bytes": 620,
     "sha256": "1018b375a694f8b3b620fdf526995649ca4c5e8567558620cde17486f2c3454b"
-  },
-  {
-    "path": "implementations/transfer/uavdt_seed1/README.md",
-    "bytes": 4201,
-    "sha256": "a42f6714fc89bd2ca47d0c9cf91d0da4377ff76a28fd2f76f3ed352064e67374"
   },
   {
     "path": "implementations/transfer/uavdt_seed1/references/checkpoints.json",
@@ -710,6 +730,21 @@
     "sha256": "43879a36b662304d0c2517a6dcf2e25663b2d9cfa29b45de5ba141a614dc9083"
   },
   {
+    "path": "implementations/transfer/uavdt_seeds23/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/LOCAL_VALIDATION.md",
+    "bytes": 1866,
+    "sha256": "22547203fea93dcfe407b4b32c1703d5f1e75f12855b3028b7326edcc8f094fd"
+  },
+  {
+    "path": "implementations/transfer/uavdt_seeds23/README.md",
+    "bytes": 2776,
+    "sha256": "052148c926e27c4fdc0399f11238e9e37c9473f86688e27b2338558046c20b65"
+  },
+  {
     "path": "implementations/transfer/uavdt_seeds23/admission.py",
     "bytes": 2717,
     "sha256": "e33f2a3ae88ec17aeb053b3469f1c5d098206de376fd246d49b976bc19f4e9a0"
@@ -750,16 +785,6 @@
     "sha256": "bce96d792593df2cdd1219edb6efc3d7f14bb38b001e703dc24860cb18fc822f"
   },
   {
-    "path": "implementations/transfer/uavdt_seeds23/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/transfer/uavdt_seeds23/LOCAL_VALIDATION.md",
-    "bytes": 1866,
-    "sha256": "22547203fea93dcfe407b4b32c1703d5f1e75f12855b3028b7326edcc8f094fd"
-  },
-  {
     "path": "implementations/transfer/uavdt_seeds23/manifest.json",
     "bytes": 3010,
     "sha256": "44d6217248379a0b40ab125dcfe22610266163418a3c5dbe63526b950aa7ec32"
@@ -788,11 +813,6 @@
     "path": "implementations/transfer/uavdt_seeds23/prepare_dataset.sh",
     "bytes": 620,
     "sha256": "1018b375a694f8b3b620fdf526995649ca4c5e8567558620cde17486f2c3454b"
-  },
-  {
-    "path": "implementations/transfer/uavdt_seeds23/README.md",
-    "bytes": 2776,
-    "sha256": "052148c926e27c4fdc0399f11238e9e37c9473f86688e27b2338558046c20b65"
   },
   {
     "path": "implementations/transfer/uavdt_seeds23/references/checkpoints.json",
@@ -875,6 +895,21 @@
     "sha256": "43879a36b662304d0c2517a6dcf2e25663b2d9cfa29b45de5ba141a614dc9083"
   },
   {
+    "path": "implementations/yolo11/baseline_seeds23/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/LOCAL_VALIDATION.md",
+    "bytes": 2184,
+    "sha256": "00062c0f1dfdd35452d0d28651724b8e274183dc1fc9b44d6e222a115aedbca4"
+  },
+  {
+    "path": "implementations/yolo11/baseline_seeds23/README.md",
+    "bytes": 5354,
+    "sha256": "dc24619ab577a92bf9e1c4ad7110f8ac1a7c5c2ddc5d665a224f003a7d14c4f9"
+  },
+  {
     "path": "implementations/yolo11/baseline_seeds23/base_eval.py",
     "bytes": 29947,
     "sha256": "5e77ba0494c00cbcd7582325b8c94b31a13fed228e3284d217210c6776ff6bcb"
@@ -930,16 +965,6 @@
     "sha256": "bfcd5159aa82a94f13960870a8111e771e8615f2cffdffa28839ef3fce73d109"
   },
   {
-    "path": "implementations/yolo11/baseline_seeds23/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/yolo11/baseline_seeds23/LOCAL_VALIDATION.md",
-    "bytes": 2184,
-    "sha256": "00062c0f1dfdd35452d0d28651724b8e274183dc1fc9b44d6e222a115aedbca4"
-  },
-  {
     "path": "implementations/yolo11/baseline_seeds23/manifest.json",
     "bytes": 5116,
     "sha256": "a27d02340186b5caeae03d3fe2c1ae33b3f882e1e26ff16219cb89f037a66b92"
@@ -948,11 +973,6 @@
     "path": "implementations/yolo11/baseline_seeds23/parent_spatial_task_head.py",
     "bytes": 4180,
     "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
-  },
-  {
-    "path": "implementations/yolo11/baseline_seeds23/README.md",
-    "bytes": 5354,
-    "sha256": "dc24619ab577a92bf9e1c4ad7110f8ac1a7c5c2ddc5d665a224f003a7d14c4f9"
   },
   {
     "path": "implementations/yolo11/baseline_seeds23/references/e0_seed1_testdev_metrics.json",
@@ -1175,6 +1195,31 @@
     "sha256": "f003b2f136ff921a9432aa838edcf1cff3dcf3449a3ae9af81ac9b2c4470ca90"
   },
   {
+    "path": "implementations/yolo11/full_seed1/FIX_V2.md",
+    "bytes": 2968,
+    "sha256": "110005a78657e6fed7a8e17dcf2c379c5ddec85529b6382831a82f50433fdcc9"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/FIX_V3.md",
+    "bytes": 2641,
+    "sha256": "a32c6b6612013c0c0006f7474c924d469186f4923022decb04cb9067d20c0c26"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/LOCAL_VALIDATION.md",
+    "bytes": 4464,
+    "sha256": "2c47aa5f575a9b7bbd14a54f6eb11ec32d4a2a4d02be29c61b5dd1a1217ff19f"
+  },
+  {
+    "path": "implementations/yolo11/full_seed1/README.md",
+    "bytes": 7607,
+    "sha256": "447f2eac0a7b4cc6c0e278e8bd78a23d0100c9c179fda62cb8b5070d5adb1b2f"
+  },
+  {
     "path": "implementations/yolo11/full_seed1/build_release.py",
     "bytes": 970,
     "sha256": "96458a68573f24b808b80eeb1c6f7aa22d671a5b0efe5e72d6abed577622c3f9"
@@ -1225,34 +1270,14 @@
     "sha256": "ad98cffb7498e8ed0c497d7d4067d23f7e0413d21d444b4f8e5a8d9d9802b0e3"
   },
   {
-    "path": "implementations/yolo11/full_seed1/FIX_V2.md",
-    "bytes": 2968,
-    "sha256": "110005a78657e6fed7a8e17dcf2c379c5ddec85529b6382831a82f50433fdcc9"
-  },
-  {
-    "path": "implementations/yolo11/full_seed1/FIX_V3.md",
-    "bytes": 2641,
-    "sha256": "a32c6b6612013c0c0006f7474c924d469186f4923022decb04cb9067d20c0c26"
-  },
-  {
     "path": "implementations/yolo11/full_seed1/group_checks.py",
     "bytes": 5286,
     "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8"
   },
   {
-    "path": "implementations/yolo11/full_seed1/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
     "path": "implementations/yolo11/full_seed1/local_validate.py",
     "bytes": 1792,
     "sha256": "e500c8e16d2663254e112e48dceb67cf2482d1f003dc1d79cee22d3bc5486a85"
-  },
-  {
-    "path": "implementations/yolo11/full_seed1/LOCAL_VALIDATION.md",
-    "bytes": 4464,
-    "sha256": "2c47aa5f575a9b7bbd14a54f6eb11ec32d4a2a4d02be29c61b5dd1a1217ff19f"
   },
   {
     "path": "implementations/yolo11/full_seed1/manifest.json",
@@ -1283,11 +1308,6 @@
     "path": "implementations/yolo11/full_seed1/precision_checks.py",
     "bytes": 5722,
     "sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a"
-  },
-  {
-    "path": "implementations/yolo11/full_seed1/README.md",
-    "bytes": 7607,
-    "sha256": "447f2eac0a7b4cc6c0e278e8bd78a23d0100c9c179fda62cb8b5070d5adb1b2f"
   },
   {
     "path": "implementations/yolo11/full_seed1/run.sh",
@@ -1333,6 +1353,21 @@
     "path": "implementations/yolo11/full_seed1/validation_smoke.py",
     "bytes": 6425,
     "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/LOCAL_VALIDATION.md",
+    "bytes": 2770,
+    "sha256": "24a935cb3837c524d3417145d7c55d88593dbba233f0d540a23f95106d16a281"
+  },
+  {
+    "path": "implementations/yolo11/full_seed2/README.md",
+    "bytes": 5511,
+    "sha256": "abfaae32d75165673717e7734ed6d88d4f70eee5e558e8778ab59f7e52f39923"
   },
   {
     "path": "implementations/yolo11/full_seed2/build_release.py",
@@ -1390,19 +1425,9 @@
     "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8"
   },
   {
-    "path": "implementations/yolo11/full_seed2/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
     "path": "implementations/yolo11/full_seed2/local_validate.py",
     "bytes": 1798,
     "sha256": "c8b93da04e2fe11fdbbbec416ba05d7225e767f7c5fa4dc28c8b9ccee9383eb2"
-  },
-  {
-    "path": "implementations/yolo11/full_seed2/LOCAL_VALIDATION.md",
-    "bytes": 2770,
-    "sha256": "24a935cb3837c524d3417145d7c55d88593dbba233f0d540a23f95106d16a281"
   },
   {
     "path": "implementations/yolo11/full_seed2/manifest.json",
@@ -1433,11 +1458,6 @@
     "path": "implementations/yolo11/full_seed2/precision_checks.py",
     "bytes": 5722,
     "sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a"
-  },
-  {
-    "path": "implementations/yolo11/full_seed2/README.md",
-    "bytes": 5511,
-    "sha256": "abfaae32d75165673717e7734ed6d88d4f70eee5e558e8778ab59f7e52f39923"
   },
   {
     "path": "implementations/yolo11/full_seed2/run.sh",
@@ -1488,6 +1508,21 @@
     "path": "implementations/yolo11/full_seed2/validation_smoke.py",
     "bytes": 6425,
     "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/LOCAL_VALIDATION.md",
+    "bytes": 2599,
+    "sha256": "0c26ddfe61c0b908309df9c79072e8fcf1c35a434c0edba777583b4e3724bb51"
+  },
+  {
+    "path": "implementations/yolo11/full_seed3/README.md",
+    "bytes": 5688,
+    "sha256": "5f6beab43f8e7153bf14ea0377d9e827bec5f3e024679bc73bc84d86030d8e3a"
   },
   {
     "path": "implementations/yolo11/full_seed3/build_release.py",
@@ -1545,19 +1580,9 @@
     "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8"
   },
   {
-    "path": "implementations/yolo11/full_seed3/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
     "path": "implementations/yolo11/full_seed3/local_validate.py",
     "bytes": 1798,
     "sha256": "2038e6382e71e9832b26071a4ff1e577ee7bcd0e78a648da3faaf4245733d3fa"
-  },
-  {
-    "path": "implementations/yolo11/full_seed3/LOCAL_VALIDATION.md",
-    "bytes": 2599,
-    "sha256": "0c26ddfe61c0b908309df9c79072e8fcf1c35a434c0edba777583b4e3724bb51"
   },
   {
     "path": "implementations/yolo11/full_seed3/manifest.json",
@@ -1588,11 +1613,6 @@
     "path": "implementations/yolo11/full_seed3/precision_checks.py",
     "bytes": 5722,
     "sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a"
-  },
-  {
-    "path": "implementations/yolo11/full_seed3/README.md",
-    "bytes": 5688,
-    "sha256": "5f6beab43f8e7153bf14ea0377d9e827bec5f3e024679bc73bc84d86030d8e3a"
   },
   {
     "path": "implementations/yolo11/full_seed3/run.sh",
@@ -1645,6 +1665,26 @@
     "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf"
   },
   {
+    "path": "implementations/yolo11/no_group_seed1/FIX_V2.md",
+    "bytes": 1225,
+    "sha256": "1bc3c682be7de7e2c3b91dd3ea43713146104b78a73680c313322c29ebb5ee6f"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/LOCAL_VALIDATION.md",
+    "bytes": 2351,
+    "sha256": "df14e26f1bef2e3fe04a585ea9835c830bf2d2e51ffa8f4e5ce48d48ee896c2e"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed1/README.md",
+    "bytes": 4452,
+    "sha256": "88e521458482943044a72c8d843357a1c18fde649d9f0c43373093ae22186bd4"
+  },
+  {
     "path": "implementations/yolo11/no_group_seed1/build_release.py",
     "bytes": 970,
     "sha256": "96458a68573f24b808b80eeb1c6f7aa22d671a5b0efe5e72d6abed577622c3f9"
@@ -1685,21 +1725,6 @@
     "sha256": "c13c60aaec9c490b4d4fcba91186c689672f61b1a81a192168a3bb343a29af14"
   },
   {
-    "path": "implementations/yolo11/no_group_seed1/FIX_V2.md",
-    "bytes": 1225,
-    "sha256": "1bc3c682be7de7e2c3b91dd3ea43713146104b78a73680c313322c29ebb5ee6f"
-  },
-  {
-    "path": "implementations/yolo11/no_group_seed1/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/yolo11/no_group_seed1/LOCAL_VALIDATION.md",
-    "bytes": 2351,
-    "sha256": "df14e26f1bef2e3fe04a585ea9835c830bf2d2e51ffa8f4e5ce48d48ee896c2e"
-  },
-  {
     "path": "implementations/yolo11/no_group_seed1/manifest.json",
     "bytes": 2274,
     "sha256": "95af3f186c400c616ebcb4d550157b72f051e392f735a269fab35a0d9e588612"
@@ -1723,11 +1748,6 @@
     "path": "implementations/yolo11/no_group_seed1/parent_spatial_task_head.py",
     "bytes": 4180,
     "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
-  },
-  {
-    "path": "implementations/yolo11/no_group_seed1/README.md",
-    "bytes": 4452,
-    "sha256": "88e521458482943044a72c8d843357a1c18fde649d9f0c43373093ae22186bd4"
   },
   {
     "path": "implementations/yolo11/no_group_seed1/run_experiment.py",
@@ -1775,6 +1795,21 @@
     "sha256": "ce1c6b0aab88fcdcd90c837cec4e972b3f3fdae5d82f619ad25c12981ddffdf5"
   },
   {
+    "path": "implementations/yolo11/no_group_seed2/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/LOCAL_VALIDATION.md",
+    "bytes": 2429,
+    "sha256": "1c1abdb01fcdbb83c6c31f38e71157565cf0dec7f8484468969a21840e785350"
+  },
+  {
+    "path": "implementations/yolo11/no_group_seed2/README.md",
+    "bytes": 4934,
+    "sha256": "63fed266e92e93dec75e636e1b069318eea922c14dc36b0e390281430509d85f"
+  },
+  {
     "path": "implementations/yolo11/no_group_seed2/build_release.py",
     "bytes": 970,
     "sha256": "96458a68573f24b808b80eeb1c6f7aa22d671a5b0efe5e72d6abed577622c3f9"
@@ -1820,19 +1855,9 @@
     "sha256": "6848280fe2d68bd42ac9086b583357169b04d34349231c813961a75070e68307"
   },
   {
-    "path": "implementations/yolo11/no_group_seed2/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
     "path": "implementations/yolo11/no_group_seed2/local_validate.py",
     "bytes": 1397,
     "sha256": "662e7aa063d46071d89fb425e3b402c9f96c9cf87991f257fbc93e50513db2d5"
-  },
-  {
-    "path": "implementations/yolo11/no_group_seed2/LOCAL_VALIDATION.md",
-    "bytes": 2429,
-    "sha256": "1c1abdb01fcdbb83c6c31f38e71157565cf0dec7f8484468969a21840e785350"
   },
   {
     "path": "implementations/yolo11/no_group_seed2/manifest.json",
@@ -1853,11 +1878,6 @@
     "path": "implementations/yolo11/no_group_seed2/parent_spatial_task_head.py",
     "bytes": 4180,
     "sha256": "e4449897a773cc89186f0fd33caa3d1049f8c7d20b6e5789758dae6e34dd43b9"
-  },
-  {
-    "path": "implementations/yolo11/no_group_seed2/README.md",
-    "bytes": 4934,
-    "sha256": "63fed266e92e93dec75e636e1b069318eea922c14dc36b0e390281430509d85f"
   },
   {
     "path": "implementations/yolo11/no_group_seed2/run.sh",
@@ -1903,6 +1923,21 @@
     "path": "implementations/yolo11/no_group_seed2/validation_smoke.py",
     "bytes": 6425,
     "sha256": "1d6d8abd1f27b278f5df5900c9d89cd056713537fe77994f7a0667816e26f8cf"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/LOCAL_VALIDATION.md",
+    "bytes": 2542,
+    "sha256": "765cadc59914b56ae2b0ec39796e23ed026d62f62003d78e38ffc5fe3a7352e1"
+  },
+  {
+    "path": "implementations/yolo11/routing_seed1/README.md",
+    "bytes": 5378,
+    "sha256": "76fbc3ec418fc90117ae3106a16d9ababdf91470e6a0ca3a37133e01580338ae"
   },
   {
     "path": "implementations/yolo11/routing_seed1/build_release.py",
@@ -1990,16 +2025,6 @@
     "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8"
   },
   {
-    "path": "implementations/yolo11/routing_seed1/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/yolo11/routing_seed1/LOCAL_VALIDATION.md",
-    "bytes": 2542,
-    "sha256": "765cadc59914b56ae2b0ec39796e23ed026d62f62003d78e38ffc5fe3a7352e1"
-  },
-  {
     "path": "implementations/yolo11/routing_seed1/manifest.json",
     "bytes": 3263,
     "sha256": "1a5a702290130d9fa190a1751928d707a1feb42be02613f02ef9ba729c09e02e"
@@ -2028,11 +2053,6 @@
     "path": "implementations/yolo11/routing_seed1/precision_checks.py",
     "bytes": 5722,
     "sha256": "ecdba9cfd68881ae309a97843ae6396bc2c063c6d33bbf145b65f91212f3ba8a"
-  },
-  {
-    "path": "implementations/yolo11/routing_seed1/README.md",
-    "bytes": 5378,
-    "sha256": "76fbc3ec418fc90117ae3106a16d9ababdf91470e6a0ca3a37133e01580338ae"
   },
   {
     "path": "implementations/yolo11/routing_seed1/routing_checks.py",
@@ -2090,6 +2110,21 @@
     "sha256": "461e3cdc566f571be0ea8e01d73a1eba4e35cfcc7c9e8338f0b9c37715eca60d"
   },
   {
+    "path": "implementations/yolo11/supplement/FROZEN_PROVENANCE.json",
+    "bytes": 27900,
+    "sha256": "ff101b9715297db8f108b83565e545d8ff80342181d24e28e240f2ddfd9f0269"
+  },
+  {
+    "path": "implementations/yolo11/supplement/LOCAL_VALIDATION.json",
+    "bytes": 9439,
+    "sha256": "fdb89fe77600bfbcc101b3adabafae834f6a67035caf42c6e5286a89511ae242"
+  },
+  {
+    "path": "implementations/yolo11/supplement/README.md",
+    "bytes": 10739,
+    "sha256": "302f053fb730ad68cb4e811c0379207870d17c8996f9367c6735e2cca2d61f91"
+  },
+  {
     "path": "implementations/yolo11/supplement/common7.py",
     "bytes": 8572,
     "sha256": "55939f44578916c2dfdbb71e8af90a77289b214f46bb5cf7271ac1a01c1643c0"
@@ -2103,6 +2138,11 @@
     "path": "implementations/yolo11/supplement/engine7.py",
     "bytes": 29741,
     "sha256": "31f1ac9c279d9b56b4c5e1e6de109a8a8a11b9e2817999b917ff5a2a8987b683"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/e58/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
   },
   {
     "path": "implementations/yolo11/supplement/frozen/e58/checks.py",
@@ -2135,11 +2175,6 @@
     "sha256": "16e61a47791ef4835a928439df81660efde7ac1fd092dbaeb99cacf446e46be9"
   },
   {
-    "path": "implementations/yolo11/supplement/frozen/e58/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
     "path": "implementations/yolo11/supplement/frozen/e58/p2_tal_chunked.py",
     "bytes": 15395,
     "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6"
@@ -2158,6 +2193,11 @@
     "path": "implementations/yolo11/supplement/frozen/e58/spatial_task_head.py",
     "bytes": 5735,
     "sha256": "7ba6e0413de8cb77f962e6fc3289b4c3d1ef87c9d8ff46be050c1b8fee1b5314"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/routing/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
   },
   {
     "path": "implementations/yolo11/supplement/frozen/routing/checks.py",
@@ -2205,11 +2245,6 @@
     "sha256": "56466e37d4b527514bf4805e502f60fb4eceb61d7fe0c97d210f81b56f1695f8"
   },
   {
-    "path": "implementations/yolo11/supplement/frozen/routing/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
     "path": "implementations/yolo11/supplement/frozen/routing/optimizer_checks.py",
     "bytes": 4478,
     "sha256": "5254f0f1e0aed42c5fe3ba550c87e6ca8b0f575d497e3f9dc0da3b32621b2587"
@@ -2238,6 +2273,11 @@
     "path": "implementations/yolo11/supplement/frozen/routing/spatial_task_head.py",
     "bytes": 6286,
     "sha256": "1b318369bf67809aec71ea2d2c34b01d707153b3aec978f1c774beec034d8745"
+  },
+  {
+    "path": "implementations/yolo11/supplement/frozen/td/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
   },
   {
     "path": "implementations/yolo11/supplement/frozen/td/author_source/LICENSE.txt",
@@ -2280,11 +2320,6 @@
     "sha256": "943a6eae7e747bb75b92640538530a443eb4f15838394c6a5615f52857417761"
   },
   {
-    "path": "implementations/yolo11/supplement/frozen/td/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
     "path": "implementations/yolo11/supplement/frozen/td/p2_tal_chunked.py",
     "bytes": 15395,
     "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6"
@@ -2300,16 +2335,6 @@
     "sha256": "25963991eda6ba8fde71874149853a584f759f93b17aea0c43f27e223f9252c8"
   },
   {
-    "path": "implementations/yolo11/supplement/FROZEN_PROVENANCE.json",
-    "bytes": 27900,
-    "sha256": "ff101b9715297db8f108b83565e545d8ff80342181d24e28e240f2ddfd9f0269"
-  },
-  {
-    "path": "implementations/yolo11/supplement/LOCAL_VALIDATION.json",
-    "bytes": 9439,
-    "sha256": "fdb89fe77600bfbcc101b3adabafae834f6a67035caf42c6e5286a89511ae242"
-  },
-  {
     "path": "implementations/yolo11/supplement/package_manifest.json",
     "bytes": 11632,
     "sha256": "3410623125709df7f1a4b5d3bc0fd5b30f9a62a40b2521381cdd7e7104147ece"
@@ -2323,11 +2348,6 @@
     "path": "implementations/yolo11/supplement/preservation7.py",
     "bytes": 2517,
     "sha256": "16dc815222d23a52c7d649ddc6e9a64dad627a205f17b481aff9798a4cbc5aa4"
-  },
-  {
-    "path": "implementations/yolo11/supplement/README.md",
-    "bytes": 10739,
-    "sha256": "302f053fb730ad68cb4e811c0379207870d17c8996f9367c6735e2cca2d61f91"
   },
   {
     "path": "implementations/yolo11/supplement/references/e58_seed1_comparison.json",
@@ -2600,6 +2620,21 @@
     "sha256": "b1b2dd73cee08d99f8a3871ad2365efb2116e2f570a3e270bf51f365b16bce3c"
   },
   {
+    "path": "implementations/yolo11/td_seed1/LICENSE-Ultralytics.txt",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/LOCAL_VALIDATION.md",
+    "bytes": 1867,
+    "sha256": "db7e28db28ffc09320e396b779b477e8e3c55512f20845544c728d240a27c794"
+  },
+  {
+    "path": "implementations/yolo11/td_seed1/README.md",
+    "bytes": 5961,
+    "sha256": "0d69b20d3bd575ecb70f520b194d9a21d30305541db742c5075e116e6ac61e6b"
+  },
+  {
     "path": "implementations/yolo11/td_seed1/author_source/LICENSE.txt",
     "bytes": 11400,
     "sha256": "02c5c55e19772184872c6c455553b15e4acac4b3a757550e7374f47723868ce1"
@@ -2650,19 +2685,9 @@
     "sha256": "943a6eae7e747bb75b92640538530a443eb4f15838394c6a5615f52857417761"
   },
   {
-    "path": "implementations/yolo11/td_seed1/LICENSE-Ultralytics.txt",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
     "path": "implementations/yolo11/td_seed1/local_validate.py",
     "bytes": 4863,
     "sha256": "6a1a03f35500ba02aa94588984b6c8e2ec56bef0f960ff44eb5524959ed2de0a"
-  },
-  {
-    "path": "implementations/yolo11/td_seed1/LOCAL_VALIDATION.md",
-    "bytes": 1867,
-    "sha256": "db7e28db28ffc09320e396b779b477e8e3c55512f20845544c728d240a27c794"
   },
   {
     "path": "implementations/yolo11/td_seed1/manifest.json",
@@ -2673,11 +2698,6 @@
     "path": "implementations/yolo11/td_seed1/p2_tal_chunked.py",
     "bytes": 15395,
     "sha256": "16e34b5c937c3224f0017da732999e567635f8c040b9327306c8f4179c77d6b6"
-  },
-  {
-    "path": "implementations/yolo11/td_seed1/README.md",
-    "bytes": 5961,
-    "sha256": "0d69b20d3bd575ecb70f520b194d9a21d30305541db742c5075e116e6ac61e6b"
   },
   {
     "path": "implementations/yolo11/td_seed1/references/e1_seed1_official_metrics.json",
@@ -2785,6 +2805,21 @@
     "sha256": "515b6afe17f2ccdfbb8927ebc2346a9f9210c1e9a79d9b27606949eb0d42642a"
   },
   {
+    "path": "implementations/yolo26/seed1/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo26/seed1/LOCAL_VALIDATION.md",
+    "bytes": 3617,
+    "sha256": "6cc355f77b60defa062e89cf71f6b51ba1f435037dea5b2702df05192e03422c"
+  },
+  {
+    "path": "implementations/yolo26/seed1/README.md",
+    "bytes": 5109,
+    "sha256": "3b7238475bc745326ae496dab6c8ed767885e52e9b77e47ebeb3534da7a29098"
+  },
+  {
     "path": "implementations/yolo26/seed1/build_release.py",
     "bytes": 2313,
     "sha256": "150338e9d841f050933aef25da665c7dce375bf026a70563b37b749ee74ac9c6"
@@ -2815,16 +2850,6 @@
     "sha256": "7fa5b1c0a1a2df5ed2b041117546fc057202c18f8b6a59c5f217c8e9176a4b9f"
   },
   {
-    "path": "implementations/yolo26/seed1/LICENSE",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/yolo26/seed1/LOCAL_VALIDATION.md",
-    "bytes": 3617,
-    "sha256": "6cc355f77b60defa062e89cf71f6b51ba1f435037dea5b2702df05192e03422c"
-  },
-  {
     "path": "implementations/yolo26/seed1/local_validation.py",
     "bytes": 3363,
     "sha256": "867388622c9d535069b78d3e91fc3a283e483fd049edcc87216c2dda82e6ed14"
@@ -2843,11 +2868,6 @@
     "path": "implementations/yolo26/seed1/protocol.py",
     "bytes": 10527,
     "sha256": "36b6998d7ca86e2891da67280cfbb0d47c4831cd23afb87a3d2348b4147f584d"
-  },
-  {
-    "path": "implementations/yolo26/seed1/README.md",
-    "bytes": 5109,
-    "sha256": "3b7238475bc745326ae496dab6c8ed767885e52e9b77e47ebeb3534da7a29098"
   },
   {
     "path": "implementations/yolo26/seed1/run_pair.sh",
@@ -2885,6 +2905,21 @@
     "sha256": "4684e1ce495a3fde0115e6909c81ad951bb17ab0fcc1147779426404b240404e"
   },
   {
+    "path": "implementations/yolo26/seed2/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo26/seed2/LOCAL_VALIDATION.md",
+    "bytes": 4014,
+    "sha256": "cb3e622e78adb0555c828596e12b0228e98cbef60876223427852c6b9f473f27"
+  },
+  {
+    "path": "implementations/yolo26/seed2/README.md",
+    "bytes": 5365,
+    "sha256": "3e4b1b20f0b0a131fc3eae654152b7bb486748233b39dee3349b136dd1af6936"
+  },
+  {
     "path": "implementations/yolo26/seed2/build_release.py",
     "bytes": 3745,
     "sha256": "beb33cbb13aa3a6415fd2256f66fd0dfb379c0f82f0a4959ecc06e167d732f66"
@@ -2920,16 +2955,6 @@
     "sha256": "867388622c9d535069b78d3e91fc3a283e483fd049edcc87216c2dda82e6ed14"
   },
   {
-    "path": "implementations/yolo26/seed2/LICENSE",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/yolo26/seed2/LOCAL_VALIDATION.md",
-    "bytes": 4014,
-    "sha256": "cb3e622e78adb0555c828596e12b0228e98cbef60876223427852c6b9f473f27"
-  },
-  {
     "path": "implementations/yolo26/seed2/local_validation.py",
     "bytes": 2753,
     "sha256": "abb20be22719e4fbfe12602b59eae077a881a3e0095b80478c4f2fa613ad0a4d"
@@ -2953,11 +2978,6 @@
     "path": "implementations/yolo26/seed2/protocol.py",
     "bytes": 11485,
     "sha256": "7563952765c9bcc0eee2cf2374370880bcaf0da6a91368a8ea55a032d1af951f"
-  },
-  {
-    "path": "implementations/yolo26/seed2/README.md",
-    "bytes": 5365,
-    "sha256": "3e4b1b20f0b0a131fc3eae654152b7bb486748233b39dee3349b136dd1af6936"
   },
   {
     "path": "implementations/yolo26/seed2/references/baseline_seed1_test_dev.json",
@@ -3055,6 +3075,21 @@
     "sha256": "8204c403f305eaba837ea6831e481ed48c257eaa7f91d92c4e2f736f2bf837f8"
   },
   {
+    "path": "implementations/yolo26/seed3/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo26/seed3/LOCAL_VALIDATION.md",
+    "bytes": 3485,
+    "sha256": "8fbcc9a5575a31e62b0c1b959f485906b526c0bec697d2f3a01dd11618031f99"
+  },
+  {
+    "path": "implementations/yolo26/seed3/README.md",
+    "bytes": 5051,
+    "sha256": "6715e0b42cfdc98f5e661700c6e7cac017f91e91b70f32d798dceb2dc5f2db8a"
+  },
+  {
     "path": "implementations/yolo26/seed3/build_release.py",
     "bytes": 2964,
     "sha256": "285193674839360bb3184b780c0dcd2dea795153ae68f269ec7a3260502d00b2"
@@ -3090,16 +3125,6 @@
     "sha256": "867388622c9d535069b78d3e91fc3a283e483fd049edcc87216c2dda82e6ed14"
   },
   {
-    "path": "implementations/yolo26/seed3/LICENSE",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/yolo26/seed3/LOCAL_VALIDATION.md",
-    "bytes": 3485,
-    "sha256": "8fbcc9a5575a31e62b0c1b959f485906b526c0bec697d2f3a01dd11618031f99"
-  },
-  {
     "path": "implementations/yolo26/seed3/local_validation.py",
     "bytes": 2753,
     "sha256": "561d014f12da8e5106ac94d9750f7c099370e1f3a7dc0dc9bdfb5d98732c1f89"
@@ -3123,11 +3148,6 @@
     "path": "implementations/yolo26/seed3/protocol.py",
     "bytes": 11485,
     "sha256": "e645b6191463e3e5cdbb0e20c037d112130202ad5f40ddb8c1955c4a24164ef7"
-  },
-  {
-    "path": "implementations/yolo26/seed3/README.md",
-    "bytes": 5051,
-    "sha256": "6715e0b42cfdc98f5e661700c6e7cac017f91e91b70f32d798dceb2dc5f2db8a"
   },
   {
     "path": "implementations/yolo26/seed3/references/baseline_seed1_test_dev.json",
@@ -3240,6 +3260,21 @@
     "sha256": "90f5f219f00bb351c0c6785c2fed8271cc6458978388c21f3a236d28ec69a3ed"
   },
   {
+    "path": "implementations/yolo26/testdev_seed1/LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/LOCAL_VALIDATION.md",
+    "bytes": 2617,
+    "sha256": "911294d6fd77d35e74925cb30935dbacf43af8c9a474d23c227c739b6a615b90"
+  },
+  {
+    "path": "implementations/yolo26/testdev_seed1/README.md",
+    "bytes": 2999,
+    "sha256": "b5eb4617523c8de4d470d5c22bb37f7586f7b19e66a66be00026afea3582b2a3"
+  },
+  {
     "path": "implementations/yolo26/testdev_seed1/build_release.py",
     "bytes": 3638,
     "sha256": "d5637cc40d4913ad4f57a4e3985b6d95ed79eea07c7c4318d4a52f885c2692b8"
@@ -3260,16 +3295,6 @@
     "sha256": "7fa5b1c0a1a2df5ed2b041117546fc057202c18f8b6a59c5f217c8e9176a4b9f"
   },
   {
-    "path": "implementations/yolo26/testdev_seed1/LICENSE",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "implementations/yolo26/testdev_seed1/LOCAL_VALIDATION.md",
-    "bytes": 2617,
-    "sha256": "911294d6fd77d35e74925cb30935dbacf43af8c9a474d23c227c739b6a615b90"
-  },
-  {
     "path": "implementations/yolo26/testdev_seed1/local_validation.py",
     "bytes": 3111,
     "sha256": "2301212fc237c5869a43fa746e92d70abf685b59511b10185bb76f884ce221f8"
@@ -3283,11 +3308,6 @@
     "path": "implementations/yolo26/testdev_seed1/protocol.py",
     "bytes": 10527,
     "sha256": "36b6998d7ca86e2891da67280cfbb0d47c4831cd23afb87a3d2348b4147f584d"
-  },
-  {
-    "path": "implementations/yolo26/testdev_seed1/README.md",
-    "bytes": 2999,
-    "sha256": "b5eb4617523c8de4d470d5c22bb37f7586f7b19e66a66be00026afea3582b2a3"
   },
   {
     "path": "implementations/yolo26/testdev_seed1/references/baseline_training_completion.json",
@@ -3360,11 +3380,6 @@
     "sha256": "ac2736eaf1f67cbf790f1d07e6db736eac79039a49e1290556a57166ea3e046a"
   },
   {
-    "path": "LICENSE",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
     "path": "manifests/frozen_implementation_files.json",
     "bytes": 183841,
     "sha256": "52365548b058724243baf461e5bbad7a28a0dfa0cccbc0d81c3f72326c3b83f2"
@@ -3380,6 +3395,11 @@
     "sha256": "beb3736d2ca04803c1f18dd606527197a0c65925aac8d511e424fe5d18d89f90"
   },
   {
+    "path": "manifests/supplementary_s1.json",
+    "bytes": 2781,
+    "sha256": "c372c59616e88941c788e44b7abd2b4f6b43cea9721045c476257dacea9162bd"
+  },
+  {
     "path": "manifests/vendor_versions.json",
     "bytes": 151,
     "sha256": "a467820e4f9405d0c7d6c47021fdbf97cd74e741601af43e39de8307ab3d9c83"
@@ -3393,11 +3413,6 @@
     "path": "manifests/yolo26_training_source_pins.json",
     "bytes": 2201,
     "sha256": "1a810fe02f3a1de6d446f13893c1c7ab5ddbe8f00de0743bd03053947b30027b"
-  },
-  {
-    "path": "README.md",
-    "bytes": 10339,
-    "sha256": "e26c4355b94aeb60e87e0e74eafa79404a36b0a7c409cd399fad65d7f6496c23"
   },
   {
     "path": "results/figure5_per_class_paired_differences.csv",
@@ -3840,6 +3855,11 @@
     "sha256": "ed7623e2c0e50be686932a5da31079b669fc4ea5aa7440abd024c9da87179463"
   },
   {
+    "path": "results/supplementary/s1_placement_validation_seed1.csv",
+    "bytes": 319,
+    "sha256": "5a30f168fe576353c8e0d8d37cd60d48ddf6161e347c2c0bcbe3766c023f6ea2"
+  },
+  {
     "path": "results/training/no-group_seed1/args.yaml",
     "bytes": 1782,
     "sha256": "2dd6836ee620422f46336a9ee295e1678e05291ad1839daa0ba7161ad0695188"
@@ -4125,11 +4145,6 @@
     "sha256": "13c1250fab9607fb8f1ef1bb09fa47116a4f332ab129fb2bc88a4ed6cb429d89"
   },
   {
-    "path": "THIRD_PARTY_NOTICES.md",
-    "bytes": 1701,
-    "sha256": "0727b8fd244216904e0fa9a51aa8d00dcc28152c09491d357fd6c969b8ab875f"
-  },
-  {
     "path": "tools/check_data.py",
     "bytes": 1940,
     "sha256": "75e76a09d085dd55a8e5152e66cbb72cbac5d8dbaaae5a443ed290d85ac0ba4f"
@@ -4195,14 +4210,14 @@
     "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
   },
   {
-    "path": "vendor/ultralytics26/pyproject.toml",
-    "bytes": 12808,
-    "sha256": "9e85cf01d7c9a8587dc99b3a1a2178bbddc48f0f91a5fb71fe9d9e658ddfbda0"
-  },
-  {
     "path": "vendor/ultralytics26/README.md",
     "bytes": 38434,
     "sha256": "0e01c0e5ca7f1868e0c91406a9a0a8a9ea1e21f766fbc3c5d79f3d68e7ef259e"
+  },
+  {
+    "path": "vendor/ultralytics26/pyproject.toml",
+    "bytes": 12808,
+    "sha256": "9e85cf01d7c9a8587dc99b3a1a2178bbddc48f0f91a5fb71fe9d9e658ddfbda0"
   },
   {
     "path": "vendor/ultralytics26/ultralytics/__init__.py",
@@ -4215,6 +4230,61 @@
     "sha256": "6247f1a2b779bb69223690c01637561644635b52da7197b371701418a3d21f3c"
   },
   {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/Argoverse.yaml",
+    "bytes": 3353,
+    "sha256": "54bba1cff80f4194c0681147133482f4fc4c398df3f135325016550409bf1c51"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/DOTAv1.5.yaml",
+    "bytes": 1212,
+    "sha256": "5febb56c74b016a7f9faf80f2168897d87afdca2bd2c7857673d5285036471cd"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/DOTAv1.yaml",
+    "bytes": 1182,
+    "sha256": "18e3ca2f92546dd154fc1ee35ad38f773dbb3a75ff0c93029bb5885ab64006bf"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/GlobalWheat2020.yaml",
+    "bytes": 2143,
+    "sha256": "fc68c4e6cc467292e8bfbafe334e97b235a5a25322cb7c4bc6ce24b30da56517"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/HomeObjects-3K.yaml",
+    "bytes": 933,
+    "sha256": "b90fb05934fd5be1ebee18aea9ae2b312e404e791078cb8645e689b2ac5e3fb5"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/ImageNet.yaml",
+    "bytes": 42528,
+    "sha256": "d3ab26a117ae27d4345e6cca94ad18e3ccfefbef9279aaa00bacdd391cb76f6f"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/Objects365.yaml",
+    "bytes": 9648,
+    "sha256": "7ca822c2f9ed33e4696df2660203e67cbde4d65c9797425965be9efd113cbf5e"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/SKU-110K.yaml",
+    "bytes": 2608,
+    "sha256": "7155e83003876e293e30038aaad91ee93536402684ca7f5c065cada9078a876d"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/TT100K.yaml",
+    "bytes": 6895,
+    "sha256": "08c6fde19c620038e0d682994e16360eb4aded5b2ac6bc482b7ce50a8b5f407c"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/VOC.yaml",
+    "bytes": 3816,
+    "sha256": "6e2dae457723b975b20a60952852fa6cbc3d2ac469520282a0ef089effaa544d"
+  },
+  {
+    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/VisDrone.yaml",
+    "bytes": 3395,
+    "sha256": "627f60f7602db38b6a462301ced87ad24bcdee2a692eaa9d4e02448492bb29fe"
+  },
+  {
     "path": "vendor/ultralytics26/ultralytics/cfg/datasets/ade20k.yaml",
     "bytes": 4330,
     "sha256": "7e032a1f242f5ff8b9a22e86b5b1dd21fb1fe702ef7923c36a5f62b74d7e5f08"
@@ -4223,11 +4293,6 @@
     "path": "vendor/ultralytics26/ultralytics/cfg/datasets/african-wildlife.yaml",
     "bytes": 914,
     "sha256": "187f354b97c6e5d0226d3c3fa757348af68b9e7bd79461779335ad6f25377a3a"
-  },
-  {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/Argoverse.yaml",
-    "bytes": 3353,
-    "sha256": "54bba1cff80f4194c0681147133482f4fc4c398df3f135325016550409bf1c51"
   },
   {
     "path": "vendor/ultralytics26/ultralytics/cfg/datasets/brain-tumor.yaml",
@@ -4370,34 +4435,9 @@
     "sha256": "5bfdc1729f1d44778e2f45455ac69a3445eaf0a8f63f3818c15110a9e3ad36a4"
   },
   {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/DOTAv1.5.yaml",
-    "bytes": 1212,
-    "sha256": "5febb56c74b016a7f9faf80f2168897d87afdca2bd2c7857673d5285036471cd"
-  },
-  {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/DOTAv1.yaml",
-    "bytes": 1182,
-    "sha256": "18e3ca2f92546dd154fc1ee35ad38f773dbb3a75ff0c93029bb5885ab64006bf"
-  },
-  {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/GlobalWheat2020.yaml",
-    "bytes": 2143,
-    "sha256": "fc68c4e6cc467292e8bfbafe334e97b235a5a25322cb7c4bc6ce24b30da56517"
-  },
-  {
     "path": "vendor/ultralytics26/ultralytics/cfg/datasets/hand-keypoints.yaml",
     "bytes": 1362,
     "sha256": "c0f2d879998643c95623cf682f04553031a70646ba1fbc8f642b717a0f0ff3bf"
-  },
-  {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/HomeObjects-3K.yaml",
-    "bytes": 933,
-    "sha256": "b90fb05934fd5be1ebee18aea9ae2b312e404e791078cb8645e689b2ac5e3fb5"
-  },
-  {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/ImageNet.yaml",
-    "bytes": 42528,
-    "sha256": "d3ab26a117ae27d4345e6cca94ad18e3ccfefbef9279aaa00bacdd391cb76f6f"
   },
   {
     "path": "vendor/ultralytics26/ultralytics/cfg/datasets/kitti.yaml",
@@ -4420,11 +4460,6 @@
     "sha256": "1152202ac54e22d8f8db8ef12860dbeb6d847acd490141a8adbdc8a76e6efd25"
   },
   {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/Objects365.yaml",
-    "bytes": 9648,
-    "sha256": "7ca822c2f9ed33e4696df2660203e67cbde4d65c9797425965be9efd113cbf5e"
-  },
-  {
     "path": "vendor/ultralytics26/ultralytics/cfg/datasets/open-images-v7.yaml",
     "bytes": 12115,
     "sha256": "497468af9dc644d149101efc090727d3c6fd644591f4cc2e8c5adeb00f4ad848"
@@ -4440,29 +4475,9 @@
     "sha256": "d77e1ea3e12968af57c484b34d99d43f66cdb67dc76fee63ffe9cee0fb7e2493"
   },
   {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/SKU-110K.yaml",
-    "bytes": 2608,
-    "sha256": "7155e83003876e293e30038aaad91ee93536402684ca7f5c065cada9078a876d"
-  },
-  {
     "path": "vendor/ultralytics26/ultralytics/cfg/datasets/tiger-pose.yaml",
     "bytes": 1195,
     "sha256": "0d09394bbb87e496cfde90fa43b235d8001a80d440dc02a26537ae6ec8e1611e"
-  },
-  {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/TT100K.yaml",
-    "bytes": 6895,
-    "sha256": "08c6fde19c620038e0d682994e16360eb4aded5b2ac6bc482b7ce50a8b5f407c"
-  },
-  {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/VisDrone.yaml",
-    "bytes": 3395,
-    "sha256": "627f60f7602db38b6a462301ced87ad24bcdee2a692eaa9d4e02448492bb29fe"
-  },
-  {
-    "path": "vendor/ultralytics26/ultralytics/cfg/datasets/VOC.yaml",
-    "bytes": 3816,
-    "sha256": "6e2dae457723b975b20a60952852fa6cbc3d2ac469520282a0ef089effaa544d"
   },
   {
     "path": "vendor/ultralytics26/ultralytics/cfg/datasets/xView.yaml",
@@ -5970,14 +5985,14 @@
     "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
   },
   {
-    "path": "vendor/ultralytics83/pyproject.toml",
-    "bytes": 7821,
-    "sha256": "3a03bb68293ebe017bee18c02c1b22c6b393b848d0fdc96fbbc098755c1524b2"
-  },
-  {
     "path": "vendor/ultralytics83/README.md",
     "bytes": 30467,
     "sha256": "c0bf48fb906472fe8708d02b8e6b5c567c0987989fbce14bf5e270e35283f85c"
+  },
+  {
+    "path": "vendor/ultralytics83/pyproject.toml",
+    "bytes": 7821,
+    "sha256": "3a03bb68293ebe017bee18c02c1b22c6b393b848d0fdc96fbbc098755c1524b2"
   },
   {
     "path": "vendor/ultralytics83/ultralytics/__init__.py",
@@ -6000,14 +6015,54 @@
     "sha256": "74b6ea3647d75a78308a26efaf11fac0c7bfa191b8388b31848892be4ac26c49"
   },
   {
-    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/african-wildlife.yaml",
-    "bytes": 901,
-    "sha256": "64cb6135c42c93dedac04be76a9f0ec9d777497b837e963f3a38179f0f229ea7"
-  },
-  {
     "path": "vendor/ultralytics83/ultralytics/cfg/datasets/Argoverse.yaml",
     "bytes": 3134,
     "sha256": "1727ae253e421eaffd7788657c07f49296659db50c3b44bef94275c88a9c74a9"
+  },
+  {
+    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/DOTAv1.5.yaml",
+    "bytes": 1195,
+    "sha256": "4157e9fd0a7ee2bba4ba271a078ab1f3a37148733c32bcf29bc97f7c80e8f20c"
+  },
+  {
+    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/DOTAv1.yaml",
+    "bytes": 1165,
+    "sha256": "b317b63fb9d8f9c08fb9f1f71b5a729a7415b4da061f5cb41131b90b259f2bd8"
+  },
+  {
+    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/GlobalWheat2020.yaml",
+    "bytes": 2060,
+    "sha256": "7f1589bf41213104c20ba369735dd9611860f8479d2e650ec514177ded46aee4"
+  },
+  {
+    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/ImageNet.yaml",
+    "bytes": 42507,
+    "sha256": "3f9b74af030d657da2bbba28064779c528bbe66eba71c0733b45e20400461a15"
+  },
+  {
+    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/Objects365.yaml",
+    "bytes": 9323,
+    "sha256": "66bc849de08822b85b8803e27919722f166fcd2e901b552cfb188306820adee1"
+  },
+  {
+    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/SKU-110K.yaml",
+    "bytes": 2493,
+    "sha256": "81e46471c05197678a81f3584ce3d8c03f664dfaa4b5304688c2681373d91270"
+  },
+  {
+    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/VOC.yaml",
+    "bytes": 3657,
+    "sha256": "a3205c238c9b3632947355324bcae0863686b335cc01bbd92f508ae6ccdf1aa8"
+  },
+  {
+    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/VisDrone.yaml",
+    "bytes": 3081,
+    "sha256": "5d1c8bc35ea7a223989c45b8303094e61aa319658c2aaeafa6afbaa064dc5394"
+  },
+  {
+    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/african-wildlife.yaml",
+    "bytes": 901,
+    "sha256": "64cb6135c42c93dedac04be76a9f0ec9d777497b837e963f3a38179f0f229ea7"
   },
   {
     "path": "vendor/ultralytics83/ultralytics/cfg/datasets/brain-tumor.yaml",
@@ -6065,39 +6120,14 @@
     "sha256": "77ae454c6089cd93c855eb5f792fbf7deb212a3a180ec7755ea6d6a02deeead2"
   },
   {
-    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/DOTAv1.5.yaml",
-    "bytes": 1195,
-    "sha256": "4157e9fd0a7ee2bba4ba271a078ab1f3a37148733c32bcf29bc97f7c80e8f20c"
-  },
-  {
-    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/DOTAv1.yaml",
-    "bytes": 1165,
-    "sha256": "b317b63fb9d8f9c08fb9f1f71b5a729a7415b4da061f5cb41131b90b259f2bd8"
-  },
-  {
-    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/GlobalWheat2020.yaml",
-    "bytes": 2060,
-    "sha256": "7f1589bf41213104c20ba369735dd9611860f8479d2e650ec514177ded46aee4"
-  },
-  {
     "path": "vendor/ultralytics83/ultralytics/cfg/datasets/hand-keypoints.yaml",
     "bytes": 960,
     "sha256": "bb1e54337dab87f4248c6fcaa63637f52b9deca1a83065c9d1d9b04c368966da"
   },
   {
-    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/ImageNet.yaml",
-    "bytes": 42507,
-    "sha256": "3f9b74af030d657da2bbba28064779c528bbe66eba71c0733b45e20400461a15"
-  },
-  {
     "path": "vendor/ultralytics83/ultralytics/cfg/datasets/lvis.yaml",
     "bytes": 29691,
     "sha256": "af2b30726df6bc3019dfef2b5b1d185b352fe2474e10f620d8e851b7e52cc291"
-  },
-  {
-    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/Objects365.yaml",
-    "bytes": 9323,
-    "sha256": "66bc849de08822b85b8803e27919722f166fcd2e901b552cfb188306820adee1"
   },
   {
     "path": "vendor/ultralytics83/ultralytics/cfg/datasets/open-images-v7.yaml",
@@ -6115,24 +6145,9 @@
     "sha256": "a933942d97f427d852ed95d577fb0f27cba835599b2a7a99e8a826fc48e65e96"
   },
   {
-    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/SKU-110K.yaml",
-    "bytes": 2493,
-    "sha256": "81e46471c05197678a81f3584ce3d8c03f664dfaa4b5304688c2681373d91270"
-  },
-  {
     "path": "vendor/ultralytics83/ultralytics/cfg/datasets/tiger-pose.yaml",
     "bytes": 896,
     "sha256": "b54f3cc5d280a0dd831570e4d8d30757bcbd6c2d87189085d0bbd356f09a08d1"
-  },
-  {
-    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/VisDrone.yaml",
-    "bytes": 3081,
-    "sha256": "5d1c8bc35ea7a223989c45b8303094e61aa319658c2aaeafa6afbaa064dc5394"
-  },
-  {
-    "path": "vendor/ultralytics83/ultralytics/cfg/datasets/VOC.yaml",
-    "bytes": 3657,
-    "sha256": "a3205c238c9b3632947355324bcae0863686b335cc01bbd92f508ae6ccdf1aa8"
   },
   {
     "path": "vendor/ultralytics83/ultralytics/cfg/datasets/xView.yaml",

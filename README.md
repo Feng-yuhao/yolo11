@@ -6,9 +6,16 @@ Authors: Yuhao Feng and Xuyang Wang. School of Computer Science and Artificial I
 
 ST-MDRF retains four encoding-depth readouts at each pyramid level, enhances intermediate readouts at P2/P3 with grouped residual units, and fuses them with spatially varying classification/regression weights. The original prediction towers remain in use.
 
-## Supplementary placement experiment (S1)
+## Paper materials: start here
 
-The additional archived **seed-1 validation** comparison of grouped enhancement at P2/P3 versus P2/P3/P4/P5 is documented in [Supplementary Material S1](docs/SUPPLEMENTARY_S1.md). [View the unrounded results](results/supplementary/s1_placement_validation_seed1.csv) or [download its complete code, checkpoint, predictions, and original records](https://github.com/Feng-yuhao/yolo11/releases/download/ivc-supplement-s1-v1.0.0/Supplementary_Material_S1_Placement.zip). S1 is separate from the main three-seed test-dev experiments and does not change the main release's stated counts.
+The default branch `main` contains the current manuscript reproduction package. Use the versioned links below to identify the exact materials; older archive/work branches and past commits are retained for provenance and are not the current package.
+
+| Material | Where to look | Scope |
+|---|---|---|
+| Main paper experiments | [Main reproduction release](https://github.com/Feng-yuhao/yolo11/releases/tag/ivc-repro-v1.0.0), [original metrics](results/raw), and [protocols](docs/PROTOCOLS.md) | Nine configurations × three seeds; 27 source runs and 18 frozen-weight target evaluations |
+| Reproduction commands | [Recorded table reconstruction](#start-with-the-recorded-results), [validation details](docs/VALIDATION.md), and [tools](tools) | Training, prediction, scoring, and figure/table entry points |
+| Dataset reconstruction | [Data instructions](data/README.md) | Official download sources, split metadata, conversion, and checks; benchmark images are obtained separately |
+| Supplementary Material S1 | [Bilingual explanation and results](docs/SUPPLEMENTARY_S1.md), [separate S1 release](https://github.com/Feng-yuhao/yolo11/releases/tag/ivc-supplement-s1-v1.0.0) | One archived seed-1 validation placement comparison, reported separately from the three-seed test-dev experiments |
 
 ## Scope and results
 
@@ -36,6 +43,26 @@ python tools/verify_release.py
 ```
 
 `outputs/paper_tables/tables.md` and `statistics.json` are regenerated from unrounded records. Original per-run JSON is under `results/raw`, and training arguments/native logs are under `results/training`. The checkpoint and prediction manifests bind artifact names, sizes and SHA256 hashes. Native YOLO monitoring metrics and the final VisDrone evaluator are distinct.
+
+## Repository layout
+
+These directories have distinct roles in the current reproduction package. Preserved implementation snapshots and frozen upstream sources are used by the public entry points.
+
+| Path | Role |
+|---|---|
+| `st_mdrf/` | Portable model/runtime adapters and experiment selection |
+| `implementations/` | Preserved model and evaluation implementations; original module names support loading the archived checkpoints |
+| `vendor/` | Frozen Ultralytics 8.3.0 and 8.4.177 sources selected by the runtime for the matching model family |
+| `configs/` | Experiment and training configurations |
+| `environment/` | Dependency specifications and original environment records |
+| `tools/` | Commands for data preparation, training, inference, scoring, artifact download, and figure/table reconstruction |
+| `data/` | Dataset instructions, split membership, annotation fingerprints, and target image metadata |
+| `results/` | Original per-run scores, training records, and the separately labeled supplementary comparison |
+| `manifests/` | Artifact names, sizes, checksums, and download bindings |
+| `assets/figures/` | Paper figure sources and graphical material |
+| `docs/` | Evaluation protocols, validation scope, interpretation, and S1 documentation |
+
+`CITATION.cff`, `LICENSE`, and `THIRD_PARTY_NOTICES.md` provide citation and licensing information. The Git configuration files control repository behavior. Figure sources and documentation support inspection without being required for every execution path; deleting runtime dependencies would prevent some reproduction commands from working.
 
 ## Install the model/evaluation environment
 
@@ -75,6 +102,10 @@ python tools/download.py --group pretrained
 ```
 
 The prediction archives contain the original JSON or gzip bytes, including all reported seeds and negative differences. Their manifests preserve the original file hashes. They contain no benchmark images or raw benchmark GT. Extract them with a ZIP tool and use the matching official/prepared GT for scoring.
+
+## Supplementary placement experiment (S1)
+
+The additional archived **seed-1 validation** comparison of grouped enhancement at P2/P3 versus P2/P3/P4/P5 is documented in [Supplementary Material S1](docs/SUPPLEMENTARY_S1.md). [View the unrounded results](results/supplementary/s1_placement_validation_seed1.csv) or [download its complete code, checkpoint, predictions, and original records](https://github.com/Feng-yuhao/yolo11/releases/download/ivc-supplement-s1-v1.0.0/Supplementary_Material_S1_Placement.zip). S1 is separate from the main three-seed test-dev experiments and does not change the main release's stated counts.
 
 ## Prepare the four datasets
 
@@ -139,4 +170,4 @@ Figure sources are in `assets/figures`. Complexity counts are unfused Conv/Linea
 
 The release preparation verified all 27 checkpoint hashes and fresh-process CPU loads, nine finite synthetic 128×128 forwards, nine fresh model constructions, exact 640×640 complexity counts for the three Table 3 models, original source-file hashes, and table reconstruction. VisDrone validation-label conversion was compared against the frozen upstream converter; DIOR GT/labels and UAVDT GT/ignore definitions were rebuilt and compared with the original artifacts. [Validation details](docs/VALIDATION.md) describe the checks and their limits. Preserved 200-epoch experiment outputs are historical results, not new training performed during packaging.
 
-See [third-party notices](THIRD_PARTY_NOTICES.md) and [citation metadata](CITATION.cff). The code is distributed under AGPL-3.0; separately licensed upstream material retains its own notices, and dataset licenses remain with their providers. The public repository's previous contents remain recoverable from Git history and the pre-release archive branch.
+See [third-party notices](THIRD_PARTY_NOTICES.md) and [citation metadata](CITATION.cff). The code is distributed under AGPL-3.0; separately licensed upstream material retains its own notices, and dataset licenses remain with their providers. The public repository's previous exploratory contents remain recoverable from Git history and the pre-release archive branch. Those historical branches are not additional configurations in the current paper package. For the reported main experiments use `ivc-repro-v1.0.0`; for the additional placement record use `ivc-supplement-s1-v1.0.0`.

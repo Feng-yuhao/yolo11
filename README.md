@@ -7,7 +7,7 @@ Yuhao Feng and Xuyang Wang, Lanzhou University of Technology. Corresponding auth
 ## Paper materials
 
 - **Main experiments:** [fixed release ivc-repro-v1.0.0](https://github.com/Feng-yuhao/yolo11/releases/tag/ivc-repro-v1.0.0). It contains 27 validation-selected source checkpoints (nine configurations × three seeds) and 45 saved prediction payloads, including 18 frozen-weight target evaluations.
-- **Supplementary Material S1:** [explanation and unrounded results](docs/SUPPLEMENTARY_S1.md), [download](https://github.com/Feng-yuhao/yolo11/releases/download/ivc-supplement-s1-v1.0.0/Supplementary_Material_S1_Placement.zip). This is a separate, archived seed-1 validation placement comparison, not part of the three-seed test-dev means.
+- **Placement-validation record (Section 4.3):** [configuration and unrounded results](docs/SUPPLEMENTARY_S1.md), [original-record archive](https://github.com/Feng-yuhao/yolo11/releases/download/ivc-supplement-s1-v1.0.0/Supplementary_Material_S1_Placement.zip). The manuscript reports this seed-1 validation comparison directly; the archive supplies its underlying code and experiment records, separately from the three-seed test-dev means.
 - **Datasets:** follow [data/README.md](data/README.md). Images and raw benchmark annotations are obtained from their official providers; the repository supplies preparation code, split metadata, fingerprints, and evaluation rules.
 - **Evaluation details:** [protocols](docs/PROTOCOLS.md) and [validation scope](docs/VALIDATION.md). Original scores and training records are in `results/`; artifact sizes and checksums are in `manifests/`.
 
@@ -82,4 +82,4 @@ Figure sources are in `assets/figures/`. Reported computation counts exclude som
 
 ## Citation and license
 
-See [CITATION.cff](CITATION.cff), [LICENSE](LICENSE), and [third-party notices](THIRD_PARTY_NOTICES.md). Dataset terms remain with their providers. Older archive/work branches and commit history preserve earlier exploration; the versioned main release and separately labeled S1 define this manuscript's shared materials.
+See [CITATION.cff](CITATION.cff), [LICENSE](LICENSE), and [third-party notices](THIRD_PARTY_NOTICES.md). Dataset terms remain with their providers. Older archive/work branches and commit history preserve earlier exploration; the versioned main release and placement-validation archive define this manuscript's shared materials.

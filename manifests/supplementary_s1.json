@@ -1,5 +1,5 @@
 {
-  "name": "Supplementary Material S1: grouped-enhancement placement",
+  "name": "Grouped-enhancement placement validation record",
   "tag": "ivc-supplement-s1-v1.0.0",
   "release_url": "https://github.com/Feng-yuhao/yolo11/releases/tag/ivc-supplement-s1-v1.0.0",
   "download_url": "https://github.com/Feng-yuhao/yolo11/releases/download/ivc-supplement-s1-v1.0.0/Supplementary_Material_S1_Placement.zip",
@@ -75,5 +75,6 @@
       "bytes": 261,
       "sha256": "f948ea138d643246abf319d2460b06d4a578536f91167d2708a614bbccb5ddf8"
     }
-  ]
+  ],
+  "submission_role": "Public research-data archive supporting the comparison reported in manuscript Section 4.3; the current manuscript has no formal Supplementary Material S1 cross-reference."
 }

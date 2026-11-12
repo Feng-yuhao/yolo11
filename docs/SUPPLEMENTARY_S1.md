@@ -1,10 +1,10 @@
-# Supplementary Material S1: grouped-enhancement placement
+# Grouped-enhancement placement validation
 
-[Download the complete S1 archive](https://github.com/Feng-yuhao/yolo11/releases/download/ivc-supplement-s1-v1.0.0/Supplementary_Material_S1_Placement.zip) · [Supplementary release](https://github.com/Feng-yuhao/yolo11/releases/tag/ivc-supplement-s1-v1.0.0) · [Unrounded comparison CSV](../results/supplementary/s1_placement_validation_seed1.csv) · [Archive manifest](../manifests/supplementary_s1.json)
+[Download the original-record archive](https://github.com/Feng-yuhao/yolo11/releases/download/ivc-supplement-s1-v1.0.0/Supplementary_Material_S1_Placement.zip) · [Versioned archive](https://github.com/Feng-yuhao/yolo11/releases/tag/ivc-supplement-s1-v1.0.0) · [Unrounded comparison CSV](../results/supplementary/s1_placement_validation_seed1.csv) · [Archive manifest](../manifests/supplementary_s1.json)
 
 ## Scope
 
-S1 supports the placement discussion in Section 4.3 of the revised manuscript. It preserves the additional archived E61 **seed-1 validation** comparison, rather than a new three-seed test-dev ablation. The main reproduction release, `ivc-repro-v1.0.0`, retains its original scope of 27 source checkpoints and 45 prediction payloads.
+The manuscript reports the placement comparison directly in Section 4.3, including the configuration, AP, parameter counts, and limitations. This archive supplies its underlying research records. It preserves the additional archived E61 **seed-1 validation** comparison, rather than a new three-seed test-dev ablation. The main reproduction release, `ivc-repro-v1.0.0`, retains its original scope of 27 source checkpoints and 45 prediction payloads.
 
 | Grouped enhancement | Split | Seed | AP (%) | AP50 (%) | AP75 (%) | Parameters |
 |---|---|---:|---:|---:|---:|---:|
@@ -42,8 +42,8 @@ Candidate checkpoint SHA-256, verified against the original comparison report:
 
 ## 中文说明
 
-这份 S1 对应修订稿第4.3节“为什么只在 P2/P3 使用分组残差增强”的补充记录。它来自原有 E61 实验备份，**不是新跑的实验，也不是表2中的三种子 test-dev 消融**。
+这份档案对应稿件第4.3节“为什么只在 P2/P3 使用分组残差增强”的原始研究记录。它来自原有 E61 实验备份，**不是新跑的实验，也不是表2中的三种子 test-dev 消融**。
 
 把同样的分组单元扩展到 P4/P5 后，单种子验证集 AP 从26.97变为26.67，参数增加149,472。该结果用于解释当前配置选择，不能据此断言“小目标普遍更需要分组残差”。最终模型的 P4/P5 仍保留多深度融合。
 
-完整包包括原始代码快照、配置、指标报告、选定权重、保存的预测和校验值。上方 CSV 可直接在线查看；下载 ZIP 后可查看全部原始材料。主实验材料继续放在 `ivc-repro-v1.0.0`，S1 使用单独的补充版本，不改变主实验的数量统计。投稿时，仍需把同一份 S1 ZIP 作为 Supplementary material 随正文提交。
+完整包包括原始代码快照、配置、指标报告、选定权重、保存的预测和校验值。上方 CSV 可直接在线查看；下载 ZIP 后可查看全部原始材料。主实验材料继续放在 `ivc-repro-v1.0.0`，作用层级比较使用单独的数据档案版本，不改变主实验的数量统计。实验设置、结果和限制已写入正文，当前稿件不再将该压缩包列为必须另交的期刊补充附件。既有文件名中的 S1 保留，以维持下载链接可用。
